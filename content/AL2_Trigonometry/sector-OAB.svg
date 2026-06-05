@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" font-family="Arial, sans-serif" font-size="14">
+  <rect width="500" height="400" fill="#fff"/>
+  
+  <title>Sector OAB with Point C</title>
+  
+  <!-- Arc of sector AOB -->
+  <path d="M 120 320 A 200 200 0 0 1 380 180" fill="#2563eb" opacity="0.06" stroke="#2563eb" stroke-width="2.5"/>
+  
+  <!-- Radius OA -->
+  <line x1="150" y1="250" x2="120" y2="320" stroke="#111" stroke-width="2.5"/>
+  
+  <!-- Radius OB -->
+  <line x1="150" y1="250" x2="380" y2="180" stroke="#111" stroke-width="2.5"/>
+  
+  <!-- Centre O -->
+  <circle cx="150" cy="250" r="4" fill="#dc2626"/>
+  <text x="140" y="240" font-style="italic" font-weight="bold" fill="#dc2626">O</text>
+  
+  <!-- Point A on OA ray -->
+  <circle cx="120" cy="320" r="4" fill="#111"/>
+  <text x="106" y="335" font-style="italic" font-weight="bold">A</text>
+  
+  <!-- Point B on arc -->
+  <circle cx="380" cy="180" r="4" fill="#111"/>
+  <text x="387" y="175" font-style="italic" font-weight="bold">B</text>
+  
+  <!-- Point C on OA (OC = 5 cm out of OA = 8 cm) -->
+  <!-- C is at 5/8 of the way from O to A -->
+  <!-- O=(150,250), A=(120,320), OC/OA = 5/8 -->
+  <!-- Vector OA = (-30, 70), scaled = (-18.75, 43.75) → C = (131.25, 293.75) -->
+  <circle cx="131" cy="294" r="4" fill="#16a34a"/>
+  <text x="118" y="290" font-style="italic" font-weight="bold" fill="#16a34a">C</text>
+  
+  <!-- Point D on arc where line through C parallel to OB meets the arc -->
+  <!-- This is the point on the arc. Let me approximate a reasonable position -->
+  <circle cx="340" cy="250" r="4" fill="#ea580c"/>
+  <text x="347" y="245" font-style="italic" font-weight="bold" fill="#ea580c">D</text>
+  
+  <!-- Line CD (parallel to OB) -->
+  <!-- OB direction is from (150,250) to (380,180): dx=230, dy=-70, slope=-70/230=-0.304 -->
+  <!-- Through C (131,294): line with same slope -->
+  <line x1="131" y1="294" x2="340" y2="250" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  
+  <!-- Line OD (radius to D) -->
+  <line x1="150" y1="250" x2="340" y2="250" stroke="#64748b" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- Angle marker for AOB = 1.2 rad -->
+  <path d="M 150 250 Q 210 220 240 210" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="215" y="235" fill="#dc2626" font-weight="bold" font-size="13">1.2 rad</text>
+  
+  <!-- Angle COD marker -->
+  <path d="M 150 250 Q 180 270 200 280" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <text x="195" y="278" fill="#16a34a" font-size="12">θ</text>
+  
+  <!-- Right angle marker where CD ∥ OB -->
+  <polyline points="150,250 195,240 205,275" fill="none" stroke="#111" stroke-width="0.8" opacity="0.3"/>
+  
+  <!-- Labels -->
+  <text x="130" y="168" font-weight="bold" font-size="13">r = 8 cm</text>
+  <text x="240" y="165" font-weight="bold" font-size="13">Arc AB</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="350" width="440" height="40" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="40" y="368">Sector OAB: r = 8 cm, ∠AOB = 1.2 rad, OC = 5 cm</text>
+  <text x="40" y="383">CD ∥ OB — Find arc length AD</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" font-family="Arial, sans-serif" font-size="14">
+  <rect width="500" height="400" fill="#fff"/>
+  
+  <title>Scatter Diagram — Positive Correlation</title>
+  
+  <!-- Axes -->
+  <line x1="60" y1="340" x2="460" y2="340" stroke="#111" stroke-width="2"/>
+  <line x1="60" y1="340" x2="60" y2="50" stroke="#111" stroke-width="2"/>
+  
+  <!-- Arrow tips -->
+  <polygon points="460,340 445,335 445,345" fill="#111"/>
+  <polygon points="60,50 55,65 65,65" fill="#111"/>
+  
+  <!-- Axis labels -->
+  <text x="250" y="380" text-anchor="middle" font-size="13">Hours Studied</text>
+  <text x="25" y="200" text-anchor="middle" font-size="13" transform="rotate(-90,25,200)">Test Score</text>
+  
+  <!-- Line of best fit -->
+  <line x1="90" y1="300" x2="430" y2="100" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="430" y="95" fill="#dc2626" font-size="12" font-style="italic">Best fit line</text>
+  
+  <!-- Data points (upward trend → positive correlation) -->
+  <circle cx="100" cy="310" r="5" fill="#2563eb"/>
+  <circle cx="130" cy="290" r="5" fill="#2563eb"/>
+  <circle cx="150" cy="280" r="5" fill="#2563eb"/>
+  <circle cx="170" cy="260" r="5" fill="#2563eb"/>
+  <circle cx="190" cy="270" r="5" fill="#2563eb"/>
+  <circle cx="210" cy="240" r="5" fill="#2563eb"/>
+  <circle cx="230" cy="230" r="5" fill="#2563eb"/>
+  <circle cx="260" cy="220" r="5" fill="#2563eb"/>
+  <circle cx="280" cy="200" r="5" fill="#2563eb"/>
+  <circle cx="300" cy="190" r="5" fill="#2563eb"/>
+  <circle cx="320" cy="180" r="5" fill="#2563eb"/>
+  <circle cx="350" cy="150" r="5" fill="#2563eb"/>
+  <circle cx="370" cy="140" r="5" fill="#2563eb"/>
+  <circle cx="400" cy="120" r="5" fill="#2563eb"/>
+  
+  <!-- Title -->
+  <text x="250" y="30" text-anchor="middle" font-weight="bold" font-size="16">Scatter Diagram — Positive Correlation</text>
+  
+  <!-- Correlation coefficient label -->
+  <text x="250" y="398" text-anchor="middle" font-size="12" fill="#64748b">r ≈ +0.76 — Strong positive correlation</text>
+</svg>

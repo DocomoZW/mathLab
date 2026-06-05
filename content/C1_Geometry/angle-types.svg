@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" font-family="Arial, sans-serif" font-size="14">
+  <rect width="800" height="200" fill="#fff"/>
+  
+  <!-- Acute angle -->
+  <text x="100" y="30" text-anchor="middle" font-weight="bold" font-size="15">Acute (30°)</text>
+  <line x1="30" y1="180" x2="30" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="30" y1="180" x2="140" y2="140" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M 30 180 L 40 180 L 50 170 L 40 170 Z" fill="#2563eb" opacity="0.2"/>
+  <path d="M 30 180 Q 50 160 60 155" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="55" y="168" fill="#dc2626" font-size="13">30°</text>
+  <circle cx="30" cy="180" r="3" fill="#2563eb"/>
+  
+  <!-- Right angle -->
+  <text x="300" y="30" text-anchor="middle" font-weight="bold" font-size="15">Right (90°)</text>
+  <line x1="230" y1="180" x2="230" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="230" y1="180" x2="330" y2="180" stroke="#2563eb" stroke-width="2.5"/>
+  <polyline points="230,150 260,150 260,180" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="280" y="165" fill="#dc2626" font-size="13">90°</text>
+  <circle cx="230" cy="180" r="3" fill="#2563eb"/>
+  
+  <!-- Obtuse angle -->
+  <text x="500" y="30" text-anchor="middle" font-weight="bold" font-size="15">Obtuse (120°)</text>
+  <line x1="430" y1="180" x2="430" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="430" y1="180" x2="500" y2="50" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M 430 180 Q 490 140 490 90" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="465" y="140" fill="#dc2626" font-size="13">120°</text>
+  <circle cx="430" cy="180" r="3" fill="#2563eb"/>
+  
+  <!-- Reflex angle -->
+  <text x="700" y="30" text-anchor="middle" font-weight="bold" font-size="15">Reflex (210°)</text>
+  <line x1="630" y1="180" x2="630" y2="80" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="630" y1="180" x2="720" y2="180" stroke="#2563eb" stroke-width="2.5"/>
+  <path d="M 630 180 Q 700 80 720 180" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="700" y="140" fill="#dc2626" font-size="13">210°</text>
+  <circle cx="630" cy="180" r="3" fill="#2563eb"/>
+</svg>

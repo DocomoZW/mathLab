@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" font-family="Arial, sans-serif" font-size="14">
+  <rect width="400" height="400" fill="#fff"/>
+  
+  <title>CAST Diagram</title>
+  
+  <!-- Quadrant axes -->
+  <line x1="200" y1="40" x2="200" y2="370" stroke="#111" stroke-width="2"/>
+  <line x1="40" y1="205" x2="370" y2="205" stroke="#111" stroke-width="2"/>
+  
+  <!-- Arrow tips -->
+  <polygon points="200,30 195,45 205,45" fill="#111"/>
+  <polygon points="380,205 365,200 365,210" fill="#111"/>
+  
+  <!-- Labels on axes -->
+  <text x="385" y="202" font-style="italic" font-weight="bold" font-size="14">x</text>
+  <text x="195" y="35" font-style="italic" font-weight="bold" font-size="14">y</text>
+  
+  <!-- Quadrant I (Top-Right) — A (All) -->
+  <rect x="205" y="45" width="155" height="150" fill="#2563eb" opacity="0.1" rx="5"/>
+  <text x="260" y="120" text-anchor="middle" font-weight="bold" font-size="28" fill="#2563eb">A</text>
+  <text x="260" y="142" text-anchor="middle" font-size="13" fill="#2563eb">All +ve</text>
+  <text x="260" y="162" text-anchor="middle" font-size="12" fill="#2563eb">0° - 90°</text>
+  
+  <!-- Quadrant II (Top-Left) — S (Sine) -->
+  <rect x="40" y="45" width="155" height="150" fill="#16a34a" opacity="0.1" rx="5"/>
+  <text x="117" y="120" text-anchor="middle" font-weight="bold" font-size="28" fill="#16a34a">S</text>
+  <text x="117" y="142" text-anchor="middle" font-size="13" fill="#16a34a">Sin +ve</text>
+  <text x="117" y="162" text-anchor="middle" font-size="12" fill="#16a34a">90° - 180°</text>
+  
+  <!-- Quadrant III (Bottom-Left) — T (Tan) -->
+  <rect x="40" y="210" width="155" height="150" fill="#ea580c" opacity="0.1" rx="5"/>
+  <text x="117" y="285" text-anchor="middle" font-weight="bold" font-size="28" fill="#ea580c">T</text>
+  <text x="117" y="307" text-anchor="middle" font-size="13" fill="#ea580c">Tan +ve</text>
+  <text x="117" y="327" text-anchor="middle" font-size="12" fill="#ea580c">180° - 270°</text>
+  
+  <!-- Quadrant IV (Bottom-Right) — C (Cos) -->
+  <rect x="205" y="210" width="155" height="150" fill="#8b5cf6" opacity="0.1" rx="5"/>
+  <text x="260" y="285" text-anchor="middle" font-weight="bold" font-size="28" fill="#8b5cf6">C</text>
+  <text x="260" y="307" text-anchor="middle" font-size="13" fill="#8b5cf6">Cos +ve</text>
+  <text x="260" y="327" text-anchor="middle" font-size="12" fill="#8b5cf6">270° - 360°</text>
+  
+  <!-- Unit circle outline -->
+  <circle cx="200" cy="205" r="155" fill="none" stroke="#64748b" stroke-width="1" stroke-dasharray="4,3"/>
+  
+  <!-- Degrees around circle -->
+  <text x="200" y="42" text-anchor="middle" font-size="11" fill="#64748b">90°</text>
+  <text x="37" y="209" text-anchor="end" font-size="11" fill="#64748b">180°</text>
+  <text x="200" y="388" text-anchor="middle" font-size="11" fill="#64748b">270° / −90°</text>
+  <text x="375" y="209" text-anchor="start" font-size="11" fill="#64748b">0° / 360°</text>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" font-weight="bold" font-size="16">CAST Diagram (ASTC)</text>
+  
+  <!-- Arrow directions (positive angle counterclockwise) -->
+  <path d="M 280 80 Q 330 130 330 190" fill="none" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

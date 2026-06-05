@@ -197,6 +197,7 @@ input{font-family:var(--font);outline:none}
 }
 .gif-player .gif-controls button:hover{background:var(--accent3);color:#fff}
 .gif-player .gif-caption{font-size:11px;color:var(--text3);padding:6px 12px;border-top:1px solid var(--border);background:var(--bg2)}
+.problem-diagram{max-width:100%;height:auto;border:1px solid var(--border);border-radius:8px;margin:12px 0;display:block;background:var(--bg2);padding:8px;box-sizing:border-box}
 
 /* ── Problems ──────────────────────────────── */
 .problems{padding-top:8px}
@@ -817,10 +818,22 @@ function escapeHtml(s){
 
 function renderMath(text){
   if(!text)return'';
-  // Escape HTML first, then LaTeX is processed by MathJax
+  // Support embedded diagrams via [img:path/to.svg] syntax
+  const imgs=[];
+  text=text.replace(/\[img:([^\]]+)\]/g,function(m,src){
+    const id='__IMG'+imgs.length+'__';
+    imgs.push({id:id,src:src});
+    return id;
+  });
+  // Escape HTML, then LaTeX is processed by MathJax
   const d=document.createElement('div');
   d.textContent=text;
-  return d.innerHTML;
+  let html=d.innerHTML;
+  // Restore image tags
+  for(const i of imgs){
+    html=html.replace(i.id,'<img src="'+i.src+'" class="problem-diagram" alt="Diagram" loading="lazy">');
+  }
+  return html;
 }
 
 function getGifForTopic(topicId, unitCode){

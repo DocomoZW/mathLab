@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 420" font-family="Arial, sans-serif" font-size="14">
+  <rect width="550" height="420" fill="#fff"/>
+  
+  <title>Parallel lines with transversal</title>
+  
+  <!-- Top parallel line -->
+  <line x1="50" y1="100" x2="500" y2="100" stroke="#111" stroke-width="3"/>
+  <text x="510" y="96" font-style="italic" font-weight="bold">A</text>
+  <text x="30" y="96" font-style="italic" font-weight="bold">C</text>
+  
+  <!-- Bottom parallel line -->
+  <line x1="50" y1="320" x2="500" y2="320" stroke="#111" stroke-width="3"/>
+  <text x="510" y="316" font-style="italic" font-weight="bold">B</text>
+  <text x="30" y="316" font-style="italic" font-weight="bold">D</text>
+  
+  <!-- Arrow markers on parallel lines -->
+  <polyline points="300,96 306,100 300,104" fill="none" stroke="#111" stroke-width="2"/>
+  <polyline points="320,96 326,100 320,104" fill="none" stroke="#111" stroke-width="2"/>
+  <polyline points="300,316 306,320 300,324" fill="none" stroke="#111" stroke-width="2"/>
+  <polyline points="320,316 326,320 320,324" fill="none" stroke="#111" stroke-width="2"/>
+  
+  <!-- Transversal (diagonal) -->
+  <line x1="100" y1="370" x2="450" y2="50" stroke="#2563eb" stroke-width="2.5"/>
+  
+  <!-- Labels for angles on top line -->
+  <!-- Top-left angle (acute, ~60°) -->
+  <path d="M 170 100 Q 165 135 145 150" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="155" y="135" fill="#dc2626" font-weight="bold" font-size="13">a</text>
+  
+  <!-- Top-right angle (obtuse) -->
+  <path d="M 170 100 Q 180 140 200 145" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="195" y="138" fill="#16a34a" font-weight="bold" font-size="13">b</text>
+  
+  <!-- Bottom-left angle (corresponding to top-left) -->
+  <path d="M 300 320 Q 290 285 270 270" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="280" y="290" fill="#dc2626" font-weight="bold" font-size="13">a</text>
+  
+  <!-- Bottom-right angle (corresponding to top-right) -->
+  <path d="M 300 320 Q 310 280 330 275" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="335" y="285" fill="#16a34a" font-weight="bold" font-size="13">b</text>
+  
+  <!-- Alternate angle marker (Z-pattern) -->
+  <g stroke="#8b5cf6" stroke-width="2" fill="none" stroke-dasharray="5,3">
+    <line x1="170" y1="100" x2="300" y2="320"/>
+    <line x1="170" y1="100" x2="130" y2="180"/>
+  </g>
+  <text x="215" y="195" fill="#8b5cf6" font-size="12" font-style="italic">Alternate (Z)</text>
+  
+  <!-- Labels -->
+  <text x="30" y="50" font-weight="bold" font-size="15">Parallel Lines &amp; Transversal</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="360" width="490" height="50" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="40" y="378" font-weight="bold">Rules:</text>
+  <text x="40" y="395" fill="#dc2626">a = a</text>
+  <text x="120" y="395" fill="#16a34a">b = b</text>
+  <text x="200" y="395" fill="#8b5cf6">a + b = 180°</text>
+  <text x="340" y="395">Corresponding (F-pattern)</text>
+  <text x="40" y="408">Alternate (Z-pattern) angles equal</text>
+  <text x="290" y="408">Co-interior (C-pattern) sum to 180°</text>
+</svg>
