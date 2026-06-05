@@ -577,13 +577,18 @@ function renderTopic(concept,problems){
     `;
   }
 
-  // Worked Example
+  // Worked Example — supports both string and {question, solution} dict
   if(s.worked_example){
-    const steps=parseSteps(s.worked_example);
+    let weText = s.worked_example;
+    // Handle dict format: {question, solution}
+    if(typeof weText === 'object' && !Array.isArray(weText)){
+      weText = (weText.question||'') + '\n\n' + (weText.solution||'');
+    }
+    const steps=parseSteps(weText);
     sectionsHtml+=`
       <div class="section">
         <h3>✏️ Worked Example</h3>
-        <div class="worked-example">${renderMath(s.worked_example)}</div>
+        <div class="worked-example">${renderMath(weText)}</div>
       </div>
     `;
   }
