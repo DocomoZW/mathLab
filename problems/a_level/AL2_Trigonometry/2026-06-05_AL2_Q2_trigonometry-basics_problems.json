@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q2",
+  "title": "Trigonometry Basics - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T10:45:00Z",
+  "problems": [
+    {
+      "id": "AL2_Q2_F01",
+      "difficulty": "F",
+      "skill_tags": ["exact values"],
+      "problem_text": "Find the exact value of $\\sin\\frac{\\pi}{3}$.",
+      "answer": "$\\frac{\\sqrt{3}}{2}$",
+      "solution": "$\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q2_F02",
+      "difficulty": "F",
+      "skill_tags": ["exact values"],
+      "problem_text": "Find the exact value of $\\cos\\frac{\\pi}{4}$.",
+      "answer": "$\\frac{\\sqrt{2}}{2}$",
+      "solution": "$\\cos\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q2_F03",
+      "difficulty": "F",
+      "skill_tags": ["trig ratios"],
+      "problem_text": "In a right-angled triangle, the side opposite angle $\\theta$ is 5 cm and the hypotenuse is 13 cm. Find $\\cos\\theta$.",
+      "answer": "$\\frac{12}{13}$",
+      "solution": "Adjacent $= \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$. $\\cos\\theta = \\frac{12}{13}$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q2_F04",
+      "difficulty": "F",
+      "skill_tags": ["trig graphs"],
+      "problem_text": "State the period and amplitude of $y = 5\\sin x$.",
+      "answer": "Period $= 2\\pi$, amplitude $= 5$",
+      "solution": "For $y = a\\sin x$, amplitude $= |a| = 5$, period $= 2\\pi$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q2_C01",
+      "difficulty": "C",
+      "skill_tags": ["exact values", "simplification"],
+      "problem_text": "Find the exact value of $\\sin\\frac{\\pi}{6}\\cos\\frac{\\pi}{3} + \\sin\\frac{\\pi}{3}\\cos\\frac{\\pi}{6}$ without using a calculator.",
+      "answer": "$1$",
+      "solution": "$\\sin\\frac{\\pi}{6}\\cos\\frac{\\pi}{3} + \\sin\\frac{\\pi}{3}\\cos\\frac{\\pi}{6} = \\frac{1}{2} \\times \\frac{1}{2} + \\frac{\\sqrt{3}}{2} \\times \\frac{\\sqrt{3}}{2} = \\frac{1}{4} + \\frac{3}{4} = 1$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_C02",
+      "difficulty": "C",
+      "skill_tags": ["trig graphs", "transformations"],
+      "problem_text": "Write down the amplitude, period, and phase shift of $y = 2\\sin\\left(3x - \\frac{\\pi}{4}\\right)$.",
+      "answer": "Amplitude $= 2$, period $= \\frac{2\\pi}{3}$, phase shift $= \\frac{\\pi}{12}$ right",
+      "solution": "Amplitude $= |2| = 2$, period $= \\frac{2\\pi}{3}$, phase shift $= -(-\\pi/4)/3 = \\pi/12$ right",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_C03",
+      "difficulty": "C",
+      "skill_tags": ["trig graphs", "sketching"],
+      "problem_text": "Sketch the graph of $y = \\cos x$ for $0 \\leq x \\leq 2\\pi$. Label the coordinates of the points where the graph meets the axes.",
+      "answer": "Points: $(0,1)$, $(\\pi/2,0)$, $(\\pi,-1)$, $(3\\pi/2,0)$, $(2\\pi,1)$",
+      "solution": "Standard cosine graph: starts at (0,1), crosses x-axis at $\\pi/2$ and $3\\pi/2$, minimum at $(\\pi,-1)$, completes cycle at $(2\\pi,1)$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_C04",
+      "difficulty": "C",
+      "skill_tags": ["exact values", "quadrant"],
+      "problem_text": "Given that $\\sin\\theta = \\frac{3}{5}$ and $\\theta$ is acute, find the exact value of $\\tan\\theta$.",
+      "answer": "$\\frac{3}{4}$",
+      "solution": "$\\cos\\theta = \\sqrt{1 - \\sin^2\\theta} = \\sqrt{1 - \\frac{9}{25}} = \\frac{4}{5}$. $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{3}{5} \\div \\frac{4}{5} = \\frac{3}{4}$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_H01",
+      "difficulty": "H",
+      "skill_tags": ["trig graphs", "transformations", "range"],
+      "problem_text": "Find the range of values of $k$ for which the equation $3\\cos x = k$ has a solution for $x \\in \\mathbb{R}$.",
+      "answer": "$-3 \\leq k \\leq 3$",
+      "solution": "Since $-1 \\leq \\cos x \\leq 1$, $-3 \\leq 3\\cos x \\leq 3$. So $k$ must satisfy $-3 \\leq k \\leq 3$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_H02",
+      "difficulty": "H",
+      "skill_tags": ["exact values", "compound"],
+      "problem_text": "Without using a calculator, find the exact value of $\\sin\\frac{5\\pi}{6} + \\cos\\frac{4\\pi}{3}$.",
+      "answer": "$0$",
+      "solution": "$\\sin\\frac{5\\pi}{6} = \\sin(\\pi - \\frac{\\pi}{6}) = \\sin\\frac{\\pi}{6} = \\frac{1}{2}$. $\\cos\\frac{4\\pi}{3} = \\cos(\\pi + \\frac{\\pi}{3}) = -\\cos\\frac{\\pi}{3} = -\\frac{1}{2}$. Sum $= \\frac{1}{2} + (-\\frac{1}{2}) = 0$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_H03",
+      "difficulty": "H",
+      "skill_tags": ["trig graphs", "multiple transformations"],
+      "problem_text": "The graph of $y = a\\sin(bx) + c$ has amplitude 4, period $\\pi$, and is shifted up by 3 units. Find $a$, $b$, and $c$.",
+      "answer": "$a = 4$, $b = 2$, $c = 3$",
+      "solution": "Amplitude $= |a| = 4 \\implies a = 4$. Period $= \\frac{2\\pi}{b} = \\pi \\implies b = 2$. Vertical shift $= c = 3$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q2_H04",
+      "difficulty": "H",
+      "skill_tags": ["trig ratios", "identities"],
+      "problem_text": "Given that $5\\cos\\theta + 12\\sin\\theta = 13$, find the value of $\\tan\\theta$.",
+      "answer": "$\\frac{12}{5}$",
+      "solution": "Compare to $R\\cos(\\theta - \\alpha)$: $R = \\sqrt{5^2 + 12^2} = 13$, $\\cos\\alpha = 5/13$, $\\sin\\alpha = 12/13$, $\\tan\\alpha = 12/5$. Equation becomes $13\\cos(\\theta - \\alpha) = 13 \\implies \\cos(\\theta - \\alpha) = 1 \\implies \\theta = \\alpha$. So $\\tan\\theta = \\tan\\alpha = 12/5$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q2_X01",
+      "difficulty": "X",
+      "skill_tags": ["trig graphs", "inequalities"],
+      "problem_text": "Find the set of values of $x$ for which $2\\sin x > 1$ for $0 \\leq x \\leq 2\\pi$.",
+      "answer": "$\\frac{\\pi}{6} < x < \\frac{5\\pi}{6}$",
+      "solution": "$2\\sin x > 1 \\implies \\sin x > 0.5$. From graph of $y = \\sin x$, $\\sin x = 0.5$ at $x = \\pi/6$ and $x = 5\\pi/6$. Since $\\sin x > 0.5$ between these, solution is $\\pi/6 < x < 5\\pi/6$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q2_X02",
+      "difficulty": "X",
+      "skill_tags": ["exact values", "compound angles"],
+      "problem_text": "Given that $\\sin A = \\frac{3}{5}$ and $\\cos B = \\frac{5}{13}$, where A and B are acute, find the exact value of $\\sin(A+B)$ without using a calculator.",
+      "answer": "$\\frac{56}{65}$",
+      "solution": "$\\cos A = \\sqrt{1 - \\frac{9}{25}} = \\frac{4}{5}$, $\\sin B = \\sqrt{1 - \\frac{25}{169}} = \\frac{12}{13}$. $\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B = \\frac{3}{5}\\times\\frac{5}{13} + \\frac{4}{5}\\times\\frac{12}{13} = \\frac{15}{65} + \\frac{48}{65} = \\frac{63}{65}$",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q2_X03",
+      "difficulty": "X",
+      "skill_tags": ["trig graphs", "modelling"],
+      "problem_text": "The depth of water in a harbour is given by $d(t) = 12 + 5\\sin\\left(\\frac{\\pi t}{6}\\right)$ where $t$ is hours after midnight. Find the maximum depth and the times at which it occurs in the first 24 hours.",
+      "answer": "Max depth $= 17$ m at $t = 3$ and $t = 15$ hours",
+      "solution": "Max when $\\sin(\\pi t/6) = 1$: $\\pi t/6 = \\pi/2 + 2n\\pi \\implies t = 3 + 12n$. For $0 \\leq t \\leq 24$, $t = 3, 15$. Max depth $= 12 + 5 = 17$ m",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q2_X04",
+      "difficulty": "X",
+      "skill_tags": ["trig ratios", "geometry"],
+      "problem_text": "A ladder of length 10 m leans against a vertical wall. The angle between the ladder and the ground is $\\theta$. The foot of the ladder is pulled away from the wall at a rate such that $\\theta$ decreases. Find the height of the top of the ladder above ground in terms of $\\theta$, and state the domain of $\\theta$ for which the ladder is valid.",
+      "answer": "Height $= 10\\sin\\theta$, domain $0 < \\theta < \\pi/2$",
+      "solution": "The ladder forms the hypotenuse. Height $= 10\\sin\\theta$. As $\\theta \\to 0$, the ladder lies flat on the ground. As $\\theta \\to \\pi/2$, the ladder is vertical. Valid domain: $0 < \\theta < \\pi/2$",
+      "marks": 4
+    }
+  ]
+}

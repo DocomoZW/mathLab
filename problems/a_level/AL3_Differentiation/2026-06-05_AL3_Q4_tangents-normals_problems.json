@@ -1,0 +1,197 @@
+{
+  "track": "a_level",
+  "unit": "AL3_Differentiation",
+  "topic_id": "AL3_Q4",
+  "title": "Tangents & Normals",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "tangent"
+      ],
+      "problem_text": "Find tangent to y=x^2 at x=1.",
+      "answer": "y=2x-1",
+      "solution": "dy/dx=2x. At x=1:gradient=2. Point(1,1). y-1=2(x-1)->y=2x-1.",
+      "marks": 3
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "normal"
+      ],
+      "problem_text": "Find normal to y=x^3 at x=1.",
+      "answer": "y=(-1/3)x+4/3",
+      "solution": "dy/dx=3x^2. At x=1:m=3. Normal m=-1/3. Point(1,1). y-1=(-1/3)(x-1)->y=(-1/3)x+4/3.",
+      "marks": 3
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "tangent"
+      ],
+      "problem_text": "Find tangent to y=2x^2-3x at x=2.",
+      "answer": "y=5x-8",
+      "solution": "dy/dx=4x-3. At x=2:m=5. Point(2,2). y-2=5(x-2)->y=5x-8.",
+      "marks": 3
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "normal"
+      ],
+      "problem_text": "Normal to y=sqrt(x) at x=4.",
+      "answer": "y=-4x+18",
+      "solution": "dy/dx=1/(2sqrt(x)). At x=4:m=1/4. Normal m=-4. Point(4,2). y-2=-4(x-4)->y=-4x+18.",
+      "marks": 3
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "tangent",
+        "point"
+      ],
+      "problem_text": "Find point on y=x^2 where tangent has gradient 6.",
+      "answer": "(3,9)",
+      "solution": "dy/dx=2x. 2x=6->x=3. y=9. Point(3,9).",
+      "marks": 2
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "normal",
+        "curve"
+      ],
+      "problem_text": "Normal to y=x^2-4x at P has gradient 1/2. Find P.",
+      "answer": "(1,-3)",
+      "solution": "dy/dx=2x-4. Tangent m=2x-4. Normal m=-1/(2x-4)=1/2->-2=2x-4->2x=2->x=1. y=1-4=-3.",
+      "marks": 4
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "tangent",
+        "intersection"
+      ],
+      "problem_text": "Find where tangent to y=x^3 at x=2 meets curve again.",
+      "answer": "(-4,-64)",
+      "solution": "m=12.Point(2,8). Tangent:y=12x-16. Solve x^3=12x-16->x^3-12x+16=0->(x-2)(x^2+2x-8)=0->x=2 or x=-4. Other:(-4,-64).",
+      "marks": 5
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "normal",
+        "equation"
+      ],
+      "problem_text": "Find normal to y=(x+1)^2 at x=0.",
+      "answer": "y=(-1/2)x+1",
+      "solution": "dy/dx=2(x+1). At x=0:m=2. Normal m=-1/2. Point(0,1). y-1=(-1/2)(x-0)->y=(-1/2)x+1.",
+      "marks": 3
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "tangent",
+        "normal",
+        "intersection"
+      ],
+      "problem_text": "Tangent and normal to y=x^2 at x=2 intersect at P. Find P.",
+      "answer": "(2,4)",
+      "solution": "Tangent:y=4x-4. Normal:y=(-1/4)x+4.5. Solve:4x-4=-0.25x+4.5->4.25x=8.5->x=2. y=4.",
+      "marks": 4
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "tangent",
+        "function"
+      ],
+      "problem_text": "Tangent to f(x)=1/x at x=1/2.",
+      "answer": "y=-4x+4",
+      "solution": "f'(x)=-1/x^2. At x=0.5:m=-4. Point(0.5,2). y-2=-4(x-0.5)->y=-4x+4.",
+      "marks": 3
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "normal",
+        "parallel"
+      ],
+      "problem_text": "Normal to y=x^3 is parallel to y=-3x+5. Find x.",
+      "answer": "x=1/3 or x=-1/3",
+      "solution": "dy/dx=3x^2. Normal m=-1/(3x^2). Set=-3->-1/(3x^2)=-3->1=9x^2->x^2=1/9->x=+-1/3.",
+      "marks": 4
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "tangent",
+        "parameter"
+      ],
+      "problem_text": "Tangent to y=x^2-2x+3 at A passes through (0,2). Find A.",
+      "answer": "(1,2) or (-1,6)",
+      "solution": "dy/dx=2x-2. At A(a,a^2-2a+3):m=2a-2. Tangent:y-(a^2-2a+3)=(2a-2)(x-a). Through(0,2):2-(a^2-2a+3)=(2a-2)(-a)->a^2-1=0->a=+-1.",
+      "marks": 5
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "tangent",
+        "perpendicular"
+      ],
+      "problem_text": "Tangents to y=x^2 at x=a and x=-a are perpendicular. Find a.",
+      "answer": "a=1/2",
+      "solution": "Gradient at a:2a. At -a:-2a. Product=-4a^2=-1->a^2=1/4->a=1/2.",
+      "marks": 4
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "normal",
+        "tangent"
+      ],
+      "problem_text": "Tangents to y=x^3-3x parallel to y=9x+2. Find equations.",
+      "answer": "y=9x-16, y=9x+16",
+      "solution": "dy/dx=3x^2-3=9->3x^2=12->x^2=4->x=+-2. At x=2:y=2,tangent:y=9x-16. At x=-2:y=-2,tangent:y=9x+16.",
+      "marks": 5
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "tangent",
+        "geometry"
+      ],
+      "problem_text": "Prove tangent to y=1/x at (a,1/a) forms triangle area 2 with axes.",
+      "answer": "Area=2",
+      "solution": "Tangent:y-1/a=(-1/a^2)(x-a). x=0:y=2/a. y=0:x=2a. Area=0.5*2a*2/a=2.",
+      "marks": 5
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "normal",
+        "optimisation"
+      ],
+      "problem_text": "A normal to y=x^2 passes through (0,2). Find the point of contact.",
+      "answer": "(sqrt(2),2) or (-sqrt(2),2)",
+      "solution": "Let point(a,a^2). dy/dx=2a. Normal m=-1/(2a). Equation:y-a^2=(-1/(2a))(x-a). Through(0,2):2-a^2=(-1/(2a))(-a)=1/2. a^2=3/2. a=+-sqrt(1.5). Points:(+sqrt(1.5),1.5).",
+      "marks": 5
+    }
+  ]
+}

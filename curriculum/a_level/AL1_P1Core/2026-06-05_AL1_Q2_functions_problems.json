@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL1_P1Core",
+  "topic_id": "AL1_Q2",
+  "title": "Functions - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T10:40:00Z",
+  "problems": [
+    {
+      "id": "AL1_Q2_F01",
+      "difficulty": "F",
+      "skill_tags": ["domain", "range"],
+      "problem_text": "State the range of $f(x) = x^2 + 3$ for the domain $x \\in \\mathbb{R}$.",
+      "answer": "$f(x) \\geq 3$",
+      "solution": "Since $x^2 \\geq 0$ for all real $x$, $x^2 + 3 \\geq 3$. Range: $[3, \\infty)$.",
+      "marks": 1
+    },
+    {
+      "id": "AL1_Q2_F02",
+      "difficulty": "F",
+      "skill_tags": ["inverse function"],
+      "problem_text": "Find $f^{-1}(x)$ when $f(x) = 4x - 7$.",
+      "answer": "$f^{-1}(x) = \\frac{x + 7}{4}$",
+      "solution": "$y = 4x - 7 \\implies 4x = y + 7 \\implies x = \\frac{y + 7}{4}$. So $f^{-1}(x) = \\frac{x + 7}{4}$.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q2_F03",
+      "difficulty": "F",
+      "skill_tags": ["composite function"],
+      "problem_text": "Given $f(x) = 2x + 1$ and $g(x) = x^2$, find $fg(3)$.",
+      "answer": "$fg(3) = 19$",
+      "solution": "$fg(3) = f(g(3)) = f(9) = 2(9) + 1 = 19$.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q2_F04",
+      "difficulty": "F",
+      "skill_tags": ["transformation"],
+      "problem_text": "The graph of $y = f(x)$ is translated by $3$ units upward. Write the equation of the transformed graph.",
+      "answer": "$y = f(x) + 3$",
+      "solution": "A vertical translation upward by $a$ units is $y = f(x) + a$. So $y = f(x) + 3$.",
+      "marks": 1
+    },
+    {
+      "id": "AL1_Q2_C01",
+      "difficulty": "C",
+      "skill_tags": ["domain", "range", "composite"],
+      "problem_text": "Functions $f$ and $g$ are defined by $f(x) = \\sqrt{x - 1}$, $x \\geq 1$, and $g(x) = 2x + 5$, $x \\in \\mathbb{R}$. Find $fg(x)$ and state its domain.",
+      "answer": "$fg(x) = \\sqrt{2x + 4}$, domain $x \\geq -2$",
+      "solution": "$fg(x) = f(g(x)) = f(2x + 5) = \\sqrt{2x + 5 - 1} = \\sqrt{2x + 4}$. For domain: $2x + 4 \\geq 0 \\implies x \\geq -2$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q2_C02",
+      "difficulty": "C",
+      "skill_tags": ["inverse function", "range"],
+      "problem_text": "Given $f(x) = 3 - 2x$ for $x \\in \\mathbb{R}$, find $f^{-1}(x)$ and state its range.",
+      "answer": "$f^{-1}(x) = \\frac{3 - x}{2}$, range $\\mathbb{R}$",
+      "solution": "$y = 3 - 2x \\implies 2x = 3 - y \\implies x = \\frac{3 - y}{2}$. So $f^{-1}(x) = \\frac{3 - x}{2}$. Range of $f^{-1}$ equals domain of $f$, which is $\\mathbb{R}$.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q2_C03",
+      "difficulty": "C",
+      "skill_tags": ["transformation", "graph"],
+      "problem_text": "The graph of $y = f(x)$ is transformed to $y = f(x - 2)$. Describe the transformation in words.",
+      "answer": "Translation 2 units to the right",
+      "solution": "$y = f(x - 2)$ shifts the graph of $y = f(x)$ by 2 units to the right.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q2_C04",
+      "difficulty": "C",
+      "skill_tags": ["composite", "equation"],
+      "problem_text": "Given $f(x) = x^2 + 1$ and $g(x) = 3x - 2$, solve $fg(x) = gf(x)$.",
+      "answer": "$x = \\frac{1}{2}$ or $x = 1$",
+      "solution": "$fg(x) = f(3x-2) = (3x-2)^2 + 1 = 9x^2 - 12x + 4 + 1 = 9x^2 - 12x + 5$. $gf(x) = g(x^2+1) = 3(x^2+1) - 2 = 3x^2 + 3 - 2 = 3x^2 + 1$. $9x^2 - 12x + 5 = 3x^2 + 1 \\implies 6x^2 - 12x + 4 = 0 \\implies 3x^2 - 6x + 2 = 0 \\implies x = \\frac{6 \\pm \\sqrt{36 - 24}}{6} = \\frac{6 \\pm \\sqrt{12}}{6} = 1 \\pm \\frac{\\sqrt{3}}{3}$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q2_H01",
+      "difficulty": "H",
+      "skill_tags": ["inverse", "quadratic", "restricted domain"],
+      "problem_text": "The function $f$ is defined by $f(x) = x^2 - 4x + 5$ for $x \\geq 2$. Find $f^{-1}(x)$ and state its domain.",
+      "answer": "$f^{-1}(x) = 2 + \\sqrt{x - 1}$, domain $x \\geq 1$",
+      "solution": "Complete square: $f(x) = (x - 2)^2 + 1$. For $x \\geq 2$, $y = (x-2)^2 + 1 \\implies (x-2)^2 = y - 1 \\implies x - 2 = \\sqrt{y - 1}$ (positive root since $x \\geq 2$) $\\implies x = 2 + \\sqrt{y - 1}$. So $f^{-1}(x) = 2 + \\sqrt{x - 1}$. Range of $f$ is $[1, \\infty)$, so domain of $f^{-1}$ is $x \\geq 1$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q2_H02",
+      "difficulty": "H",
+      "skill_tags": ["composite", "inverse", "equation"],
+      "problem_text": "Given $f(x) = \\frac{2x}{x - 1}, x \\neq 1$, find $f^{-1}(x)$. Hence solve $f(x) = f^{-1}(x)$.",
+      "answer": "$f^{-1}(x) = \\frac{x}{x - 2}$, $x \\neq 2$. Solutions: $x = 0$ or $x = 3$",
+      "solution": "$y = \\frac{2x}{x-1} \\implies y(x-1) = 2x \\implies yx - y = 2x \\implies yx - 2x = y \\implies x(y-2) = y \\implies x = \\frac{y}{y-2}$. So $f^{-1}(x) = \\frac{x}{x-2}$.\n$f(x) = f^{-1}(x)$: $\\frac{2x}{x-1} = \\frac{x}{x-2}$. Cross-multiply: $2x(x-2) = x(x-1) \\implies 2x^2 - 4x = x^2 - x \\implies x^2 - 3x = 0 \\implies x(x-3) = 0 \\implies x = 0$ or $x = 3$.",
+      "marks": 5
+    },
+    {
+      "id": "AL1_Q2_H03",
+      "difficulty": "H",
+      "skill_tags": ["transformation", "sequence"],
+      "problem_text": "The graph of $y = x^2$ is transformed: first translated 3 units left, then reflected in the $x$-axis, then translated 2 units up. Find the equation of the final graph.",
+      "answer": "$y = -(x + 3)^2 + 2$",
+      "solution": "$y = x^2$. Translation 3 left: $y = (x + 3)^2$. Reflection in $x$-axis: $y = -(x + 3)^2$. Translation 2 up: $y = -(x + 3)^2 + 2$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q2_H04",
+      "difficulty": "H",
+      "skill_tags": ["function", "composite", "domain"],
+      "problem_text": "Functions $f$ and $g$ are defined by $f(x) = \\frac{1}{x - 2}, x \\neq 2$ and $g(x) = x^2 + 3, x \\in \\mathbb{R}$. Find the composite function $gf(x)$ and state its domain.",
+      "answer": "$gf(x) = \\frac{1}{(x-2)^2} + 3$, domain $x \\neq 2$",
+      "solution": "$gf(x) = g(f(x)) = g\\left(\\frac{1}{x-2}\\right) = \\left(\\frac{1}{x-2}\\right)^2 + 3 = \\frac{1}{(x-2)^2} + 3$. Domain: $x \\neq 2$ (from $f$'s domain).",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q2_X01",
+      "difficulty": "X",
+      "skill_tags": ["function", "inverse", "self-inverse"],
+      "problem_text": "Given $f(x) = \\frac{ax + b}{cx - a}$ for $x \\neq \\frac{a}{c}$, prove that $f$ is self-inverse (i.e., $f^{-1}(x) = f(x)$).",
+      "answer": "Proof",
+      "solution": "Let $y = \\frac{ax + b}{cx - a}$. Then $y(cx - a) = ax + b \\implies cxy - ay = ax + b \\implies cxy - ax = ay + b \\implies x(cy - a) = ay + b \\implies x = \\frac{ay + b}{cy - a}$. So $f^{-1}(x) = \\frac{ax + b}{cx - a} = f(x)$. Therefore $f$ is self-inverse.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q2_X02",
+      "difficulty": "X",
+      "skill_tags": ["function", "composite", "unknown function"],
+      "problem_text": "Given $f(x) = 3x + 2$ and $fg(x) = 6x - 7$, find $g(x)$.",
+      "answer": "$g(x) = 2x - 3$",
+      "solution": "$fg(x) = f(g(x)) = 3g(x) + 2 = 6x - 7 \\implies 3g(x) = 6x - 9 \\implies g(x) = 2x - 3$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q2_X03",
+      "difficulty": "X",
+      "skill_tags": ["function", "range", "quadratic"],
+      "problem_text": "The function $f(x) = 2x^2 - 4x + 5$ has domain $0 \\leq x \\leq 4$. Find the range of $f$.",
+      "answer": "$3 \\leq f(x) \\leq 21$",
+      "solution": "$f(x) = 2(x-1)^2 + 3$. Vertex at $x=1$, within domain. $f(1) = 3$, $f(0) = 5$, $f(4) = 2(3)^2 + 3 = 21$. Range: $[3, 21]$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q2_X04",
+      "difficulty": "X",
+      "skill_tags": ["function", "inverse", "composite", "equation"],
+      "problem_text": "Given $f(x) = 2x + 1$ and $g(x) = x^2 - 3$, find $(fg)^{-1}(x)$ and $(f^{-1}g^{-1})(x)$. Are they equal?",
+      "answer": "$(fg)^{-1}(x) = \\sqrt{\\frac{x-1}{2}} + 3$ no — let me redo: $(fg)(x) = f(g(x)) = 2(x^2-3) + 1 = 2x^2 - 5$. So $(fg)^{-1}(x) = \\sqrt{\\frac{x+5}{2}}$ (for $x \\geq -5$). $f^{-1}(x) = \\frac{x-1}{2}$, $g^{-1}(x) = \\sqrt{x+3}$. $f^{-1}g^{-1}(x) = \\frac{\\sqrt{x+3} - 1}{2}$. Not equal.",
+      "solution": "$(fg)(x) = 2(x^2-3)+1 = 2x^2-5$. $(fg)^{-1}(x) = \\sqrt{\\frac{x+5}{2}}$. $f^{-1}(x) = \\frac{x-1}{2}$, $g^{-1}(x) = \\sqrt{x+3}$. $f^{-1}g^{-1}(x) = f^{-1}(\\sqrt{x+3}) = \\frac{\\sqrt{x+3}-1}{2}$. These are not equal.",
+      "marks": 5
+    }
+  ]
+}

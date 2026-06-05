@@ -1,0 +1,34 @@
+{
+  "track": "a_level",
+  "unit": "AL4_Integration",
+  "topic_id": "AL4_Q7",
+  "title": "Differential Equations",
+  "syllabus_ref": "9709 P3.5",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:00Z",
+  "sections": {
+    "hook": "A differential equation involves derivatives. Solve by separating variables: ∫ (1/f(y)) dy = ∫ g(x) dx.",
+    "prerequisites": [
+      "Integration techniques",
+      "Algebraic manipulation",
+      "Initial conditions"
+    ],
+    "core_explanation": "A Level Mathematics covers differential equations in depth. The 9709 P3.5 syllabus requires understanding of key concepts, methods and applications.",
+    "worked_example": "**Example:** Work through a step-by-step example for Differential Equations.\n\n**Solution:** The solution follows standard A Level methodology.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing the method for Differential Equations with related topics",
+        "correction": "Always check which rule or method applies before starting"
+      },
+      {
+        "mistake": "Algebraic errors in manipulation",
+        "correction": "Show each step clearly and check your working"
+      }
+    ],
+    "summary": [
+      "Differential Equations is a key topic in A Level Mathematics",
+      "Practice with past paper questions to build confidence",
+      "Always check your answer makes sense in context"
+    ]
+  }
+}

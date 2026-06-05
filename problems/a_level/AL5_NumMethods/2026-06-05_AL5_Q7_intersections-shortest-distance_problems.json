@@ -1,0 +1,201 @@
+{
+  "track": "a_level",
+  "unit": "AL5_NumMethods",
+  "topic_id": "AL5_Q7",
+  "title": "Intersections & Shortest Distance",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "distance",
+        "point-point"
+      ],
+      "problem_text": "Distance between (1,2,3) and (4,5,7).",
+      "answer": "sqrt(34)",
+      "solution": "d=sqrt(9+9+16)=sqrt34.",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "intersection",
+        "line-line"
+      ],
+      "problem_text": "Intersect r=(1,2,3)+t(1,0,0) and r=(4,2,3)+s(0,1,0).",
+      "answer": "(4,2,3)",
+      "solution": "1+t=4->t=3.",
+      "marks": 2
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "distance",
+        "point-line"
+      ],
+      "problem_text": "Dist from (0,0,0) to r=(1,0,0)+t(0,1,0).",
+      "answer": "1",
+      "solution": "Line is x=1. Min dist=1.",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "distance",
+        "point-line"
+      ],
+      "problem_text": "Dist from (1,2,3) to r=(1,2,0)+t(0,0,1).",
+      "answer": "0 (point on line)",
+      "solution": "(1,2,3) = (1,2,0)+3(0,0,1).",
+      "marks": 2
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "distance",
+        "point-line"
+      ],
+      "problem_text": "Dist from (0,0,0) to r=(1,2,2)+t(2,1,2).",
+      "answer": "sqrt(17)/3",
+      "solution": "|d x AP|=|(2,2,-3)|=sqrt17. |d|=3.",
+      "marks": 4
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "intersection",
+        "line-line"
+      ],
+      "problem_text": "Intersect r=(1,0,2)+s(2,1,3) and r=(0,1,1)+t(1,2,1).",
+      "answer": "No intersection",
+      "solution": "Solve:1+2s=t, s=1+2t,2+3s=1+t. No solution.",
+      "marks": 3
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "distance",
+        "parallel-lines"
+      ],
+      "problem_text": "Dist between r=(1,2,3)+t(1,1,1) and r=(2,3,4)+s(1,1,1).",
+      "answer": "0 (same line)",
+      "solution": "(2,3,4) = (1,2,3)+(1,1,1). Same line.",
+      "marks": 2
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "distance",
+        "skew-lines"
+      ],
+      "problem_text": "Dist between r=(1,0,0)+s(1,1,1) and r=(0,1,0)+t(1,0,1).",
+      "answer": "1/sqrt2",
+      "solution": "cross=(1,0,-1). |cross|=sqrt2. |AB.(cross)|=1.",
+      "marks": 4
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "distance",
+        "point-line",
+        "formula"
+      ],
+      "problem_text": "Formula for shortest dist from P to r=a+td.",
+      "answer": "d=|(a-P)x d|/|d|",
+      "solution": "Cross product magnitude over |d|.",
+      "marks": 2
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "intersection",
+        "line-plane"
+      ],
+      "problem_text": "Line r=(1,2,3)+t(1,1,2) with plane x+y+z=10.",
+      "answer": "(2,3,5)",
+      "solution": "1+t+2+t+3+2t=10->6+4t=10->t=1. (2,3,5).",
+      "marks": 2
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "distance",
+        "point-line"
+      ],
+      "problem_text": "Dist from (2,3,4) to r=(1,1,1)+t(1,2,3).",
+      "answer": "0 (point on line)",
+      "solution": "(2,3,4)=(1,1,1)+1*(1,2,3).",
+      "marks": 3
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "distance",
+        "line-line"
+      ],
+      "problem_text": "Shortest dist between intersecting lines?",
+      "answer": "0",
+      "solution": "They meet at a point.",
+      "marks": 1
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "intersection",
+        "three-lines"
+      ],
+      "problem_text": "Do r=(1,0,0)+t(1,1,0), r=(0,1,0)+s(1,-1,0), r=(0,0,1)+u(0,0,1) meet?",
+      "answer": "No common point",
+      "solution": "L1&L2 meet at (1,1,0). L3 is (0,0,1+u).",
+      "marks": 3
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "distance",
+        "application"
+      ],
+      "problem_text": "Aircraft: r1=(0,0,10)+t(200,0,0), r2=(5,0,9.5)+t(0,200,0.1). Min dist?",
+      "answer": "~3.57 km at t=0.0125h",
+      "solution": "Distance^2=(200t-5)^2+(200t)^2+(0.5-0.1t)^2. Minimize.",
+      "marks": 5
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "distance",
+        "derivation"
+      ],
+      "problem_text": "Derive distance formula for skew lines.",
+      "answer": "d=|(b-a).(dxe)|/|dxe|",
+      "solution": "Vector between lines projected onto direction of cross product.",
+      "marks": 4
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "intersection",
+        "proof"
+      ],
+      "problem_text": "Prove angle between lines: cos theta = |d.e|/(|d||e|).",
+      "answer": "Proof",
+      "solution": "Dot product of direction vectors.",
+      "marks": 2
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q1",
+  "title": "Circular Measure",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T10:00:00Z",
+  "sections": {
+    "hook": "A slice of pizza has a crust length (arc) and a tip angle; an engineer needs the exact curved length of a bridge arch. Radians make these calculations natural and direct, linking angle directly to distance on the circle.",
+    "prerequisites": [
+      "IGCSE circle properties: radius, diameter, circumference, area",
+      "Degrees and angle measurement",
+      "Basic proportion reasoning"
+    ],
+    "core_explanation": "## Radians\n\nOne radian is the angle subtended at the centre of a circle by an arc equal in length to the radius.\n$$360^\\circ = 2\\pi \\text{ radians} \\quad \\text{so} \\quad 1 \\text{ radian} = \\frac{180^\\circ}{\\pi} \\approx 57.3^\\circ$$\n\n**Converting:**\n- Degrees to radians: multiply by $\\frac{\\pi}{180}$\n- Radians to degrees: multiply by $\\frac{180}{\\pi}$\n\n## Arc Length\n\nFor a circle of radius $r$, the length $s$ of an arc subtending angle $\\theta$ radians at the centre is:\n$$s = r\\theta$$\n\n## Sector Area\n\nFor a circle of radius $r$, the area $A$ of a sector with angle $\\theta$ radians is:\n$$A = \\frac{1}{2}r^2\\theta$$\n\n## Segment Area\n\nThe area of a segment (region between a chord and its arc) is:\n$$\\text{Segment area} = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$$\n\n## Perimeter of a Sector\n\n$$P = 2r + r\\theta = r(2 + \\theta)$$\n\n## Applying Circular Measure\n\nCommon exam problems combine arc length and sector area with triangles, often using the sine rule or cosine rule to find chord lengths and segment heights.",
+    "worked_example": {
+      "question": "A sector of a circle has radius 8 cm and angle $1.2$ radians.\n(a) Find the arc length.\n(b) Find the area of the sector.\n(c) Find the area of the segment bounded by the chord and the arc.",
+      "solution": "(a) Arc length $s = r\\theta = 8 \\times 1.2 = 9.6$ cm\n\n(b) Sector area $A = \\frac{1}{2}r^2\\theta = \\frac{1}{2} \\times 8^2 \\times 1.2 = \\frac{1}{2} \\times 64 \\times 1.2 = 38.4$ cm$^2$\n\n(c) Segment area $= \\frac{1}{2}r^2(\\theta - \\sin\\theta) = \\frac{1}{2} \\times 64 \\times (1.2 - \\sin 1.2)$\n$\\sin 1.2 \\approx 0.9320$\nSegment area $= 32 \\times (1.2 - 0.9320) = 32 \\times 0.268 = 8.576$ cm$^2$"
+    },
+    "common_mistakes": [
+      {"mistake": "Using degrees instead of radians in arc length and sector area formulas.", "correction": "Always convert the angle to radians before applying $s = r\\theta$ or $A = \\frac{1}{2}r^2\\theta$."},
+      {"mistake": "Confusing sector area with segment area.", "correction": "Sector area is the whole slice; segment area excludes the triangle: $A_{\\text{seg}} = \\frac{1}{2}r^2(\\theta - \\sin\\theta)$."},
+      {"mistake": "Forgetting the $\\frac{1}{2}$ in the sector area formula.", "correction": "Memorise: $A = \\frac{1}{2}r^2\\theta$ not $r^2\\theta$. The $\\frac{1}{2}$ mirrors area of a triangle $\\frac{1}{2}ab\\sin C$."},
+      {"mistake": "Using calculator in degree mode when working in radians.", "correction": "Always set your calculator to radian mode when angles are in radians. Check the mode before computing trig values."}
+    ],
+    "summary": [
+      "Radians: $2\\pi$ rad $= 360^\\circ$. Convert rad $\\leftrightarrow$ deg by multiplying by $\\frac{180}{\\pi}$ or $\\frac{\\pi}{180}$.",
+      "Arc length: $s = r\\theta$ where $\\theta$ is in radians.",
+      "Sector area: $A = \\frac{1}{2}r^2\\theta$ where $\\theta$ is in radians.",
+      "Segment area: $\\frac{1}{2}r^2(\\theta - \\sin\\theta)$ where $\\theta$ is in radians.",
+      "Always set calculator to radian mode when working with radian measure."
+    ]
+  }
+}

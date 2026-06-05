@@ -1,0 +1,36 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q6",
+  "title": "Differentiation of Trig",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T10:50:00Z",
+  "sections": {
+    "hook": "A pendulum swings back and forth. Its velocity is fastest at the bottom and zero at the extremes. Differentiating $x = A\\cos(\\omega t)$ gives the velocity $v = -A\\omega\\sin(\\omega t)$ — calculus reveals the hidden dynamics of oscillatory motion.",
+    "prerequisites": [
+      "Basic differentiation rules (power rule, chain rule)",
+      "Trigonometric functions and their graphs",
+      "Radians (required for calculus of trig functions)",
+      "Stationary points and tangents"
+    ],
+    "core_explanation": "## Derivatives of Sine and Cosine\n\n**IMPORTANT:** These formulas are only valid when $x$ is in **radians**.\n\n$$\\frac{d}{dx}(\\sin x) = \\cos x$$\n$$\\frac{d}{dx}(\\cos x) = -\\sin x$$\n\n## Chain Rule with Trig Functions\n\n$$\\frac{d}{dx}\\left[\\sin(ax + b)\\right] = a\\cos(ax + b)$$\n$$\\frac{d}{dx}\\left[\\cos(ax + b)\\right] = -a\\sin(ax + b)$$\n\nMore generally:\n$$\\frac{d}{dx}\\left[\\sin f(x)\\right] = f'(x)\\cos f(x)$$\n$$\\frac{d}{dx}\\left[\\cos f(x)\\right] = -f'(x)\\sin f(x)$$\n\n## Product Rule with Trig\n\n$$\\frac{d}{dx}\\left[x^2\\sin x\\right] = 2x\\sin x + x^2\\cos x$$\n\n## Quotient Rule with Trig\n\n$$\\frac{d}{dx}\\left[\\frac{\\sin x}{x}\\right] = \\frac{x\\cos x - \\sin x}{x^2}$$\n\n## Tangents and Normals\n\nTo find the tangent to $y = f(x)$ at $x = a$:\n1. Find $y$ coordinate: $f(a)$\n2. Find gradient: $f'(a)$\n3. Use $y - f(a) = f'(a)(x - a)$\n\nThe normal has gradient $-\\frac{1}{f'(a)}$.\n\n## Stationary Points\n\nSet $f'(x) = 0$ and solve. Use second derivative or sign diagram to determine nature.",
+    "worked_example": {
+      "question": "Find the equation of the tangent to the curve $y = 3\\sin\\left(2x - \\frac{\\pi}{3}\\right)$ at the point where $x = \\frac{\\pi}{2}$, giving your answer in the form $y = mx + c$.",
+      "solution": "$y = 3\\sin\\left(2x - \\frac{\\pi}{3}\\right)$\n$\\frac{dy}{dx} = 3 \\times 2 \\times \\cos\\left(2x - \\frac{\\pi}{3}\\right) = 6\\cos\\left(2x - \\frac{\\pi}{3}\\right)$\n\nAt $x = \\frac{\\pi}{2}$:\n$y = 3\\sin\\left(\\pi - \\frac{\\pi}{3}\\right) = 3\\sin\\frac{2\\pi}{3} = 3 \\times \\frac{\\sqrt{3}}{2} = \\frac{3\\sqrt{3}}{2}$\n\nGradient: $m = 6\\cos\\left(\\pi - \\frac{\\pi}{3}\\right) = 6\\cos\\frac{2\\pi}{3} = 6 \\times \\left(-\\frac{1}{2}\\right) = -3$\n\nTangent equation: $y - \\frac{3\\sqrt{3}}{2} = -3\\left(x - \\frac{\\pi}{2}\\right)$\n$y = -3x + \\frac{3\\pi}{2} + \\frac{3\\sqrt{3}}{2}$"
+    },
+    "common_mistakes": [
+      {"mistake": "Using degrees when differentiating trig functions.", "correction": "The derivative formulas $\\frac{d}{dx}\\sin x = \\cos x$ ONLY work in radians. Always convert to radians before differentiating."},
+      {"mistake": "Forgetting the chain rule factor when differentiating $\\sin(ax+b)$.", "correction": "$\\frac{d}{dx}\\sin(ax+b) = a\\cos(ax+b)$. The $a$ factor comes from the chain rule."},
+      {"mistake": "Writing $\\frac{d}{dx}\\cos x = \\sin x$ (missing the negative sign).", "correction": "Remember: derivative of $\\cos x$ is $-\\sin x$. The negative sign is crucial."},
+      {"mistake": "Confusing the derivative of $\\sin x$ with the integral.", "correction": "$\\frac{d}{dx}\\sin x = \\cos x$ but $\\int\\sin x\\,dx = -\\cos x + c$. The signs differ!"}
+    ],
+    "summary": [
+      "$\frac{d}{dx}(\\sin x) = \\cos x$ and $\\frac{d}{dx}(\\cos x) = -\\sin x$ (radians only).",
+      "Chain rule: $\\frac{d}{dx}\\sin(f(x)) = f'(x)\\cos f(x)$.",
+      "Use product and quotient rules when trig functions combine with other functions.",
+      "Tangents: gradient from derivative at the point.",
+      "Stationary points: set $f'(x) = 0$, solve, classify with $f''(x)$."
+    ]
+  }
+}

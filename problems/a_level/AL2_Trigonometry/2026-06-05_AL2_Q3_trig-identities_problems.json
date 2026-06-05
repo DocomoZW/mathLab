@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q3",
+  "title": "Trig Identities - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T10:55:00Z",
+  "problems": [
+    {
+      "id": "AL2_Q3_F01",
+      "difficulty": "F",
+      "skill_tags": ["Pythagorean identity"],
+      "problem_text": "Simplify $\\sin^2\\theta + \\cos^2\\theta$.",
+      "answer": "1",
+      "solution": "$\\sin^2\\theta + \\cos^2\\theta \\equiv 1$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q3_F02",
+      "difficulty": "F",
+      "skill_tags": ["tangent identity"],
+      "problem_text": "Write $\\frac{\\sin\\theta}{\\cos\\theta}$ in terms of a single trigonometric function.",
+      "answer": "$\\tan\\theta$",
+      "solution": "$\\frac{\\sin\\theta}{\\cos\\theta} \\equiv \\tan\\theta$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q3_F03",
+      "difficulty": "F",
+      "skill_tags": ["Pythagorean identity"],
+      "problem_text": "Given that $\\sin\\theta = \\frac{4}{5}$ and $\\theta$ is acute, find $\\cos^2\\theta$.",
+      "answer": "$\\frac{9}{25}$",
+      "solution": "$\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{16}{25} = \\frac{9}{25}$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q3_F04",
+      "difficulty": "F",
+      "skill_tags": ["simplification"],
+      "problem_text": "Simplify $\\frac{\\sin\\theta}{\\cos\\theta} \\cdot \\cos\\theta$.",
+      "answer": "$\\sin\\theta$",
+      "solution": "$\\frac{\\sin\\theta}{\\cos\\theta} \\cdot \\cos\\theta = \\sin\\theta$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q3_C01",
+      "difficulty": "C",
+      "skill_tags": ["simplification", "identities"],
+      "problem_text": "Simplify $\\frac{\\sin^2\\theta}{1 - \\cos\\theta}$.",
+      "answer": "$1 + \\cos\\theta$",
+      "solution": "$\\frac{\\sin^2\\theta}{1 - \\cos\\theta} = \\frac{1 - \\cos^2\\theta}{1 - \\cos\\theta} = \\frac{(1-\\cos\\theta)(1+\\cos\\theta)}{1-\\cos\\theta} = 1 + \\cos\\theta$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q3_C02",
+      "difficulty": "C",
+      "skill_tags": ["proof", "identities"],
+      "problem_text": "Prove that $\\cos^2\\theta(\\tan^2\\theta + 1) \\equiv 1$.",
+      "answer": "",
+      "solution": "LHS $= \\cos^2\\theta(\\tan^2\\theta + 1) = \\cos^2\\theta\\left(\\frac{\\sin^2\\theta}{\\cos^2\\theta} + 1\\right) = \\cos^2\\theta\\left(\\frac{\\sin^2\\theta + \\cos^2\\theta}{\\cos^2\\theta}\\right) = \\sin^2\\theta + \\cos^2\\theta = 1 =$ RHS",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q3_C03",
+      "difficulty": "C",
+      "skill_tags": ["simplification", "identities"],
+      "problem_text": "Simplify $\\frac{1}{\\cos\\theta} - \\cos\\theta$.",
+      "answer": "$\\frac{\\sin^2\\theta}{\\cos\\theta}$",
+      "solution": "$\\frac{1}{\\cos\\theta} - \\cos\\theta = \\frac{1 - \\cos^2\\theta}{\\cos\\theta} = \\frac{\\sin^2\\theta}{\\cos\\theta}$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q3_C04",
+      "difficulty": "C",
+      "skill_tags": ["proof", "identities"],
+      "problem_text": "Prove that $(\\sin\\theta + \\cos\\theta)^2 \\equiv 1 + 2\\sin\\theta\\cos\\theta$.",
+      "answer": "",
+      "solution": "LHS $= \\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta = (\\sin^2\\theta + \\cos^2\\theta) + 2\\sin\\theta\\cos\\theta = 1 + 2\\sin\\theta\\cos\\theta =$ RHS",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q3_H01",
+      "difficulty": "H",
+      "skill_tags": ["proof", "identities", "algebraic manipulation"],
+      "problem_text": "Prove the identity $\\frac{\\cos\\theta}{1 + \\sin\\theta} + \\frac{1 + \\sin\\theta}{\\cos\\theta} \\equiv \\frac{2}{\\cos\\theta}$.",
+      "answer": "",
+      "solution": "LHS $= \\frac{\\cos\\theta}{1+\\sin\\theta} + \\frac{1+\\sin\\theta}{\\cos\\theta} = \\frac{\\cos^2\\theta + (1+\\sin\\theta)^2}{\\cos\\theta(1+\\sin\\theta)} = \\frac{\\cos^2\\theta + 1 + 2\\sin\\theta + \\sin^2\\theta}{\\cos\\theta(1+\\sin\\theta)} = \\frac{2 + 2\\sin\\theta}{\\cos\\theta(1+\\sin\\theta)} = \\frac{2(1+\\sin\\theta)}{\\cos\\theta(1+\\sin\\theta)} = \\frac{2}{\\cos\\theta} =$ RHS",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q3_H02",
+      "difficulty": "H",
+      "skill_tags": ["proof", "identities"],
+      "problem_text": "Prove that $\\frac{\\sin\\theta}{1 - \\cos\\theta} - \\frac{1}{\\tan\\theta} \\equiv \\frac{1}{\\sin\\theta}$.",
+      "answer": "",
+      "solution": "LHS $= \\frac{\\sin\\theta}{1-\\cos\\theta} - \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{\\sin^2\\theta - \\cos\\theta(1-\\cos\\theta)}{\\sin\\theta(1-\\cos\\theta)} = \\frac{\\sin^2\\theta - \\cos\\theta + \\cos^2\\theta}{\\sin\\theta(1-\\cos\\theta)} = \\frac{1 - \\cos\\theta}{\\sin\\theta(1-\\cos\\theta)} = \\frac{1}{\\sin\\theta} =$ RHS",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q3_H03",
+      "difficulty": "H",
+      "skill_tags": ["simplification", "identities"],
+      "problem_text": "Simplify $\\frac{\\sin\\theta}{1 + \\cos\\theta} + \\frac{1 + \\cos\\theta}{\\sin\\theta}$.",
+      "answer": "$\\frac{2}{\\sin\\theta}$",
+      "solution": "$\\frac{\\sin\\theta}{1+\\cos\\theta} + \\frac{1+\\cos\\theta}{\\sin\\theta} = \\frac{\\sin^2\\theta + (1+\\cos\\theta)^2}{\\sin\\theta(1+\\cos\\theta)} = \\frac{\\sin^2\\theta + 1 + 2\\cos\\theta + \\cos^2\\theta}{\\sin\\theta(1+\\cos\\theta)} = \\frac{2 + 2\\cos\\theta}{\\sin\\theta(1+\\cos\\theta)} = \\frac{2}{\\sin\\theta}$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q3_H04",
+      "difficulty": "H",
+      "skill_tags": ["proof", "identities"],
+      "problem_text": "Prove that $\\frac{1 - \\sin\\theta}{\\cos\\theta} \\equiv \\frac{\\cos\\theta}{1 + \\sin\\theta}$.",
+      "answer": "",
+      "solution": "LHS $= \\frac{1 - \\sin\\theta}{\\cos\\theta} = \\frac{(1-\\sin\\theta)(1+\\sin\\theta)}{\\cos\\theta(1+\\sin\\theta)} = \\frac{1 - \\sin^2\\theta}{\\cos\\theta(1+\\sin\\theta)} = \\frac{\\cos^2\\theta}{\\cos\\theta(1+\\sin\\theta)} = \\frac{\\cos\\theta}{1+\\sin\\theta} =$ RHS",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q3_X01",
+      "difficulty": "X",
+      "skill_tags": ["proof", "identities", "fractions"],
+      "problem_text": "Prove that $\\frac{\\tan\\theta + \\tan\\phi}{\\cot\\theta + \\cot\\phi} \\equiv \\tan\\theta\\tan\\phi$.",
+      "answer": "",
+      "solution": "LHS $= \\frac{\\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\sin\\phi}{\\cos\\phi}}{\\frac{\\cos\\theta}{\\sin\\theta} + \\frac{\\cos\\phi}{\\sin\\phi}} = \\frac{\\frac{\\sin\\theta\\cos\\phi + \\sin\\phi\\cos\\theta}{\\cos\\theta\\cos\\phi}}{\\frac{\\cos\\theta\\sin\\phi + \\cos\\phi\\sin\\theta}{\\sin\\theta\\sin\\phi}} = \\frac{\\sin(\\theta+\\phi)}{\\cos\\theta\\cos\\phi} \\times \\frac{\\sin\\theta\\sin\\phi}{\\sin(\\theta+\\phi)} = \\frac{\\sin\\theta\\sin\\phi}{\\cos\\theta\\cos\\phi} = \\tan\\theta\\tan\\phi =$ RHS",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q3_X02",
+      "difficulty": "X",
+      "skill_tags": ["proof", "identities", "Pythagorean"],
+      "problem_text": "Show that $\\frac{\\sin\\theta + \\tan\\theta}{1 + \\sec\\theta} \\equiv \\sin\\theta$.",
+      "answer": "",
+      "solution": "LHS $= \\frac{\\sin\\theta + \\frac{\\sin\\theta}{\\cos\\theta}}{1 + \\frac{1}{\\cos\\theta}} = \\frac{\\sin\\theta(1 + \\frac{1}{\\cos\\theta})}{1 + \\frac{1}{\\cos\\theta}} = \\sin\\theta =$ RHS",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q3_X03",
+      "difficulty": "X",
+      "skill_tags": ["proof", "identities", "advanced"],
+      "problem_text": "Prove that $\\frac{1 - \\sin\\theta}{1 + \\sin\\theta} \\equiv (\\sec\\theta - \\tan\\theta)^2$.",
+      "answer": "",
+      "solution": "RHS $= (\\frac{1}{\\cos\\theta} - \\frac{\\sin\\theta}{\\cos\\theta})^2 = (\\frac{1-\\sin\\theta}{\\cos\\theta})^2 = \\frac{(1-\\sin\\theta)^2}{\\cos^2\\theta} = \\frac{(1-\\sin\\theta)^2}{1-\\sin^2\\theta} = \\frac{(1-\\sin\\theta)^2}{(1-\\sin\\theta)(1+\\sin\\theta)} = \\frac{1-\\sin\\theta}{1+\\sin\\theta} =$ LHS",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q3_X04",
+      "difficulty": "X",
+      "skill_tags": ["proof", "identities", "trig substitution"],
+      "problem_text": "Given that $x = \\sin\\theta$ and $y = \\cos\\theta$, show that $\\frac{dy}{dx} = -\\frac{x}{y}$ using the identity $x^2 + y^2 = 1$.",
+      "answer": "",
+      "solution": "$x^2 + y^2 = 1$. Differentiate w.r.t. $x$: $2x + 2y\\frac{dy}{dx} = 0 \\implies 2y\\frac{dy}{dx} = -2x \\implies \\frac{dy}{dx} = -\\frac{x}{y}$. Since $x = \\sin\\theta$, $y = \\cos\\theta$, $\\frac{dy}{dx} = -\\frac{\\sin\\theta}{\\cos\\theta} = -\\tan\\theta$. Note: $\\frac{dy}{dx} = \\frac{dy/d\\theta}{dx/d\\theta} = -\\frac{\\sin\\theta}{\\cos\\theta} = -\\tan\\theta$",
+      "marks": 5
+    }
+  ]
+}

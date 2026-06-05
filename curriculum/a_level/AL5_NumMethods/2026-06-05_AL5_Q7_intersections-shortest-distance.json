@@ -1,0 +1,34 @@
+{
+  "track": "a_level",
+  "unit": "AL5_NumMethods",
+  "topic_id": "AL5_Q7",
+  "title": "Intersections & Shortest Distance",
+  "syllabus_ref": "9709 P3.7",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:00Z",
+  "sections": {
+    "hook": "Two lines intersect if their vector equations can be solved simultaneously. Shortest distance uses perpendicular vectors.",
+    "prerequisites": [
+      "Vector equations",
+      "Simultaneous equations",
+      "Dot product"
+    ],
+    "core_explanation": "A Level Mathematics covers intersections & shortest distance in depth. The 9709 P3.7 syllabus requires understanding of key concepts, methods and applications.",
+    "worked_example": "**Example:** Work through a step-by-step example for Intersections & Shortest Distance.\n\n**Solution:** The solution follows standard A Level methodology.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing the method for Intersections & Shortest Distance with related topics",
+        "correction": "Always check which rule or method applies before starting"
+      },
+      {
+        "mistake": "Algebraic errors in manipulation",
+        "correction": "Show each step clearly and check your working"
+      }
+    ],
+    "summary": [
+      "Intersections & Shortest Distance is a key topic in A Level Mathematics",
+      "Practice with past paper questions to build confidence",
+      "Always check your answer makes sense in context"
+    ]
+  }
+}

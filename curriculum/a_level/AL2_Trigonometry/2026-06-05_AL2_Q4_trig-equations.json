@@ -1,0 +1,36 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q4",
+  "title": "Trig Equations",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T10:30:00Z",
+  "sections": {
+    "hook": "A satellite dish tracking a signal needs to swivel to the correct angle. Solving $\\sin\\theta = 0.5$ gives $\\theta = 30^\\circ$, but the dish could also be at $150^\\circ$ or $390^\\circ$ — multiple solutions exist within different ranges.",
+    "prerequisites": [
+      "Trigonometric ratios (sin, cos, tan)",
+      "Exact values of trig functions",
+      "Quadrants and CAST diagram",
+      "Inverse trig functions on calculator"
+    ],
+    "core_explanation": "## CAST Diagram (ASTC)\n\nThe quadrants tell us which trig functions are positive:\n- **A**ll functions positive: $0^\\circ - 90^\\circ$ (Quadrant I)\n- **S**ine positive: $90^\\circ - 180^\\circ$ (Quadrant II)\n- **T**angent positive: $180^\\circ - 270^\\circ$ (Quadrant III)\n- **C**osine positive: $270^\\circ - 360^\\circ$ (Quadrant IV)\n\n## Basic Trigonometric Equations\n\n**$\\sin\\theta = k$** (where $-1 \\leq k \\leq 1$):\n- Principal value: $\\theta = \\sin^{-1}k$\n- Second solution: $\\theta = \\pi - \\sin^{-1}k$ (or $180^\\circ - \\theta$)\n- General: $\\theta = n\\pi + (-1)^n \\sin^{-1}k$\n\n**$\\cos\\theta = k$:**\n- Principal value: $\\theta = \\cos^{-1}k$\n- Second solution: $\\theta = 2\\pi - \\cos^{-1}k$ (or $360^\\circ - \\theta$)\n- General: $\\theta = 2n\\pi \\pm \\cos^{-1}k$\n\n**$\\tan\\theta = k$:**\n- Principal value: $\\theta = \\tan^{-1}k$\n- Second solution: $\\theta = \\pi + \\tan^{-1}k$ (or $180^\\circ + \\theta$)\n- General: $\\theta = n\\pi + \\tan^{-1}k$\n\n## Solving Strategy\n\n1. Isolate the trig function.\n2. Find the principal value using inverse trig.\n3. Use the CAST diagram to find all solutions in the given range.\n4. If the argument is $ax + b$, first solve for $ax + b$, then divide by $a$.\n\n## Quadratic Trig Equations\n\nIf the equation contains $\\sin^2\\theta$ and $\\sin\\theta$ (or similar), treat it as a quadratic:\n- Let $u = \\sin\\theta$\n- Solve $au^2 + bu + c = 0$\n- Solve $\\sin\\theta = u$ for each valid $u$",
+    "worked_example": {
+      "question": "Solve $3\\cos\\theta + 2 = 0$ for $0^\\circ \\leq \\theta \\leq 360^\\circ$, giving answers to 1 decimal place.",
+      "solution": "$3\\cos\\theta + 2 = 0$\n$\\cos\\theta = -\\frac{2}{3}$\nPrincipal value: $\\theta = \\cos^{-1}(-\\frac{2}{3}) = 131.8^\\circ$\nSince cosine is negative in Quadrants II and III:\nQII: $\\theta = 131.8^\\circ$\nQIII: $\\theta = 360^\\circ - 131.8^\\circ = 228.2^\\circ$\nSolutions: $\\theta = 131.8^\\circ, 228.2^\\circ$"
+    },
+    "common_mistakes": [
+      {"mistake": "Only giving one solution when the range requires multiple.", "correction": "Always check how many solutions are needed. For $\\sin\\theta = k$ in $[0, 2\\pi]$, there are usually two solutions (unless $k = \\pm 1$). Use CAST."},
+      {"mistake": "Forgetting to adjust the range when the argument is $ax + b$ (e.g., $\\sin(2x)$).", "correction": "If solving $\\sin(2x) = 0.5$ for $0 \\leq x \\leq 2\\pi$, first solve for $0 \\leq 2x \\leq 4\\pi$, then divide by 2."},
+      {"mistake": "Using degrees in calculator when the problem expects radians (or vice versa).", "correction": "Check the problem's angle units. If the range is in radians, set calculator to radian mode before solving."},
+      {"mistake": "Dividing by a trig function and losing solutions.", "correction": "Never divide by $\\sin\\theta$ or $\\cos\\theta$ without considering that they might be zero. Factor instead."}
+    ],
+    "summary": [
+      "Use CAST (ASTC) to determine which quadrants contain solutions.",
+      "Find principal value via inverse trig, then find all solutions in the range.",
+      "For $\\sin(ax + b) = k$, extend the range of $ax + b$ before solving.",
+      "Quadratic trig equations: substitute $u = \\sin\\theta$ (etc.), solve the quadratic, then solve each trig equation.",
+      "Never divide by a trig function — factor instead to avoid losing solutions."
+    ]
+  }
+}

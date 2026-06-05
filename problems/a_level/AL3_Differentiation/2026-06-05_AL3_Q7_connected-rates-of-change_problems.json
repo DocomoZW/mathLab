@@ -1,0 +1,199 @@
+{
+  "track": "a_level",
+  "unit": "AL3_Differentiation",
+  "topic_id": "AL3_Q7",
+  "title": "Connected Rates of Change",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "rates",
+        "chain"
+      ],
+      "problem_text": "A=pi r^2, dr/dt=2. Find dA/dt when r=3.",
+      "answer": "12pi",
+      "solution": "dA/dt=2pi r*dr/dt=2pi(3)*2=12pi.",
+      "marks": 2
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "rates"
+      ],
+      "problem_text": "V=(4/3)pi r^3, dr/dt=0.5. Find dV/dt when r=2.",
+      "answer": "8pi",
+      "solution": "dV/dr=4pi r^2. dV/dt=4pi(4)*0.5=8pi.",
+      "marks": 2
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "rates",
+        "chain"
+      ],
+      "problem_text": "A=x^2, dx/dt=3. Find dA/dt when x=4.",
+      "answer": "24",
+      "solution": "dA/dx=2x. dA/dt=2*4*3=24.",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "rates",
+        "negative"
+      ],
+      "problem_text": "Radius decreases at 2cm/s. Rate of area decrease when r=5.",
+      "answer": "-20pi cm^2/s",
+      "solution": "dA/dt=2pi r dr/dt=2pi(5)(-2)=-20pi.",
+      "marks": 2
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "rates",
+        "volume"
+      ],
+      "problem_text": "Balloon inflated at 100cm^3/s. Find dr/dt when r=5.",
+      "answer": "1/pi cm/s",
+      "solution": "dV/dt=4pi r^2 dr/dt. 100=4pi(25)dr/dt->dr/dt=1/pi.",
+      "marks": 3
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "rates",
+        "cone"
+      ],
+      "problem_text": "Cone h=2r filled at 20cm^3/s. Find dh/dt when h=10.",
+      "answer": "4/(5pi) cm/s",
+      "solution": "r=h/2. V=pi h^3/12. dV/dt=pi h^2/4 dh/dt. 20=pi(100)/4 dh/dt->dh/dt=4/(5pi).",
+      "marks": 4
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "rates",
+        "cylinder"
+      ],
+      "problem_text": "Cylinder radius=3, water enters at 10cm^3/s. Find dh/dt.",
+      "answer": "10/(9pi) cm/s",
+      "solution": "V=9pi h. dV/dt=9pi dh/dt. 10=9pi dh/dt->dh/dt=10/(9pi).",
+      "marks": 2
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "rates",
+        "area"
+      ],
+      "problem_text": "Cube side increases 0.2cm/s. dV/dt when side=4.",
+      "answer": "9.6 cm^3/s",
+      "solution": "V=s^3. dV/dt=3s^2 ds/dt=3(16)(0.2)=9.6.",
+      "marks": 2
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "rates",
+        "ladder"
+      ],
+      "problem_text": "5m ladder, bottom moves at 1m/s. Top speed when bottom 3m from wall.",
+      "answer": "-3/4 m/s",
+      "solution": "x^2+y^2=25. 2x dx/dt+2y dy/dt=0. x=3,y=4. 6+8dy/dt=0->dy/dt=-3/4.",
+      "marks": 4
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "rates",
+        "shadow"
+      ],
+      "problem_text": "2m person walks from 6m lamp at 1.5m/s. Rate of shadow length.",
+      "answer": "0.75 m/s",
+      "solution": "s/2=(s+x)/6->4s=2x->s=x/2. ds/dt=0.5*1.5=0.75.",
+      "marks": 4
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "rates",
+        "sphere"
+      ],
+      "problem_text": "Sphere surface area increases at 10cm^2/s. dr/dt when r=2.",
+      "answer": "5/(8pi) cm/s",
+      "solution": "A=4pi r^2. dA/dt=8pi r dr/dt. 10=16pi dr/dt->dr/dt=5/(8pi).",
+      "marks": 3
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "rates",
+        "angle"
+      ],
+      "problem_text": "Kite 60m high moves horizontally at 2m/s. Rate of string when 100m out.",
+      "answer": "1.6 m/s",
+      "solution": "x^2+3600=s^2. x=80. 2*80*2=2*100 ds/dt->ds/dt=1.6.",
+      "marks": 4
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "rates",
+        "cone"
+      ],
+      "problem_text": "Conical tank (r=3,h=6) drains at 5cm^3/s. dh/dt when h=4.",
+      "answer": "-5/(4pi) cm/s",
+      "solution": "r=h/2. V=pi h^3/12. dV/dt=pi h^2/4 dh/dt. At h=4:-5=4pi dh/dt->dh/dt=-5/(4pi).",
+      "marks": 5
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "rates",
+        "optimisation"
+      ],
+      "problem_text": "Oil spill area increasing at 1km^2/min. dr/dt when r=0.5km.",
+      "answer": "1/pi km/min",
+      "solution": "A=pi r^2. dA/dt=2pi r dr/dt. 1=2pi(0.5)dr/dt=pi dr/dt->dr/dt=1/pi.",
+      "marks": 2
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "rates",
+        "related"
+      ],
+      "problem_text": "Triangle sides 10cm increasing 0.5cm/s, angle 60deg at 0.1rad/s. Rate of area.",
+      "answer": "~6.83 cm^2/s",
+      "solution": "A=0.5ab sin C. dA/dt=0.5[10sin60*0.5+10sin60*0.5+100cos60*0.1]=6.83.",
+      "marks": 5
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "rates",
+        "application"
+      ],
+      "problem_text": "s=t^3-6t^2+9t. Find v and a at t=2. When is v=0?",
+      "answer": "v=-3,a=0. v=0 at t=1,3",
+      "solution": "v=3t^2-12t+9. At t=2:v=-3. a=6t-12=0. v=0:3t^2-12t+9=0->(t-1)(t-3)=0.",
+      "marks": 4
+    }
+  ]
+}

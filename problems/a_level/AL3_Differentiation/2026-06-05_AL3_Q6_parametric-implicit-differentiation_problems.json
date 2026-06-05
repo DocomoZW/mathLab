@@ -1,0 +1,197 @@
+{
+  "track": "a_level",
+  "unit": "AL3_Differentiation",
+  "topic_id": "AL3_Q6",
+  "title": "Parametric & Implicit Differentiation",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "parametric"
+      ],
+      "problem_text": "x=t^2,y=2t. Find dy/dx.",
+      "answer": "dy/dx=1/t",
+      "solution": "dx/dt=2t,dy/dt=2. dy/dx=2/(2t)=1/t.",
+      "marks": 2
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "parametric"
+      ],
+      "problem_text": "x=3t,y=6t^2. Find dy/dx.",
+      "answer": "dy/dx=4t",
+      "solution": "dx/dt=3,dy/dt=12t. dy/dx=12t/3=4t.",
+      "marks": 2
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "implicit"
+      ],
+      "problem_text": "x^2+y^2=25. Find dy/dx.",
+      "answer": "dy/dx=-x/y",
+      "solution": "2x+2y dy/dx=0->dy/dx=-x/y.",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "implicit"
+      ],
+      "problem_text": "xy=12. Find dy/dx.",
+      "answer": "dy/dx=-y/x",
+      "solution": "x dy/dx+y=0->dy/dx=-y/x.",
+      "marks": 2
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "parametric",
+        "trig"
+      ],
+      "problem_text": "x=2cos t,y=2sin t. Find dy/dx.",
+      "answer": "dy/dx=-cot t",
+      "solution": "dx/dt=-2sin t,dy/dt=2cos t. dy/dx=2cos t/(-2sin t)=-cot t.",
+      "marks": 3
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "implicit",
+        "product"
+      ],
+      "problem_text": "x^2 y+y^3=10. Find dy/dx.",
+      "answer": "dy/dx=-2xy/(x^2+3y^2)",
+      "solution": "2xy+x^2 dy/dx+3y^2 dy/dx=0->(x^2+3y^2)dy/dx=-2xy->dy/dx=-2xy/(x^2+3y^2).",
+      "marks": 3
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "parametric",
+        "second"
+      ],
+      "problem_text": "x=t^2,y=t^3. Find d^2y/dx^2.",
+      "answer": "d^2y/dx^2=3/(4t)",
+      "solution": "dx/dt=2t,dy/dt=3t^2. dy/dx=3t/2. d^2y/dx^2=(3/2)/(2t)=3/(4t).",
+      "marks": 4
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "implicit",
+        "tangent"
+      ],
+      "problem_text": "Gradient of x^2+y^2=10 at (1,3).",
+      "answer": "-1/3",
+      "solution": "2x+2y dy/dx=0->dy/dx=-x/y. At(1,3):-1/3.",
+      "marks": 2
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "parametric",
+        "tangent"
+      ],
+      "problem_text": "Tangent to x=2t,y=t^2 at t=3.",
+      "answer": "y=3x-9",
+      "solution": "dx/dt=2,dy/dt=2t. dy/dx=t. At t=3:m=3. Point(6,9). y-9=3(x-6)->y=3x-9.",
+      "marks": 3
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "implicit",
+        "chain"
+      ],
+      "problem_text": "x^3+y^3=6xy. Find dy/dx.",
+      "answer": "dy/dx=(2y-x^2)/(y^2-2x)",
+      "solution": "3x^2+3y^2 dy/dx=6y+6x dy/dx->(3y^2-6x)dy/dx=6y-3x^2->dy/dx=(2y-x^2)/(y^2-2x).",
+      "marks": 4
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "parametric",
+        "normal"
+      ],
+      "problem_text": "Normal to x=t^2,y=t^3-t at t=1.",
+      "answer": "y=-x+1",
+      "solution": "dx/dt=2t,dy/dt=3t^2-1. At t=1:dx/dt=2,dy/dt=2. dy/dx=1. Normal m=-1. Point(1,0). y=-(x-1).",
+      "marks": 4
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "implicit",
+        "stationary"
+      ],
+      "problem_text": "Stationary points of x^2+2xy+y^2=16.",
+      "answer": "No stationary points (curve factors as (x+y)^2=16)",
+      "solution": "2x+2y+2x dy/dx+2y dy/dx=0->(x+y)(1+dy/dx)=0. dy/dx=0->x+y=0. Sub:0=16 impossible.",
+      "marks": 4
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "parametric",
+        "application"
+      ],
+      "problem_text": "Particle x=t^2-4t,y=3t-t^2. dy/dx at t=2.",
+      "answer": "Vertical tangent (dx/dt=0)",
+      "solution": "dx/dt=2t-4,dy/dt=3-2t. At t=2:dx/dt=0,dy/dt=-1. Vertical tangent.",
+      "marks": 5
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "implicit",
+        "second-derivative"
+      ],
+      "problem_text": "d^2y/dx^2 for x^2+y^2=1.",
+      "answer": "d^2y/dx^2=-1/y^3",
+      "solution": "dy/dx=-x/y. d^2y/dx^2=-(y-x dy/dx)/y^2=-(y+x^2/y)/y^2=-(y^2+x^2)/y^3=-1/y^3.",
+      "marks": 5
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "parametric",
+        "curve-sketch"
+      ],
+      "problem_text": "For x=t^3,y=t^2, tangent at t=a.",
+      "answer": "Tangent:y=(2/(3a))x+a^2/3",
+      "solution": "dx/dt=3t^2,dy/dt=2t. dy/dx=2/(3t). At t=a: y-a^2=(2/(3a))(x-a^3)->y=(2x)/(3a)+a^2/3.",
+      "marks": 5
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "implicit",
+        "tangent",
+        "normal"
+      ],
+      "problem_text": "Show tangent intercepts sum for sqrt(x)+sqrt(y)=sqrt(a) is constant.",
+      "answer": "Sum=a",
+      "solution": "dy/dx=-sqrt(y/x). x-int=x0+sqrt(x0 y0). y-int=y0+sqrt(x0 y0). Sum=(sqrt(x0)+sqrt(y0))^2=a.",
+      "marks": 6
+    }
+  ]
+}

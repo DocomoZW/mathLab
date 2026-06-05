@@ -1,0 +1,13 @@
+{
+  "hook": "Calculus \u2014 the mathematics of change.",
+  "topic": "Differentiation",
+  "track": "a_level",
+  "concept_script": "Limits, derivatives, chain rule...",
+  "key_formulas": [
+    "d/dx(x^n) = nx^(n-1)"
+  ],
+  "learning_objectives": [
+    "Differentiate polynomials",
+    "Apply chain rule"
+  ]
+}

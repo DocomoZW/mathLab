@@ -1,0 +1,195 @@
+{
+  "track": "a_level",
+  "unit": "AL5_NumMethods",
+  "topic_id": "AL5_Q5",
+  "title": "Vector Dot Product & Angle",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "dot-product"
+      ],
+      "problem_text": "a=(1,2,3).b=(4,5,6)=",
+      "answer": "32",
+      "solution": "4+10+18=32.",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "dot-product"
+      ],
+      "problem_text": "a=(3,0,4).b=(0,5,0)=",
+      "answer": "0",
+      "solution": "0+0+0=0.",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "angle"
+      ],
+      "problem_text": "Angle between (1,0,0) and (0,1,0).",
+      "answer": "90 degrees",
+      "solution": "dot=0.|a|=|b|=1. cos=0.",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "perpendicular"
+      ],
+      "problem_text": "Are (2,3,1) and (1,2,-8) perpendicular?",
+      "answer": "Yes, dot=0",
+      "solution": "2+6-8=0.",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "angle"
+      ],
+      "problem_text": "Angle between (1,2,2) and (2,1,2).",
+      "answer": "arccos(8/9)=27.27 deg",
+      "solution": "dot=8. |a|=|b|=3. cos=8/9.",
+      "marks": 2
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "dot-product",
+        "projection"
+      ],
+      "problem_text": "Scalar projection of (3,4,0) onto (1,0,0).",
+      "answer": "3",
+      "solution": "a.b/|b|=3/1=3.",
+      "marks": 2
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "perpendicular",
+        "find"
+      ],
+      "problem_text": "k such that (1,2,k) perp to (2,1,4).",
+      "answer": "k=-1",
+      "solution": "2+2+4k=0->4k=-4->k=-1.",
+      "marks": 2
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "angle",
+        "direction"
+      ],
+      "problem_text": "Angle (1,1,0) makes with x-axis.",
+      "answer": "45 deg",
+      "solution": "dot with (1,0,0)=1. |a|=sqrt2. cos=1/sqrt2.",
+      "marks": 2
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "dot-product",
+        "work"
+      ],
+      "problem_text": "Force (3,4,5)N moves from (1,0,2) to (4,5,7). Work?",
+      "answer": "54 J",
+      "solution": "d=(3,5,5). W=(3,4,5).(3,5,5)=9+20+25=54.",
+      "marks": 2
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "angle",
+        "non-zero"
+      ],
+      "problem_text": "Angle between (2,-1,3) and (1,2,-1).",
+      "answer": "arccos(-3/sqrt84)=109.1 deg",
+      "solution": "dot=-3. |a|=sqrt14. |b|=sqrt6.",
+      "marks": 2
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "dot-product",
+        "property"
+      ],
+      "problem_text": "Prove a.b=|a||b|cos theta using cosine rule.",
+      "answer": "Proof",
+      "solution": "|a-b|^2=|a|^2+|b|^2-2a.b=|a|^2+|b|^2-2|a||b|cos\u03b8.",
+      "marks": 3
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "angle",
+        "tricky"
+      ],
+      "problem_text": "Acute angle between (1,2,3) and (4,5,6).",
+      "answer": "12.9 deg",
+      "solution": "dot=32. |a|=sqrt14. |b|=sqrt77.",
+      "marks": 2
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "dot-product",
+        "vector-proj"
+      ],
+      "problem_text": "Vector proj of (4,1,2) onto (2,3,6).",
+      "answer": "(46/49,69/49,138/49)",
+      "solution": "a.b=23. |b|^2=49. proj=(23/49)(2,3,6).",
+      "marks": 3
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "dot-product",
+        "orthogonal"
+      ],
+      "problem_text": "Unit vector perp to (1,2,3) and (4,5,6).",
+      "answer": "(-1,2,-1)/sqrt6",
+      "solution": "Cross=(-3,6,-3). |cross|=3sqrt6.",
+      "marks": 3
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "dot-product",
+        "bisector"
+      ],
+      "problem_text": "Angle bisector of (1,0,0) and (0,1,0).",
+      "answer": "(1,1,0)",
+      "solution": "Bisector direction = u+v = (1,1,0).",
+      "marks": 2
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "dot-product",
+        "application"
+      ],
+      "problem_text": "Triangle A(0,0,0),B(1,2,2),C(2,1,2). Angle A.",
+      "answer": "arccos(8/9)=27.27 deg",
+      "solution": "AB=(1,2,2), AC=(2,1,2). cos A=8/9.",
+      "marks": 3
+    }
+  ]
+}
