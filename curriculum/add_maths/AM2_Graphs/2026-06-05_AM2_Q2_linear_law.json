@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q2",
+  "title": "Linear Law",
+  "syllabus_ref": "0606 C2",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Not all relationships are linear \u2014 but many can be transformed into straight lines. Linear law is the art of 'straightening' curves to find hidden constants.",
+    "prerequisites": [
+      "Linear equations $y = mx + c$",
+      "Laws of logarithms",
+      "Rearranging equations"
+    ],
+    "core_explanation": "**Linear law** converts non-linear equations into the form $Y = mX + c$ by choosing appropriate variables.\\n\\n**Example 1:** $y = ax^n$ becomes $\\\\log y = \\\\log a + n \\\\log x$. Plot $\\\\log y$ against $\\\\log x$.\\n\\n**Example 2:** $y = ab^x$ becomes $\\\\log y = \\\\log a + x \\\\log b$. Plot $\\\\log y$ against $x$.\\n\\n**Example 3:** $y = ax^2 + bx$ becomes $y/x = ax + b$. Plot $y/x$ against $x$.\\n\\nThe gradient and intercept of the straight line give the constants.",
+    "worked_example": "Question: The table shows values of $x$ and $y$ where $y = kx^n$. Use linear law to find $k$ and $n$.\\n\\n\\nx: 1, 2, 3, 4\\ny: 2.0, 5.6, 10.4, 16.0\\n\\nSolution:\\nTake logs: $\\\\log y = \\\\log k + n \\\\log x$\\nLet $Y = \\\\log y$, $X = \\\\log x$, $c = \\\\log k$\\n$Y = nX + c$\\n\\nCompute: $\\\\log 1 = 0$, $\\\\log 2 \\\\approx 0.301$, $\\\\log 3 \\\\approx 0.477$, $\\\\log 4 \\\\approx 0.602$\\n$\\\\log 2.0 \\\\approx 0.301$, $\\\\log 5.6 \\\\approx 0.748$, $\\\\log 10.4 \\\\approx 1.017$, $\\\\log 16.0 \\\\approx 1.204$\\n\\nFrom graph: gradient $n \\\\approx 1.5$, intercept $\\\\log k \\\\approx 0.301 \\\\implies k \\\\approx 2$\\n\\nSo $y \\\\approx 2x^{1.5}$.",
+    "common_mistakes": [
+      {
+        "mistake": "Plotting raw $x$ and $y$ instead of transformed variables.",
+        "correction": "Always identify $Y$ and $X$ from the linear form before plotting."
+      },
+      {
+        "mistake": "Forgetting to convert the intercept back from log form.",
+        "correction": "If $\\\\log k$ is the intercept, then $k = 10^{\\\\text{intercept}}$ (or $e^{\\\\text{intercept}}$ for natural logs)."
+      }
+    ],
+    "summary": [
+      "Linear law: reduce to $Y = mX + c$",
+      "Choose $Y$ and $X$ based on the original equation",
+      "Gradient and intercept of straight line reveal constants",
+      "Remember to un-transform log values"
+    ]
+  }
+}

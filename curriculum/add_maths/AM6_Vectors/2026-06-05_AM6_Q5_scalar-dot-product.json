@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM6_Vectors",
+  "topic_id": "AM6_Q5",
+  "title": "Scalar (Dot) Product",
+  "syllabus_ref": "0606 C6",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you definition $\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta$? Let's explore scalar (dot) product in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Scalar (Dot) Product</h3><p><b>Definition $\\mathbf{a} \\cdot \\mathbf{b} = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta$</b> <b>Component form $a_1b_1 + a_2b_2$</b> <b>Properties & algebraic rules</b> <b>Perpendicular condition $\\mathbf{a} \\cdot \\mathbf{b} = 0$</b> <b>Parallel condition $\\mathbf{a} \\cdot \\mathbf{b} = \\pm|\\mathbf{a}||\\mathbf{b}|$</b> <b>Work done as dot product</b></p>",
+    "worked_example": "Worked example for Scalar (Dot) Product will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Scalar (Dot) Product is fundamental for IGCSE Additional Mathematics 0606 C6."
+  }
+}

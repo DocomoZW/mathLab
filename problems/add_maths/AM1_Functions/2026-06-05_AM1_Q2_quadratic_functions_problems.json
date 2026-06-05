@@ -1,0 +1,199 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q2",
+  "title": "Quadratic Functions",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM1_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "completing_square"
+      ],
+      "problem_text": "Express x^2+6x+5 in the form (x+h)^2+k.",
+      "answer": "(x+3)^2-4",
+      "solution": "x^2+6x+5=(x+3)^2-9+5=(x+3)^2-4",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "discriminant"
+      ],
+      "problem_text": "Find the discriminant of x^2-4x+3.",
+      "answer": "4",
+      "solution": "Delta=b^2-4ac=16-12=4",
+      "marks": 1
+    },
+    {
+      "id": "AM1_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "max_min"
+      ],
+      "problem_text": "Find the minimum value of f(x)=x^2-4x+7.",
+      "answer": "3",
+      "solution": "Complete square: (x-2)^2+3. Minimum = 3 at x=2",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "vertex"
+      ],
+      "problem_text": "Find the vertex of y=2x^2-8x+9.",
+      "answer": "(2,1)",
+      "solution": "2(x^2-4x)+9=2((x-2)^2-4)+9=2(x-2)^2-8+9=2(x-2)^2+1. Vertex (2,1)",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "completing_square",
+        "max_min"
+      ],
+      "problem_text": "Express 3x^2-12x+5 in the form a(x+h)^2+k. State the minimum value.",
+      "answer": "3(x-2)^2-7, min=-7",
+      "solution": "3[x^2-4x]+5=3[(x-2)^2-4]+5=3(x-2)^2-12+5=3(x-2)^2-7. Min=-7",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "discriminant",
+        "nature_of_roots"
+      ],
+      "problem_text": "Determine the nature of roots for 2x^2-3x+5=0.",
+      "answer": "No real roots",
+      "solution": "Delta=9-40=-31<0, so no real roots",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "completing_square",
+        "sketch"
+      ],
+      "problem_text": "Express x^2-2x-3 in completed square form and find the x-intercepts.",
+      "answer": "(x-1)^2-4, x=-1,3",
+      "solution": "(x-1)^2-1-3=(x-1)^2-4. Solve (x-1)^2=4 => x-1=+-2 => x=3 or x=-1",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "max_min",
+        "range"
+      ],
+      "problem_text": "Find the range of f(x)=x^2-6x+10 for x in [0,5].",
+      "answer": "[1,10]",
+      "solution": "f(x)=(x-3)^2+1. Vertex at (3,1). f(0)=10, f(5)=5. Range=[1,10]",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "discriminant",
+        "parameter"
+      ],
+      "problem_text": "Find k such that x^2+kx+9 has a repeated root.",
+      "answer": "k=6 or k=-6",
+      "solution": "Delta=k^2-36=0 => k^2=36 => k=6 or k=-6",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "completing_square",
+        "parameter"
+      ],
+      "problem_text": "Express 2x^2-8x+p in the form a(x+h)^2+q. For what p is the minimum positive?",
+      "answer": "2(x-2)^2+p-8, p>8",
+      "solution": "2x^2-8x+p=2(x^2-4x)+p=2[(x-2)^2-4]+p=2(x-2)^2-8+p. For min>0: p-8>0 => p>8",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "discriminant",
+        "tangent"
+      ],
+      "problem_text": "The line y=2x+c is tangent to y=x^2+3x+5. Find c.",
+      "answer": "c=4",
+      "solution": "x^2+3x+5=2x+c => x^2+x+5-c=0. Tangent => Delta=0 => 1-4(5-c)=0 => 1-20+4c=0 => 4c=19 => c=19/4=4.75",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "max_min",
+        "optimization"
+      ],
+      "problem_text": "A farmer has 40m of fencing for a rectangular enclosure against a wall. Find the maximum area.",
+      "answer": "200 m^2",
+      "solution": "Let width=x, length=40-2x. Area=x(40-2x)=40x-2x^2=-2(x^2-20x)=-2[(x-10)^2-100]=-2(x-10)^2+200. Max area=200 m^2 at x=10",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q2_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "discriminant",
+        "inequality"
+      ],
+      "problem_text": "Find p such that x^2+px+4>0 for all real x.",
+      "answer": "-4<p<4",
+      "solution": "For >0 always, Delta<0 => p^2-16<0 => p^2<16 => -4<p<4",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q2_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "completing_square",
+        "proof"
+      ],
+      "problem_text": "Prove that x^2-6x+11>=2 for all x.",
+      "answer": "Proof",
+      "solution": "x^2-6x+11=(x-3)^2+2. Since (x-3)^2>=0, (x-3)^2+2>=2 for all x.",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q2_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "discriminant",
+        "intersection"
+      ],
+      "problem_text": "Find the range of k for which y=x^2+2x+3 and y=kx+1 intersect twice.",
+      "answer": "k<-4 or k>4",
+      "solution": "x^2+2x+3=kx+1 => x^2+(2-k)x+2=0. Two intersections => Delta>0 => (2-k)^2-8>0 => k^2-4k-4>0 => k<2-2sqrt2 or k>2+2sqrt2",
+      "marks": 5
+    },
+    {
+      "id": "AM1_Q2_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "max_min",
+        "optimization",
+        "word_problem"
+      ],
+      "problem_text": "A ball's height h(t)=20t-5t^2. Find max height and time taken.",
+      "answer": "20m at t=2s",
+      "solution": "h(t)=-5(t^2-4t)=-5[(t-2)^2-4]=-5(t-2)^2+20. Max height=20m at t=2s",
+      "marks": 4
+    }
+  ]
+}

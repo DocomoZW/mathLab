@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q3",
+  "title": "Remainder Theorem",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "When you divide a polynomial by $(x-a)$, the remainder is simply $f(a)$ \u2014 no long division needed. The Remainder Theorem is the Factor Theorem's practical cousin.",
+    "prerequisites": [
+      "Factor theorem",
+      "Polynomial division",
+      "Substitution"
+    ],
+    "core_explanation": "**Remainder Theorem:** When $f(x)$ is divided by $(x-a)$, the remainder is $f(a)$.\\n\\nMore generally: When $f(x)$ is divided by $(ax-b)$, the remainder is $f(b/a)$.\\n\\nThis is much faster than performing long division to find a remainder.\\n\\n**Connection to Factor Theorem:** The remainder is 0 precisely when $(x-a)$ is a factor.",
+    "worked_example": "Find the remainder when $f(x) = 2x^3 - 3x^2 + 5x - 7$ is divided by $(x-2)$.\\n\\nSolution:\\nRemainder = $f(2) = 2(2)^3 - 3(2)^2 + 5(2) - 7$\\n$= 16 - 12 + 10 - 7 = 7$\\n\\nCheck: No need for long division!",
+    "common_mistakes": [
+      {
+        "mistake": "For division by $(ax-b)$, substituting $x=b$ instead of $x=b/a$.",
+        "correction": "For divisor $(ax-b)$, set $ax-b=0$ to get $x=b/a$, then $f(b/a)$ is the remainder."
+      },
+      {
+        "mistake": "Confusing remainder theorem (gives a number) with factor theorem (gives a factor when remainder is 0).",
+        "correction": "Remainder Theorem gives the numeric remainder. Factor Theorem is the special case where remainder is 0."
+      }
+    ],
+    "summary": [
+      "Remainder when dividing by $(x-a)$ is $f(a)$",
+      "For $(ax-b)$, remainder is $f(b/a)$",
+      "Much faster than long division",
+      "When remainder is 0, $(x-a)$ is a factor"
+    ]
+  }
+}

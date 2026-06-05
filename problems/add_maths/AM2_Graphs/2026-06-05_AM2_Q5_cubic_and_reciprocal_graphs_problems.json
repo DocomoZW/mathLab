@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q5",
+  "title": "Cubic and Reciprocal Graphs",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM2_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "cubic_shape"
+      ],
+      "problem_text": "Describe the shape of y=x^3.",
+      "answer": "S-shape through origin",
+      "solution": "y=x^3 is an S-shaped curve passing through (0,0), increasing throughout.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "reciprocal_shape"
+      ],
+      "problem_text": "Describe the shape of y=1/x.",
+      "answer": "Hyperbola with two branches",
+      "solution": "y=1/x is a hyperbola with branches in first and third quadrants, asymptotes at x=0 and y=0.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "asymptote"
+      ],
+      "problem_text": "State the asymptotes of y=3/x.",
+      "answer": "x=0 and y=0",
+      "solution": "Vertical asymptote at x=0 (undefined). Horizontal asymptote at y=0.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "cubic_intercepts"
+      ],
+      "problem_text": "Find the x-intercepts of y=x(x-2)(x+1).",
+      "answer": "x=-1, 0, 2",
+      "solution": "Set each factor to zero: x=0, x-2=0 => x=2, x+1=0 => x=-1",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "cubic_sketch"
+      ],
+      "problem_text": "Sketch y=(x-1)(x-2)(x-3), showing intercepts.",
+      "answer": "Cubic crossing x-axis at 1,2,3",
+      "solution": "x-ints at 1,2,3. y-int: (0-1)(0-2)(0-3)=-6. Leading coeff positive, so rises left to right.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "reciprocal_transform"
+      ],
+      "problem_text": "Describe the transformation from y=1/x to y=1/(x-2).",
+      "answer": "Shift right by 2 units",
+      "solution": "Replacing x by x-2 shifts the graph 2 units right.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "reciprocal_quadrants"
+      ],
+      "problem_text": "In which quadrants do the branches of y=-5/x lie?",
+      "answer": "Second and fourth",
+      "solution": "k=-5<0 so branches in second and fourth quadrants.",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "cubic_turning_points"
+      ],
+      "problem_text": "How many turning points can a cubic function have?",
+      "answer": "0 or 2",
+      "solution": "A cubic can have either 0 or 2 turning points (local max and min).",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "cubic_with_parameter"
+      ],
+      "problem_text": "Sketch y=x^3-4x, showing intercepts.",
+      "answer": "Cubic with x-ints at -2,0,2",
+      "solution": "x(x^2-4)=x(x-2)(x+2). x-ints: -2,0,2. y-int: 0. Leading coeff positive.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "reciprocal_asymptotes"
+      ],
+      "problem_text": "State the asymptotes of y=2/(x-1)+3.",
+      "answer": "x=1 and y=3",
+      "solution": "Vertical asymptote: x=1 (denominator zero). Horizontal: y=3 (shift up).",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "cubic_factorisation"
+      ],
+      "problem_text": "Factorise x^3-6x^2+11x-6 and sketch.",
+      "answer": "x=1,2,3",
+      "solution": "x=1 root => (x-1)(x^2-5x+6)=(x-1)(x-2)(x-3). x-ints 1,2,3. y-int -6.",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "reciprocal_graph_points"
+      ],
+      "problem_text": "Find the point where y=2/x intersects y=x.",
+      "answer": "(sqrt2,sqrt2) and (-sqrt2,-sqrt2)",
+      "solution": "2/x=x => x^2=2 => x=+-sqrt2. y=+-sqrt2.",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "cubic_transform"
+      ],
+      "problem_text": "Sketch y=(x+1)(x-1)(x-4). State the y-intercept.",
+      "answer": "y-int = 4",
+      "solution": "Expand: (x^2-1)(x-4)=x^3-4x^2-x+4. y-intercept: x=0 gives 4.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "reciprocal_equation"
+      ],
+      "problem_text": "Solve 1/x + 1/(x+2) = 1 graphically or algebraically.",
+      "answer": "x=1+-sqrt3",
+      "solution": "Multiply: (x+2+x)/(x(x+2))=1 => 2x+2=x^2+2x => x^2=2 => x=+-sqrt2",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q5_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "cubic_inequality"
+      ],
+      "problem_text": "Solve x^3-4x>0.",
+      "answer": "-2<x<0 or x>2",
+      "solution": "x(x-2)(x+2)>0. Critical: -2,0,2. Test: x<-2: neg; -2<x<0: pos; 0<x<2: neg; x>2: pos. Solution: -2<x<0 or x>2",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q5_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "reciprocal_intersection"
+      ],
+      "problem_text": "Find where y=3/x intersects y=2x-1.",
+      "answer": "x=3/2 or x=-1",
+      "solution": "3/x=2x-1 => 3=2x^2-x => 2x^2-x-3=0 => (2x-3)(x+1)=0 => x=3/2 or x=-1. y=2 or y=-3.",
+      "marks": 3
+    }
+  ]
+}

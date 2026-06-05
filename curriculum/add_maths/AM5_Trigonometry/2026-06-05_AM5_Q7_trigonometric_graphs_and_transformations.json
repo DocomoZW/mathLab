@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q7",
+  "title": "Trigonometric Graphs & Transformations",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Sine and cosine waves describe everything from sound to tides to alternating current. Understanding their graphs \u2014 amplitude, period, and transformations \u2014 is essential for modelling periodic phenomena.",
+    "prerequisites": [
+      "Trig ratios",
+      "Graph sketching",
+      "Function transformations"
+    ],
+    "core_explanation": "**Basic graphs:**\\n- $y = \\\\sin x$: starts at 0, max at $\\\\pi/2$, back to 0 at $\\\\pi$, min at $3\\\\pi/2$, back to 0 at $2\\\\pi$.\\n- $y = \\\\cos x$: starts at 1, 0 at $\\\\pi/2$, min at $\\\\pi$, back to 0 at $3\\\\pi/2$, back to 1 at $2\\\\pi$.\\n- $y = \\\\tan x$: vertical asymptotes at $\\\\pi/2$, $3\\\\pi/2$, etc.\\n\\n**Transformations for $y = a\\\\sin(bx + c) + d$:**\\n- $a$: amplitude (vertical stretch) \u2014 max deviation from centre.\\n- $b$: frequency \u2014 period $= 2\\\\pi/b$.\\n- $c$: phase shift (horizontal) \u2014 shift left by $c/b$.\\n- $d$: vertical shift \u2014 moves the centre line.",
+    "worked_example": "Sketch $y = 3\\\\sin(2x) + 1$ for $0 \\\\le x \\\\le 2\\\\pi$, stating amplitude, period, and range.\\n\\nSolution:\\nAmplitude $= 3$, period $= 2\\\\pi/2 = \\\\pi$, vertical shift $= 1$ up.\\nCentre line: $y = 1$. Range: $1-3 \\\\le y \\\\le 1+3$, so $[-2, 4]$.\\nKey points every quarter period ($\\\\pi/4$):\\n$x=0: y=1$; $x=\\\\pi/4: y=4$ (max); $x=\\\\pi/2: y=1$; $x=3\\\\pi/4: y=-2$ (min); $x=\\\\pi: y=1$",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing period with frequency \u2014 thinking period $= b$ instead of $2\\\\pi/b$.",
+        "correction": "Period = $2\\\\pi/b$. A larger $b$ means more cycles, so shorter period."
+      },
+      {
+        "mistake": "Forgetting the vertical shift affects both max and min equally.",
+        "correction": "Max = centre + amplitude, Min = centre - amplitude. Both shift by $d$."
+      }
+    ],
+    "summary": [
+      "$y=\\\\sin x$: starts at 0, period $2\\\\pi$",
+      "$y=\\\\cos x$: starts at 1, period $2\\\\pi$",
+      "$y=a\\\\sin(bx+c)+d$: amplitude $|a|$, period $2\\\\pi/|b|$",
+      "Vertical shift $d$, phase shift $-c/b$"
+    ]
+  }
+}

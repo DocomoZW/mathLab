@@ -1,0 +1,36 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q6",
+  "title": "Trig Equations (Advanced)",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Real trig equations often involve squared terms, multiple angles like $2\\\\theta$, or combinations of sine and cosine. These require identities and substitution to solve.",
+    "prerequisites": [
+      "Basic trig equations",
+      "Trig identities",
+      "Quadratic equations",
+      "CAST diagram"
+    ],
+    "core_explanation": "**Advanced techniques:**\\n1. **Quadratic trig equations:** $a\\\\sin^2\\\\theta + b\\\\sin\\\\theta + c = 0$\\n   Solve by substitution: let $u = \\\\sin\\\\theta$.\\n2. **Multiple angles:** $\\\\sin(2\\\\theta) = k$ \u2014 solve for $2\\\\theta$ first, then divide.\\n3. **Combining $\\\\sin$ and $\\\\cos$:** Use identities to rewrite in one trig function.\\n4. **Using identities:** $a\\\\sin\\\\theta + b\\\\cos\\\\theta$ can be written as $R\\\\sin(\\\\theta \\\\pm \\\\alpha)$.\\n\\nAlways check the range \u2014 squaring can introduce extraneous solutions.",
+    "worked_example": "Solve $2\\\\sin^2\\\\theta - \\\\sin\\\\theta - 1 = 0$ for $0^\\\\circ \\\\le \\\\theta \\\\le 360^\\\\circ$.\\n\\nSolution:\\nLet $u = \\\\sin\\\\theta$. Then $2u^2 - u - 1 = 0$\\n$(2u+1)(u-1) = 0$\\n$u = 1$ or $u = -1/2$\\n\\n$\\\\sin\\\\theta = 1$: $\\\\theta = 90^\\\\circ$\\n$\\\\sin\\\\theta = -1/2$: PV = $210^\\\\circ$ (Q3) or $330^\\\\circ$ (Q4)\\nAnswer: $\\\\theta = 90^\\\\circ, 210^\\\\circ, 330^\\\\circ$",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to find solutions for the substituted variable before converting back.",
+        "correction": "Solve the quadratic in $u$ first, then solve $\\\\sin\\\\theta = u$ for each value."
+      },
+      {
+        "mistake": "When solving $\\\\tan(2\\\\theta) = k$, dividing the angle range by 2 but forgetting the period adjustment.",
+        "correction": "For $\\\\tan 2\\\\theta$, the period is $90^\\\\circ$ (or $\\\\pi/2$). Adjust the range accordingly."
+      }
+    ],
+    "summary": [
+      "Quadratic form: substitute $u=\\\\sin\\\\theta$ etc.",
+      "Multiple angles: solve for the angle first, then divide",
+      "Use identities to reduce to one trig function",
+      "Check for extraneous solutions"
+    ]
+  }
+}

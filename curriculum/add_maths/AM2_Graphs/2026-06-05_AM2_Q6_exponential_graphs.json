@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q6",
+  "title": "Exponential Graphs",
+  "syllabus_ref": "0606 C2",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Exponential functions model growth and decay \u2014 from population growth to radioactive decay. Their distinctive curve is one of the most important in all of mathematics.",
+    "prerequisites": [
+      "Laws of indices",
+      "Basic graph sketching",
+      "The number e"
+    ],
+    "core_explanation": "An **exponential function** has the form $y = a^x$ where $a > 0$ and $a \\\\neq 1$.\\n\\n**$y = e^x$ (natural exponential):**\\n- Domain: $x \\\\in \\\\mathbb{R}$\\n- Range: $y > 0$\\n- $y$-intercept at $(0, 1)$\\n- Horizontal asymptote: $y = 0$ (x-axis)\\n- Increasing for all $x$ (growth)\\n\\n**$y = e^{-x}$:**\\n- Reflection of $y = e^x$ in the $y$-axis\\n- Decreasing for all $x$ (decay)\\n- Still $y > 0$, asymptote at $y = 0$\\n\\n**Transformations:** $y = ae^{bx} + c$ follows the usual transformation rules.",
+    "worked_example": "Question: Sketch $y = 2e^x - 1$, showing the asymptote and intercept.\\n\\nSolution:\\nBase graph: $y = e^x$\\n- Vertical stretch by factor 2: $y = 2e^x$\\n- Shift down by 1: $y = 2e^x - 1$\\n\\nAsymptote: $y = -1$ (horizontal, dashed)\\n$y$-intercept: $x = 0 \\\\implies y = 2(1) - 1 = 1$; point $(0, 1)$\\n$x$-intercept: $0 = 2e^x - 1 \\\\implies e^x = 1/2 \\\\implies x = \\\\ln(1/2) \\\\approx -0.693$\\nShape: increasing curve approaching $y = -1$ from above as $x \\\\to -\\\\infty$.",
+    "common_mistakes": [
+      {
+        "mistake": "Thinking $e^x$ can be negative or zero.",
+        "correction": "$e^x > 0$ for all real $x$. It approaches 0 as $x \\\\to -\\\\infty$ but never reaches 0."
+      },
+      {
+        "mistake": "Forgetting the horizontal asymptote when transforming exponential graphs.",
+        "correction": "The asymptote shifts with vertical translations: $y = e^x + c$ has asymptote $y = c$."
+      }
+    ],
+    "summary": [
+      "$y = e^x$: increasing, $y>0$, asymptote $y=0$",
+      "$y = e^{-x}$: decreasing, reflection in $y$-axis",
+      "Transformations apply as usual",
+      "Horizontal asymptote shifts with vertical translations"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q3",
+  "title": "Trig Ratios",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Sine, cosine, and tangent are the fundamental ratios connecting angles to side lengths. They unlock a world of applications from navigation to wave motion.",
+    "prerequisites": [
+      "Right-angled triangles",
+      "Pythagoras' theorem",
+      "Angle measurement"
+    ],
+    "core_explanation": "**Right-angled triangle definitions:**\\n$\\\\sin\\\\theta = \\\\frac{\\\\text{opposite}}{\\\\text{hypotenuse}}$\\n$\\\\cos\\\\theta = \\\\frac{\\\\text{adjacent}}{\\\\text{hypotenuse}}$\\n$\\\\tan\\\\theta = \\\\frac{\\\\text{opposite}}{\\\\text{adjacent}} = \\\\frac{\\\\sin\\\\theta}{\\\\cos\\\\theta}$\\n\\n**Exact values (know these):**\\n$\\\\sin 0=0, \\\\sin 30=1/2, \\\\sin 45=1/\\\\sqrt{2}, \\\\sin 60=\\\\sqrt{3}/2, \\\\sin 90=1$\\n$\\\\cos 0=1, \\\\cos 30=\\\\sqrt{3}/2, \\\\cos 45=1/\\\\sqrt{2}, \\\\cos 60=1/2, \\\\cos 90=0$\\n$\\\\tan 0=0, \\\\tan 30=1/\\\\sqrt{3}, \\\\tan 45=1, \\\\tan 60=\\\\sqrt{3}, \\\\tan 90=\\\\text{undefined}$\\n\\n**CAST diagram** determines sign in each quadrant.",
+    "worked_example": "Without a calculator, find $\\\\sin 30^\\\\circ + \\\\cos 60^\\\\circ$.\\n\\nSolution:\\n$\\\\sin 30^\\\\circ = \\\\frac{1}{2}$\\n$\\\\cos 60^\\\\circ = \\\\frac{1}{2}$\\n$\\\\frac{1}{2} + \\\\frac{1}{2} = 1$",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing which ratio goes with which side \u2014 e.g. $\\\\cos\\\\theta = \\\\frac{O}{H}$ instead of $\\\\frac{A}{H}$.",
+        "correction": "Remember SOH CAH TOA: Sine = Opposite/Hyp, Cos = Adjacent/Hyp, Tan = Opposite/Adjacent."
+      },
+      {
+        "mistake": "Thinking that $\\\\tan 90^\\\\circ = \\\\infty$ (infinity).",
+        "correction": "$\\\\tan 90^\\\\circ$ is undefined because you'd divide by 0 (adjacent = 0)."
+      }
+    ],
+    "summary": [
+      "SOH CAH TOA for right triangles",
+      "Know exact values for 0,30,45,60,90 degrees",
+      "Use CAST diagram for sign in each quadrant",
+      "$\\\\tan\\\\theta = \\\\sin\\\\theta/\\\\cos\\\\theta$"
+    ]
+  }
+}

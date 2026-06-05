@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM8_Integration",
+  "topic_id": "AM8_Q5",
+  "title": "Kinematics (Displacement, Velocity, Accel)",
+  "syllabus_ref": "0606 C8",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you displacement $s(t)$, velocity $v(t) = s'(t)$? Let's explore kinematics (displacement, velocity, accel) in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Kinematics (Displacement, Velocity, Accel)</h3><p><b>Displacement $s(t)$, velocity $v(t) = s'(t)$</b> <b>Acceleration $a(t) = v'(t) = s''(t)$</b> <b>Finding displacement from velocity</b> <b>Initial conditions</b> <b>Motion graphs interpretation</b> <b>Distance vs displacement</b></p>",
+    "worked_example": "Worked example for Kinematics (Displacement, Velocity, Accel) will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Kinematics (Displacement, Velocity, Accel) is fundamental for IGCSE Additional Mathematics 0606 C8."
+  }
+}

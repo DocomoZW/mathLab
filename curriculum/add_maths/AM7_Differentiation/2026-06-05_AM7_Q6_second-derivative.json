@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM7_Differentiation",
+  "topic_id": "AM7_Q6",
+  "title": "Second Derivative",
+  "syllabus_ref": "0606 C7",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you definition $f''(x)$ or $\\frac{d^2y}{dx^2}$? Let's explore second derivative in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Second Derivative</h3><p><b>Definition $f''(x)$ or $\\frac{d^2y}{dx^2}$</b> <b>Second derivative test for max/min</b> <b>Concavity and convexity</b> <b>Points of inflection $f''(x)=0$</b> <b>Applications of $f''(x)$</b> <b>Higher order derivatives</b></p>",
+    "worked_example": "Worked example for Second Derivative will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Second Derivative is fundamental for IGCSE Additional Mathematics 0606 C7."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM7_Differentiation",
+  "topic_id": "AM7_Q2",
+  "title": "dy/dx from First Principles",
+  "syllabus_ref": "0606 C7",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you definition $f'(x) = \\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$? Let's explore dy/dx from first principles in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>dy/dx from First Principles</h3><p><b>Definition $f'(x) = \\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$</b> <b>Deriving $x^n$ from first principles</b> <b>Deriving linear and quadratic functions</b> <b>Binomial expansion for $f(x+h)$</b> <b>Simplifying difference quotient</b> <b>Evaluating the limit</b></p>",
+    "worked_example": "Worked example for dy/dx from First Principles will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "dy/dx from First Principles is fundamental for IGCSE Additional Mathematics 0606 C7."
+  }
+}

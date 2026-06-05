@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q1",
+  "title": "Polynomial Operations",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Polynomials are the building blocks of algebra \u2014 expressions like $3x^4-2x^3+5x-7$. Adding, subtracting, multiplying, and dividing them is fundamental to all advanced mathematics.",
+    "prerequisites": [
+      "Expanding brackets",
+      "Collecting like terms",
+      "Index laws"
+    ],
+    "core_explanation": "A **polynomial** is an expression of the form $P(x) = a_n x^n + a_{n-1}x^{n-1} + ... + a_1 x + a_0$, where $a_n \\\\neq 0$ and $n$ is a non-negative integer.\\n\\n**Operations:**\\n- **Addition/Subtraction:** Combine like terms (same power).\\n- **Multiplication:** Multiply each term, then collect like terms.\\n- **Division (long division):** Divide the leading terms, multiply, subtract, and repeat.\\n\\n**Degree:** The highest power of $x$. Leading coefficient: the coefficient of the highest degree term.",
+    "worked_example": "Divide $2x^3 - 3x^2 + 4x - 5$ by $x - 2$ using long division.\\n\\nSolution:\\n$2x^3 \\\\div x = 2x^2$\n$2x^2(x-2) = 2x^3 - 4x^2$\\nSubtract: $(2x^3 - 3x^2) - (2x^3 - 4x^2) = x^2$\\nBring down $+4x$: $x^2 + 4x$\\n$x^2 \\\\div x = x$\\n$x(x-2) = x^2 - 2x$\\nSubtract: $(x^2 + 4x) - (x^2 - 2x) = 6x$\\nBring down $-5$: $6x - 5$\\n$6x \\\\div x = 6$\\n$6(x-2) = 6x - 12$\\nSubtract: $(6x-5) - (6x-12) = 7$\\nQuotient: $2x^2 + x + 6$, Remainder: $7$",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to include terms with zero coefficient when dividing.",
+        "correction": "Write $2x^3 - 3x^2 + 0x + 4x - 5$ properly indexed."
+      },
+      {
+        "mistake": "Sign errors in subtraction during long division.",
+        "correction": "Subtract the entire bracket \u2014 change all signs before adding."
+      }
+    ],
+    "summary": [
+      "Add/subtract polynomials by combining like terms",
+      "Multiply by distributing each term",
+      "Long division: divide leading terms, multiply, subtract, repeat",
+      "Dividend = Divisor x Quotient + Remainder"
+    ]
+  }
+}

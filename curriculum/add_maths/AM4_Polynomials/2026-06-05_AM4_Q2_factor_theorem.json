@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q2",
+  "title": "Factor Theorem",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "The Factor Theorem is a shortcut: if $f(a)=0$, then $x-a$ is a factor of $f(x)$. It turns polynomial factorisation from guesswork into a systematic process.",
+    "prerequisites": [
+      "Polynomial operations",
+      "Substitution",
+      "Basic factorisation"
+    ],
+    "core_explanation": "**Factor Theorem:** For polynomial $f(x)$, if $f(a) = 0$, then $(x-a)$ is a factor of $f(x)$.\\n\\n**Finding factors:**\\n1. Test integer factors of the constant term.\\n2. If $f(a)=0$, then $(x-a)$ is a factor.\\n3. Divide $f(x)$ by $(x-a)$ to find the other factor.\\n\\n**Fully factorising:** Repeat until all factors are linear or irreducible quadratics.",
+    "worked_example": "Show that $(x-2)$ is a factor of $f(x) = x^3 - 3x^2 - 4x + 12$ and factorise fully.\\n\\nSolution:\\n$f(2) = 2^3 - 3(2)^2 - 4(2) + 12 = 8 - 12 - 8 + 12 = 0$\\nSo $(x-2)$ is a factor.\\n\\nDivide: $(x^3 - 3x^2 - 4x + 12) \\\\div (x-2) = x^2 - x - 6$\\n$= (x-3)(x+2)$\\n\\nTherefore $f(x) = (x-2)(x-3)(x+2)$",
+    "common_mistakes": [
+      {
+        "mistake": "Testing $f(a)$ but concluding $(x+a)$ is a factor instead of $(x-a)$.",
+        "correction": "If $f(a)=0$, then $(x-a)$ is a factor \u2014 note the sign."
+      },
+      {
+        "mistake": "Giving up after finding one factor \u2014 the quotient may factor further.",
+        "correction": "Always divide after finding a factor and check if the quotient can be factored more."
+      }
+    ],
+    "summary": [
+      "$f(a)=0$ implies $(x-a)$ is a factor",
+      "Test integer factors of the constant term",
+      "Divide after finding each factor",
+      "Factor fully down to linear/irreducible quadratics"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q6",
+  "title": "Simultaneous Equations",
+  "syllabus_ref": "0606 C1",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "When one equation isn't enough, we use systems. Simultaneous equations \u2014 one linear and one quadratic \u2014 model real scenarios like finding intersection points of a line and a curve.",
+    "prerequisites": [
+      "Solving linear equations",
+      "Solving quadratic equations",
+      "Substitution method"
+    ],
+    "core_explanation": "To solve one linear and one quadratic equation:\n\n1. Rearrange the linear equation to make one variable the subject.\n2. Substitute into the quadratic equation.\n3. Solve the resulting quadratic equation.\n4. Substitute back to find the other variable.\n5. Check solutions in both original equations.\n\n**Number of solutions:** The discriminant of the resulting quadratic tells you how many intersection points exist: 0 (no intersection), 1 (tangent), or 2 (secant).",
+    "worked_example": "Question: Solve $y = 2x + 1$ and $y = x^2 - 2x + 3$.\n\nSolution:\nSubstitute: $2x + 1 = x^2 - 2x + 3$\n$0 = x^2 - 4x + 2$\n$x = \\frac{4 \\pm \\sqrt{16 - 8}}{2} = \\frac{4 \\pm \\sqrt{8}}{2} = 2 \\pm \\sqrt{2}$\nWhen $x = 2 + \\sqrt{2}$: $y = 2(2+\\sqrt{2}) + 1 = 5 + 2\\sqrt{2}$\nWhen $x = 2 - \\sqrt{2}$: $y = 2(2-\\sqrt{2}) + 1 = 5 - 2\\sqrt{2}$\nSolutions: $(2+\\sqrt{2}, 5+2\\sqrt{2})$ and $(2-\\sqrt{2}, 5-2\\sqrt{2})$",
+    "common_mistakes": [
+      {
+        "mistake": "Making the wrong variable the subject, leading to messy substitution.",
+        "correction": "Choose the variable that gives the simplest expression \u2014 usually the one with coefficient 1."
+      },
+      {
+        "mistake": "Forgetting to substitute back to find the second variable.",
+        "correction": "Always substitute each $x$ value back into the linear equation to find corresponding $y$ values."
+      }
+    ],
+    "summary": [
+      "Substitute the linear equation into the quadratic",
+      "Solve the resulting quadratic equation",
+      "Substitute back to find the second variable",
+      "Check both solutions in the original equations"
+    ]
+  }
+}

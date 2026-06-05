@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q7",
+  "title": "Trigonometric Graphs & Transformations",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM5_Q7_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "amplitude"
+      ],
+      "problem_text": "What is the amplitude of y = 3 sin x?",
+      "answer": "3",
+      "solution": "Amplitude=|a|=3",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "period"
+      ],
+      "problem_text": "What is the period of y = cos 2x?",
+      "answer": "pi",
+      "solution": "Period=2pi/2=pi",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "range"
+      ],
+      "problem_text": "Find the range of y = 2 sin x + 1.",
+      "answer": "[-1, 3]",
+      "solution": "Min=2(-1)+1=-1, Max=2(1)+1=3, Range=[-1,3]",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "phase_shift"
+      ],
+      "problem_text": "What is the phase shift of y = sin(x - pi/4)?",
+      "answer": "pi/4 to the right",
+      "solution": "x-c => shift right by c=pi/4",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "transformation"
+      ],
+      "problem_text": "Describe transformation: y = sin x to y = 2 sin x + 3.",
+      "answer": "Vertical stretch by 2, then shift up by 3",
+      "solution": "First stretch vertically by factor 2, then shift up 3 units",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q7_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "period"
+      ],
+      "problem_text": "Find period of y = tan(3x).",
+      "answer": "pi/3",
+      "solution": "Period of tan x is pi. For tan(3x): period=pi/3",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "range"
+      ],
+      "problem_text": "Find range of y = 5 - 2 cos x.",
+      "answer": "[3, 7]",
+      "solution": "cos x in [-1,1]. Min: 5-2(1)=3, Max: 5-2(-1)=7",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "amplitude_period"
+      ],
+      "problem_text": "State amplitude and period of y = 4 sin(3x).",
+      "answer": "A=4, T=2pi/3",
+      "solution": "Amplitude=|4|=4, Period=2pi/3",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "sketch"
+      ],
+      "problem_text": "Sketch y = 2 cos x + 1 for 0<=x<=2pi stating max, min, and intercepts.",
+      "answer": "Max=3 at x=0,2pi; Min=-1 at x=pi; y-int=3; x-ints at x=2pi/3,4pi/3",
+      "solution": "Centre line y=1, amplitude 2. Max at x=0,2pi: y=3. Min at x=pi: y=-1.",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q7_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "find_equation"
+      ],
+      "problem_text": "A sine curve has amplitude 3, period pi, and passes through (0,0). Find equation.",
+      "answer": "y=3 sin(2x)",
+      "solution": "A=3, period=2pi/b=pi => b=2. Through (0,0): 3sin(0)=0 \u2713 => y=3 sin(2x)",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q7_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "transform_sequence"
+      ],
+      "problem_text": "Describe sequence: y=sin x to y=3 sin(2x-pi/4)+1.",
+      "answer": "Horizontal compression by 1/2, shift right pi/8, vertical stretch by 3, shift up 1",
+      "solution": "y=sin x -> sin 2x (compress by 1/2) -> sin 2(x-pi/8) (right pi/8) -> 3 sin(2x-pi/4) (stretch by 3) -> +1 (up 1)",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q7_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "max_min"
+      ],
+      "problem_text": "Find max and min of y = 3 - 4 cos(2x).",
+      "answer": "Max=7, Min=-1",
+      "solution": "cos(2x) in [-1,1]. Max: 3-4(-1)=7, Min: 3-4(1)=-1",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_graph"
+      ],
+      "problem_text": "Find the equation with amplitude 2, period 2pi/3, phase shift pi/6 right, vertical shift 1 down.",
+      "answer": "y=2 sin(3x - pi/2) - 1",
+      "solution": "A=2, b=2pi/(2pi/3)=3. Phase shift: c/b=pi/6 => c=3(pi/6)=pi/2. y=2 sin(3x-pi/2)-1",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q7_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "Tide height: h(t)=3+2 sin(pi t/6) where t in hours. Find max height and when it first occurs.",
+      "answer": "Max=5m at t=3h",
+      "solution": "Max when sin=1 => pi t/6=pi/2 => t=3. Max height=3+2=5m",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q7_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_period"
+      ],
+      "problem_text": "Find period of y = |sin x|.",
+      "answer": "pi",
+      "solution": "|sin x| repeats every pi (negative peaks become positive)",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q7_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_equation"
+      ],
+      "problem_text": "A curve y=a cos bx + c has max=5, min=-1, period=2pi. Find a,b,c.",
+      "answer": "a=3,b=1,c=2",
+      "solution": "Range: centre=(5+(-1))/2=2=c. Amplitude=(5-(-1))/2=3=a. Period=2pi => b=1. y=3cos x+2",
+      "marks": 3
+    }
+  ]
+}

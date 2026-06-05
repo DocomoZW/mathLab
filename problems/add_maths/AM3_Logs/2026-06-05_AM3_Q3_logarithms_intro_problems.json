@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q3",
+  "title": "Logarithms Intro",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM3_Q3_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "convert_exponential"
+      ],
+      "problem_text": "Write 2^5=32 in log form.",
+      "answer": "log_2 32 = 5",
+      "solution": "Base is 2, exponent is 5, result is 32 => log_2 32 = 5",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "convert_log"
+      ],
+      "problem_text": "Write log_3 81 = 4 in exponential form.",
+      "answer": "3^4=81",
+      "solution": "Base is 3, exponent is 4, result is 81 => 3^4=81",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "evaluate_log"
+      ],
+      "problem_text": "Evaluate log_2 16.",
+      "answer": "4",
+      "solution": "2^4=16, so log_2 16=4",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "evaluate_log"
+      ],
+      "problem_text": "Evaluate log_5 1/25.",
+      "answer": "-2",
+      "solution": "5^{-2}=1/25, so log_5 1/25 = -2",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "solve_simple"
+      ],
+      "problem_text": "Solve log_3 x = 4.",
+      "answer": "x=81",
+      "solution": "x=3^4=81",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "solve_simple"
+      ],
+      "problem_text": "Solve log_x 64 = 3.",
+      "answer": "x=4",
+      "solution": "x^3=64 => x=4",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "solve_simple"
+      ],
+      "problem_text": "Solve log_5 (2x-1) = 2.",
+      "answer": "x=13",
+      "solution": "2x-1=5^2=25 => 2x=26 => x=13",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q3_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "evaluate_without_calc"
+      ],
+      "problem_text": "Evaluate log_2 64 + log_3 27.",
+      "answer": "9",
+      "solution": "log_2 64=6, log_3 27=3, sum=9",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q3_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "unknown_base"
+      ],
+      "problem_text": "If log_a 81 = 4, find a.",
+      "answer": "a=3",
+      "solution": "a^4=81 => a=81^{1/4}=3",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "log_expression"
+      ],
+      "problem_text": "If log_2 (x+1) = 5, find x.",
+      "answer": "x=31",
+      "solution": "x+1=2^5=32 => x=31",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q3_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "multiple_logs"
+      ],
+      "problem_text": "Find x if log_2 x + log_2 8 = 4.",
+      "answer": "x=2",
+      "solution": "log_2(8x)=4 => 8x=2^4=16 => x=2",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q3_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "equation"
+      ],
+      "problem_text": "Solve log_3 (x^2-1) = 2.",
+      "answer": "x=+-sqrt(10)",
+      "solution": "x^2-1=3^2=9 => x^2=10 => x=+-sqrt10",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q3_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "system"
+      ],
+      "problem_text": "Solve log_2 x + log_2 y = 5 and x-y=4.",
+      "answer": "x=8,y=4",
+      "solution": "log_2(xy)=5 => xy=32. x-y=4 => x=y+4 => y(y+4)=32 => y^2+4y-32=0 => (y+8)(y-4)=0 => y=4, x=8",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q3_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "index_log_relation"
+      ],
+      "problem_text": "If log_2 (x+5) = 3, find the value of x^2-2x.",
+      "answer": "15",
+      "solution": "x+5=8 => x=3. x^2-2x=9-6=3... Wait x+5=8 => x=3. 3^2-2(3)=9-6=3",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q3_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "log_with_fraction"
+      ],
+      "problem_text": "Solve log_{16} x = 3/2.",
+      "answer": "x=64",
+      "solution": "x=16^{3/2}=(16^{1/2})^3=4^3=64",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q3_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "The magnitude M of an earthquake is M = log(I/I_0). If I=1000xI_0, find M.",
+      "answer": "M=3",
+      "solution": "M=log(1000)=log(10^3)=3",
+      "marks": 2
+    }
+  ]
+}

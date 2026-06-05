@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q5",
+  "title": "Cubic and Reciprocal Graphs",
+  "syllabus_ref": "0606 C2",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Beyond quadratics, cubic and reciprocal graphs introduce new shapes \u2014 S-curves and hyperbolas \u2014 each with their own key features like turning points and asymptotes.",
+    "prerequisites": [
+      "Plotting points on a graph",
+      "Basic shape of $y = x^2$",
+      "Factorisation of cubics"
+    ],
+    "core_explanation": "**Cubic graphs:** $y = ax^3 + bx^2 + cx + d$ ($a \\\\neq 0$)\\n- Shape: S-curve (if $a > 0$, rises left to right; if $a < 0$, falls left to right)\\n- Can have up to two turning points\\n- Can have up to three $x$-intercepts\\n\\n**Reciprocal graphs:** $y = \\\\frac{k}{x}$ ($k \\\\neq 0$)\\n- Shape: **hyperbola** with two branches\\n- Vertical asymptote at $x = 0$ (where the function is undefined)\\n- Horizontal asymptote at $y = 0$\\n- If $k > 0$, branches in first and third quadrants\\n- If $k < 0$, branches in second and fourth quadrants\\n\\n**Asymptotes:** Lines the graph approaches but never touches.",
+    "worked_example": "Question: Sketch $y = \\\\frac{2}{x}$, showing asymptotes.\\n\\nSolution:\\nVertical asymptote: $x = 0$ (dashed line)\\nHorizontal asymptote: $y = 0$ (dashed line)\\nKey points: $(1, 2)$, $(-1, -2)$, $(2, 1)$, $(-2, -1)$\\nBranches in first and third quadrants (since $k = 2 > 0$)\\nShape: a hyperbola approaching both axes but never crossing them.",
+    "common_mistakes": [
+      {
+        "mistake": "Thinking the reciprocal graph crosses its asymptotes.",
+        "correction": "Asymptotes are lines the graph approaches but never reaches. The graph gets arbitrarily close but never touches."
+      },
+      {
+        "mistake": "Mixing up the S-shape of a cubic with the U-shape of a quadratic.",
+        "correction": "Cubics have an S-shape with one or two turning points. Quadratics have a single U-shape with one turning point."
+      }
+    ],
+    "summary": [
+      "Cubic: S-shaped, up to 2 turning points, up to 3 x-intercepts",
+      "Reciprocal: hyperbola, asymptotes at $x=0$ and $y=0$",
+      "Sign of $k$ determines which quadrants the branches lie in",
+      "Always show asymptotes with dashed lines"
+    ]
+  }
+}

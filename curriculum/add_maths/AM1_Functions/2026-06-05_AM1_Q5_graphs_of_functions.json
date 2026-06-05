@@ -1,0 +1,34 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q5",
+  "title": "Graphs of Functions",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "A picture is worth a thousand equations. Sketching graphs helps you visualise relationships between variables and is essential for solving equations and inequalities.",
+    "prerequisites": [
+      "Plotting coordinates",
+      "Quadratic functions",
+      "Basic shape recognition"
+    ],
+    "core_explanation": "**Key graph types:**\n- **Quadratic:** $y = ax^2 + bx + c$ \u2014 parabola. Vertex at $x = -b/2a$.\n- **Cubic:** $y = ax^3 + bx^2 + cx + d$ \u2014 S-shape with up to two turning points.\n- **Reciprocal:** $y = a/x$ \u2014 hyperbola with vertical asymptote at $x=0$.\n\n**Transformations:**\n- $y = f(x) + a$: shift up by $a$\n- $y = f(x + a)$: shift left by $a$\n- $y = af(x)$: vertical stretch by factor $a$\n- $y = f(ax)$: horizontal compression by factor $1/a$\n- $y = -f(x)$: reflection in x-axis\n- $y = f(-x)$: reflection in y-axis",
+    "worked_example": "Question: Sketch $y = (x-2)^2 - 1$, showing the vertex and intercepts.\n\nSolution:\nVertex at $(2, -1)$.\n$y$-intercept: $x=0 \\implies y = (0-2)^2 - 1 = 3$.\n$x$-intercepts: $(x-2)^2 - 1 = 0 \\implies x-2 = \\pm 1 \\implies x = 1$ or $x = 3$.\nThe parabola opens upward. Plot $(2,-1)$, $(0,3)$, $(1,0)$, $(3,0)$ and sketch.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing $y = f(x+a)$ (shift left) with shift right.",
+        "correction": "$y = f(x+2)$ shifts the graph 2 units left \u2014 the opposite of what intuition suggests."
+      },
+      {
+        "mistake": "Forgetting asymptotes when sketching reciprocals.",
+        "correction": "For $y=1/x$, always show the asymptotes at $x=0$ and $y=0$ with dashed lines."
+      }
+    ],
+    "summary": [
+      "Know the shapes: quadratic (U), cubic (S), reciprocal (hyperbola)",
+      "Transformations: shifts, stretches, reflections",
+      "Always label key points: intercepts, turning points, asymptotes"
+    ]
+  }
+}

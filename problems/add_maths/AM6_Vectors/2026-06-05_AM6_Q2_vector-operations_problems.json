@@ -1,0 +1,235 @@
+{
+  "track": "add_maths",
+  "unit": "AM6_Vectors",
+  "topic_id": "AM6_Q2",
+  "title": "Vector Operations",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "AM6_Q2_P01",
+      "topic": "AM6_Q2",
+      "question": "Problem 1: Solve the vector operations question. (Difficulty: basic)",
+      "marks": 2,
+      "difficulty": "basic",
+      "answer": "Answer for problem 1",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P02",
+      "topic": "AM6_Q2",
+      "question": "Problem 2: Solve the vector operations question. (Difficulty: basic)",
+      "marks": 2,
+      "difficulty": "basic",
+      "answer": "Answer for problem 2",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P03",
+      "topic": "AM6_Q2",
+      "question": "Problem 3: Solve the vector operations question. (Difficulty: basic)",
+      "marks": 2,
+      "difficulty": "basic",
+      "answer": "Answer for problem 3",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P04",
+      "topic": "AM6_Q2",
+      "question": "Problem 4: Solve the vector operations question. (Difficulty: basic)",
+      "marks": 2,
+      "difficulty": "basic",
+      "answer": "Answer for problem 4",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P05",
+      "topic": "AM6_Q2",
+      "question": "Problem 5: Solve the vector operations question. (Difficulty: basic)",
+      "marks": 2,
+      "difficulty": "basic",
+      "answer": "Answer for problem 5",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P06",
+      "topic": "AM6_Q2",
+      "question": "Problem 6: Solve the vector operations question. (Difficulty: intermediate)",
+      "marks": 3,
+      "difficulty": "intermediate",
+      "answer": "Answer for problem 6",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P07",
+      "topic": "AM6_Q2",
+      "question": "Problem 7: Solve the vector operations question. (Difficulty: intermediate)",
+      "marks": 3,
+      "difficulty": "intermediate",
+      "answer": "Answer for problem 7",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P08",
+      "topic": "AM6_Q2",
+      "question": "Problem 8: Solve the vector operations question. (Difficulty: intermediate)",
+      "marks": 3,
+      "difficulty": "intermediate",
+      "answer": "Answer for problem 8",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P09",
+      "topic": "AM6_Q2",
+      "question": "Problem 9: Solve the vector operations question. (Difficulty: intermediate)",
+      "marks": 3,
+      "difficulty": "intermediate",
+      "answer": "Answer for problem 9",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P10",
+      "topic": "AM6_Q2",
+      "question": "Problem 10: Solve the vector operations question. (Difficulty: intermediate)",
+      "marks": 3,
+      "difficulty": "intermediate",
+      "answer": "Answer for problem 10",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P11",
+      "topic": "AM6_Q2",
+      "question": "Problem 11: Solve the vector operations question. (Difficulty: intermediate)",
+      "marks": 3,
+      "difficulty": "intermediate",
+      "answer": "Answer for problem 11",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P12",
+      "topic": "AM6_Q2",
+      "question": "Problem 12: Solve the vector operations question. (Difficulty: advanced)",
+      "marks": 4,
+      "difficulty": "advanced",
+      "answer": "Answer for problem 12",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P13",
+      "topic": "AM6_Q2",
+      "question": "Problem 13: Solve the vector operations question. (Difficulty: advanced)",
+      "marks": 4,
+      "difficulty": "advanced",
+      "answer": "Answer for problem 13",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P14",
+      "topic": "AM6_Q2",
+      "question": "Problem 14: Solve the vector operations question. (Difficulty: advanced)",
+      "marks": 4,
+      "difficulty": "advanced",
+      "answer": "Answer for problem 14",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P15",
+      "topic": "AM6_Q2",
+      "question": "Problem 15: Solve the vector operations question. (Difficulty: advanced)",
+      "marks": 4,
+      "difficulty": "advanced",
+      "answer": "Answer for problem 15",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    },
+    {
+      "id": "AM6_Q2_P16",
+      "topic": "AM6_Q2",
+      "question": "Problem 16: Solve the vector operations question. (Difficulty: advanced)",
+      "marks": 4,
+      "difficulty": "advanced",
+      "answer": "Answer for problem 16",
+      "solution_steps": [
+        "Step 1: Read the problem",
+        "Step 2: Apply vector operations concepts",
+        "Step 3: Compute the answer",
+        "Step 4: Verify"
+      ]
+    }
+  ]
+}

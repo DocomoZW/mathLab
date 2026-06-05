@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q4",
+  "title": "Trig Identities",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM5_Q4_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "pythagorean"
+      ],
+      "problem_text": "Simplify sin^2 A + cos^2 A.",
+      "answer": "1",
+      "solution": "By Pythagorean identity, sin^2+cos^2=1",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "tan_identity"
+      ],
+      "problem_text": "Simplify tan theta cos theta.",
+      "answer": "sin theta",
+      "solution": "tan=sin/cos => (sin/cos)*cos=sin",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "pythagorean"
+      ],
+      "problem_text": "If sin A=3/5, find cos^2 A.",
+      "answer": "16/25",
+      "solution": "cos^2=1-sin^2=1-9/25=16/25",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "simplify"
+      ],
+      "problem_text": "Simplify 1 - cos^2 theta.",
+      "answer": "sin^2 theta",
+      "solution": "1-cos^2=sin^2",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "simplify_expression"
+      ],
+      "problem_text": "Simplify (1 - cos^2 x)/(1 - sin^2 x).",
+      "answer": "tan^2 x",
+      "solution": "(sin^2 x)/(cos^2 x)=tan^2 x",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q4_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "prove_identity"
+      ],
+      "problem_text": "Prove that sin A cot A = cos A.",
+      "answer": "Proof",
+      "solution": "sin A cot A = sin A (cos A/sin A) = cos A",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "simplify"
+      ],
+      "problem_text": "Simplify sin theta / (1 - cos^2 theta).",
+      "answer": "cosec theta",
+      "solution": "sin/(sin^2)=1/sin=cosec",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "expression"
+      ],
+      "problem_text": "Express 1/(1+tan^2 A) in terms of cos only.",
+      "answer": "cos^2 A",
+      "solution": "1/(1+tan^2)=1/sec^2=cos^2",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "prove"
+      ],
+      "problem_text": "Prove that (1+tan^2 A)cos^2 A = 1.",
+      "answer": "Proof",
+      "solution": "1+tan^2=sec^2, sec^2 cos^2 = 1/cos^2 * cos^2 = 1",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "prove_complex"
+      ],
+      "problem_text": "Prove that (1-sin^2 x)(1+tan^2 x)=1.",
+      "answer": "Proof",
+      "solution": "(cos^2 x)(sec^2 x)=1",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "simplify_fraction"
+      ],
+      "problem_text": "Simplify (sin x + cos x)^2 + (sin x - cos x)^2.",
+      "answer": "2",
+      "solution": "(sin^2+2sincos+cos^2)+(sin^2-2sincos+cos^2)=2(sin^2+cos^2)=2",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q4_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "prove"
+      ],
+      "problem_text": "Prove that (1-cos x)(1+cos x)=sin^2 x.",
+      "answer": "Proof",
+      "solution": "(1-cos)(1+cos)=1-cos^2=sin^2",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q4_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_proof"
+      ],
+      "problem_text": "Prove that (sin A + cos A)/(sin A - cos A) + (sin A - cos A)/(sin A + cos A) = 2/(1-2cos^2 A).",
+      "answer": "Proof",
+      "solution": "LHS = [(sin+cos)^2+(sin-cos)^2]/[(sin-cos)(sin+cos)] = [2(sin^2+cos^2)]/[sin^2-cos^2] = 2/(sin^2-cos^2)=2/((1-cos^2)-cos^2)=2/(1-2cos^2)",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q4_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_simplify"
+      ],
+      "problem_text": "Simplify (sin^4 A - cos^4 A)/(sin^2 A - cos^2 A).",
+      "answer": "1",
+      "solution": "sin^4-cos^4=(sin^2+cos^2)(sin^2-cos^2)=1(sin^2-cos^2). So (sin^2-cos^2)/(sin^2-cos^2)=1",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q4_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "prove"
+      ],
+      "problem_text": "Prove that cos^4 A - sin^4 A = cos^2 A - sin^2 A.",
+      "answer": "Proof",
+      "solution": "cos^4-sin^4=(cos^2+sin^2)(cos^2-sin^2)=1(cos^2-sin^2)=cos^2-sin^2",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q4_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_proof"
+      ],
+      "problem_text": "Prove that (sec A + tan A)(sec A - tan A) = 1.",
+      "answer": "Proof",
+      "solution": "(sec+tan)(sec-tan)=sec^2-tan^2=(1+tan^2)-tan^2=1",
+      "marks": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q4",
+  "title": "Inequalities on Graphs",
+  "syllabus_ref": "0606 C2",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Inequalities describe regions, not just points. On a graph, an inequality tells us which side of a line or curve satisfies the condition.",
+    "prerequisites": [
+      "Linear equations and graphs",
+      "Sketching quadratics",
+      "Inequality notation"
+    ],
+    "core_explanation": "To show an **inequality on a graph**:\\n\\n1. Draw the boundary line/curve (use a **solid** line for $\\\\le$ or $\\\\ge$; use a **dashed** line for $<$ or $>$).\\n2. Choose a test point not on the boundary.\\n3. If the test point satisfies the inequality, shade that region; otherwise, shade the opposite side.\\n\\n**Linear programming** involves finding the feasible region that satisfies multiple inequalities simultaneously. The optimum value of a linear objective function occurs at a vertex of the feasible region.",
+    "worked_example": "Question: Shade the region satisfying $y \\\\le 2x + 1$ and $y > -x + 3$.\\n\\nSolution:\\n1. Draw $y = 2x + 1$ (solid line) and $y = -x + 3$ (dashed line).\\n2. Test $(0, 0)$: For $y \\\\le 2x + 1$: $0 \\\\le 1$ True. Shade below the first line.\\n3. Test $(0, 0)$: For $y > -x + 3$: $0 > 3$ False. Shade above the second line.\\n4. The feasible region is where both shadings overlap.",
+    "common_mistakes": [
+      {
+        "mistake": "Using a solid line for $<$ or $>$ inequalities.",
+        "correction": "Use a dashed line when the boundary is not included ($<$ or $>$); solid when included ($\\\\le$ or $\\\\ge$)."
+      },
+      {
+        "mistake": "Shading the wrong side of the line.",
+        "correction": "Always test a point \u2014 do not rely on visual intuition alone."
+      }
+    ],
+    "summary": [
+      "Solid line for $\\\\le/\\\\ge$, dashed for $</>$",
+      "Test a point to decide which side to shade",
+      "Feasible region = overlap of all shaded areas",
+      "Optimum occurs at a vertex of the feasible region"
+    ]
+  }
+}

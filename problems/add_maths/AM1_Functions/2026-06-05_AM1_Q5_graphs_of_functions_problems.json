@@ -1,0 +1,193 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q5",
+  "title": "Graphs of Functions",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM1_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "quadratic_sketch"
+      ],
+      "problem_text": "Sketch y=x^2-4x+3, showing intercepts.",
+      "answer": "U-shaped parabola. x-int (1,0),(3,0), y-int (0,3), vertex (2,-1)",
+      "solution": "y=(x-1)(x-3). x-intercepts at x=1,3. y-intercept at (0,3). Vertex at x=2, y=-1.",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "reciprocal"
+      ],
+      "problem_text": "Sketch y=1/x for x>0.",
+      "answer": "Hyperbola in first quadrant, asymptotes x=0, y=0",
+      "solution": "As x->0+, y->inf. As x->inf, y->0. Both axes are asymptotes.",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "translation"
+      ],
+      "problem_text": "Describe the transformation from y=x^2 to y=x^2+3.",
+      "answer": "Vertical shift up by 3",
+      "solution": "Adding 3 shifts the graph 3 units upward.",
+      "marks": 1
+    },
+    {
+      "id": "AM1_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "quadratic_sketch"
+      ],
+      "problem_text": "Find the turning point of y=2x^2-8x+5.",
+      "answer": "(2,-3)",
+      "solution": "2(x^2-4x)+5=2[(x-2)^2-4]+5=2(x-2)^2-3. Vertex (2,-3)",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "cubic_sketch"
+      ],
+      "problem_text": "Sketch y=x^3, showing key features.",
+      "answer": "S-shaped curve through (0,0)",
+      "solution": "Passes through origin. Increasing. No turning points. As x->-inf, y->-inf. As x->inf, y->inf.",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "transformation",
+        "reflection"
+      ],
+      "problem_text": "Sketch y=-x^2+4x-3, showing intercepts.",
+      "answer": "Inverted U. x-int (1,0),(3,0), y-int (0,-3), vertex (2,1)",
+      "solution": "y=-(x^2-4x+3)=-(x-1)(x-3). x-ints at 1,3. y-int (0,-3). Vertex at x=2, y=1.",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "translation"
+      ],
+      "problem_text": "Describe the transformation from y=1/x to y=1/(x-2)+3.",
+      "answer": "Shift right 2, up 3",
+      "solution": "x->x-2 shifts right 2; +3 shifts up 3.",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "reciprocal_sketch"
+      ],
+      "problem_text": "Sketch y=2/x, showing asymptotes.",
+      "answer": "Hyperbola, asymptotes at x=0, y=0",
+      "solution": "Vertical asymptote x=0, horizontal asymptote y=0. Passes through (1,2) and (-1,-2).",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "transformation",
+        "stretch"
+      ],
+      "problem_text": "Describe the transformation from y=f(x) to y=2f(3x).",
+      "answer": "Vertical stretch by factor 2, horizontal compression by factor 1/3",
+      "solution": "2f(3x): multiply output by 2 (vertical stretch), divide input by 3 (horizontal compression).",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "quadratic_sketch",
+        "parameter"
+      ],
+      "problem_text": "Sketch y=x^2-2ax+a^2, showing the vertex. (a>0)",
+      "answer": "Parabola touching x-axis at (a,0)",
+      "solution": "y=(x-a)^2. Vertex at (a,0), touches x-axis. y-intercept at (0,a^2).",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "transformation",
+        "sequence"
+      ],
+      "problem_text": "Describe the sequence of transformations from y=x^2 to y=2(x-3)^2+1.",
+      "answer": "Shift right 3, vertical stretch by 2, shift up 1",
+      "solution": "y=x^2 -> y=(x-3)^2 (right 3) -> y=2(x-3)^2 (stretch by 2) -> y=2(x-3)^2+1 (up 1)",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "cubic_sketch"
+      ],
+      "problem_text": "Sketch y=(x+2)(x-1)(x-3), showing intercepts.",
+      "answer": "Cubic through (-2,0),(1,0),(3,0),(0,6)",
+      "solution": "x-ints at -2,1,3. y-int: (0+2)(0-1)(0-3)=2*(-1)*(-3)=6. Leading coeff positive, so down-up shape.",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "transformation",
+        "inverse",
+        "graph"
+      ],
+      "problem_text": "Given y=f(x) passes through (1,2), state a point on y=3f(2x-4)+1.",
+      "answer": "(3,7)",
+      "solution": "x->2x-4. When 2x-4=1 => 2x=5 => x=2.5. Actually need to track: point (a,b) on f means b=f(a). For y=3f(2x-4)+1: solve 2x-4=a => x=(a+4)/2. y=3b+1. If (1,2), then x=(1+4)/2=2.5, y=3(2)+1=7. So (2.5,7).",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "modulus_sketch"
+      ],
+      "problem_text": "Sketch y=|x^2-4|.",
+      "answer": "V-shaped with vertex at y=0 at x=+-2",
+      "solution": "y=x^2-4 has roots at x=+-2. Negative part between -2 and 2 is reflected above x-axis.",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q5_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "graphical_solution"
+      ],
+      "problem_text": "Use graph of y=2x^2-3x-2 to solve 2x^2-3x-2=0.",
+      "answer": "x=-0.5 or x=2",
+      "solution": "2x^2-3x-2=(2x+1)(x-2)=0 => x=-1/2 or x=2.",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q5_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "transformation",
+        "composite"
+      ],
+      "problem_text": "The point (4,9) lies on y=f(x). Find the point on y=-f(2x+6).",
+      "answer": "(-1,-9)",
+      "solution": "2x+6=4 => 2x=-2 => x=-1. y=-9. So (-1,-9).",
+      "marks": 3
+    }
+  ]
+}

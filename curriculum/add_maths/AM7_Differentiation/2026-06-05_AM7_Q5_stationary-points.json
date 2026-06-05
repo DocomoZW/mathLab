@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM7_Differentiation",
+  "topic_id": "AM7_Q5",
+  "title": "Stationary Points",
+  "syllabus_ref": "0606 C7",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you condition $f'(x)=0$ for stationary points? Let's explore stationary points in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Stationary Points</h3><p><b>Condition $f'(x)=0$ for stationary points</b> <b>Identifying maximum, minimum, point of inflection</b> <b>First derivative test</b> <b>Nature of stationary points</b> <b>Curve sketching with stationary points</b> <b>Optimisation problems</b></p>",
+    "worked_example": "Worked example for Stationary Points will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Stationary Points is fundamental for IGCSE Additional Mathematics 0606 C7."
+  }
+}

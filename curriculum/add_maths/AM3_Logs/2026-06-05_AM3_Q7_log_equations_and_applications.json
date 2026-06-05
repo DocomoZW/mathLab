@@ -1,0 +1,36 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q7",
+  "title": "Log Equations & Applications",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Logarithmic equations combine everything \u2014 log laws, change of base, and algebraic manipulation. They're essential for solving real-world problems involving exponential growth, sound intensity, and earthquake magnitude.",
+    "prerequisites": [
+      "Log laws",
+      "Change of base",
+      "Exponential equations",
+      "Quadratic equations"
+    ],
+    "core_explanation": "**Solving log equations:**\\n1. **Simple:** $\\\\log_a f(x) = k \\\\implies f(x) = a^k$\\n2. **Using log laws:** Combine logs, then convert to exponential form.\\n3. **Quadratic form:** After using log laws, the equation may become quadratic.\\n4. **Always check** that arguments are positive!\\n\\n**Applications:**\\n- **Richter scale:** $M = \\\\log(I/I_0)$\\n- **pH scale:** $pH = -\\\\log[H^+]$\\n- **Sound intensity:** $\\\\beta = 10\\\\log(I/I_0)$ dB",
+    "worked_example": "Solve $\\\\log_2 x + \\\\log_2(x-2) = 3$\\n\\nSolution:\\n$\\\\log_2[x(x-2)] = 3$\\n$x(x-2) = 2^3 = 8$\\n$x^2 - 2x - 8 = 0$\\n$(x-4)(x+2) = 0$\\n$x = 4$ or $x = -2$\\n\\nCheck: $x=-2$ gives $\\\\log_2(-2)$ (undefined).\\nSo $x = 4$ is the only solution.",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to check that arguments are positive after solving.",
+        "correction": "Logs are only defined for positive arguments. Always verify each solution."
+      },
+      {
+        "mistake": "Applying log to each term individually: $\\\\log(x+2) = \\\\log x + \\\\log 2$.",
+        "correction": "Use log laws on products, not on sums: $\\\\log(x+2)$ cannot be expanded."
+      }
+    ],
+    "summary": [
+      "Combine logs using log laws first",
+      "Convert to exponential form: $\\\\log_a f(x) = k \\\\iff f(x) = a^k$",
+      "Check all solutions in the original equation",
+      "Log arguments must be positive"
+    ]
+  }
+}

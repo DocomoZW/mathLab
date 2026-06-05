@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q6",
+  "title": "Change of Base",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "What if your calculator only has $\\\\log_{10}$ or $\\\\ln$, but you need $\\\\log_2 7$? The change of base formula lets you convert any logarithm to a base your calculator can handle.",
+    "prerequisites": [
+      "Log laws",
+      "Exponential equations",
+      "Calculator skills"
+    ],
+    "core_explanation": "**Change of Base Formula:**\\n$\\\\log_a b = \\\\frac{\\\\log_c b}{\\\\log_c a}$ for any valid base $c$.\\n\\nCommon choices: $c=10$ or $c=e$ (calculator bases).\\n\\n**Useful forms:**\\n- $\\\\log_a b = \\\\frac{\\\\ln b}{\\\\ln a}$\\n- $\\\\log_a b = \\\\frac{\\\\lg b}{\\\\lg a}$\\n- $\\\\log_a b = \\\\frac{1}{\\\\log_b a}$ (special case when $c=b$)",
+    "worked_example": "Evaluate $\\\\log_2 50$ correct to 3 s.f.\\n\\nSolution:\\n$\\\\log_2 50 = \\\\frac{\\\\ln 50}{\\\\ln 2} \\\\approx \\\\frac{3.9120}{0.6931} \\\\approx 5.64$\\n\\nAlternatively: $\\\\log_2 50 = \\\\frac{\\\\lg 50}{\\\\lg 2} \\\\approx \\\\frac{1.6990}{0.3010} \\\\approx 5.64$",
+    "common_mistakes": [
+      {
+        "mistake": "Writing $\\\\log_a b = \\\\frac{\\\\log_b a}{\\\\log_c a}$ \u2014 reversing the numerator and denominator.",
+        "correction": "The original argument $b$ goes in the numerator; the original base $a$ goes in the denominator."
+      },
+      {
+        "mistake": "Forgetting the formula and trying $\\\\log_2 50 = \\\\log_2(5 \\\\times 10) = \\\\log_2 5 + \\\\log_2 10$ instead (which doesn't help).",
+        "correction": "Use change of base directly when you need a decimal answer."
+      }
+    ],
+    "summary": [
+      "$\\\\log_a b = \\\\frac{\\\\log_c b}{\\\\log_c a}$",
+      "Use base 10 or e for calculator work",
+      "$\\\\log_a b = 1/\\\\log_b a$",
+      "Choose c for convenience (usually 10 or e)"
+    ]
+  }
+}

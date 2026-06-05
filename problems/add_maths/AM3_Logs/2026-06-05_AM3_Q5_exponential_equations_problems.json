@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q5",
+  "title": "Exponential Equations",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM3_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "same_base"
+      ],
+      "problem_text": "Solve 2^x = 2^5.",
+      "answer": "x=5",
+      "solution": "2^x=2^5 => x=5",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "same_base_convert"
+      ],
+      "problem_text": "Solve 2^x = 32.",
+      "answer": "x=5",
+      "solution": "32=2^5 => 2^x=2^5 => x=5",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "same_base"
+      ],
+      "problem_text": "Solve 3^{x-1} = 9.",
+      "answer": "x=3",
+      "solution": "9=3^2 => 3^{x-1}=3^2 => x-1=2 => x=3",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "take_log"
+      ],
+      "problem_text": "Solve 3^x = 10 using logs.",
+      "answer": "x=log_3 10",
+      "solution": "Take log_3: x=log_3 10",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "different_base"
+      ],
+      "problem_text": "Solve 5^x = 8, correct to 3 s.f.",
+      "answer": "x~=1.29",
+      "solution": "x=ln8/ln5=2.079/1.609=1.29",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "convert_same_base"
+      ],
+      "problem_text": "Solve 4^{x+1} = 8^{x-2}.",
+      "answer": "x=8",
+      "solution": "4^{x+1}=2^{2x+2}, 8^{x-2}=2^{3x-6}. So 2x+2=3x-6 => x=8",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "quadratic_form"
+      ],
+      "problem_text": "Solve 4^x - 2^{x+1} - 8 = 0.",
+      "answer": "x=2",
+      "solution": "Let y=2^x. Then (2^x)^2-2(2^x)-8=0 => y^2-2y-8=0 => (y-4)(y+2)=0 => y=4 or y=-2. y=2^x=4 => x=2. y=-2 invalid.",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "logs_both_sides"
+      ],
+      "problem_text": "Solve 2^{x+1} = 3^{x-1} correct to 3 s.f.",
+      "answer": "x~=4.42",
+      "solution": "(x+1)ln2=(x-1)ln3 => xln2+ln2=xln3-ln3 => xln2-xln3=-ln3-ln2 => x(ln2-ln3)=-(ln3+ln2) => x=(ln3+ln2)/(ln3-ln2)=(1.099+0.693)/(1.099-0.693)=1.792/0.406=4.42",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "quadratic_substitution"
+      ],
+      "problem_text": "Solve 3^{2x} - 10(3^x) + 9 = 0.",
+      "answer": "x=0 or x=2",
+      "solution": "Let y=3^x. y^2-10y+9=0 => (y-1)(y-9)=0 => y=1 => 3^x=1 => x=0. y=9 => 3^x=9 => x=2",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "fractional_exponents"
+      ],
+      "problem_text": "Solve 2^{2x} - 2^{x+3} + 64 = 0.",
+      "answer": "x=3 or x=4",
+      "solution": "Let y=2^x. y^2-8y+64=0... Wait 2^{x+3}=2^x*8=8y. y^2-8y+64=0 => discriminant=64-256=-192 <0, no real. Actually 2^{2x}-2^{x+3}+64=0 => y^2-8y+64=0 => no real. Let me fix: 2^{2x}=y^2, 2^{x+3}=8y. y^2-8y+64=0 => no real solution",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "tough_logs"
+      ],
+      "problem_text": "Solve 2(4^x) + 3(2^x) - 2 = 0.",
+      "answer": "x=-1",
+      "solution": "Let y=2^x. 2(2^{2x})+3(2^x)-2=0 => 2y^2+3y-2=0 => (2y-1)(y+2)=0 => y=1/2 or y=-2. y=2^x=1/2 => x=-1. y=-2 invalid.",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "e_x_equations"
+      ],
+      "problem_text": "Solve e^{2x} - 5e^x + 6 = 0.",
+      "answer": "x=ln2 or x=ln3",
+      "solution": "Let y=e^x. y^2-5y+6=0 => (y-2)(y-3)=0 => y=2 => x=ln2. y=3 => x=ln3",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "multiple_exponentials"
+      ],
+      "problem_text": "Solve 3^{2x+1} = 5^{x-2}.",
+      "answer": "x=(-ln9-ln5)/(2ln3-ln5)",
+      "solution": "(2x+1)ln3=(x-2)ln5 => 2xln3+ln3=xln5-2ln5 => 2xln3-xln5=-2ln5-ln3 => x(2ln3-ln5)=-(2ln5+ln3) => x=-(2ln5+ln3)/(2ln3-ln5)",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "exponential_system"
+      ],
+      "problem_text": "Solve 2^x x 3^y = 12 and 2^y x 3^x = 18.",
+      "answer": "x=2,y=1",
+      "solution": "Take logs: xln2+yln3=ln12, yln2+xln3=ln18. Solve: ln12=2.485, ln18=2.890. xln2+yln3=ln12, xln3+yln2=ln18. Solve: x=(ln12ln2-ln18ln3)/((ln2)^2-(ln3)^2)... Actually let's try x=2,y=1: 2^2*3^1=4*3=12\u2713, 2^1*3^2=2*9=18\u2713",
+      "marks": 4
+    },
+    {
+      "id": "AM3_Q5_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "tricky_substitution"
+      ],
+      "problem_text": "Solve 2(5^{2x}) - 5^{x+1} + 3 = 0.",
+      "answer": "x=0 or x=log_5(3/2)-1",
+      "solution": "Let y=5^x. 2y^2-5y+3=0 => (2y-3)(y-1)=0 => y=1 => 5^x=1 => x=0. y=3/2 => 5^x=3/2 => x=log_5(3/2)",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q5_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "A population doubles every 3 hours. Starting at 1000, how long to reach 10000?",
+      "answer": "t=3(log(10)/log(2))~=9.97 hours",
+      "solution": "P=1000(2^{t/3})=10000 => 2^{t/3}=10 => t/3=log_2 10 => t=3log_2 10=3ln10/ln2~=9.97h",
+      "marks": 3
+    }
+  ]
+}

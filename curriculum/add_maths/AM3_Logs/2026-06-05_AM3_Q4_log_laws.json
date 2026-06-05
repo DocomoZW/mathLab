@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q4",
+  "title": "Log Laws",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Log laws transform multiplication into addition and division into subtraction \u2014 turning hard problems into simple ones. They're the key to solving exponential equations and simplifying expressions.",
+    "prerequisites": [
+      "Introduction to logarithms",
+      "Index laws",
+      "Basic algebra"
+    ],
+    "core_explanation": "**Log Laws:** For $a>0, a\\\\neq 1$, and $M,N>0$:\\n1. **Product Law:** $\\\\log_a(MN) = \\\\log_a M + \\\\log_a N$\\n2. **Quotient Law:** $\\\\log_a(M/N) = \\\\log_a M - \\\\log_a N$\\n3. **Power Law:** $\\\\log_a(M^k) = k\\\\log_a M$\\n\\n**Special Case:** $\\\\log_a(1/N) = -\\\\log_a N$\\n\\nThese simplify complex logarithmic expressions and are essential for solving logarithmic equations.",
+    "worked_example": "Simplify $\\\\log_2 8 + \\\\log_2 16 - \\\\log_2 4$\\n\\nSolution:\\n$\\\\log_2 8 + \\\\log_2 16 - \\\\log_2 4 = \\\\log_2(8 \\\\times 16 \\\\div 4)$\\n$= \\\\log_2(32)$\\n$= \\\\log_2(2^5) = 5$",
+    "common_mistakes": [
+      {
+        "mistake": "Writing $\\\\log_a(M+N) = \\\\log_a M + \\\\log_a N$.",
+        "correction": "Product law applies to MN (multiplication), not M+N (addition)."
+      },
+      {
+        "mistake": "Forgetting the power law: $\\\\log_a M^k = k\\\\log_a M$, not $(\\\\log_a M)^k$.",
+        "correction": "The exponent comes down as a multiplier in front."
+      }
+    ],
+    "summary": [
+      "$\\\\log(MN) = \\\\log M + \\\\log N$ (product)",
+      "$\\\\log(M/N) = \\\\log M - \\\\log N$ (quotient)",
+      "$\\\\log(M^k) = k\\\\log M$ (power)",
+      "These reduce multiplication to addition"
+    ]
+  }
+}

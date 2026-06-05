@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q2",
+  "title": "Arc Length & Sector Area",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM5_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "arc_length"
+      ],
+      "problem_text": "Find arc length for r=4, theta=pi/3.",
+      "answer": "4pi/3",
+      "solution": "s=r*theta=4*pi/3=4pi/3",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "sector_area"
+      ],
+      "problem_text": "Find sector area for r=3, theta=pi/4.",
+      "answer": "9pi/8",
+      "solution": "A=1/2 r^2 theta=1/2*9*pi/4=9pi/8",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "arc_length"
+      ],
+      "problem_text": "Find arc length for r=5, theta=0.8 rad.",
+      "answer": "4",
+      "solution": "s=5*0.8=4",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "sector_area"
+      ],
+      "problem_text": "Find sector area for r=6, theta=2 rad.",
+      "answer": "36",
+      "solution": "A=1/2*36*2=36",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "perimeter"
+      ],
+      "problem_text": "Find perimeter of sector with r=4, theta=pi/2.",
+      "answer": "8+2pi",
+      "solution": "P=2r+r*theta=8+4*pi/2=8+2pi",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "find_theta"
+      ],
+      "problem_text": "Arc length=10, radius=5, find theta.",
+      "answer": "2 rad",
+      "solution": "theta=s/r=10/5=2",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "find_radius"
+      ],
+      "problem_text": "Sector area=20, theta=2.5 rad. Find radius.",
+      "answer": "r=4",
+      "solution": "A=1/2 r^2 theta => 20=1/2 r^2 (2.5) => r^2=16 => r=4",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "A sector has area=12pi and r=6, find angle in degrees.",
+      "answer": "120 degrees",
+      "solution": "1/2*36*theta=12pi => 18theta=12pi => theta=2pi/3 rad = 120 deg",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "segment_area"
+      ],
+      "problem_text": "Find area of segment with r=5, theta=1 rad.",
+      "answer": "12.5(1-sin1)",
+      "solution": "A_seg=1/2 r^2(theta-sin theta)=1/2*25(1-sin1)=12.5(1-sin1)",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "word_problem"
+      ],
+      "problem_text": "A clock's minute hand is 10 cm. Find area swept in 20 minutes.",
+      "answer": "200pi/3 cm^2",
+      "solution": "20 min = 1/3 of 60 min => theta=2pi/3. A=1/2*100*2pi/3=100pi/3",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "find_theta_from_area"
+      ],
+      "problem_text": "A sector has perimeter 20 and area 25. Find the radius.",
+      "answer": "r=5",
+      "solution": "P=2r+r*theta=20, A=1/2 r^2 theta=25 => r^2 theta=50 => theta=50/r^2. Sub into P: 2r+r(50/r^2)=2r+50/r=20 => multiply r: 2r^2+50=20r => 2r^2-20r+50=0 => r^2-10r+25=0 => (r-5)^2=0 => r=5",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "A circle has radius 8. A sector has arc length 12. Find its area.",
+      "answer": "48",
+      "solution": "theta=s/r=12/8=1.5. A=1/2*r^2*theta=1/2*64*1.5=48",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q2_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_segment"
+      ],
+      "problem_text": "Find area of segment cut off by chord of length 8 in circle of radius 5.",
+      "answer": "~6.25",
+      "solution": "Chord length=2r sin(theta/2)=8 => 10 sin(theta/2)=8 => sin(theta/2)=0.8 => theta/2=0.927 => theta=1.854 rad. Segment area=1/2 r^2(theta-sin theta)=1/2*25(1.854-0.958)=12.5(0.896)=11.2",
+      "marks": 4
+    },
+    {
+      "id": "AM5_Q2_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "parameter"
+      ],
+      "problem_text": "A sector perimeter P is fixed. Find r for maximum area.",
+      "answer": "r=P/4",
+      "solution": "P=2r+r*theta => theta=P/r-2. Area=1/2 r^2 theta=1/2 r^2(P/r-2)=Pr/2-r^2. dA/dr=P/2-2r=0 => r=P/4. Max area=P^2/16",
+      "marks": 4
+    },
+    {
+      "id": "AM5_Q2_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "A pendulum swings through 0.5 rad. If the bob travels 15 cm, find pendulum length.",
+      "answer": "30 cm",
+      "solution": "s=r*theta => 15=r*0.5 => r=30 cm",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q2_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "combined_shape"
+      ],
+      "problem_text": "A sector is cut from a circle of radius 10. The arc length is 5. Find perimeter and area.",
+      "answer": "P=25, A=25",
+      "solution": "theta=5/10=0.5. P=20+5=25. A=1/2*100*0.5=25",
+      "marks": 2
+    }
+  ]
+}

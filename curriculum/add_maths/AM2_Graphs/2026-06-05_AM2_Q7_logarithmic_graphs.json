@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q7",
+  "title": "Logarithmic Graphs",
+  "syllabus_ref": "0606 C2",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Logarithms are the inverse of exponentials. Their graphs grow slowly, making them perfect for compressing wide-ranging data and solving exponential equations.",
+    "prerequisites": [
+      "Laws of logarithms",
+      "Exponential functions",
+      "Inverse functions concept"
+    ],
+    "core_explanation": "The **logarithmic function** $y = \\\\log_a x$ is the inverse of $y = a^x$.\\n\\n**$y = \\\\ln x$ (natural log):**\\n- Domain: $x > 0$\\n- Range: $y \\\\in \\\\mathbb{R}$\\n- $x$-intercept at $(1, 0)$\\n- Vertical asymptote: $x = 0$ (y-axis)\\n- Increasing for all $x > 0$\\n\\n**$y = \\\\log_{10} x$:**\\n- Same shape as $y = \\\\ln x$ but scaled\\n- Passes through $(1, 0)$ and $(10, 1)$\\n\\n**Transformations:** Apply the usual rules. $y = \\\\ln(x - a) + b$ shifts the asymptote to $x = a$ and moves the graph up by $b$.",
+    "worked_example": "Question: Sketch $y = \\\\ln(x - 1) + 2$, showing the asymptote and intercepts.\\n\\nSolution:\\nBase graph: $y = \\\\ln x$\\n- Shift right by 1: $y = \\\\ln(x - 1)$\\n- Shift up by 2: $y = \\\\ln(x - 1) + 2$\\n\\nVertical asymptote: $x = 1$ (dashed)\\n$x$-intercept: $0 = \\\\ln(x - 1) + 2 \\\\implies \\\\ln(x - 1) = -2 \\\\implies x - 1 = e^{-2} \\\\implies x = 1 + e^{-2} \\\\approx 1.135$\\n$y$-intercept: $x = 0$ not in domain (since $x > 1$), so none\\nShape: increasing curve, steep near $x = 1$, flattening out for large $x$.",
+    "common_mistakes": [
+      {
+        "mistake": "Thinking the domain of $\\\\ln x$ includes $x \\\\le 0$.",
+        "correction": "$\\\\ln x$ is only defined for $x > 0$. The vertical asymptote is at $x = 0$."
+      },
+      {
+        "mistake": "Confusing $\\\\ln(x)$ with $\\\\log(x)$ and forgetting the base difference.",
+        "correction": "$\\\\ln x$ has base $e$, $\\\\log x$ usually means base $10$. They have the same shape but different scales."
+      }
+    ],
+    "summary": [
+      "$y = \\\\ln x$: domain $x > 0$, range all reals",
+      "Vertical asymptote at $x = 0$",
+      "Passes through $(1, 0)$",
+      "Inverse of exponential: $\\\\ln(e^x) = x$"
+    ]
+  }
+}

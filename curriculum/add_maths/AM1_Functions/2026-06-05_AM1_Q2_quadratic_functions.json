@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q2",
+  "title": "Quadratic Functions",
+  "syllabus_ref": "0606 C2",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Quadratic functions appear everywhere \u2014 from projectile motion to profit optimisation. Mastering the form $f(x)=ax^2+bx+c$ opens the door to modelling the real world.",
+    "prerequisites": [
+      "Expanding brackets and collecting like terms",
+      "Basic factorisation",
+      "Plotting points on a graph"
+    ],
+    "core_explanation": "A **quadratic function** has the form $f(x) = ax^2 + bx + c$, where $a \\neq 0$.\n\n**Completing the Square:** $ax^2 + bx + c = a\\left[(x + \\frac{b}{2a})^2 - \\frac{b^2}{4a^2}\\right] + c$. This reveals the vertex $(h,k)$.\n\n**Discriminant:** $\\Delta = b^2 - 4ac$ determines the nature of roots: $\\Delta > 0$ (two distinct real roots), $\\Delta = 0$ (one repeated root), $\\Delta < 0$ (no real roots).\n\n**Maximum/Minimum:** When $a > 0$, the parabola opens upward (minimum). When $a < 0$, it opens downward (maximum).",
+    "worked_example": "Question: Express $f(x) = 2x^2 - 12x + 7$ in the form $a(x-h)^2 + k$ and state the minimum value.\n\nSolution:\n$2x^2 - 12x + 7 = 2[x^2 - 6x] + 7$\n$= 2[(x-3)^2 - 9] + 7$\n$= 2(x-3)^2 - 18 + 7$\n$= 2(x-3)^2 - 11$\nMinimum value is $-11$ at $x = 3$.",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to factor out the coefficient of $x^2$ when completing the square.",
+        "correction": "Always factor $a$ from the $x^2$ and $x$ terms first."
+      },
+      {
+        "mistake": "Mixing up max/min \u2014 thinking $a>0$ gives a maximum.",
+        "correction": "$a>0$ means upward parabola = minimum; $a<0$ means downward parabola = maximum."
+      }
+    ],
+    "summary": [
+      "Standard form: $f(x)=ax^2+bx+c$, $a\\neq0$",
+      "Completing the square reveals the vertex $(h,k)$",
+      "Discriminant $\\Delta=b^2-4ac$ determines root nature",
+      "$a>0$ gives minimum, $a<0$ gives maximum"
+    ]
+  }
+}

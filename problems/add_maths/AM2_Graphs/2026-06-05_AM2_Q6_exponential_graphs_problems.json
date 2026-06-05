@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q6",
+  "title": "Exponential Graphs",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM2_Q6_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "exponential_shape"
+      ],
+      "problem_text": "Describe the shape of y=e^x.",
+      "answer": "Increasing curve, y>0, asymptote y=0",
+      "solution": "y=e^x is always positive, increases rapidly, approaches 0 as x->-inf.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q6_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "exponential_intercept"
+      ],
+      "problem_text": "What is the y-intercept of y=e^x?",
+      "answer": "(0,1)",
+      "solution": "e^0=1, so (0,1).",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q6_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "exponential_asymptote"
+      ],
+      "problem_text": "State the horizontal asymptote of y=e^x.",
+      "answer": "y=0",
+      "solution": "As x->-inf, e^x->0. Asymptote: y=0.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q6_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "exponential_reflection"
+      ],
+      "problem_text": "Describe y=e^{-x} relative to y=e^x.",
+      "answer": "Reflection in y-axis",
+      "solution": "y=e^{-x} is y=e^x reflected in the y-axis.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q6_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "exponential_transform"
+      ],
+      "problem_text": "Sketch y=2e^x, showing intercept.",
+      "answer": "Same shape, y-int (0,2)",
+      "solution": "Vertical stretch by 2: y-intercept becomes (0,2). Asymptote still y=0.",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q6_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "exponential_shift"
+      ],
+      "problem_text": "Sketch y=e^x-2, showing asymptote.",
+      "answer": "Shifted down 2, asymptote y=-2",
+      "solution": "Shift y=e^x down by 2. Asymptote: y=-2. y-int: (0,-1).",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q6_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "exponential_growth_decay"
+      ],
+      "problem_text": "Is y=3e^{-2x} growth or decay?",
+      "answer": "Decay",
+      "solution": "Negative exponent -2x means it decreases as x increases. Decay.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q6_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "exponential_value"
+      ],
+      "problem_text": "Find y when x=1 if y=5e^{0.5x}.",
+      "answer": "5e^0.5 ~ 8.24",
+      "solution": "y=5e^{0.5} ~ 5*1.6487=8.24",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q6_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "exponential_transform"
+      ],
+      "problem_text": "Sketch y=3e^{x-1}+2, showing asymptote and intercept.",
+      "answer": "Asymptote y=2, y-int at (0,3/e+2)",
+      "solution": "y=3e^{x-1}+2 = 3e^{-1}e^x+2. Horizontal asymptote: y=2. y-int: x=0 => 3e^{-1}+2 = 3/e+2 ~ 3.10.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q6_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "exponential_intersection"
+      ],
+      "problem_text": "Find where y=e^x intersects y=4.",
+      "answer": "x=ln4 ~ 1.386",
+      "solution": "e^x=4 => x=ln4=2ln2 ~ 1.386",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q6_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "exponential_inequality"
+      ],
+      "problem_text": "Solve e^x>5.",
+      "answer": "x>ln5",
+      "solution": "e^x>5 => x>ln5 ~ 1.609",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q6_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "exponential_equation"
+      ],
+      "problem_text": "Solve e^{2x}-3e^x+2=0.",
+      "answer": "x=0 or x=ln2",
+      "solution": "Let u=e^x: u^2-3u+2=0 => (u-1)(u-2)=0 => u=1 => x=0, u=2 => x=ln2",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q6_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "exponential_model"
+      ],
+      "problem_text": "A population P=100e^{0.02t}. Find t when P=200.",
+      "answer": "t=50ln2 ~ 34.7",
+      "solution": "100e^{0.02t}=200 => e^{0.02t}=2 => 0.02t=ln2 => t=50ln2 ~ 34.7",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q6_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "exponential_transform_detail"
+      ],
+      "problem_text": "Sketch y=4-2e^{-x}, showing asymptote and intercepts.",
+      "answer": "Asymptote y=4, y-int (0,2), x-int at x=ln2",
+      "solution": "As x->inf, e^{-x}->0, so y->4. Asymptote y=4. y-int: x=0 => 4-2=2. x-int: 0=4-2e^{-x} => 2e^{-x}=4 => e^{-x}=2 => -x=ln2 => x=-ln2",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q6_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "exponential_inequality"
+      ],
+      "problem_text": "Solve e^x+e^{-x}>4.",
+      "answer": "x>ln(2+sqrt3) or x<ln(2-sqrt3)",
+      "solution": "Let u=e^x: u+1/u>4 => u^2-4u+1>0 => u<2-sqrt3 or u>2+sqrt3. e^x>2+sqrt3 => x>ln(2+sqrt3). e^x<2-sqrt3 => x<ln(2-sqrt3). Since 2-sqrt3~0.268, ln(0.268)=-1.32",
+      "marks": 5
+    },
+    {
+      "id": "AM2_Q6_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "exponential_graph_sketch"
+      ],
+      "problem_text": "Sketch y=|e^x-3|.",
+      "answer": "V-shaped with minimum at x=ln3, y=0",
+      "solution": "e^x-3 is negative for x<ln3, positive for x>ln3. The modulus reflects the negative part. Minimum at x=ln3, y=0.",
+      "marks": 3
+    }
+  ]
+}

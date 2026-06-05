@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q1",
+  "title": "Radians & Degrees",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM5_Q1_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "deg_to_rad"
+      ],
+      "problem_text": "Convert 90 degrees to radians.",
+      "answer": "pi/2",
+      "solution": "90 x pi/180 = pi/2",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "rad_to_deg"
+      ],
+      "problem_text": "Convert pi/3 radians to degrees.",
+      "answer": "60 degrees",
+      "solution": "(pi/3) x 180/pi = 60",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "deg_to_rad"
+      ],
+      "problem_text": "Convert 45 degrees to radians.",
+      "answer": "pi/4",
+      "solution": "45 x pi/180 = pi/4",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "rad_to_deg"
+      ],
+      "problem_text": "Convert 3pi/2 radians to degrees.",
+      "answer": "270 degrees",
+      "solution": "(3pi/2) x 180/pi = 270",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "deg_to_rad"
+      ],
+      "problem_text": "Convert 150 degrees to radians.",
+      "answer": "5pi/6",
+      "solution": "150 x pi/180 = 5pi/6",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "rad_to_deg"
+      ],
+      "problem_text": "Convert 5pi/6 radians to degrees.",
+      "answer": "150 degrees",
+      "solution": "(5pi/6) x 180/pi = 150",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "deg_to_rad"
+      ],
+      "problem_text": "Convert 210 degrees to radians.",
+      "answer": "7pi/6",
+      "solution": "210 x pi/180 = 7pi/6",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "rad_to_deg"
+      ],
+      "problem_text": "Convert 3pi/4 radians to degrees.",
+      "answer": "135 degrees",
+      "solution": "(3pi/4) x 180/pi = 135",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "decimal_rad"
+      ],
+      "problem_text": "Convert 72 degrees to radians (in terms of pi).",
+      "answer": "2pi/5",
+      "solution": "72 x pi/180 = 72pi/180 = 2pi/5",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "decimal_deg"
+      ],
+      "problem_text": "Convert 2 radians to degrees (to 1 d.p.).",
+      "answer": "114.6 degrees",
+      "solution": "2 x 180/pi = 360/3.14159 = 114.6",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q1_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "convert_and_simplify"
+      ],
+      "problem_text": "Simplify: sin(pi/3) + cos(pi/6).",
+      "answer": "sqrt3",
+      "solution": "sin(pi/3)=sqrt3/2, cos(pi/6)=sqrt3/2, sum=sqrt3",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q1_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "A wheel rotates 720 degrees. How many radians is that?",
+      "answer": "4pi",
+      "solution": "720 x pi/180 = 4pi",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_convert"
+      ],
+      "problem_text": "Convert 0.5 radians to degrees, minutes, and seconds.",
+      "answer": "28 deg 38 min 52 sec",
+      "solution": "0.5 x 180/pi = 28.6479 deg = 28 deg + 0.6479x60 min = 28 deg 38.87 min = 28 deg 38 min 52 sec",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q1_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "fraction_rad"
+      ],
+      "problem_text": "Express 36 degrees as a fraction of pi.",
+      "answer": "pi/5",
+      "solution": "36/180 = 1/5, so 36 deg = pi/5",
+      "marks": 1
+    },
+    {
+      "id": "AM5_Q1_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "sum_angles"
+      ],
+      "problem_text": "Convert 30 deg + pi/6 rad to degrees.",
+      "answer": "60 degrees",
+      "solution": "pi/6 rad = 30 deg, so 30+30=60 deg",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q1_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "Angular speed of 180 rpm. Convert to rad/s.",
+      "answer": "6pi rad/s",
+      "solution": "180 rpm = 180 rev/min = 180x2pi rad/60s = 360pi/60 = 6pi rad/s",
+      "marks": 2
+    }
+  ]
+}

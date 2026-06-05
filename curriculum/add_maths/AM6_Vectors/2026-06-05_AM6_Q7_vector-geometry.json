@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM6_Vectors",
+  "topic_id": "AM6_Q7",
+  "title": "Vector Geometry",
+  "syllabus_ref": "0606 C6",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you collinearity: $\\overrightarrow{ab} = k\\overrightarrow{bc}$? Let's explore vector geometry in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Vector Geometry</h3><p><b>Collinearity: $\\overrightarrow{AB} = k\\overrightarrow{BC}$</b> <b>Ratio theorem $\\overrightarrow{OP} = \\frac{m\\mathbf{b} + n\\mathbf{a}}{m+n}$</b> <b>Section formula internal & external</b> <b>Triangle & parallelogram geometry</b> <b>Straight line through two points</b> <b>Proofs using vectors</b></p>",
+    "worked_example": "Worked example for Vector Geometry will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Vector Geometry is fundamental for IGCSE Additional Mathematics 0606 C6."
+  }
+}

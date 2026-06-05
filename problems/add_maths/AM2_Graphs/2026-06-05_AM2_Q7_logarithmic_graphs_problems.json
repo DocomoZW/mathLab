@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q7",
+  "title": "Logarithmic Graphs",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM2_Q7_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "log_shape"
+      ],
+      "problem_text": "Describe the shape of y=ln x.",
+      "answer": "Increasing curve, x>0, asymptote x=0",
+      "solution": "ln x is defined for x>0, increases slowly, asymptote at x=0.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "log_intercept"
+      ],
+      "problem_text": "What is the x-intercept of y=ln x?",
+      "answer": "(1,0)",
+      "solution": "ln 1 = 0, so (1,0).",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "log_asymptote"
+      ],
+      "problem_text": "State the asymptote of y=log x.",
+      "answer": "x=0",
+      "solution": "log x is undefined at x=0, vertical asymptote at x=0.",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "log_domain"
+      ],
+      "problem_text": "What is the domain of y=ln(x-2)?",
+      "answer": "x>2",
+      "solution": "x-2>0 => x>2",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "log_transform"
+      ],
+      "problem_text": "Sketch y=ln x+1, showing intercept.",
+      "answer": "Shifted up 1, x-int at x=1/e",
+      "solution": "ln x+1 shifts up 1. x-int: ln x+1=0 => ln x=-1 => x=1/e ~ 0.368.",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q7_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "log_transform"
+      ],
+      "problem_text": "Sketch y=ln(x-1), showing asymptote.",
+      "answer": "Shifted right 1, asymptote x=1",
+      "solution": "Replacing x by x-1 shifts right 1. Asymptote: x=1.",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q7_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "log_value"
+      ],
+      "problem_text": "Find y when x=e^3 if y=ln x.",
+      "answer": "3",
+      "solution": "ln(e^3)=3",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "log_equation"
+      ],
+      "problem_text": "Solve ln x = 2.",
+      "answer": "x=e^2",
+      "solution": "ln x=2 => x=e^2 ~ 7.389",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "log_transform"
+      ],
+      "problem_text": "Sketch y=2ln(x+1)-1, showing asymptote and intercept.",
+      "answer": "Asymptote x=-1, x-int at x=sqrt(e)-1",
+      "solution": "y=2ln(x+1)-1. Asymptote: x=-1. x-int: 2ln(x+1)-1=0 => ln(x+1)=1/2 => x+1=e^{0.5}=sqrt(e) => x=sqrt(e)-1 ~ 0.649. y-int: x=0 => 2ln1-1=-1.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q7_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "log_inequality"
+      ],
+      "problem_text": "Solve ln x > 0.",
+      "answer": "x>1",
+      "solution": "ln x > 0 => x > e^0 = 1",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "log_intersection"
+      ],
+      "problem_text": "Find where y=ln x intersects y=2.",
+      "answer": "x=e^2",
+      "solution": "ln x=2 => x=e^2",
+      "marks": 1
+    },
+    {
+      "id": "AM2_Q7_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "log_equation_quadratic"
+      ],
+      "problem_text": "Solve (ln x)^2 - 3 ln x + 2 = 0.",
+      "answer": "x=e or x=e^2",
+      "solution": "Let u=ln x: u^2-3u+2=0 => (u-1)(u-2)=0 => u=1 => x=e, u=2 => x=e^2",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q7_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "log_graph_detailed"
+      ],
+      "problem_text": "Sketch y=|ln x|.",
+      "answer": "V-shape with minimum at (1,0)",
+      "solution": "ln x is negative for 0<x<1, positive for x>1. The modulus reflects the negative part above x-axis. Minimum at (1,0).",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q7_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "log_inequality_complex"
+      ],
+      "problem_text": "Solve ln(x+1) > ln(2x-3).",
+      "answer": "3/2 < x < 4",
+      "solution": "Domain: x+1>0 => x>-1, 2x-3>0 => x>3/2. ln is increasing so: x+1 > 2x-3 => 4 > x => x<4. Combined: 3/2 < x < 4.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q7_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "log_graph_transform"
+      ],
+      "problem_text": "Sketch y=log_{10}(x-2)+1, showing asymptote and intercept.",
+      "answer": "Asymptote x=2, x-int at x=2.1",
+      "solution": "Vertical asymptote: x=2. x-int: log_{10}(x-2)+1=0 => log_{10}(x-2)=-1 => x-2=0.1 => x=2.1.",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q7_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "log_model"
+      ],
+      "problem_text": "After t years, a car's value V=25000e^{-0.15t}. Find t when V=10000.",
+      "answer": "t=(ln 0.4)/(-0.15) ~ 6.1",
+      "solution": "25000e^{-0.15t}=10000 => e^{-0.15t}=0.4 => -0.15t=ln 0.4 => t=-ln 0.4/0.15 ~ 6.1 years.",
+      "marks": 2
+    }
+  ]
+}

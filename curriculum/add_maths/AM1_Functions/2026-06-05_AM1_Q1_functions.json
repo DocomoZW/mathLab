@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q1",
+  "title": "Functions",
+  "syllabus_ref": "0606 C1",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "A function is like a machine: you feed it an input, it applies a rule, and produces exactly one output. In IGCSE Add Maths, functions are the foundation for everything that follows.",
+    "prerequisites": [
+      "Basic algebra: substitution and evaluation",
+      "Set notation and number sets",
+      "Coordinate geometry basics"
+    ],
+    "core_explanation": "A **function** $f: A \\to B$ maps each element $x$ in the domain $A$ to exactly one element $f(x)$ in the codomain $B$.\n\n**Domain and Range:** The domain is the set of all possible inputs; the range is the set of all actual outputs.\n\n**Composite Functions:** $(g \\circ f)(x) = g(f(x))$. Apply $f$ first, then $g$.\n\n**Inverse Functions:** $f^{-1}$ undoes $f$. $f^{-1}(f(x)) = x$. A function has an inverse only if it is **one-to-one**.",
+    "worked_example": "Question: Given $f(x) = 2x + 3$ and $g(x) = x^2$, find (a) $f(5)$ (b) $g(f(x))$ (c) $f^{-1}(x)$\n\nSolution:\n(a) $f(5) = 2(5) + 3 = 13$\n(b) $g(f(x)) = g(2x+3) = (2x+3)^2 = 4x^2 + 12x + 9$\n(c) Let $y = 2x+3$, then $x = \\frac{y-3}{2}$, so $f^{-1}(x) = \\frac{x-3}{2}$",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing $fg(x)$ with $gf(x)$ \u2014 composition is not commutative.",
+        "correction": "Always work from right to left: $fg(x)$ means apply $g$ first, then $f$."
+      },
+      {
+        "mistake": "Assuming every function has an inverse.",
+        "correction": "Only one-to-one functions have inverses. Use the horizontal line test."
+      }
+    ],
+    "summary": [
+      "A function maps each input to exactly one output.",
+      "Domain = allowed inputs, Range = actual outputs.",
+      "Composite functions: apply inner first, then outer.",
+      "Inverse functions undo the original; only one-to-one functions have inverses."
+    ]
+  }
+}

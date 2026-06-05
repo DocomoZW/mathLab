@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q5",
+  "title": "Exponential Equations",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Exponential equations involve unknowns in the exponent. They model population growth, radioactive decay, and compound interest \u2014 and logarithms are the key to solving them.",
+    "prerequisites": [
+      "Log laws",
+      "Indices",
+      "Change of base"
+    ],
+    "core_explanation": "**Method 1: Same base.** If $a^{f(x)} = a^{g(x)}$, then $f(x) = g(x)$.\\n\\n**Method 2: Taking logs.** If bases differ, take $\\\\log$ of both sides:\\n$2^x = 7 \\\\implies \\\\ln(2^x) = \\\\ln 7 \\\\implies x\\\\ln 2 = \\\\ln 7 \\\\implies x = \\\\frac{\\\\ln 7}{\\\\ln 2}$\\n\\n**Method 3: Substitution.** For equations like $a^{2x} + b a^x + c = 0$, let $y = a^x$ to form a quadratic.",
+    "worked_example": "Solve $3^{x+1} = 5^{2x}$ correct to 3 s.f.\\n\\nSolution:\\nTake logs: $\\\\ln(3^{x+1}) = \\\\ln(5^{2x})$\\n$(x+1)\\\\ln 3 = 2x\\\\ln 5$\\n$x\\\\ln 3 + \\\\ln 3 = 2x\\\\ln 5$\\n$x\\\\ln 3 - 2x\\\\ln 5 = -\\\\ln 3$\\n$x(\\\\ln 3 - 2\\\\ln 5) = -\\\\ln 3$\\n$x = \\\\frac{-\\\\ln 3}{\\\\ln 3 - 2\\\\ln 5} = \\\\frac{\\\\ln 3}{2\\\\ln 5 - \\\\ln 3} \\\\approx 0.518$",
+    "common_mistakes": [
+      {
+        "mistake": "Taking log incorrectly: $\\\\log(3^x) = x\\\\log 3$ is correct, but some write $(\\\\log 3)^x$ instead.",
+        "correction": "Use the power law: $\\\\log(a^k) = k\\\\log a$."
+      },
+      {
+        "mistake": "Rounding too early and losing accuracy.",
+        "correction": "Keep exact values until the final step; round only at the end."
+      }
+    ],
+    "summary": [
+      "Same base: equate exponents",
+      "Different base: take logs of both sides",
+      "Quadratic form: substitute $y=a^x$",
+      "Always check solutions in the original equation"
+    ]
+  }
+}

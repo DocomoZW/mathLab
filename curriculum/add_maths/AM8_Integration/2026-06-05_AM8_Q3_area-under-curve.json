@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM8_Integration",
+  "topic_id": "AM8_Q3",
+  "title": "Area Under Curve",
+  "syllabus_ref": "0606 C8",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you area as $\\int_a^b y\\,dx$? Let's explore area under curve in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Area Under Curve</h3><p><b>Area as $\\int_a^b y\\,dx$</b> <b>Area above x-axis (positive)</b> <b>Area below x-axis (negative \u2192 absolute)</b> <b>Finding area from $x=a$ to $x=b$</b> <b>Area when curve crosses x-axis</b> <b>Signed vs total area</b></p>",
+    "worked_example": "Worked example for Area Under Curve will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Area Under Curve is fundamental for IGCSE Additional Mathematics 0606 C8."
+  }
+}

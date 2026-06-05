@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q1",
+  "title": "Indices Laws",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Indices (or exponents) are a shorthand for repeated multiplication. Mastery of index laws is essential for surds, logarithms, and nearly every advanced algebra topic.",
+    "prerequisites": [
+      "Multiplication and division of integers",
+      "Basic factorisation",
+      "Negative numbers"
+    ],
+    "core_explanation": "**Index Laws:** For $a>0$ and integers $m,n$:\\n- $a^m \\\\times a^n = a^{m+n}$\\n- $a^m \\\\div a^n = a^{m-n}$\\n- $(a^m)^n = a^{mn}$\\n- $a^0 = 1$\\n- $a^{-n} = \\\\frac{1}{a^n}$\\n- $a^{\\\\frac{m}{n}} = \\\\sqrt[n]{a^m} = (\\\\sqrt[n]{a})^m$\\n\\nThese apply to all real $a>0$ and rational exponents. When bases are different, simplify each term separately.",
+    "worked_example": "Simplify $\\\\frac{(2x^3)^2 \\\\times 4x^{-1}}{8x^2}$\\n\\nSolution:\\n$(2x^3)^2 = 4x^6$\\nNumerator: $4x^6 \\\\times 4x^{-1} = 16x^5$\\nFraction: $\\\\frac{16x^5}{8x^2} = 2x^3$",
+    "common_mistakes": [
+      {
+        "mistake": "Adding exponents when bases are different (e.g. $2^3 \\\\times 3^2 = 6^5$).",
+        "correction": "Index laws only apply when bases are the same. Simplify each power separately first."
+      },
+      {
+        "mistake": "Forgetting that $a^0 = 1$, not $0$.",
+        "correction": "Any non-zero number raised to the power 0 is 1."
+      }
+    ],
+    "summary": [
+      "$a^m \\\\times a^n = a^{m+n}$, $a^m \\\\div a^n = a^{m-n}$",
+      "$(a^m)^n = a^{mn}$, $a^0 = 1$",
+      "$a^{-n} = 1/a^n$, $a^{m/n} = \\\\sqrt[n]{a^m}$",
+      "Laws apply when bases are the same"
+    ]
+  }
+}

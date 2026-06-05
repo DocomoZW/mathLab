@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q6",
+  "title": "Binomial Term Finding",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Often you don't need the full expansion \u2014 just a specific term. The general term formula lets you pinpoint any term, like the coefficient of $x^5$ in a massive expansion.",
+    "prerequisites": [
+      "Binomial expansion",
+      "nCr and factorials",
+      "Index laws"
+    ],
+    "core_explanation": "**General Term:** In $(a+b)^n$, the $(r+1)$th term is:\\n$T_{r+1} = \\\\binom{n}{r} a^{n-r} b^r$\\n\\n**Finding a specific term:**\\n1. Write the general term.\\n2. Set the power of $x$ to the desired value.\\n3. Solve for $r$.\\n4. Compute the coefficient.\\n\\n**Independent term (constant term):** The term where $x^0$ occurs \u2014 set the exponent of $x$ to 0.",
+    "worked_example": "Find the coefficient of $x^6$ in $(2x^2 + 3)^7$.\\n\\nSolution:\\nGeneral term: $\\\\binom{7}{r}(2x^2)^{7-r}(3)^r = \\\\binom{7}{r} 2^{7-r} 3^r x^{14-2r}$\\n\\nSet $14-2r = 6 \\\\implies 2r = 8 \\\\implies r = 4$\\n\\nCoefficient: $\\\\binom{7}{4} 2^{3} 3^{4} = 35 \\\\times 8 \\\\times 81 = 22680$",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing $r$ (term index) with the term position $r+1$.",
+        "correction": "The first term has $r=0$, second term has $r=1$, etc. The $r$ in the formula starts from 0."
+      },
+      {
+        "mistake": "Forgetting to include the coefficient from $(a)^{n-r}$ when $a$ has a coefficient itself.",
+        "correction": "If $a = kx^m$, then $a^{n-r} = k^{n-r} x^{m(n-r)}$ \u2014 both the coefficient and the power contribute."
+      }
+    ],
+    "summary": [
+      "General term: $\\\\binom{n}{r}a^{n-r}b^r$",
+      "Set the power of $x$ to find $r$",
+      "Constant term: power of $x$ is 0",
+      "Include coefficients from inside the brackets"
+    ]
+  }
+}

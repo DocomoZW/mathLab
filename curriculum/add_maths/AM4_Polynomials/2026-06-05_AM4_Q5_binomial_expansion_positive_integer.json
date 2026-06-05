@@ -1,0 +1,36 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q5",
+  "title": "Binomial Expansion (Positive Integer)",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "The Binomial Theorem lets you expand expressions like $(x+y)^n$ without tedious repeated multiplication. It's the engine behind many probability and series calculations.",
+    "prerequisites": [
+      "Factorials",
+      "Combinations (nCr)",
+      "Index laws",
+      "Polynomial multiplication"
+    ],
+    "core_explanation": "**Binomial Theorem:** For positive integer $n$:\\n$(a+b)^n = \\\\sum_{r=0}^n \\\\binom{n}{r} a^{n-r}b^r$\\n\\nWhere $\\\\binom{n}{r} = \\\\frac{n!}{r!(n-r)!}$ (binomial coefficient, nCr).\\n\\n**Expansion pattern:**\\n- Number of terms: $n+1$\\n- Power of $a$ decreases from $n$ to $0$\\n- Power of $b$ increases from $0$ to $n$\\n- Coefficients follow Pascal's triangle.",
+    "worked_example": "Expand $(2x-3)^4$ using the binomial theorem.\\n\\nSolution:\\n$\\\\binom{4}{0}(2x)^4(-3)^0 + \\\\binom{4}{1}(2x)^3(-3)^1 + \\\\binom{4}{2}(2x)^2(-3)^2$\\n$+ \\\\binom{4}{3}(2x)^1(-3)^3 + \\\\binom{4}{4}(2x)^0(-3)^4$\\n\\n$= 1(16x^4)(1) + 4(8x^3)(-3) + 6(4x^2)(9) + 4(2x)(-27) + 1(1)(81)$\\n$= 16x^4 - 96x^3 + 216x^2 - 216x + 81$",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting the $(-3)^r$ sign when $b$ is negative \u2014 alternating signs are easy to miss.",
+        "correction": "When $b$ is negative, write $(a+(-b))^n$ and be careful with the sign of each term."
+      },
+      {
+        "mistake": "Using the wrong binomial coefficient (e.g. $\\\\binom{4}{0}=0$ instead of $1$).",
+        "correction": "$\\\\binom{n}{0} = \\\\binom{n}{n} = 1$ for all $n$."
+      }
+    ],
+    "summary": [
+      "$(a+b)^n = \\\\sum \\\\binom{n}{r} a^{n-r}b^r$",
+      "Coefficients from Pascal's triangle or nCr",
+      "n+1 terms, descending powers of a",
+      "Watch signs when second term is negative"
+    ]
+  }
+}

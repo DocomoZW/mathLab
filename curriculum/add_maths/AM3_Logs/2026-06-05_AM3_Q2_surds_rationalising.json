@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q2",
+  "title": "Surds (Rationalising)",
+  "syllabus_ref": "0606 C3",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Surds are irrational numbers expressed with square roots (like $\\\\sqrt{2}$ or $\\\\sqrt{3}$). Rationalising the denominator is a key skill for simplifying expressions and solving equations.",
+    "prerequisites": [
+      "Square roots and perfect squares",
+      "Index laws",
+      "Expanding brackets"
+    ],
+    "core_explanation": "A **surd** is an irrational root of a rational number, e.g. $\\\\sqrt{2}, \\\\sqrt{5}, \\\\sqrt[3]{7}$.\\n\\n**Rules:**\\n- $\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}$\\n- $\\\\sqrt{\\\\frac{a}{b}} = \\\\frac{\\\\sqrt{a}}{\\\\sqrt{b}}$\\n- $a\\\\sqrt{c} \\\\pm b\\\\sqrt{c} = (a\\\\pm b)\\\\sqrt{c}$ (like terms)\\n\\n**Rationalising:** To rationalise a denominator:\\n- Single surd $\\\\frac{1}{\\\\sqrt{a}}$: multiply by $\\\\frac{\\\\sqrt{a}}{\\\\sqrt{a}}$\\n- Binomial $\\\\frac{1}{a+\\\\sqrt{b}}$: multiply by conjugate $\\\\frac{a-\\\\sqrt{b}}{a-\\\\sqrt{b}}$",
+    "worked_example": "Rationalise $\\\\frac{2}{3-\\\\sqrt{5}}$\\n\\nSolution:\\nMultiply numerator and denominator by conjugate $3+\\\\sqrt{5}$:\\n$\\\\frac{2(3+\\\\sqrt{5})}{(3-\\\\sqrt{5})(3+\\\\sqrt{5})} = \\\\frac{2(3+\\\\sqrt{5})}{9-5} = \\\\frac{2(3+\\\\sqrt{5})}{4} = \\\\frac{3+\\\\sqrt{5}}{2}$",
+    "common_mistakes": [
+      {
+        "mistake": "Writing $\\\\sqrt{a+b} = \\\\sqrt{a} + \\\\sqrt{b}$.",
+        "correction": "Square roots do NOT distribute over addition. $\\\\sqrt{9+16} = \\\\sqrt{25}=5$, not $3+4=7$."
+      },
+      {
+        "mistake": "Forgetting to multiply the whole numerator when rationalising.",
+        "correction": "Whatever you multiply the denominator by must also multiply the entire numerator."
+      }
+    ],
+    "summary": [
+      "$\\\\sqrt{ab} = \\\\sqrt{a}\\\\sqrt{b}$, $\\\\sqrt{a/b} = \\\\sqrt{a}/\\\\sqrt{b}$",
+      "Only like surds can be added/subtracted",
+      "Rationalise by multiplying by the conjugate",
+      "$(a+\\\\sqrt{b})(a-\\\\sqrt{b}) = a^2 - b$"
+    ]
+  }
+}

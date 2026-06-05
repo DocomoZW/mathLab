@@ -1,0 +1,197 @@
+{
+  "track": "add_maths",
+  "unit": "AM1_Functions",
+  "topic_id": "AM1_Q3",
+  "title": "Quadratic Equations",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM1_Q3_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "factorization"
+      ],
+      "problem_text": "Solve x^2-5x+6=0 by factorisation.",
+      "answer": "x=2 or x=3",
+      "solution": "(x-2)(x-3)=0 => x=2 or x=3",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "quadratic_formula"
+      ],
+      "problem_text": "Use the formula to solve x^2+3x-10=0.",
+      "answer": "x=2 or x=-5",
+      "solution": "x=(-3+-sqrt(9+40))/2=(-3+-7)/2 => x=2 or x=-5",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "completing_square"
+      ],
+      "problem_text": "Solve x^2-4x-5=0 by completing the square.",
+      "answer": "x=5 or x=-1",
+      "solution": "(x-2)^2-4-5=0 => (x-2)^2=9 => x-2=+-3 => x=5 or x=-1",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "roots"
+      ],
+      "problem_text": "Find the sum of roots of 2x^2-7x+3=0.",
+      "answer": "7/2",
+      "solution": "Sum=-b/a=7/2",
+      "marks": 1
+    },
+    {
+      "id": "AM1_Q3_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "quadratic_formula",
+        "surd"
+      ],
+      "problem_text": "Solve 2x^2-4x-3=0, giving answers in surd form.",
+      "answer": "x=(2+-sqrt10)/2",
+      "solution": "x=(4+-sqrt(16+24))/4=(4+-sqrt40)/4=(4+-2sqrt10)/4=(2+-sqrt10)/2",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q3_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "factorization",
+        "fractions"
+      ],
+      "problem_text": "Solve 6x^2-13x+6=0.",
+      "answer": "x=3/2 or x=2/3",
+      "solution": "(3x-2)(2x-3)=0 => x=2/3 or x=3/2",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "discriminant",
+        "nature"
+      ],
+      "problem_text": "Determine the nature of roots for 9x^2-6x+1=0.",
+      "answer": "Equal real roots",
+      "solution": "Delta=36-36=0 => equal real roots",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "quadratic_formula"
+      ],
+      "problem_text": "Solve 3x^2+5x-2=0, correct to 2 decimal places.",
+      "answer": "x=0.33 or x=-2.00",
+      "solution": "x=(-5+-sqrt(25+24))/6=(-5+-7)/6 => x=2/6=0.33 or x=-12/6=-2.00",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "parameter",
+        "roots"
+      ],
+      "problem_text": "Find k if x=2 is a root of x^2+kx-10=0.",
+      "answer": "k=3",
+      "solution": "4+2k-10=0 => 2k=6 => k=3",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "roots",
+        "product_sum"
+      ],
+      "problem_text": "If alpha and beta are roots of x^2-5x+6=0, find alpha^2+beta^2.",
+      "answer": "13",
+      "solution": "alpha+beta=5, alphabeta=6. alpha^2+beta^2=(alpha+beta)^2-2alphabeta=25-12=13",
+      "marks": 3
+    },
+    {
+      "id": "AM1_Q3_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "quadratic_formula",
+        "word_problem"
+      ],
+      "problem_text": "A rectangle's length is 3m more than its width. Area is 40m^2. Find its dimensions.",
+      "answer": "5m x 8m",
+      "solution": "w(w+3)=40 => w^2+3w-40=0 => (w+8)(w-5)=0 => w=5. Length=8.",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q3_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "parameter",
+        "discriminant"
+      ],
+      "problem_text": "Find p such that 2x^2+px+8=0 has equal roots.",
+      "answer": "p=8 or p=-8",
+      "solution": "Delta=p^2-64=0 => p=+-8",
+      "marks": 2
+    },
+    {
+      "id": "AM1_Q3_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "roots",
+        "new_equation"
+      ],
+      "problem_text": "If alpha and beta are roots of x^2-3x+1=0, form equation with roots alpha^2 and beta^2.",
+      "answer": "x^2-7x+1=0",
+      "solution": "alpha+beta=3, alphabeta=1. alpha^2+beta^2=(3)^2-2=7. alpha^2beta^2=1. Equation: x^2-Sx+P=0 => x^2-7x+1=0",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q3_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "quadratic_formula",
+        "fractional"
+      ],
+      "problem_text": "Solve x+1/x=5, giving answers in surd form.",
+      "answer": "x=(5+-sqrt21)/2",
+      "solution": "Multiply by x: x^2+1=5x => x^2-5x+1=0 => x=(5+-sqrt(25-4))/2=(5+-sqrt21)/2",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q3_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "roots",
+        "parameter"
+      ],
+      "problem_text": "Roots of x^2-6x+k=0 differ by 2. Find k.",
+      "answer": "k=8",
+      "solution": "Let roots be a and a+2. Sum: 2a+2=6 => a=2, so roots 2,4. Product: 2*4=8=k",
+      "marks": 4
+    },
+    {
+      "id": "AM1_Q3_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "quadratic_formula",
+        "application"
+      ],
+      "problem_text": "A ball thrown upward: h=30t-5t^2. When is it at height 25m?",
+      "answer": "t=1s or t=5s",
+      "solution": "30t-5t^2=25 => 5t^2-30t+25=0 => t^2-6t+5=0 => (t-1)(t-5)=0 => t=1 or t=5",
+      "marks": 3
+    }
+  ]
+}

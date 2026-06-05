@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q7",
+  "title": "Binomial Applications",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Beyond pure algebra, the binomial theorem powers probability calculations (binomial distribution), approximations, and even helps estimate powers without a calculator.",
+    "prerequisites": [
+      "Binomial expansion",
+      "Term finding",
+      "Basic probability"
+    ],
+    "core_explanation": "**Applications:**\\n1. **Approximations:** $(1+\\\\epsilon)^n \\\\approx 1 + n\\\\epsilon$ for small $\\\\epsilon$ (first two terms).\\n2. **Binomial Probability:** $P(X=r) = \\\\binom{n}{r}p^r(1-p)^{n-r}$\\n3. **Identifying coefficients:** In expansions like $(1+ax)(1+bx)^n$, combine terms carefully.\\n4. **Partial expansion:** Sometimes only certain terms matter (e.g. up to $x^3$).",
+    "worked_example": "Find the first 3 terms in the expansion of $(1+2x)^5(1-x)^3$.\\n\\nSolution:\\n$(1+2x)^5 = 1 + \\\\binom{5}{1}(2x) + \\\\binom{5}{2}(2x)^2 + ...$\\n$= 1 + 10x + 40x^2 + ...$\\n\\n$(1-x)^3 = 1 - 3x + 3x^2 - ...$\\n\\nMultiply: $(1 + 10x + 40x^2)(1 - 3x + 3x^2)$\\nConstant: $1\\\\times 1 = 1$\\n$x$: $1\\\\times(-3x) + 10x\\\\times 1 = -3x + 10x = 7x$\\n$x^2$: $1\\\\times 3x^2 + 10x\\\\times(-3x) + 40x^2\\\\times 1 = 3x^2 - 30x^2 + 40x^2 = 13x^2$\\n\\nFirst 3 terms: $1 + 7x + 13x^2$",
+    "common_mistakes": [
+      {
+        "mistake": "Only expanding one factor when the product has two or more binomials.",
+        "correction": "Expand each factor separately, then multiply the expansions term by term."
+      },
+      {
+        "mistake": "Forgetting higher-order contributions \u2014 e.g. the $x^2$ term can come from $x \\\\times x$ as well as $x^2 \\\\times 1$.",
+        "correction": "Systematically collect all ways to obtain each power."
+      }
+    ],
+    "summary": [
+      "Use first few terms of each expansion for approximations",
+      "For products, expand each factor then multiply",
+      "For binomial probability, use $\\\\binom{n}{r}p^rq^{n-r}$",
+      "Collect all contributions to each power"
+    ]
+  }
+}

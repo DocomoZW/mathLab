@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q1",
+  "title": "Radians & Degrees",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Radians are the natural way to measure angles \u2014 they connect arc length directly to the angle. In advanced maths, radians are preferred over degrees for almost everything.",
+    "prerequisites": [
+      "Angle basics",
+      "Circle geometry",
+      "Proportion"
+    ],
+    "core_explanation": "**Radians:** One radian is the angle subtended by an arc equal in length to the radius.\\n\\n**Conversion:**\\n- $\\\\pi$ radians $= 180^\\\\circ$\\n- To convert degrees to radians: multiply by $\\\\frac{\\\\pi}{180}$\\n- To convert radians to degrees: multiply by $\\\\frac{180}{\\\\pi}$\\n\\n**Common values:**\\n$0^\\\\circ=0$, $30^\\\\circ=\\\\frac{\\\\pi}{6}$, $45^\\\\circ=\\\\frac{\\\\pi}{4}$, $60^\\\\circ=\\\\frac{\\\\pi}{3}$, $90^\\\\circ=\\\\frac{\\\\pi}{2}$, $180^\\\\circ=\\\\pi$, $270^\\\\circ=\\\\frac{3\\\\pi}{2}$, $360^\\\\circ=2\\\\pi$",
+    "worked_example": "Convert $120^\\\\circ$ to radians and $\\\\frac{5\\\\pi}{4}$ to degrees.\\n\\nSolution:\\n$120^\\\\circ \\\\times \\\\frac{\\\\pi}{180} = \\\\frac{120\\\\pi}{180} = \\\\frac{2\\\\pi}{3}$\\n\\n$\\\\frac{5\\\\pi}{4} \\\\times \\\\frac{180}{\\\\pi} = \\\\frac{5\\\\times 180}{4} = 225^\\\\circ$",
+    "common_mistakes": [
+      {
+        "mistake": "Using $\\\\pi = 180$ instead of $\\\\pi$ radians $= 180^\\\\circ$.",
+        "correction": "Think of $\\\\pi$ as $\\\\pi$ radians, not 180 degrees. Use the conversion formula."
+      },
+      {
+        "mistake": "Forgetting which conversion factor to use (multiply by $\\\\pi/180$ or $180/\\\\pi$).",
+        "correction": "Going TO radians: multiply by $\\\\pi/180$. Going FROM radians: multiply by $180/\\\\pi$."
+      }
+    ],
+    "summary": [
+      "$\\\\pi$ rad $= 180^\\\\circ$",
+      "Deg to rad: $\\\\times \\\\pi/180$",
+      "Rad to deg: $\\\\times 180/\\\\pi$",
+      "Common: $\\\\pi/6, \\\\pi/4, \\\\pi/3, \\\\pi/2$"
+    ]
+  }
+}

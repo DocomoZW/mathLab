@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q5",
+  "title": "Binomial Expansion (Positive Integer)",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM4_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "binomial_coefficient"
+      ],
+      "problem_text": "Evaluate C(5,2).",
+      "answer": "10",
+      "solution": "5!/(2!3!)=120/(2x6)=10",
+      "marks": 1
+    },
+    {
+      "id": "AM4_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "binomial_coefficient"
+      ],
+      "problem_text": "Evaluate C(4,0)+C(4,1)+C(4,2)+C(4,3)+C(4,4).",
+      "answer": "16",
+      "solution": "Sum=2^4=16",
+      "marks": 1
+    },
+    {
+      "id": "AM4_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "simple_expand"
+      ],
+      "problem_text": "Expand (x+1)^3.",
+      "answer": "x^3+3x^2+3x+1",
+      "solution": "(x+1)^3=x^3+3x^2+3x+1",
+      "marks": 1
+    },
+    {
+      "id": "AM4_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "simple_expand"
+      ],
+      "problem_text": "Expand (x-1)^4.",
+      "answer": "x^4-4x^3+6x^2-4x+1",
+      "solution": "Using binomial: x^4+4x^3(-1)+6x^2(1)+4x(-1)+1=x^4-4x^3+6x^2-4x+1",
+      "marks": 2
+    },
+    {
+      "id": "AM4_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "expand_binomial"
+      ],
+      "problem_text": "Expand (2x+1)^3.",
+      "answer": "8x^3+12x^2+6x+1",
+      "solution": "(2x)^3+3(2x)^2+3(2x)+1=8x^3+12x^2+6x+1",
+      "marks": 2
+    },
+    {
+      "id": "AM4_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "expand_binomial"
+      ],
+      "problem_text": "Expand (3x-2)^4.",
+      "answer": "81x^4-216x^3+216x^2-96x+16",
+      "solution": "(3x)^4+4(3x)^3(-2)+6(3x)^2(4)+4(3x)(-8)+16=81x^4-216x^3+216x^2-96x+16",
+      "marks": 3
+    },
+    {
+      "id": "AM4_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "expand_and_simplify"
+      ],
+      "problem_text": "Expand (x+2)^5.",
+      "answer": "x^5+10x^4+40x^3+80x^2+80x+32",
+      "solution": "Using binomial coefficients 1,5,10,10,5,1: x^5+5x^4(2)+10x^3(4)+10x^2(8)+5x(16)+32=x^5+10x^4+40x^3+80x^2+80x+32",
+      "marks": 3
+    },
+    {
+      "id": "AM4_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "pascal"
+      ],
+      "problem_text": "Write the 5th row of Pascal's triangle (n=4).",
+      "answer": "1 4 6 4 1",
+      "solution": "Row n=4: C(4,0),C(4,1),C(4,2),C(4,3),C(4,4) = 1,4,6,4,1",
+      "marks": 1
+    },
+    {
+      "id": "AM4_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "expand_and_simplify"
+      ],
+      "problem_text": "Expand (2x-3y)^4.",
+      "answer": "16x^4-96x^3y+216x^2y^2-216xy^3+81y^4",
+      "solution": "(2x)^4+4(2x)^3(-3y)+6(2x)^2(9y^2)+4(2x)(-27y^3)+81y^4=16x^4-96x^3y+216x^2y^2-216xy^3+81y^4",
+      "marks": 3
+    },
+    {
+      "id": "AM4_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "coefficient"
+      ],
+      "problem_text": "Find the coefficient of x^3 in (2x+3)^5.",
+      "answer": "720",
+      "solution": "Term with r=3: C(5,3)(2x)^3(3)^2=10(8x^3)(9)=720x^3. Coefficient=720",
+      "marks": 2
+    },
+    {
+      "id": "AM4_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "product_expansion"
+      ],
+      "problem_text": "Expand (1+x)^3(1-2x)^2 up to x^3.",
+      "answer": "1 - x - 5x^2 + 3x^3",
+      "solution": "(1+x)^3=1+3x+3x^2+x^3. (1-2x)^2=1-4x+4x^2. Multiply: constant=1. x: 1(-4x)+3x(1)=-4+3=-x. x^2: 1(4x^2)+3x(-4x)+3x^2(1)=4-12+3=-5x^2. x^3: 1(0)+3x(4x^2)+3x^2(-4x)+x^3(1)=12x^3-12x^3+x^3=x^3. Result: 1-x-5x^2+x^3",
+      "marks": 4
+    },
+    {
+      "id": "AM4_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "coefficient_product"
+      ],
+      "problem_text": "Find coefficient of x^2 in (1+2x)^4(3-x)^3.",
+      "answer": "198",
+      "solution": "(1+2x)^4=1+8x+24x^2+... (3-x)^3=27-27x+9x^2-x^3. x^2 terms: 1(9x^2)+8x(-27x)+24x^2(27)=9-216+648=441x^2. Coefficient=441",
+      "marks": 4
+    },
+    {
+      "id": "AM4_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "middle_term"
+      ],
+      "problem_text": "Find the middle term in (x^2+1/x^2)^6.",
+      "answer": "20",
+      "solution": "Middle term: r=3. C(6,3)(x^2)^3(1/x^2)^3=20(x^6)(1/x^6)=20",
+      "marks": 2
+    },
+    {
+      "id": "AM4_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "largest_coefficient"
+      ],
+      "problem_text": "Find the term with largest coefficient in (1+x)^10.",
+      "answer": "C(10,5)=252",
+      "solution": "Middle term (r=5) has largest coefficient: C(10,5)=252",
+      "marks": 2
+    },
+    {
+      "id": "AM4_Q5_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_expand"
+      ],
+      "problem_text": "Expand (sqrt(x)+1/sqrt(x))^6.",
+      "answer": "x^3+6x^2+15x+20+15/x+6/x^2+1/x^3",
+      "solution": "General term: C(6,r)(sqrt(x))^{6-r}(1/sqrt(x))^r=C(6,r)x^{(6-r)/2-r/2}=C(6,r)x^{3-r}. r=0: x^3, r=1:6x^2, r=2:15x, r=3:20, r=4:15/x, r=5:6/x^2, r=6:1/x^3",
+      "marks": 3
+    },
+    {
+      "id": "AM4_Q5_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "application"
+      ],
+      "problem_text": "Use binomial expansion to estimate (1.01)^5 correct to 4 d.p.",
+      "answer": "~1.0510",
+      "solution": "(1+0.01)^5=1+5(0.01)+10(0.0001)+10(0.000001)+5(0.00000001)+0.0000000001=1+0.05+0.001+0.00001+0.00000005+...=1.05101005 ~=1.0510",
+      "marks": 3
+    }
+  ]
+}

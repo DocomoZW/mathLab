@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q6",
+  "title": "Trig Equations (Advanced)",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM5_Q6_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "quadratic_sin"
+      ],
+      "problem_text": "Solve sin^2 x = 1/4 for 0<=x<=2pi.",
+      "answer": "x=pi/6,5pi/6,7pi/6,11pi/6",
+      "solution": "sin x=+-1/2. sin=1/2: x=pi/6,5pi/6. sin=-1/2: x=7pi/6,11pi/6",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "double_angle"
+      ],
+      "problem_text": "Solve sin 2x = 1 for 0<=x<=360 degrees.",
+      "answer": "x=45, 225",
+      "solution": "2x=90, 450... => x=45, 225",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "quadratic_cos"
+      ],
+      "problem_text": "Solve 2cos^2 x = 1 for 0<=x<=2pi.",
+      "answer": "x=pi/4,3pi/4,5pi/4,7pi/4",
+      "solution": "cos^2=1/2 => cos=+-1/sqrt2 => x=pi/4,3pi/4,5pi/4,7pi/4",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "tan_double"
+      ],
+      "problem_text": "Solve tan 2x = 1 for 0<=x<=180 degrees.",
+      "answer": "x=22.5, 112.5",
+      "solution": "2x=45, 225 => x=22.5, 112.5",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "quadratic_substitution"
+      ],
+      "problem_text": "Solve 2sin^2 x - sin x - 1 = 0 for 0<=x<=360 degrees.",
+      "answer": "x=90, 210, 330",
+      "solution": "Let u=sin x. 2u^2-u-1=0 => (2u+1)(u-1)=0 => u=1 or u=-1/2. sin x=1 => x=90. sin x=-1/2 => x=210,330",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "using_identity"
+      ],
+      "problem_text": "Solve 2cos^2 x + cos x - 1 = 0 for 0<=x<=2pi.",
+      "answer": "x=0,2pi,2pi/3,4pi/3",
+      "solution": "Let u=cos x. 2u^2+u-1=0 => (2u-1)(u+1)=0 => u=1/2 or u=-1. cos=1/2 => x=pi/3,5pi/3. cos=-1 => x=pi. Wait: 0 and 2pi also give cos=1. So cos=1 at x=0,2pi. So total: 0, pi/3, pi, 5pi/3, 2pi",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "double_angle_equation"
+      ],
+      "problem_text": "Solve cos 2x = 1/2 for 0<=x<=360 degrees.",
+      "answer": "x=30,150,210,330",
+      "solution": "2x=60,300,420,660 => x=30,150,210,330",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "multiple_angle"
+      ],
+      "problem_text": "Solve sin 3x = -1/2 for 0<=x<=180 degrees.",
+      "answer": "x=70,110,190?",
+      "solution": "3x=210,330,570,690,930,1050 => x=70,110,190,230,310,350. In 0-180: x=70,110",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "using_trig_identity"
+      ],
+      "problem_text": "Solve sin^2 x + cos x = 1 for 0<=x<=2pi.",
+      "answer": "x=0, pi/2, 3pi/2, 2pi",
+      "solution": "sin^2=1-cos^2 => 1-cos^2+cos=1 => cos^2-cos=0 => cos(cos-1)=0 => cos=0 or cos=1. cos=0: x=pi/2,3pi/2. cos=1: x=0,2pi",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "equation_with_identity"
+      ],
+      "problem_text": "Solve 3 tan^2 x - 1 = 0 for 0<=x<=360 degrees.",
+      "answer": "x=30,150,210,330",
+      "solution": "tan^2=1/3 => tan=+-1/sqrt3. tan=1/sqrt3: x=30,210. tan=-1/sqrt3: x=150,330",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "quadratic_radians"
+      ],
+      "problem_text": "Solve 2cos^2 x + 3cos x + 1 = 0 for 0<=x<=2pi.",
+      "answer": "x=pi, 2pi/3, 4pi/3",
+      "solution": "Let u=cos x. 2u^2+3u+1=0 => (2u+1)(u+1)=0 => u=-1/2 or u=-1. cos=-1/2: x=2pi/3,4pi/3. cos=-1: x=pi",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "sin_cos_combine"
+      ],
+      "problem_text": "Solve 2 sin x cos x = sin x for 0<=x<=360 degrees.",
+      "answer": "x=0,180,360,60,300",
+      "solution": "2 sin x cos x - sin x = 0 => sin x(2cos x-1)=0. sin x=0 => x=0,180,360. cos x=1/2 => x=60,300",
+      "marks": 3
+    },
+    {
+      "id": "AM5_Q6_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_quadratic"
+      ],
+      "problem_text": "Solve 2sin^2 x + 3sin x - 2 = 0 for 0<=x<=2pi.",
+      "answer": "x=pi/6, 5pi/6",
+      "solution": "Let u=sin x. 2u^2+3u-2=0 => (2u-1)(u+2)=0 => u=1/2 or u=-2. sin=1/2 => x=pi/6,5pi/6. sin=-2 no solution",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "cos_sin_equation"
+      ],
+      "problem_text": "Solve cos^2 x = sin^2 x for 0<=x<=360 degrees.",
+      "answer": "x=45,135,225,315",
+      "solution": "cos^2=sin^2 => cos=+-sin => tan=+-1 => x=45,135,225,315",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_identity"
+      ],
+      "problem_text": "Solve 1+tan^2 x = 2 for 0<=x<=360 degrees.",
+      "answer": "x=45,135,225,315",
+      "solution": "1+tan^2=2 => tan^2=1 => tan=+-1 => x=45,135,225,315",
+      "marks": 2
+    },
+    {
+      "id": "AM5_Q6_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "hard_equation"
+      ],
+      "problem_text": "Solve 3sec^2 x - 4 = 0 for 0<=x<=2pi.",
+      "answer": "x=pi/6,5pi/6,7pi/6,11pi/6",
+      "solution": "sec^2=4/3 => cos^2=3/4 => cos=+-sqrt3/2. cos=sqrt3/2: x=pi/6,11pi/6. cos=-sqrt3/2: x=5pi/6,7pi/6",
+      "marks": 3
+    }
+  ]
+}

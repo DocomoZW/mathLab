@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q7",
+  "title": "Log Equations & Applications",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM3_Q7_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "simple_log_eq"
+      ],
+      "problem_text": "Solve log_2 x = 3.",
+      "answer": "x=8",
+      "solution": "x=2^3=8",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q7_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "simple"
+      ],
+      "problem_text": "Solve log_3 (2x-1)=2.",
+      "answer": "x=5",
+      "solution": "2x-1=9 => 2x=10 => x=5",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q7_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "simple"
+      ],
+      "problem_text": "Solve ln x = 2.",
+      "answer": "x=e^2",
+      "solution": "x=e^2",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q7_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "simple"
+      ],
+      "problem_text": "Solve log(x+3)=1 (base 10).",
+      "answer": "x=7",
+      "solution": "x+3=10 => x=7",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q7_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "combine_logs"
+      ],
+      "problem_text": "Solve log_2 x + log_2 3 = 4.",
+      "answer": "x=16/3",
+      "solution": "log_2(3x)=4 => 3x=16 => x=16/3",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "quotient_logs"
+      ],
+      "problem_text": "Solve log_3 (x+2) - log_3 x = 1.",
+      "answer": "x=1",
+      "solution": "log_3((x+2)/x)=1 => (x+2)/x=3 => x+2=3x => 2=2x => x=1",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "power_log"
+      ],
+      "problem_text": "Solve 2log_5 x = log_5 36.",
+      "answer": "x=6",
+      "solution": "log_5 x^2 = log_5 36 => x^2=36 => x=6 (positive)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "quadratic_log"
+      ],
+      "problem_text": "Solve log_2 (x^2-3x) = 3.",
+      "answer": "x=4 or x=-1",
+      "solution": "x^2-3x=8 => x^2-3x-8=0 => x=(3+-sqrt(9+32))/2=(3+-sqrt41)/2",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q7_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "log_quadratic"
+      ],
+      "problem_text": "Solve log_3 x + log_3 (x-2) = 1.",
+      "answer": "x=3",
+      "solution": "log_3[x(x-2)]=1 => x(x-2)=3 => x^2-2x-3=0 => (x-3)(x+1)=0 => x=3 (x=-1 invalid)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "ln_equation"
+      ],
+      "problem_text": "Solve ln(x+1) + ln(x-1) = ln 8.",
+      "answer": "x=3",
+      "solution": "ln[(x+1)(x-1)]=ln8 => x^2-1=8 => x^2=9 => x=3 (x=-3 invalid)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "application_ph"
+      ],
+      "problem_text": "The pH of a solution is pH=-log[H+]. If pH=4.5, find [H+].",
+      "answer": "[H+]=10^{-4.5}=3.16x10^{-5}",
+      "solution": "-log[H+]=4.5 => log[H+]=-4.5 => [H+]=10^{-4.5}=3.16x10^{-5}",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "application_richter"
+      ],
+      "problem_text": "An earthquake measures 5.2 on Richter scale. How many times more intense is this than a standard earthquake?",
+      "answer": "10^{5.2}=1.58x10^5 times",
+      "solution": "M=log(I/I_0)=5.2 => I/I_0=10^{5.2}=1.58x10^5",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tough_log_eq"
+      ],
+      "problem_text": "Solve log_2(x+1) = 2 - log_2 x.",
+      "answer": "x=(-1+sqrt17)/2",
+      "solution": "log_2(x+1)+log_2 x=2 => log_2[x(x+1)]=2 => x(x+1)=4 => x^2+x-4=0 => x=(-1+sqrt17)/2 (positive only)",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q7_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "change_base_eq"
+      ],
+      "problem_text": "Solve log_2 x + log_4 x = 6.",
+      "answer": "x=16",
+      "solution": "log_2 x + (log_2 x)/2 = 6 => (3/2)log_2 x=6 => log_2 x=4 => x=16",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q7_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "application_growth"
+      ],
+      "problem_text": "A culture of bacteria triples every hour. Initially 100, after how many hours will it exceed 50000?",
+      "answer": "t > log_3 500 = 5.66 hours",
+      "solution": "100(3^t)>50000 => 3^t>500 => t>log_3 500 = ln500/ln3 = 6.215/1.099 = 5.66 hours",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q7_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "complex_log_eq"
+      ],
+      "problem_text": "Solve log_3(x+1) - log_3(x-1) = log_3 2.",
+      "answer": "x=3",
+      "solution": "log_3[(x+1)/(x-1)]=log_3 2 => (x+1)/(x-1)=2 => x+1=2x-2 => x=3. Check: x=3 => x+1=4>0, x-1=2>0 \u2713",
+      "marks": 2
+    }
+  ]
+}

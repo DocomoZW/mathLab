@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q1",
+  "title": "Indices Laws",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM3_Q1_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "multiplication"
+      ],
+      "problem_text": "Simplify 2^3 x 2^4.",
+      "answer": "2^7=128",
+      "solution": "2^3 x 2^4 = 2^(3+4) = 2^7 = 128",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q1_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "division"
+      ],
+      "problem_text": "Simplify 3^5 / 3^2.",
+      "answer": "3^3=27",
+      "solution": "3^5 / 3^2 = 3^(5-2) = 3^3 = 27",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q1_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "power_of_power"
+      ],
+      "problem_text": "Simplify (5^2)^3.",
+      "answer": "5^6=15625",
+      "solution": "(5^2)^3 = 5^(2x3) = 5^6 = 15625",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q1_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "zero_negative"
+      ],
+      "problem_text": "Evaluate 7^0 + 2^{-3}.",
+      "answer": "1 + 1/8 = 9/8",
+      "solution": "7^0 = 1, 2^{-3} = 1/2^3 = 1/8. Sum = 1 + 1/8 = 9/8",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "fractional"
+      ],
+      "problem_text": "Simplify 64^{2/3}.",
+      "answer": "16",
+      "solution": "64^{1/3}=4, then 4^2=16. Or (64^2)^{1/3}=4096^{1/3}=16",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "simplify_expression"
+      ],
+      "problem_text": "Simplify (2x^2y^3)^3.",
+      "answer": "8x^6y^9",
+      "solution": "(2x^2y^3)^3 = 2^3 x^(2x3) y^(3x3) = 8x^6y^9",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "fractional"
+      ],
+      "problem_text": "Evaluate (27/8)^{-2/3}.",
+      "answer": "4/9",
+      "solution": "(27/8)^{-2/3} = (8/27)^{2/3} = (8^{2/3})/(27^{2/3}) = 4/9",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "combine_laws"
+      ],
+      "problem_text": "Simplify (a^2b)^3 / (ab^2)^2.",
+      "answer": "a^4b^{-1}",
+      "solution": "(a^2b)^3 = a^6b^3, (ab^2)^2 = a^2b^4, division: a^(6-2)b^(3-4) = a^4b^{-1}",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "fractional_negative"
+      ],
+      "problem_text": "Simplify (4x^2)^{3/2} x (8x^{-1})^{-2/3}.",
+      "answer": "4x^3",
+      "solution": "(4x^2)^{3/2}=4^{3/2}(x^2)^{3/2}=8x^3. (8x^{-1})^{-2/3}=8^{-2/3}x^{2/3}=1/4 x^{2/3}. Product: 8x^3 * 1/4 x^{2/3} = 2x^{11/3} Wait: 8*(1/4)=2. x^3 * x^{2/3} = x^{11/3}",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q1_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "equation"
+      ],
+      "problem_text": "Solve 2^{2x-1} = 8^{x+3}.",
+      "answer": "x=-10",
+      "solution": "8^{x+3}=(2^3)^{x+3}=2^{3x+9}. So 2x-1=3x+9 => -1-9=3x-2x => x=-10",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q1_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "simplify_fraction"
+      ],
+      "problem_text": "Simplify (x^{1/2} y^{-1/3})(x^{-1/4} y^{2/3}) / (x^{1/4} y^{1/3}).",
+      "answer": "x^0 y^0 = 1",
+      "solution": "Numerator: x^{1/2-1/4}y^{-1/3+2/3}=x^{1/4}y^{1/3}. Divide: x^{1/4-1/4}y^{1/3-1/3}=x^0y^0=1",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q1_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "tough_simplify"
+      ],
+      "problem_text": "Evaluate 5^{2/3} x 5^{1/6} / 5^{1/2}.",
+      "answer": "5^{1/3} = cbrt(5)",
+      "solution": "5^{2/3+1/6-1/2}=5^{(4+1-3)/6}=5^{2/6}=5^{1/3}=cbrt(5)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "equation_fractional"
+      ],
+      "problem_text": "Solve 4^{x-1} = 8^{2x+1}.",
+      "answer": "x=-5/4",
+      "solution": "4^{x-1}=(2^2)^{x-1}=2^{2x-2}. 8^{2x+1}=(2^3)^{2x+1}=2^{6x+3}. So 2x-2=6x+3 => -2-3=6x-2x => -5=4x => x=-5/4",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q1_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "variable_base"
+      ],
+      "problem_text": "If 2^x = 3^y = 6^{-z}, prove that 1/x + 1/y + 1/z = 0.",
+      "answer": "Proof",
+      "solution": "Let 2^x=3^y=6^{-z}=k. Then 2=k^{1/x}, 3=k^{1/y}, 6=k^{-1/z}. So 6=2x3 => k^{-1/z}=k^{1/x}k^{1/y}=k^{1/x+1/y}. So -1/z=1/x+1/y => 1/x+1/y+1/z=0",
+      "marks": 4
+    },
+    {
+      "id": "AM3_Q1_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "nested_powers"
+      ],
+      "problem_text": "Simplify (2^{3/2})^{4/3} x (2^{-1/2})^{2}.",
+      "answer": "2^{3/2}",
+      "solution": "(2^{3/2})^{4/3}=2^{(3/2)x(4/3)}=2^2=4. (2^{-1/2})^2=2^{-1}=1/2. Product: 4 x 1/2 = 2 = 2^1",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q1_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "proof"
+      ],
+      "problem_text": "Show that (a^m)^n = a^{mn} for rational m and n.",
+      "answer": "Proof",
+      "solution": "Let m=p/q, n=r/s. Then (a^{p/q})^{r/s} = (a^{p/q})^{r/s} = (qth root of a^p)^{r/s} = a^{pr/qs} = a^{(p/q)(r/s)} = a^{mn}",
+      "marks": 4
+    }
+  ]
+}

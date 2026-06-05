@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q5",
+  "title": "Trig Equations (Basic)",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Trigonometric equations involve finding angles that satisfy relationships like $\\\\sin\\\\theta = 0.5$. Because trig functions repeat, there are usually multiple solutions.",
+    "prerequisites": [
+      "Trig ratios",
+      "CAST diagram",
+      "Inverse trig functions"
+    ],
+    "core_explanation": "**Solving $\\\\sin\\\\theta = k$, $\\\\cos\\\\theta = k$, $\\\\tan\\\\theta = k$:**\\n1. Find the **principal value** using $\\\\sin^{-1}$, $\\\\cos^{-1}$, or $\\\\tan^{-1}$.\\n2. Use the **CAST diagram** to find the other quadrant solutions.\\n3. Add the **period** (general solution):\\n   - $\\\\sin$ and $\\\\cos$: period $360^\\\\circ$ or $2\\\\pi$\\n   - $\\\\tan$: period $180^\\\\circ$ or $\\\\pi$\\n4. For a specific range (e.g. $0^\\\\circ \\\\le \\\\theta \\\\le 360^\\\\circ$), list all solutions within that range.",
+    "worked_example": "Solve $\\\\cos\\\\theta = 0.5$ for $0^\\\\circ \\\\le \\\\theta \\\\le 360^\\\\circ$.\\n\\nSolution:\\nPrincipal value: $\\\\theta = \\\\cos^{-1}(0.5) = 60^\\\\circ$\\nCosine is positive in Q1 and Q4 (CAST).\\nQ1: $\\\\theta = 60^\\\\circ$\\nQ4: $\\\\theta = 360^\\\\circ - 60^\\\\circ = 300^\\\\circ$\\nAnswer: $\\\\theta = 60^\\\\circ$ or $300^\\\\circ$",
+    "common_mistakes": [
+      {
+        "mistake": "Only giving one solution when there are two in a $360^\\\\circ$ range.",
+        "correction": "Use the CAST diagram to find all solutions in the given range."
+      },
+      {
+        "mistake": "Using the calculator to find $\\\\cos^{-1}(-0.5)$ and forgetting the negative quadrant.",
+        "correction": "The calculator gives one value; use CAST to find the second solution."
+      }
+    ],
+    "summary": [
+      "Find principal value using inverse trig",
+      "Use CAST diagram for other quadrants",
+      "sin/cos: 2 solutions in 0-360, tan: 1 solution",
+      "Add periods for general solutions"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "track": "add_maths",
+  "unit": "AM4_Polynomials",
+  "topic_id": "AM4_Q4",
+  "title": "Cubic Equations",
+  "syllabus_ref": "0606 C4",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Cubic equations $ax^3+bx^2+cx+d=0$ appear in volume problems, optimisation, and higher-level algebra. The Factor Theorem makes solving them systematic.",
+    "prerequisites": [
+      "Factor theorem",
+      "Remainder theorem",
+      "Quadratic equations",
+      "Polynomial division"
+    ],
+    "core_explanation": "**Solving cubic equations:**\\n1. **Find one root** by testing factors of the constant term.\\n2. **Factor Theorem:** If $f(a)=0$, $(x-a)$ is a factor.\\n3. **Divide** to find the quadratic factor.\\n4. **Solve the quadratic** (factorise or use formula).\\n\\n**Special cases:**\\n- **Difference of cubes:** $a^3 - b^3 = (a-b)(a^2+ab+b^2)$\\n- **Sum of cubes:** $a^3 + b^3 = (a+b)(a^2-ab+b^2)$\\n- **Repeated roots:** Some cubics have a repeated factor.",
+    "worked_example": "Solve $x^3 - 2x^2 - 5x + 6 = 0$.\\n\\nSolution:\\nTest $x=1$: $1 - 2 - 5 + 6 = 0$ \u2713 So $(x-1)$ is a factor.\\nDivide: $(x^3-2x^2-5x+6) \\\\div (x-1) = x^2 - x - 6$\\n$x^2 - x - 6 = (x-3)(x+2) = 0$\\n$x = 1, x = 3, x = -2$",
+    "common_mistakes": [
+      {
+        "mistake": "Only testing positive factors of the constant term.",
+        "correction": "Test both positive and negative values \u2014 roots can be negative."
+      },
+      {
+        "mistake": "Stopping after finding the quadratic factor without solving it.",
+        "correction": "Always solve the quadratic factor to find all three roots."
+      }
+    ],
+    "summary": [
+      "Find one root by testing factors of the constant term",
+      "Use Factor Theorem to identify a factor",
+      "Divide to get a quadratic",
+      "Solve the quadratic for the remaining roots"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "track": "add_maths",
+  "unit": "AM8_Integration",
+  "topic_id": "AM8_Q1",
+  "title": "Indefinite Integration (Power Rule)",
+  "syllabus_ref": "0606 C8",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:20Z",
+  "sections": {
+    "hook": "What happens when you power rule: $\\int x^n dx = \\frac{x^{n+1}}{n+1}+c$? Let's explore indefinite integration (power rule) in IGCSE Add Maths.",
+    "prerequisites": [
+      "Basic algebra",
+      "Coordinate geometry",
+      "Function notation"
+    ],
+    "core_explanation": "<h3>Indefinite Integration (Power Rule)</h3><p><b>Power rule: $\\int x^n dx = \\frac{x^{n+1}}{n+1}+C$</b> <b>Integrating polynomials term by term</b> <b>Constant of integration $C$</b> <b>Integrating $ax^n$ terms</b> <b>Negative and fractional powers</b> <b>Finding $f(x)$ given $f'(x)$</b></p>",
+    "worked_example": "Worked example for Indefinite Integration (Power Rule) will demonstrate key concepts step-by-step.",
+    "common_mistakes": [
+      "Sign errors in computation",
+      "Forgetting constant of integration/differentiation",
+      "Mixing up formulas"
+    ],
+    "summary": "Indefinite Integration (Power Rule) is fundamental for IGCSE Additional Mathematics 0606 C8."
+  }
+}

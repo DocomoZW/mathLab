@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q2",
+  "title": "Arc Length & Sector Area",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "In radians, arc length and sector area formulas are beautifully simple: $s = r\\\\theta$ and $A = \\\\frac{1}{2}r^2\\\\theta$. No more fractions of $360^\\\\circ$!",
+    "prerequisites": [
+      "Radians and degrees",
+      "Circle circumference and area",
+      "Proportion"
+    ],
+    "core_explanation": "**Formulas (in radians):**\\n- **Arc length:** $s = r\\\\theta$\\n- **Sector area:** $A = \\\\frac{1}{2}r^2\\\\theta$\\n- **Perimeter of sector:** $P = 2r + r\\\\theta = r(2+\\\\theta)$\\n\\n**Segment area:** Area of sector minus area of triangle.\\n$A_{segment} = \\\\frac{1}{2}r^2(\\\\theta - \\\\sin\\\\theta)$\\n\\nAlways use radians \u2014 these formulas only work with radians, not degrees.",
+    "worked_example": "A sector has radius 6 cm and angle $\\\\frac{\\\\pi}{3}$ radians. Find the arc length and area.\\n\\nSolution:\\nArc length: $s = r\\\\theta = 6 \\\\times \\\\frac{\\\\pi}{3} = 2\\\\pi \\\\approx 6.28$ cm\\nArea: $A = \\\\frac{1}{2}r^2\\\\theta = \\\\frac{1}{2} \\\\times 36 \\\\times \\\\frac{\\\\pi}{3} = 6\\\\pi \\\\approx 18.85$ cm$^2$",
+    "common_mistakes": [
+      {
+        "mistake": "Using degrees in the formulas $s = r\\\\theta$ and $A = \\\\frac{1}{2}r^2\\\\theta$.",
+        "correction": "These formulas require the angle in RADIANS. Convert degrees to radians first."
+      },
+      {
+        "mistake": "Forgetting the $\\\\frac{1}{2}$ in the sector area formula.",
+        "correction": "The area is $\\\\frac{1}{2}r^2\\\\theta$, not $r^2\\\\theta$. Remember it's a fraction of the full circle area."
+      }
+    ],
+    "summary": [
+      "Arc length: $s = r\\\\theta$ (radians only)",
+      "Sector area: $A = \\\\frac{1}{2}r^2\\\\theta$",
+      "Perimeter: $P = r(2+\\\\theta)$",
+      "Segment: $A = \\\\frac{1}{2}r^2(\\\\theta - \\\\sin\\\\theta)$"
+    ]
+  }
+}

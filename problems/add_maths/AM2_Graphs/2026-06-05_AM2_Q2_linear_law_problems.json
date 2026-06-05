@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM2_Graphs",
+  "topic_id": "AM2_Q2",
+  "title": "Linear Law",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM2_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "linear_form"
+      ],
+      "problem_text": "Express y=ax^3 in linear form Y=mX+c.",
+      "answer": "log y = log a + 3 log x",
+      "solution": "y=ax^3 => log y = log a + 3 log x. So Y=log y, X=log x, m=3, c=log a",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "linear_form"
+      ],
+      "problem_text": "Express y=ab^x in linear form Y=mX+c.",
+      "answer": "log y = log a + x log b",
+      "solution": "y=ab^x => log y = log a + x log b. So Y=log y, X=x, m=log b, c=log a",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "identify_variables"
+      ],
+      "problem_text": "For Y=mX+c from y=kx^n, what are Y, X, m, c?",
+      "answer": "Y=log y, X=log x, m=n, c=log k",
+      "solution": "Taking logs: log y = log k + n log x. Y=log y, X=log x, m=n, c=log k",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "identify_variables"
+      ],
+      "problem_text": "For Y=mX+c from y=ab^x, what are Y, X, m, c?",
+      "answer": "Y=log y, X=x, m=log b, c=log a",
+      "solution": "log y = log a + x log b. Y=log y, X=x, m=log b, c=log a",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "find_constants"
+      ],
+      "problem_text": "A graph of log y against log x gives gradient 2 and intercept 0.5. Find y in terms of x.",
+      "answer": "y=10^0.5 * x^2 or y=sqrt10 * x^2",
+      "solution": "log y = 0.5 + 2 log x = log(10^0.5) + log(x^2) = log(sqrt10 * x^2). So y=sqrt10 * x^2",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "find_constants"
+      ],
+      "problem_text": "A graph of log y against x gives gradient 2 and intercept 1. Find y in terms of x.",
+      "answer": "y=10 * 100^x",
+      "solution": "log y = 1 + 2x = log 10 + log(10^{2x}) = log(10 * 100^x). So y=10*100^x",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "rearrange"
+      ],
+      "problem_text": "Express y^2 = kx in linear form Y=mX+c.",
+      "answer": "2 log y = log k + log x",
+      "solution": "y^2 = kx => log(y^2) = log(kx) => 2 log y = log k + log x. Y=log y, X=log x, m=1/2, c=(log k)/2",
+      "marks": 2
+    },
+    {
+      "id": "AM2_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "rearrange"
+      ],
+      "problem_text": "Express y = kx + kx^2 in linear form Y=mX+c.",
+      "answer": "y/x = k + kx, but that's not linear. Try y/x^2 = k/x + k... Actually: y = kx(1+x) => y/x = k(1+x) => y/x = kx + k. So Y=y/x, X=x, m=k, c=k",
+      "solution": "y = kx + kx^2. Divide by x: y/x = k + kx. Plot y/x against x: gradient=k, intercept=k",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "apply_linear_law"
+      ],
+      "problem_text": "x: 1, 2, 3, 4. y: 3, 12, 27, 48. If y=kx^n, find n.",
+      "answer": "n=2",
+      "solution": "log y: 0.477, 1.079, 1.431, 1.681. log x: 0, 0.301, 0.477, 0.602. Gradient=(1.681-0.477)/(0.602-0)=1.204/0.602=2. So n=2",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "apply_linear_law"
+      ],
+      "problem_text": "x: 0, 1, 2, 3. y: 5, 15, 45, 135. If y=ab^x, find a and b.",
+      "answer": "a=5, b=3",
+      "solution": "log y: 0.699, 1.176, 1.653, 2.130. Gradient=(2.130-0.699)/3=1.431/3=0.477=log 3 => b=3. Intercept=0.699=log 5 => a=5",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "reduce_to_linear"
+      ],
+      "problem_text": "Express y=px+q/x in linear form.",
+      "answer": "xy = px^2 + q is not linear. Plot xy against x^2: Y=xy, X=x^2, m=p, c=q",
+      "solution": "Multiply by x: xy = px^2 + q. Plot xy against x^2: gradient=p, intercept=q",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "reduce_to_linear"
+      ],
+      "problem_text": "Express y = a/(x+b) in linear form.",
+      "answer": "1/y = x/a + b/a",
+      "solution": "y = a/(x+b). Take reciprocal: 1/y = (x+b)/a = x/a + b/a. Plot 1/y against x: gradient=1/a, intercept=b/a",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q2_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "find_constants_from_data"
+      ],
+      "problem_text": "x: 0, 1, 2. y: 1.0, 2.5, 7.0. If y=ab^x, find a and b to 1dp.",
+      "answer": "a=1.0, b=2.5",
+      "solution": "log y: 0, 0.398, 0.845. log b = slope from (0,0) to (2,0.845)=0.4225 => b=2.65. a = antilog(0) = 1. So y=1*2.65^x approx",
+      "marks": 4
+    },
+    {
+      "id": "AM2_Q2_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "linear_law_applied"
+      ],
+      "problem_text": "Given y=Ax^n + B and points (1,3), (2,12), (3,27), find A, B, n.",
+      "answer": "A=3, B=0, n=2",
+      "solution": "Check if B=0: y=Ax^n. log y: 0.477, 1.079, 1.431. log x: 0, 0.301, 0.477. Gradient=(1.431-0.477)/0.477=2 => n=2. Intercept=0.477=log3 => A=3. So y=3x^2. Check: x=1 -> 3, x=2 ->12, x=3->27. Works, so B=0",
+      "marks": 5
+    },
+    {
+      "id": "AM2_Q2_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "non_standard_linear_law"
+      ],
+      "problem_text": "Express py = qx + r in linear form.",
+      "answer": "y/x = -p/q * 1/x... Actually py - qx = r. Plot y against x: gradient=q/p, intercept=r/p",
+      "solution": "py = qx + r => y = (q/p)x + r/p. Plot y against x: gradient=q/p, intercept=r/p",
+      "marks": 3
+    },
+    {
+      "id": "AM2_Q2_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "linear_law_proof"
+      ],
+      "problem_text": "Prove that if y=ab^x, a graph of ln y against x is linear.",
+      "answer": "Proof",
+      "solution": "y=ab^x. Take natural logs: ln y = ln a + x ln b. This is of the form Y=mX+c where Y=ln y, X=x, m=ln b, c=ln a. Hence linear.",
+      "marks": 3
+    }
+  ]
+}

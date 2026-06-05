@@ -1,0 +1,35 @@
+{
+  "track": "add_maths",
+  "unit": "AM5_Trigonometry",
+  "topic_id": "AM5_Q4",
+  "title": "Trig Identities",
+  "syllabus_ref": "0606 C5",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "sections": {
+    "hook": "Trig identities are equations true for all angles. The most important \u2014 $\\\\sin^2\\\\theta + \\\\cos^2\\\\theta = 1$ \u2014 is a version of Pythagoras' theorem applied to the unit circle.",
+    "prerequisites": [
+      "Trig ratios",
+      "Pythagoras' theorem",
+      "Algebraic manipulation"
+    ],
+    "core_explanation": "**Fundamental identities:**\\n1. **Pythagorean identity:** $\\\\sin^2\\\\theta + \\\\cos^2\\\\theta \\\\equiv 1$\\n2. **Tangent identity:** $\\\\tan\\\\theta \\\\equiv \\\\frac{\\\\sin\\\\theta}{\\\\cos\\\\theta}$\\n3. **From (1):** $1 + \\\\tan^2\\\\theta \\\\equiv \\\\sec^2\\\\theta$\\n4. **From (1):** $1 + \\\\cot^2\\\\theta \\\\equiv \\\\cosec^2\\\\theta$\\n\\n**Using identities:**\\n- Simplify expressions by substituting identities\\n- Prove identities by working one side to match the other\\n- Solve equations by rewriting in terms of $\\\\sin$ and $\\\\cos$",
+    "worked_example": "Prove that $\\\\frac{\\\\sin\\\\theta}{1+\\\\cos\\\\theta} + \\\\frac{1+\\\\cos\\\\theta}{\\\\sin\\\\theta} = 2\\\\cosec\\\\theta$\\n\\nSolution:\\nLHS = $\\\\frac{\\\\sin^2\\\\theta + (1+\\\\cos\\\\theta)^2}{\\\\sin\\\\theta(1+\\\\cos\\\\theta)}$\\n= $\\\\frac{\\\\sin^2\\\\theta + 1 + 2\\\\cos\\\\theta + \\\\cos^2\\\\theta}{\\\\sin\\\\theta(1+\\\\cos\\\\theta)}$\\n= $\\\\frac{(\\\\sin^2\\\\theta + \\\\cos^2\\\\theta) + 1 + 2\\\\cos\\\\theta}{\\\\sin\\\\theta(1+\\\\cos\\\\theta)}$\\n= $\\\\frac{2 + 2\\\\cos\\\\theta}{\\\\sin\\\\theta(1+\\\\cos\\\\theta)}$\\n= $\\\\frac{2(1+\\\\cos\\\\theta)}{\\\\sin\\\\theta(1+\\\\cos\\\\theta)}$\\n= $\\\\frac{2}{\\\\sin\\\\theta} = 2\\\\cosec\\\\theta =$ RHS",
+    "common_mistakes": [
+      {
+        "mistake": "Writing $\\\\sin^2\\\\theta + \\\\cos^2\\\\theta = 0$ instead of $1$.",
+        "correction": "This is the most important identity: $\\\\sin^2\\\\theta + \\\\cos^2\\\\theta \\\\equiv 1$."
+      },
+      {
+        "mistake": "Dividing by a trig function that could be zero (losing solutions).",
+        "correction": "Factor instead of dividing by $\\\\sin\\\\theta$ or $\\\\cos\\\\theta$."
+      }
+    ],
+    "summary": [
+      "$\\\\sin^2\\\\theta + \\\\cos^2\\\\theta \\\\equiv 1$",
+      "$\\\\tan\\\\theta \\\\equiv \\\\sin\\\\theta/\\\\cos\\\\theta$",
+      "$1+\\\\tan^2\\\\theta \\\\equiv \\\\sec^2\\\\theta$",
+      "Work one side of a proof to match the other"
+    ]
+  }
+}

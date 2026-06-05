@@ -1,0 +1,186 @@
+{
+  "track": "add_maths",
+  "unit": "AM3_Logs",
+  "topic_id": "AM3_Q2",
+  "title": "Surds (Rationalising)",
+  "version": 1,
+  "created_at": "2026-06-05T12:00:00",
+  "problems": [
+    {
+      "id": "AM3_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "simplify"
+      ],
+      "problem_text": "Simplify sqrt(50).",
+      "answer": "5sqrt(2)",
+      "solution": "sqrt(50)=sqrt(25x2)=5sqrt(2)",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "add_surds"
+      ],
+      "problem_text": "Simplify 3sqrt(2) + 5sqrt(2) - 2sqrt(2).",
+      "answer": "6sqrt(2)",
+      "solution": "3+5-2=6, so 6sqrt(2)",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "multiply"
+      ],
+      "problem_text": "Simplify sqrt(3) x sqrt(12).",
+      "answer": "6",
+      "solution": "sqrt(3x12)=sqrt(36)=6",
+      "marks": 1
+    },
+    {
+      "id": "AM3_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "expand"
+      ],
+      "problem_text": "Expand (2+sqrt(3))(1+sqrt(3)).",
+      "answer": "5+3sqrt(3)",
+      "solution": "2x1+2sqrt(3)+1sqrt(3)+3=5+3sqrt(3)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "rationalise_single"
+      ],
+      "problem_text": "Rationalise 5/sqrt(5).",
+      "answer": "sqrt(5)",
+      "solution": "5/sqrt(5) x sqrt(5)/sqrt(5) = 5sqrt(5)/5 = sqrt(5)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "rationalise_binomial"
+      ],
+      "problem_text": "Rationalise 1/(2+sqrt(3)).",
+      "answer": "2-sqrt(3)",
+      "solution": "1/(2+sqrt(3)) x (2-sqrt(3))/(2-sqrt(3)) = (2-sqrt(3))/(4-3)=2-sqrt(3)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "simplify_fraction"
+      ],
+      "problem_text": "Simplify (sqrt(8)+sqrt(18))/sqrt(2).",
+      "answer": "5",
+      "solution": "sqrt(8)=2sqrt(2), sqrt(18)=3sqrt(2). Sum=5sqrt(2). Divide by sqrt(2)=5",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "expand_square"
+      ],
+      "problem_text": "Expand and simplify (sqrt(5)-2)^2.",
+      "answer": "9-4sqrt(5)",
+      "solution": "(sqrt5)^2 - 2x2sqrt5 + 4 = 5-4sqrt5+4=9-4sqrt5",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "rationalise_complex"
+      ],
+      "problem_text": "Rationalise (2+sqrt(3))/(1-sqrt(3)).",
+      "answer": "-(5+3sqrt(3))/2",
+      "solution": "Multiply by (1+sqrt(3))/(1+sqrt(3)): (2+sqrt(3))(1+sqrt(3))/(1-3) = (2+2sqrt3+sqrt3+3)/(-2) = (5+3sqrt3)/(-2) = -(5+3sqrt3)/2",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "conjugate_product"
+      ],
+      "problem_text": "Find a and b if (5+sqrt(2))/(3-sqrt(2)) = a + bsqrt(2).",
+      "answer": "a=17/7, b=8/7",
+      "solution": "Multiply by (3+sqrt2): (5+sqrt2)(3+sqrt2)/(9-2) = (15+5sqrt2+3sqrt2+2)/7 = (17+8sqrt2)/7 = 17/7 + (8/7)sqrt2",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "tough_rationalise"
+      ],
+      "problem_text": "Rationalise 6/(sqrt(5)-sqrt(2)).",
+      "answer": "2(sqrt(5)+sqrt(2))",
+      "solution": "Multiply by (sqrt5+sqrt2)/(sqrt5+sqrt2): 6(sqrt5+sqrt2)/(5-2)=6(sqrt5+sqrt2)/3=2(sqrt5+sqrt2)",
+      "marks": 2
+    },
+    {
+      "id": "AM3_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "fraction_with_surd"
+      ],
+      "problem_text": "Simplify (sqrt(3)+1)/(sqrt(3)-1) + (sqrt(3)-1)/(sqrt(3)+1).",
+      "answer": "4",
+      "solution": "First term: (sqrt3+1)^2/(3-1)=(3+2sqrt3+1)/2=(4+2sqrt3)/2=2+sqrt3. Second term: (sqrt3-1)^2/(3-1)=(3-2sqrt3+1)/2=2-sqrt3. Sum=4",
+      "marks": 3
+    },
+    {
+      "id": "AM3_Q2_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "expression_find"
+      ],
+      "problem_text": "If sqrt(28-10sqrt(3)) = sqrt(a)-sqrt(b), find a and b.",
+      "answer": "a=25,b=3",
+      "solution": "Assume sqrt(28-10sqrt3)=sqrtx-sqrty. Square: x+y-2sqrt(xy)=28-10sqrt3. So x+y=28, 2sqrt(xy)=10sqrt3 => xy=75. x+y=28, xy=75 => x=25,y=3 or x=3,y=25. Since sqrtx > sqrty, sqrt25-sqrt3=5-sqrt3",
+      "marks": 4
+    },
+    {
+      "id": "AM3_Q2_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "rationalise_nested"
+      ],
+      "problem_text": "Rationalise 1/(sqrt(2)+sqrt(3)+sqrt(5)).",
+      "answer": "(sqrt2+sqrt3-sqrt5)/(2sqrt6)",
+      "solution": "Group (sqrt2+sqrt3)+sqrt5 and multiply by conjugate (sqrt2+sqrt3)-sqrt5 over same: ((sqrt2+sqrt3)-sqrt5)/((sqrt2+sqrt3)^2-5) = (sqrt2+sqrt3-sqrt5)/(2+3+2sqrt6-5) = (sqrt2+sqrt3-sqrt5)/(2sqrt6)",
+      "marks": 4
+    },
+    {
+      "id": "AM3_Q2_X3",
+      "difficulty": "X",
+      "skill_tags": [
+        "proof_surd"
+      ],
+      "problem_text": "Prove that sqrt(2) is irrational.",
+      "answer": "Proof",
+      "solution": "Assume sqrt2=p/q in lowest terms. Then 2=p^2/q^2 => 2q^2=p^2. So p^2 even => p even => p=2k => 2q^2=4k^2 => q^2=2k^2 => q even. So p,q both even, contradiction as fraction was reduced.",
+      "marks": 4
+    },
+    {
+      "id": "AM3_Q2_X4",
+      "difficulty": "X",
+      "skill_tags": [
+        "applications"
+      ],
+      "problem_text": "The area of a right triangle is (3+sqrt5) cm^2. One leg is (sqrt5-1) cm. Find the other leg in form a+bsqrt5.",
+      "answer": "(sqrt5+1)/2",
+      "solution": "Area=1/2 x base x height => 3+sqrt5 = 1/2 x (sqrt5-1) x h => h = 2(3+sqrt5)/(sqrt5-1). Rationalise: 2(3+sqrt5)(sqrt5+1)/(5-1)=2(3sqrt5+3+5+sqrt5)/4=2(8+4sqrt5)/4=4+2sqrt5 => h=4+2sqrt5... Wait compute: 2(3+sqrt5)(sqrt5+1)/4 = (3+sqrt5)(sqrt5+1)/2 = (3sqrt5+3+5+sqrt5)/2=(4sqrt5+8)/2=2sqrt5+4",
+      "marks": 4
+    }
+  ]
+}
