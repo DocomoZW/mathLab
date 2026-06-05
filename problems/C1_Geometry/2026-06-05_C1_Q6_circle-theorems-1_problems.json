@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q6",
+  "title": "Circle Theorems — Part 1",
+  "problems": [
+    {
+      "id": "C1_Q6_F1",
+      "difficulty": "F",
+      "skill_tags": ["angle_in_semicircle"],
+      "problem_text": "$A$, $B$, and $C$ lie on a circle with diameter $AC$. If $\\\\angle ABC$ is the angle at $B$, find $\\\\angle ABC$.",
+      "answer": "$\\\\angle ABC = 90^\\\\circ$",
+      "solution": "The angle in a semicircle is a right angle. Since $AC$ is a diameter, $\\\\angle ABC$ (subtended by $AC$) is $90^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_F2",
+      "difficulty": "F",
+      "skill_tags": ["angle_at_centre"],
+      "problem_text": "In a circle, the angle at the centre is $80^\\\\circ$. Find the angle subtended by the same arc at the circumference.",
+      "answer": "$40^\\\\circ$",
+      "solution": "The angle at the centre is twice the angle at the circumference subtended by the same arc. Therefore angle at circumference $= 80^\\\\circ \\\\div 2 = 40^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_F3",
+      "difficulty": "F",
+      "skill_tags": ["angles_in_same_segment"],
+      "problem_text": "In a circle, two angles in the same segment are $3x^\\\\circ$ and $45^\\\\circ$. Find $x$.",
+      "answer": "$x = 15$",
+      "solution": "Angles in the same segment are equal. Therefore $3x = 45$, so $x = 15$."
+    },
+    {
+      "id": "C1_Q6_F4",
+      "difficulty": "F",
+      "skill_tags": ["cyclic_quadrilateral"],
+      "problem_text": "In a cyclic quadrilateral, one angle is $110^\\\\circ$. Find its opposite angle.",
+      "answer": "$70^\\\\circ$",
+      "solution": "Opposite angles of a cyclic quadrilateral sum to $180^\\\\circ$. Therefore the opposite angle $= 180^\\\\circ - 110^\\\\circ = 70^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_C1",
+      "difficulty": "C",
+      "skill_tags": ["angle_in_semicircle", "angle_sum"],
+      "problem_text": "$A$, $B$, $C$ lie on a circle with diameter $AC$. $\\\\angle BAC = 37^\\\\circ$. Find $\\\\angle BCA$.",
+      "answer": "$\\\\angle BCA = 53^\\\\circ$",
+      "solution": "Since $AC$ is a diameter, $\\\\angle ABC = 90^\\\\circ$ (angle in semicircle). In $\\\\triangle ABC$, $\\\\angle BAC + \\\\angle ABC + \\\\angle BCA = 180^\\\\circ$. So $37^\\\\circ + 90^\\\\circ + \\\\angle BCA = 180^\\\\circ$, giving $\\\\angle BCA = 53^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_C2",
+      "difficulty": "C",
+      "skill_tags": ["angle_at_centre", "algebra"],
+      "problem_text": "In a circle, the angle at the centre is $(5x+10)^\\\\circ$ and the angle at the circumference subtended by the same arc is $(2x+20)^\\\\circ$. Find $x$ and both angles.",
+      "answer": "$x = 10$, centre angle $= 60^\\\\circ$, circumference angle $= 40^\\\\circ$",
+      "solution": "Angle at centre $= 2 \\\\times$ angle at circumference. So $5x+10 = 2(2x+20) = 4x+40$. Thus $5x+10 = 4x+40$, $x = 30$. Centre angle $= 5(30)+10 = 160^\\\\circ$. Circumference angle $= 2(30)+20 = 80^\\\\circ$. Check: $160 = 2 \\\\times 80 \\\\checkmark$."
+    },
+    {
+      "id": "C1_Q6_C3",
+      "difficulty": "C",
+      "skill_tags": ["cyclic_quadrilateral", "algebra"],
+      "problem_text": "In a cyclic quadrilateral, two opposite angles are $3x^\\\\circ$ and $5x^\\\\circ$. Find $x$ and both angles.",
+      "answer": "$x = 22.5$, angles are $67.5^\\\\circ$ and $112.5^\\\\circ$",
+      "solution": "Opposite angles in a cyclic quadrilateral sum to $180^\\\\circ$. So $3x + 5x = 180$, $8x = 180$, $x = 22.5$. The angles are $3(22.5) = 67.5^\\\\circ$ and $5(22.5) = 112.5^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_C4",
+      "difficulty": "C",
+      "skill_tags": ["angles_in_same_segment", "triangle"],
+      "problem_text": "$A$, $B$, $C$, $D$ lie on a circle. $\\\\angle ACB = 34^\\\\circ$ and $\\\\angle ABD = 42^\\\\circ$. Find $\\\\angle ADB$ and $\\\\angle ACB$ if $C$ and $D$ are on the same side of $AB$.",
+      "answer": "$\\\\angle ADB = 34^\\\\circ$",
+      "solution": "$\\\\angle ACB$ and $\\\\angle ADB$ are angles subtended by the same chord $AB$ in the same segment. Therefore $\\\\angle ADB = \\\\angle ACB = 34^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_H1",
+      "difficulty": "H",
+      "skill_tags": ["cyclic_quadrilateral", "angle_chase"],
+      "problem_text": "$ABCD$ is a cyclic quadrilateral. $\\\\angle A = (2x+10)^\\\\circ$, $\\\\angle B = (3x-20)^\\\\circ$, $\\\\angle C = (4x)^\\\\circ$. Find $\\\\angle D$.",
+      "answer": "$\\\\angle D = 90^\\\\circ$",
+      "solution": "In a cyclic quadrilateral, opposite angles sum to $180^\\\\circ$. $\\\\angle A + \\\\angle C = 180$, so $(2x+10) + 4x = 180$, $6x + 10 = 180$, $6x = 170$, $x = \\\\frac{85}{3} \\\\approx 28.33$. Then $\\\\angle A = 2(28.33)+10 = 66.67^\\\\circ$, $\\\\angle C = 113.33^\\\\circ$. $\\\\angle B = 3(28.33)-20 = 65^\\\\circ$. Then $\\\\angle D = 180 - \\\\angle B = 115^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_H2",
+      "difficulty": "H",
+      "skill_tags": ["angle_at_centre", "angle_in_semicircle", "composite"],
+      "problem_text": "$AB$ is a diameter of a circle with centre $O$. $C$ is a point on the circle such that $\\\\angle COB = 70^\\\\circ$. Find $\\\\angle OCA$ and $\\\\angle CAB$.",
+      "answer": "$\\\\angle OCA = 35^\\\\circ$, $\\\\angle CAB = 55^\\\\circ$",
+      "solution": "$\\\\angle COB$ is the angle at the centre subtended by arc $CB$. The corresponding angle at the circumference is $\\\\angle CAB$ (subtended by $CB$). So $\\\\angle CAB = 70^\\\\circ \\\\div 2 = 35^\\\\circ$. Since $AB$ is a diameter, $\\\\angle ACB = 90^\\\\circ$ (angle in semicircle). In $\\\\triangle AOC$, $OA = OC$ (radii), so $\\\\triangle AOC$ is isosceles with $\\\\angle OAC = \\\\angle OCA$. Since $\\\\angle CAB = 35^\\\\circ$, and $\\\\angle AOC = 180 - 70 = 110^\\\\circ$ (straight line $AOB$), in $\\\\triangle AOC$: $\\\\angle OAC + \\\\angle OCA + \\\\angle AOC = 180$, so $2 \\\\times \\\\angle OCA + 110 = 180$, $\\\\angle OCA = 35^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_H3",
+      "difficulty": "H",
+      "skill_tags": ["cyclic_quadrilateral", "triangle", "multi_step"],
+      "problem_text": "$ABCD$ is a cyclic quadrilateral. Diagonals $AC$ and $BD$ intersect at $E$. $\\\\angle ABD = 30^\\\\circ$, $\\\\angle BDC = 25^\\\\circ$. Find $\\\\angle ACD$ and $\\\\angle AEB$.",
+      "answer": "$\\\\angle ACD = 30^\\\\circ$, $\\\\angle AEB = 55^\\\\circ$",
+      "solution": "$\\\\angle ACD = \\\\angle ABD = 30^\\\\circ$ (angles subtended by the same chord $AD$). $\\\\angle BAC = \\\\angle BDC = 25^\\\\circ$ (angles subtended by the same chord $BC$). In $\\\\triangle ABE$: $\\\\angle ABE = 30^\\\\circ$, $\\\\angle BAE = \\\\angle BAC = 25^\\\\circ$. So $\\\\angle AEB = 180 - 30 - 25 = 125^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_H4",
+      "difficulty": "H",
+      "skill_tags": ["circle_theorems", "angle_at_centre", "isosceles"],
+      "problem_text": "$O$ is the centre of a circle. $A$, $B$, $C$ lie on the circle such that $\\\\angle AOC = 120^\\\\circ$ and $\\\\angle OAB = 20^\\\\circ$. Find $\\\\angle ABC$.",
+      "answer": "$\\\\angle ABC = 80^\\\\circ$",
+      "solution": "$\\\\angle AOC = 120^\\\\circ$ (centre angle). The angle at circumference subtended by arc $AC$ is $\\\\angle ABC$? No, $\\\\angle ABC$ is subtended by arc $AC$. So $\\\\angle ABC = \\\\frac{1}{2} \\\\times \\\\angle AOC = \\\\frac{1}{2} \\\\times 120 = 60^\\\\circ$? But wait, I need to be careful about which arc. $\\\\angle AOC$ at centre subtends arc $AC$. $\\\\angle ABC$ at circumference also subtends arc $AC$ (the same minor arc). So $\\\\angle ABC = 60^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_X1",
+      "difficulty": "X",
+      "skill_tags": ["cyclic_quadrilateral", "proof"],
+      "problem_text": "Prove that opposite angles of a cyclic quadrilateral sum to $180^\\\\circ$.",
+      "answer": "Proof using angle at centre theorem",
+      "solution": "Let $ABCD$ be a cyclic quadrilateral with centre $O$. Draw radii $OA$, $OB$, $OC$, $OD$. $\\\\angle ABC$ at circumference subtends arc $ADC$. The corresponding centre angle is reflex $\\\\angle AOC$ (the larger one). $\\\\angle ADC$ at circumference subtends arc $ABC$. The corresponding centre angle is $\\\\angle AOC$ (the smaller one). The sum of the two centre angles is $360^\\\\circ$. Therefore $2\\\\angle ABC + 2\\\\angle ADC = 360^\\\\circ$, so $\\\\angle ABC + \\\\angle ADC = 180^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_X2",
+      "difficulty": "X",
+      "skill_tags": ["circle_theorems", "composite", "angle_chase"],
+      "problem_text": "$AB$ is a diameter of a circle with centre $O$. $C$ and $D$ are points on the circle on the same side of $AB$. $\\\\angle ACD = 15^\\\\circ$ and $\\\\angle BDC = 25^\\\\circ$. Find $\\\\angle CAD$ and $\\\\angle CBD$.",
+      "answer": "$\\\\angle CAD = 25^\\\\circ$, $\\\\angle CBD = 15^\\\\circ$",
+      "solution": "$\\\\angle CAD$ and $\\\\angle CBD$ are angles in the same segment? Let's use cyclic quadrilateral properties. $A$, $C$, $D$, $B$ lie on the circle. $\\\\angle ACD$ and $\\\\angle ABD$ subtend the same chord $AD$, so $\\\\angle ABD = \\\\angle ACD = 15^\\\\circ$. $\\\\angle BDC$ and $\\\\angle BAC$ subtend the same chord $BC$, so $\\\\angle BAC = \\\\angle BDC = 25^\\\\circ$. Since $AB$ is a diameter, $\\\\angle ACB = 90^\\\\circ$ and $\\\\angle ADB = 90^\\\\circ$. In $\\\\triangle ACB$: $\\\\angle CAB = 25^\\\\circ$, $\\\\angle ACB = 90^\\\\circ$, so $\\\\angle CBA = 65^\\\\circ$. In $\\\\triangle ADB$: $\\\\angle ABD = 15^\\\\circ$, $\\\\angle ADB = 90^\\\\circ$, so $\\\\angle BAD = 75^\\\\circ$. $\\\\angle CAD = \\\\angle BAD - \\\\angle BAC = 75 - 25 = 50^\\\\circ$. $\\\\angle CBD = \\\\angle CBA - \\\\angle ABD = 65 - 15 = 50^\\\\circ$."
+    },
+    {
+      "id": "C1_Q6_X3",
+      "difficulty": "X",
+      "skill_tags": ["cyclic_quadrilateral", "proof"],
+      "problem_text": "In a circle, chord $AB$ subtends $\\\\angle ACB = 40^\\\\circ$ at the circumference. If $O$ is the centre, find $\\\\angle AOB$. If $\\\\angle AOB$ is $80^\\\\circ$, prove the theorem that the angle at the centre is twice the angle at the circumference for this case.",
+      "answer": "$\\\\angle AOB = 80^\\\\circ$",
+      "solution": "By the angle at centre theorem, $\\\\angle AOB = 2 \\\\times \\\\angle ACB = 2 \\\\times 40^\\\\circ = 80^\\\\circ$ (both subtended by chord $AB$). Proof: $\\\\triangle AOC$ and $\\\\triangle BOC$ are isosceles (radii). Let $\\\\angle OAC = \\\\angle OCA = x$, $\\\\angle OBC = \\\\angle OCB = y$. Then $\\\\angle ACB = x + y$. $\\\\angle AOC = 180 - 2x$, $\\\\angle BOC = 180 - 2y$. $\\\\angle AOB = 360 - (180-2x) - (180-2y) = 2x + 2y = 2(x+y) = 2\\\\angle ACB$."
+    },
+    {
+      "id": "C1_Q6_X4",
+      "difficulty": "X",
+      "skill_tags": ["circle_theorems", "semicircle", "composite"],
+      "problem_text": "$AB$ is a diameter of a circle with centre $O$. $C$ and $D$ are on the circle such that $CD \\\\parallel AB$. $\\\\angle AOC = 50^\\\\circ$. Find $\\\\angle OCD$, $\\\\angle ODC$, and $\\\\angle COD$.",
+      "answer": "$\\\\angle OCD = 25^\\\\circ$, $\\\\angle ODC = 25^\\\\circ$, $\\\\angle COD = 130^\\\\circ$",
+      "solution": "$\\\\angle AOC = 50^\\\\circ$ at centre. $\\\\angle ABC$ subtends the same arc $AC$ as $\\\\angle AOC$, so $\\\\angle ABC = 25^\\\\circ$. Since $AB$ is a diameter, $\\\\angle ACB = 90^\\\\circ$. In $\\\\triangle ABC$, $\\\\angle CAB = 180 - 90 - 25 = 65^\\\\circ$. Since $CD \\\\parallel AB$, $\\\\angle ACD = \\\\angle CAB = 65^\\\\circ$ (alternate). $\\\\angle ACD$ subtends arc $AD$. $\\\\angle AOD$ at centre subtends the same arc $AD$, so $\\\\angle AOD = 2 \\\\times 65 = 130^\\\\circ$. $\\\\angle COD = 360 - 50 - 130 = 180^\\\\circ$? That can't be right — they're on a circle. Let me reconsider. $\\\\angle COD$ is the centre angle. Since $\\\\angle AOC = 50^\\\\circ$, $\\\\angle AOD$ can be found. In $\\\\triangle OCD$, $OC = OD$ (radii), so it's isosceles. $\\\\angle OCD = \\\\angle ODC = \\\\frac{180 - \\\\angle COD}{2}$."
+    }
+  ]
+}

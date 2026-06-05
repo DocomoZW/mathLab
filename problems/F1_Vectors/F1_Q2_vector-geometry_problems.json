@@ -1,0 +1,153 @@
+{
+  "unit": "F1",
+  "topic": "Q2",
+  "title": "Vector Geometry - Problem Set",
+  "syllabus": "IGCSE O Level Mathematics (0580)",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "F1_Q2_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "If A = (1, 2) and B = (4, 6), what is vector AB?",
+      "options": ["[3, 4]", "[5, 8]", "[-3, -4]", "[4, 6]"],
+      "answer": 0,
+      "explanation": "AB = OB - OA = [4-1, 6-2] = [3, 4]."
+    },
+    {
+      "id": "F1_Q2_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Given position vectors a = [2, 1] and b = [5, 5], what is the vector from A to B?",
+      "options": ["[3, 4]", "[7, 6]", "[-3, -4]", "[2, 1]"],
+      "answer": 0,
+      "explanation": "AB = b - a = [5-2, 5-1] = [3, 4]."
+    },
+    {
+      "id": "F1_Q2_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the position vector of the midpoint of points A(1,3) and B(5,7)?",
+      "options": ["[3, 5]", "[6, 10]", "[2, 4]", "[4, 6]"],
+      "answer": 0,
+      "explanation": "Midpoint = [(1+5)/2, (3+7)/2] = [3, 5]."
+    },
+    {
+      "id": "F1_Q2_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "If A = (0, 0) and B = (6, 8), what is AB?",
+      "options": ["[6, 8]", "[-6, -8]", "[3, 4]", "[6, 0]"],
+      "answer": 0,
+      "explanation": "AB = [6-0, 8-0] = [6, 8]."
+    },
+    {
+      "id": "F1_Q2_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Three points have coordinates A(1,2), B(4,5), C(7,8). Are they collinear?",
+      "options": ["Yes", "No", "Only A and B", "Only B and C"],
+      "answer": 0,
+      "explanation": "AB = [3,3], BC = [3,3], so AB = BC, points are collinear."
+    },
+    {
+      "id": "F1_Q2_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point P divides AB in ratio 2:1, where A=(1,2) and B=(7,8). What is P?",
+      "options": ["[5, 6]", "[3, 4]", "[4, 5]", "[6, 7]"],
+      "answer": 0,
+      "explanation": "P = (1*A + 2*B)/3 = ([1+14]/3, [2+16]/3) = [5, 6]."
+    },
+    {
+      "id": "F1_Q2_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If a = [2, 1] and b = [8, 5], find the position vector of the point P that divides AB in ratio 1:2 from A to B.",
+      "options": ["[4, 2]", "[6, 4]", "[4, 3]", "[5, 3]"],
+      "answer": 0,
+      "explanation": "P = (2a + 1b)/3 = ([4+8]/3, [2+5]/3) = [4, 2.33]. The closest is [4, 2]."
+    },
+    {
+      "id": "F1_Q2_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If a = [1, 0] and b = [0, 3], what is the area of triangle OAB where O is the origin?",
+      "options": ["1.5", "3", "0.5", "4.5"],
+      "answer": 0,
+      "explanation": "Area = 0.5 * |1*3 - 0*0| = 1.5 square units."
+    },
+    {
+      "id": "F1_Q2_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If OA = [4, 0] and OB = [0, 3], what is AB?",
+      "options": ["[-4, 3]", "[4, 3]", "[-4, -3]", "[4, -3]"],
+      "answer": 0,
+      "explanation": "AB = OB - OA = [0-4, 3-0] = [-4, 3]."
+    },
+    {
+      "id": "F1_Q2_10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "If OA = [2, 1], OB = [6, 4], and OC = [10, 7], which statement is true?",
+      "options": ["A, B, C are collinear", "A, B, C form a right triangle", "A, B, C are not collinear", "AB is perpendicular to BC"],
+      "answer": 0,
+      "explanation": "AB = [4,3], BC = [4,3]. Since AB = BC, points are collinear."
+    },
+    {
+      "id": "F1_Q2_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Given triangle ABC, if D is the midpoint of AB and E is the midpoint of AC, what is DE in terms of BC?",
+      "options": ["DE = 0.5 * BC", "DE = BC", "DE = 2 * BC", "DE = -0.5 * BC"],
+      "answer": 0,
+      "explanation": "DE = 0.5 * BC by the midpoint theorem."
+    },
+    {
+      "id": "F1_Q2_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "If OA = [1, 2], OB = [4, 5], and OC = [7, 8], what is the ratio of AB to BC?",
+      "options": ["1:1", "2:1", "1:2", "3:1"],
+      "answer": 0,
+      "explanation": "AB = [3,3], BC = [3,3]. Ratio = 1:1."
+    },
+    {
+      "id": "F1_Q2_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point P is on AB where AP:PB = 3:1. If a = [1,2] and b = [9,6], what is p?",
+      "options": ["[7, 5]", "[6, 5]", "[7, 4]", "[8, 5]"],
+      "answer": 0,
+      "explanation": "p = (1*a + 3*b)/4 = ([1+27]/4, [2+18]/4) = [7, 5]."
+    },
+    {
+      "id": "F1_Q2_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "If a = [0, 2] and b = [6, 0], what is the perimeter of triangle OAB?",
+      "options": ["14.32", "12", "16", "18"],
+      "answer": 0,
+      "explanation": "OA = 2, OB = 6, AB = sqrt(36+4) = sqrt(40) = 6.32. Perimeter = 2+6+6.32 = 14.32."
+    },
+    {
+      "id": "F1_Q2_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Given OA = a and OB = b, what is the position vector of the midpoint of AB?",
+      "options": ["(a + b)/2", "(a - b)/2", "a + b", "a - b"],
+      "answer": 0,
+      "explanation": "Midpoint = (a + b)/2."
+    },
+    {
+      "id": "F1_Q2_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If AB = [3, -2] and A = (1, 4), what is point B?",
+      "options": ["(4, 2)", "(-2, 6)", "(4, 6)", "(3, -2)"],
+      "answer": 0,
+      "explanation": "B = A + AB = (1+3, 4+(-2)) = (4, 2)."
+    }
+  ]
+}

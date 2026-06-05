@@ -1,0 +1,188 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q7",
+  "title": "Experimental vs Theoretical Probability - Problems",
+  "problems": [
+    {
+      "id": "G1_Q7_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A coin is tossed 50 times and lands on heads 28 times. What is the experimental probability of getting heads?",
+      "answer": "14/25",
+      "solution": "Experimental probability = number of heads / total tosses = 28/50 = 14/25."
+    },
+    {
+      "id": "G1_Q7_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A dice is rolled 60 times and a 3 appears 8 times. What is the experimental probability of rolling a 3?",
+      "answer": "2/15",
+      "solution": "Experimental probability = 8/60 = 2/15."
+    },
+    {
+      "id": "G1_Q7_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "In a survey of 200 people, 120 said they prefer tea over coffee. What is the experimental probability that a person prefers tea?",
+      "answer": "3/5",
+      "solution": "Experimental probability = 120/200 = 3/5."
+    },
+    {
+      "id": "G1_Q7_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A spinner is spun 40 times and lands on red 15 times. What is the experimental probability of the spinner landing on red?",
+      "answer": "3/8",
+      "solution": "Experimental probability = 15/40 = 3/8."
+    },
+    {
+      "id": "G1_Q7_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A dice is rolled 200 times. The results are shown:\nNumber: 1  2  3  4  5  6\nFreq:  34 38 30 36 28 34\nFind the experimental probability of rolling a 6.",
+      "answer": "17/100",
+      "solution": "Total = 200. Frequency of 6 = 34. Experimental probability = 34/200 = 17/100."
+    },
+    {
+      "id": "G1_Q7_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "experimental_probability",
+        "theoretical_vs_experimental"
+      ],
+      "problem_text": "A fair dice is rolled 60 times. The theoretical probability of rolling a 4 is 1/6. If the experimental probability is 11/60, how many times did a 4 actually appear?",
+      "answer": "11",
+      "solution": "Experimental probability = frequency / total. So frequency = (11/60) \u00d7 60 = 11."
+    },
+    {
+      "id": "G1_Q7_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency",
+        "prediction"
+      ],
+      "problem_text": "In an experiment, a drawing pin lands 'point up' 72 times out of 200 tosses. If the pin is tossed 500 times, estimate how many times it will land 'point up'.",
+      "answer": "180",
+      "solution": "Experimental probability = 72/200 = 9/25 = 0.36. Estimated number in 500 tosses = 500 \u00d7 9/25 = 180."
+    },
+    {
+      "id": "G1_Q7_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "experimental_probability",
+        "theoretical_vs_experimental"
+      ],
+      "problem_text": "A fair coin is tossed 100 times and lands on heads 53 times. What is the difference between the experimental probability and the theoretical probability of getting heads?",
+      "answer": "3/100",
+      "solution": "Theoretical probability = 1/2 = 50/100. Experimental probability = 53/100. Difference = 53/100 - 50/100 = 3/100."
+    },
+    {
+      "id": "G1_Q7_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A bag contains an unknown number of red and blue marbles. In 80 draws with replacement, 32 were red. Estimate the probability of drawing a red marble.",
+      "answer": "2/5",
+      "solution": "Experimental probability = 32/80 = 2/5."
+    },
+    {
+      "id": "G1_Q7_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A spinner with 5 equal sections numbered 1 to 5 is spun 500 times. The table shows the results:\nNumber:   1   2   3   4   5\nFrequency: 98 112  95 103  92\nFind the experimental probability of spinning an odd number.",
+      "answer": "57/100",
+      "solution": "Odd numbers: 1,3,5. Total odd frequency = 98+95+92 = 285. Total spins = 500. Experimental probability = 285/500 = 57/100."
+    },
+    {
+      "id": "G1_Q7_E1",
+      "difficulty": "E",
+      "skill_tags": [
+        "experimental_probability",
+        "theoretical_vs_experimental"
+      ],
+      "problem_text": "A fair dice is rolled 300 times. The number 4 appears 42 times. Find the percentage error between the experimental probability and the theoretical probability.",
+      "answer": "16%",
+      "solution": "Theoretical = 1/6 \u2248 0.1667. Experimental = 42/300 = 0.14 = 7/50. Percentage error = ((1/6 - 7/50)/(1/6))\u00d7100% = ((25/150-21/150)/(25/150))\u00d7100% = (4/25)\u00d7100% = 16%."
+    },
+    {
+      "id": "G1_Q7_E2",
+      "difficulty": "E",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency",
+        "prediction"
+      ],
+      "problem_text": "A biased coin lands on heads 32 times out of 80 tosses. If the coin is tossed 450 times, estimate the number of heads expected.",
+      "answer": "180",
+      "solution": "Experimental probability of heads = 32/80 = 2/5 = 0.4. Estimated heads in 450 tosses = 450 \u00d7 2/5 = 180."
+    },
+    {
+      "id": "G1_Q7_E3",
+      "difficulty": "E",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A spinner is spun many times. The experimental probability of landing on blue is 0.32. If the spinner has 5 equal sections (red, blue, green, yellow, orange), is the spinner likely fair? Explain your reasoning.",
+      "answer": "No, 0.32 \u2260 0.2",
+      "solution": "If fair, P(blue) = 1/5 = 0.2. The experimental probability is 0.32, which is significantly different from 0.2, suggesting the spinner may be biased."
+    },
+    {
+      "id": "G1_Q7_E4",
+      "difficulty": "E",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency"
+      ],
+      "problem_text": "A dice is rolled 120 times. The experimental probability of rolling a prime number is 0.55. How many prime numbers appeared?",
+      "answer": "66",
+      "solution": "Primes on a dice: 2,3,5. Frequency = experimental probability \u00d7 total = 0.55 \u00d7 120 = 66."
+    },
+    {
+      "id": "G1_Q7_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency",
+        "law_of_large_numbers"
+      ],
+      "problem_text": "A fair coin is tossed n times. After 10 tosses, the experimental probability of heads is 0.7. After 1000 tosses, the experimental probability is 0.501. Explain this change in terms of the Law of Large Numbers.",
+      "answer": "As n increases, experimental probability approaches theoretical probability (0.5).",
+      "solution": "The Law of Large Numbers states that as the number of trials increases, the experimental probability tends to converge to the theoretical probability. Initially with 10 tosses, 7 heads (0.7) is possible due to random variation. With 1000 tosses, the proportion stabilises near 0.5, giving 0.501."
+    },
+    {
+      "id": "G1_Q7_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "experimental_probability",
+        "relative_frequency",
+        "estimation"
+      ],
+      "problem_text": "Two dice are rolled 180 times. The sum of 7 appears 28 times. Compare the experimental probability with the theoretical probability. How many additional times would sum 7 need to occur in the next 120 rolls for the experimental probability to equal the theoretical probability?",
+      "answer": "22",
+      "solution": "Theoretical P(sum=7)=6/36=1/6. Current: 28/180=7/45. Target: after 300 total rolls, x/300=1/6, so x=50. Additional sum7 needed = 50-28 = 22."
+    }
+  ]
+}

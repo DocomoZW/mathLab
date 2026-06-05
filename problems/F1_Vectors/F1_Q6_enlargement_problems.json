@@ -1,0 +1,153 @@
+{
+  "unit": "F1",
+  "topic": "Q6",
+  "title": "Enlargement - Problem Set",
+  "syllabus": "IGCSE O Level Mathematics (0580)",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "F1_Q6_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A triangle is enlarged by scale factor 3. If a side is 4 cm, what is the image side length?",
+      "options": ["12 cm", "7 cm", "1.33 cm", "4 cm"],
+      "answer": 0,
+      "explanation": "Image = scale factor * original = 3 * 4 = 12 cm."
+    },
+    {
+      "id": "F1_Q6_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "If a shape is enlarged by scale factor 0.5, what happens?",
+      "options": ["It gets smaller", "It gets larger", "It stays the same", "It turns over"],
+      "answer": 0,
+      "explanation": "Scale factor 0.5 means half the size."
+    },
+    {
+      "id": "F1_Q6_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "An object has area 10 sq cm. Under enlargement by scale factor 2, what is the image area?",
+      "options": ["40 sq cm", "20 sq cm", "10 sq cm", "100 sq cm"],
+      "answer": 0,
+      "explanation": "Area scales by k^2 = 4. Area = 10 * 4 = 40 sq cm."
+    },
+    {
+      "id": "F1_Q6_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the scale factor if an object of length 3 cm has image length 15 cm?",
+      "options": ["5", "1/5", "3", "45"],
+      "answer": 0,
+      "explanation": "k = image length / object length = 15/3 = 5."
+    },
+    {
+      "id": "F1_Q6_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point P(2, 1) is enlarged by scale factor 3 about origin. Where is P'?",
+      "options": ["(6, 3)", "(5, 4)", "(2/3, 1/3)", "(2, 1)"],
+      "answer": 0,
+      "explanation": "Multiply each coordinate by k: (2*3, 1*3) = (6, 3)."
+    },
+    {
+      "id": "F1_Q6_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point (4, 6) is enlarged by scale factor 0.5 about origin. Where is the image?",
+      "options": ["(2, 3)", "(8, 12)", "(4.5, 6.5)", "(3.5, 5.5)"],
+      "answer": 0,
+      "explanation": "Multiply by 0.5: (4*0.5, 6*0.5) = (2, 3)."
+    },
+    {
+      "id": "F1_Q6_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A shape is enlarged by scale factor -2. What happens?",
+      "options": ["It doubles and flips 180 degrees", "It halves and flips", "It doubles without flipping", "It halves without flipping"],
+      "answer": 0,
+      "explanation": "Negative scale factor enlarges and rotates 180 degrees."
+    },
+    {
+      "id": "F1_Q6_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point (1, 0) enlarged by scale factor -1 about origin gives:",
+      "options": ["(-1, 0)", "(1, 0)", "(0, -1)", "(0, 1)"],
+      "answer": 0,
+      "explanation": "Multiply by -1: (1*(-1), 0*(-1)) = (-1, 0)."
+    },
+    {
+      "id": "F1_Q6_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Object length 8 cm, image length 2 cm. What is the scale factor?",
+      "options": ["0.25", "4", "0.5", "6"],
+      "answer": 0,
+      "explanation": "k = 2/8 = 0.25."
+    },
+    {
+      "id": "F1_Q6_10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point A(3, 5) maps to A'(9, 15) by enlargement about origin. What is the scale factor?",
+      "options": ["3", "1/3", "6", "2"],
+      "answer": 0,
+      "explanation": "k = 9/3 = 3 (or 15/5 = 3)."
+    },
+    {
+      "id": "F1_Q6_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point P(2, 3) is enlarged by scale factor 2 about centre (1, 1). Where is P'?",
+      "options": ["(3, 5)", "(4, 6)", "(5, 7)", "(2, 3)"],
+      "answer": 0,
+      "explanation": "Vector from centre: (1,2). Multiply by 2: (2,4). Add centre: (3,5)."
+    },
+    {
+      "id": "F1_Q6_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Under enlargement, area changes by factor k^2. If k=2, what is the area ratio image:object?",
+      "options": ["4:1", "2:1", "1:4", "1:1"],
+      "answer": 0,
+      "explanation": "Area ratio = k^2 = 2^2 = 4:1."
+    },
+    {
+      "id": "F1_Q6_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Object area = 5 sq cm, image area = 125 sq cm. What is the scale factor?",
+      "options": ["5", "25", "1/5", "120"],
+      "answer": 0,
+      "explanation": "Area ratio = 125/5 = 25. k = sqrt(25) = 5."
+    },
+    {
+      "id": "F1_Q6_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point (4, 8) maps to (1, 2) by enlargement about origin. What is the scale factor?",
+      "options": ["0.25", "4", "0.5", "2"],
+      "answer": 0,
+      "explanation": "k = 1/4 = 0.25 (or 2/8 = 0.25)."
+    },
+    {
+      "id": "F1_Q6_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point Q(6, 3) is enlarged with centre (0, 0) and scale factor -0.5. What is Q'?",
+      "options": ["(-3, -1.5)", "(3, 1.5)", "(-12, -6)", "(12, 6)"],
+      "answer": 0,
+      "explanation": "Multiply by -0.5: (6*(-0.5), 3*(-0.5)) = (-3, -1.5)."
+    },
+    {
+      "id": "F1_Q6_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Do enlargement and reduction produce similar figures?",
+      "options": ["Yes, all enlargements produce similar figures", "No", "Only if k > 0", "Only if centre is origin"],
+      "answer": 0,
+      "explanation": "All enlargements produce similar figures (same shape, different size)."
+    }
+  ]
+}

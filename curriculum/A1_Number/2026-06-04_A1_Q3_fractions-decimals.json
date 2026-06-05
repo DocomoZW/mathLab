@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q3",
+  "title": "Fractions & Decimals",
+  "syllabus_ref": "IGCSE 0580 C1.3",
+  "version": 1,
+  "created_at": "2026-06-04T23:00:00Z",
+  "sections": {
+    "hook": "In ancient Egypt, they had a completely different way of writing fractions — they only used unit fractions like $\\frac{1}{2}, \\frac{1}{3}, \\frac{1}{7}$, and would express $\\frac{3}{4}$ as $\\frac{1}{2} + \\frac{1}{4}$. Imagine doing your maths homework with that system! Our decimal system, while familiar, hides the fact that some innocent-looking fractions like $\\frac{1}{3}$ go on forever as $0.3333\\dots$",
+    "prerequisites": [
+      "Basic arithmetic operations (+, -, ×, ÷)",
+      "Understanding of place value in decimals",
+      "Multiplication tables up to 12 × 12"
+    ],
+    "core_explanation": "**Fractions** represent parts of a whole. The **numerator** (top) shows how many parts we have; the **denominator** (bottom) shows how many equal parts the whole is divided into.\n\n### Operations with Fractions\n\n**Addition and Subtraction:** You need a **common denominator**.\n$$\\frac{2}{5} + \\frac{1}{3} = \\frac{2 \\times 3}{5 \\times 3} + \\frac{1 \\times 5}{3 \\times 5} = \\frac{6}{15} + \\frac{5}{15} = \\frac{11}{15}$$\n\n**Multiplication:** Multiply numerators together and denominators together.\n$$\\frac{2}{3} \\times \\frac{4}{5} = \\frac{2 \\times 4}{3 \\times 5} = \\frac{8}{15}$$\n\n**Division:** Multiply by the reciprocal (flip the second fraction).\n$$\\frac{2}{3} \\div \\frac{4}{5} = \\frac{2}{3} \\times \\frac{5}{4} = \\frac{10}{12} = \\frac{5}{6}$$\n\n### Recurring Decimals\n\nSome fractions produce decimals that repeat forever. The repeating part is shown with a dot (or dots) above:\n- $\\frac{1}{3} = 0.\\dot{3}$ (repeats every 1 digit)\n- $\\frac{1}{6} = 0.1\\dot{6}$ (the 6 repeats)\n- $\\frac{1}{7} = 0.\\dot{1}4285\\dot{7}$ (repeats every 6 digits)\n\n### Converting Recurring Decimals to Fractions\n\nLet $x = 0.\\dot{7}$ (meaning $0.7777\\dots$).\nMultiply by $10$: $10x = 7.\\dot{7}$\nSubtract: $10x - x = 7.\\dot{7} - 0.\\dot{7}$\n$9x = 7$\n$x = \\frac{7}{9}$\n\nFor $0.1\\dot{6}$ (meaning $0.16666\\dots$):\n$x = 0.16666\\dots$\n$10x = 1.6666\\dots$\n$100x = 16.6666\\dots$\n$100x - 10x = 16.666\\dots - 1.666\\dots = 15$\n$90x = 15$\n$x = \\frac{15}{90} = \\frac{1}{6}$\n\n**Mixed Numbers and Improper Fractions:** A mixed number like $2\\frac{3}{5}$ means $2 + \\frac{3}{5} = \\frac{10}{5} + \\frac{3}{5} = \\frac{13}{5}$.",
+    "worked_example": "**Problem:** Calculate $\\frac{3}{4} - \\frac{2}{3} \\times \\frac{1}{2}$ and express your answer as a fraction in its simplest form.\n\n**Solution:**\n\nRemember BIDMAS (or PEMDAS) — multiplication before subtraction.\n\nStep 1: Do the multiplication first.\n$$\\frac{2}{3} \\times \\frac{1}{2} = \\frac{2 \\times 1}{3 \\times 2} = \\frac{2}{6} = \\frac{1}{3}$$\n\nStep 2: Now subtract.\n$$\\frac{3}{4} - \\frac{1}{3}$$\n\nStep 3: Find a common denominator. LCM of $4$ and $3$ is $12$.\n$$\\frac{3 \\times 3}{4 \\times 3} - \\frac{1 \\times 4}{3 \\times 4} = \\frac{9}{12} - \\frac{4}{12} = \\frac{5}{12}$$\n\n**Answer:** $\\frac{5}{12}$\n\n**Check:** $\\frac{3}{4} = 0.75$, $\\frac{1}{3} \\approx 0.333$, $0.75 - 0.333 = 0.417$, $\\frac{5}{12} \\approx 0.4167$. ✓",
+    "common_mistakes": [
+      {
+        "mistake": "Adding denominators when adding fractions: $\\frac{1}{3} + \\frac{1}{4} = \\frac{2}{7}$",
+        "correction": "Never add denominators! You must find a common denominator first: $\\frac{1}{3} + \\frac{1}{4} = \\frac{4}{12} + \\frac{3}{12} = \\frac{7}{12}$."
+      },
+      {
+        "mistake": "Misapplying 'keep-change-flip' for division and getting the first fraction flipped instead",
+        "correction": "Only flip (take the reciprocal of) the **second** fraction. $\\frac{2}{3} \\div \\frac{4}{5} = \\frac{2}{3} \\times \\frac{5}{4}$, not $\\frac{3}{2} \\times \\frac{4}{5}$."
+      },
+      {
+        "mistake": "Forgetting to multiply the numerator when converting a mixed number to an improper fraction: writing $3\\frac{2}{5}$ as $\\frac{3+2}{5}$ instead of $\\frac{3 \\times 5 + 2}{5} = \\frac{17}{5}$",
+        "correction": "Multiply the whole number by the denominator, then add the numerator: $a\\frac{b}{c} = \\frac{a \\times c + b}{c}$."
+      }
+    ],
+    "summary": [
+      "Add/subtract fractions by finding a common denominator",
+      "Multiply fractions straight across: $\\frac{a}{b} \\times \\frac{c}{d} = \\frac{ac}{bd}$",
+      "Divide fractions by multiplying by the reciprocal of the second fraction",
+      "Always simplify fractions to lowest terms",
+      "Convert recurring decimals to fractions using the subtraction method",
+      "Follow BIDMAS/PEMDAS for mixed operations"
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q5",
+  "title": "Algebraic Fractions — Problems",
+  "problems": [
+    {
+      "id": "B1_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": ["simplifying_fractions"],
+      "problem_text": "Simplify: $\\frac{3x}{6}$",
+      "answer": "$\\frac{x}{2}$",
+      "solution": "Cancel common factor 3: $\\frac{3x}{6} = \\frac{x}{2}$"
+    },
+    {
+      "id": "B1_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": ["simplifying_fractions"],
+      "problem_text": "Simplify: $\\frac{4x^2}{2x}$",
+      "answer": "$2x$",
+      "solution": "$\\frac{4x^2}{2x} = \\frac{4}{2} \\times \\frac{x^2}{x} = 2x$"
+    },
+    {
+      "id": "B1_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": ["multiplying_fractions"],
+      "problem_text": "Multiply: $\\frac{2x}{3} \\times \\frac{6}{x}$",
+      "answer": "$4$",
+      "solution": "$\\frac{2x \\times 6}{3 \\times x} = \\frac{12x}{3x} = 4$"
+    },
+    {
+      "id": "B1_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": ["dividing_fractions"],
+      "problem_text": "Divide: $\\frac{x}{2} \\div \\frac{x}{4}$",
+      "answer": "$2$",
+      "solution": "$\\frac{x}{2} \\times \\frac{4}{x} = \\frac{4x}{2x} = 2$"
+    },
+    {
+      "id": "B1_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": ["simplifying_factorising"],
+      "problem_text": "Simplify: $\\frac{x^2 - 9}{x + 3}$",
+      "answer": "$x - 3$, $x \\neq -3$",
+      "solution": "$x^2-9 = (x+3)(x-3)$. Cancel $(x+3)$: $\\frac{(x+3)(x-3)}{x+3} = x-3$"
+    },
+    {
+      "id": "B1_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": ["adding_fractions"],
+      "problem_text": "Add: $\\frac{3}{x} + \\frac{2}{x}$",
+      "answer": "$\\frac{5}{x}$",
+      "solution": "Common denominator $x$: $\\frac{3+2}{x} = \\frac{5}{x}$"
+    },
+    {
+      "id": "B1_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": ["subtracting_fractions"],
+      "problem_text": "Subtract: $\\frac{5}{x+1} - \\frac{2}{x+1}$",
+      "answer": "$\\frac{3}{x+1}$",
+      "solution": "Common denominator $x+1$: $\\frac{5-2}{x+1} = \\frac{3}{x+1}$"
+    },
+    {
+      "id": "B1_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": ["simplifying_factorising"],
+      "problem_text": "Simplify: $\\frac{2x^2 + 6x}{4x}$",
+      "answer": "$\\frac{x+3}{2}$, $x \\neq 0$",
+      "solution": "Factorise numerator: $\\frac{2x(x+3)}{4x} = \\frac{x+3}{2}$"
+    },
+    {
+      "id": "B1_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": ["adding_fractions_different_denominators"],
+      "problem_text": "Add: $\\frac{2}{x} + \\frac{3}{x+1}$",
+      "answer": "$\\frac{5x + 2}{x(x+1)}$",
+      "solution": "Common denominator $x(x+1)$: $\\frac{2(x+1)}{x(x+1)} + \\frac{3x}{x(x+1)} = \\frac{2x+2+3x}{x(x+1)} = \\frac{5x+2}{x(x+1)}$"
+    },
+    {
+      "id": "B1_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": ["simplifying_factorising_quadratics"],
+      "problem_text": "Simplify: $\\frac{x^2 - x - 6}{x^2 - 4}$",
+      "answer": "$\\frac{x-3}{x-2}$, $x \\neq \\pm 2$",
+      "solution": "Numerator: $x^2-x-6 = (x-3)(x+2)$. Denominator: $x^2-4 = (x+2)(x-2)$. Cancel $(x+2)$"
+    },
+    {
+      "id": "B1_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": ["subtracting_fractions_different_denominators"],
+      "problem_text": "Subtract: $\\frac{3}{x-1} - \\frac{2}{x+2}$",
+      "answer": "$\\frac{x+8}{(x-1)(x+2)}$",
+      "solution": "Common denominator $(x-1)(x+2)$: $\\frac{3(x+2)-2(x-1)}{(x-1)(x+2)} = \\frac{3x+6-2x+2}{(x-1)(x+2)} = \\frac{x+8}{(x-1)(x+2)}$"
+    },
+    {
+      "id": "B1_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": ["solving_fractional_equations"],
+      "problem_text": "Solve: $\\frac{3}{x} + 2 = \\frac{5}{2x}$",
+      "answer": "$x = -\\frac{1}{4}$",
+      "solution": "Multiply by $2x$: $6 + 4x = 5$. $4x = -1$, $x = -\\frac{1}{4}$"
+    },
+    {
+      "id": "B1_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": ["simplifying_complex_fractions"],
+      "problem_text": "Simplify: $\\frac{\\frac{1}{x+1} - \\frac{1}{x-1}}{\\frac{1}{x+1} + \\frac{1}{x-1}}$",
+      "answer": "$-\\frac{1}{x}$",
+      "solution": "Numerator: $\\frac{(x-1)-(x+1)}{(x+1)(x-1)} = \\frac{-2}{(x+1)(x-1)}$. Denominator: $\\frac{(x-1)+(x+1)}{(x+1)(x-1)} = \\frac{2x}{(x+1)(x-1)}$. Divide: $\\frac{-2}{(x+1)(x-1)} \\times \\frac{(x+1)(x-1)}{2x} = -\\frac{1}{x}$"
+    },
+    {
+      "id": "B1_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": ["solving_fractional_equations", "forming_quadratics"],
+      "problem_text": "Solve: $\\frac{2x-1}{x+1} - \\frac{x-2}{x-1} = 1$",
+      "answer": "$x = 2$",
+      "solution": "Multiply by $(x+1)(x-1)$: $(2x-1)(x-1)-(x-2)(x+1)=(x+1)(x-1)$. Expand: $(2x^2-3x+1)-(x^2-x-2)=x^2-1$. Simplify: $x^2-2x+3=x^2-1$, $-2x=-4$, $x=2$"
+    },
+    {
+      "id": "B1_Q5_X3",
+      "difficulty": "X",
+      "skill_tags": ["algebraic_fractions", "proof"],
+      "problem_text": "Simplify: $\\frac{2x+1}{x+2} - \\frac{x-3}{x-1}$",
+      "answer": "$\\frac{x^2+5}{(x+2)(x-1)}$",
+      "solution": "Common denominator $(x+2)(x-1)$: $\\frac{(2x+1)(x-1)-(x-3)(x+2)}{(x+2)(x-1)}$. Numerator: $(2x^2-x-1)-(x^2-x-6) = x^2+5$"
+    },
+    {
+      "id": "B1_Q5_X4",
+      "difficulty": "X",
+      "skill_tags": ["algebraic_fractions", "forming_equations", "word_problem"],
+      "problem_text": "A tank can be filled by pipe A in $x$ hours and by pipe B in $(x+3)$ hours. Together they take 2 hours. Find $x$.",
+      "answer": "$x = 3$ hours",
+      "solution": "Rates: A fills $\\frac{1}{x}$ per hour, B fills $\\frac{1}{x+3}$ per hour. Combined: $\\frac{1}{x}+\\frac{1}{x+3}=\\frac{1}{2}$. Multiply by $2x(x+3)$: $2(x+3)+2x=x(x+3)$, $4x+6=x^2+3x$, $x^2-x-6=0$, $(x-3)(x+2)=0$, $x=3$ or $x=-2$ (reject). So $x=3$ hours."
+    }
+  ]
+}

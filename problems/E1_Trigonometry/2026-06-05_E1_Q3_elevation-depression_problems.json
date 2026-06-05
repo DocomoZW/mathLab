@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q3",
+  "title": "Angle of Elevation and Depression - Problems",
+  "problems": [
+    {
+      "id": "E1_Q3_F1",
+      "difficulty": "F",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A person looks up at the top of a tree. The angle of elevation is 30 degrees and the person is 20 m from the base of the tree. Find the height of the tree, correct to 1 decimal place.",
+      "answer": "11.5 m",
+      "solution": "tan(30) = height/20. height = 20 * tan(30) = 20 * 0.57735 = 11.547 m. Rounded to 1 dp: 11.5 m."
+    },
+    {
+      "id": "E1_Q3_F2",
+      "difficulty": "F",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A flagpole casts a shadow 12 m long when the angle of elevation of the sun is 45 degrees. Find the height of the flagpole.",
+      "answer": "12 m",
+      "solution": "tan(45) = height/12. height = 12 * tan(45) = 12 * 1 = 12 m."
+    },
+    {
+      "id": "E1_Q3_F3",
+      "difficulty": "F",
+      "skill_tags": ["angle_of_depression"],
+      "problem_text": "From the top of a cliff 50 m high, the angle of depression of a boat at sea is 30 degrees. Find the horizontal distance from the boat to the base of the cliff, correct to 1 decimal place.",
+      "answer": "86.6 m",
+      "solution": "Angle of depression = 30 degrees equals angle of elevation from boat to top. tan(30) = 50/distance. distance = 50/tan(30) = 50/0.57735 = 86.603 m. Rounded to 1 dp: 86.6 m."
+    },
+    {
+      "id": "E1_Q3_F4",
+      "difficulty": "F",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A building is 30 m tall. From a point on the ground, the angle of elevation to the top of the building is 60 degrees. Find the distance from the point to the base of the building, correct to 1 decimal place.",
+      "answer": "17.3 m",
+      "solution": "tan(60) = 30/distance. distance = 30/tan(60) = 30/1.73205 = 17.321 m. Rounded to 1 dp: 17.3 m."
+    },
+    {
+      "id": "E1_Q3_C1",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "From a point 25 m from the base of a building, the angle of elevation to the top of the building is 32 degrees. Find the height of the building, correct to 2 decimal places.",
+      "answer": "15.62 m",
+      "solution": "tan(32) = height/25. height = 25 * tan(32) = 25 * 0.62487 = 15.622 m. Rounded to 2 dp: 15.62 m."
+    },
+    {
+      "id": "E1_Q3_C2",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_depression"],
+      "problem_text": "From the top of a 60 m lighthouse, the angle of depression of a buoy is 18 degrees. Find the horizontal distance from the buoy to the lighthouse, correct to 2 decimal places.",
+      "answer": "184.67 m",
+      "solution": "Angle of depression = 18 degrees. tan(18) = 60/distance. distance = 60/tan(18) = 60/0.32492 = 184.663 m. Rounded to 2 dp: 184.67 m."
+    },
+    {
+      "id": "E1_Q3_C3",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A kite is flying at a height of 40 m above the ground. The string is taut and makes an angle of 55 degrees with the horizontal. Find the length of the string, correct to 2 decimal places.",
+      "answer": "48.83 m",
+      "solution": "sin(55) = 40/string_length. string_length = 40/sin(55) = 40/0.81915 = 48.831 m. Rounded to 2 dp: 48.83 m."
+    },
+    {
+      "id": "E1_Q3_C4",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A surveyor measures the angle of elevation to the top of a tower as 27 degrees. She then moves 30 m closer to the tower and measures the angle of elevation as 42 degrees. Find the height of the tower, correct to 2 decimal places.",
+      "answer": "35.21 m",
+      "solution": "Let h be height of tower. Let x be initial distance from tower. tan(27) = h/x, so x = h/tan(27). After moving: tan(42) = h/(x-30), so x-30 = h/tan(42). Substituting: h/tan(27) - 30 = h/tan(42). h(1/tan(27) - 1/tan(42)) = 30. tan(27) = 0.50953, so 1/tan(27) = 1.9626. tan(42) = 0.90040, so 1/tan(42) = 1.1106. Difference = 0.8520. h = 30/0.8520 = 35.21 m."
+    },
+    {
+      "id": "E1_Q3_C5",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_depression"],
+      "problem_text": "From the top of a vertical cliff 80 m high, the angles of depression of two boats on the same side of the cliff are 30 degrees and 45 degrees. Find the distance between the two boats, correct to 2 decimal places.",
+      "answer": "58.56 m",
+      "solution": "For the nearer boat: tan(45) = 80/d1, so d1 = 80/tan(45) = 80 m. For the farther boat: tan(30) = 80/d2, so d2 = 80/tan(30) = 80/0.57735 = 138.564 m. Distance between boats = d2 - d1 = 138.564 - 80 = 58.564 m. Rounded to 2 dp: 58.56 m."
+    },
+    {
+      "id": "E1_Q3_C6",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A boy flies a kite with 100 m of string. The angle of elevation of the kite is 38 degrees. Find the height of the kite above the ground, correct to 2 decimal places.",
+      "answer": "61.57 m",
+      "solution": "sin(38) = height/100. height = 100 * sin(38) = 100 * 0.61566 = 61.566 m. Rounded to 2 dp: 61.57 m."
+    },
+    {
+      "id": "E1_Q3_C7",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_elevation_and_depression_combined"],
+      "problem_text": "From the top of a 100 m building, the angle of depression to a car on the ground is 25 degrees. Find the distance from the car to the base of the building, correct to 2 decimal places.",
+      "answer": "214.45 m",
+      "solution": "tan(25) = 100/distance. distance = 100/tan(25) = 100/0.46631 = 214.452 m. Rounded to 2 dp: 214.45 m."
+    },
+    {
+      "id": "E1_Q3_C8",
+      "difficulty": "C",
+      "skill_tags": ["angle_of_elevation"],
+      "problem_text": "A person stands at point A and measures the angle of elevation to the top of a 40 m tree as 28 degrees. How far is the person from the base of the tree, correct to 2 decimal places?",
+      "answer": "75.23 m",
+      "solution": "tan(28) = 40/distance. distance = 40/tan(28) = 40/0.53171 = 75.228 m. Rounded to 2 dp: 75.23 m."
+    },
+    {
+      "id": "E1_Q3_H1",
+      "difficulty": "H",
+      "skill_tags": ["angle_of_elevation", "multi_step"],
+      "problem_text": "From a point A on level ground, the angle of elevation to the top of a tower is 18 degrees. From a point B, which is 50 m closer to the tower, the angle of elevation is 27 degrees. Find the height of the tower, correct to 2 decimal places.",
+      "answer": "44.84 m",
+      "solution": "Let h be height of tower. Let d be distance from A to tower base. tan(18) = h/d, so d = h/tan(18). tan(27) = h/(d-50), so d-50 = h/tan(27). Substituting: h/tan(18) - 50 = h/tan(27). h(1/tan(18) - 1/tan(27)) = 50. tan(18) = 0.32492, 1/tan(18) = 3.0777. tan(27) = 0.50953, 1/tan(27) = 1.9626. Difference = 1.1151. h = 50/1.1151 = 44.84 m."
+    },
+    {
+      "id": "E1_Q3_H2",
+      "difficulty": "H",
+      "skill_tags": ["angle_of_elevation_and_depression_combined", "multi_step"],
+      "problem_text": "From the top of a building 25 m tall, the angle of elevation to the top of a nearby tower is 15 degrees and the angle of depression to the base of the tower is 40 degrees. Find the height of the tower, correct to 2 decimal places.",
+      "answer": "32.98 m",
+      "solution": "Let x be horizontal distance between building and tower. From the top of the building (25 m high): tan(40) = 25/x, so x = 25/tan(40) = 25/0.83910 = 29.795 m. The height difference between top of building and top of tower: tan(15) = h/x, so h = x * tan(15) = 29.795 * 0.26795 = 7.983 m. Tower height = 25 + h = 25 + 7.983 = 32.983 m. Rounded to 2 dp: 32.98 m."
+    },
+    {
+      "id": "E1_Q3_H3",
+      "difficulty": "H",
+      "skill_tags": ["angle_of_elevation", "multi_step"],
+      "problem_text": "Two points A and B are 80 m apart on level ground. The angles of elevation of a hot air balloon from A and B are 35 degrees and 52 degrees respectively. If the balloon is directly above the line AB, find the height of the balloon, correct to 2 decimal places.",
+      "answer": "36.21 m",
+      "solution": "Let h be height of balloon. Let x be distance from A to point directly below balloon. tan(35) = h/x, so x = h/tan(35). tan(52) = h/(80-x), so 80-x = h/tan(52). Substituting: 80 - h/tan(35) = h/tan(52). 80 = h(1/tan(35) + 1/tan(52)). h = 80 / (1/tan(35) + 1/tan(52)). tan(35) = 0.70021, 1/tan(35) = 1.4281. tan(52) = 1.2799, 1/tan(52) = 0.7813. Sum = 2.2094. h = 80/2.2094 = 36.21 m."
+    },
+    {
+      "id": "E1_Q3_H4",
+      "difficulty": "H",
+      "skill_tags": ["angle_of_elevation_and_depression_combined", "word_problem"],
+      "problem_text": "From a point on the ground, the angle of elevation of a tower is 25 degrees. On walking 40 m towards the tower, the angle of elevation becomes 35 degrees. Find the height of the tower, correct to 2 decimal places.",
+      "answer": "55.84 m",
+      "solution": "Let h be height of tower, d be original distance from tower. tan(25) = h/d, so d = h/tan(25). After moving 40 m closer: tan(35) = h/(d-40), so d-40 = h/tan(35). Substituting: h/tan(25) - 40 = h/tan(35). h(1/tan(25) - 1/tan(35)) = 40. tan(25) = 0.46631, 1/tan(25) = 2.1445. tan(35) = 0.70021, 1/tan(35) = 1.4281. Difference = 0.7164. h = 40/0.7164 = 55.84 m."
+    }
+  ]
+}

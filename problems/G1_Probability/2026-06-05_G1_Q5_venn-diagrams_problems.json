@@ -1,0 +1,189 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q5",
+  "title": "Venn Diagrams & Probability - Problems",
+  "problems": [
+    {
+      "id": "G1_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "venn_diagrams",
+        "set_notation"
+      ],
+      "problem_text": "In a Venn diagram, set A has 5 elements and set B has 8 elements. The intersection has 3 elements. How many elements are in A \u222a B?",
+      "answer": "10",
+      "solution": "n(A \u222a B) = n(A) + n(B) - n(A \u2229 B) = 5 + 8 - 3 = 10."
+    },
+    {
+      "id": "G1_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "A Venn diagram shows 20 students. 12 play football, 8 play tennis, 4 play both. A student is chosen at random. What is the probability they play neither sport?",
+      "answer": "1/5",
+      "solution": "Football only = 12-4 = 8. Tennis only = 8-4 = 4. Both = 4. Neither = 20 - (8+4+4) = 4. P(neither) = 4/20 = 1/5."
+    },
+    {
+      "id": "G1_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "A Venn diagram shows 30 people. 15 like tea, 12 like coffee, 7 like both. What is the probability that a randomly chosen person likes coffee but not tea?",
+      "answer": "1/6",
+      "solution": "Coffee only = 12 - 7 = 5. P(coffee only) = 5/30 = 1/6."
+    },
+    {
+      "id": "G1_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "In a class of 25 students, 18 study Maths and 15 study English. 10 study both. Find the probability that a randomly chosen student studies Maths or English (or both).",
+      "answer": "23/25",
+      "solution": "Maths only = 18-10 = 8. English only = 15-10 = 5. Both = 10. Total studying at least one = 8+5+10 = 23. P(at least one) = 23/25."
+    },
+    {
+      "id": "G1_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "There are 40 students. 22 study Biology, 18 study Chemistry, 8 study neither. Draw a Venn diagram and find how many study both.",
+      "answer": "8",
+      "solution": "Let x = both. Biology only = 22-x, Chemistry only = 18-x. Total = (22-x)+x+(18-x)+8 = 40. So 48-x = 40, x = 8."
+    },
+    {
+      "id": "G1_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "In a group of 50 people, 30 like cats, 25 like dogs, and 10 like both. A person is chosen at random. Find the probability that they like exactly one type of pet.",
+      "answer": "7/10",
+      "solution": "Cats only = 30-10 = 20. Dogs only = 25-10 = 15. Exactly one = 20+15 = 35. P(exactly one) = 35/50 = 7/10."
+    },
+    {
+      "id": "G1_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "In a survey of 60 people, 35 read newspaper A, 28 read newspaper B, and 12 read neither. Find the probability that a randomly chosen person reads both newspapers.",
+      "answer": "1/4",
+      "solution": "Let x = both. A only = 35-x, B only = 28-x. Total = (35-x)+x+(28-x)+12 = 60. So 75-x = 60, x = 15. P(both) = 15/60 = 1/4."
+    },
+    {
+      "id": "G1_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "\u03be = {1,2,3,4,5,6,7,8,9,10}. A = {1,2,3,4,5}, B = {4,5,6,7,8}. A number is chosen at random from \u03be. Find P(A \u2229 B).",
+      "answer": "1/5",
+      "solution": "A \u2229 B = {4,5}. n(A \u2229 B) = 2. Total = 10. P = 2/10 = 1/5."
+    },
+    {
+      "id": "G1_Q5_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "\u03be = {1,2,3,4,5,6,7,8,9,10,11,12}. P = {multiples of 3}, Q = {factors of 12}. A number is chosen at random. Find P(P \u222a Q).",
+      "answer": "7/12",
+      "solution": "P = {3,6,9,12}, Q = {1,2,3,4,6,12}. P \u222a Q = {1,2,3,4,6,9,12}. n(P \u222a Q) = 7. Total = 12. P = 7/12."
+    },
+    {
+      "id": "G1_Q5_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn",
+        "conditional_venn"
+      ],
+      "problem_text": "In a group of 40 students, 25 play cricket, 20 play football, and 5 play neither. A student is chosen at random. Given that they play cricket, find the probability they also play football.",
+      "answer": "2/5",
+      "solution": "Total = 40. Neither = 5. So at least one sport = 35. Let x = both. (25-x)+x+(20-x)=35, x=10. P(football|cricket)=10/25=2/5."
+    },
+    {
+      "id": "G1_Q5_E1",
+      "difficulty": "E",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "\u03be = {1,2,3,...,20}. A = {even numbers}, B = {multiples of 3}, C = {multiples of 5}. A number is chosen at random. Find P(A \u2229 B \u2229 C).",
+      "answer": "0",
+      "solution": "A\u2229B\u2229C = numbers even, multiples of 3, and 5 = multiples of LCM(2,3,5)=30. No multiples of 30 \u2264 20. So empty set. P = 0."
+    },
+    {
+      "id": "G1_Q5_E2",
+      "difficulty": "E",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn"
+      ],
+      "problem_text": "In a survey of 80 students, 42 take History, 36 take Geography, and 28 take both. A student is chosen at random. Find the probability that they take exactly one of these subjects.",
+      "answer": "11/40",
+      "solution": "History only = 42-28 = 14. Geography only = 36-28 = 8. Exactly one = 14+8 = 22. P(exactly one) = 22/80 = 11/40."
+    },
+    {
+      "id": "G1_Q5_E3",
+      "difficulty": "E",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn",
+        "conditional"
+      ],
+      "problem_text": "A and B are two events such that P(A) = 0.6, P(B) = 0.4, and P(A \u222a B) = 0.8. Find P(A \u2229 B).",
+      "answer": "0.2",
+      "solution": "P(A \u222a B) = P(A) + P(B) - P(A \u2229 B). So 0.8 = 0.6 + 0.4 - P(A \u2229 B). So P(A \u2229 B) = 1.0 - 0.8 = 0.2."
+    },
+    {
+      "id": "G1_Q5_E4",
+      "difficulty": "E",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn",
+        "conditional"
+      ],
+      "problem_text": "Given that P(A) = 0.5, P(B) = 0.3, and P(A \u2229 B) = 0.15, find P(A' \u2229 B').",
+      "answer": "0.35",
+      "solution": "P(A \u222a B) = 0.5 + 0.3 - 0.15 = 0.65. P(A' \u2229 B') = P((A \u222a B)') = 1 - 0.65 = 0.35."
+    },
+    {
+      "id": "G1_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn",
+        "three_sets"
+      ],
+      "problem_text": "In a group of 100 students, 55 study French, 45 study German, 30 study Spanish, 20 study French and German, 15 study French and Spanish, 10 study German and Spanish, and 5 study all three. Find the probability that a randomly chosen student studies exactly two languages.",
+      "answer": "3/10",
+      "solution": "F+G only = 20-5 = 15. F+S only = 15-5 = 10. G+S only = 10-5 = 5. Exactly two = 15+10+5 = 30. P = 30/100 = 3/10."
+    },
+    {
+      "id": "G1_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "venn_diagrams",
+        "probability_venn",
+        "algebraic"
+      ],
+      "problem_text": "In a class, P(M) = 0.7, P(P) = 0.6, P(M \u2229 P) = 0.4, where M = studies Maths, P = studies Physics. Find P(M' \u2229 P).",
+      "answer": "0.2",
+      "solution": "P(M' \u2229 P) = P(P) - P(M \u2229 P) = 0.6 - 0.4 = 0.2."
+    }
+  ]
+}

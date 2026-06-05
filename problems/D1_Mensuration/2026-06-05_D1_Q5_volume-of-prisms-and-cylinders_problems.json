@@ -1,0 +1,168 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q5",
+  "title": "Volume of Prisms and Cylinders \u2014 Problems",
+  "problems": [
+    {
+      "id": "D1_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_cuboid"
+      ],
+      "problem_text": "Find the volume of a cuboid with length 6 cm, width 5 cm, and height 4 cm.",
+      "answer": "120 cm^3",
+      "solution": "V = l x w x h = 6 x 5 x 4 = 120 cm^3"
+    },
+    {
+      "id": "D1_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_cube"
+      ],
+      "problem_text": "Find the volume of a cube with side length 7 cm.",
+      "answer": "343 cm^3",
+      "solution": "V = s^3 = 7 x 7 x 7 = 343 cm^3"
+    },
+    {
+      "id": "D1_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_cylinder"
+      ],
+      "problem_text": "Find the volume of a cylinder with radius 4 cm and height 10 cm (use pi = 3.142).",
+      "answer": "502.72 cm^3",
+      "solution": "V = pi x r^2 x h = 3.142 x 16 x 10 = 502.72 cm^3"
+    },
+    {
+      "id": "D1_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_triangular_prism"
+      ],
+      "problem_text": "A triangular prism has triangular cross-section with base 8 cm and height 5 cm, and length 12 cm. Find its volume.",
+      "answer": "240 cm^3",
+      "solution": "Area of triangle = (1/2) x 8 x 5 = 20 cm^2. V = 20 x 12 = 240 cm^3"
+    },
+    {
+      "id": "D1_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cuboid_missing_height"
+      ],
+      "problem_text": "A cuboid has volume 360 cm^3, length 12 cm, and width 5 cm. Find its height.",
+      "answer": "6 cm",
+      "solution": "V = l x w x h. 360 = 12 x 5 x h. 360 = 60h. h = 6 cm"
+    },
+    {
+      "id": "D1_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_capacity"
+      ],
+      "problem_text": "A rectangular tank measures 50 cm by 30 cm by 40 cm. How many litres of water can it hold? (1 litre = 1000 cm^3)",
+      "answer": "60 litres",
+      "solution": "V = 50 x 30 x 40 = 60,000 cm^3 = 60 litres"
+    },
+    {
+      "id": "D1_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cylinder_diameter"
+      ],
+      "problem_text": "A cylinder has diameter 14 cm and height 20 cm. Find its volume (use pi = 22/7).",
+      "answer": "3080 cm^3",
+      "solution": "r = 7 cm. V = (22/7) x 49 x 20 = 22 x 7 x 20 = 3080 cm^3"
+    },
+    {
+      "id": "D1_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_prism_cross_section"
+      ],
+      "problem_text": "A prism has cross-sectional area 25 cm^2 and length 9 cm. Find its volume.",
+      "answer": "225 cm^3",
+      "solution": "V = area of cross-section x length = 25 x 9 = 225 cm^3"
+    },
+    {
+      "id": "D1_Q5_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_capacity_litres"
+      ],
+      "problem_text": "A cylindrical water tank has radius 30 cm and height 100 cm. How many litres does it hold? (pi = 3.142, 1 L = 1000 cm^3)",
+      "answer": "282.78 litres",
+      "solution": "V = 3.142 x 900 x 100 = 282,780 cm^3 = 282.78 litres"
+    },
+    {
+      "id": "D1_Q5_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cuboid_word"
+      ],
+      "problem_text": "A swimming pool is 25 m long, 10 m wide, and has an average depth of 1.5 m. Find its volume in m^3.",
+      "answer": "375 m^3",
+      "solution": "V = 25 x 10 x 1.5 = 375 m^3"
+    },
+    {
+      "id": "D1_Q5_C7",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cylinder_missing_radius"
+      ],
+      "problem_text": "A cylinder has volume 1000 cm^3 and height 12 cm. Find its radius (use pi = 3.142).",
+      "answer": "5.15 cm",
+      "solution": "V = pi r^2 h. 1000 = 3.142 x r^2 x 12. r^2 = 1000/(3.142 x 12) = 26.53. r = sqrt(26.53) = 5.15 cm"
+    },
+    {
+      "id": "D1_Q5_C8",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_units"
+      ],
+      "problem_text": "Convert 2.5 m^3 to cm^3.",
+      "answer": "2,500,000 cm^3",
+      "solution": "1 m^3 = 1,000,000 cm^3. 2.5 m^3 = 2.5 x 1,000,000 = 2,500,000 cm^3"
+    },
+    {
+      "id": "D1_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_cylinder_hemisphere"
+      ],
+      "problem_text": "A cylinder of radius 6 cm and height 12 cm has a hemisphere of the same radius removed from the top. Find the remaining volume (use pi = 3.142).",
+      "answer": "904.78 cm^3",
+      "solution": "V_cyl = 3.142 x 36 x 12 = 1357.34 cm^3. V_hemi = (2/3) x 3.142 x 216 = 452.57 cm^3. Remaining = 1357.34 - 452.57 = 904.78 cm^3"
+    },
+    {
+      "id": "D1_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_prism_algebraic"
+      ],
+      "problem_text": "A prism has cross-sectional area (3x+2) cm^2 and length (x+4) cm. Find an expression for its volume.",
+      "answer": "3x^2 + 14x + 8",
+      "solution": "V = A x L = (3x+2)(x+4) = 3x^2 + 12x + 2x + 8 = 3x^2 + 14x + 8 cm^3"
+    },
+    {
+      "id": "D1_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_prism_trapezium"
+      ],
+      "problem_text": "A prism has a trapezium cross-section with parallel sides 5 cm and 9 cm, height 4 cm, and prism length 10 cm. Find its volume.",
+      "answer": "280 cm^3",
+      "solution": "Area of trapezium = (1/2)(5+9) x 4 = 28 cm^2. V = 28 x 10 = 280 cm^3"
+    },
+    {
+      "id": "D1_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_cylinder_partial"
+      ],
+      "problem_text": "A cylindrical barrel of radius 30 cm contains water to a depth of 40 cm. How many litres of water are in the barrel? (pi = 3.142, 1 L = 1000 cm^3)",
+      "answer": "113.1 litres",
+      "solution": "V = pi x 900 x 40 = 113,112 cm^3 = 113.1 litres"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q4",
+  "title": "Conditional Probability",
+  "syllabus_ref": "IGCSE 0580 G8.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "If you know that a dice roll resulted in an even number, what's the chance it was a 6? You've just narrowed down the possibilities — that's conditional probability in action. It's about updating your probability estimate when you have extra information. This idea powers everything from medical testing to spam filters.",
+    "prerequisites": [
+      "Understand basic probability concepts and notation",
+      "Understand tree diagrams and how to read probabilities from them",
+      "Be comfortable working with fractions"
+    ],
+    "core_explanation": "## What is Conditional Probability?\n\nConditional probability answers the question: 'Given that something has happened, what is the probability that something else happens?'\n\n### Notation\n\nP(A | B) means 'the probability of event A happening, given that event B has already happened'.\n\nFor example, P(rain | cloudy) means 'the probability of rain given that it is cloudy'. This is likely higher than the ordinary chance of rain on any random day.\n\n### The Conditional Probability Formula\n\nP(A | B) = P(A and B) / P(B)\n\nProvided that P(B) is not zero. In words: the probability of A given B equals the probability of both A and B happening, divided by the probability of B.\n\n### Intuition\n\nWhen we know B has happened, B becomes our new 'sample space'. We only consider outcomes where B occurs. Out of those, we want the ones where A also occurs.\n\nP(A | B) = (outcomes where both A and B occur) / (outcomes where B occurs)\n\n### Conditional Probability from Tree Diagrams\n\nTree diagrams naturally show conditional probabilities. When you move from one stage to the next, the probabilities on the second-stage branches are conditional on what happened in the first stage.\n\nFor example, if you draw two cards without replacement:\n- P(second card is an Ace | first card was an Ace) = 3/51 (only 3 aces left out of 51 cards)\n\n### Independence\n\nTwo events are independent if knowing one happened gives no information about the other.\n\nIf A and B are independent: P(A | B) = P(A)\n\nThis also means: P(A and B) = P(A) x P(B)\n\nIf A and B are dependent: P(A | B) is NOT equal to P(A), and P(A and B) = P(A) x P(B | A) or P(B) x P(A | B)",
+    "worked_example": "**Problem:** In a class of 30 students, 18 study Biology and 12 study Chemistry. 8 students study both Biology and Chemistry. A student is chosen at random. Given that the student studies Chemistry, what is the probability they also study Biology?\n\n**Step 1:** Identify what you know.\nP(Chemistry) = 12/30\nP(Biology and Chemistry) = 8/30\n\n**Step 2:** Apply the conditional probability formula.\nP(Biology | Chemistry) = P(Biology and Chemistry) / P(Chemistry)\n= (8/30) / (12/30)\n= 8/12\n= 2/3\n\n**Step 3:** Interpret the result.\nOut of the 12 students who study Chemistry, 8 also study Biology. So 8 out of 12 = 2/3.\n\n**Answer:** P(Biology | Chemistry) = 2/3.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing P(A | B) with P(B | A). These are generally different values.",
+        "correction": "Read the notation carefully. P(A | B) asks 'given B happened, what's the chance of A?' while P(B | A) is the reverse. They are not interchangeable."
+      },
+      {
+        "mistake": "Forgetting that P(B) is the new denominator and using the original total number of outcomes instead.",
+        "correction": "When calculating P(A | B), restrict your attention to only the outcomes where B occurs. The denominator should be the number (or probability) of B outcomes, not the total."
+      },
+      {
+        "mistake": "Assuming independence without checking — treating dependent events as independent.",
+        "correction": "Always check whether events are independent. If knowing one event gives you information about the other, they are dependent and you must use conditional probability formulas."
+      }
+    ],
+    "summary": [
+      "Conditional probability P(A | B) is the probability of A occurring given that B has already occurred.",
+      "The formula is P(A | B) = P(A and B) / P(B), where P(B) is not zero.",
+      "Given B, the sample space shrinks to only outcomes where B occurs.",
+      "Two events are independent if P(A | B) = P(A), or equivalently P(A and B) = P(A) x P(B).",
+      "Tree diagrams with 'without replacement' scenarios naturally show conditional probabilities on the later branches."
+    ]
+  }
+}

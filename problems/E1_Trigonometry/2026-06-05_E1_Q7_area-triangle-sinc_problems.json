@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q7",
+  "title": "Area of Triangle using 1/2 ab sin C - Problems",
+  "problems": [
+    {
+      "id": "E1_Q7_F1",
+      "difficulty": "F",
+      "skill_tags": ["area_triangle_sinc_basic"],
+      "problem_text": "A triangle has two sides of lengths 6 cm and 8 cm with an included angle of 30 degrees. Find the area of the triangle.",
+      "answer": "12 sq cm",
+      "solution": "Area = (1/2) * a * b * sin(C) = (1/2) * 6 * 8 * sin(30) = 24 * 0.5 = 12 sq cm."
+    },
+    {
+      "id": "E1_Q7_F2",
+      "difficulty": "F",
+      "skill_tags": ["area_triangle_sinc_basic"],
+      "problem_text": "Calculate the area of a triangle with sides 10 cm and 12 cm and an included angle of 45 degrees. Give your answer correct to 2 decimal places.",
+      "answer": "42.43 sq cm",
+      "solution": "Area = (1/2) * 10 * 12 * sin(45) = 60 * 0.70711 = 42.43 sq cm."
+    },
+    {
+      "id": "E1_Q7_F3",
+      "difficulty": "F",
+      "skill_tags": ["area_triangle_sinc_basic"],
+      "problem_text": "Find the area of a triangle with sides 5 cm and 9 cm and an included angle of 60 degrees.",
+      "answer": "19.49 sq cm",
+      "solution": "Area = (1/2) * 5 * 9 * sin(60) = 22.5 * 0.86603 = 19.49 sq cm."
+    },
+    {
+      "id": "E1_Q7_F4",
+      "difficulty": "F",
+      "skill_tags": ["area_triangle_sinc_basic"],
+      "problem_text": "A triangle has sides of 7 cm and 11 cm with an included angle of 90 degrees. Find its area.",
+      "answer": "38.5 sq cm",
+      "solution": "Area = (1/2) * 7 * 11 * sin(90) = 38.5 * 1 = 38.5 sq cm."
+    },
+    {
+      "id": "E1_Q7_C1",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_sinc"],
+      "problem_text": "A triangle has two sides of lengths 8 cm and 12 cm with an included angle of 50 degrees. Find the area, correct to 2 decimal places.",
+      "answer": "36.77 sq cm",
+      "solution": "Area = (1/2) * 8 * 12 * sin(50) = 48 * 0.76604 = 36.77 sq cm."
+    },
+    {
+      "id": "E1_Q7_C2",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_find_angle"],
+      "problem_text": "A triangle has area 30 sq cm and two sides of lengths 8 cm and 10 cm. Find the included angle between these sides, correct to 1 decimal place.",
+      "answer": "48.6 degrees",
+      "solution": "Area = (1/2) * a * b * sin(C). 30 = (1/2) * 8 * 10 * sin(C) = 40 * sin(C). sin(C) = 30/40 = 0.75. C = sin^-1(0.75) = 48.6 degrees."
+    },
+    {
+      "id": "E1_Q7_C3",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_find_side"],
+      "problem_text": "A triangle has area 25 sq cm, one side of length 5 cm, and an included angle of 30 degrees. Find the length of the other side that forms the angle.",
+      "answer": "20 cm",
+      "solution": "Area = (1/2) * a * b * sin(C). 25 = (1/2) * 5 * b * sin(30) = (1/2) * 5 * b * 0.5 = 1.25b. b = 25/1.25 = 20 cm."
+    },
+    {
+      "id": "E1_Q7_C4",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_sinc"],
+      "problem_text": "Find the area of a triangle with sides 9 cm and 14 cm and an included angle of 65 degrees. Give your answer correct to 2 decimal places.",
+      "answer": "57.10 sq cm",
+      "solution": "Area = (1/2) * 9 * 14 * sin(65) = 63 * 0.90631 = 57.10 sq cm."
+    },
+    {
+      "id": "E1_Q7_C5",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_find_angle"],
+      "problem_text": "A triangle has area 40 sq cm and two sides of lengths 10 cm and 12 cm. Find the possible values of the included angle between these sides, correct to 1 decimal place.",
+      "answer": "41.8 degrees or 138.2 degrees",
+      "solution": "Area = (1/2) * 10 * 12 * sin(C) = 60 * sin(C). 40 = 60 * sin(C). sin(C) = 40/60 = 2/3 = 0.6667. C = sin^-1(0.6667) = 41.8 degrees. Since sin(180 - C) = sin(C), C could also be 180 - 41.8 = 138.2 degrees."
+    },
+    {
+      "id": "E1_Q7_C6",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_sinc"],
+      "problem_text": "Calculate the area of a triangle with sides 6 cm and 10 cm and an included angle of 40 degrees. Give your answer correct to 2 decimal places.",
+      "answer": "19.28 sq cm",
+      "solution": "Area = (1/2) * 6 * 10 * sin(40) = 30 * 0.64279 = 19.28 sq cm."
+    },
+    {
+      "id": "E1_Q7_C7",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_find_side"],
+      "problem_text": "A triangle has area 36 sq cm, one side of length 9 cm, and the included angle between this side and the unknown side is 55 degrees. Find the length of the unknown side, correct to 2 decimal places.",
+      "answer": "9.77 cm",
+      "solution": "Area = (1/2) * a * b * sin(C). 36 = (1/2) * 9 * b * sin(55) = 4.5 * b * 0.81915 = 3.686b. b = 36/3.686 = 9.77 cm."
+    },
+    {
+      "id": "E1_Q7_C8",
+      "difficulty": "C",
+      "skill_tags": ["area_triangle_sinc"],
+      "problem_text": "Find the area of a triangle with sides 15 cm and 20 cm and an included angle of 35 degrees. Give your answer correct to 2 decimal places.",
+      "answer": "86.04 sq cm",
+      "solution": "Area = (1/2) * 15 * 20 * sin(35) = 150 * 0.57358 = 86.04 sq cm."
+    },
+    {
+      "id": "E1_Q7_H1",
+      "difficulty": "H",
+      "skill_tags": ["area_triangle_combined_sine_rule"],
+      "problem_text": "In triangle ABC, side a = 12 cm, side b = 15 cm, and side c = 10 cm. Find the area of the triangle using the formula (1/2)ab sin C. First find angle C using the cosine rule. Give your answer correct to 2 decimal places.",
+      "answer": "59.81 sq cm",
+      "solution": "Cos(C) = (a^2 + b^2 - c^2)/(2ab) = (144 + 225 - 100)/(2*12*15) = 269/360 = 0.74722. C = cos^-1(0.74722) = 41.6 degrees. Area = (1/2)*12*15*sin(41.6) = 90*0.6645 = 59.81 sq cm."
+    },
+    {
+      "id": "E1_Q7_H2",
+      "difficulty": "H",
+      "skill_tags": ["area_triangle_combined_sine_rule"],
+      "problem_text": "In triangle ABC, angle A = 40 degrees, side b = 20 cm, and side c = 25 cm. Find the area of the triangle, correct to 2 decimal places.",
+      "answer": "160.70 sq cm",
+      "solution": "Area = (1/2) * b * c * sin(A) = (1/2) * 20 * 25 * sin(40) = 250 * 0.64279 = 160.70 sq cm."
+    },
+    {
+      "id": "E1_Q7_H3",
+      "difficulty": "H",
+      "skill_tags": ["area_triangle_combined_sine_rule"],
+      "problem_text": "In triangle PQR, side p = 14 cm, side q = 18 cm, and the area is 100 sq cm. Find the included angle R between sides p and q, correct to 1 decimal place.",
+      "answer": "52.6 degrees",
+      "solution": "Area = (1/2) * p * q * sin(R). 100 = (1/2) * 14 * 18 * sin(R) = 126 * sin(R). sin(R) = 100/126 = 0.79365. R = sin^-1(0.79365) = 52.6 degrees."
+    },
+    {
+      "id": "E1_Q7_H4",
+      "difficulty": "H",
+      "skill_tags": ["area_triangle_combined_cosine_rule"],
+      "problem_text": "In triangle ABC, sides a = 13 cm, b = 14 cm, and c = 15 cm. Find the area of the triangle. (Hint: Use cosine rule to find one angle, then use area formula.) Give your answer correct to 2 decimal places.",
+      "answer": "84.00 sq cm",
+      "solution": "Find angle C using cosine rule: cos(C) = (a^2 + b^2 - c^2)/(2ab) = (169 + 196 - 225)/(2*13*14) = 140/364 = 0.38462. C = cos^-1(0.38462) = 67.38 degrees. sin(C) = sin(67.38) = 0.92308. Area = (1/2)*13*14*0.92308 = 91*0.92308 = 84.00 sq cm. (This is a 13-14-15 triangle, area = 84 exactly.)"
+    }
+  ]
+}

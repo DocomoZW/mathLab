@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q1",
+  "title": "Perimeter of 2D Shapes",
+  "syllabus_ref": "IGCSE 0580 D.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Imagine you're building a fence around your garden. The total length of fencing you need is the perimeter \u2014 the distance around the outside of the garden. Every day, architects, engineers, and designers calculate perimeters for everything from picture frames to running tracks.",
+    "prerequisites": [
+      "Understanding of basic shapes (square, rectangle, triangle, circle)",
+      "Addition and multiplication skills",
+      "Knowledge of pi as approximately 3.142"
+    ],
+    "core_explanation": "The **perimeter** is the total distance around the edge of a 2D shape. For polygons, it is simply the sum of all side lengths.\n\n### Perimeter Formulas\n\n| Shape | Formula |\n|-------|---------|\n| Square (side s) | P = 4s |\n| Rectangle (length l, width w) | P = 2(l + w) |\n| Triangle (sides a, b, c) | P = a + b + c |\n| Regular polygon (n sides, side s) | P = n x s |\n| Circle (radius r) | C = 2 x pi x r |\n| Semicircle (radius r) | Arc = pi x r, Total = pi x r + 2r |\n\n### Circumference of a Circle\nThe perimeter of a circle is called its **circumference**. The formula is C = 2 x pi x r, where r is the radius. Alternatively, C = pi x d, where d = 2r is the diameter. Use pi = 3.142 unless the question specifies otherwise.\n\n### Finding Missing Sides\nWhen given the perimeter and some side lengths, subtract the known sides from the total perimeter to find missing ones.\n\n### Word Problems\nAlways identify which sides contribute to the perimeter. For compound shapes, trace the outer boundary \u2014 do not count interior edges.",
+    "worked_example": "Problem: A rectangle has length 12 cm and width 8 cm. Find its perimeter.\n\nStep 1: Write the formula. P = 2(l + w)\n\nStep 2: Substitute. P = 2(12 + 8) = 2(20)\n\nStep 3: Calculate. P = 40 cm\n\nAnswer: The perimeter is 40 cm.\n\nProblem: A circular running track has a diameter of 70 m. Find its circumference (use pi = 22/7).\n\nStep 1: Write the formula. C = pi x d\n\nStep 2: Substitute. C = (22/7) x 70 = 22 x 10\n\nStep 3: Calculate. C = 220 m\n\nAnswer: The circumference is 220 m.",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to include all sides when calculating the perimeter of a polygon.",
+        "correction": "Trace around the shape with your finger, counting each side as you go. Write down every side length before adding."
+      },
+      {
+        "mistake": "Using the diameter instead of radius in C = 2 x pi x r, or vice versa.",
+        "correction": "Remember: C = 2 x pi x r uses the radius. If given the diameter, halve it first: r = d/2."
+      },
+      {
+        "mistake": "Adding interior lines when finding the perimeter of a compound shape.",
+        "correction": "Perimeter is the distance around the OUTSIDE only. Ignore lines inside the shape."
+      }
+    ],
+    "summary": [
+      "Perimeter is the total distance around a 2D shape \u2014 sum all side lengths for polygons.",
+      "Circumference of a circle: C = 2 x pi x r = pi x d.",
+      "For semicircles, add the arc (pi x r) plus the diameter (2r).",
+      "Find missing sides by subtracting known sides from the total perimeter.",
+      "Use pi = 3.142 unless stated otherwise."
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "unit": "F1",
+  "topic": "Q1",
+  "title": "Vector Notation & Operations - Problem Set",
+  "syllabus": "IGCSE O Level Mathematics (0580)",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "F1_Q1_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What does the column vector [3, -2] represent?",
+      "options": ["3 units right, 2 units up", "3 units right, 2 units down", "3 units left, 2 units down", "3 units left, 2 units up"],
+      "answer": 1,
+      "explanation": "The top number is horizontal displacement (positive = right), bottom is vertical (negative = down)."
+    },
+    {
+      "id": "F1_Q1_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "If a = [4, 1] and b = [2, 3], what is a + b?",
+      "options": ["[6, 4]", "[2, -2]", "[6, 3]", "[8, 3]"],
+      "answer": 0,
+      "explanation": "Add corresponding components: 4+2=6 and 1+3=4, so a+b = [6,4]."
+    },
+    {
+      "id": "F1_Q1_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the magnitude of vector [3, 4]?",
+      "options": ["5", "7", "12", "25"],
+      "answer": 0,
+      "explanation": "Magnitude = sqrt(3^2 + 4^2) = sqrt(9+16) = sqrt(25) = 5."
+    },
+    {
+      "id": "F1_Q1_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "If v = [2, -5], what is -3v?",
+      "options": ["[-6, 15]", "[-6, -15]", "[6, -15]", "[-5, 8]"],
+      "answer": 0,
+      "explanation": "Multiply each component by -3: 2*(-3)=-6, (-5)*(-3)=15."
+    },
+    {
+      "id": "F1_Q1_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If a = [3, 1] and b = [-2, 4], what is 2a - 3b?",
+      "options": ["[12, -10]", "[0, 14]", "[12, 14]", "[6, 2]"],
+      "answer": 0,
+      "explanation": "2a = [6,2], 3b = [-6,12], 2a-3b = [6-(-6), 2-12] = [12,-10]."
+    },
+    {
+      "id": "F1_Q1_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the magnitude of vector [-6, 8]?",
+      "options": ["10", "14", "100", "2"],
+      "answer": 0,
+      "explanation": "sqrt((-6)^2 + 8^2) = sqrt(36+64) = sqrt(100) = 10."
+    },
+    {
+      "id": "F1_Q1_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A vector has magnitude 13 and horizontal component 5. What is its vertical component?",
+      "options": ["12", "8", "-12 or 12", "18"],
+      "answer": 2,
+      "explanation": "13^2 = 5^2 + y^2, so y^2 = 169-25 = 144, y = 12 or -12."
+    },
+    {
+      "id": "F1_Q1_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If p = [2, -1] and q = [1, 3], find p - q.",
+      "options": ["[1, -4]", "[3, 2]", "[1, 4]", "[-1, 4]"],
+      "answer": 0,
+      "explanation": "p - q = [2-1, -1-3] = [1, -4]."
+    },
+    {
+      "id": "F1_Q1_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If a = [1, 2], b = [3, -1], and c = [-2, 1], what is a + b - c?",
+      "options": ["[6, 0]", "[2, 2]", "[6, -2]", "[0, 6]"],
+      "answer": 0,
+      "explanation": "a+b = [4,1], then minus c: [4-(-2), 1-1] = [6,0]."
+    },
+    {
+      "id": "F1_Q1_10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Vector u has magnitude 5 and direction angle 53.13 degrees above the horizontal. What is the horizontal component?",
+      "options": ["3", "4", "5", "2.5"],
+      "answer": 0,
+      "explanation": "Horizontal = 5 * cos(53.13) = 5 * 0.6 = 3."
+    },
+    {
+      "id": "F1_Q1_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "If a = [2, 3] and ka = [10, 15], what is k?",
+      "options": ["2", "3", "5", "10"],
+      "answer": 2,
+      "explanation": "k*2=10 and k*3=15, so k=5."
+    },
+    {
+      "id": "F1_Q1_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Find the vector with magnitude 13 that points in the same direction as [5, 12].",
+      "options": ["[5, 12]", "[13, 0]", "[2.6, 6.24]", "[1, 2.4]"],
+      "answer": 0,
+      "explanation": "[5,12] already has magnitude sqrt(25+144)=13, so it is the vector."
+    },
+    {
+      "id": "F1_Q1_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "If u = [1, 2] and v = [3, k], and u and v are perpendicular, what is k?",
+      "options": ["6", "-1.5", "3", "-6"],
+      "answer": 1,
+      "explanation": "u.v = 1*3 + 2*k = 3 + 2k = 0, so k = -1.5."
+    },
+    {
+      "id": "F1_Q1_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A vector has components [-3, 4]. What is a unit vector in the same direction?",
+      "options": ["[-0.6, 0.8]", "[3, -4]", "[-3, 4]", "[-0.75, 1]"],
+      "answer": 0,
+      "explanation": "Magnitude = 5, unit vector = [-3/5, 4/5] = [-0.6, 0.8]."
+    },
+    {
+      "id": "F1_Q1_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What is (a - b) + (b - a)?",
+      "options": ["0", "a + b", "2(a - b)", "a - b"],
+      "answer": 0,
+      "explanation": "(a-b)+(b-a) = a-b+b-a = 0."
+    },
+    {
+      "id": "F1_Q1_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "If a = [0, 5] and b = [12, 0], what is the magnitude of a + b?",
+      "options": ["13", "17", "7", "25"],
+      "answer": 0,
+      "explanation": "a+b = [12,5], magnitude = sqrt(144+25) = sqrt(169) = 13."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q1",
+  "title": "Pythagoras Theorem - Problems",
+  "problems": [
+    {
+      "id": "E1_Q1_F1",
+      "difficulty": "F",
+      "skill_tags": ["pythagoras_basic"],
+      "problem_text": "In a right-angled triangle, the two shorter sides are 3 cm and 4 cm. Find the length of the hypotenuse.",
+      "answer": "5 cm",
+      "solution": "Using Pythagoras theorem: c^2 = a^2 + b^2 = 3^2 + 4^2 = 9 + 16 = 25. So c = sqrt(25) = 5 cm."
+    },
+    {
+      "id": "E1_Q1_F2",
+      "difficulty": "F",
+      "skill_tags": ["pythagoras_basic"],
+      "problem_text": "A right-angled triangle has a hypotenuse of 13 cm and one leg of 5 cm. Find the length of the other leg.",
+      "answer": "12 cm",
+      "solution": "Using Pythagoras theorem: a^2 = c^2 - b^2 = 13^2 - 5^2 = 169 - 25 = 144. So a = sqrt(144) = 12 cm."
+    },
+    {
+      "id": "E1_Q1_F3",
+      "difficulty": "F",
+      "skill_tags": ["pythagoras_basic"],
+      "problem_text": "Find the length of the hypotenuse of a right-angled triangle with legs 6 cm and 8 cm.",
+      "answer": "10 cm",
+      "solution": "c^2 = 6^2 + 8^2 = 36 + 64 = 100. c = sqrt(100) = 10 cm."
+    },
+    {
+      "id": "E1_Q1_F4",
+      "difficulty": "F",
+      "skill_tags": ["pythagorean_triples"],
+      "problem_text": "A right-angled triangle has legs of lengths 9 cm and 12 cm. Determine the length of the hypotenuse.",
+      "answer": "15 cm",
+      "solution": "c^2 = 9^2 + 12^2 = 81 + 144 = 225. c = sqrt(225) = 15 cm. This is a 3-4-5 triple scaled by 3."
+    },
+    {
+      "id": "E1_Q1_C1",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_word_problems"],
+      "problem_text": "A ladder of length 5 m rests against a vertical wall. The foot of the ladder is 1.4 m from the base of the wall. How far up the wall does the ladder reach? Give your answer correct to 1 decimal place.",
+      "answer": "4.8 m",
+      "solution": "Let h be the height up the wall. h^2 = 5^2 - 1.4^2 = 25 - 1.96 = 23.04. h = sqrt(23.04) = 4.8 m."
+    },
+    {
+      "id": "E1_Q1_C2",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_word_problems"],
+      "problem_text": "A rectangular field is 80 m long and 60 m wide. A diagonal path runs from one corner to the opposite corner. Find the length of the path in metres.",
+      "answer": "100 m",
+      "solution": "The diagonal forms the hypotenuse of a right triangle with legs 80 m and 60 m. d^2 = 80^2 + 60^2 = 6400 + 3600 = 10000. d = sqrt(10000) = 100 m."
+    },
+    {
+      "id": "E1_Q1_C3",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_word_problems"],
+      "problem_text": "A ship sails 24 km due east, then 10 km due north. How far is the ship from its starting point?",
+      "answer": "26 km",
+      "solution": "The distance forms the hypotenuse of a right triangle with legs 24 km and 10 km. d^2 = 24^2 + 10^2 = 576 + 100 = 676. d = sqrt(676) = 26 km."
+    },
+    {
+      "id": "E1_Q1_C4",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_3d"],
+      "problem_text": "A rectangular box has dimensions 3 cm by 4 cm by 12 cm. Find the length of the longest diagonal from one corner to the opposite corner inside the box.",
+      "answer": "13 cm",
+      "solution": "The 3D diagonal is given by d^2 = l^2 + w^2 + h^2 = 3^2 + 4^2 + 12^2 = 9 + 16 + 144 = 169. d = sqrt(169) = 13 cm."
+    },
+    {
+      "id": "E1_Q1_C5",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_3d"],
+      "problem_text": "A right square pyramid has a square base of side 8 cm and a slant height (from apex to midpoint of base edge) of 10 cm. Find the height of the pyramid.",
+      "answer": "sqrt(84) = 2*sqrt(21) cm or approximately 9.17 cm",
+      "solution": "Half of the base side is 4 cm. The slant height, half-base, and pyramid height form a right triangle. h^2 = 10^2 - 4^2 = 100 - 16 = 84. h = sqrt(84) = 2*sqrt(21) cm."
+    },
+    {
+      "id": "E1_Q1_C6",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_word_problems"],
+      "problem_text": "Two points A and B are 150 m apart on level ground. Point C is directly above point A at a height of 40 m. Point D is directly above point B at a height of 70 m. Find the straight-line distance between points C and D.",
+      "answer": "sqrt(23400) = 30*sqrt(26) m or approximately 153.0 m",
+      "solution": "The horizontal distance between A and B is 150 m. The vertical difference in height is 70 - 40 = 30 m. The straight-line distance between C and D: d^2 = 150^2 + 30^2 = 22500 + 900 = 23400. d = sqrt(23400) = 30*sqrt(26) m."
+    },
+    {
+      "id": "E1_Q1_C7",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_3d"],
+      "problem_text": "A room is 6 m long, 5 m wide, and 3 m high. Find the length of the longest rod that can fit inside the room.",
+      "answer": "sqrt(70) m or approximately 8.37 m",
+      "solution": "The longest rod fits along the 3D diagonal. d^2 = 6^2 + 5^2 + 3^2 = 36 + 25 + 9 = 70. d = sqrt(70) m."
+    },
+    {
+      "id": "E1_Q1_C8",
+      "difficulty": "C",
+      "skill_tags": ["pythagoras_word_problems"],
+      "problem_text": "A 50-foot wire is attached from the top of a 40-foot vertical pole to a stake in the ground. How far from the base of the pole is the stake?",
+      "answer": "30 feet",
+      "solution": "Using Pythagoras: d^2 = 50^2 - 40^2 = 2500 - 1600 = 900. d = sqrt(900) = 30 feet."
+    },
+    {
+      "id": "E1_Q1_H1",
+      "difficulty": "H",
+      "skill_tags": ["pythagoras_3d", "pythagoras_word_problems"],
+      "problem_text": "A cuboid has sides of lengths 2x cm, 3x cm, and 6x cm. If the longest diagonal of the cuboid is 21 cm, find the value of x.",
+      "answer": "x = 3",
+      "solution": "The 3D diagonal: d^2 = (2x)^2 + (3x)^2 + (6x)^2 = 4x^2 + 9x^2 + 36x^2 = 49x^2. So d = 7x. Given d = 21, so 7x = 21, x = 3."
+    },
+    {
+      "id": "E1_Q1_H2",
+      "difficulty": "H",
+      "skill_tags": ["pythagoras_word_problems", "algebraic_reasoning"],
+      "problem_text": "A right-angled triangle has a hypotenuse of (x + 6) cm and legs of (x + 1) cm and (x + 5) cm. Find the value of x.",
+      "answer": "x = sqrt(10)",
+      "solution": "By Pythagoras: (x + 1)^2 + (x + 5)^2 = (x + 6)^2. Expand: (x^2 + 2x + 1) + (x^2 + 10x + 25) = x^2 + 12x + 36. Simplify: 2x^2 + 12x + 26 = x^2 + 12x + 36. Subtract: x^2 = 10. So x = sqrt(10)."
+    },
+    {
+      "id": "E1_Q1_H3",
+      "difficulty": "H",
+      "skill_tags": ["pythagoras_word_problems", "multi_step"],
+      "problem_text": "From point P, a person walks 12 km due east to point Q, then 5 km due south to point R, and finally 8 km due west to point S. Find the straight-line distance from P to S.",
+      "answer": "sqrt(73) km or approximately 8.54 km",
+      "solution": "Net east displacement: 12 - 8 = 4 km east. Net north-south displacement: 5 km south. Distance PS = sqrt(4^2 + 5^2) = sqrt(16 + 25) = sqrt(73) km."
+    },
+    {
+      "id": "E1_Q1_H4",
+      "difficulty": "H",
+      "skill_tags": ["pythagoras_3d", "algebraic_reasoning"],
+      "problem_text": "A rectangular prism has length 8 cm, width 6 cm, and height h cm. If the space diagonal is double the height, find the value of h.",
+      "answer": "sqrt(100/3) = (10*sqrt(3))/3 cm or approximately 5.77 cm",
+      "solution": "Space diagonal d = sqrt(8^2 + 6^2 + h^2) = sqrt(64 + 36 + h^2) = sqrt(100 + h^2). Given d = 2h, so 2h = sqrt(100 + h^2). Square both sides: 4h^2 = 100 + h^2 => 3h^2 = 100 => h = sqrt(100/3) = 10/sqrt(3) = (10*sqrt(3))/3 cm."
+    }
+  ]
+}

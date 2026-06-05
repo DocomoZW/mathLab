@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q2",
+  "title": "Factors, Multiples & Primes — Problems",
+  "problems": [
+    {
+      "id": "A1_Q2_01",
+      "difficulty": "basic",
+      "question": "List all the factors of $36$.",
+      "answer": "The factors of $36$ are: $1, 2, 3, 4, 6, 9, 12, 18, 36$.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q2_02",
+      "difficulty": "basic",
+      "question": "Is $51$ a prime number? Explain why or why not.",
+      "answer": "No, $51$ is not prime. $51 = 3 \\times 17$, so it has factors $1, 3, 17, 51$ — more than two distinct factors.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q2_03",
+      "difficulty": "intermediate",
+      "question": "Find the Highest Common Factor (HCF) of $24$ and $60$.",
+      "answer": "Prime factorisation: $$24 = 2^3 \\times 3$$ $$60 = 2^2 \\times 3 \\times 5$$ Common primes with smallest powers: $2^2 \\times 3 = 4 \\times 3 = 12$. The HCF is $12$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q2_04",
+      "difficulty": "intermediate",
+      "question": "Find the Lowest Common Multiple (LCM) of $18$ and $24$.",
+      "answer": "Prime factorisation: $$18 = 2 \\times 3^2$$ $$24 = 2^3 \\times 3$$ Each prime to the largest power: $2^3 \\times 3^2 = 8 \\times 9 = 72$. The LCM is $72$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q2_05",
+      "difficulty": "advanced",
+      "question": "Two buses leave a station at the same time. One bus completes a route every $36$ minutes and the other every $48$ minutes. After how many minutes will they next leave together?",
+      "answer": "We need the LCM of $36$ and $48$. $$36 = 2^2 \\times 3^2$$ $$48 = 2^4 \\times 3$$ LCM $= 2^4 \\times 3^2 = 16 \\times 9 = 144$. They will next depart together after $144$ minutes (or $2$ hours $24$ minutes).",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q2_06",
+      "difficulty": "advanced",
+      "question": "Find the smallest positive integer $n$ such that $126 \\times n$ is a perfect square.",
+      "answer": "Prime factorise $126$: $$126 = 2 \\times 63 = 2 \\times 3^2 \\times 7 = 2^1 \\times 3^2 \\times 7^1$$ For a perfect square, all exponents must be even. Currently: $2^1$ (odd), $3^2$ (even), $7^1$ (odd). We need to multiply by $2^1 \\times 7^1 = 14$. So $n = 14$. Check: $126 \\times 14 = 1764 = 42^2$. ✓",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q2_07",
+      "difficulty": "challenge",
+      "question": "Prove that there are infinitely many prime numbers. (Hint: assume there are finitely many primes $p_1, p_2, \\dots, p_n$ and consider $p_1 \\times p_2 \\times \\dots \\times p_n + 1$.)",
+      "answer": "Assume the set of primes is finite: $\\{p_1, p_2, \\dots, p_n\\}$. Consider $N = p_1 \\times p_2 \\times \\dots \\times p_n + 1$. $N$ is greater than any of the primes. When we divide $N$ by any $p_i$, it leaves a remainder of $1$. So $N$ is not divisible by any known prime. Therefore either $N$ itself is prime (contradiction — it's not in our list) or $N$ has a prime factor not in our list (contradiction — our list was supposedly complete). Either way, our assumption was false; there must be infinitely many primes.",
+      "marks": 4
+    },
+    {
+      "id": "A1_Q2_08",
+      "difficulty": "challenge",
+      "question": "Find all positive integers $n$ such that $n^2 - 1$ is prime.",
+      "answer": "$n^2 - 1 = (n-1)(n+1)$. For this to be prime, one factor must be $1$ (since primes have exactly two factors: $1$ and themselves). Case 1: $n-1 = 1 \\Rightarrow n = 2$. Then $n^2 - 1 = 3$, which is prime. Case 2: $n+1 = 1 \\Rightarrow n = 0$, but $n$ must be positive. So the only solution is $n = 2$.",
+      "marks": 3
+    }
+  ]
+}

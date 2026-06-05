@@ -1,0 +1,45 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q1",
+  "title": "Angles: Types and Basic Properties",
+  "syllabus_ref": "IGCSE 0580 C3.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Have you ever noticed how a simple door hinge creates different angles as you open the door? From tightly closed ($0^\\\\circ$) to fully open ($180^\\\\circ$ or more), every position represents a different type of angle. Understanding angles is the foundation of all geometry — and in your IGCSE exam, angle problems appear in almost every paper!",
+    "prerequisites": [
+      "Basic understanding of points, lines, and rays",
+      "Ability to measure with a ruler",
+      "Understanding of the number line and degrees as a unit of measurement"
+    ],
+    "core_explanation": "An **angle** is formed when two rays (or line segments) meet at a common endpoint called the **vertex**. We measure angles in **degrees** ($^\\\\circ$).\n\n### Types of Angles\n\n| Angle Type | Measure | Description |\n|---|---|---|\n| Acute | $0^\\\\circ < \\\\theta < 90^\\\\circ$ | A small, sharp angle |\n| Right angle | $\\\\theta = 90^\\\\circ$ | A quarter-turn, marked with a small square |\n| Obtuse | $90^\\\\circ < \\\\theta < 180^\\\\circ$ | A wide, blunt angle |\n| Straight line | $\\\\theta = 180^\\\\circ$ | A half-turn, forms a straight line |\n| Reflex | $180^\\\\circ < \\\\theta < 360^\\\\circ$ | A large angle, more than a straight line |\n| Full rotation | $\\\\theta = 360^\\\\circ$ | A complete turn |\n\n### Angle Notation\n\nWe name angles using three points: the vertex is always the middle letter. For example, $\\\\angle ABC$ means the angle at vertex $B$, formed by rays $BA$ and $BC$. We can also use a single letter if the vertex is clear (e.g., $\\\\angle A$) or a number (e.g., $\\\\angle 1$).\n\n### Measuring Angles with a Protractor\n\nA protractor measures angles from $0^\\\\circ$ to $180^\\\\circ$. To measure an angle:\n1. Place the centre hole of the protractor on the vertex.\n2. Align the $0^\\\\circ$ line with one ray of the angle.\n3. Read the measurement where the other ray crosses the protractor scale (use the inner scale for angles opening to the right, outer for angles opening to the left).\n\n### Basic Angle Properties\n\nThree fundamental angle facts you must memorise:\n\n**1. Angles at a point sum to $360^\\\\circ$**\nWhen several angles meet at a single point, their measures add up to $360^\\\\circ$.\n$$a + b + c + d = 360^\\\\circ$$\n\n**2. Angles on a straight line sum to $180^\\\\circ$**\nIf two or more angles lie on a straight line, they add up to $180^\\\\circ$.\n$$p + q + r = 180^\\\\circ$$\n\n**3. Vertically opposite angles are equal**\nWhen two straight lines intersect, the angles directly across from each other are equal.\n$$\\\\angle A = \\\\angle C \\\\quad \\\\text{and} \\\\quad \\\\angle B = \\\\angle D$$",
+    "worked_example": "**Problem:** In the diagram below, three angles meet at a point on a straight line. $\\\\angle AOB = 47^\\\\circ$ and $\\\\angle BOC = 83^\\\\circ$. Find $\\\\angle COD$.\n\n(Imagine a straight line A-O-D with ray OB and OC meeting at O between them.)\n\n**Step 1:** Identify what we know.\nPoints A, O, D lie on a straight line, so angles on a straight line sum to $180^\\\\circ$.\n$$\\\\angle AOB + \\\\angle BOC + \\\\angle COD = 180^\\\\circ$$\n\n**Step 2:** Substitute the known values.\n$$47^\\\\circ + 83^\\\\circ + \\\\angle COD = 180^\\\\circ$$\n\n**Step 3:** Simplify.\n$$130^\\\\circ + \\\\angle COD = 180^\\\\circ$$\n\n**Step 4:** Solve for $\\\\angle COD$.\n$$\\\\angle COD = 180^\\\\circ - 130^\\\\circ = 50^\\\\circ$$\n\n**Answer:** $\\\\angle COD = 50^\\\\circ$",
+    "common_mistakes": [
+      {
+        "mistake": "Using the wrong scale on a protractor (reading the outer scale when the inner scale should be used, or vice versa).",
+        "correction": "Always check whether the angle is acute (< 90°) or obtuse (> 90°) first. If you read 120° for an acute-looking angle, you've used the wrong scale — subtract from 180° to get 60°."
+      },
+      {
+        "mistake": "Confusing vertically opposite angles with adjacent angles on a straight line.",
+        "correction": "Vertically opposite angles are across from each other at an intersection (like opposite corners of an X). Adjacent angles on a straight line add to 180° — they are NOT equal."
+      },
+      {
+        "mistake": "Forgetting that 'angles at a point' means all angles around a single point sum to 360°, not 180°.",
+        "correction": "Remember: a full circle is 360°. If the angles fill the space around a point, they sum to 360°. Only if they lie on a straight line do they sum to 180°."
+      },
+      {
+        "mistake": "Labelling angles incorrectly — writing ∠ABC when the vertex should be the middle letter but putting it first or last.",
+        "correction": "The vertex is always the MIDDLE letter. ∠ABC has vertex B. Check: the middle letter of the three is the point where the angle is formed."
+      }
+    ],
+    "summary": [
+      "Angles are measured in degrees (°) and classified as acute (0–90°), right (90°), obtuse (90–180°), straight (180°), or reflex (180–360°).",
+      "Angle notation uses three points with the vertex as the middle letter, e.g., ∠ABC means the angle at point B.",
+      "A protractor is used to measure angles; check whether to use the inner or outer scale.",
+      "Angles at a point always sum to 360°.",
+      "Angles on a straight line always sum to 180°.",
+      "Vertically opposite angles formed by intersecting lines are always equal."
+    ]
+  }
+}

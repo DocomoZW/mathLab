@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q4",
+  "title": "Bearings - Problems",
+  "problems": [
+    {
+      "id": "E1_Q4_F1",
+      "difficulty": "F",
+      "skill_tags": ["bearings_basic"],
+      "problem_text": "A ship sails 5 km due north from port A to point B. What is the bearing of port A from point B?",
+      "answer": "180 degrees",
+      "solution": "If B is due north of A, then A is due south of B, which is a bearing of 180 degrees."
+    },
+    {
+      "id": "E1_Q4_F2",
+      "difficulty": "F",
+      "skill_tags": ["bearings_basic"],
+      "problem_text": "Point P is 10 km due east of point Q. Find the bearing of P from Q.",
+      "answer": "090 degrees",
+      "solution": "Due east corresponds to a bearing of 090 degrees."
+    },
+    {
+      "id": "E1_Q4_F3",
+      "difficulty": "F",
+      "skill_tags": ["bearings_basic"],
+      "problem_text": "A plane flies 8 km due west from airport X. What is the bearing of the plane from the airport?",
+      "answer": "270 degrees",
+      "solution": "Due west corresponds to a bearing of 270 degrees."
+    },
+    {
+      "id": "E1_Q4_F4",
+      "difficulty": "F",
+      "skill_tags": ["bearings_basic"],
+      "problem_text": "The bearing of a ship from a lighthouse is 120 degrees. What is the bearing of the lighthouse from the ship?",
+      "answer": "300 degrees",
+      "solution": "The back bearing is found by adding 180 degrees. 120 + 180 = 300 degrees."
+    },
+    {
+      "id": "E1_Q4_C1",
+      "difficulty": "C",
+      "skill_tags": ["bearings_trigonometry"],
+      "problem_text": "A boat sails from port A on a bearing of 060 degrees for 20 km to point B. How far east of A is point B?",
+      "answer": "17.32 km",
+      "solution": "East component = 20 * sin(60) = 20 * 0.86603 = 17.32 km."
+    },
+    {
+      "id": "E1_Q4_C2",
+      "difficulty": "C",
+      "skill_tags": ["bearings_trigonometry"],
+      "problem_text": "A ship sails 15 km on a bearing of 040 degrees. How far north has it travelled? Give your answer correct to 2 decimal places.",
+      "answer": "11.49 km",
+      "solution": "North component = 15 * cos(40) = 15 * 0.76604 = 11.491 km. Rounded to 2 dp: 11.49 km."
+    },
+    {
+      "id": "E1_Q4_C3",
+      "difficulty": "C",
+      "skill_tags": ["bearings_trigonometry"],
+      "problem_text": "A plane flies 300 km on a bearing of 120 degrees. How far south of its starting point is it? Give your answer correct to 2 decimal places.",
+      "answer": "150.00 km",
+      "solution": "Bearing 120 degrees is 60 degrees east of south. South component = 300 * cos(60) = 300 * 0.5 = 150.00 km."
+    },
+    {
+      "id": "E1_Q4_C4",
+      "difficulty": "C",
+      "skill_tags": ["bearings_distance"],
+      "problem_text": "A ship sails from port P to Q on a bearing of 050 degrees for 30 km, then from Q to R on a bearing of 140 degrees for 40 km. Find the direct distance from P to R, correct to 2 decimal places.",
+      "answer": "50.00 km",
+      "solution": "The angle between the two bearings is 140 - 50 = 90 degrees. Triangle PQR has sides 30 and 40 at a right angle at Q. PR^2 = 30^2 + 40^2 = 900 + 1600 = 2500. PR = sqrt(2500) = 50.00 km."
+    },
+    {
+      "id": "E1_Q4_C5",
+      "difficulty": "C",
+      "skill_tags": ["bearings_distance"],
+      "problem_text": "A walker goes 8 km on a bearing of 030 degrees, then 6 km on a bearing of 120 degrees. Find the direct distance from the starting point, correct to 2 decimal places.",
+      "answer": "10.00 km",
+      "solution": "The difference between bearings is 120 - 30 = 90 degrees. The two legs are perpendicular. d^2 = 8^2 + 6^2 = 64 + 36 = 100. d = sqrt(100) = 10.00 km."
+    },
+    {
+      "id": "E1_Q4_C6",
+      "difficulty": "C",
+      "skill_tags": ["bearings_trigonometry"],
+      "problem_text": "A helicopter flies 50 km on a bearing of 210 degrees. How far west and how far south has it travelled? Give both answers correct to 2 decimal places.",
+      "answer": "West = 25.00 km, South = 43.30 km",
+      "solution": "Bearing 210 is 30 degrees past south. South component = 50 * cos(30) = 50 * 0.86603 = 43.30 km. West component = 50 * sin(30) = 50 * 0.5 = 25.00 km."
+    },
+    {
+      "id": "E1_Q4_C7",
+      "difficulty": "C",
+      "skill_tags": ["bearings_back_bearing"],
+      "problem_text": "The bearing of a boat from a lighthouse is 075 degrees. What is the bearing of the lighthouse from the boat?",
+      "answer": "255 degrees",
+      "solution": "Back bearing = 075 + 180 = 255 degrees."
+    },
+    {
+      "id": "E1_Q4_C8",
+      "difficulty": "C",
+      "skill_tags": ["bearings_trigonometry"],
+      "problem_text": "A ship sails from X to Y, 25 km on a bearing of 025 degrees. Find how far north Y is from X, correct to 2 decimal places.",
+      "answer": "22.66 km",
+      "solution": "North component = 25 * cos(25) = 25 * 0.90631 = 22.658 km. Rounded to 2 dp: 22.66 km."
+    },
+    {
+      "id": "E1_Q4_H1",
+      "difficulty": "H",
+      "skill_tags": ["bearings_distance", "multi_step"],
+      "problem_text": "A boat sails from harbour H to point A on a bearing of 060 degrees for 40 km, then from A to B on a bearing of 150 degrees for 30 km. Find the distance HB and the bearing of B from H.",
+      "answer": "Distance = 50 km, Bearing = 096.87 degrees",
+      "solution": "Angle between bearings = 150 - 60 = 90 degrees. HA = 40, AB = 30, and the angle between them at A is 90 degrees. HB^2 = 40^2 + 30^2 = 2500, HB = 50 km. tan(angle AHB) = 30/40 = 0.75, angle AHB = tan^-1(0.75) = 36.87 degrees. Bearing of B from H = 060 + 36.87 = 096.87 degrees."
+    },
+    {
+      "id": "E1_Q4_H2",
+      "difficulty": "H",
+      "skill_tags": ["bearings_distance", "multi_step"],
+      "problem_text": "A ship sails from port P to Q on a bearing of 045 degrees for 20 km, then from Q to R on a bearing of 135 degrees for 20 km. Find the distance PR and the bearing of R from P.",
+      "answer": "Distance = 28.28 km, Bearing = 090.00 degrees",
+      "solution": "Difference between bearings = 135 - 45 = 90 degrees. Two legs are perpendicular and equal (20 km each). PR^2 = 20^2 + 20^2 = 800. PR = sqrt(800) = 28.28 km. Since triangle PQR is right-angled and isosceles, angle QPR = 45 degrees. Bearing of R from P = 045 + 45 = 090 degrees."
+    },
+    {
+      "id": "E1_Q4_H3",
+      "difficulty": "H",
+      "skill_tags": ["bearings_distance", "cosine_rule"],
+      "problem_text": "A ship sails from X to Y on a bearing of 030 degrees for 50 km, then from Y to Z on a bearing of 120 degrees for 40 km. Find the distance XZ, correct to 2 decimal places.",
+      "answer": "64.03 km",
+      "solution": "At Y, the direction back to X has bearing 030 + 180 = 210 degrees. The direction from Y to Z has bearing 120 degrees. The angle between YX and YZ = 210 - 120 = 90 degrees. So angle XYZ = 90 degrees. Using cosine rule: XZ^2 = 50^2 + 40^2 - 2*50*40*cos(90) = 2500 + 1600 - 0 = 4100. XZ = sqrt(4100) = 64.03 km."
+    },
+    {
+      "id": "E1_Q4_H4",
+      "difficulty": "H",
+      "skill_tags": ["bearings_distance", "multi_step"],
+      "problem_text": "A ship sails 15 km from port A on a bearing of 060 degrees to point B, then 25 km on a bearing of 150 degrees to point C. Calculate the distance AC and the bearing of C from A, both correct to 2 decimal places.",
+      "answer": "Distance = 29.15 km, Bearing = 119.05 degrees",
+      "solution": "At B, reverse bearing to A is 060 + 180 = 240. Forward bearing to C is 150. Angle between BA and BC = 240 - 150 = 90 degrees. So angle ABC is 90 degrees. AC^2 = 15^2 + 25^2 = 225 + 625 = 850, AC = sqrt(850) = 29.15 km. Using coordinates: A = (0,0). B = (15*sin60, 15*cos60) = (12.99, 7.50). From B: east = 25*sin150 = 12.50, north = 25*cos150 = -21.65. C = (12.99+12.50, 7.50-21.65) = (25.49, -14.15). Bearing of C from A: arctan(25.49/14.15) = 60.95 degrees from north towards east, but since C is south of A: bearing = 180 - 60.95 = 119.05 degrees."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q2",
+  "title": "Trig Ratios SOH CAH TOA",
+  "syllabus_ref": "IGCSE 0580 E5.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "How does a pilot know how far to descend before landing, or how does a surveyor measure the height of a mountain without climbing it? The answer lies in the three trigonometric ratios: sine, cosine, and tangent. These ratios unlock the relationship between angles and side lengths in right-angled triangles, allowing us to measure the unmeasurable. The mnemonic SOH CAH TOA is your key to remembering them.",
+    "prerequisites": [
+      "Identifying the hypotenuse, opposite, and adjacent sides in a right-angled triangle relative to a given angle",
+      "Basic understanding of angles and how they are measured in degrees",
+      "Using a scientific calculator to find sin, cos, tan of an angle and their inverses (sin^-1, cos^-1, tan^-1)",
+      "Rounding decimal answers to a specified number of decimal places or significant figures"
+    ],
+    "core_explanation": "## Trigonometric Ratios\n\nIn any right-angled triangle, the ratios between side lengths depend only on the size of the acute angles, not on the size of the triangle itself. These ratios are called **sine**, **cosine**, and **tangent**.\n\n### Labelling the Triangle\n\nFor a given angle theta (written as 'theta'):\n- **H** = **Hypotenuse** — longest side, opposite the right angle (always the same)\n- **O** = **Opposite** — the side directly across from angle theta\n- **A** = **Adjacent** — the side next to angle theta (but not the hypotenuse)\n\n### SOH CAH TOA\n\n| Mnemonic | Ratio | Formula |\n|----------|-------|---------|\n| **S**OH | sin(theta) = O / H | sin(theta) = Opposite / Hypotenuse |\n| **C**AH | cos(theta) = A / H | cos(theta) = Adjacent / Hypotenuse |\n| **T**OA | tan(theta) = O / A | tan(theta) = Opposite / Adjacent |\n\n### Using the Ratios\n\nThere are two types of problems:\n\n**Type 1: Finding a side length** — you know an angle and one side, need another side.\n- Identify which sides are involved (O, A, or H)\n- Choose the correct ratio (SOH, CAH, or TOA)\n- Substitute and solve\n\n**Type 2: Finding an angle** — you know two sides, need an angle.\n- Identify which sides you know relative to the unknown angle\n- Choose the correct ratio\n- Use the inverse trigonometric function (sin^-1, cos^-1, tan^-1) on your calculator\n\n### Exact Trigonometric Values\n\nYou should memorise these for your IGCSE exam:\n\n| Angle | sin | cos | tan |\n|-------|-----|-----|-----|\n| 0 degrees | 0 | 1 | 0 |\n| 30 degrees | 1/2 | sqrt(3)/2 | 1/sqrt(3) |\n| 45 degrees | sqrt(2)/2 | sqrt(2)/2 | 1 |\n| 60 degrees | sqrt(3)/2 | 1/2 | sqrt(3) |\n| 90 degrees | 1 | 0 | undefined |",
+    "worked_example": "**Problem:** In a right-angled triangle, the angle is 30 degrees and the hypotenuse is 10 cm. Find the length of the side opposite the 30-degree angle.\n\n**Step 1:** Label the triangle relative to the 30-degree angle.\n- Opposite = ? (what we want to find)\n- Hypotenuse = 10 cm (given)\n- The sides involved are Opposite and Hypotenuse\n\n**Step 2:** Choose the correct ratio.\n- SOH uses O and H: sin(theta) = Opposite / Hypotenuse\n\n**Step 3:** Substitute the known values.\n- sin(30 degrees) = Opposite / 10\n\n**Step 4:** Use known value or calculator.\n- sin(30 degrees) = 0.5\n- 0.5 = Opposite / 10\n\n**Step 5:** Solve for Opposite.\n- Opposite = 0.5 x 10\n- Opposite = 5 cm\n\n**Answer:** The side opposite the 30-degree angle is 5 cm.\n\n**Check:** Using exact values, sin(30) = 1/2, so 1/2 = O/10, thus O = 5. Correct!",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing which side is opposite vs adjacent when the angle changes",
+        "correction": "The opposite and adjacent sides RELATIVE to the chosen angle. Always label your triangle for the specific angle you are using. If you change the reference angle, the opposite and adjacent swap."
+      },
+      {
+        "mistake": "Using sin, cos, or tan when the calculator mode is in radians instead of degrees",
+        "correction": "Always check your calculator is set to DEGREES mode (usually shown as 'D' or 'DEG' on screen). In radian mode, sin(30) = -0.988 instead of 0.5."
+      },
+      {
+        "mistake": "Forgetting to use inverse trig functions (sin^-1, cos^-1, tan^-1) when finding an angle",
+        "correction": "To find an angle from a ratio, use the inverse function. For example, if sin(theta) = 0.5, then theta = sin^-1(0.5) = 30 degrees, NOT sin(0.5)."
+      }
+    ],
+    "summary": [
+      "SOH CAH TOA is the mnemonic: sin = O/H, cos = A/H, tan = O/A for a right-angled triangle.",
+      "Always label the triangle sides (O, A, H) relative to the angle you are working with before choosing a ratio.",
+      "To find a missing side: pick the correct ratio, substitute known values, and solve algebraically.",
+      "To find a missing angle: use the inverse trig functions (sin^-1, cos^-1, tan^-1) on your calculator in degree mode.",
+      "Memorise the exact values for sin, cos, and tan of 0, 30, 45, 60, and 90 degrees for exam efficiency."
+    ]
+  }
+}

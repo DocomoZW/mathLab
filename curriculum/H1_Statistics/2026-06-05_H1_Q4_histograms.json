@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q4",
+  "title": "Histograms",
+  "syllabus_ref": "IGCSE 0580 H9.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A school measures the heights of all 200 students and groups them: 140–150 cm (34 students), 150–155 cm (62 students), 155–165 cm (80 students), 165–180 cm (24 students). Notice something? The intervals have different widths (10, 5, 10, 15). If you draw a bar chart with heights as frequencies, the 150–155 group looks shorter than the 155–165 group — but that's because it's a narrower range, not because fewer people are in that height zone per cm. Histograms fix this distortion.",
+    "prerequisites": [
+      "Understanding of grouped frequency tables (H1_Q2)",
+      "Concept of class intervals and class width",
+      "Bar charts (H1_Q3) — knowing how histograms differ",
+      "Basic arithmetic (division, multiplication)"
+    ],
+    "core_explanation": "A histogram is a graphical representation of a grouped frequency distribution for **continuous** data. It shows the distribution of data over continuous intervals.\n\n**Histograms vs Bar Charts — Key Differences**\n\n| Feature        | Bar Chart                          | Histogram                            |\n|----------------|------------------------------------|--------------------------------------|\n| Data type      | Categorical / Discrete             | Continuous                           |\n| Bar spacing    | Gaps between bars                  | No gaps between bars                 |\n| Bar width      | All equal (fixed)                  | Varies if class intervals differ     |\n| Vertical axis  | Frequency                          | Frequency density (usually)          |\n| Bar area       | Not meaningful                     | Proportional to frequency             |\n\n**Frequency Density**\nWhen class intervals have **unequal widths**, you cannot use frequency on the y-axis — wider intervals would artificially look more important. Instead, plot **frequency density**:\n\n$$\\text{Frequency Density} = \\frac{\\text{Frequency}}{\\text{Class Width}}$$\n\nThis ensures the **area of each bar** is proportional to the frequency.\n\n$$\\text{Area of bar} = \\text{Frequency Density} \\times \\text{Class Width} = \\text{Frequency}$$\n\n**Drawing a Histogram**\n1. Calculate class width for each interval (upper − lower boundary)\n2. Calculate frequency density for each interval\n3. Draw continuous x-axis with the data scale (no gaps between bars)\n4. Draw y-axis for frequency density\n5. Draw bars with heights = frequency density, widths = class width\n\n**Interpreting a Histogram**\n- The **area** of each bar tells you the frequency (not the height)\n- Taller bars indicate higher density (more data per unit), not necessarily more data overall\n- To find frequency from a histogram: Frequency = Frequency Density × Class Width",
+    "worked_example": "The table shows the distribution of journey times (in minutes) for 200 commuters:\n\n| Time (minutes) | Frequency | Class Width | Frequency Density |\n|----------------|-----------|-------------|-------------------|\n| 0 ≤ t < 10     | 20        | 10          | 20 ÷ 10 = 2.0     |\n| 10 ≤ t < 20    | 60        | 10          | 60 ÷ 10 = 6.0     |\n| 20 ≤ t < 30    | 80        | 10          | 80 ÷ 10 = 8.0     |\n| 30 ≤ t < 40    | 30        | 10          | 30 ÷ 10 = 3.0     |\n| 40 ≤ t < 60    | 10        | 20          | 10 ÷ 20 = 0.5     |\n\n**Step 1 — Notice the unequal interval**\nThe last interval is 40–60 (width 20), double the others. If we plotted frequency (10) directly, it would look like a small bar — but the actual density is even lower: only 0.5 people per minute.\n\n**Step 2 — Draw the histogram**\n- x-axis: Time (minutes), continuous scale 0 to 60\n- y-axis: Frequency density, scale 0 to 10\n- Draw 5 bars with no gaps:\n  - 0–10: height 2.0, width 10\n  - 10–20: height 6.0, width 10\n  - 20–30: height 8.0, width 10\n  - 30–40: height 3.0, width 10\n  - 40–60: height 0.5, width 20\n\n**Step 3 — Verify areas**\n- Area of 0–10 bar = 2.0 × 10 = 20 ✓\n- Area of 40–60 bar = 0.5 × 20 = 10 ✓\n\n**Step 4 — Interpretation**\n- Most journeys are 20–30 minutes (highest frequency density of 8.0)\n- The 40–60 interval has the longest range but the lowest density — very few long journeys\n- Total area = 20 + 60 + 80 + 30 + 10 = 200 ✓",
+    "common_mistakes": [
+      {
+        "mistake": "Putting 'Frequency' on the y-axis instead of 'Frequency Density' when intervals are unequal — this makes the histogram misleading because wider intervals appear more significant.",
+        "correction": "Always calculate and plot frequency density = frequency ÷ class width when class widths vary. The area, not the height, represents the frequency."
+      },
+      {
+        "mistake": "Leaving gaps between bars in a histogram as if it were a bar chart — this incorrectly implies the data is categorical or discrete.",
+        "correction": "Histograms have no gaps between bars because the data is continuous — the next interval starts exactly where the previous one ends."
+      },
+      {
+        "mistake": "Confusing class width with the difference between the recorded values rather than the boundaries (e.g., for '10–20', assuming width = 10 when boundaries are 9.5–20.5 → width = 11).",
+        "correction": "For continuous data, class boundaries may differ from the stated limits. Be precise: if the interval is 10 ≤ t < 20, class width = 20 − 10 = 10. If the interval is written as 10–20 without clarification, boundaries are typically 9.5–20.5 for continuous data."
+      },
+      {
+        "mistake": "Thinking the tallest bar in a histogram always represents the most data — but if intervals are unequal, a tall narrow bar may contain fewer items than a short wide bar.",
+        "correction": "Compare areas (height × width), not heights alone. The frequency = area of the bar. A short wide bar can represent more data than a tall narrow bar."
+      }
+    ],
+    "summary": [
+      "A histogram displays continuous grouped data with no gaps between bars.",
+      "Unlike bar charts, bar width can vary when class intervals are unequal — the area represents the frequency.",
+      "Frequency density = frequency ÷ class width; this is the standard y-axis variable for histograms with unequal intervals.",
+      "Area of a bar = frequency density × class width = frequency of that interval.",
+      "Always verify that total area equals total number of data points.",
+      "The tallest bar has the highest density, but not necessarily the highest frequency — check the area."
+    ]
+  }
+}

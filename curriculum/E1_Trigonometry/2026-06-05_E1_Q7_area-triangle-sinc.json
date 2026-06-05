@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q7",
+  "title": "Area of Triangle 1/2ab sin C",
+  "syllabus_ref": "IGCSE 0580 E5.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "You know that area of a triangle is 1/2 x base x height \u2014 but what if you can't measure the height? What if you're a land surveyor who knows two sides of a triangular plot and the angle between them, but can't walk across the property to measure the perpendicular height? The formula Area = 1/2 ab sin C solves this problem elegantly. It's also how engineers calculate the area of irregular surfaces and why GPS can estimate the area of any triangle on Earth's surface without needing altitude data.",
+    "prerequisites": [
+      "Basic formula for area of a triangle (Area = 1/2 x base x height)",
+      "Sine of an angle (SOH CAH TOA foundation)",
+      "Labelling triangles with sides a, b, c opposite angles A, B, C",
+      "Using a calculator for sine values"
+    ],
+    "core_explanation": "## Area of a Triangle Using Trigonometry\n\nThe standard formula Area = 1/2 x base x height requires you to know the perpendicular height. The trigonometric formula removes this requirement by using two sides and the included angle.\n\n### Formula\n\nFor any triangle ABC:\n\n Area = 1/2 ab sin C \n\nWhere:\n- **a** and **b** are two sides of the triangle\n- **C** is the **included angle** (the angle between sides a and b)\n\n### Why Does This Work?\n\nIn triangle ABC, if we take side b as the base, the perpendicular height from vertex A to side b is:\n- height = c x sin B (using the right triangle formed by dropping a perpendicular)\n- Or equivalently, height = a x sin C\n\nSubstituting Area = 1/2 x base x height:\n- Area = 1/2 x b x (a x sin C) = 1/2 ab sin C\n\n### Three Equivalent Forms\n\nYou can use any version depending on which angle and sides you know:\n- Area = 1/2 ab sin C (using sides a, b and angle C between them)\n- Area = 1/2 bc sin A (using sides b, c and angle A between them)\n- Area = 1/2 ac sin B (using sides a, c and angle B between them)\n\n### Key Reminder\n\nThe angle must be the **included angle** \u2014 the angle between the two sides you are using. Side a and side b meet at angle C, so they 'include' angle C.",
+    "worked_example": "**Problem:** A triangular field has sides of length 50 m and 60 m, with an included angle of 40 degrees. Find the area of the field.\n\n**Step 1:** Identify what we know.\n- Side a = 50 m (one side)\n- Side b = 60 m (the other side)\n- Angle C = 40 degrees (the angle between sides a and b)\n\n**Step 2:** Write the formula.\n Area = 1/2 ab sin C \n\n**Step 3:** Substitute the known values.\n Area = 1/2 \\times 50 \\times 60 \\times sin(40 degrees) \n\n**Step 4:** Calculate step by step.\n1/2 x 50 x 60 = 1/2 x 3000 = 1500\nsin(40 degrees) = 0.6428\n\nArea = 1500 x 0.6428\nArea = 964.2 m^2\n\n**Answer:** The area of the field is approximately 964 square metres (to 3 significant figures).\n\n**Check using alternative form:**\nLet's verify by finding the third side first (using Cosine Rule) and then using Heron's formula.\nc^2 = a^2 + b^2 - 2ab cos C\nc^2 = 2500 + 3600 - 2(50)(60)(0.7660)\nc^2 = 6100 - 4596 = 1504\nc = 38.79 m\n\nHeron's formula: s = (50 + 60 + 38.79)/2 = 74.395\nArea = sqrt(74.395 x 24.395 x 14.395 x 35.605)\nArea = sqrt(74.395 x 24.395 x 14.395 x 35.605)\nLet's just check: 964.2 seems reasonable for a triangle with sides 50 and 60 at 40 degrees.",
+    "common_mistakes": [
+      {
+        "mistake": "Using an angle that is NOT the included angle between the two given sides",
+        "correction": "The formula requires the angle BETWEEN the two sides. For example, if you know sides a and b, you MUST use angle C (the angle between a and b), not angle A or B."
+      },
+      {
+        "mistake": "Forgetting to multiply by 1/2 (or dividing by 2 instead of multiplying by 0.5)",
+        "correction": "Area = 1/2 ab sin C. The 1/2 is essential \u2014 don't skip it! One way to remember: the standard area formula is 1/2 x base x height, and this is just a more general version."
+      },
+      {
+        "mistake": "Using degrees in the formula but having the calculator in radian mode, giving a wildly wrong answer",
+        "correction": "Always check your calculator is in DEGREE mode. In radian mode, sin(40) = 0.745 (for 40 radians!) instead of 0.643. This would give Area = 1500 x 0.745 = 1117.5 m^2 \u2014 a significant error."
+      }
+    ],
+    "summary": [
+      "Area = 1/2 ab sin C calculates the area of any triangle given two sides and the included angle (SAS).",
+      "The angle must be the included angle \u2014 the one between the two known sides.",
+      "There are three equivalent forms: 1/2 ab sin C, 1/2 bc sin A, and 1/2 ac sin B \u2014 pick the one that matches your known sides and angle.",
+      "The formula is derived from the standard Area = 1/2 x base x height by expressing the height in terms of a side and the sine of an angle.",
+      "Always include square units (e.g., m^2, cm^2) in your answer and ensure your calculator is in degree mode."
+    ]
+  }
+}

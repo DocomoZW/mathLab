@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q2",
+  "title": "Parallel Lines — Problems",
+  "problems": [
+    {
+      "id": "C1_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": ["corresponding_angles"],
+      "problem_text": "Two parallel lines are cut by a transversal. A corresponding pair of angles measures $(3x)^\\\\circ$ and $75^\\\\circ$. Find $x$.",
+      "answer": "$x = 25$",
+      "solution": "Corresponding angles are equal. Therefore $3x = 75$, so $x = 25$."
+    },
+    {
+      "id": "C1_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": ["alternate_angles"],
+      "problem_text": "Two parallel lines are cut by a transversal. An alternate angle to a $62^\\\\circ$ angle is $y^\\\\circ$. Find $y$.",
+      "answer": "$y = 62^\\\\circ$",
+      "solution": "Alternate angles (Z-angles) are equal when lines are parallel. Therefore $y = 62^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": ["co_interior_angles"],
+      "problem_text": "Two parallel lines are cut by a transversal. A pair of co-interior angles are $(x)^\\\\circ$ and $110^\\\\circ$. Find $x$.",
+      "answer": "$x = 70^\\\\circ$",
+      "solution": "Co-interior (allied) angles sum to $180^\\\\circ$. Therefore $x + 110 = 180$, so $x = 70^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": ["corresponding_angles"],
+      "problem_text": "In the diagram, two parallel lines are cut by a transversal. One corresponding angle is $118^\\\\circ$. What is the size of its corresponding partner?",
+      "answer": "$118^\\\\circ$",
+      "solution": "Corresponding angles (F-angles) are equal when lines are parallel. Therefore the corresponding partner is also $118^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": ["alternate_angles", "corresponding_angles"],
+      "problem_text": "Two parallel lines are cut by a transversal. An angle is marked $47^\\\\circ$. Find the size of the angle that is both corresponding to it and alternate to a different angle. Explain your reasoning.",
+      "answer": "$47^\\\\circ$",
+      "solution": "If one angle is $47^\\\\circ$, then its corresponding angle (F-angle) on the other parallel line is also $47^\\\\circ$. Similarly, the alternate angle (Z-angle) to the original angle is also $47^\\\\circ$. Since all these pairs are equal when lines are parallel, the corresponding-and-alternate angle also measures $47^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": ["co_interior_angles", "algebra"],
+      "problem_text": "Two parallel lines are cut by a transversal. A co-interior pair is $(4x - 10)^\\\\circ$ and $(2x + 40)^\\\\circ$. Find $x$ and both angles.",
+      "answer": "$x = 25$, angles are $90^\\\\circ$ and $90^\\\\circ$",
+      "solution": "Co-interior angles sum to $180^\\\\circ$. So $(4x - 10) + (2x + 40) = 180$. Simplifying: $6x + 30 = 180$, $6x = 150$, $x = 25$. First angle: $4(25) - 10 = 100 - 10 = 90^\\\\circ$. Second angle: $2(25) + 40 = 50 + 40 = 90^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": ["alternate_angles", "corresponding_angles", "straight_line"],
+      "problem_text": "$AB \\\\parallel CD$. A transversal intersects them. $\\\\angle 1 = 53^\\\\circ$ and is alternate to $\\\\angle 2$. $\\\\angle 3$ is corresponding to $\\\\angle 1$. Find $\\\\angle 2$, $\\\\angle 3$, and $\\\\angle 4$ where $\\\\angle 4$ lies on a straight line with $\\\\angle 2$.",
+      "answer": "$\\\\angle 2 = 53^\\\\circ$, $\\\\angle 3 = 53^\\\\circ$, $\\\\angle 4 = 127^\\\\circ$",
+      "solution": "$\\\\angle 2$ is alternate to $\\\\angle 1$, so $\\\\angle 2 = 53^\\\\circ$. $\\\\angle 3$ is corresponding to $\\\\angle 1$, so $\\\\angle 3 = 53^\\\\circ$. $\\\\angle 4$ lies on a straight line with $\\\\angle 2$, so $\\\\angle 4 = 180^\\\\circ - 53^\\\\circ = 127^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": ["parallel_lines", "mixed"],
+      "problem_text": "Two parallel lines are cut by a transversal. One angle is $5x^\\\\circ$ and its corresponding angle is $(x + 48)^\\\\circ$. Find $x$ and the angle measure.",
+      "answer": "$x = 12$, angle $= 60^\\\\circ$",
+      "solution": "Corresponding angles are equal, so $5x = x + 48$. Solving: $4x = 48$, $x = 12$. The angle is $5(12) = 60^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": ["parallel_lines", "algebra", "multi_step"],
+      "problem_text": "$AB \\\\parallel CD$. A transversal $EF$ cuts them. On one side of $EF$, the co-interior angles are $(7x - 15)^\\\\circ$ and $(3x + 25)^\\\\circ$. Find $x$ and both angles.",
+      "answer": "$x = 17$, angles are $104^\\\\circ$ and $76^\\\\circ$",
+      "solution": "Co-interior angles sum to $180^\\\\circ$. So $(7x - 15) + (3x + 25) = 180$. Simplifying: $10x + 10 = 180$, so $10x = 170$, $x = 17$. First angle: $7(17) - 15 = 119 - 15 = 104^\\\\circ$. Second angle: $3(17) + 25 = 51 + 25 = 76^\\\\circ$. Check: $104 + 76 = 180 \\\\checkmark$."
+    },
+    {
+      "id": "C1_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": ["parallel_lines", "multiple_transversals"],
+      "problem_text": "$AB \\\\parallel CD$. Two transversals intersect them. One transversal creates angles of $2x^\\\\circ$ and $(x + 36)^\\\\circ$ as corresponding angles. The other transversal creates angles of $y^\\\\circ$ and $68^\\\\circ$ as alternate angles. Find $x$ and $y$.",
+      "answer": "$x = 36$, $y = 68$",
+      "solution": "From the first transversal: corresponding angles are equal, so $2x = x + 36$, giving $x = 36$. From the second transversal: alternate angles are equal, so $y = 68$."
+    },
+    {
+      "id": "C1_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": ["parallel_lines", "angle_chase", "triangle"],
+      "problem_text": "$AB \\\\parallel CD$. A transversal meets them at $P$ on $AB$ and $Q$ on $CD$. $\\\\angle APQ = 4x^\\\\circ$ and $\\\\angle PQC = 6x^\\\\circ$. Given that $\\\\angle APQ$ and $\\\\angle PQC$ are co-interior, find $x$. Then find $\\\\angle PQD$ if $Q$, $C$, $D$ are collinear in that order.",
+      "answer": "$x = 18$, $\\\\angle PQD = 72^\\\\circ$",
+      "solution": "Co-interior angles sum to $180^\\\\circ$, so $4x + 6x = 180$, $10x = 180$, $x = 18$. $\\\\angle PQC = 6(18) = 108^\\\\circ$. Since $\\\\angle PQC$ and $\\\\angle PQD$ lie on a straight line, $\\\\angle PQD = 180^\\\\circ - 108^\\\\circ = 72^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": ["parallel_lines", "algebraic_angles", "system"],
+      "problem_text": "$AB \\\\parallel CD$. A transversal creates an alternate angle pair $(3x - y)^\\\\circ$ and $(x + y)^\\\\circ$, and a corresponding pair $(2x + y)^\\\\circ$ and $80^\\\\circ$. Find $x$ and $y$.",
+      "answer": "$x = 30$, $y = 20$",
+      "solution": "Alternate angles are equal: $3x - y = x + y$, so $2x = 2y$, $x = y$. Corresponding angles are equal: $2x + y = 80$. Substituting $x = y$: $2x + x = 80$, $3x = 80$, $x = \\\\frac{80}{3} \\\\approx 26.67$, $y = 26.67$. Then check alternate: $3(26.67)-26.67 = 53.33$ and $26.67+26.67=53.33 \\\\checkmark$."
+    },
+    {
+      "id": "C1_Q2_X1",
+      "difficulty": "X",
+      "skill_tags": ["parallel_lines", "proof"],
+      "problem_text": "Prove that if a transversal cuts two lines such that co-interior angles are supplementary, then the lines are parallel.",
+      "answer": "Proof using contradiction or corresponding angles",
+      "solution": "Let lines $L_1$ and $L_2$ be cut by transversal $T$, with co-interior angles $a$ and $b$ on the same side summing to $180^\\\\circ$. Suppose $L_1$ is not parallel to $L_2$. Then they meet at some point, forming a triangle with $a$ and $b$ as two angles and the third angle at the intersection. The sum of the three angles of the triangle would be $180^\\\\circ$, so the third angle would be $0^\\\\circ$, which is impossible unless $L_1$ and $L_2$ are parallel. Therefore the lines must be parallel."
+    },
+    {
+      "id": "C1_Q2_X2",
+      "difficulty": "X",
+      "skill_tags": ["parallel_lines", "chase", "multi_step"],
+      "problem_text": "$AB \\\\parallel CD \\\\parallel EF$. A transversal $GH$ intersects $AB$ at $P$, $CD$ at $Q$, and $EF$ at $R$. $\\\\angle APG = 48^\\\\circ$. Find $\\\\angle DQR$, $\\\\angle FRQ$, and $\\\\angle PQD$. Give all angle reasons.",
+      "answer": "$\\\\angle DQR = 48^\\\\circ$, $\\\\angle FRQ = 48^\\\\circ$, $\\\\angle PQD = 132^\\\\circ$",
+      "solution": "$\\\\angle DQR$ is alternate to $\\\\angle APG$ (since $AB \\\\parallel CD$), so $\\\\angle DQR = 48^\\\\circ$. $\\\\angle FRQ$ is corresponding to $\\\\angle APG$ (since $AB \\\\parallel EF$), so $\\\\angle FRQ = 48^\\\\circ$. $\\\\angle PQD$ and $\\\\angle DQR$ are on a straight line $PQR$, so $\\\\angle PQD = 180^\\\\circ - 48^\\\\circ = 132^\\\\circ$."
+    },
+    {
+      "id": "C1_Q2_X3",
+      "difficulty": "X",
+      "skill_tags": ["parallel_lines", "angle_sum", "composite"],
+      "problem_text": "In a diagram, three parallel lines are cut by two transversals. If one of the angles formed is $x^\\\\circ$ and another is $(180 - x)^\\\\circ$, and they are co-interior on the same transversal, prove that $x = 90$.",
+      "answer": "$x = 90$",
+      "solution": "Co-interior angles are supplementary, so $x + (180 - x) = 180$, which is always true. This does not force $x = 90$ alone. Actually, if they are between the same two parallels on the same transversal and labeled differently (e.g., one is alternate to another angle that is corresponding to the second), we need additional conditions. If the angles are equal (alternate), then $x = 180 - x$, giving $2x = 180$, $x = 90$."
+    },
+    {
+      "id": "C1_Q2_X4",
+      "difficulty": "X",
+      "skill_tags": ["parallel_lines", "angle_chase", "proof"],
+      "problem_text": "Prove that the sum of angles in any triangle is $180^\\\\circ$ using the properties of parallel lines.",
+      "answer": "Proof using parallel line construction",
+      "solution": "Consider $\\\\triangle ABC$. Draw a line through $A$ parallel to $BC$. At vertex $A$, three angles are formed: $\\\\angle A$ (the triangle angle), and two angles that are alternate to $\\\\angle B$ and $\\\\angle C$ respectively. Since the line through $A$ is straight, the sum of these three angles is $180^\\\\circ$. Therefore $\\\\angle A + \\\\angle B + \\\\angle C = 180^\\\\circ$."
+    }
+  ]
+}

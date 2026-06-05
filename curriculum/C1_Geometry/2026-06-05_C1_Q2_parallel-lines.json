@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q2",
+  "title": "Parallel Lines and Transversals",
+  "syllabus_ref": "IGCSE 0580 C3.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "When you look at a railway track stretching into the distance, the two steel rails never meet — they are a real-world example of parallel lines. Now imagine a train crossing those tracks at a diagonal: the railway crossing creates a pattern of angles that mathematicians have studied for centuries. Once you decode this pattern, you can find missing angles without measuring anything!",
+    "prerequisites": [
+      "C1_Q1: Types of angles and basic angle properties",
+      "Angles on a straight line sum to 180°",
+      "Vertically opposite angles are equal",
+      "Understanding of the terms 'alternate', 'corresponding', and 'interior'"
+    ],
+    "core_explanation": "**Parallel lines** are lines in the same plane that never meet. We denote them with the symbol $\\\\parallel$. A **transversal** is a line that crosses two or more parallel lines.\n\nWhen a transversal cuts two parallel lines, it creates eight angles at the two intersection points. These angles have special relationships:\n\n### 1. Corresponding Angles (F-pattern)\nCorresponding angles are in the same relative position at each intersection. They form an 'F' shape (possibly rotated or reflected).\n- They are **equal**.\n$$\\\\text{If } AB \\\\parallel CD, \\\\text{ then } \\\\angle 1 = \\\\angle 5, \\\\angle 2 = \\\\angle 6, \\\\angle 3 = \\\\angle 7, \\\\angle 4 = \\\\angle 8$$\n\n### 2. Alternate Angles (Z-pattern)\nAlternate angles are inside the parallel lines but on opposite sides of the transversal. They form a 'Z' shape (or a backwards 'Z').\n- They are **equal**.\n$$\\\\text{If } AB \\\\parallel CD, \\\\text{ then } \\\\angle 3 = \\\\angle 6 \\\\text{ and } \\\\angle 4 = \\\\angle 5$$\n\n### 3. Co-interior (Allied) Angles (C-pattern)\nCo-interior angles are inside the parallel lines and on the same side of the transversal. They form a 'C' shape.\n- They sum to $180^\\\\circ$ (they are **supplementary**).\n$$\\\\text{If } AB \\\\parallel CD, \\\\text{ then } \\\\angle 3 + \\\\angle 5 = 180^\\\\circ \\\\text{ and } \\\\angle 4 + \\\\angle 6 = 180^\\\\circ$$\n\n### Summary Table\n\n| Relationship | Shape | Property |\n|---|---|---|\n| Corresponding | F | Equal |\n| Alternate | Z | Equal |\n| Co-interior (Allied) | C | Sum to $180^\\\\circ$ |\n\n### Identifying Parallel Lines\n\nYou can also work backwards: if you know certain angle relationships exist, you can prove the lines are parallel.\n- If a pair of corresponding angles are equal, the lines are parallel.\n- If a pair of alternate angles are equal, the lines are parallel.\n- If a pair of co-interior angles sum to $180^\\\\circ$, the lines are parallel.",
+    "worked_example": "**Problem:** In the diagram, $AB \\\\parallel CD$. The transversal $EF$ cuts both lines. $\\\\angle AEF = 63^\\\\circ$. Find $\\\\angle EFD$ and $\\\\angle FEB$.\n\n(Imagine line AB above line CD, with transversal EF crossing from left to right, slanting downwards.)\n\n**Step 1:** Identify the relationship between $\\\\angle AEF$ and $\\\\angle EFD$.\n- $\\\\angle AEF$ is above line AB on the left of the transversal.\n- $\\\\angle EFD$ is below line CD on the right of the transversal.\n- These are **alternate angles** (Z-pattern).\n- Therefore they are equal.\n\n**Step 2:** Calculate $\\\\angle EFD$.\n$$\\\\angle EFD = \\\\angle AEF = 63^\\\\circ$$\n\n**Step 3:** Find $\\\\angle FEB$.\n- $\\\\angle AEF$ and $\\\\angle FEB$ lie on a straight line (AB).\n- Angles on a straight line sum to $180^\\\\circ$.\n$$\\\\angle AEF + \\\\angle FEB = 180^\\\\circ$$\n$$63^\\\\circ + \\\\angle FEB = 180^\\\\circ$$\n$$\\\\angle FEB = 180^\\\\circ - 63^\\\\circ = 117^\\\\circ$$\n\n**Check:** $\\\\angle FEB$ and the co-interior angle at the lower intersection should sum to $180^\\\\circ$. Indeed, $\\\\angle FEB = 117^\\\\circ$ corresponds to an angle that is $180^\\\\circ - 63^\\\\circ = 117^\\\\circ$ at the lower line.\n\n**Answer:** $\\\\angle EFD = 63^\\\\circ$ and $\\\\angle FEB = 117^\\\\circ$",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing alternate and corresponding angles — assuming all angles formed by a transversal are equal.",
+        "correction": "Trace the F and Z shapes carefully. Corresponding angles are in the same position at each intersection (both on top-left of the intersection, for example). Alternate angles are inside the parallel lines but on opposite sides of the transversal."
+      },
+      {
+        "mistake": "Forgetting that co-interior (allied) angles sum to 180° — not that they are equal.",
+        "correction": "Remember the 'C' shape for co-interior angles. C has curved lines that suggest they 'co-operate' to make 180°. Only corresponding and alternate angles are equal."
+      },
+      {
+        "mistake": "Applying parallel line rules to lines that are not marked as parallel.",
+        "correction": "Do not assume lines are parallel unless they are marked with arrowheads ($\\\\gg$) or stated in the question. Without the parallel condition, you can only use vertically opposite and straight-line rules."
+      },
+      {
+        "mistake": "Thinking all acute angles formed by a transversal across parallel lines are equal (ignoring the obtuse/acute pairing).",
+        "correction": "When a transversal cuts parallel lines, the acute angles are all equal, the obtuse angles are all equal, and each acute + each obtuse on the same straight line = 180°. Not every angle is equal."
+      }
+    ],
+    "summary": [
+      "Parallel lines ($\\\\parallel$) never meet; a transversal is a line that crosses two or more parallel lines.",
+      "Corresponding angles (F-pattern) are equal when lines are parallel.",
+      "Alternate angles (Z-pattern) are equal when lines are parallel.",
+      "Co-interior / allied angles (C-pattern) sum to 180° when lines are parallel.",
+      "You can prove lines are parallel by checking if any of these relationships holds between the angles.",
+      "Only apply these rules when lines are explicitly marked as parallel or proven to be parallel."
+    ]
+  }
+}

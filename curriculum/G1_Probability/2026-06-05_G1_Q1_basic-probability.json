@@ -1,0 +1,39 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q1",
+  "title": "Basic Probability",
+  "syllabus_ref": "IGCSE 0580 G8.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Imagine flipping a coin. Heads or tails? You know there's a 50-50 chance — but what does that '50%' really mean? Probability is the language of uncertainty, used everywhere from weather forecasts to sports predictions to board games. Once you master the basics, you'll be able to calculate exactly how likely (or unlikely) any event is.",
+    "prerequisites": [
+      "Understand fractions, decimals, and percentages and how to convert between them",
+      "Be comfortable simplifying fractions to their lowest terms"
+    ],
+    "core_explanation": "## What is Probability?\n\nProbability measures how likely something is to happen. It is always a number between 0 and 1 (or 0% to 100%).\n\n- A probability of 0 means the event is impossible.\n- A probability of 1 means the event is certain.\n- A probability of 0.5 (or 1/2 or 50%) means the event is equally likely to happen or not happen.\n\n### The Basic Formula\n\nThe probability of an event is calculated as:\n\nP(event) = (Number of favourable outcomes) / (Total number of possible outcomes)\n\nThis formula only works when every outcome is equally likely — like rolling a fair dice or drawing a card from a well-shuffled deck.\n\n### Key Terms\n\n- **Outcome**: A single possible result (e.g., rolling a 4 on a dice)\n- **Event**: A set of one or more outcomes you are interested in (e.g., rolling an even number)\n- **Sample space**: The complete list of all possible outcomes\n- **Equally likely**: Outcomes that have the same chance of occurring\n\n### Probability Scale\n\nThe probability scale runs from 0 to 1. Common benchmark probabilities:\n\n- 0: Impossible (e.g., rolling a 7 on a standard dice)\n- 0.25: Unlikely (e.g., drawing a heart from a deck of cards)\n- 0.5: Even chance (e.g., getting heads on a coin flip)\n- 0.75: Likely (e.g., not drawing a heart from a deck of cards)\n- 1: Certain (e.g., the sun will rise tomorrow)\n\n### Complementary Events\n\nIf an event A has probability P(A), then the probability that A does NOT happen is:\n\nP(not A) = 1 - P(A)\n\nThis is called the complement rule. For example, if the chance of rain is 0.3, the chance of no rain is 0.7.\n\n### Expressing Probability\n\nProbability can be written as:\n- A fraction: 1/6\n- A decimal: 0.1667\n- A percentage: 16.67%\n\nAll three forms are acceptable in IGCSE answers unless the question specifies a format.",
+    "worked_example": "**Problem:** A bag contains 3 red marbles, 5 blue marbles, and 2 green marbles. One marble is chosen at random. What is the probability that it is blue?\n\n**Step 1:** Find the total number of marbles (total possible outcomes).\nTotal = 3 + 5 + 2 = 10 marbles\n\n**Step 2:** Find the number of favourable outcomes (blue marbles).\nNumber of blue marbles = 5\n\n**Step 3:** Apply the probability formula.\nP(blue) = 5/10 = 1/2\n\n**Answer:** The probability of choosing a blue marble is 1/2 (or 0.5, or 50%).",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to simplify the fraction. Writing 5/10 instead of 1/2.",
+        "correction": "Always simplify your probability fractions to their lowest terms. 5/10 simplifies to 1/2 by dividing numerator and denominator by 5."
+      },
+      {
+        "mistake": "Writing probability as a ratio like '1:2' instead of a fraction, decimal, or percentage.",
+        "correction": "Probability must be expressed as a number between 0 and 1 (fraction, decimal, or percentage). A ratio like 1:2 is not a probability value."
+      },
+      {
+        "mistake": "Counting outcomes incorrectly by not including all possibilities in the total.",
+        "correction": "Always double-check that you've counted every possible outcome. Write out the sample space if you're unsure."
+      }
+    ],
+    "summary": [
+      "Probability is a number between 0 (impossible) and 1 (certain) that measures how likely an event is.",
+      "The basic formula is P(event) = (favourable outcomes) / (total outcomes), assuming equally likely outcomes.",
+      "The complement rule: P(not A) = 1 - P(A).",
+      "Probability can be expressed as a fraction, decimal, or percentage — simplify fractions where possible.",
+      "Always check that you've correctly identified both the favourable and total number of outcomes."
+    ]
+  }
+}

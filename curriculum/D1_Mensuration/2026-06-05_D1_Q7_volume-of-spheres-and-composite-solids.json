@@ -1,0 +1,44 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q7",
+  "title": "Volume of Spheres and Composite Solids",
+  "syllabus_ref": "IGCSE 0580 D.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A soccer ball, a planet, a marble \u2014 spheres are all around us. Combined with other shapes like cylinders and cones, they form the composite solids we encounter in everyday objects. Understanding how to calculate the volume of spheres and composite solids is a key IGCSE skill.",
+    "prerequisites": [
+      "Volume of prisms, cylinders, pyramids, and cones",
+      "Area of circles",
+      "Working with pi"
+    ],
+    "core_explanation": "### Volume of a Sphere\n\nV = (4/3) x pi x r^3\n\nWhere r is the radius. The formula uses r^3 (cubed), not squared \u2014 volume is 3D.\n\n### Surface Area of a Sphere\n\nSA = 4 x pi x r^2\n\n### Hemisphere\n\nA hemisphere is half a sphere.\nVolume of hemisphere = (2/3) x pi x r^3\n\n### Composite Solids\n\nA **composite solid** is made up of two or more 3D shapes joined together (e.g., a cylinder with a hemisphere on top, or a cone on top of a cylinder).\n\n**Strategy:**\n1. Identify the simple solids that make up the composite shape.\n2. Calculate the volume of each part separately.\n3. Add or subtract as needed.\n\n### Sphere-Related Problems\n\n- Melting and recasting: A sphere melted to form a cylinder. Volume is conserved.\n- Floating/immersed objects: Volume of water displaced = volume of submerged object.\n- Ratio problems: If radius doubles, volume increases by factor 8 (2^3).\n\n### Using Scale Factor\n\nIf two similar solids have a linear scale factor k:\n- Areas scale by k^2\n- Volumes scale by k^3\n\nThis is essential for comparing objects of different sizes.",
+    "worked_example": "Problem: A sphere has radius 6 cm. Find its volume (use pi = 3.142).\n\nStep 1: V = (4/3) x pi x r^3 = (4/3) x 3.142 x 6 x 6 x 6\n\nStep 2: V = (4/3) x 3.142 x 216 = (4/3) x 678.672\n\nStep 3: V = 904.896 cm^3\n\nAnswer: The volume is approximately 904.90 cm^3.\n\nProblem: A solid consists of a cylinder of radius 3 cm and height 8 cm with a hemisphere of the same radius on top. Find the total volume (use pi = 3.142).\n\nStep 1: Volume of cylinder. V_cyl = pi x r^2 x h = 3.142 x 9 x 8 = 226.224 cm^3\n\nStep 2: Volume of hemisphere. V_hemi = (2/3) x pi x r^3 = (2/3) x 3.142 x 27 = 56.556 cm^3\n\nStep 3: Add. Total = 226.224 + 56.556 = 282.78 cm^3\n\nAnswer: The total volume is approximately 282.78 cm^3.",
+    "common_mistakes": [
+      {
+        "mistake": "Using r^2 instead of r^3 in the sphere volume formula.",
+        "correction": "Volume is 3D, so radius is cubed (r x r x r). Area formulas use r^2, but volume uses r^3."
+      },
+      {
+        "mistake": "Using the diameter instead of the radius.",
+        "correction": "Always convert diameter to radius by halving it before using any sphere formula."
+      },
+      {
+        "mistake": "Forgetting to include all parts of a composite solid.",
+        "correction": "Draw the shape, label each part (cylinder, cone, hemisphere, etc.), and calculate each separately before combining."
+      },
+      {
+        "mistake": "Using the wrong factor: 4/3 pi r^3 for sphere vs 2/3 pi r^3 for hemisphere.",
+        "correction": "A hemisphere is exactly half a sphere: (1/2) x (4/3) x pi x r^3 = (2/3) x pi x r^3."
+      }
+    ],
+    "summary": [
+      "Sphere volume: V = (4/3) x pi x r^3. Hemisphere: V = (2/3) x pi x r^3.",
+      "Sphere surface area: SA = 4 x pi x r^2.",
+      "For composite solids: calculate each part separately, then add or subtract.",
+      "When a shape is melted and recast, volume is conserved.",
+      "Scale factor k: volume scales by k^3, area scales by k^2."
+    ]
+  }
+}

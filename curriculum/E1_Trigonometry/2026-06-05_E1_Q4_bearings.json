@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q4",
+  "title": "Bearing Problems",
+  "syllabus_ref": "IGCSE 0580 E5.3",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "How does a ship's captain navigate safely through a busy shipping lane, or how does an air traffic controller direct planes to avoid collisions? The answer lies in **bearings** — a precise way of describing direction using angles measured clockwise from North. Bearings turn trigonometry into a practical tool for navigation, search-and-rescue, and even orienteering. One wrong degree can put a ship kilometres off course, so accuracy matters.",
+    "prerequisites": [
+      "Understanding of angles measured clockwise from North (0 to 360 degrees)",
+      "Basic trigonometry (SOH CAH TOA) for finding sides and angles in right-angled triangles",
+      "Sine Rule and Cosine Rule for non-right-angled triangles",
+      "Interpreting 3-figure bearings (e.g., 047 degrees, 180 degrees, 315 degrees)"
+    ],
+    "core_explanation": "## What Are Bearings?\n\nA **bearing** is a direction given as an angle measured **clockwise from North**. It is always written as **three figures** (e.g., 047 degrees, not 47 degrees).\n\n### Rules for Bearings:\n1. Measured from **North** (0 degrees)\n2. Measured **clockwise**\n3. Always written as **three digits** (e.g., 007 degrees, 045 degrees, 120 degrees, 270 degrees)\n\n### Key Bearing Facts:\n- North = 000 degrees or 360 degrees\n- East = 090 degrees\n- South = 180 degrees\n- West = 270 degrees\n\n### Back Bearings\n\nThe **back bearing** (or reverse bearing) is the bearing from B to A, given the bearing from A to B.\n- If the bearing from A to B is less than 180 degrees: back bearing = bearing + 180 degrees\n- If the bearing from A to B is 180 degrees or more: back bearing = bearing - 180 degrees\n\n### Solving Bearing Problems with Trigonometry\n\nBearing problems often involve:\n- Drawing a diagram with North lines at each point\n- Finding distances between points (using Pythagoras, Sine Rule, or Cosine Rule)\n- Finding bearings between points (using inverse trig functions)\n\n### Common Triangle Setups\n\nWhen a problem gives two bearings and a distance, you can:\n1. Draw North lines at each relevant point\n2. Use the fact that North lines are parallel to find angles inside the triangle\n3. Apply the appropriate trigonometric method\n\n**North lines are always parallel** — use this to find angles within the triangle by applying co-interior/alternate angle rules.",
+    "worked_example": "**Problem:** A ship sails from port A on a bearing of 060 degrees for 30 km to point B. It then changes course and sails on a bearing of 150 degrees for 40 km to point C. Find the distance from A to C and the bearing of C from A.\n\n**Step 1:** Draw a diagram.\n- From A: North line, then bearing 060 degrees, go 30 km to B\n- From B: North line (parallel to North at A), then bearing 150 degrees, go 40 km to C\n- Need AC and bearing of C from A\n\n**Step 2:** Find angle ABC inside the triangle.\n- Interior angle at B: The North line at B is parallel to the North line at A\n- The bearing from A to B is 060 degrees, so angle between North and AB is 60 degrees\n- At B, the bearing to C is 150 degrees, but AB points FROM B to A (reverse of 060)\n- Back bearing B to A = 060 + 180 = 240 degrees\n- Difference between 240 and 150 = 90 degrees... let's think more carefully.\n\nLet's use a simpler approach:\n- At B, the angle between the North line and BA (pointing back to A) is the back bearing of AB\n- AB bearing from A to B = 060, so BA bearing from B to A = 060 + 180 = 240 degrees\n- Bearing from B to C = 150 degrees\n- Angle ABC = difference between BC bearing and BA bearing\n- Going from BA (240) clockwise to BC (150): (360 - 240) + 150 = 270... that doesn't seem right either.\n\nLet me recalculate carefully:\n- North at B points up. AB goes from B to A at bearing 060 + 180 = 240 degrees.\n  From North (000) clockwise to BA = 240 degrees. So the angle from North to BA is 240 degrees clockwise.\n  But the interior angle of the triangle at B is the angle between BA and BC.\n  From BA (direction 240, or 120 degrees clockwise from South) to BC (direction 150).\n  The angle from North clockwise to BC = 150 degrees.\n  The difference between 240 and 150 going the smaller way: |240 - 150| = 90 degrees.\n- So angle ABC = 90 degrees (the triangle is right-angled at B!)\n\n**Step 3:** Find AC using Pythagoras.\nAC^2 = AB^2 + BC^2\nAC^2 = 30^2 + 40^2 = 900 + 1600 = 2500\nAC = sqrt(2500) = 50 km\n\n**Step 4:** Find angle BAC.\ntan(BAC) = opposite/adjacent = BC/AB = 40/30 = 4/3\nangle BAC = tan^-1(4/3) = 53.1 degrees (to 1 d.p.)\n\n**Step 5:** Find bearing of C from A.\nBearing from A to B = 060 degrees\nangle BAC = 53.1 degrees (the angle from AB to AC inside the triangle)\nBearing of C from A = bearing of B from A + angle BAC = 060 + 53.1 = 113.1 degrees\n\n**Answer:** AC = 50 km, and the bearing of C from A is 113 degrees (to the nearest degree) or 113.1 degrees.\n\n**Check:** The right angle at B (difference between 240 and 150 bearings = 90 degrees) confirms our approach. 30-40-50 is a Pythagorean triple (3-4-5 x 10).",
+    "common_mistakes": [
+      {
+        "mistake": "Writing a bearing as a two-digit number (e.g., 47 degrees instead of 047 degrees)",
+        "correction": "Bearings must always have three figures. If the angle is less than 100 degrees, add a leading zero. 47 degrees becomes 047 degrees; 7 degrees becomes 007 degrees."
+      },
+      {
+        "mistake": "Confusing the direction — measuring anti-clockwise or from a point other than North",
+        "correction": "Always measure bearings clockwise from North. A common trick: think of a compass — North is 000, East is 090, South is 180, West is 270."
+      },
+      {
+        "mistake": "Forgetting that North lines at different points are parallel, leading to incorrect angle calculations inside the triangle",
+        "correction": "Always draw a North line at every point in the diagram. The North lines are parallel, so you can use alternate/corresponding angle rules to find the triangle's interior angles."
+      }
+    ],
+    "summary": [
+      "A bearing is an angle measured clockwise from North, always given as three figures (e.g., 047 degrees, 120 degrees, 315 degrees).",
+      "The back bearing (reverse direction) is found by adding 180 degrees if under 180, or subtracting 180 degrees if 180 or more.",
+      "Always draw North lines at every point — they are parallel and help find the interior angles of the navigation triangle.",
+      "Use Pythagoras for right-angled navigation triangles, and Sine Rule or Cosine Rule for non-right triangles.",
+      "When giving a final bearing, state it as a three-figure angle and round appropriately as specified in the question."
+    ]
+  }
+}

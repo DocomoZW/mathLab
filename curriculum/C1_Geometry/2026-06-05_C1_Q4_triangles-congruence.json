@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q4",
+  "title": "Triangles: Types, Angle Properties, and Congruence",
+  "syllabus_ref": "IGCSE 0580 C3.5-C3.6",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "The triangle is the simplest of all polygons — just three sides — yet it is the strongest shape in engineering and construction. From the Eiffel Tower to bridge trusses, triangles provide stability because they cannot be deformed without changing the length of a side. In this topic, you will discover the secrets hidden inside every triangle: how its angles behave, how it can be classified, and how we prove two triangles are identical copies of each other.",
+    "prerequisites": [
+      "C1_Q1: Types of angles and basic angle properties",
+      "C1_Q2: Parallel lines (for exterior angle proof)",
+      "C1_Q3: Basic polygon concepts",
+      "Angle notation: $\\\\angle ABC$"
+    ],
+    "core_explanation": "### Types of Triangles by Sides\n\n| Triangle Type | Side Properties | Notation |\n|---|---|---|\n| **Scalene** | All three sides are different lengths | No equal sides |\n| **Isosceles** | Two sides are equal | The equal sides are called 'legs'; the third is the 'base'. Base angles are equal. |\n| **Equilateral** | All three sides are equal | All angles are $60^\\\\circ$ |\n\n### Types of Triangles by Angles\n\n| Triangle Type | Angle Properties |\n|---|---|\n| **Acute-angled** | All three angles are less than $90^\\\\circ$ |\n| **Right-angled** | One angle equals exactly $90^\\\\circ$ (marked with a square) |\n| **Obtuse-angled** | One angle is greater than $90^\\\\circ$ |\n\n### Key Angle Theorems\n\n**1. Angle sum of a triangle = $180^\\\\circ$**\n\nThe three interior angles of any triangle sum to $180^\\\\circ$.\n$$\\\\angle A + \\\\angle B + \\\\angle C = 180^\\\\circ$$\n\n**2. Exterior angle theorem**\n\nAn exterior angle of a triangle equals the sum of the two opposite interior angles.\n$$\\\\text{Exterior angle} = \\\\text{Sum of opposite interior angles}$$\n$$\\\\angle ACD = \\\\angle CAB + \\\\angle ABC$$\n\n(Imagine triangle ABC with side BC extended to D. The exterior angle at C is $\\\\angle ACD$.)\n\n### Congruence\n\nTwo triangles are **congruent** if they are exactly the same shape and size — all corresponding sides equal and all corresponding angles equal. We write $\\\\triangle ABC \\\\cong \\\\triangle DEF$.\n\nWe do NOT need to check all six measurements. Four tests tell us enough:\n\n| Test | Condition | Meaning |\n|---|---|---|\n| **SSS** | Three sides equal | Side-Side-Side |\n| **SAS** | Two sides and the **included** angle equal | Side-Angle-Side |\n| **ASA** | Two angles and the **included** side equal | Angle-Side-Angle |\n| **RHS** | Right angle, Hypotenuse, and one other side equal | Right-Hypotenuse-Side (only for right triangles) |\n\n**Important: There is NO 'ASS' test.** Two sides and a non-included angle does NOT guarantee congruence (it can produce two different triangles — the 'ambiguous case').",
+    "worked_example": "**Problem:** In $\\\\triangle ABC$, $\\\\angle A = 53^\\\\circ$ and $\\\\angle B = 71^\\\\circ$. Find $\\\\angle C$. Also, find the exterior angle at C.\n\n**Step 1:** Use the angle sum of a triangle.\n$$\\\\angle A + \\\\angle B + \\\\angle C = 180^\\\\circ$$\n$$53^\\\\circ + 71^\\\\circ + \\\\angle C = 180^\\\\circ$$\n$$124^\\\\circ + \\\\angle C = 180^\\\\circ$$\n$$\\\\angle C = 56^\\\\circ$$\n\n**Step 2:** Find the exterior angle at C.\nThe exterior angle is the angle outside the triangle formed by extending side BC past C. By the exterior angle theorem:\n$$\\\\text{Exterior angle at C} = \\\\angle A + \\\\angle B = 53^\\\\circ + 71^\\\\circ = 124^\\\\circ$$\n\n**Check:** Interior angle C ($56^\\\\circ$) + Exterior angle ($124^\\\\circ$) = $180^\\\\circ$. They form a straight line. \\\\checkmark\n\n**Answer:** $\\\\angle C = 56^\\\\circ$, exterior angle at C = $124^\\\\circ$.\n\n---\n\n**Problem (Congruence):** $\\\\triangle PQR$ and $\\\\triangle XYZ$ have $PQ = XY = 5$ cm, $PR = XZ = 7$ cm, and $\\\\angle QPR = \\\\angle YXZ = 40^\\\\circ$. Are the triangles congruent? If so, by which test?\n\n**Step 1:** Identify what we know.\n- Two sides: $PQ = XY$ and $PR = XZ$\n- The angle between those two sides: $\\\\angle QPR = \\\\angle YXZ$\n- The angle $\\\\angle QPR$ is between sides $PQ$ and $PR$.\n- The angle $\\\\angle YXZ$ is between sides $XY$ and $XZ$.\n\n**Step 2:** Check the congruence test.\n- Two sides and the included angle: this matches the **SAS** test.\n\n**Answer:** Yes, $\\\\triangle PQR \\\\cong \\\\triangle XYZ$ by SAS.",
+    "common_mistakes": [
+      {
+        "mistake": "Assuming that 'two sides and any angle' is sufficient for congruence (the ASS/SSA misconception).",
+        "correction": "The angle MUST be the INCLUDED angle — the angle between the two known sides. SAS works; SSA does not. For right triangles, use RHS instead."
+      },
+      {
+        "mistake": "Thinking the exterior angle equals just one opposite interior angle, or all three angles combined.",
+        "correction": "The exterior angle equals the SUM of the TWO opposite interior angles (the two angles that are NOT adjacent to it). It does not include the adjacent interior angle."
+      },
+      {
+        "mistake": "Forgetting the isosceles triangle property — if two sides are equal, the base angles are equal, but not knowing which angles are the base angles.",
+        "correction": "In an isosceles triangle, the two equal sides meet at the apex. The base angles are at the ends of the third side (the base). Draw and label the equal sides to identify which angles are equal."
+      },
+      {
+        "mistake": "Confusing congruence with similarity — stating triangles are congruent when they are only the same shape (similar) but different sizes.",
+        "correction": "Congruent means same shape AND same size (all side lengths equal). Similar means same shape but possibly different sizes (angles equal, sides in proportion). Do not use tests like AAA for congruence — AAA proves similarity, not congruence."
+      }
+    ],
+    "summary": [
+      "Triangles are classified by sides (scalene, isosceles, equilateral) and by angles (acute, right, obtuse).",
+      "The sum of interior angles in any triangle is $180^\\\\circ$.",
+      "An exterior angle of a triangle equals the sum of the two opposite interior angles.",
+      "Congruence means identical shape and size — proven by SSS, SAS, ASA, or RHS.",
+      "There is no ASS/SSA test for congruence; the angle must be the included angle.",
+      "In an isosceles triangle, base angles opposite the equal sides are equal."
+    ]
+  }
+}

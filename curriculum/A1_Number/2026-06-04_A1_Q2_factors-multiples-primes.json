@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q2",
+  "title": "Factors, Multiples & Primes",
+  "syllabus_ref": "IGCSE 0580 C1.2",
+  "version": 1,
+  "created_at": "2026-06-04T23:00:00Z",
+  "sections": {
+    "hook": "The RSA encryption that protects your WhatsApp messages, online banking, and even top-secret military communications relies on one simple fact: multiplying two large primes is easy, but finding the prime factors of the product is incredibly hard — even for supercomputers. Without prime numbers, modern cryptography wouldn't exist!",
+    "prerequisites": [
+      "Multiplication and division facts up to 12 × 12",
+      "Understanding of integer arithmetic",
+      "Basic concept of even and odd numbers"
+    ],
+    "core_explanation": "**Factors** (or divisors) of a number are whole numbers that divide it exactly with no remainder. For example, the factors of $12$ are $1, 2, 3, 4, 6, 12$. Every number has at least two factors: $1$ and itself.\n\n**Multiples** of a number are what you get when you multiply it by any integer. The multiples of $5$ are $5, 10, 15, 20, \\dots$ (i.e., $5 \\times 1, 5 \\times 2, 5 \\times 3, \\dots$).\n\n**Prime numbers** have exactly two distinct factors: $1$ and themselves. The first few primes are $2, 3, 5, 7, 11, 13, 17, 19, 23, \\dots$. Note that $2$ is the **only** even prime — every other even number has $2$ as a factor.\n\n**Composite numbers** have more than two factors (e.g., $4, 6, 8, 9, 10, \\dots$).\n\n**Prime Factorisation** is expressing a number as a product of its prime factors. The standard method uses a factor tree:\n\nFor $60$:\n$$\n60 = 6 \\times 10 = (2 \\times 3) \\times (2 \\times 5) = 2^2 \\times 3 \\times 5\n$$\n\n**Highest Common Factor (HCF)** is the largest factor shared by two or more numbers.\n\n**Lowest Common Multiple (LCM)** is the smallest positive multiple shared by two or more numbers.\n\n**Method using prime factors:** To find HCF and LCM of $60$ and $84$:\n\n$$\n60 = 2^2 \\times 3 \\times 5 \\\\\n84 = 2^2 \\times 3 \\times 7\n$$\n\n- **HCF:** take each prime to the **smallest** power that appears: $2^2 \\times 3 = 12$\n- **LCM:** take each prime to the **largest** power that appears: $2^2 \\times 3 \\times 5 \\times 7 = 420$\n\n**Divisibility Rules** help you check without long division:\n- Divisible by $2$: last digit is even\n- Divisible by $3$: sum of digits is divisible by $3$\n- Divisible by $4$: last two digits form a number divisible by $4$\n- Divisible by $5$: last digit is $0$ or $5$\n- Divisible by $6$: divisible by both $2$ and $3$\n- Divisible by $9$: sum of digits is divisible by $9$\n- Divisible by $10$: last digit is $0$",
+    "worked_example": "**Problem:** A gardener has two lengths of rope: $84$ cm and $108$ cm. She wants to cut them into equal-length pieces, as long as possible, with no rope wasted. Find the length of each piece and the total number of pieces.\n\n**Solution:**\n\nThe longest possible piece length is the HCF of $84$ and $108$.\n\nStep 1: Prime factorise each number.\n$$84 = 2 \\times 42 = 2 \\times 6 \\times 7 = 2 \\times 2 \\times 3 \\times 7 = 2^2 \\times 3 \\times 7$$\n$$108 = 2 \\times 54 = 2 \\times 6 \\times 9 = 2 \\times 2 \\times 3 \\times 3 \\times 3 = 2^2 \\times 3^3$$\n\nStep 2: HCF = common primes with smallest powers.\nCommon primes: $2$ and $3$. Smallest powers: $2^2$ and $3^1$.\nHCF $= 2^2 \\times 3 = 4 \\times 3 = 12$\n\nEach piece is $12$ cm long.\n\nStep 3: Number of pieces.\nFirst rope: $84 \\div 12 = 7$ pieces\nSecond rope: $108 \\div 12 = 9$ pieces\nTotal pieces: $7 + 9 = 16$ pieces\n\n**Answer:** She cuts $12$ cm pieces and gets $16$ pieces in total.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing HCF and LCM — using largest powers when finding HCF or smallest powers when finding LCM",
+        "correction": "Remember: **HCF** uses the **H**ighest factor that's **C**ommon — take **smallest** powers. **LCM** is the **L**owest **C**ommon **M**ultiple — take **largest** powers. Think: 'HCF = low powers, LCM = high powers'."
+      },
+      {
+        "mistake": "Forgetting that $1$ is neither prime nor composite",
+        "correction": "$1$ has only one factor (itself), so it doesn't satisfy the definition of prime (exactly two factors) or composite (more than two factors). It's a special case called a 'unit'."
+      },
+      {
+        "mistake": "Thinking $1$ is a prime number because it can only be divided by $1$ and itself (which is also $1$)",
+        "correction": "A prime must have **exactly two distinct** positive factors. $1$ has only one positive factor, so it is not prime."
+      }
+    ],
+    "summary": [
+      "Factors divide a number exactly; multiples are the number times any integer",
+      "Primes have exactly two factors: $1$ and themselves",
+      "Prime factorisation expresses a number as a product of prime powers",
+      "HCF uses smallest powers of common primes; LCM uses largest powers of all primes",
+      "Divisibility rules save time when checking factors",
+      "Real-world applications include rope cutting, scheduling, and encryption"
+    ]
+  }
+}

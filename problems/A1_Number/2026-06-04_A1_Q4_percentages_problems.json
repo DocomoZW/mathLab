@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q4",
+  "title": "Percentages — Problems",
+  "problems": [
+    {
+      "id": "A1_Q4_01",
+      "difficulty": "basic",
+      "question": "Find $15\\%$ of $\\$240$.",
+      "answer": "$15\\%$ of $240 = \\frac{15}{100} \\times 240 = 0.15 \\times 240 = 36$. Answer: $\\$36$.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q4_02",
+      "difficulty": "basic",
+      "question": "Express $18$ out of $45$ as a percentage.",
+      "answer": "$\\frac{18}{45} \\times 100\\% = \\frac{2}{5} \\times 100\\% = 40\\%$.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q4_03",
+      "difficulty": "intermediate",
+      "question": "A shop increases the price of a jacket from $\\$80$ to $\\$92$. Find the percentage increase.",
+      "answer": "Increase = $92 - 80 = 12$. Percentage increase = $\\frac{12}{80} \\times 100\\% = 15\\%$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q4_04",
+      "difficulty": "intermediate",
+      "question": "After a $20\\%$ discount, a laptop costs $\\$560$. What was the original price?",
+      "answer": "After a $20\\%$ discount, the price is $80\\%$ of the original. $0.80 \\times \\text{original} = 560$. Original $= \\frac{560}{0.80} = 700$. The original price was $\\$700$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q4_05",
+      "difficulty": "advanced",
+      "question": "Harry invests $\\$5000$ at $3\\%$ compound interest per year. How much will he have after $4$ years? Give your answer to the nearest cent.",
+      "answer": "$A = P(1 + \\frac{r}{100})^t = 5000 \\times (1.03)^4$ $(1.03)^4 = 1.12550881$ $A = 5000 \\times 1.12550881 = 5627.54405$ Answer: $\\$5627.54$ (to the nearest cent).",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q4_06",
+      "difficulty": "advanced",
+      "question": "A population increases from $25000$ to $29500$ in one year. Find the percentage increase. Then, if it continues at the same percentage rate, find the population after a second year.",
+      "answer": "Increase = $29500 - 25000 = 4500$. Percentage increase = $\\frac{4500}{25000} \\times 100\\% = 18\\%$. After second year: $29500 \\times 1.18 = 34810$.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q4_07",
+      "difficulty": "challenge",
+      "question": "A car depreciates in value by $15\\%$ each year. After $3$ years, it is worth $\\$12282.50$. What was its original value?",
+      "answer": "After 3 years at $15\\%$ annual depreciation: Value $= P \\times (0.85)^3$. $P \\times 0.614125 = 12282.50$. $P = \\frac{12282.50}{0.614125} = 20000$. The original value was $\\$20000$.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q4_08",
+      "difficulty": "challenge",
+      "question": "A store offers a $20\\%$ discount on all items, followed by an additional $10\\%$ off the reduced price. What is the overall percentage discount? Does the order matter?",
+      "answer": "First discount: multiply by $0.80$. Second discount: multiply by $0.90$. Overall multiplier: $0.80 \\times 0.90 = 0.72$. Overall discount = $1 - 0.72 = 0.28 = 28\\%$. The order does not matter because multiplication is commutative: $0.8 \\times 0.9 = 0.9 \\times 0.8 = 0.72$. Note that this is NOT $20\\% + 10\\% = 30\\%$ — percentage changes multiply, not add!",
+      "marks": 3
+    }
+  ]
+}

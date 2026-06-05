@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q6",
+  "title": "Cosine Rule",
+  "syllabus_ref": "IGCSE 0580 E5.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Imagine you're a pilot who knows the distance flown on two legs of a journey and the angle between them, but you need to know the direct distance back to your starting point. Or you know all three sides of a triangular field and need to find its corner angles. The Cosine Rule is the tool you need \u2014 it's like Pythagoras' Theorem for any triangle, with a clever adjustment to account for angles that aren't 90 degrees. It's essential for navigation, surveying, and engineering.",
+    "prerequisites": [
+      "Pythagoras' Theorem (a^2 + b^2 = c^2) for right-angled triangles",
+      "Labelling triangles with sides a, b, c opposite angles A, B, C",
+      "Using a calculator for cosine values and inverse cosine (cos^-1)",
+      "Basic algebraic manipulation including square roots and rearranging formulas"
+    ],
+    "core_explanation": "## The Cosine Rule\n\nThe Cosine Rule is a generalisation of Pythagoras' Theorem that works for **any** triangle. When the included angle is 90 degrees, the Cosine Rule simplifies to Pythagoras' Theorem.\n\n### Formulas\n\n**Finding a side (given two sides and the included angle):**\n\n a^2 = b^2 + c^2 - 2bc cos A \n\nWhere:\n- **a** is the side opposite angle A (the side you want to find)\n- **b** and **c** are the other two sides\n- **A** is the angle between sides b and c (the included angle)\n\n**Finding an angle (given three sides):**\n\n cos A = b^2 + c^2 - a^2/2bc \n\n### When to Use the Cosine Rule\n\n**Case 1: Two sides and the included angle (SAS)** \u2014 use the first formula to find the third side.\n- You know sides b and c, and the angle A between them\n- Find side a using a^2 = b^2 + c^2 - 2bc cos A\n\n**Case 2: Three sides (SSS)** \u2014 use the second formula to find any angle.\n- You know sides a, b, c\n- Find angle A using cos A = (b^2 + c^2 - a^2) / (2bc)\n\n### Connection to Pythagoras\n\nIf A = 90 degrees, then cos(90) = 0, so:\na^2 = b^2 + c^2 - 2bc(0) = b^2 + c^2\nThis is just Pythagoras' Theorem. So the Cosine Rule is a generalisation.",
+    "worked_example": "**Problem:** In triangle ABC, side b = 7 cm, side c = 9 cm, and the included angle A = 50 degrees. Find side a.\n\n**Step 1:** Identify what we know.\n- b = 7 cm (side opposite angle B)\n- c = 9 cm (side opposite angle C)\n- A = 50 degrees (angle between sides b and c)\n- a = ? (side opposite angle A)\n\nThis is SAS (two sides and the included angle). Use the Cosine Rule.\n\n**Step 2:** Write the Cosine Rule formula.\n a^2 = b^2 + c^2 - 2bc cos A \n\n**Step 3:** Substitute the known values.\n a^2 = 7^2 + 9^2 - 2(7)(9) cos(50 degrees) \n\n**Step 4:** Calculate each part.\n7^2 = 49\n9^2 = 81\n2(7)(9) = 126\ncos(50 degrees) = 0.6428\n\n a^2 = 49 + 81 - 126(0.6428) \n a^2 = 130 - 81.00 \n a^2 = 49.00 \n\n**Step 5:** Take the square root.\n a = sqrt{49.00} \n a = 7.00  cm \n\n**Answer:** Side a is 7.00 cm.\n\n**Check:** b = 7, a = 7, c = 9. The triangle is isosceles with a = b. This makes sense because cos(50) = 0.6428 and... wait, let me recheck:\n\na^2 = 49 + 81 - 126 x 0.6428\na^2 = 130 - 81.00\na^2 = 49.00 \u2014 yes, a = 7.00 cm.\n\nLet's verify using the Sine Rule:\na/sin A = 7/sin(50) = 7/0.7660 = 9.14\nb/sin B = 7/sin B = 9.14 so sin B = 7/9.14 = 0.7660, B = 50 degrees.\nSo A = B = 50 degrees and C = 80 degrees.\nc/sin C = 9/sin(80) = 9/0.9848 = 9.14. Consistent.",
+    "common_mistakes": [
+      {
+        "mistake": "Using the Cosine Rule when the angle is NOT the included angle between the two known sides",
+        "correction": "The Cosine Rule requires the angle BETWEEN the two sides you know (SAS). If the angle is opposite one of the known sides (SSA), you need the Sine Rule instead."
+      },
+      {
+        "mistake": "Forgetting to take the square root after finding a^2, leaving the answer as a^2",
+        "correction": "The formula gives a^2, not a. Always take the positive square root to find the side length. Write a = sqrt(...) as your final step."
+      },
+      {
+        "mistake": "Getting the formula wrong \u2014 particularly the minus sign or the factor of 2",
+        "correction": "Memorise: a^2 = b^2 + c^2 - 2bc cos A. The minus sign is crucial. For the angle formula, remember: cos A = (b^2 + c^2 - a^2) / (2bc) \u2014 the side opposite the angle you're finding goes on the right with a negative sign in the numerator."
+      }
+    ],
+    "summary": [
+      "The Cosine Rule (a^2 = b^2 + c^2 - 2bc cos A) generalises Pythagoras to any triangle and reduces to it when A = 90 degrees.",
+      "Use the Cosine Rule for SAS (two sides and the included angle) to find the third side.",
+      "Use the rearranged form cos A = (b^2 + c^2 - a^2) / (2bc) for SSS (three sides) to find an angle.",
+      "Remember to take the square root when finding a side, and use inverse cosine (cos^-1) when finding an angle.",
+      "Label your triangle carefully: side a is opposite angle A, and A must be the included angle between sides b and c."
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q5",
+  "title": "Quadrilaterals — Problems",
+  "problems": [
+    {
+      "id": "C1_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": ["quadrilateral_properties"],
+      "problem_text": "Find the sum of the interior angles of any quadrilateral.",
+      "answer": "$360^\\\\circ$",
+      "solution": "A quadrilateral can be divided into two triangles by drawing a diagonal. Each triangle has $180^\\\\circ$, so the sum of interior angles of a quadrilateral is $2 \\\\times 180^\\\\circ = 360^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": ["quadrilateral_properties"],
+      "problem_text": "Three angles of a quadrilateral are $75^\\\\circ$, $90^\\\\circ$, and $105^\\\\circ$. Find the fourth angle.",
+      "answer": "$90^\\\\circ$",
+      "solution": "Sum of angles in a quadrilateral $= 360^\\\\circ$. Sum of three angles $= 75 + 90 + 105 = 270^\\\\circ$. The fourth angle $= 360 - 270 = 90^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": ["quadrilateral_types"],
+      "problem_text": "Name the quadrilateral that has all four sides equal and all four angles equal.",
+      "answer": "Square",
+      "solution": "A square has all four sides equal and all four angles equal (each $90^\\\\circ$). A rhombus has all sides equal but angles are not necessarily equal."
+    },
+    {
+      "id": "C1_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": ["symmetry"],
+      "problem_text": "How many lines of symmetry does a rectangle (that is not a square) have?",
+      "answer": "2 lines of symmetry",
+      "solution": "A non-square rectangle has 2 lines of symmetry: one vertical through the midpoints of the top and bottom sides, and one horizontal through the midpoints of the left and right sides."
+    },
+    {
+      "id": "C1_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": ["quadrilateral_angles", "algebra"],
+      "problem_text": "The angles of a quadrilateral are $x^\\\\circ$, $(2x)^\\\\circ$, $(3x)^\\\\circ$, and $(4x)^\\\\circ$. Find $x$ and the size of each angle.",
+      "answer": "$x = 36$, angles are $36^\\\\circ$, $72^\\\\circ$, $108^\\\\circ$, $144^\\\\circ$",
+      "solution": "$x + 2x + 3x + 4x = 360$, $10x = 360$, $x = 36$. The angles are $36^\\\\circ$, $72^\\\\circ$, $108^\\\\circ$, $144^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": ["parallelogram"],
+      "problem_text": "In a parallelogram, one angle is $65^\\\\circ$. Find the other three angles.",
+      "answer": "$65^\\\\circ$, $115^\\\\circ$, $115^\\\\circ$",
+      "solution": "In a parallelogram, opposite angles are equal and adjacent angles are supplementary. Given one angle $= 65^\\\\circ$, the opposite angle is also $65^\\\\circ$. The adjacent angles are $180^\\\\circ - 65^\\\\circ = 115^\\\\circ$ each."
+    },
+    {
+      "id": "C1_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": ["quadrilateral", "trapezium"],
+      "problem_text": "In an isosceles trapezium $ABCD$ with $AB \\\\parallel CD$, $\\\\angle A = 70^\\\\circ$. Find the other three angles.",
+      "answer": "$\\\\angle B = 70^\\\\circ$, $\\\\angle C = 110^\\\\circ$, $\\\\angle D = 110^\\\\circ$",
+      "solution": "In an isosceles trapezium, base angles are equal and adjacent angles on the same leg sum to $180^\\\\circ$. $\\\\angle A = 70^\\\\circ$, so $\\\\angle D = 180 - 70 = 110^\\\\circ$ (co-interior with $AB \\\\parallel CD$). Since it's isosceles, $\\\\angle B = \\\\angle A = 70^\\\\circ$ and $\\\\angle C = \\\\angle D = 110^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": ["rhombus"],
+      "problem_text": "A rhombus has one angle of $120^\\\\circ$. Find its other angles and determine how many lines of symmetry it has.",
+      "answer": "Angles: $120^\\\\circ$, $60^\\\\circ$, $120^\\\\circ$, $60^\\\\circ$; 2 lines of symmetry",
+      "solution": "In a rhombus, opposite angles are equal. So two angles are $120^\\\\circ$ each. Adjacent angles sum to $180^\\\\circ$ (since a rhombus is a parallelogram), so the other two angles are $180 - 120 = 60^\\\\circ$ each. A rhombus has 2 lines of symmetry along its diagonals."
+    },
+    {
+      "id": "C1_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": ["quadrilateral", "angle_chase", "algebra"],
+      "problem_text": "The angles of a quadrilateral are $(2x+10)^\\\\circ$, $(3x-5)^\\\\circ$, $(4x+10)^\\\\circ$, and $(x-5)^\\\\circ$. Find $x$ and the largest angle.",
+      "answer": "$x = 35$, largest angle $= 150^\\\\circ$",
+      "solution": "$(2x+10) + (3x-5) + (4x+10) + (x-5) = 360$. Simplifying: $10x + 10 = 360$, $10x = 350$, $x = 35$. Angles: $2(35)+10 = 80^\\\\circ$, $3(35)-5 = 100^\\\\circ$, $4(35)+10 = 150^\\\\circ$, $35-5 = 30^\\\\circ$. Largest is $150^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": ["parallelogram", "algebra"],
+      "problem_text": "In parallelogram $ABCD$, $\\\\angle A = (3x+10)^\\\\circ$ and $\\\\angle B = (2x-5)^\\\\circ$. Find $x$ and all four angles.",
+      "answer": "$x = 35$, angles are $115^\\\\circ$, $65^\\\\circ$, $115^\\\\circ$, $65^\\\\circ$",
+      "solution": "Adjacent angles in a parallelogram are supplementary: $(3x+10) + (2x-5) = 180$, $5x + 5 = 180$, $5x = 175$, $x = 35$. $\\\\angle A = 3(35)+10 = 105+10 = 115^\\\\circ$. $\\\\angle B = 2(35)-5 = 70-5 = 65^\\\\circ$. Opposite angles are equal: $\\\\angle C = \\\\angle A = 115^\\\\circ$, $\\\\angle D = \\\\angle B = 65^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": ["quadrilateral", "ratio", "algebra"],
+      "problem_text": "The angles of a quadrilateral are in the ratio $2:3:5:8$. Find the angles and state what type of quadrilateral it is (if any specific type).",
+      "answer": "Angles: $40^\\\\circ$, $60^\\\\circ$, $100^\\\\circ$, $160^\\\\circ$; it is a general quadrilateral",
+      "solution": "Let the angles be $2x$, $3x$, $5x$, $8x$. Sum: $2x + 3x + 5x + 8x = 18x = 360$, $x = 20$. Angles: $40^\\\\circ$, $60^\\\\circ$, $100^\\\\circ$, $160^\\\\circ$. One angle is $> 180^\\\\circ$? $160^\\\\circ < 180$, so it's convex. Since no sides are given parallel or equal, it is a general (irregular) quadrilateral."
+    },
+    {
+      "id": "C1_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": ["kite", "symmetry"],
+      "problem_text": "A kite has angles $80^\\\\circ$, $80^\\\\circ$, $130^\\\\circ$, and $x^\\\\circ$, where $x$ is the angle between the unequal sides. Find $x$ and describe the symmetry of the kite.",
+      "answer": "$x = 70^\\\\circ$, one line of symmetry",
+      "solution": "Sum of angles $= 360^\\\\circ$. So $80 + 80 + 130 + x = 360$, $290 + x = 360$, $x = 70^\\\\circ$. A kite has one line of symmetry through the vertices with the equal angles (the $80^\\\\circ$ angles)."
+    },
+    {
+      "id": "C1_Q5_X1",
+      "difficulty": "X",
+      "skill_tags": ["quadrilateral", "proof"],
+      "problem_text": "Prove that the sum of the angles of a quadrilateral is $360^\\\\circ$ by dividing it into two triangles.",
+      "answer": "Proof using diagonal",
+      "solution": "Consider quadrilateral $ABCD$. Draw diagonal $AC$, dividing it into $\\\\triangle ABC$ and $\\\\triangle ACD$. In $\\\\triangle ABC$: $\\\\angle CAB + \\\\angle ABC + \\\\angle BCA = 180^\\\\circ$. In $\\\\triangle ACD$: $\\\\angle CAD + \\\\angle ACD + \\\\angle CDA = 180^\\\\circ$. Adding: $(\\\\angle CAB + \\\\angle CAD) + \\\\angle ABC + (\\\\angle BCA + \\\\angle ACD) + \\\\angle CDA = 360^\\\\circ$. But $\\\\angle CAB + \\\\angle CAD = \\\\angle A$ and $\\\\angle BCA + \\\\angle ACD = \\\\angle C$ of the quadrilateral. So $\\\\angle A + \\\\angle B + \\\\angle C + \\\\angle D = 360^\\\\circ$."
+    },
+    {
+      "id": "C1_Q5_X2",
+      "difficulty": "X",
+      "skill_tags": ["parallelogram", "proof"],
+      "problem_text": "Prove that the diagonals of a parallelogram bisect each other.",
+      "answer": "Proof using ASA or AAS congruence",
+      "solution": "Let $ABCD$ be a parallelogram with diagonals $AC$ and $BD$ intersecting at $O$. In $\\\\triangle AOB$ and $\\\\triangle COD$:\n1. $\\\\angle OAB = \\\\angle OCD$ (alternate angles, $AB \\\\parallel CD$)\n2. $AB = CD$ (opposite sides of a parallelogram)\n3. $\\\\angle OBA = \\\\angle ODC$ (alternate angles, $AB \\\\parallel CD$)\nTherefore $\\\\triangle AOB \\\\cong \\\\triangle COD$ by ASA. Hence $OA = OC$ and $OB = OD$, meaning the diagonals bisect each other."
+    },
+    {
+      "id": "C1_Q5_X3",
+      "difficulty": "X",
+      "skill_tags": ["quadrilateral", "angle_chase", "proof"],
+      "problem_text": "Prove that if a quadrilateral has three right angles, the fourth angle must also be a right angle.",
+      "answer": "Proof using angle sum",
+      "solution": "Let the angles of quadrilateral $ABCD$ be $\\\\angle A$, $\\\\angle B$, $\\\\angle C$, $\\\\angle D$. Given $\\\\angle A = \\\\angle B = \\\\angle C = 90^\\\\circ$. Sum of angles in a quadrilateral $= 360^\\\\circ$. Therefore $90 + 90 + 90 + \\\\angle D = 360$, $270 + \\\\angle D = 360$, $\\\\angle D = 90^\\\\circ$. Hence the quadrilateral is a rectangle."
+    },
+    {
+      "id": "C1_Q5_X4",
+      "difficulty": "X",
+      "skill_tags": ["quadrilateral", "composite", "transformation"],
+      "problem_text": "A quadrilateral has vertices at $(0,0)$, $(4,0)$, $(5,3)$, and $(1,3)$. Identify the type of quadrilateral and prove that its diagonals bisect each other.",
+      "answer": "Parallelogram; proof using midpoints of diagonals",
+      "solution": "Let the vertices be $A(0,0)$, $B(4,0)$, $C(5,3)$, $D(1,3)$. $AB$ is horizontal from $(0,0)$ to $(4,0)$, length 4. $DC$ is horizontal from $(1,3)$ to $(5,3)$, length 4. $AD$ goes from $(0,0)$ to $(1,3)$, slope $= 3$. $BC$ goes from $(4,0)$ to $(5,3)$, slope $= 3$. So $AB \\\\parallel DC$ and $AD \\\\parallel BC$, making it a parallelogram. Midpoint of $AC$: $((0+5)/2, (0+3)/2) = (2.5, 1.5)$. Midpoint of $BD$: $((4+1)/2, (0+3)/2) = (2.5, 1.5)$. The midpoints are the same, so the diagonals bisect each other."
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q3",
+  "title": "Bar Charts & Pictograms - Problem Set",
+  "problems": [
+    {
+      "id": "H1_Q3_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "In a bar chart showing favourite sports, the bar for Football has height 8 cm and the key says 1 cm = 5 students. How many students chose Football?",
+      "options": [
+        "8",
+        "13",
+        "35",
+        "40"
+      ],
+      "answer": 3,
+      "explanation": "Bar height = 8 cm. Each cm represents 5 students. Number of students = 8 × 5 = 40."
+    },
+    {
+      "id": "H1_Q3_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A pictogram uses a symbol to represent 10 books. If 4.5 symbols are shown for Fiction, how many fiction books were read?",
+      "options": [
+        "40",
+        "45",
+        "50",
+        "450"
+      ],
+      "answer": 1,
+      "explanation": "Each full symbol = 10 books. 4.5 × 10 = 45 books."
+    },
+    {
+      "id": "H1_Q3_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "In a dual bar chart, the bar for Boys in Class A has height 12 and the bar for Girls in Class A has height 15. How many total students are in Class A?",
+      "options": [
+        "12",
+        "15",
+        "27",
+        "30"
+      ],
+      "answer": 2,
+      "explanation": "Total students in Class A = boys (12) + girls (15) = 27."
+    },
+    {
+      "id": "H1_Q3_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A compound bar chart shows sales of three products. The bar segments for Product A (20 units), Product B (35 units), and Product C (15 units) are stacked. What is the total height of the bar?",
+      "options": [
+        "55",
+        "60",
+        "70",
+        "75"
+      ],
+      "answer": 2,
+      "explanation": "Total = 20 + 35 + 15 = 70 units."
+    },
+    {
+      "id": "H1_Q3_05",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "In a pictogram, each full circle represents 50 people. A half circle represents how many people?",
+      "options": [
+        "10",
+        "25",
+        "50",
+        "100"
+      ],
+      "answer": 1,
+      "explanation": "Half of the key value: 50 ÷ 2 = 25 people."
+    },
+    {
+      "id": "H1_Q3_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A bar chart shows the number of rainy days per month. January bar is 6 cm, February is 4 cm, March is 3 cm, April is 2 cm. If 1 cm = 5 days, how many total rainy days were there from January to March?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "answer": 3,
+      "explanation": "January: 6 × 5 = 30, February: 4 × 5 = 20, March: 3 × 5 = 15. Total = 30 + 20 + 15 = 65 days."
+    },
+    {
+      "id": "H1_Q3_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A dual bar chart compares two shops. Shop A's bar for Week 1 has height 8, Shop B's bar has height 5. For Week 2, Shop A has height 6, Shop B has height 9. What is the difference in total sales between the two shops over the two weeks?",
+      "options": [
+        "Shop A sold 2 more",
+        "Shop B sold 2 more",
+        "Shop A sold 4 more",
+        "They sold the same total"
+      ],
+      "answer": 3,
+      "explanation": "Shop A total = 8 + 6 = 14. Shop B total = 5 + 9 = 14. They sold the same total."
+    },
+    {
+      "id": "H1_Q3_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A pictogram shows the number of cars sold each day. Monday: 6 symbols, Tuesday: 4 symbols, Wednesday: 7 symbols, Thursday: 5 symbols, Friday: 8 symbols. Each symbol = 2 cars. How many cars were sold on Wednesday and Thursday combined?",
+      "options": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "answer": 1,
+      "explanation": "Wednesday: 7 × 2 = 14 cars. Thursday: 5 × 2 = 10 cars. Total = 14 + 10 = 24 cars."
+    },
+    {
+      "id": "H1_Q3_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "In a compound bar chart showing expenses (Rent, Food, Transport), the Rent segment is 40 mm, Food is 55 mm, Transport is 25 mm. What fraction of total expenses is Food?",
+      "options": [
+        "11/24",
+        "11/20",
+        "11/12",
+        "55/100"
+      ],
+      "answer": 0,
+      "explanation": "Total = 40 + 55 + 25 = 120 mm. Food fraction = 55/120 = 11/24."
+    },
+    {
+      "id": "H1_Q3_10",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A bar chart has bars of height: Apples 7, Bananas 5, Oranges 9, Pears 4. What is the ratio of Apples to Oranges?",
+      "options": [
+        "7:5",
+        "7:9",
+        "5:7",
+        "9:7"
+      ],
+      "answer": 1,
+      "explanation": "Apple height = 7, Orange height = 9. The ratio of Apples to Oranges is 7:9."
+    },
+    {
+      "id": "H1_Q3_11",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A pictogram uses a symbol that represents 20 units. If 3.75 symbols are shown for a category, how many units does this represent?",
+      "options": [
+        "60",
+        "65",
+        "70",
+        "75"
+      ],
+      "answer": 3,
+      "explanation": "3.75 × 20 = 75 units."
+    },
+    {
+      "id": "H1_Q3_12",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A dual bar chart shows test scores for two classes. Class X scores: Test 1 (14), Test 2 (16), Test 3 (18). Class Y scores: Test 1 (12), Test 2 (18), Test 3 (15). Which class has the higher total score across all three tests?",
+      "options": [
+        "Class X by 1 mark",
+        "Class X by 3 marks",
+        "Class Y by 1 mark",
+        "Class Y by 3 marks"
+      ],
+      "answer": 1,
+      "explanation": "Class X total = 14 + 16 + 18 = 48. Class Y total = 12 + 18 + 15 = 45. Class X is higher by 3 marks."
+    },
+    {
+      "id": "H1_Q3_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A compound bar chart shows monthly rainfall. The total bar height for June is 80 mm, consisting of three segments: Morning (25 mm), Afternoon (35 mm), Evening (20 mm). What percentage of the daily rain fell in the Afternoon?",
+      "options": [
+        "35%",
+        "43.75%",
+        "45%",
+        "25%"
+      ],
+      "answer": 1,
+      "explanation": "Percentage = (35 ÷ 80) × 100 = 43.75%."
+    },
+    {
+      "id": "H1_Q3_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "In a dual bar chart, the bars for two companies show profits over 4 years:\nCompany A: Year 1 (10), Year 2 (15), Year 3 (25), Year 4 (30)\nCompany B: Year 1 (8), Year 2 (12), Year 3 (18), Year 4 (35)\nIn which year was the difference in profit between the two companies the greatest?",
+      "options": [
+        "Year 1",
+        "Year 2",
+        "Year 3",
+        "Year 4"
+      ],
+      "answer": 2,
+      "explanation": "Differences: Year 1 = 10-8=2, Year 2 = 15-12=3, Year 3 = 25-18=7, Year 4 = 30-35=-5 (Company B ahead by 5, absolute diff=5). The greatest absolute difference is 7 in Year 3."
+    },
+    {
+      "id": "H1_Q3_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A pictogram shows the number of trees planted. Each full tree symbol = 100 trees. The symbols shown are: Park A: 3 full + 1 quarter, Park B: 2 full + 1 half, Park C: 4 full + 3 quarter. How many total trees were planted in all three parks?",
+      "options": [
+        "950",
+        "1000",
+        "1025",
+        "1050"
+      ],
+      "answer": 3,
+      "explanation": "Park A: 3.25 × 100 = 325. Park B: 2.5 × 100 = 250. Park C: 4.75 × 100 = 475. Total = 325 + 250 + 475 = 1050."
+    },
+    {
+      "id": "H1_Q3_16",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A bar chart shows population of four towns: Town W (600), Town X (450), Town Y (900), Town Z (300). If the scale is changed so that 1 cm represents 150 people instead of 50 people, by what factor do all bar heights change?",
+      "options": [
+        "They stay the same",
+        "They become 1.5 times taller",
+        "They become one-third as tall",
+        "They become 3 times taller"
+      ],
+      "answer": 2,
+      "explanation": "Originally 1 cm = 50 people, so Town W bar = 600/50 = 12 cm. With new scale 1 cm = 150 people, Town W bar = 600/150 = 4 cm. 4/12 = 1/3. All bars become one-third as tall."
+    }
+  ]
+}

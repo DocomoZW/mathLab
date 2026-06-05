@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q7",
+  "title": "Circle Theorems 2: Tangents and Chords",
+  "syllabus_ref": "IGCSE 0580 C4.5-C4.7",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Imagine standing at the edge of a circular pond and looking straight ahead. The line of your gaze just touches the water at one point — that's a tangent. Now imagine throwing two ropes from the same point on the bank to two different points on the opposite shore — you'd be surprised to find both ropes are exactly the same length! These real-world intuitions are the foundation of some of the most tested circle theorems in IGCSE. Once you master them, you'll solve geometry problems that look impossible at first glance.",
+    "prerequisites": [
+      "C1_Q6: Circle theorems 1 (angle in semicircle, centre-twice-circumference, angles in same segment, cyclic quadrilaterals)",
+      "C1_Q4: Triangle properties, isosceles triangles, congruence (RHS)",
+      "Understanding of right angles and perpendicular lines",
+      "Pythagoras' theorem (for chord length calculations)"
+    ],
+    "core_explanation": "### Tangent-Radius Theorem\n\nA **tangent** is a line that touches a circle at exactly one point (the **point of tangency**).\n\n**The radius drawn to the point of tangency is perpendicular to the tangent.**\n\nIf $O$ is the centre, $T$ is the point of tangency, and the line $l$ is tangent to the circle at $T$, then:\n$$OT \\\\perp l$$\n\nThis means the angle between the radius and the tangent at the point of contact is $90^\\\\circ$.\n\n### Two Tangents from a Point\n\n**From any point outside a circle, the two tangents drawn to the circle are equal in length.**\n\nIf $P$ is a point outside the circle, and tangents $PA$ and $PB$ touch the circle at $A$ and $B$:\n$$PA = PB$$\n\nFurthermore, the line from $P$ to the centre $O$ bisects the angle between the two tangents:\n$$\\\\angle APO = \\\\angle BPO$$\n\n### Alternate Segment Theorem\n\n**The angle between a tangent and a chord through the point of tangency is equal to the angle in the alternate segment.**\n\nIf a tangent at $A$ touches the circle, and $AB$ is a chord, then for any point $C$ on the circle on the opposite side of $AB$ from the tangent:\n$$\\\\angle \\\\text{(tangent-chord at A)} = \\\\angle ACB$$\n\nIn other words, the angle between the tangent $AX$ and chord $AB$ equals the angle in the opposite (alternate) segment.\n\n### Chord Properties\n\nA **chord** is a straight line segment whose endpoints both lie on the circle.\n\n**The perpendicular from the centre of a circle to a chord bisects the chord.**\n\nIf $O$ is the centre, $AB$ is a chord, and $OM \\\\perp AB$, then:\n$$AM = MB$$\n\nThe distance from the centre to the chord is the perpendicular distance $OM$. If you know the radius $r$ and the half-chord length $AM$, you can use Pythagoras:\n$$r^2 = OM^2 + AM^2$$\n\n**Conversely:** The line from the centre to the midpoint of a chord is perpendicular to the chord.",
+    "worked_example": "**Problem 1:** A circle has centre $O$ and radius 13 cm. A chord $AB$ is 24 cm long. Find the perpendicular distance from the centre to the chord.\n\n**Step 1:** Draw the perpendicular from $O$ to $AB$, meeting at $M$.\n- By the chord theorem, $OM \\\\perp AB$ and $AM = MB$.\n\n**Step 2:** Find $AM$.\n$$AM = \\\\frac{AB}{2} = \\\\frac{24}{2} = 12 \\\\text{ cm}$$\n\n**Step 3:** Use Pythagoras' theorem in right triangle $OMA$.\n- $OA = 13$ cm (radius)\n- $AM = 12$ cm\n$$OA^2 = OM^2 + AM^2$$\n$$13^2 = OM^2 + 12^2$$\n$$169 = OM^2 + 144$$\n$$OM^2 = 25$$\n$$OM = 5 \\\\text{ cm}$$\n\n**Answer:** The perpendicular distance from the centre to the chord is $5$ cm.\n\n---\n\n**Problem 2:** In the diagram, $PA$ and $PB$ are tangents from point $P$ to a circle with centre $O$. $\\\\angle APB = 60^\\\\circ$. Find $\\\\angle AOB$.\n\n**Step 1:** Identify what we know.\n- $PA$ and $PB$ are tangents, so $OA \\\\perp PA$ and $OB \\\\perp PB$ (tangent-radius theorem).\n- $\\\\angle OAP = 90^\\\\circ$ and $\\\\angle OBP = 90^\\\\circ$.\n\n**Step 2:** Consider quadrilateral $AOBP$.\n- Sum of interior angles in a quadrilateral = $360^\\\\circ$.\n$$\\\\angle AOB + \\\\angle OAP + \\\\angle APB + \\\\angle OBP = 360^\\\\circ$$\n$$\\\\angle AOB + 90^\\\\circ + 60^\\\\circ + 90^\\\\circ = 360^\\\\circ$$\n$$\\\\angle AOB + 240^\\\\circ = 360^\\\\circ$$\n$$\\\\angle AOB = 120^\\\\circ$$\n\n**Answer:** $\\\\angle AOB = 120^\\\\circ$.",
+    "common_mistakes": [
+      {
+        "mistake": "Applying the alternate segment theorem backwards — using the angle between the tangent and chord to equal an angle on the SAME side as the tangent rather than the alternate (opposite) segment.",
+        "correction": "The word 'alternate' means 'on the other side'. The angle between the tangent and chord equals the angle in the segment OPPOSITE to the tangent — not on the same side. Draw the diagram and clearly identify the two segments created by the chord."
+      },
+      {
+        "mistake": "Forgetting that the tangent-radius theorem creates a right angle — this is often the crucial step that opens up Pythagoras or other angle calculations.",
+        "correction": "Whenever you see a tangent and radius at the same point, immediately mark the right angle ($90^\\\\circ$). This is almost always the first step in solving the problem."
+      },
+      {
+        "mistake": "Thinking the two tangents from a point are equal only for certain circles — it's true for ALL circles and ALL external points.",
+        "correction": "If you draw two tangents from any point outside any circle, the tangent segments are always equal in length. This is a universal theorem, not a special case."
+      },
+      {
+        "mistake": "Confusing the chord bisector theorem — thinking the perpendicular from the centre bisects the chord into arcs rather than the chord length itself.",
+        "correction": "The perpendicular from the centre bisects the CHORD (the line segment), not the arc. The chord is split into two equal lengths. For arcs, you need a different property."
+      }
+    ],
+    "summary": [
+      "The radius to a point of tangency is perpendicular to the tangent ($OT \\\\perp$ tangent).",
+      "Two tangents drawn from an external point to a circle are equal in length.",
+      "The alternate segment theorem: the angle between a tangent and a chord equals the angle in the alternate segment.",
+      "The perpendicular from the centre to a chord bisects the chord.",
+      "Use Pythagoras' theorem with the radius, half-chord length, and perpendicular distance from the centre.",
+      "These theorems often combine — for example, using tangent-radius right angles together with angle sums in quadrilaterals."
+    ]
+  }
+}

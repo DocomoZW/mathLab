@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q3",
+  "title": "Angles of Elevation/Depression",
+  "syllabus_ref": "IGCSE 0580 E5.3",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A park ranger spots a fire on a distant mountain. How far away is it? A sailor on a lighthouse sees a boat approaching — how far is the boat from the base of the lighthouse? These real-world problems involve measuring angles of elevation and depression. By combining these angles with trigonometric ratios, we can calculate distances and heights without ever leaving our vantage point. This is the mathematics behind surveying, navigation, and search-and-rescue operations.",
+    "prerequisites": [
+      "Understanding of SOH CAH TOA trigonometric ratios",
+      "Ability to identify right-angled triangles in practical contexts",
+      "Using a calculator to find trigonometric values and inverse trig functions",
+      "Interpreting diagrams drawn from word problems"
+    ],
+    "core_explanation": "## What Are Angles of Elevation and Depression?\n\n### Angle of Elevation\n\nThe **angle of elevation** is the angle measured **upward** from the horizontal line of sight to an object above the observer.\n- When you look up at a plane, the angle between the horizontal and your line of sight is the angle of elevation\n- Measured from the horizontal **upwards**\n\n### Angle of Depression\n\nThe **angle of depression** is the angle measured **downward** from the horizontal line of sight to an object below the observer.\n- When you look down from a cliff to a boat, the angle between the horizontal and your line of sight is the angle of depression\n- Measured from the horizontal **downwards**\n\n### Key Relationship: Alternate Angles\n\nA crucial insight: **The angle of depression from point A to point B is equal to the angle of elevation from point B to point A** (alternate angles on parallel lines are equal).\n\n### Setting Up Problems\n\n1. Draw a diagram showing the observer, the object, and the horizontal line\n2. Mark the angle of elevation or depression\n3. Identify the right-angled triangle formed by:\n   - The vertical height difference\n   - The horizontal distance\n   - The line of sight (hypotenuse)\n4. Use SOH CAH TOA to find the unknown\n\n### Common Formulas\n\nFor an object above the observer (elevation):\n- tan(theta) = height / horizontal distance\n- height = horizontal distance x tan(theta)\n- horizontal distance = height / tan(theta)\n\nFor an object below the observer (depression):\n- tan(theta) = height / horizontal distance  (same formula!)\n- The height is the difference in vertical elevation between observer and object",
+    "worked_example": "**Problem:** A building is 50 metres tall. From the top of the building, the angle of depression of a car on the ground is 25 degrees. How far is the car from the base of the building?\n\n**Step 1:** Draw and label a diagram.\n- Building height (vertical) = 50 m\n- Angle of depression from top = 25 degrees\n- Distance from base (horizontal) = ? (call it 'd')\n\nThe angle of depression from the top = angle of elevation from the bottom (alternate angles).\nSo the angle inside the triangle at the top (from horizontal down to car) = 25 degrees.\n\nAlternatively, draw the triangle with the right angle at the base of the building:\n- Opposite (height) = 50 m\n- Adjacent (horizontal distance) = d\n- Angle at the top (between vertical and hypotenuse) is (90 - 25) = 65 degrees\n- Or simpler: the angle at the ground between horizontal and line of sight = 25 degrees (alternate angles)\n\n**Step 2:** Identify the trig ratio.\nWe know the height opposite the 25-degree angle? Let's clarify:\n- From the car looking up: angle of elevation = 25 degrees\n- Opposite to this angle = building height = 50 m\n- Adjacent to this angle = horizontal distance = d\n- So tan(25 degrees) = 50 / d\n\n**Step 3:** Substitute and solve.\ntan(25 degrees) = 0.4663 (from calculator)\n0.4663 = 50 / d\nd = 50 / 0.4663\nd = 107.2 m\n\n**Answer:** The car is approximately 107.2 metres from the base of the building.\n\n**Check:** 50 / tan(25) = 50 / 0.4663 = 107.2. Reasonable for a 50 m building.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing which angle to use in the triangle — putting the angle of elevation/depression in the wrong corner",
+        "correction": "Draw a clear horizontal line from the observer's eye. The angle of elevation is above this line; the angle of depression is below it. Use alternate angle rule: the angle of depression from the top equals the angle of elevation from the bottom."
+      },
+      {
+        "mistake": "Forgetting that the observer's eye height may need to be added if the problem mentions it",
+        "correction": "If the problem says 'from eye level' or gives the observer's height, add that to the calculated height. Read carefully: is the measurement from ground level or from eye level?"
+      },
+      {
+        "mistake": "Using the wrong trigonometric ratio (e.g., using sin instead of tan)",
+        "correction": "In elevation/depression problems, you are typically working with the vertical height (opposite) and horizontal distance (adjacent), so tan is usually the correct ratio. Only use sin or cos if the line of sight (hypotenuse) is involved."
+      }
+    ],
+    "summary": [
+      "Angle of elevation is measured upward from the horizontal; angle of depression is measured downward from the horizontal.",
+      "The angle of depression from one point equals the angle of elevation from the other point (alternate angles are equal).",
+      "Draw a diagram first — mark the horizontal line, the line of sight, the vertical height, and the horizontal distance.",
+      "Most problems use tan(theta) since the vertical height and horizontal distance form the opposite and adjacent sides.",
+      "Always check whether the question asks for height, horizontal distance, or line-of-sight distance, and round appropriately."
+    ]
+  }
+}

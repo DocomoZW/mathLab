@@ -1,0 +1,39 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q2",
+  "title": "Sample Space Diagrams",
+  "syllabus_ref": "IGCSE 0580 G8.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Roll two dice and add the numbers. What's the most likely total? Is 7 really more common than 12? The answer lies in the sample space — a complete map of every possible outcome. Sample space diagrams (like two-way tables) turn messy probability problems into a simple visual grid, making it easy to spot patterns and calculate probabilities.",
+    "prerequisites": [
+      "Understand basic probability: P(event) = favourable / total outcomes",
+      "Be able to list outcomes systematically without missing any"
+    ],
+    "core_explanation": "## What is a Sample Space?\n\nA sample space is the set of all possible outcomes of an experiment. For simple experiments you can list outcomes directly. For experiments with two or more stages (like rolling two dice), a sample space diagram helps you organise all possibilities.\n\n### Two-Way Tables (Sample Space Diagrams)\n\nWhen you have two independent events (e.g., rolling two dice, spinning two spinners, flipping two coins), you can use a two-way table. One event's outcomes go across the top row, the other's go down the first column. Each cell in the table represents one combined outcome.\n\n### Example: Rolling Two Dice\n\nHere is the sample space when rolling two fair six-sided dice:\n\n          1     2     3     4     5     6\n       -------------------------------------\n    1  | 1,1   1,2   1,3   1,4   1,5   1,6\n    2  | 2,1   2,2   2,3   2,4   2,5   2,6\n    3  | 3,1   3,2   3,3   3,4   3,5   3,6\n    4  | 4,1   4,2   4,3   4,4   4,5   4,6\n    5  | 5,1   5,2   5,3   5,4   5,5   5,6\n    6  | 6,1   6,2   6,3   6,4   6,5   6,6\n\nThere are 6 x 6 = 36 equally likely outcomes.\n\n### Finding Probabilities from a Sample Space\n\nOnce you have the diagram, count the cells that match your event and divide by the total number of cells.\n\n- P(sum = 7): Count cells where the two numbers add to 7. These are (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — 6 outcomes. So P(sum = 7) = 6/36 = 1/6.\n- P(double): Count cells where both numbers are the same: (1,1), (2,2), (3,3), (4,4), (5,5), (6,6) — 6 outcomes. So P(double) = 6/36 = 1/6.\n\n### Systematic Listing\n\nEven without a table, you can list outcomes systematically. For example, flipping two coins:\n\n{ HH, HT, TH, TT }\n\nThis has 4 equally likely outcomes.\n\n### The Multiplication Principle\n\nIf an experiment has two stages and the first stage has m outcomes and the second has n outcomes, the total number of combined outcomes is m x n.\n\n- Flipping a coin (2 outcomes) and rolling a dice (6 outcomes): 2 x 6 = 12 outcomes\n- Choosing a shirt (4 options) and trousers (3 options): 4 x 3 = 12 outfits\n\nThis extends to three or more stages: multiply the number of outcomes at each stage.",
+    "worked_example": "**Problem:** A coin is flipped and a fair six-sided dice is rolled. Draw a sample space diagram and find the probability of getting a head and an even number.\n\n**Step 1:** Identify all possible outcomes for each item.\nCoin: H, T (2 outcomes)\nDice: 1, 2, 3, 4, 5, 6 (6 outcomes)\n\n**Step 2:** Create the sample space diagram.\n          H        T\n       -----------------\n    1  | H,1      T,1\n    2  | H,2      T,2\n    3  | H,3      T,3\n    4  | H,4      T,4\n    5  | H,5      T,5\n    6  | H,6      T,6\n\nTotal outcomes = 2 x 6 = 12\n\n**Step 3:** Identify favourable outcomes.\nWe need H and an even number: outcomes are (H,2), (H,4), (H,6). That's 3 outcomes.\n\n**Step 4:** Calculate the probability.\nP(head and even) = 3/12 = 1/4\n\n**Answer:** The probability is 1/4 (or 0.25, or 25%).",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting that (H,T) and (T,H) are different outcomes when flipping two coins.",
+        "correction": "When order matters, treat each distinct pair as a separate outcome. (H,T) means coin 1 is heads, coin 2 is tails — this is different from (T,H)."
+      },
+      {
+        "mistake": "Counting the total outcomes incorrectly — e.g., thinking rolling two dice has 36 but adding instead of multiplying.",
+        "correction": "Use the multiplication principle: if stage 1 has m outcomes and stage 2 has n outcomes, the total combined outcomes are m x n, not m + n."
+      },
+      {
+        "mistake": "Missing some outcomes when listing manually, especially with three or more items.",
+        "correction": "Always use a systematic approach: a two-way table for two items, or a tree diagram for three or more items. Never list at random."
+      }
+    ],
+    "summary": [
+      "A sample space is the complete set of all possible outcomes of an experiment.",
+      "Two-way (sample space) tables are excellent for organising outcomes of two-stage experiments.",
+      "The total number of combined outcomes = m x n where m and n are outcomes at each stage.",
+      "To find a probability, count favourable outcomes in the sample space and divide by the total.",
+      "Always list or diagram outcomes systematically to avoid missing any."
+    ]
+  }
+}

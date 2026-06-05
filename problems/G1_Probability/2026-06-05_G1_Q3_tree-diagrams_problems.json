@@ -1,0 +1,187 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q3",
+  "title": "Tree Diagrams - Problems",
+  "problems": [
+    {
+      "id": "G1_Q3_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "A coin is tossed twice. Draw a tree diagram and find the probability of getting two heads.",
+      "answer": "1/4",
+      "solution": "First toss: H(1/2) or T(1/2). Second toss: H(1/2) or T(1/2). P(HH) = 1/2 \u00d7 1/2 = 1/4."
+    },
+    {
+      "id": "G1_Q3_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "A fair spinner numbered 1 to 4 is spun twice. Find the probability of getting a 3 on the first spin and a 1 on the second spin.",
+      "answer": "1/16",
+      "solution": "P(3) = 1/4, P(1) = 1/4, independent. P(3 then 1) = 1/4 \u00d7 1/4 = 1/16."
+    },
+    {
+      "id": "G1_Q3_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "A bag contains 2 red and 3 blue marbles. A marble is taken, replaced, then another is taken. Find the probability of picking two red marbles.",
+      "answer": "4/25",
+      "solution": "P(red) = 2/5 each time, independent. P(RR) = 2/5 \u00d7 2/5 = 4/25."
+    },
+    {
+      "id": "G1_Q3_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "A fair spinner with colours red (R), blue (B), green (G) is spun twice. Find the probability of getting the same colour both times.",
+      "answer": "1/3",
+      "solution": "P(RR) = 1/3 \u00d7 1/3 = 1/9. Similarly P(BB) = 1/9, P(GG) = 1/9. P(same) = 1/9 + 1/9 + 1/9 = 3/9 = 1/3."
+    },
+    {
+      "id": "G1_Q3_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "The probability that it rains on any given day is 0.4. Using a tree diagram, find the probability that it rains on exactly one of the next two days.",
+      "answer": "0.48",
+      "solution": "P(rain) = 0.4, P(dry) = 0.6. P(RD) = 0.4 \u00d7 0.6 = 0.24, P(DR) = 0.6 \u00d7 0.4 = 0.24. P(exactly one) = 0.24 + 0.24 = 0.48."
+    },
+    {
+      "id": "G1_Q3_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 3 red and 2 blue sweets. Two sweets are taken without replacement. Draw a tree diagram and find the probability that both sweets are red.",
+      "answer": "3/10",
+      "solution": "P(first red) = 3/5. After removing 1 red: 2 red, 2 blue remain. P(second red | first red) = 2/4 = 1/2. P(both red) = 3/5 \u00d7 1/2 = 3/10."
+    },
+    {
+      "id": "G1_Q3_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 3 red and 2 blue sweets. Two sweets are taken without replacement. Find the probability that they are different colours.",
+      "answer": "3/5",
+      "solution": "P(RB) = 3/5 \u00d7 2/4 = 6/20 = 3/10. P(BR) = 2/5 \u00d7 3/4 = 6/20 = 3/10. P(different) = 3/10 + 3/10 = 6/10 = 3/5."
+    },
+    {
+      "id": "G1_Q3_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "The probability that a seed germinates is 0.8. Three seeds are planted. Find the probability that all three germinate.",
+      "answer": "0.512",
+      "solution": "P(germinate) = 0.8, independent. P(all three) = 0.8 \u00d7 0.8 \u00d7 0.8 = 0.512."
+    },
+    {
+      "id": "G1_Q3_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events"
+      ],
+      "problem_text": "In a game, the probability of winning a prize is 0.3. A player plays the game twice. Find the probability that the player wins exactly one prize.",
+      "answer": "0.42",
+      "solution": "P(WL) = 0.3 \u00d7 0.7 = 0.21. P(LW) = 0.7 \u00d7 0.3 = 0.21. P(exactly one) = 0.21 + 0.21 = 0.42."
+    },
+    {
+      "id": "G1_Q3_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A box contains 4 red pens and 6 blue pens. Two pens are taken without replacement. Find the probability that both pens are the same colour.",
+      "answer": "7/15",
+      "solution": "P(RR) = 4/10 \u00d7 3/9 = 12/90 = 2/15. P(BB) = 6/10 \u00d7 5/9 = 30/90 = 1/3 = 5/15. P(same) = 2/15 + 5/15 = 7/15."
+    },
+    {
+      "id": "G1_Q3_E1",
+      "difficulty": "E",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 5 red, 3 green and 2 yellow marbles. Two marbles are drawn without replacement. Find the probability that both marbles are green.",
+      "answer": "1/15",
+      "solution": "Total = 10. P(first green) = 3/10. After removing 1 green: 2 green left. P(second green | first green) = 2/9. P(both green) = 3/10 \u00d7 2/9 = 6/90 = 1/15."
+    },
+    {
+      "id": "G1_Q3_E2",
+      "difficulty": "E",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 5 red, 3 green and 2 yellow marbles. Two marbles are drawn without replacement. Find the probability that the two marbles are of different colours.",
+      "answer": "31/45",
+      "solution": "P(same) = P(RR)+P(GG)+P(YY). P(RR)=5/10\u00d74/9=20/90=2/9. P(GG)=3/10\u00d72/9=6/90=1/15. P(YY)=2/10\u00d71/9=2/90=1/45. P(same)=20/90+6/90+2/90=28/90=14/45. P(different)=1-14/45=31/45."
+    },
+    {
+      "id": "G1_Q3_E3",
+      "difficulty": "E",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement",
+        "at_least_one"
+      ],
+      "problem_text": "A bag contains 4 white and 6 black balls. Three balls are drawn without replacement. Find the probability that at least one ball is white.",
+      "answer": "5/6",
+      "solution": "P(all black) = 6/10 \u00d7 5/9 \u00d7 4/8 = 120/720 = 1/6. P(at least one white) = 1 - 1/6 = 5/6."
+    },
+    {
+      "id": "G1_Q3_E4",
+      "difficulty": "E",
+      "skill_tags": [
+        "tree_diagrams",
+        "conditional_probability_tree"
+      ],
+      "problem_text": "A bag contains 3 red and 7 blue marbles. Two marbles are drawn. Find the probability that the second marble is blue, given that the first marble drawn was red and not replaced.",
+      "answer": "7/9",
+      "solution": "After removing 1 red: 2 red, 7 blue remain. P(second blue | first red) = 7/9."
+    },
+    {
+      "id": "G1_Q3_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "tree_diagrams",
+        "without_replacement",
+        "conditional"
+      ],
+      "problem_text": "A box contains 2 red, 3 white and 5 green balls. Three balls are drawn without replacement. Find the probability that the three balls are all different colours.",
+      "answer": "1/4",
+      "solution": "Total = 10. Each ordering of R,W,G: P = 2/10 \u00d7 3/9 \u00d7 5/8 = 30/720 = 1/24. Number of orderings = 3! = 6. Total = 6 \u00d7 1/24 = 6/24 = 1/4."
+    },
+    {
+      "id": "G1_Q3_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "tree_diagrams",
+        "independent_events",
+        "multiple_conditions"
+      ],
+      "problem_text": "In a school, the probability that a student studies Mathematics is 0.6, Physics is 0.5, and Chemistry is 0.4. The choices are independent. Find the probability that a student studies exactly two of these three subjects.",
+      "answer": "0.38",
+      "solution": "P(M,P,not C) = 0.6\u00d70.5\u00d70.6 = 0.18. P(M,not P,C) = 0.6\u00d70.5\u00d70.4 = 0.12. P(not M,P,C) = 0.4\u00d70.5\u00d70.4 = 0.08. Total = 0.18+0.12+0.08 = 0.38."
+    }
+  ]
+}

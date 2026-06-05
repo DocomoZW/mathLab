@@ -1,0 +1,45 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q3",
+  "title": "Bar Charts and Pictograms",
+  "syllabus_ref": "IGCSE 0580 H9.3",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A school canteen records the number of meals sold each day: Monday 120, Tuesday 95, Wednesday 110, Thursday 130, Friday 150. A table tells you the numbers, but a well-drawn bar chart shows you in an instant that Friday is the busiest and Tuesday the quietest. Pictures and bars turn boring numbers into stories.",
+    "prerequisites": [
+      "Understanding of frequency tables (H1_Q2)",
+      "Basic arithmetic (addition, subtraction)",
+      "Reading scales on axes"
+    ],
+    "core_explanation": "Bar charts and pictograms are visual ways to display categorical or discrete data.\n\n**Bar Charts**\n- Rectangular bars of equal width represent each category\n- The **height** (or length, for horizontal bars) is proportional to the frequency\n- Bars are separated by gaps (unlike histograms — see H1_Q4)\n- Axes must be clearly labelled with a title and scale\n\n**Drawing a bar chart:**\n1. Draw and label the x-axis with categories\n2. Draw and label the y-axis with frequency (start at 0)\n3. Choose a consistent scale (e.g., 1 square = 10 units)\n4. Draw each bar to the correct height with equal widths and gaps\n\n**Compound (Stacked) Bar Charts**\nUsed when data has two or more sub-categories. Each bar is divided into segments showing the contribution of each sub-category.\n\nExample: Favourite sport by gender — each sport category has one bar divided into 'Boys' and 'Girls' sections.\n\n**Pictograms**\n- Use symbols or pictures to represent data\n- A **key** shows the value represented by one symbol\n- Each symbol represents a fixed number of items (e.g., 🍎 = 10 apples)\n- Half or quarter symbols represent fractional amounts\n\n**Drawing a pictogram:**\n1. Choose a symbol and decide what each symbol represents (the key)\n2. Draw the appropriate number of symbols for each category (partial symbols allowed)\n3. Include the key clearly\n\n**Interpreting from Charts**\n- Read bar heights against the scale to find frequencies\n- Compare categories directly from bar sizes\n- For compound bar charts, compare segments within a bar or across bars\n- Estimate values when bars fall between grid lines",
+    "worked_example": "The frequency table shows favourite ice cream flavours among 40 students:\n\n| Flavour    | Frequency |\n|------------|-----------|\n| Chocolate  | 14        |\n| Vanilla    | 10        |\n| Strawberry | 8         |\n| Mint       | 5         |\n| Other      | 3         |\n\n**Part A — Bar chart**\n- x-axis: flavours (categories)\n- y-axis: frequency (scale 0 to 16, increments of 2)\n- Draw 5 bars of equal width, separated by gaps, heights: 14, 10, 8, 5, 3\n- Label axes and title: 'Favourite Ice Cream Flavours'\n\n**Part B — Pictogram (using 🍨 = 2 students)**\n\n| Flavour    | Pictogram                                  |\n|------------|--------------------------------------------|\n| Chocolate  | 🍨 🍨 🍨 🍨 🍨 🍨 🍨 (14 → 7 symbols)         |\n| Vanilla    | 🍨 🍨 🍨 🍨 🍨 (10 → 5 symbols)                |\n| Strawberry | 🍨 🍨 🍨 🍨 (8 → 4 symbols)                   |\n| Mint       | 🍨 🍨 (4 full) + ½🍨 (5 → 2½ symbols)        |\n| Other      | 🍨 (2) + ½🍨 (3 → 1½ symbols)                |\n\nKey: 🍨 = 2 students, ½🍨 = 1 student\n\n**Part C — Interpretation**\n- Chocolate is the most popular flavour (14 students, 35%)\n- 'Other' is the least popular (3 students)\n- Chocolate + Vanilla account for 24 out of 40 students (60%)",
+    "common_mistakes": [
+      {
+        "mistake": "Not starting the y-axis at zero — this can exaggerate or minimise differences between bars, misleading the reader.",
+        "correction": "Always start the frequency axis at 0. If you must start higher (e.g., to show small differences), clearly indicate a break on the axis with //."
+      },
+      {
+        "mistake": "Making bars unequal in width or omitting gaps between bars in a bar chart (confusing it with a histogram).",
+        "correction": "Bar charts have gaps between bars because categories are distinct. Histograms have no gaps because data is continuous. Bars should all be the same width."
+      },
+      {
+        "mistake": "Pictogram symbols not matching the key — e.g., drawing 4 symbols when the key says 1 symbol = 5, but the frequency is 18.",
+        "correction": "Divide the frequency by the key value: 18 ÷ 5 = 3.6 → 3 full symbols + 0.6 of a symbol (3 full + ½ + ⅒, or round appropriately). For simplicity, examiners often accept 3½ symbols for 17.5 when key = 5."
+      },
+      {
+        "mistake": "Forgetting to include a key in a pictogram — the reader cannot interpret the symbols without it.",
+        "correction": "Always include a clear key: 'Each 🍎 represents 10 books' or similar. The key is the most important part of a pictogram."
+      }
+    ],
+    "summary": [
+      "Bar charts display categorical/discrete data with equal-width, separated bars whose heights represent frequencies.",
+      "Compound (stacked) bar charts show sub-categories within each main category as stacked segments.",
+      "Pictograms use symbols to represent data; each symbol's value is defined by a key.",
+      "Always start bar chart axes at zero and label both axes clearly.",
+      "When interpreting charts, read bar heights against the scale and compare across categories.",
+      "A pictogram key is essential — without it, the data is meaningless."
+    ]
+  }
+}

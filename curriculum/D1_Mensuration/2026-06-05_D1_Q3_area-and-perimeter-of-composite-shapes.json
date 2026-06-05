@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q3",
+  "title": "Area and Perimeter of Composite Shapes",
+  "syllabus_ref": "IGCSE 0580 D.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Real-world objects aren't just simple rectangles or circles \u2014 a swimming pool might be a rectangle with a semicircular end, and a garden might combine several shapes. Composite shapes are everywhere, and calculating their perimeter and area is a key IGCSE skill.",
+    "prerequisites": [
+      "Area and perimeter of basic 2D shapes",
+      "Addition and subtraction skills",
+      "Identifying parts of a shape"
+    ],
+    "core_explanation": "A **composite shape** is made up of two or more simple shapes (rectangles, triangles, circles, etc.) joined together.\n\n### Strategy for Area\n\n1. **Split** the composite shape into simple shapes.\n2. **Calculate** the area of each simple shape.\n3. **Add** all the areas together.\n\nSometimes you need to subtract area (e.g., area of a path around a garden = area of outer rectangle minus area of inner rectangle).\n\n### Strategy for Perimeter\n\n1. **Trace** the outer boundary of the shape.\n2. **Identify** which sides of the component shapes are on the outside.\n3. **Add** only the outside edge lengths.\n\n### Common Composite Shapes\n\n- L-shape: two rectangles joined at right angles.\n- Rectangle with semicircle on one side.\n- Annulus (ring): area = pi(R^2 - r^2) where R is outer radius, r is inner radius.\n- Rectangular path around a rectangle.\n\n### Finding Missing Lengths\nUse the given dimensions to deduce missing lengths. For an L-shape, the total vertical height equals the sum of the vertical segments.",
+    "worked_example": "Problem: An L-shaped garden consists of two rectangles. Rectangle A is 8 m by 5 m. Rectangle B is 3 m by 4 m. Find the total area.\n\nStep 1: Split into two rectangles.\nArea A = 8 x 5 = 40 m^2\nArea B = 3 x 4 = 12 m^2\n\nStep 2: Add the areas.\nTotal area = 40 + 12 = 52 m^2\n\nAnswer: The total area is 52 m^2.\n\nProblem: A rectangle of length 10 m and width 6 m has a semicircle of radius 3 m attached to one short side. Find the total area (use pi = 3.142).\n\nStep 1: Calculate rectangle area. A_rect = 10 x 6 = 60 m^2\n\nStep 2: Calculate semicircle area. A_semi = (1/2) x pi x r^2 = 0.5 x 3.142 x 9 = 14.139 m^2\n\nStep 3: Add. Total = 60 + 14.139 = 74.139 m^2\n\nAnswer: The total area is approximately 74.14 m^2.",
+    "common_mistakes": [
+      {
+        "mistake": "Counting interior edges when finding perimeter.",
+        "correction": "Perimeter is only the outside boundary. If two rectangles share an edge, that edge is NOT part of the perimeter."
+      },
+      {
+        "mistake": "Adding areas but forgetting to subtract holes (e.g., a path or a window).",
+        "correction": "For shapes with holes, calculate the outer area first, then subtract the area of the hole(s)."
+      },
+      {
+        "mistake": "Incorrectly splitting the shape and double-counting regions.",
+        "correction": "Draw your split lines clearly. Each part should be a complete simple shape, and the parts should not overlap."
+      }
+    ],
+    "summary": [
+      "Composite shapes are made of simple shapes joined together.",
+      "For area: split into simple shapes, calculate each area, then add (or subtract for holes).",
+      "For perimeter: trace the outer boundary only \u2014 do not include interior edges.",
+      "Use given dimensions to find missing lengths.",
+      "Check your work by estimating a reasonable answer."
+    ]
+  }
+}

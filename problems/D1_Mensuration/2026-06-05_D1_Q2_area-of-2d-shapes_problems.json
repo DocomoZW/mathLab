@@ -1,0 +1,168 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q2",
+  "title": "Area of 2D Shapes \u2014 Problems",
+  "problems": [
+    {
+      "id": "D1_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "area_rectangle"
+      ],
+      "problem_text": "Find the area of a rectangle with length 9 cm and width 7 cm.",
+      "answer": "63 cm^2",
+      "solution": "A = l x w = 9 x 7 = 63 cm^2"
+    },
+    {
+      "id": "D1_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "area_square"
+      ],
+      "problem_text": "Find the area of a square with side length 8 cm.",
+      "answer": "64 cm^2",
+      "solution": "A = s^2 = 8 x 8 = 64 cm^2"
+    },
+    {
+      "id": "D1_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "area_triangle"
+      ],
+      "problem_text": "Find the area of a triangle with base 12 cm and perpendicular height 5 cm.",
+      "answer": "30 cm^2",
+      "solution": "A = (1/2) x b x h = (1/2) x 12 x 5 = 30 cm^2"
+    },
+    {
+      "id": "D1_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "area_circle"
+      ],
+      "problem_text": "Find the area of a circle with radius 7 cm (use pi = 22/7).",
+      "answer": "154 cm^2",
+      "solution": "A = pi x r^2 = (22/7) x 7 x 7 = 154 cm^2"
+    },
+    {
+      "id": "D1_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_parallelogram"
+      ],
+      "problem_text": "Find the area of a parallelogram with base 10 cm and perpendicular height 6 cm.",
+      "answer": "60 cm^2",
+      "solution": "A = b x h = 10 x 6 = 60 cm^2"
+    },
+    {
+      "id": "D1_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_trapezium"
+      ],
+      "problem_text": "A trapezium has parallel sides of length 8 cm and 12 cm, and perpendicular height 5 cm. Find its area.",
+      "answer": "50 cm^2",
+      "solution": "A = (1/2)(a + b)h = (1/2)(8 + 12) x 5 = (1/2) x 20 x 5 = 50 cm^2"
+    },
+    {
+      "id": "D1_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_circle_diameter"
+      ],
+      "problem_text": "Find the area of a circle with diameter 14 cm (use pi = 22/7).",
+      "answer": "154 cm^2",
+      "solution": "r = 14/2 = 7 cm. A = pi x r^2 = (22/7) x 49 = 154 cm^2"
+    },
+    {
+      "id": "D1_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_semicircle"
+      ],
+      "problem_text": "Find the area of a semicircle with radius 10 cm (use pi = 3.142).",
+      "answer": "157.1 cm^2",
+      "solution": "A = (1/2) x pi x r^2 = 0.5 x 3.142 x 100 = 157.1 cm^2"
+    },
+    {
+      "id": "D1_Q2_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_triangle_base"
+      ],
+      "problem_text": "A triangle has area 42 cm^2 and height 7 cm. Find its base.",
+      "answer": "12 cm",
+      "solution": "A = (1/2) x b x h, so 42 = (1/2) x b x 7, 42 = 3.5b, b = 12 cm"
+    },
+    {
+      "id": "D1_Q2_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_conversion"
+      ],
+      "problem_text": "Convert 5 m^2 to cm^2.",
+      "answer": "50,000 cm^2",
+      "solution": "1 m^2 = 10,000 cm^2. 5 m^2 = 5 x 10,000 = 50,000 cm^2"
+    },
+    {
+      "id": "D1_Q2_C7",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_rectangle_missing"
+      ],
+      "problem_text": "A rectangle has area 96 cm^2 and width 8 cm. Find its length.",
+      "answer": "12 cm",
+      "solution": "A = l x w, so 96 = l x 8, l = 96/8 = 12 cm"
+    },
+    {
+      "id": "D1_Q2_C8",
+      "difficulty": "C",
+      "skill_tags": [
+        "area_triangle_word"
+      ],
+      "problem_text": "A triangular flag has base 40 cm and height 25 cm. Find its area.",
+      "answer": "500 cm^2",
+      "solution": "A = (1/2) x 40 x 25 = 500 cm^2"
+    },
+    {
+      "id": "D1_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "area_trapezium_missing"
+      ],
+      "problem_text": "A trapezium has area 60 cm^2, height 6 cm, and one parallel side 8 cm. Find the other parallel side.",
+      "answer": "12 cm",
+      "solution": "A = (1/2)(a + b)h. 60 = (1/2)(8 + b)(6). 60 = 3(8 + b). 20 = 8 + b. b = 12 cm"
+    },
+    {
+      "id": "D1_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "area_ratio"
+      ],
+      "problem_text": "A rectangle has length 15 cm and width 10 cm. The length is increased by 20% and the width is decreased by 20%. Find the percentage change in area.",
+      "answer": "4% decrease",
+      "solution": "Original area = 150 cm^2. New length = 18 cm. New width = 8 cm. New area = 144 cm^2. Change = (144-150)/150 x 100 = -4%."
+    },
+    {
+      "id": "D1_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "area_circle_sector"
+      ],
+      "problem_text": "A sector has radius 8 cm and angle 60 degrees. Find its area (use pi = 3.142).",
+      "answer": "33.51 cm^2",
+      "solution": "A = (60/360) x pi x 64 = (1/6) x 3.142 x 64 = 33.515 cm^2"
+    },
+    {
+      "id": "D1_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "area_trapezium_algebraic"
+      ],
+      "problem_text": "A trapezium has parallel sides (x+3) and (2x+1) cm, and height 4 cm. Write an expression for its area.",
+      "answer": "6x + 8 cm^2",
+      "solution": "A = (1/2)((x+3)+(2x+1)) x 4 = 2(3x+4) = 6x+8 cm^2"
+    }
+  ]
+}

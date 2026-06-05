@@ -1,0 +1,37 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q5",
+  "title": "Rounding & Estimation",
+  "syllabus_ref": "IGCSE 0580 C1.5",
+  "version": 1,
+  "created_at": "2026-06-04T23:00:00Z",
+  "sections": {
+    "hook": "A bridge collapses because an engineer rounded 6.58 metres to 7 metres — that 42 cm difference meant the steel beams didn't fit. In 1999, NASA lost a $125 million Mars orbiter because one team used metric units and another used imperial. Rounding and precision aren't just classroom exercises — lives and billions of dollars depend on getting them right.",
+    "prerequisites": [
+      "Place value understanding (units, tens, hundreds, tenths, hundredths)",
+      "Basic arithmetic operations",
+      "Understanding of decimal numbers"
+    ],
+    "core_explanation": "### Decimal Places (d.p.)\n\nRounding to a given number of decimal places:\n1. Count the required number of digits after the decimal point\n2. Look at the **next** digit (the one after your target)\n3. If it's $5$ or more, round **up**; if it's $4$ or less, round **down**\n\nRound $3.14159$ to $2$ decimal places:\n- Look at the third decimal digit: $9$\n- $9 \\geq 5$, so round the second decimal up\n- $3.14159 \\approx 3.14$ (actually $3.142$ since $9 \\geq 5$ means we round up the $1$ to $2$)\n\nWait — let me redo that carefully:\n$3.14159$\n- 1st d.p.: $3.1$\n- 2nd d.p.: look at digit in 3rd place = $1$. $1 < 5$, so $3.14$\n- 3rd d.p.: look at digit in 4th place = $5$. $5 \\geq 5$, so $3.142$\n\n### Significant Figures (s.f.)\n\nThe first significant figure is the first **non-zero** digit from the left.\n- $0.004$ has $1$ significant figure (the $4$)\n- $0.0040$ has $2$ significant figures (the $4$ and the $0$)\n- $5200$ has $2$ significant figures (the $5$ and $2$; trailing zeros without decimal point are ambiguous)\n- $5200.$ has $4$ significant figures (the decimal point makes trailing zeros significant)\n\nRound $20458$ to $2$ significant figures:\n- First s.f. is $2$, second s.f. is $0$\n- Look at the third digit: $4$\n- $4 < 5$, so don't round up\n- $20458 \\approx 20000$ (to $2$ s.f.)\n\n### Bounds and Error Intervals\n\nWhen a measurement is rounded, the **true value** lies within an interval. If a length is $7.3$ cm to $1$ decimal place, then:\n\n$$7.25 \\leq \\text{true value} < 7.35$$\n\nThe **lower bound** is $7.25$ and the **upper bound** is $7.35$.\n\nFor calculations with bounds:\n- **Addition:** Lower bound = LB₁ + LB₂, Upper bound = UB₁ + UB₂\n- **Subtraction:** To maximise A - B: use UB of A - LB of B. To minimise: use LB of A - UB of B.\n- **Multiplication:** Lower bound = LB₁ × LB₂, Upper bound = UB₁ × UB₂\n- **Division:** To maximise A ÷ B: use UB of A ÷ LB of B. To minimise: use LB of A ÷ UB of B.\n\n### Estimation\n\nEstimate by rounding each number to $1$ significant figure:\n$$\\frac{49.3 \\times 6.12}{0.197} \\approx \\frac{50 \\times 6}{0.2} = \\frac{300}{0.2} = 1500$$\nThe actual answer is $1531.6\\dots$ — the estimate is close enough to check your calculation is reasonable.",
+    "worked_example": "**Problem:** A rectangle is measured as $12.4$ cm by $8.7$ cm, each to $1$ decimal place.\n(a) Write the lower and upper bounds for each measurement.\n(b) Find the lower and upper bounds for the area of the rectangle.\n\n**Solution:**\n\n(a) For $12.4$ cm (to $1$ d.p.):\n   Lower bound: $12.35$ cm\n   Upper bound: $12.45$ cm\n   \n   For $8.7$ cm (to $1$ d.p.):\n   Lower bound: $8.65$ cm\n   Upper bound: $8.75$ cm\n\n(b) Lower bound of area = LB(length) × LB(width)\n   $$= 12.35 \\times 8.65 = 106.8275 \\text{ cm}^2$$\n   \n   Upper bound of area = UB(length) × UB(width)\n   $$= 12.45 \\times 8.75 = 108.9375 \\text{ cm}^2$$\n\n**Answer:** The area lies between $106.8275$ cm² and $108.9375$ cm².",
+    "common_mistakes": [
+      {
+        "mistake": "Rounding from the left instead of the right: e.g., rounding 3.14159 to 3 decimal places by looking at the 4th digit (5) but then applying it incorrectly to the 3rd digit because the intermediate digits were rounded sequentially.",
+        "correction": "Only look at the digit immediately after your target precision. Do not round sequentially. For 3.14159 to 3 d.p., only the 4th digit (5) matters. It makes the 3rd digit (1) become 2, giving 3.142."
+      },
+      {
+        "mistake": "Confusing decimal places with significant figures: stating 3.14159 to 3 d.p. is 3.14 (which is actually 3 d.p., but 3.14 has only 2 decimal places).",
+        "correction": "3.14159 to 3 d.p. = 3.142 (three digits after the decimal point). The number 3.14 has only 2 decimal places."
+      }
+    ],
+    "summary": [
+      "Round up if the next digit is 5 or more; round down if 4 or less",
+      "Decimal places count digits after the decimal point",
+      "Significant figures count from the first non-zero digit",
+      "Bounds give the interval of possible true values for a rounded measurement",
+      "For calculations with bounds, think about which combination gives the maximum/minimum",
+      "Estimation by rounding to 1 s.f. helps catch calculator errors"
+    ]
+  }
+}

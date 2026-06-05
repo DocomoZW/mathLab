@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q5",
+  "title": "Venn Diagrams and Probability",
+  "syllabus_ref": "IGCSE 0580 G8.5",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Venn diagrams are the visual superheroes of probability. When you have overlapping groups — students who play football, students who play tennis, and some who do both — a Venn diagram shows instantly how the numbers relate. No confusion, no double-counting, just a clear picture of who belongs where and the probabilities that follow.",
+    "prerequisites": [
+      "Understand basic probability: P(event) = favourable / total",
+      "Understand the notation for sets: intersection (AND), union (OR), complement (NOT)",
+      "Be able to interpret simple Venn diagrams"
+    ],
+    "core_explanation": "## Venn Diagrams and Probability\n\nA Venn diagram uses overlapping circles to show relationships between sets. Each region represents a different combination of membership.\n\n### Key Notation\n\n- P(A): Probability of event A\n- P(A n B): Probability of A AND B (the intersection — where sets overlap)\n- P(A u B): Probability of A OR B (the union — everything in either set)\n- P(A'): Probability of NOT A (the complement)\n- P(A only): Probability of A but NOT B\n\n### Structure of a Two-Set Venn Diagram\n\nDraw two overlapping circles inside a rectangle. The rectangle represents the entire sample space. The circles represent events A and B.\n\n- Region 1: A only (inside A, outside B)\n- Region 2: B only (inside B, outside A)\n- Region 3: Both A and B (the overlapping area, A n B)\n- Region 4: Neither A nor B (outside both circles, inside the rectangle)\n\nThe total of all four regions equals the total number of items (or total probability = 1).\n\n### Probability Formulas from Venn Diagrams\n\n- P(A u B) = P(A) + P(B) - P(A n B)\n\nThis is the addition rule. We subtract P(A n B) because it's counted twice (once in P(A) and once in P(B)).\n\n- P(A n B) = P(A) + P(B) - P(A u B)\n\n- P(A only) = P(A) - P(A n B)\n\n- P(A' ) = 1 - P(A)\n\n### Mutually Exclusive Events\n\nIf two events CANNOT happen at the same time (e.g., rolling a 3 and rolling a 5 on a single dice), they are mutually exclusive. Their circles do NOT overlap.\n\nFor mutually exclusive events: P(A n B) = 0, so P(A u B) = P(A) + P(B)\n\n### Using Venn Diagrams for Conditional Probability\n\nYou can also find conditional probabilities from Venn diagrams:\n\nP(A | B) = P(A n B) / P(B) = (number in overlap) / (number in B circle total)",
+    "worked_example": "**Problem:** In a survey of 50 people, 30 like tea, 20 like coffee, and 12 like both tea and coffee. Draw a Venn diagram and find:\na) P(like tea only)\nb) P(like tea or coffee)\nc) P(like neither)\n\n**Step 1:** Draw a Venn diagram with two circles: Tea and Coffee.\n\n**Step 2:** Fill in the numbers.\nBoth (Tea n Coffee): 12\nTea only: 30 - 12 = 18\nCoffee only: 20 - 12 = 8\nNeither: 50 - (18 + 12 + 8) = 50 - 38 = 12\n\n**Step 3:** Calculate the probabilities.\na) P(Tea only) = 18/50 = 9/25\nb) P(Tea or Coffee) = P(Tea) + P(Coffee) - P(both) = 30/50 + 20/50 - 12/50 = 38/50 = 19/25\n   Or directly from the diagram: (18 + 12 + 8)/50 = 38/50 = 19/25\nc) P(neither) = 12/50 = 6/25\n\n**Answer:** a) 9/25, b) 19/25, c) 6/25.",
+    "common_mistakes": [
+      {
+        "mistake": "Putting the 'both' number directly into the overlap without first subtracting it from the individual totals.",
+        "correction": "The value in the overlap is the number who belong to BOTH. For 'A only', subtract the overlap from A's total. For 'B only', subtract the overlap from B's total."
+      },
+      {
+        "mistake": "Adding P(A) and P(B) without subtracting the overlap when finding P(A or B).",
+        "correction": "Always use P(A u B) = P(A) + P(B) - P(A n B). If you don't subtract the overlap, you count the intersection twice."
+      },
+      {
+        "mistake": "Forgetting to include the 'neither' region in the Venn diagram or in the total count.",
+        "correction": "The rectangle represents the entire sample space. Make sure you account for items that belong to neither set. The sum of all four regions must equal the total."
+      }
+    ],
+    "summary": [
+      "Venn diagrams visually show relationships between sets using overlapping circles inside a rectangle.",
+      "The intersection P(A n B) is the overlap; the union P(A u B) includes everything in either circle.",
+      "The addition rule: P(A u B) = P(A) + P(B) - P(A n B).",
+      "Mutually exclusive events have no overlap: P(A n B) = 0.",
+      "Always fill Venn diagrams starting from the overlap (both), then work outward to 'only' regions, then 'neither'."
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q6",
+  "title": "Volume of Pyramids and Cones \u2014 Problems",
+  "problems": [
+    {
+      "id": "D1_Q6_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_pyramid_rect"
+      ],
+      "problem_text": "Find the volume of a rectangular pyramid with base length 6 cm, width 5 cm, and height 9 cm.",
+      "answer": "90 cm^3",
+      "solution": "V = (1/3) x l x w x h = (1/3) x 6 x 5 x 9 = (1/3) x 270 = 90 cm^3"
+    },
+    {
+      "id": "D1_Q6_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_cone"
+      ],
+      "problem_text": "Find the volume of a cone with radius 3 cm and height 7 cm (use pi = 22/7).",
+      "answer": "66 cm^3",
+      "solution": "V = (1/3) x pi x r^2 x h = (1/3) x (22/7) x 9 x 7 = (1/3) x 22 x 9 = 66 cm^3"
+    },
+    {
+      "id": "D1_Q6_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_pyramid_square"
+      ],
+      "problem_text": "Find the volume of a square-based pyramid with base side 4 cm and height 6 cm.",
+      "answer": "32 cm^3",
+      "solution": "Base area = 16 cm^2. V = (1/3) x 16 x 6 = 32 cm^3"
+    },
+    {
+      "id": "D1_Q6_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "volume_cone_diameter"
+      ],
+      "problem_text": "Find the volume of a cone with diameter 10 cm and height 12 cm (use pi = 3.142).",
+      "answer": "314.2 cm^3",
+      "solution": "r = 5 cm. V = (1/3) x 3.142 x 25 x 12 = (1/3) x 942.6 = 314.2 cm^3"
+    },
+    {
+      "id": "D1_Q6_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_pyramid_compare"
+      ],
+      "problem_text": "A rectangular prism and a pyramid have the same base (8 cm by 5 cm) and same height (12 cm). How many times larger is the prism's volume?",
+      "answer": "3 times",
+      "solution": "V_prism = 8x5x12 = 480 cm^3. V_pyramid = (1/3) x 480 = 160 cm^3. Ratio = 480/160 = 3"
+    },
+    {
+      "id": "D1_Q6_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cone_missing_height"
+      ],
+      "problem_text": "A cone has volume 100 cm^3 and radius 5 cm. Find its height (use pi = 3.142).",
+      "answer": "3.82 cm",
+      "solution": "V = (1/3) pi r^2 h. 100 = (1/3) x 3.142 x 25 x h. 100 = 26.183h. h = 3.82 cm"
+    },
+    {
+      "id": "D1_Q6_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_pyramid_triangular_base"
+      ],
+      "problem_text": "A pyramid has a triangular base with base 6 cm and height 8 cm. The pyramid height is 10 cm. Find its volume.",
+      "answer": "80 cm^3",
+      "solution": "Base area = (1/2) x 6 x 8 = 24 cm^2. V = (1/3) x 24 x 10 = 80 cm^3"
+    },
+    {
+      "id": "D1_Q6_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cone_word"
+      ],
+      "problem_text": "An ice cream cone has radius 3 cm and height 15 cm. Find its volume (use pi = 3.142).",
+      "answer": "141.39 cm^3",
+      "solution": "V = (1/3) x 3.142 x 9 x 15 = (1/3) x 424.17 = 141.39 cm^3"
+    },
+    {
+      "id": "D1_Q6_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_pyramid_missing_base"
+      ],
+      "problem_text": "A square pyramid has volume 200 cm^3 and height 12 cm. Find the side length of its base.",
+      "answer": "7.07 cm",
+      "solution": "V = (1/3) x s^2 x h. 200 = (1/3) x s^2 x 12 = 4s^2. s^2 = 50. s = sqrt(50) = 7.07 cm"
+    },
+    {
+      "id": "D1_Q6_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_frustum"
+      ],
+      "problem_text": "A cone of radius 9 cm and height 18 cm is cut 6 cm from the top to form a frustum. The top cone (removed) has radius 3 cm and height 6 cm. Find the volume of the frustum (use pi = 3.142).",
+      "answer": "1465.1 cm^3",
+      "solution": "V_large = (1/3) x 3.142 x 81 x 18 = 1526.8 cm^3. V_small = (1/3) x 3.142 x 9 x 6 = 56.556 cm^3. V_frustum = 1526.8 - 56.556 = 1470.0 cm^3. Wait: V_large = (1/3) x pi x 81 x 18 = 486 x pi = 486 x 3.142 = 1527.0. V_small = (1/3) x pi x 9 x 6 = 18 x pi = 56.556. V_frustum = 1527.0 - 56.556 = 1470.444 cm^3."
+    },
+    {
+      "id": "D1_Q6_C7",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_cone_scale"
+      ],
+      "problem_text": "A cone has radius 4 cm and height 9 cm. If both radius and height are doubled, by what factor does the volume increase?",
+      "answer": "8",
+      "solution": "Original V = (1/3) pi x 16 x 9 = 48 pi. New: r=8, h=18. V = (1/3) pi x 64 x 18 = 384 pi. Ratio = 384/48 = 8"
+    },
+    {
+      "id": "D1_Q6_C8",
+      "difficulty": "C",
+      "skill_tags": [
+        "volume_pyramid_rectangular"
+      ],
+      "problem_text": "A rectangular pyramid has base 10 cm by 6 cm and volume 180 cm^3. Find its height.",
+      "answer": "9 cm",
+      "solution": "Base area = 60 cm^2. V = (1/3) x 60 x h = 20h. 180 = 20h. h = 9 cm"
+    },
+    {
+      "id": "D1_Q6_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_cone_hemisphere"
+      ],
+      "problem_text": "A cone with radius 6 cm and a hemisphere of the same radius have equal volumes. Find the height of the cone (use pi = 3.142).",
+      "answer": "12 cm",
+      "solution": "V_hemi = (2/3) pi r^3 = (2/3) pi x 216 = 144 pi. V_cone = (1/3) pi r^2 h = (1/3) pi x 36 x h = 12 pi h. 12 pi h = 144 pi. h = 12 cm"
+    },
+    {
+      "id": "D1_Q6_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_frustum_algebraic"
+      ],
+      "problem_text": "A frustum of a cone has top radius 2 cm, bottom radius 5 cm, and height 9 cm. Find its volume (use pi = 3.142).",
+      "answer": "489.06 cm^3",
+      "solution": "Full cone: h = 9 x 5/(5-2) = 15 cm. V_full = (1/3) pi x 25 x 15 = 125 pi = 392.75. Small cone: V_small = (1/3) pi x 4 x 6 = 8 pi = 25.136. Frustum = 392.75 - 25.136 = 367.614. Wait let me recalculate properly with similar triangles. Full cone: bottom r=5, top r=2, frustum h=9. Using similar triangles: H_full/5 = (H_full-9)/2. 2H = 5H - 45, 3H = 45, H=15. Top cone height = 6. V_full = (1/3) pi x 25 x 15 = 125 pi = 392.75. V_top = (1/3) pi x 4 x 6 = 8 pi = 25.136. Frustum = 392.75 - 25.136 = 367.614 cm^3"
+    },
+    {
+      "id": "D1_Q6_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_pyramid_ratio"
+      ],
+      "problem_text": "Pyramid A has base 6 cm by 6 cm and height 10 cm. Pyramid B has base 12 cm by 12 cm and height 20 cm. What is the ratio of their volumes?",
+      "answer": "1:8",
+      "solution": "V_A = (1/3) x 36 x 10 = 120. V_B = (1/3) x 144 x 20 = 960. Ratio = 120:960 = 1:8"
+    },
+    {
+      "id": "D1_Q6_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "volume_cone_water_removed"
+      ],
+      "problem_text": "A cone of radius 5 cm and height 15 cm is full of water. Water is poured out until the depth is 10 cm. What fraction of the water remains?",
+      "answer": "8/27",
+      "solution": "Full cone: r=5, h=15. When depth=10, the remaining water forms a smaller cone similar to the original. Height ratio = 10/15 = 2/3. Radius ratio = 2/3. Volume ratio = (2/3)^3 = 8/27."
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q1",
+  "title": "Basic Probability - Problems",
+  "problems": [
+    {
+      "id": "G1_Q1_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "probability_basic",
+        "simple_events"
+      ],
+      "problem_text": "A bag contains 3 red balls and 5 blue balls. What is the probability of picking a red ball?",
+      "answer": "3/8",
+      "solution": "Total balls = 3 + 5 = 8. P(red) = number of red / total = 3/8."
+    },
+    {
+      "id": "G1_Q1_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "probability_basic",
+        "simple_events"
+      ],
+      "problem_text": "A fair six-sided dice is rolled once. What is the probability of rolling a 5?",
+      "answer": "1/6",
+      "solution": "There is 1 favourable outcome (5) out of 6 equally likely outcomes. P(5) = 1/6."
+    },
+    {
+      "id": "G1_Q1_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "probability_basic",
+        "not_events"
+      ],
+      "problem_text": "The probability that it rains tomorrow is 0.3. What is the probability that it does NOT rain tomorrow?",
+      "answer": "0.7",
+      "solution": "P(not rain) = 1 - P(rain) = 1 - 0.3 = 0.7."
+    },
+    {
+      "id": "G1_Q1_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "probability_basic",
+        "simple_events"
+      ],
+      "problem_text": "A spinner has 4 equal sections coloured red, blue, yellow and green. It is spun once. What is the probability of landing on yellow?",
+      "answer": "1/4",
+      "solution": "There is 1 yellow section out of 4 equal sections. P(yellow) = 1/4."
+    },
+    {
+      "id": "G1_Q1_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "probability_basic",
+        "simple_events"
+      ],
+      "problem_text": "A box contains 7 red pens, 5 blue pens and 3 black pens. One pen is taken at random. What is the probability that it is blue?",
+      "answer": "1/3",
+      "solution": "Total pens = 7 + 5 + 3 = 15. P(blue) = 5/15 = 1/3."
+    },
+    {
+      "id": "G1_Q1_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "probability_basic",
+        "simple_events"
+      ],
+      "problem_text": "A fair dice is rolled once. Find the probability of rolling a number greater than 4.",
+      "answer": "1/3",
+      "solution": "Numbers greater than 4 on a dice are 5 and 6: 2 favourable outcomes. Total outcomes = 6. P(>4) = 2/6 = 1/3."
+    },
+    {
+      "id": "G1_Q1_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "probability_basic",
+        "not_events"
+      ],
+      "problem_text": "A bag contains 2 green marbles, 6 white marbles and 7 purple marbles. One marble is taken at random. What is the probability that it is NOT white?",
+      "answer": "3/5",
+      "solution": "Total marbles = 2 + 6 + 7 = 15. Non-white marbles = 2 + 7 = 9. P(not white) = 9/15 = 3/5."
+    },
+    {
+      "id": "G1_Q1_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "probability_basic",
+        "mutually_exclusive"
+      ],
+      "problem_text": "A card is drawn at random from a standard pack of 52 playing cards. Find the probability that it is a heart or a diamond.",
+      "answer": "1/2",
+      "solution": "There are 13 hearts and 13 diamonds, 26 favourable cards total. P(heart or diamond) = 26/52 = 1/2."
+    },
+    {
+      "id": "G1_Q1_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "probability_basic",
+        "simple_events"
+      ],
+      "problem_text": "A letter is chosen at random from the word MATHEMATICS. What is the probability that the letter is M?",
+      "answer": "2/11",
+      "solution": "The word MATHEMATICS has 11 letters. M appears twice. P(M) = 2/11."
+    },
+    {
+      "id": "G1_Q1_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "probability_basic",
+        "mutually_exclusive"
+      ],
+      "problem_text": "A bag contains only red, blue and yellow beads. The probability of picking a red bead is 0.2 and the probability of picking a blue bead is 0.5. What is the probability of picking a yellow bead?",
+      "answer": "0.3",
+      "solution": "P(yellow) = 1 - P(red) - P(blue) = 1 - 0.2 - 0.5 = 0.3."
+    },
+    {
+      "id": "G1_Q1_E1",
+      "difficulty": "E",
+      "skill_tags": [
+        "probability_basic",
+        "combined_events"
+      ],
+      "problem_text": "Two fair dice are rolled and the sum of the numbers is recorded. Find the probability that the sum is 7.",
+      "answer": "1/6",
+      "solution": "Total outcomes = 6 \u00d7 6 = 36. Ways to sum to 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) \u2014 6 ways. P(sum=7) = 6/36 = 1/6."
+    },
+    {
+      "id": "G1_Q1_E2",
+      "difficulty": "E",
+      "skill_tags": [
+        "probability_basic",
+        "combined_events"
+      ],
+      "problem_text": "Two fair dice are rolled. Find the probability that the product of the two numbers is 12.",
+      "answer": "1/9",
+      "solution": "Total outcomes = 36. Pairs with product 12: (2,6), (3,4), (4,3), (6,2) \u2014 4 ways. P = 4/36 = 1/9."
+    },
+    {
+      "id": "G1_Q1_E3",
+      "difficulty": "E",
+      "skill_tags": [
+        "probability_basic",
+        "not_events"
+      ],
+      "problem_text": "A bag contains 4 red, 5 white and 6 blue marbles. Three marbles are drawn at random with replacement. Find the probability that at least one marble is red.",
+      "answer": "2044/3375",
+      "solution": "Total marbles = 15. P(not red in one draw) = (5+6)/15 = 11/15. P(no red in three draws) = (11/15)^3 = 1331/3375. P(at least one red) = 1 - 1331/3375 = (3375-1331)/3375 = 2044/3375."
+    },
+    {
+      "id": "G1_Q1_E4",
+      "difficulty": "E",
+      "skill_tags": [
+        "probability_basic",
+        "combined_events"
+      ],
+      "problem_text": "A spinner has numbers 1 to 8, each equally likely. The spinner is spun twice. Find the probability that both spins land on an even number.",
+      "answer": "1/4",
+      "solution": "Even numbers on 1-8 are {2,4,6,8}: 4 out of 8 = 1/2. P(both even) = (1/2) \u00d7 (1/2) = 1/4."
+    },
+    {
+      "id": "G1_Q1_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "probability_basic",
+        "systematic_listing"
+      ],
+      "problem_text": "Three fair dice are rolled. Find the probability that the three numbers form a strictly increasing sequence (e.g. 2, 3, 5 but not 2, 2, 4).",
+      "answer": "5/54",
+      "solution": "Total outcomes = 6^3 = 216. Choose 3 distinct numbers from {1,...,6} = C(6,3) = 20. For each chosen set, there is exactly 1 strictly increasing order. P = 20/216 = 5/54."
+    },
+    {
+      "id": "G1_Q1_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "probability_basic",
+        "complement_rule"
+      ],
+      "problem_text": "A bag contains 5 white and 7 black balls. Two balls are drawn at random without replacement. Find the probability that they are of different colours.",
+      "answer": "35/66",
+      "solution": "Total balls = 12. Total ways to choose 2 = C(12,2) = 66. P(both white) = C(5,2)/66 = 10/66. P(both black) = C(7,2)/66 = 21/66. P(different colours) = 1 - 10/66 - 21/66 = (66-31)/66 = 35/66."
+    }
+  ]
+}

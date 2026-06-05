@@ -1,0 +1,34 @@
+{
+  "track": "igcse_o",
+  "unit": "F1_Vectors",
+  "topic_id": "F1_Q1",
+  "title": "Vector Notation & Operations",
+  "syllabus_ref": "0580 F6.1",
+  "version": 1,
+  "created_at": "2026-06-05T11:00:00Z",
+  "sections": {
+    "hook": "Vectors describe movement and magnitude in a given direction. They are essential in physics, navigation, and computer graphics.",
+    "prerequisites": [
+      "Basic arithmetic skills",
+      "Understanding of coordinate systems",
+      "Directed line segments"
+    ],
+    "core_explanation": "Vectors have both magnitude and direction. A vector from A to B is written as $\\vec{AB}$ or as a column vector $\\begin{pmatrix}x\\\\y\\end{pmatrix}$. The magnitude $|\\vec{v}| = \\sqrt{x^2 + y^2}$.",
+    "worked_example": "**Question:** $\\vec{a} = \\begin{pmatrix}3\\\\4\\end{pmatrix}$. Find $|\\vec{a}|$.\n\n**Solution:** $|\\vec{a}| = \\sqrt{3^2 + 4^2} = \\sqrt{9+16} = \\sqrt{25} = 5$",
+    "common_mistakes": [
+      {
+        "mistake": "Adding vectors incorrectly by adding only x or only y components",
+        "correction": "Always add x-components together AND y-components together separately"
+      },
+      {
+        "mistake": "Confusing direction in rotations (clockwise vs anticlockwise)",
+        "correction": "Draw a simple diagram to verify the direction before calculating coordinates"
+      }
+    ],
+    "summary": [
+      "Vector Notation & Operations is a fundamental concept in IGCSE Mathematics",
+      "Always check your answer makes sense in the context",
+      "Practice with different values to build confidence"
+    ]
+  }
+}

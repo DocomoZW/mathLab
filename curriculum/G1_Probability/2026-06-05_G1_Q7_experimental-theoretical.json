@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q7",
+  "title": "Experimental vs Theoretical Probability",
+  "syllabus_ref": "IGCSE 0580 G8.7",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "In theory, a coin should land heads half the time. But flip it 10 times, and you might get 7 heads. Flip it 1000 times, and the proportion gets closer to 50%. This is the tug-of-war between theoretical probability (what should happen) and experimental probability (what actually happens). Understanding the difference — and why they converge — is at the heart of statistics.",
+    "prerequisites": [
+      "Understand basic probability concepts and calculations",
+      "Understand expected value and relative frequency",
+      "Be comfortable working with fractions and proportions"
+    ],
+    "core_explanation": "## Theoretical Probability\n\nTheoretical probability is what you calculate using logic and mathematics, assuming all outcomes are equally likely.\n\nP(theoretical) = (number of favourable outcomes) / (total number of possible outcomes)\n\nIt does NOT require any experiments or data. It's the 'ideal' probability based on the structure of the situation.\n\nExample: P(heads on a fair coin) = 1/2. This is a theoretical probability — we know it without flipping any coins.\n\n## Experimental Probability (Relative Frequency)\n\nExperimental probability is based on actual data from trials or experiments. It's calculated as:\n\nP(experimental) = (number of times the event occurred) / (total number of trials)\n\nThis is also called relative frequency.\n\nExample: You flip a coin 50 times and get 28 heads. The experimental probability of heads is 28/50 = 0.56.\n\n## The Law of Large Numbers\n\nThe Law of Large Numbers says that as the number of trials increases, the experimental probability gets closer and closer to the theoretical probability.\n\n- With 10 coin flips: experimental might be 0.7 or 0.3 — quite far from 0.5\n- With 100 coin flips: experimental will likely be between 0.45 and 0.55\n- With 1000 coin flips: experimental will be very close to 0.5\n\nThis doesn't mean outcomes 'even out' in the short term. It means the average over many trials becomes more stable and predictable.\n\n## When to Use Each\n\n- **Theoretical probability**: Use when you know the structure of the situation and all outcomes are equally likely (dice, cards, coins, fair spinners)\n- **Experimental probability**: Use when you don't know the underlying probabilities, or when you want to check if something is fair (e.g., is this dice biased? Does a medical treatment work?)\n\n## Estimating Probability from Experiments\n\nIf you can't calculate a theoretical probability (e.g., the chance it will rain tomorrow, the chance a new product will be successful), you can conduct trials and use the experimental probability as an estimate.\n\nFor IGCSE, you may be asked to:\n- Calculate experimental probabilities from data\n- Compare experimental and theoretical probabilities\n- Predict how many trials are needed for experimental probability to get close to theoretical\n- Use experimental probability to estimate the number of favourable outcomes in a larger sample",
+    "worked_example": "**Problem:** A spinner with 4 equal sections (numbered 1-4) is spun 200 times. The number 3 comes up 62 times.\n\na) What is the theoretical probability of landing on 3?\nb) What is the experimental probability of landing on 3?\nc) If the spinner is fair, roughly how many 3s would you expect in 200 spins? Does the data suggest the spinner is fair?\n\n**Step 1:** Find the theoretical probability.\nP(3) = 1/4 = 0.25\n\n**Step 2:** Find the experimental probability.\nP(3) = 62/200 = 31/100 = 0.31\n\n**Step 3:** Calculate the expected number.\nExpected = 0.25 x 200 = 50\n\nThe actual result was 62, which is 12 more than expected. This is higher than typical random variation — it might suggest the spinner is biased towards 3, but more trials would be needed to be sure.\n\n**Answer:** a) 1/4, b) 31/100 (0.31), c) Expected 50; the experimental result of 62 is notably higher, suggesting possible bias.",
+    "common_mistakes": [
+      {
+        "mistake": "Assuming that a small number of trials should give exactly the theoretical probability.",
+        "correction": "With a small number of trials, experimental results can vary widely from theoretical expectations. The Law of Large Numbers only guarantees convergence over many trials."
+      },
+      {
+        "mistake": "Claiming a dice or spinner is biased based on too few trials.",
+        "correction": "A few unusual results don't prove bias. You need many trials (hundreds or thousands) to have confidence that a result is significant and not just random fluctuation."
+      },
+      {
+        "mistake": "Using the wrong denominator when calculating experimental probability — using the number of successes instead of the number of trials.",
+        "correction": "Experimental probability = (number of times event occurred) / (total number of trials). The denominator is the total number of trials, not the number of successes."
+      }
+    ],
+    "summary": [
+      "Theoretical probability is calculated from known equally-likely outcomes: favourable / total.",
+      "Experimental probability (relative frequency) comes from actual data: occurrences / trials.",
+      "The Law of Large Numbers states that experimental probability approaches theoretical probability as the number of trials increases.",
+      "Use theoretical probability for fair, structured situations. Use experimental probability when the structure is unknown or you want to test fairness.",
+      "A single small experiment cannot prove a probability — always consider the number of trials when interpreting experimental results."
+    ]
+  }
+}

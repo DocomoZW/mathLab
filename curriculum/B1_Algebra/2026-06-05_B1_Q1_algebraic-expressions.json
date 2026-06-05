@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q1",
+  "title": "Algebraic Expressions",
+  "syllabus_ref": "IGCSE 0580 C2.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Imagine you're a detective trying to figure out the cost of items without seeing the price tag. You see that buying 3 apples and 2 bananas costs $5.50, while 1 apple and 4 bananas costs $4.00. Algebra gives you the power to describe these relationships symbolically and find the hidden prices — like a mathematical superpower.",
+    "prerequisites": [
+      "Basic arithmetic with integers and fractions",
+      "Understanding of variables as placeholders for unknown numbers",
+      "Order of operations (BIDMAS/BODMAS)"
+    ],
+    "core_explanation": "Algebraic expressions are combinations of numbers, variables, and operations that represent mathematical relationships.\n\n**Key Vocabulary:**\n- *Variable*: A letter representing an unknown value (e.g., $x$, $y$, $n$)\n- *Term*: A product of a coefficient and a variable (e.g., $3x$, $-2y^2$, $5$)\n- *Coefficient*: The numerical factor of a term (in $4x$, the coefficient is $4$)\n- *Constant*: A term with no variable (e.g., $7$, $-3$)\n- *Like terms*: Terms with the same variable raised to the same power (e.g., $3x$ and $-5x$)\n\n**Collecting Like Terms:**\nTo simplify an expression, group terms with the same variable and power:\n$$3x + 5y - 2x + 7y = (3x - 2x) + (5y + 7y) = x + 12y$$\n\n**Expanding Brackets:**\nUse the distributive law: $a(b + c) = ab + ac$\n$$3(2x + 5) = 3 \\times 2x + 3 \\times 5 = 6x + 15$$\nFor two brackets:\n$$(x + 2)(x + 5) = x(x + 5) + 2(x + 5) = x^2 + 5x + 2x + 10 = x^2 + 7x + 10$$\n\n**The FOIL Method:**\nTo multiply two binomials: First, Outer, Inner, Last\n$$(x + 3)(x + 7) = x^2 + 7x + 3x + 21 = x^2 + 10x + 21$$\n\n**Squares of Binomials:**\n$$(a + b)^2 = a^2 + 2ab + b^2$$\n$$(a - b)^2 = a^2 - 2ab + b^2$$\n$$(a + b)(a - b) = a^2 - b^2$$",
+    "worked_example": "**Problem:** Simplify $3(2x - 4) - 2(x + 3) + 5x$\n\n**Step 1:** Expand the brackets using the distributive law.\n$3(2x - 4) = 6x - 12$\n$-2(x + 3) = -2x - 6$\n\n**Step 2:** Rewrite the full expression.\n$6x - 12 - 2x - 6 + 5x$\n\n**Step 3:** Group like terms.\n$x$ terms: $6x - 2x + 5x = (6 - 2 + 5)x = 9x$\nConstant terms: $-12 - 6 = -18$\n\n**Step 4:** Write the final simplified expression.\n$$9x - 18$$\n\n**Check:** Substitute $x = 1$ into the original:\n$3(2 - 4) - 2(1 + 3) + 5(1) = 3(-2) - 2(4) + 5 = -6 - 8 + 5 = -9$\nSubstitute $x = 1$ into the simplified:\n$9(1) - 18 = 9 - 18 = -9$ ✓",
+    "common_mistakes": [
+      {
+        "mistake": "Adding coefficients of unlike terms (e.g., $3x + 5 = 8x$)",
+        "correction": "You can only add terms that have the same variable and exponent. $3x$ and $5$ are not like terms — $3x + 5$ cannot be simplified further."
+      },
+      {
+        "mistake": "Sign errors when expanding with a negative outside brackets (e.g., $-2(x - 3) = -2x - 6$)",
+        "correction": "The negative sign multiplies every term inside: $-2(x - 3) = -2 \\times x + (-2) \\times (-3) = -2x + 6$"
+      },
+      {
+        "mistake": "Forgetting to multiply every term inside the bracket (e.g., $3(2x + 5) = 6x + 5$)",
+        "correction": "The number outside multiplies EVERY term inside: $3(2x + 5) = 3 \\times 2x + 3 \\times 5 = 6x + 15$"
+      }
+    ],
+    "summary": [
+      "Like terms have the same variable and same exponent — only these can be combined by adding/subtracting coefficients",
+      "The distributive law $a(b + c) = ab + ac$ is the foundation for expanding brackets",
+      "When multiplying two binomials, multiply each term in the first by each term in the second (FOIL method)",
+      "Always check sign carefully when a negative number sits outside brackets",
+      "Simplify by expanding first, then collecting like terms"
+    ]
+  }
+}

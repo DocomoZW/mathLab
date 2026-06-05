@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q4",
+  "title": "Triangles — Congruence Problems",
+  "problems": [
+    {
+      "id": "C1_Q4_F1",
+      "difficulty": "F",
+      "skill_tags": ["triangle_angle_sum"],
+      "problem_text": "In $\\\\triangle ABC$, $\\\\angle A = 47^\\\\circ$ and $\\\\angle B = 63^\\\\circ$. Find $\\\\angle C$.",
+      "answer": "$\\\\angle C = 70^\\\\circ$",
+      "solution": "The sum of angles in a triangle is $180^\\\\circ$. So $\\\\angle C = 180^\\\\circ - 47^\\\\circ - 63^\\\\circ = 70^\\\\circ$."
+    },
+    {
+      "id": "C1_Q4_F2",
+      "difficulty": "F",
+      "skill_tags": ["isosceles_triangle"],
+      "problem_text": "In an isosceles triangle, the base angles are equal. If the vertex angle is $80^\\\\circ$, find each base angle.",
+      "answer": "Each base angle $= 50^\\\\circ$",
+      "solution": "Let each base angle be $x^\\\\circ$. Then $x + x + 80 = 180$, $2x = 100$, $x = 50^\\\\circ$."
+    },
+    {
+      "id": "C1_Q4_F3",
+      "difficulty": "F",
+      "skill_tags": ["exterior_angle"],
+      "problem_text": "In $\\\\triangle ABC$, the exterior angle at $C$ is $130^\\\\circ$. If $\\\\angle A = 55^\\\\circ$, find $\\\\angle B$.",
+      "answer": "$\\\\angle B = 75^\\\\circ$",
+      "solution": "The exterior angle of a triangle equals the sum of the two opposite interior angles. So $\\\\angle A + \\\\angle B = 130^\\\\circ$. Hence $55^\\\\circ + \\\\angle B = 130^\\\\circ$, giving $\\\\angle B = 75^\\\\circ$."
+    },
+    {
+      "id": "C1_Q4_F4",
+      "difficulty": "F",
+      "skill_tags": ["congruence_identify"],
+      "problem_text": "State which congruence condition (SSS, SAS, ASA, RHS) applies to two right-angled triangles where the hypotenuse and one side of one are equal to the hypotenuse and one side of the other.",
+      "answer": "RHS (Right angle-Hypotenuse-Side)",
+      "solution": "When two right-angled triangles have equal hypotenuses and one equal pair of sides, they are congruent by the RHS (Right angle-Hypotenuse-Side) condition."
+    },
+    {
+      "id": "C1_Q4_C1",
+      "difficulty": "C",
+      "skill_tags": ["triangle_angle_sum", "algebra"],
+      "problem_text": "In $\\\\triangle ABC$, the angles are $2x^\\\\circ$, $3x^\\\\circ$, and $4x^\\\\circ$. Find the value of $x$ and the size of each angle.",
+      "answer": "$x = 20$, angles are $40^\\\\circ$, $60^\\\\circ$, $80^\\\\circ$",
+      "solution": "$2x + 3x + 4x = 180$, $9x = 180$, $x = 20$. The angles are $2(20) = 40^\\\\circ$, $3(20) = 60^\\\\circ$, $4(20) = 80^\\\\circ$."
+    },
+    {
+      "id": "C1_Q4_C2",
+      "difficulty": "C",
+      "skill_tags": ["exterior_angle", "algebra"],
+      "problem_text": "In $\\\\triangle ABC$, the exterior angle at $C$ is $125^\\\\circ$. $\\\\angle A = (3x - 10)^\\\\circ$ and $\\\\angle B = (2x + 15)^\\\\circ$. Find $x$ and both angles.",
+      "answer": "$x = 24$, $\\\\angle A = 62^\\\\circ$, $\\\\angle B = 63^\\\\circ$",
+      "solution": "Exterior angle $=$ sum of opposite interior angles: $125 = (3x - 10) + (2x + 15) = 5x + 5$. So $5x = 120$, $x = 24$. $\\\\angle A = 3(24) - 10 = 72 - 10 = 62^\\\\circ$. $\\\\angle B = 2(24) + 15 = 48 + 15 = 63^\\\\circ$. Check: $62 + 63 = 125 \\\\checkmark$."
+    },
+    {
+      "id": "C1_Q4_C3",
+      "difficulty": "C",
+      "skill_tags": ["isosceles", "angle_chase"],
+      "problem_text": "$\\\\triangle ABC$ is isosceles with $AB = AC$. $\\\\angle B = 55^\\\\circ$. Find $\\\\angle A$ and $\\\\angle C$.",
+      "answer": "$\\\\angle A = 70^\\\\circ$, $\\\\angle C = 55^\\\\circ$",
+      "solution": "In $\\\\triangle ABC$, $AB = AC$, so base angles are $\\\\angle B = \\\\angle C$. Therefore $\\\\angle C = 55^\\\\circ$. Then $\\\\angle A = 180^\\\\circ - 55^\\\\circ - 55^\\\\circ = 70^\\\\circ$."
+    },
+    {
+      "id": "C1_Q4_C4",
+      "difficulty": "C",
+      "skill_tags": ["congruence", "SAS"],
+      "problem_text": "In $\\\\triangle ABC$ and $\\\\triangle DEF$, $AB = DE = 5$ cm, $\\\\angle B = \\\\angle E = 40^\\\\circ$, and $BC = EF = 6$ cm. Are the triangles congruent? If so, by which condition?",
+      "answer": "Yes, by SAS (Side-Angle-Side)",
+      "solution": "We have two sides and the included angle equal: $AB = DE$ (5 cm), $\\\\angle B = \\\\angle E$ ($40^\\\\circ$), $BC = EF$ (6 cm). The included angle is between the two equal sides in each triangle. Therefore the triangles are congruent by SAS."
+    },
+    {
+      "id": "C1_Q4_H1",
+      "difficulty": "H",
+      "skill_tags": ["triangle_angle_sum", "isosceles", "algebra"],
+      "problem_text": "In $\\\\triangle ABC$, $\\\\angle A = 2x^\\\\circ$, $\\\\angle B = 3x^\\\\circ$, and $\\\\angle C = 4x^\\\\circ$. $\\\\triangle DEF$ is isosceles with $DE = DF$ and $\\\\angle D = \\\\angle A$. Find the base angles of $\\\\triangle DEF$.",
+      "answer": "Base angles $= 80^\\\\circ$ each",
+      "solution": "From $\\\\triangle ABC$: $2x + 3x + 4x = 180$, $9x = 180$, $x = 20$. So $\\\\angle A = 40^\\\\circ$. $\\\\triangle DEF$ is isosceles with $DE = DF$, so $\\\\angle E = \\\\angle F$ (base angles). $\\\\angle D = \\\\angle A = 40^\\\\circ$. Then $\\\\angle E + \\\\angle F = 180 - 40 = 140$, so each base angle $= 70^\\\\circ$."
+    },
+    {
+      "id": "C1_Q4_H2",
+      "difficulty": "H",
+      "skill_tags": ["congruence", "proof"],
+      "problem_text": "In quadrilateral $ABCD$, $AB = CD$ and $AD = BC$. Prove that $\\\\triangle ABC \\\\cong \\\\triangle CDA$.",
+      "answer": "Proof by SSS",
+      "solution": "In $\\\\triangle ABC$ and $\\\\triangle CDA$:\n1. $AB = CD$ (given)\n2. $BC = DA$ (given)\n3. $AC = CA$ (common side)\nTherefore $\\\\triangle ABC \\\\cong \\\\triangle CDA$ by SSS."
+    },
+    {
+      "id": "C1_Q4_H3",
+      "difficulty": "H",
+      "skill_tags": ["exterior_angle", "multi_step"],
+      "problem_text": "In $\\\\triangle ABC$, $\\\\angle ABC = 48^\\\\circ$. The exterior angle at $C$ is $105^\\\\circ$. $\\\\triangle PQR$ is such that $\\\\angle P = \\\\angle A$, $\\\\angle Q = \\\\angle B$, and $PQ = AB$. Are the triangles congruent? Explain.",
+      "answer": "Yes, by ASA",
+      "solution": "In $\\\\triangle ABC$, exterior angle at $C$ is $105^\\\\circ$, so $\\\\angle A + \\\\angle B = 105^\\\\circ$. Given $\\\\angle B = 48^\\\\circ$, $\\\\angle A = 105 - 48 = 57^\\\\circ$. Then $\\\\angle C = 180 - 57 - 48 = 75^\\\\circ$. In $\\\\triangle PQR$, $\\\\angle P = \\\\angle A = 57^\\\\circ$, $\\\\angle Q = \\\\angle B = 48^\\\\circ$, and $PQ = AB$. Since we have two angles and the included side equal, $\\\\triangle ABC \\\\cong \\\\triangle PQR$ by ASA."
+    },
+    {
+      "id": "C1_Q4_H4",
+      "difficulty": "H",
+      "skill_tags": ["congruence", "isosceles", "angle_chase"],
+      "problem_text": "In $\\\\triangle ABC$, $AB = AC$. $D$ is a point on $BC$ such that $AD$ bisects $\\\\angle BAC$. Prove that $BD = DC$.",
+      "answer": "Proof using SAS congruence",
+      "solution": "In $\\\\triangle ABD$ and $\\\\triangle ACD$:\n1. $AB = AC$ (given, isosceles triangle)\n2. $\\\\angle BAD = \\\\angle CAD$ ($AD$ bisects $\\\\angle BAC$)\n3. $AD = AD$ (common side)\nTherefore $\\\\triangle ABD \\\\cong \\\\triangle ACD$ by SAS.\nSince corresponding parts of congruent triangles are equal, $BD = DC$."
+    },
+    {
+      "id": "C1_Q4_X1",
+      "difficulty": "X",
+      "skill_tags": ["congruence", "proof", "coordinate"],
+      "problem_text": "Prove that the diagonals of a rectangle are equal using triangle congruence.",
+      "answer": "Proof using SAS or RHS",
+      "solution": "Consider rectangle $ABCD$ with right angles at each vertex. In $\\\\triangle ABC$ and $\\\\triangle DCB$:\n1. $AB = DC$ (opposite sides of a rectangle)\n2. $\\\\angle ABC = \\\\angle DCB = 90^\\\\circ$ (angles of a rectangle)\n3. $BC = CB$ (common side)\nTherefore $\\\\triangle ABC \\\\cong \\\\triangle DCB$ by SAS. Hence $AC = DB$ (corresponding sides of congruent triangles)."
+    },
+    {
+      "id": "C1_Q4_X2",
+      "difficulty": "X",
+      "skill_tags": ["congruence", "multi_step", "angle_chase"],
+      "problem_text": "In $\\\\triangle ABC$, $AB = AC$. Point $D$ lies on $AB$ and point $E$ lies on $AC$ such that $BD = CE$. Prove that $BE = CD$.",
+      "answer": "Proof using SAS congruence twice",
+      "solution": "Since $AB = AC$, $\\\\triangle ABC$ is isosceles, so $\\\\angle ABC = \\\\angle ACB$. In $\\\\triangle BEC$ and $\\\\triangle CDB$:\n1. $BC = CB$ (common side)\n2. $\\\\angle EBC = \\\\angle DCB$ (base angles of isosceles triangle)\n3. $BD = CE$ (given), and $AB = AC$, so $AD = AE$ (equal minus equal). Then $BE = AB - AE$ and $CD = AC - AD$, so $BE = CD$.\nActually, better: In $\\\\triangle BEC$ and $\\\\triangle CDB$:\n1. $BC = CB$ (common)\n2. $\\\\angle EBC = \\\\angle DCB$ (base angles)\n3. $BD = CE$ (given) \nSo $\\\\triangle BEC \\\\cong \\\\triangle CDB$ by SAS? No, we need the included angle. $\\\\angle EBC$ and $BC$ with $BD$ don't correspond directly.\n\nLet me reconsider. In $\\\\triangle DBC$ and $\\\\triangle ECB$:\n1. $DB = EC$ (given)\n2. $\\\\angle DBC = \\\\angle ECB$ (base angles of isosceles $\\\\triangle ABC$)\n3. $BC = CB$ (common)\nSo $\\\\triangle DBC \\\\cong \\\\triangle ECB$ by SAS (two sides and the included angle). Therefore $DC = EB$ (corresponding sides)."
+    },
+    {
+      "id": "C1_Q4_X3",
+      "difficulty": "X",
+      "skill_tags": ["congruence", "exterior_angle", "proof"],
+      "problem_text": "Prove that the exterior angle of a triangle is greater than either of the opposite interior angles, using congruence or basic angle properties.",
+      "answer": "Proof using angle sum",
+      "solution": "In $\\\\triangle ABC$, let the exterior angle at $C$ be $\\\\angle ACD$ where $D$ is on the extension of $BC$. Then $\\\\angle ACD = 180^\\\\circ - \\\\angle ACB$ (straight line). Also $\\\\angle A + \\\\angle B + \\\\angle ACB = 180^\\\\circ$, so $\\\\angle A + \\\\angle B = 180^\\\\circ - \\\\angle ACB = \\\\angle ACD$. Therefore $\\\\angle ACD = \\\\angle A + \\\\angle B$. Since $\\\\angle A > 0$ and $\\\\angle B > 0$, $\\\\angle ACD > \\\\angle A$ and $\\\\angle ACD > \\\\angle B$."
+    },
+    {
+      "id": "C1_Q4_X4",
+      "difficulty": "X",
+      "skill_tags": ["congruence", "composite", "proof"],
+      "problem_text": "In $\\\\triangle ABC$, $AB = AC$. $P$ is the midpoint of $BC$. Prove that $AP$ is perpendicular to $BC$.",
+      "answer": "Proof using SSS congruence",
+      "solution": "In $\\\\triangle ABP$ and $\\\\triangle ACP$:\n1. $AB = AC$ (given, isosceles triangle)\n2. $BP = CP$ ($P$ is the midpoint of $BC$)\n3. $AP = AP$ (common side)\nTherefore $\\\\triangle ABP \\\\cong \\\\triangle ACP$ by SSS.\nSince corresponding parts are equal, $\\\\angle APB = \\\\angle APC$. But $\\\\angle APB + \\\\angle APC = 180^\\\\circ$ (straight line at $P$ on $BC$). So $2 \\\\times \\\\angle APB = 180^\\\\circ$, giving $\\\\angle APB = 90^\\\\circ$. Therefore $AP \\\\perp BC$."
+    }
+  ]
+}

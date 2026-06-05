@@ -1,0 +1,44 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q5",
+  "title": "Volume of Prisms and Cylinders",
+  "syllabus_ref": "IGCSE 0580 D.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "How much water can a swimming pool hold? How much concrete is needed for a pillar? These questions are about volume \u2014 the amount of space inside a 3D object. Volume calculations are essential in engineering, construction, and everyday life.",
+    "prerequisites": [
+      "Area of 2D shapes",
+      "Understanding of 3D shapes and prisms",
+      "Multiplication skills"
+    ],
+    "core_explanation": "**Volume** measures the amount of space inside a 3D shape, measured in cubic units (cm^3, m^3, etc.).\n\n### Volume of a Prism\n\nFor any prism: **Volume = Area of cross-section x Length**\n\nThe cross-section is the uniform shape that repeats through the prism.\n\n### Specific Formulas\n\n| Shape | Formula |\n|-------|---------|\n| Cuboid (l x w x h) | V = l x w x h |\n| Cube (side s) | V = s^3 |\n| Triangular prism | V = (1/2 x b x h_triangle) x L |\n| Cylinder | V = pi x r^2 x h |\n\n### Volume of a Cylinder\n\nV = pi x r^2 x h\n\nWhere r is the radius of the circular cross-section and h is the height (or length) of the cylinder.\n\n### Unit Conversions for Volume\n\n1 cm^3 = 1,000 mm^3\n1 m^3 = 1,000,000 cm^3\n1 litre = 1,000 cm^3 = 1,000 mL\n1 m^3 = 1,000 litres\n\n### Capacity Problems\n\nSometimes you need to find how much liquid a container can hold. Convert volume to litres or millilitres using the conversions above.",
+    "worked_example": "Problem: A cuboid fish tank measures 60 cm by 30 cm by 40 cm. Find its volume.\n\nStep 1: Write the formula. V = l x w x h\n\nStep 2: Substitute. V = 60 x 30 x 40\n\nStep 3: Calculate. V = 72,000 cm^3\n\nAnswer: The volume is 72,000 cm^3. This equals 72 litres.\n\nProblem: A cylindrical water tank has radius 50 cm and height 120 cm. Find its volume in litres (use pi = 3.142).\n\nStep 1: V = pi x r^2 x h = 3.142 x 50 x 50 x 120\n\nStep 2: V = 3.142 x 2500 x 120 = 3.142 x 300,000\n\nStep 3: V = 942,600 cm^3\n\nStep 4: Convert to litres. 942,600 / 1000 = 942.6 litres\n\nAnswer: The tank holds approximately 942.6 litres.",
+    "common_mistakes": [
+      {
+        "mistake": "Using the slanted edge length instead of the perpendicular height in a cylinder or prism.",
+        "correction": "Volume is area of cross-section times the perpendicular height, not the slanted length."
+      },
+      {
+        "mistake": "Forgetting to square the radius in the cylinder volume formula.",
+        "correction": "V = pi x r^2 x h means r x r first, then multiply by pi and h."
+      },
+      {
+        "mistake": "Using diameter instead of radius.",
+        "correction": "Always halve the diameter to get the radius before using it in the formula."
+      },
+      {
+        "mistake": "Confusing volume conversion factors: 1 m^3 = 1,000,000 cm^3 (not 1,000).",
+        "correction": "Linear: 1 m = 100 cm. Area: 1 m^2 = 10,000 cm^2. Volume: 1 m^3 = 1,000,000 cm^3. Each dimension cubed gives 100 x 100 x 100 = 1,000,000."
+      }
+    ],
+    "summary": [
+      "Volume of any prism = area of cross-section x length.",
+      "Cuboid: V = l x w x h. Cylinder: V = pi x r^2 x h.",
+      "The cross-section is the shape that repeats through the prism.",
+      "1 litre = 1,000 cm^3. Use this to convert between volume and capacity.",
+      "Volume is in cubic units (cm^3, m^3). Check unit consistency."
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "track": "igcse_o",
+  "unit": "F1_Vectors",
+  "topic_id": "F1_Q4",
+  "title": "Reflection",
+  "syllabus_ref": "0580 F7.2",
+  "version": 1,
+  "created_at": "2026-06-05T11:00:00Z",
+  "sections": {
+    "hook": "A reflection creates a mirror image of a shape across a line.",
+    "prerequisites": [
+      "Properties of shapes",
+      "Coordinate geometry",
+      "Perpendicular lines"
+    ],
+    "core_explanation": "To reflect a point in the x-axis: (x,y) → (x,-y). In y=x: (x,y) → (y,x). Each point and its image are equidistant from the mirror line.",
+    "worked_example": "**Question:** Reflect P(3,2) in the y-axis.\n\n**Solution:** P'(-3,2)",
+    "common_mistakes": [
+      {
+        "mistake": "Adding vectors incorrectly by adding only x or only y components",
+        "correction": "Always add x-components together AND y-components together separately"
+      },
+      {
+        "mistake": "Confusing direction in rotations (clockwise vs anticlockwise)",
+        "correction": "Draw a simple diagram to verify the direction before calculating coordinates"
+      }
+    ],
+    "summary": [
+      "Reflection is a fundamental concept in IGCSE Mathematics",
+      "Always check your answer makes sense in the context",
+      "Practice with different values to build confidence"
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q7",
+  "title": "Scatter Diagrams and Correlation - Problem Set",
+  "problems": [
+    {
+      "id": "H1_Q7_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A scatter diagram shows points trending upward from left to right. What type of correlation does this indicate?",
+      "options": ["Positive correlation", "Negative correlation", "No correlation", "Non-linear correlation"],
+      "answer": 0,
+      "explanation": "When points trend upward from left to right, as one variable increases so does the other, indicating a positive correlation."
+    },
+    {
+      "id": "H1_Q7_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "As the temperature increases, the number of coats sold decreases. What type of correlation does this describe?",
+      "options": ["Positive correlation", "Negative correlation", "No correlation", "Perfect correlation"],
+      "answer": 1,
+      "explanation": "As one variable increases, the other decreases. This is a negative correlation."
+    },
+    {
+      "id": "H1_Q7_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A scatter diagram shows points randomly scattered with no clear pattern. What type of correlation is this?",
+      "options": ["Strong positive", "Strong negative", "No correlation", "Perfect positive"],
+      "answer": 2,
+      "explanation": "When points are randomly scattered with no upward or downward trend, there is no correlation between the variables."
+    },
+    {
+      "id": "H1_Q7_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which of the following is most likely to show a positive correlation?",
+      "options": [
+        "Number of hours studied and exam score",
+        "Outside temperature and heating bill",
+        "Speed of a car and journey time",
+        "Age of a car and its resale value"
+      ],
+      "answer": 0,
+      "explanation": "More hours studied typically leads to higher exam scores, so these have a positive correlation. The other options show negative correlations (higher temperature → lower heating bill, higher speed → shorter time, older car → lower value)."
+    },
+    {
+      "id": "H1_Q7_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A scatter diagram shows the relationship between hours of TV watched per week and test scores. The line of best fit has equation y = −2.5x + 85, where x is hours of TV and y is test score. What does the gradient of −2.5 represent?",
+      "options": [
+        "Each extra hour of TV is associated with a 2.5-point decrease in test score",
+        "Each extra hour of TV is associated with a 2.5-point increase in test score",
+        "The average test score is 2.5",
+        "For every hour of TV, test scores increase by 2.5%"
+      ],
+      "answer": 0,
+      "explanation": "The gradient (slope) of the line of best fit is −2.5, meaning for each additional hour of TV watched (x increases by 1), the predicted test score decreases by 2.5 points."
+    },
+    {
+      "id": "H1_Q7_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A line of best fit for a scatter diagram has equation y = 3x + 10. Using this line, estimate the value of y when x = 8.",
+      "options": ["34", "24", "21", "31"],
+      "answer": 0,
+      "explanation": "Substitute x = 8 into y = 3x + 10: y = 3(8) + 10 = 24 + 10 = 34."
+    },
+    {
+      "id": "H1_Q7_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "The line of best fit for a scatter diagram is y = 2x + 5, where x is the number of practice sessions and y is the score achieved. Use the line to estimate the score after 15 practice sessions.",
+      "options": ["30", "35", "40", "25"],
+      "answer": 1,
+      "explanation": "Substitute x = 15 into y = 2x + 5: y = 2(15) + 5 = 30 + 5 = 35."
+    },
+    {
+      "id": "H1_Q7_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A scatter diagram shows the ages and heights of 20 children aged 2 to 10 years. The points show a clear upward trend. What is the most appropriate prediction for the height of a 15-year-old using this data?",
+      "options": [
+        "Extrapolating the line of best fit gives a reasonable estimate",
+        "Interpolating between the data points gives a reasonable estimate",
+        "The data cannot be used because 15 is outside the range of ages studied — extrapolation may be unreliable",
+        "The height of a 15-year-old will be the same as a 10-year-old"
+      ],
+      "answer": 2,
+      "explanation": "Since the data only covers ages 2 to 10, predicting the height of a 15-year-old requires extrapolation well beyond the data range. Growth patterns change during adolescence, so this extrapolation would be unreliable."
+    },
+    {
+      "id": "H1_Q7_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A scatter diagram shows a correlation coefficient close to −0.9. What does this indicate about the relationship?",
+      "options": [
+        "A strong negative correlation",
+        "A weak negative correlation",
+        "A strong positive correlation",
+        "No correlation"
+      ],
+      "answer": 0,
+      "explanation": "A correlation coefficient close to −1 indicates a strong negative correlation. −0.9 is close to −1, so there is a strong negative correlation."
+    },
+    {
+      "id": "H1_Q7_10",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which of the following correlation coefficients represents the strongest positive correlation?",
+      "options": ["0.85", "−0.92", "0.5", "−0.3"],
+      "answer": 0,
+      "explanation": "The strength of correlation is measured by the absolute value. 0.85 is the strongest among the positive coefficients. (−0.92 is stronger in absolute terms but is a negative correlation, not positive.)"
+    },
+    {
+      "id": "H1_Q7_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A scatter diagram of temperature (°C) vs ice cream sales has a line of best fit: y = 15x + 20, where y is sales and x is temperature in °C. Predict the sales when the temperature is 30°C.",
+      "options": ["470", "450", "420", "500"],
+      "answer": 0,
+      "explanation": "y = 15(30) + 20 = 450 + 20 = 470"
+    },
+    {
+      "id": "H1_Q7_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A scatter diagram has a point that lies far from the general trend of the other points. This point is most accurately described as:",
+      "options": ["An outlier", "The median", "The mode", "An extrapolation"],
+      "answer": 0,
+      "explanation": "A point that lies far from the general trend of other points on a scatter diagram is called an outlier. It does not fit the pattern of the rest of the data."
+    },
+    {
+      "id": "H1_Q7_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Data is collected on the number of ice creams sold and the number of drownings at beaches each day. There is a strong positive correlation. Which statement is correct?",
+      "options": [
+        "Eating ice creams causes drownings — a causal relationship exists",
+        "There is likely a lurking variable (e.g., hot weather) causing both to increase",
+        "The correlation is spurious but ice creams should be banned at beaches",
+        "Ice cream sales and drownings are unrelated"
+      ],
+      "answer": 1,
+      "explanation": "Correlation does not imply causation. The positive correlation is likely due to a common cause — hot weather — which increases both ice cream sales and the number of people swimming (and therefore drownings)."
+    },
+    {
+      "id": "H1_Q7_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A line of best fit is drawn through points on a scatter diagram. A point lies exactly on the line. What does this mean?",
+      "options": [
+        "The point is an outlier",
+        "The point follows the general trend of the data exactly",
+        "The correlation is perfect",
+        "The point should be ignored"
+      ],
+      "answer": 1,
+      "explanation": "A point lying on the line of best fit means that point follows the trend line exactly — the predicted value matches the actual value for that observation. This does not necessarily mean the correlation is perfect (all points would need to lie on the line)."
+    },
+    {
+      "id": "H1_Q7_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "The line of best fit for a scatter diagram of study time (hours) vs test score is y = 4.5x + 30. A student studies for 12 hours. The line predicts a score of 84, but the student actually scored 78. What is the residual?",
+      "options": ["−6", "6", "−12", "12"],
+      "answer": 0,
+      "explanation": "The residual is the actual value minus the predicted value: 78 − 84 = −6. A negative residual means the actual value is below the predicted value."
+    },
+    {
+      "id": "H1_Q7_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A scatter diagram of advertising spend vs revenue shows a positive correlation. The line of best fit is y = 3.2x + 50, where y is revenue in thousands and x is advertising spend in thousands. Estimate the revenue when advertising spend is 10 thousand.",
+      "options": ["82 thousand", "32 thousand", "53.2 thousand", "85 thousand"],
+      "answer": 0,
+      "explanation": "y = 3.2(10) + 50 = 32 + 50 = 82. So the estimated revenue is 82 thousand."
+    }
+  ]
+}

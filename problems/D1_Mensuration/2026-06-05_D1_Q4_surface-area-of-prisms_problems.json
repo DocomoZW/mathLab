@@ -1,0 +1,168 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q4",
+  "title": "Surface Area of Prisms \u2014 Problems",
+  "problems": [
+    {
+      "id": "D1_Q4_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "sa_cuboid"
+      ],
+      "problem_text": "Find the surface area of a cuboid with length 5 cm, width 4 cm, and height 3 cm.",
+      "answer": "94 cm^2",
+      "solution": "SA = 2(lw + lh + wh) = 2(5x4 + 5x3 + 4x3) = 2(20 + 15 + 12) = 94 cm^2"
+    },
+    {
+      "id": "D1_Q4_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "sa_cube"
+      ],
+      "problem_text": "Find the surface area of a cube with side length 6 cm.",
+      "answer": "216 cm^2",
+      "solution": "SA = 6s^2 = 6 x 36 = 216 cm^2"
+    },
+    {
+      "id": "D1_Q4_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "sa_cylinder"
+      ],
+      "problem_text": "Find the surface area of a cylinder with radius 5 cm and height 8 cm (use pi = 3.142).",
+      "answer": "408.46 cm^2",
+      "solution": "Circular ends: 2 x pi x 25 = 157.1 cm^2. Curved: 2 x pi x 5 x 8 = 251.36 cm^2. Total = 408.46 cm^2"
+    },
+    {
+      "id": "D1_Q4_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "sa_triangular_prism"
+      ],
+      "problem_text": "A triangular prism has triangular ends with base 6 cm and height 4 cm, and length 10 cm. The rectangular faces are 6x10, 5x10, and 5x10. Find the total surface area.",
+      "answer": "228 cm^2",
+      "solution": "Two triangles: 2 x (1/2 x 6 x 4) = 24 cm^2. Rectangles: 6x10 + 5x10 + 5x10 = 60 + 50 + 50 = 160 cm^2. Total = 24 + 160 = 184 cm^2. Wait: the slant sides - if triangle has base 6, height 4, the slant sides are sqrt(3^2+4^2)=5 cm each. So rectangles: 6x10 + 5x10 + 5x10 = 60+50+50=160. Two triangles: 2 x 12 = 24. Total = 184 cm^2."
+    },
+    {
+      "id": "D1_Q4_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_cuboid_missing"
+      ],
+      "problem_text": "A cuboid has surface area 214 cm^2, length 7 cm, and width 5 cm. Find its height.",
+      "answer": "6 cm",
+      "solution": "214 = 2(7x5 + 7h + 5h) = 2(35 + 12h) = 70 + 24h. 144 = 24h. h = 6 cm"
+    },
+    {
+      "id": "D1_Q4_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_cylinder_open"
+      ],
+      "problem_text": "Find the surface area of an open cylinder (no top) with radius 4 cm and height 10 cm (use pi = 3.142).",
+      "answer": "301.63 cm^2",
+      "solution": "One circular end: pi x 16 = 50.272 cm^2. Curved surface: 2 x pi x 4 x 10 = 251.36 cm^2. Total = 301.632 cm^2"
+    },
+    {
+      "id": "D1_Q4_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_cuboid_word"
+      ],
+      "problem_text": "A rectangular box measures 20 cm by 15 cm by 12 cm. How much cardboard is needed to make the box (ignoring overlaps)?",
+      "answer": "1440 cm^2",
+      "solution": "SA = 2(20x15 + 20x12 + 15x12) = 2(300 + 240 + 180) = 1440 cm^2"
+    },
+    {
+      "id": "D1_Q4_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_cylinder_word"
+      ],
+      "problem_text": "A cylindrical can has radius 3.5 cm and height 12 cm. Find the total surface area (use pi = 22/7).",
+      "answer": "341 cm^2",
+      "solution": "Ends: 2 x (22/7) x 12.25 = 2 x 38.5 = 77 cm^2. Curved: 2 x (22/7) x 3.5 x 12 = 264 cm^2. Total = 341 cm^2"
+    },
+    {
+      "id": "D1_Q4_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_prism_cross_section"
+      ],
+      "problem_text": "A prism has a cross-section which is a right-angled triangle with legs 3 cm and 4 cm. The prism length is 8 cm. Find the total surface area.",
+      "answer": "120 cm^2",
+      "solution": "Hypotenuse = 5 cm. Two triangles: 2 x (1/2 x 3 x 4) = 12 cm^2. Rectangles: 3x8 + 4x8 + 5x8 = 24 + 32 + 40 = 96 cm^2. Total = 108 cm^2."
+    },
+    {
+      "id": "D1_Q4_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_cube_increase"
+      ],
+      "problem_text": "A cube has side 3 cm. If the side is doubled to 6 cm, by what factor does the surface area increase?",
+      "answer": "4",
+      "solution": "Original SA = 6 x 9 = 54. New SA = 6 x 36 = 216. Factor = 216/54 = 4"
+    },
+    {
+      "id": "D1_Q4_C7",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_cylinder_diameter"
+      ],
+      "problem_text": "A cylinder has diameter 10 cm and height 15 cm. Find its surface area (use pi = 3.142).",
+      "answer": "628.4 cm^2",
+      "solution": "r = 5 cm. Ends: 2 x pi x 25 = 157.1 cm^2. Curved: 2 x pi x 5 x 15 = 471.3 cm^2. Total = 628.4 cm^2"
+    },
+    {
+      "id": "D1_Q4_C8",
+      "difficulty": "C",
+      "skill_tags": [
+        "sa_l_shape_prism"
+      ],
+      "problem_text": "An L-shaped prism has a cross-section area of 22 cm^2 and perimeter of 24 cm. The prism length is 6 cm. Find its surface area.",
+      "answer": "188 cm^2",
+      "solution": "SA = 2 x cross-section area + perimeter x length = 2 x 22 + 24 x 6 = 44 + 144 = 188 cm^2"
+    },
+    {
+      "id": "D1_Q4_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "sa_cylinder_minimization"
+      ],
+      "problem_text": "A closed cylinder has volume 500 cm^3 and radius r. Write an expression for its surface area in terms of r.",
+      "answer": "2 pi r^2 + 1000/r",
+      "solution": "V = pi r^2 h = 500, so h = 500/(pi r^2). SA = 2 pi r^2 + 2 pi r h = 2 pi r^2 + 2 pi r x 500/(pi r^2) = 2 pi r^2 + 1000/r"
+    },
+    {
+      "id": "D1_Q4_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "sa_prism_algebraic"
+      ],
+      "problem_text": "A cuboid has dimensions (x+2), (x), and (x-1) cm. Find an expression for its surface area in expanded form.",
+      "answer": "6x^2 + 2x - 4",
+      "solution": "SA = 2[(x+2)(x) + (x+2)(x-1) + x(x-1)] = 2[x^2+2x + x^2+2x-x-2 + x^2-x] = 2[3x^2 + 2x - 2] = 6x^2 + 4x - 4"
+    },
+    {
+      "id": "D1_Q4_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "sa_cylinder_hemisphere"
+      ],
+      "problem_text": "A solid consists of a cylinder of radius 4 cm and height 6 cm with a hemisphere of the same radius on top. Find the total surface area (use pi = 3.142).",
+      "answer": "301.63 cm^2",
+      "solution": "Cylinder curved: 2 x pi x 4 x 6 = 150.82. Cylinder base circle: pi x 16 = 50.27. Hemisphere curved: 2 x pi x 16 = 100.54. Total = 150.82 + 50.27 + 100.54 = 301.63 cm^2"
+    },
+    {
+      "id": "D1_Q4_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "sa_cuboid_algebraic"
+      ],
+      "problem_text": "A cuboid has sides x, (x+1), and (x+2) cm. Find an expression for its surface area.",
+      "answer": "6x^2 + 12x + 4",
+      "solution": "SA = 2[x(x+1) + x(x+2) + (x+1)(x+2)] = 2[x^2+x + x^2+2x + x^2+3x+2] = 2[3x^2+6x+2] = 6x^2+12x+4"
+    }
+  ]
+}

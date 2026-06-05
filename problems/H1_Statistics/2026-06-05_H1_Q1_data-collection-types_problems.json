@@ -1,0 +1,232 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q1",
+  "title": "Data Collection & Types - Problem Set",
+  "problems": [
+    {
+      "id": "H1_Q1_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which of the following is an example of primary data?",
+      "options": [
+        "Using census data from the national statistics office",
+        "Conducting a survey of students in your school",
+        "Reading a published report on climate change",
+        "Downloading stock market prices from a website"
+      ],
+      "answer": 1,
+      "explanation": "Primary data is collected directly from the source. Conducting your own survey gives you primary data, whereas using existing sources (census, reports, websites) gives secondary data."
+    },
+    {
+      "id": "H1_Q1_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "The colour of cars passing a school gate is recorded. What type of data is this?",
+      "options": [
+        "Discrete numerical data",
+        "Continuous numerical data",
+        "Categorical data",
+        "Ordinal data"
+      ],
+      "answer": 2,
+      "explanation": "Colour is a category, not a number. Categorical data describes qualities or characteristics that cannot be measured numerically."
+    },
+    {
+      "id": "H1_Q1_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A tally chart shows the following: |||| ||| for apples sold. How many apples were sold?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "The tally shows 5 (first group of four with a cross) + 3 = 8 apples."
+    },
+    {
+      "id": "H1_Q1_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A researcher wants to find the average height of students in a school. She measures the height of every student in one class. This group of students is called a:",
+      "options": [
+        "Population",
+        "Sample",
+        "Census",
+        "Variable"
+      ],
+      "answer": 1,
+      "explanation": "A sample is a subset of the population. The population would be all students in the school; measuring only one class gives a sample."
+    },
+    {
+      "id": "H1_Q1_05",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Which of these is continuous numerical data?",
+      "options": [
+        "Number of siblings",
+        "Shoe size",
+        "Weight of a bag of rice",
+        "Number of goals scored"
+      ],
+      "answer": 2,
+      "explanation": "Continuous data can take any value within a range. Weight is continuous because it can be any decimal value, unlike counts or shoe sizes which are discrete."
+    },
+    {
+      "id": "H1_Q1_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A tally chart shows these results for favourite fruit: Apple: |||| |||, Banana: |||| |, Orange: |||| ||||. What is the total number of people surveyed?",
+      "options": [
+        "18",
+        "19",
+        "20",
+        "21"
+      ],
+      "answer": 1,
+      "explanation": "Apple = 5 + 3 = 8, Banana = 5 + 1 = 6, Orange = 5 + 4 = 9. Total = 8 + 6 + 9 = 19 people."
+    },
+    {
+      "id": "H1_Q1_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which sampling method gives every member of the population an equal chance of being selected?",
+      "options": [
+        "Convenience sampling",
+        "Systematic sampling",
+        "Simple random sampling",
+        "Quota sampling"
+      ],
+      "answer": 2,
+      "explanation": "Simple random sampling ensures every member has an equal probability of selection. Convenience and quota sampling are biased, and systematic sampling gives equal chance only if the list is random."
+    },
+    {
+      "id": "H1_Q1_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "The number of books each student reads in a month is recorded as: 3, 5, 2, 7, 3, 5, 5, 2. What is the modal number of books?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "The mode is the most frequent value. 5 appears 3 times, which is more than any other value."
+    },
+    {
+      "id": "H1_Q1_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A researcher collects data by interviewing people at a shopping centre on a Tuesday morning. This is an example of:",
+      "options": [
+        "Simple random sampling",
+        "Stratified sampling",
+        "Convenience sampling",
+        "Cluster sampling"
+      ],
+      "answer": 2,
+      "explanation": "Interviewing whoever is available at a convenient location and time is convenience sampling. It is prone to bias as certain groups are over- or under-represented."
+    },
+    {
+      "id": "H1_Q1_10",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A tally chart shows the number of pets per household: 0: ||||, 1: |||| ||, 2: |||, 3: |. How many households have at least 2 pets?",
+      "options": [
+        "3",
+        "4",
+        "7",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Households with at least 2 pets = those with 2 pets (3) + those with 3 pets (1) = 4 households."
+    },
+    {
+      "id": "H1_Q1_11",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which of the following best describes the difference between a population and a sample?",
+      "options": [
+        "A population changes over time; a sample is fixed",
+        "A population includes every member of a group; a sample is a subset of that group",
+        "A population is always large; a sample is always small",
+        "A population only applies to humans; a sample applies to any object"
+      ],
+      "answer": 1,
+      "explanation": "The population is the entire group of interest, while a sample is a smaller subset selected from that population to gather data."
+    },
+    {
+      "id": "H1_Q1_12",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A school has 600 boys and 400 girls. A stratified sample of 50 students is needed. How many boys should be in the sample?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer": 2,
+      "explanation": "Total students = 1000. Proportion of boys = 600/1000 = 0.6. In a sample of 50: 0.6 × 50 = 30 boys."
+    },
+    {
+      "id": "H1_Q1_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A doctor uses data collected from hospital patients over the past 5 years to study a disease. This data is best described as:",
+      "options": [
+        "Primary and discrete",
+        "Secondary and continuous",
+        "Secondary and historical",
+        "Primary and categorical"
+      ],
+      "answer": 2,
+      "explanation": "The data already existed (collected in the past), so it is secondary data. It is also historical because the doctor is using past records rather than collecting new data."
+    },
+    {
+      "id": "H1_Q1_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of these is NOT an advantage of using a sample instead of a census?",
+      "options": [
+        "Lower cost",
+        "Faster data collection",
+        "More accurate results",
+        "Requires fewer resources"
+      ],
+      "answer": 2,
+      "explanation": "A census (surveying the entire population) is generally more accurate than a sample because it avoids sampling error. Samples are cheaper, faster, and need fewer resources, but are not necessarily more accurate."
+    },
+    {
+      "id": "H1_Q1_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "In a survey, students are asked to rate their lunch on a scale of 1 to 5 (1 = terrible, 5 = excellent). What type of data is being collected?",
+      "options": [
+        "Nominal categorical data",
+        "Ordinal categorical data",
+        "Discrete numerical data",
+        "Continuous numerical data"
+      ],
+      "answer": 1,
+      "explanation": "Rating scales produce ordinal data — the numbers have a meaningful order (1 < 2 < 3 < 4 < 5) but the intervals between them are not necessarily equal. It is categorical because the numbers represent ordered categories."
+    },
+    {
+      "id": "H1_Q1_16",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A tally chart shows the following for daily ice cream sales across 30 days: 0-9: |||| ||, 10-19: |||| ||||, 20-29: |||| |||, 30-39: |||. What is the total number of days with sales less than 20?",
+      "options": [
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "answer": 3,
+      "explanation": "Days with sales less than 20 = those in 0-9 (5 + 2 = 7) + those in 10-19 (5 + 4 = 9) = 16 days."
+    }
+  ]
+}

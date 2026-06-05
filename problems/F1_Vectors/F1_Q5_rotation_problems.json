@@ -1,0 +1,153 @@
+{
+  "unit": "F1",
+  "topic": "Q5",
+  "title": "Rotation - Problem Set",
+  "syllabus": "IGCSE O Level Mathematics (0580)",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "F1_Q5_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the image of (2, 0) after 90 degree anticlockwise rotation about the origin?",
+      "options": ["(0, 2)", "(0, -2)", "(-2, 0)", "(2, 0)"],
+      "answer": 0,
+      "explanation": "90 deg anticlockwise: (x,y) -> (-y,x). (2,0) -> (0,2)."
+    },
+    {
+      "id": "F1_Q5_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the image of (5, 0) after 180 degree rotation about the origin?",
+      "options": ["(-5, 0)", "(0, 5)", "(0, -5)", "(5, 0)"],
+      "answer": 0,
+      "explanation": "180 degree: (x,y) -> (-x,-y). (5,0) -> (-5,0)."
+    },
+    {
+      "id": "F1_Q5_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the image of (0, 3) after 90 degree clockwise rotation about the origin?",
+      "options": ["(3, 0)", "(-3, 0)", "(0, -3)", "(0, 3)"],
+      "answer": 0,
+      "explanation": "90 deg clockwise: (x,y) -> (y,-x). (0,3) -> (3,0)."
+    },
+    {
+      "id": "F1_Q5_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A 180 degree rotation is the same:",
+      "options": ["Clockwise or anticlockwise", "Only clockwise", "Only anticlockwise", "As no rotation"],
+      "answer": 0,
+      "explanation": "180 degree rotation is same in either direction."
+    },
+    {
+      "id": "F1_Q5_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point (1, 2) is rotated 90 deg anticlockwise about origin. What is the image?",
+      "options": ["(-2, 1)", "(2, -1)", "(-1, -2)", "(2, 1)"],
+      "answer": 0,
+      "explanation": "90 deg anticlockwise: (1,2) -> (-2, 1)."
+    },
+    {
+      "id": "F1_Q5_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point A(4, 1) is rotated 270 degrees anticlockwise about the origin. What is A'?",
+      "options": ["(1, -4)", "(-1, 4)", "(-4, -1)", "(4, 1)"],
+      "answer": 0,
+      "explanation": "270 deg anticlockwise = 90 deg clockwise: (x,y) -> (y,-x). (4,1) -> (1,-4)."
+    },
+    {
+      "id": "F1_Q5_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the centre of rotation if (0, 1) maps to (0, -1) by 180 deg?",
+      "options": ["Origin (0,0)", "(0, 1)", "(1, 0)", "(0, -1)"],
+      "answer": 0,
+      "explanation": "For 180 deg rotation, midpoint of point and image is the centre: (0+0)/2, (1+(-1))/2 = (0,0)."
+    },
+    {
+      "id": "F1_Q5_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A triangle is rotated 90 deg anticlockwise about (0,0). Vertex (3,2) goes to:",
+      "options": ["(-2, 3)", "(2, -3)", "(-3, -2)", "(2, 3)"],
+      "answer": 0,
+      "explanation": "90 deg anticlockwise: (3,2) -> (-2, 3)."
+    },
+    {
+      "id": "F1_Q5_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Is rotation an isometry?",
+      "options": ["Yes, it preserves size and shape", "No", "Only for 180 degrees", "Only about the origin"],
+      "answer": 0,
+      "explanation": "Rotation preserves size and shape (isometry)."
+    },
+    {
+      "id": "F1_Q5_10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point (2, 3) is rotated 90 deg clockwise about (1, 1). What is the image?",
+      "options": ["(3, 0)", "(0, 3)", "(3, 2)", "(1, -1)"],
+      "answer": 0,
+      "explanation": "Translate by -(1,1): (1,2). Rotate 90 deg clockwise: (2,-1). Translate back: (3,0)."
+    },
+    {
+      "id": "F1_Q5_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A 90 deg anticlockwise rotation about origin maps (a,b) to:",
+      "options": "(-b, a)",
+      "answer": 0,
+      "explanation": "Rule: (x,y) -> (-y,x) for 90 deg anticlockwise about origin."
+    },
+    {
+      "id": "F1_Q5_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Two successive 90 deg anticlockwise rotations about origin are equivalent to:",
+      "options": ["180 degree rotation", "90 degree clockwise", "270 degree anticlockwise", "Identity"],
+      "answer": 0,
+      "explanation": "90 + 90 = 180 degrees anticlockwise = 180 degree rotation."
+    },
+    {
+      "id": "F1_Q5_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point P is rotated 90 deg anticlockwise to P'(-3, 1). Where was P?",
+      "options": ["(1, 3)", "(-1, -3)", "(-3, -1)", "(3, -1)"],
+      "answer": 0,
+      "explanation": "If (x,y) -> (-y,x) = (-3,1), then -y=3 so y=-3, and x=1. So P=(1,-3)? Wait: (-y,x)=(-3,1) means -y=-3 and x=1, so y=3 and x=1. So P=(1,3). That's option 0."
+    },
+    {
+      "id": "F1_Q5_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A shape is rotated 270 deg clockwise about origin. Equivalent anticlockwise rotation?",
+      "options": ["90 deg anticlockwise", "180 deg anticlockwise", "270 deg anticlockwise", "360 deg anticlockwise"],
+      "answer": 0,
+      "explanation": "270 deg clockwise = 90 deg anticlockwise (360-270=90)."
+    },
+    {
+      "id": "F1_Q5_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point (0, -4) rotated 180 deg about (0, 2). What is the image?",
+      "options": ["(0, 8)", "(0, 0)", "(0, -8)", "(0, 6)"],
+      "answer": 0,
+      "explanation": "Vector from centre: (0, -6). Rotated 180 deg: (0, 6). Image = centre + (0,6) = (0, 8)."
+    },
+    {
+      "id": "F1_Q5_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What information is needed to fully describe a rotation?",
+      "options": ["Centre, angle, direction", "Centre and angle only", "Angle and direction only", "Centre only"],
+      "answer": 0,
+      "explanation": "A rotation needs centre of rotation, angle, and direction (clockwise/anticlockwise)."
+    }
+  ]
+}

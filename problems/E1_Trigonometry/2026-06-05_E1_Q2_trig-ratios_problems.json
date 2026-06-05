@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q2",
+  "title": "Trigonometric Ratios - Problems",
+  "problems": [
+    {
+      "id": "E1_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": ["trig_ratios_basic"],
+      "problem_text": "In a right-angled triangle, the sides are: opposite = 3, adjacent = 4, hypotenuse = 5. Find sin theta where theta is the angle opposite the side of length 3.",
+      "answer": "3/5 or 0.6",
+      "solution": "sin(theta) = opposite/hypotenuse = 3/5 = 0.6."
+    },
+    {
+      "id": "E1_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": ["trig_ratios_basic"],
+      "problem_text": "In a right-angled triangle with adjacent = 5 and hypotenuse = 13, find cos theta.",
+      "answer": "5/13 or approximately 0.3846",
+      "solution": "cos(theta) = adjacent/hypotenuse = 5/13."
+    },
+    {
+      "id": "E1_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": ["trig_ratios_basic"],
+      "problem_text": "In a right-angled triangle, opposite = 8, adjacent = 15. Find tan theta.",
+      "answer": "8/15 or approximately 0.5333",
+      "solution": "tan(theta) = opposite/adjacent = 8/15."
+    },
+    {
+      "id": "E1_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": ["trig_ratios_basic"],
+      "problem_text": "A right-angled triangle has opposite = 7, hypotenuse = 25. Find sin theta.",
+      "answer": "7/25 or 0.28",
+      "solution": "sin(theta) = opposite/hypotenuse = 7/25 = 0.28."
+    },
+    {
+      "id": "E1_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": ["find_angle_from_ratio"],
+      "problem_text": "In a right-angled triangle, sin theta = 0.5. Find the value of angle theta in degrees.",
+      "answer": "30 degrees",
+      "solution": "theta = sin^-1(0.5) = 30 degrees."
+    },
+    {
+      "id": "E1_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": ["find_angle_from_ratio"],
+      "problem_text": "In triangle ABC, right-angled at B, AB = 8 cm and BC = 6 cm. Find angle ACB correct to 1 decimal place.",
+      "answer": "53.1 degrees",
+      "solution": "Angle ACB is at C. tan(ACB) = opposite/adjacent = AB/BC = 8/6 = 4/3. angle ACB = tan^-1(4/3) = 53.13... degrees. Rounded to 1 dp: 53.1 degrees."
+    },
+    {
+      "id": "E1_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": ["find_side_from_angle"],
+      "problem_text": "In a right-angled triangle, the hypotenuse is 10 cm and one angle is 40 degrees. Find the length of the side opposite this angle, correct to 2 decimal places.",
+      "answer": "6.43 cm",
+      "solution": "sin(40) = opposite/hypotenuse = opposite/10. opposite = 10 * sin(40) = 10 * 0.6428 = 6.428 cm. Rounded to 2 dp: 6.43 cm."
+    },
+    {
+      "id": "E1_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": ["find_side_from_angle"],
+      "problem_text": "In a right-angled triangle, the adjacent side to a 35-degree angle is 12 cm. Find the length of the hypotenuse, correct to 2 decimal places.",
+      "answer": "14.65 cm",
+      "solution": "cos(35) = adjacent/hypotenuse = 12/h. h = 12 / cos(35) = 12 / 0.81915 = 14.649 cm. Rounded to 2 dp: 14.65 cm."
+    },
+    {
+      "id": "E1_Q2_C5",
+      "difficulty": "C",
+      "skill_tags": ["trig_ratios_application"],
+      "problem_text": "A right-angled triangle has hypotenuse of length 17 cm and one angle of 28 degrees. Find the length of the side adjacent to the 28-degree angle, correct to 2 decimal places.",
+      "answer": "15.01 cm",
+      "solution": "cos(28) = adjacent/17. adjacent = 17 * cos(28) = 17 * 0.88295 = 15.010 cm. Rounded to 2 dp: 15.01 cm."
+    },
+    {
+      "id": "E1_Q2_C6",
+      "difficulty": "C",
+      "skill_tags": ["find_angle_from_ratio"],
+      "problem_text": "In triangle PQR, right-angled at Q, PQ = 9 cm and PR = 15 cm. Find angle PRQ correct to 1 decimal place.",
+      "answer": "36.9 degrees",
+      "solution": "Angle PRQ is at R. We need to find angle at R. sin(PRQ) = opposite/hypotenuse = PQ/PR = 9/15 = 3/5 = 0.6. angle PRQ = sin^-1(0.6) = 36.87... degrees. Rounded to 1 dp: 36.9 degrees."
+    },
+    {
+      "id": "E1_Q2_C7",
+      "difficulty": "C",
+      "skill_tags": ["find_side_from_angle"],
+      "problem_text": "A ladder leaning against a wall makes an angle of 65 degrees with the ground. The ladder reaches 8 m up the wall. Find the length of the ladder, correct to 2 decimal places.",
+      "answer": "8.83 m",
+      "solution": "sin(65) = opposite/hypotenuse = 8/length. length = 8 / sin(65) = 8 / 0.90631 = 8.827 m. Rounded to 2 dp: 8.83 m."
+    },
+    {
+      "id": "E1_Q2_C8",
+      "difficulty": "C",
+      "skill_tags": ["trig_ratios_application"],
+      "problem_text": "From a point on level ground, the angle of elevation to the top of a flagpole is 22 degrees. The point is 30 m from the base of the flagpole. Find the height of the flagpole, correct to 2 decimal places.",
+      "answer": "12.12 m",
+      "solution": "tan(22) = height/30. height = 30 * tan(22) = 30 * 0.40403 = 12.121 m. Rounded to 2 dp: 12.12 m."
+    },
+    {
+      "id": "E1_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": ["trig_ratios_application", "multi_step"],
+      "problem_text": "In a right-angled triangle, cos A = 3/5. Find the value of sin A and tan A without using a calculator.",
+      "answer": "sin A = 4/5, tan A = 4/3",
+      "solution": "If cos A = 3/5 = adjacent/hypotenuse, then adjacent = 3k and hypotenuse = 5k for some k. By Pythagoras, opposite^2 = (5k)^2 - (3k)^2 = 25k^2 - 9k^2 = 16k^2, so opposite = 4k. Therefore sin A = opposite/hypotenuse = 4k/5k = 4/5, and tan A = opposite/adjacent = 4k/3k = 4/3."
+    },
+    {
+      "id": "E1_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": ["trig_ratios_application", "algebraic_reasoning"],
+      "problem_text": "In a right-angled triangle, 5 sin theta = 3. Find the exact values of cos theta and tan theta.",
+      "answer": "cos theta = 4/5, tan theta = 3/4",
+      "solution": "5 sin theta = 3, so sin theta = 3/5 = opposite/hypotenuse. Let opposite = 3k, hypotenuse = 5k. By Pythagoras, adjacent = sqrt((5k)^2 - (3k)^2) = sqrt(16k^2) = 4k. So cos theta = adjacent/hypotenuse = 4k/5k = 4/5, and tan theta = opposite/adjacent = 3k/4k = 3/4."
+    },
+    {
+      "id": "E1_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": ["trig_ratios_application", "multi_step"],
+      "problem_text": "A right-angled triangle has area 54 cm^2. One acute angle is 36.87 degrees. Find the length of the hypotenuse, correct to 2 decimal places.",
+      "answer": "15.00 cm",
+      "solution": "Let the legs be a and b, with the angle opposite side a being 36.87 degrees. Then tan(36.87) = a/b, so a = b * tan(36.87) = b * 0.75 = 0.75b. Area = (1/2) * a * b = (1/2) * 0.75b * b = 0.375b^2 = 54. So b^2 = 54/0.375 = 144, b = 12. a = 0.75 * 12 = 9. Hypotenuse = sqrt(9^2 + 12^2) = sqrt(81 + 144) = sqrt(225) = 15.00 cm."
+    },
+    {
+      "id": "E1_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": ["trig_ratios_application", "algebraic_reasoning"],
+      "problem_text": "If tan theta = 3/4 and theta is an acute angle, find the exact values of sin theta and cos theta.",
+      "answer": "sin theta = 3/5, cos theta = 4/5",
+      "solution": "tan theta = opposite/adjacent = 3/4. Let opposite = 3k and adjacent = 4k. Hypotenuse = sqrt((3k)^2 + (4k)^2) = sqrt(9k^2 + 16k^2) = sqrt(25k^2) = 5k. So sin theta = opposite/hypotenuse = 3k/5k = 3/5, and cos theta = adjacent/hypotenuse = 4k/5k = 4/5."
+    }
+  ]
+}

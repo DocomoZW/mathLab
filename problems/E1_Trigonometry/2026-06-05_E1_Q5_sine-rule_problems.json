@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q5",
+  "title": "Sine Rule - Problems",
+  "problems": [
+    {
+      "id": "E1_Q5_F1",
+      "difficulty": "F",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle ABC, angle A = 30 degrees, angle B = 45 degrees, and side a (opposite A) = 10 cm. Find side b (opposite B) using the sine rule. Give your answer correct to 2 decimal places.",
+      "answer": "14.14 cm",
+      "solution": "By sine rule: a/sin(A) = b/sin(B). So 10/sin(30) = b/sin(45). b = 10 * sin(45) / sin(30) = 10 * 0.70711 / 0.5 = 14.14 cm."
+    },
+    {
+      "id": "E1_Q5_F2",
+      "difficulty": "F",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle PQR, angle P = 60 degrees, angle Q = 70 degrees, and side p (opposite P) = 12 cm. Find side q (opposite Q). Give your answer correct to 2 decimal places.",
+      "answer": "13.02 cm",
+      "solution": "By sine rule: p/sin(P) = q/sin(Q). 12/sin(60) = q/sin(70). q = 12 * sin(70) / sin(60) = 12 * 0.93969 / 0.86603 = 13.02 cm."
+    },
+    {
+      "id": "E1_Q5_F3",
+      "difficulty": "F",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle XYZ, angle X = 40 degrees, angle Y = 80 degrees, and side x (opposite X) = 8 cm. Find side y (opposite Y). Give your answer correct to 2 decimal places.",
+      "answer": "12.26 cm",
+      "solution": "By sine rule: x/sin(X) = y/sin(Y). 8/sin(40) = y/sin(80). y = 8 * sin(80) / sin(40) = 8 * 0.98481 / 0.64279 = 12.26 cm."
+    },
+    {
+      "id": "E1_Q5_F4",
+      "difficulty": "F",
+      "skill_tags": ["sine_rule_for_angles"],
+      "problem_text": "In triangle ABC, angle A = 35 degrees, side a = 7 cm, and side b = 10 cm. Find angle B. Give your answer correct to 1 decimal place.",
+      "answer": "55.0 degrees",
+      "solution": "By sine rule: a/sin(A) = b/sin(B). 7/sin(35) = 10/sin(B). sin(B) = 10 * sin(35) / 7 = 10 * 0.57358 / 7 = 0.8194. B = sin^-1(0.8194) = 55.0 degrees."
+    },
+    {
+      "id": "E1_Q5_C1",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_angles"],
+      "problem_text": "In triangle ABC, side a = 8 cm, side b = 10 cm, and angle A = 30 degrees. Find angle B. Give your answer correct to 1 decimal place.",
+      "answer": "38.7 degrees",
+      "solution": "By sine rule: a/sin(A) = b/sin(B). sin(B) = b * sin(A) / a = 10 * sin(30) / 8 = 10 * 0.5 / 8 = 0.625. B = sin^-1(0.625) = 38.7 degrees."
+    },
+    {
+      "id": "E1_Q5_C2",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_angles"],
+      "problem_text": "In triangle PQR, side p = 15 cm, side q = 20 cm, and angle P = 42 degrees. Find angle Q. Give your answer correct to 1 decimal place.",
+      "answer": "63.1 degrees",
+      "solution": "By sine rule: p/sin(P) = q/sin(Q). sin(Q) = q * sin(P) / p = 20 * sin(42) / 15 = 20 * 0.66913 / 15 = 0.89217. Q = sin^-1(0.89217) = 63.1 degrees."
+    },
+    {
+      "id": "E1_Q5_C3",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle ABC, angle A = 50 degrees, angle B = 60 degrees, and side c = 12 cm. Find side a (opposite A). Give your answer correct to 2 decimal places.",
+      "answer": "9.78 cm",
+      "solution": "Angle C = 180 - 50 - 60 = 70 degrees. By sine rule: a/sin(A) = c/sin(C). a = 12 * sin(50) / sin(70) = 12 * 0.76604 / 0.93969 = 9.78 cm."
+    },
+    {
+      "id": "E1_Q5_C4",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle XYZ, angle X = 65 degrees, angle Z = 45 degrees, and side y = 20 cm. Find side x (opposite X). Give your answer correct to 2 decimal places.",
+      "answer": "19.29 cm",
+      "solution": "Angle Y = 180 - 65 - 45 = 70 degrees. By sine rule: x/sin(X) = y/sin(Y). x = 20 * sin(65) / sin(70) = 20 * 0.90631 / 0.93969 = 19.29 cm."
+    },
+    {
+      "id": "E1_Q5_C5",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_angles"],
+      "problem_text": "In triangle ABC, side a = 9 cm, side b = 12 cm, and angle A = 25 degrees. Find angle B, correct to 1 decimal place.",
+      "answer": "34.3 degrees",
+      "solution": "sin(B) = b * sin(A) / a = 12 * sin(25) / 9 = 12 * 0.42262 / 9 = 0.56349. B = sin^-1(0.56349) = 34.3 degrees."
+    },
+    {
+      "id": "E1_Q5_C6",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle ABC, side a = 14 cm, angle B = 55 degrees, angle C = 65 degrees. Find side b, correct to 2 decimal places.",
+      "answer": "13.24 cm",
+      "solution": "Angle A = 180 - 55 - 65 = 60 degrees. By sine rule: b/sin(B) = a/sin(A). b = 14 * sin(55) / sin(60) = 14 * 0.81915 / 0.86603 = 13.24 cm."
+    },
+    {
+      "id": "E1_Q5_C7",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_sides"],
+      "problem_text": "In triangle PQR, angle Q = 72 degrees, angle R = 48 degrees, and side p = 25 cm. Find side q, correct to 2 decimal places.",
+      "answer": "27.45 cm",
+      "solution": "Angle P = 180 - 72 - 48 = 60 degrees. By sine rule: q/sin(Q) = p/sin(P). q = 25 * sin(72) / sin(60) = 25 * 0.95106 / 0.86603 = 27.45 cm."
+    },
+    {
+      "id": "E1_Q5_C8",
+      "difficulty": "C",
+      "skill_tags": ["sine_rule_for_angles_ambiguous"],
+      "problem_text": "In triangle XYZ, side x = 6 cm, side y = 8 cm, and angle X = 28 degrees. Find angle Y, correct to 1 decimal place.",
+      "answer": "38.8 degrees or 141.2 degrees",
+      "solution": "sin(Y) = y * sin(X) / x = 8 * sin(28) / 6 = 8 * 0.46947 / 6 = 0.62596. Y = sin^-1(0.62596) = 38.8 degrees. The ambiguous case: Y could also be 180 - 38.8 = 141.2 degrees. Check: X + 141.2 = 28 + 141.2 = 169.2 < 180, so both are valid."
+    },
+    {
+      "id": "E1_Q5_H1",
+      "difficulty": "H",
+      "skill_tags": ["sine_rule_ambiguous_case"],
+      "problem_text": "In triangle ABC, side a = 10 cm, side b = 15 cm, and angle A = 30 degrees. Find the possible values of angle B, correct to 1 decimal place.",
+      "answer": "48.6 degrees or 131.4 degrees",
+      "solution": "By sine rule: sin(B) = b * sin(A) / a = 15 * sin(30) / 10 = 15 * 0.5 / 10 = 0.75. B = sin^-1(0.75) = 48.6 degrees. The ambiguous case: B could also be 180 - 48.6 = 131.4 degrees. Check: A + 131.4 = 30 + 131.4 = 161.4 < 180, so both are valid."
+    },
+    {
+      "id": "E1_Q5_H2",
+      "difficulty": "H",
+      "skill_tags": ["sine_rule_application", "word_problem"],
+      "problem_text": "In triangle ABC, angle A = 40 degrees, angle B = 65 degrees, and side a = 30 cm. Find the length of the longest side, correct to 2 decimal places.",
+      "answer": "45.06 cm",
+      "solution": "Angle C = 180 - 40 - 65 = 75 degrees. The largest angle is C (75 degrees), so the longest side is c (opposite C). Using sine rule: c/sin(C) = a/sin(A). c = 30 * sin(75) / sin(40) = 30 * 0.96593 / 0.64279 = 45.06 cm."
+    },
+    {
+      "id": "E1_Q5_H3",
+      "difficulty": "H",
+      "skill_tags": ["sine_rule_application", "word_problem"],
+      "problem_text": "A surveyor needs to find the distance across a lake. She measures a baseline of 200 m along the shore. From one end of the baseline, the angle to a tree across the lake is 72 degrees. From the other end, the angle to the same tree is 48 degrees. Find the distance from the nearer end of the baseline to the tree, correct to 2 decimal places.",
+      "answer": "171.62 m",
+      "solution": "The tree and the two endpoints form a triangle. The angle at the tree = 180 - 72 - 48 = 60 degrees. The nearer end has the larger angle (72 degrees), as the side opposite the larger angle is longer. Distance from the nearer end (72-degree end) is opposite the 48-degree angle. Using sine rule: d / sin(48) = 200 / sin(60). d = 200 * sin(48) / sin(60) = 200 * 0.74314 / 0.86603 = 171.62 m."
+    },
+    {
+      "id": "E1_Q5_H4",
+      "difficulty": "H",
+      "skill_tags": ["sine_rule_ambiguous_case", "multi_step"],
+      "problem_text": "In triangle ABC, angle A = 36 degrees, side a = 8 cm, and side b = 12 cm. How many triangles are possible? Find all possible values of angle B, correct to 1 decimal place.",
+      "answer": "Two triangles are possible. B = 61.8 degrees or B = 118.2 degrees",
+      "solution": "By sine rule: sin(B) = b*sin(A)/a = 12*sin(36)/8 = 12*0.58779/8 = 0.88169. B = sin^-1(0.88169) = 61.8 degrees. Check if B could also be 180 - 61.8 = 118.2 degrees. A + 118.2 = 36 + 118.2 = 154.2 < 180, so both are valid. Two triangles are possible."
+    }
+  ]
+}

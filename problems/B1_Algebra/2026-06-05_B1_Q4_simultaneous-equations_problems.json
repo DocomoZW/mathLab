@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q4",
+  "title": "Simultaneous Equations — Problems",
+  "problems": [
+    {
+      "id": "B1_Q4_F1",
+      "difficulty": "F",
+      "skill_tags": ["elimination_basic"],
+      "problem_text": "Solve: $x + y = 7$ and $x - y = 3$",
+      "answer": "$x = 5$, $y = 2$",
+      "solution": "Add equations: $2x = 10$, $x=5$. Substitute: $5+y=7$, $y=2$"
+    },
+    {
+      "id": "B1_Q4_F2",
+      "difficulty": "F",
+      "skill_tags": ["elimination_basic"],
+      "problem_text": "Solve: $x + y = 10$ and $2x + y = 16$",
+      "answer": "$x = 6$, $y = 4$",
+      "solution": "Subtract eq1 from eq2: $(2x+y)-(x+y)=16-10$, $x=6$. Substitute: $6+y=10$, $y=4$"
+    },
+    {
+      "id": "B1_Q4_F3",
+      "difficulty": "F",
+      "skill_tags": ["substitution_basic"],
+      "problem_text": "Solve: $y = 2x$ and $x + y = 9$",
+      "answer": "$x = 3$, $y = 6$",
+      "solution": "Substitute: $x+2x=9$, $3x=9$, $x=3$. Then $y=2(3)=6$"
+    },
+    {
+      "id": "B1_Q4_F4",
+      "difficulty": "F",
+      "skill_tags": ["elimination_basic"],
+      "problem_text": "Solve: $2x + y = 12$ and $x - y = 3$",
+      "answer": "$x = 5$, $y = 2$",
+      "solution": "Add: $3x=15$, $x=5$. Substitute: $2(5)+y=12$, $10+y=12$, $y=2$"
+    },
+    {
+      "id": "B1_Q4_C1",
+      "difficulty": "C",
+      "skill_tags": ["elimination_scale"],
+      "problem_text": "Solve: $3x + 2y = 14$ and $5x + 2y = 22$",
+      "answer": "$x = 4$, $y = 1$",
+      "solution": "Subtract: $(5x+2y)-(3x+2y)=22-14$, $2x=8$, $x=4$. Substitute: $3(4)+2y=14$, $12+2y=14$, $y=1$"
+    },
+    {
+      "id": "B1_Q4_C2",
+      "difficulty": "C",
+      "skill_tags": ["elimination_matching"],
+      "problem_text": "Solve: $2x + 3y = 12$ and $3x + 2y = 13$",
+      "answer": "$x = 3$, $y = 2$",
+      "solution": "Multiply eq1 by 3: $6x+9y=36$. Eq2 by 2: $6x+4y=26$. Subtract: $5y=10$, $y=2$. Substitute: $2x+6=12$, $2x=6$, $x=3$"
+    },
+    {
+      "id": "B1_Q4_C3",
+      "difficulty": "C",
+      "skill_tags": ["substitution"],
+      "problem_text": "Solve: $y = 3x - 1$ and $2x + 5y = 29$",
+      "answer": "$x = 2$, $y = 5$",
+      "solution": "Substitute: $2x+5(3x-1)=29$, $2x+15x-5=29$, $17x=34$, $x=2$. Then $y=3(2)-1=5$"
+    },
+    {
+      "id": "B1_Q4_C4",
+      "difficulty": "C",
+      "skill_tags": ["elimination_negative"],
+      "problem_text": "Solve: $2x - 3y = 7$ and $5x + 3y = 28$",
+      "answer": "$x = 5$, $y = 1$",
+      "solution": "Add: $7x = 35$, $x=5$. Substitute: $2(5)-3y=7$, $10-3y=7$, $-3y=-3$, $y=1$"
+    },
+    {
+      "id": "B1_Q4_H1",
+      "difficulty": "H",
+      "skill_tags": ["elimination_matching"],
+      "problem_text": "Solve: $3x - 4y = 5$ and $2x + 5y = 11$",
+      "answer": "$x = 3$, $y = 1$",
+      "solution": "Multiply eq1 by 2: $6x-8y=10$. Eq2 by 3: $6x+15y=33$. Subtract: $-23y=-23$, $y=1$. Substitute: $3x-4=5$, $3x=9$, $x=3$"
+    },
+    {
+      "id": "B1_Q4_H2",
+      "difficulty": "H",
+      "skill_tags": ["elimination_fractions"],
+      "problem_text": "Solve: $\\frac{x}{2} + y = 5$ and $x - \\frac{y}{2} = 5$",
+      "answer": "$x = 6$, $y = 2$",
+      "solution": "Multiply eq1 by 2: $x+2y=10$. Eq2 by 2: $2x-y=10$. From eq1': $x=10-2y$. Substitute into eq2': $2(10-2y)-y=10$, $20-4y-y=10$, $20-5y=10$, $5y=10$, $y=2$. Then $x=10-2(2)=6$"
+    },
+    {
+      "id": "B1_Q4_H3",
+      "difficulty": "H",
+      "skill_tags": ["simultaneous_word_problem"],
+      "problem_text": "The sum of two numbers is 28 and their difference is 12. Find the two numbers.",
+      "answer": "20 and 8",
+      "solution": "Let numbers be $x$ and $y$ with $x>y$. $x+y=28$, $x-y=12$. Add: $2x=40$, $x=20$. Then $20+y=28$, $y=8$"
+    },
+    {
+      "id": "B1_Q4_H4",
+      "difficulty": "H",
+      "skill_tags": ["elimination_matching"],
+      "problem_text": "Solve: $4x + 3y = 10$ and $3x - 2y = -1$",
+      "answer": "$x = 1$, $y = 2$",
+      "solution": "Multiply eq1 by 2: $8x+6y=20$. Eq2 by 3: $9x-6y=-3$. Add: $17x=17$, $x=1$. Substitute: $4(1)+3y=10$, $4+3y=10$, $3y=6$, $y=2$"
+    },
+    {
+      "id": "B1_Q4_X1",
+      "difficulty": "X",
+      "skill_tags": ["simultaneous_word_problem"],
+      "problem_text": "3 apples and 4 bananas cost $3.10. 5 apples and 2 bananas cost $3.30. Find the cost of one apple and one banana.",
+      "answer": "Apple = $0.50, Banana = $0.40",
+      "solution": "Let $a$ = cost of apple, $b$ = cost of banana. $3a+4b=3.10$, $5a+2b=3.30$. Multiply eq2 by 2: $10a+4b=6.60$. Subtract eq1: $7a=3.50$, $a=0.50$. Substitute: $3(0.50)+4b=3.10$, $1.50+4b=3.10$, $4b=1.60$, $b=0.40$"
+    },
+    {
+      "id": "B1_Q4_X2",
+      "difficulty": "X",
+      "skill_tags": ["simultaneous_3_variables"],
+      "problem_text": "Solve: $x + y + z = 6$, $x - y + z = 2$, $x + y - z = 0$",
+      "answer": "$x = 1$, $y = 2$, $z = 3$",
+      "solution": "Add eq1 and eq2: $2x+2z=8$, $x+z=4$. Add eq1 and eq3: $2x+2y=6$, $x+y=3$. Subtract eq2 from eq1: $2y=4$, $y=2$. Then $x+2=3$, $x=1$. Then $1+z=4$, $z=3$"
+    },
+    {
+      "id": "B1_Q4_X3",
+      "difficulty": "X",
+      "skill_tags": ["simultaneous_equations", "graphical_interpretation"],
+      "problem_text": "Determine the value of $k$ for which the equations $2x + 3y = 7$ and $4x + 6y = k$ have infinitely many solutions.",
+      "answer": "$k = 14$",
+      "solution": "Infinitely many solutions occur when one equation is a multiple of the other. Eq2 is $2 \\times$ eq1: $2(2x+3y)=2(7)$, so $4x+6y=14$. Therefore $k=14$."
+    },
+    {
+      "id": "B1_Q4_X4",
+      "difficulty": "X",
+      "skill_tags": ["simultaneous_quadratic"],
+      "problem_text": "Solve: $y = x^2$ and $x + y = 6$",
+      "answer": "$x = 2, y = 4$ or $x = -3, y = 9$",
+      "solution": "Substitute: $x+x^2=6$, $x^2+x-6=0$, $(x+3)(x-2)=0$, $x=-3$ or $x=2$. When $x=-3$, $y=9$. When $x=2$, $y=4$"
+    }
+  ]
+}

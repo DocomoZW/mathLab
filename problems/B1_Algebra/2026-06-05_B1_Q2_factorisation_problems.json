@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q2",
+  "title": "Factorisation — Problems",
+  "problems": [
+    {
+      "id": "B1_Q2_F1",
+      "difficulty": "F",
+      "skill_tags": ["common_factors"],
+      "problem_text": "Factorise fully: $6x + 9$",
+      "answer": "$3(2x + 3)$",
+      "solution": "HCF of $6x$ and $9$ is $3$. $6x+9 = 3(2x+3)$"
+    },
+    {
+      "id": "B1_Q2_F2",
+      "difficulty": "F",
+      "skill_tags": ["common_factors"],
+      "problem_text": "Factorise: $12x^2 - 8x$",
+      "answer": "$4x(3x - 2)$",
+      "solution": "HCF of $12x^2$ and $8x$ is $4x$. $12x^2-8x = 4x(3x-2)$"
+    },
+    {
+      "id": "B1_Q2_F3",
+      "difficulty": "F",
+      "skill_tags": ["difference_of_squares"],
+      "problem_text": "Factorise: $x^2 - 16$",
+      "answer": "$(x + 4)(x - 4)$",
+      "solution": "Difference of two squares: $x^2-16 = x^2-4^2 = (x+4)(x-4)$"
+    },
+    {
+      "id": "B1_Q2_F4",
+      "difficulty": "F",
+      "skill_tags": ["quadratic_factorisation"],
+      "problem_text": "Factorise: $x^2 + 5x + 6$",
+      "answer": "$(x + 2)(x + 3)$",
+      "solution": "Numbers with product 6 and sum 5: 2 and 3. So $(x+2)(x+3)$"
+    },
+    {
+      "id": "B1_Q2_C1",
+      "difficulty": "C",
+      "skill_tags": ["common_factors", "difference_of_squares"],
+      "problem_text": "Factorise fully: $3x^2 - 27$",
+      "answer": "$3(x + 3)(x - 3)$",
+      "solution": "First take out HCF: $3(x^2-9)$. Then difference of squares: $3(x+3)(x-3)$"
+    },
+    {
+      "id": "B1_Q2_C2",
+      "difficulty": "C",
+      "skill_tags": ["quadratic_factorisation"],
+      "problem_text": "Factorise: $x^2 - 8x + 15$",
+      "answer": "$(x - 3)(x - 5)$",
+      "solution": "Numbers with product 15 and sum -8: -3 and -5. So $(x-3)(x-5)$"
+    },
+    {
+      "id": "B1_Q2_C3",
+      "difficulty": "C",
+      "skill_tags": ["quadratic_factorisation"],
+      "problem_text": "Factorise: $x^2 - x - 12$",
+      "answer": "$(x - 4)(x + 3)$",
+      "solution": "Numbers with product -12 and sum -1: -4 and +3. So $(x-4)(x+3)$"
+    },
+    {
+      "id": "B1_Q2_C4",
+      "difficulty": "C",
+      "skill_tags": ["difference_of_squares"],
+      "problem_text": "Factorise: $9x^2 - 4y^2$",
+      "answer": "$(3x + 2y)(3x - 2y)$",
+      "solution": "$9x^2-4y^2 = (3x)^2 - (2y)^2 = (3x+2y)(3x-2y)$"
+    },
+    {
+      "id": "B1_Q2_H1",
+      "difficulty": "H",
+      "skill_tags": ["quadratic_factorisation", "ac_method"],
+      "problem_text": "Factorise: $2x^2 + 5x + 2$",
+      "answer": "$(2x + 1)(x + 2)$",
+      "solution": "$ac=2\\times2=4$. Numbers with product 4 and sum 5: 4 and 1. Rewrite: $2x^2+4x+x+2 = 2x(x+2)+1(x+2) = (x+2)(2x+1)$"
+    },
+    {
+      "id": "B1_Q2_H2",
+      "difficulty": "H",
+      "skill_tags": ["quadratic_factorisation", "ac_method"],
+      "problem_text": "Factorise: $3x^2 - 10x - 8$",
+      "answer": "$(3x + 2)(x - 4)$",
+      "solution": "$ac=3\\times(-8)=-24$. Numbers with product -24 and sum -10: -12 and 2. Rewrite: $3x^2-12x+2x-8 = 3x(x-4)+2(x-4) = (x-4)(3x+2)$"
+    },
+    {
+      "id": "B1_Q2_H3",
+      "difficulty": "H",
+      "skill_tags": ["factorising_fully", "common_factors", "quadratics"],
+      "problem_text": "Factorise fully: $6x^2 - 13x + 6$",
+      "answer": "$(2x - 3)(3x - 2)$",
+      "solution": "$ac=6\\times6=36$. Numbers with product 36 and sum -13: -9 and -4. Rewrite: $6x^2-9x-4x+6 = 3x(2x-3)-2(2x-3) = (2x-3)(3x-2)$"
+    },
+    {
+      "id": "B1_Q2_H4",
+      "difficulty": "H",
+      "skill_tags": ["factorising_quadratics", "fractional_coefficients"],
+      "problem_text": "Factorise: $6x^2 + 5x - 6$",
+      "answer": "$(3x - 2)(2x + 3)$",
+      "solution": "$ac=6\\times(-6)=-36$. Numbers with product -36 and sum 5: 9 and -4. Rewrite: $6x^2+9x-4x-6 = 3x(2x+3)-2(2x+3) = (2x+3)(3x-2)$"
+    },
+    {
+      "id": "B1_Q2_X1",
+      "difficulty": "X",
+      "skill_tags": ["factorising", "quadratic_expressions", "nested_quadratics"],
+      "problem_text": "Factorise fully: $(x^2 + 3x)^2 - 14(x^2 + 3x) + 40$",
+      "answer": "$(x + 5)(x - 2)(x - 1)(x + 4)$",
+      "solution": "Let $u = x^2 + 3x$. Then expression = $u^2 - 14u + 40 = (u-4)(u-10)$. Sub back: $(x^2+3x-4)(x^2+3x-10)$. Factor each: $(x+4)(x-1)(x+5)(x-2)$"
+    },
+    {
+      "id": "B1_Q2_X2",
+      "difficulty": "X",
+      "skill_tags": ["algebraic_fractions", "factorising"],
+      "problem_text": "Simplify by factorising: $\\frac{x^2 - 4}{x^2 - 2x - 8}$",
+      "answer": "$\\frac{x - 2}{x - 4}$, $x \\neq -2, 4$",
+      "solution": "Numerator: $x^2-4 = (x+2)(x-2)$. Denominator: $x^2-2x-8 = (x+2)(x-4)$. Cancel $(x+2)$: $\\frac{x-2}{x-4}$, $x \\neq -2, 4$"
+    },
+    {
+      "id": "B1_Q2_X3",
+      "difficulty": "X",
+      "skill_tags": ["factorising", "proof"],
+      "problem_text": "Prove that $n^3 - n$ is always divisible by 6 for any integer $n$.",
+      "answer": "Proof given",
+      "solution": "$n^3 - n = n(n^2-1) = n(n-1)(n+1)$. This is the product of three consecutive integers, so it always contains a multiple of 2 (at least one even number) and a multiple of 3 (one of every three consecutive numbers is divisible by 3). Therefore it is divisible by $2 \\times 3 = 6$."
+    },
+    {
+      "id": "B1_Q2_X4",
+      "difficulty": "X",
+      "skill_tags": ["factorising", "cubic_expressions"],
+      "problem_text": "Factorise: $x^3 - 3x^2 - 4x + 12$",
+      "answer": "$(x - 2)(x + 2)(x - 3)$",
+      "solution": "Group: $(x^3-3x^2) + (-4x+12) = x^2(x-3) - 4(x-3) = (x-3)(x^2-4) = (x-3)(x+2)(x-2)$"
+    }
+  ]
+}

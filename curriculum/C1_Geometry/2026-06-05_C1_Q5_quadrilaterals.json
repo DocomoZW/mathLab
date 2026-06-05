@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q5",
+  "title": "Quadrilaterals: Properties and Classification",
+  "syllabus_ref": "IGCSE 0580 C3.7",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Look around your room right now. Chances are, you see rectangles everywhere — windows, doors, screens, books. But did you know that a square is actually a special kind of rectangle, a rectangle is a special kind of parallelogram, and a parallelogram is a special kind of quadrilateral? These shapes form a family tree, each one inheriting properties from its parent. Understanding this hierarchy is the key to mastering quadrilaterals in your IGCSE exams!",
+    "prerequisites": [
+      "C1_Q1: Angles and basic angle properties",
+      "C1_Q3: Basic polygon concepts",
+      "C1_Q4: Triangle properties and angle sum",
+      "Parallel lines and angle relationships"
+    ],
+    "core_explanation": "A **quadrilateral** is any polygon with 4 sides. The sum of its interior angles is always $360^\\\\circ$ (since $(4-2) \\\\times 180^\\\\circ = 360^\\\\circ$).\n\n### Types of Quadrilaterals and Their Properties\n\n#### 1. Square\n- All four sides equal\n- All four angles $= 90^\\\\circ$\n- Diagonals are equal in length\n- Diagonals bisect each other at $90^\\\\circ$\n- Diagonals bisect the angles\n- 4 lines of symmetry\n- Rotational symmetry of order 4\n\n#### 2. Rectangle\n- Opposite sides are equal and parallel\n- All four angles $= 90^\\\\circ$\n- Diagonals are equal in length\n- Diagonals bisect each other (but NOT at $90^\\\\circ$ unless it's a square)\n- 2 lines of symmetry\n- Rotational symmetry of order 2\n\n#### 3. Rhombus\n- All four sides equal\n- Opposite sides are parallel\n- Opposite angles are equal\n- Diagonals bisect each other at $90^\\\\circ$\n- Diagonals bisect the interior angles\n- 2 lines of symmetry\n- Rotational symmetry of order 2\n\n#### 4. Parallelogram\n- Opposite sides are equal and parallel\n- Opposite angles are equal\n- Adjacent angles sum to $180^\\\\circ$ (co-interior with parallel lines)\n- Diagonals bisect each other\n- Diagonals are NOT necessarily equal\n- No lines of symmetry (in general)\n- Rotational symmetry of order 2\n\n#### 5. Trapezium (US: Trapezoid)\n- One pair of opposite sides is parallel\n- The non-parallel sides are called 'legs'\n- If the legs are equal, it is an **isosceles trapezium** — then base angles are equal and diagonals are equal\n- No lines of symmetry (unless isosceles — then 1 line)\n- Rotational symmetry of order 1 (none)\n\n#### 6. Kite\n- Two pairs of adjacent equal sides\n- One pair of opposite angles are equal (the angles between unequal sides)\n- Diagonals intersect at $90^\\\\circ$\n- One diagonal bisects the other\n- 1 line of symmetry\n- Rotational symmetry of order 1 (none)\n\n### Quadrilateral Hierarchy\n\n$$\\\\text{Quadrilateral} \\\\supset \\\\text{Trapezium} \\\\supset \\\\text{Parallelogram} \\\\supset \\\\begin{cases} \\\\text{Rectangle} \\\\supset \\\\text{Square} \\\\\\\\ \\\\text{Rhombus} \\\\supset \\\\text{Square} \\\\end{cases}$$\n\nA square is a special rectangle, a special rhombus, and a special parallelogram. A rectangle is a special parallelogram. A rhombus is a special parallelogram.\n\n### Diagonals Properties Summary\n\n| Shape | Diagonals Equal? | Diagonals Bisect? | Diagonals Perpendicular? | Diagonals Bisect Angles? |\n|---|---|---|---|---|\n| Square | \\\\checkmark | \\\\checkmark | \\\\checkmark | \\\\checkmark |\n| Rectangle | \\\\checkmark | \\\\checkmark | \\\\times | \\\\times |\n| Rhombus | \\\\times | \\\\checkmark | \\\\checkmark | \\\\checkmark |\n| Parallelogram | \\\\times | \\\\checkmark | \\\\times | \\\\times |\n| Trapezium | \\\\times (usually) | \\\\times | \\\\times | \\\\times |\n| Kite | \\\\times | One bisects the other | \\\\checkmark | \\\\times |",
+    "worked_example": "**Problem:** In parallelogram $ABCD$, $\\\\angle A = 73^\\\\circ$. Find all other angles. Also, if the diagonals intersect at $O$ and $AO = 4$ cm, find $OC$.\n\n**Step 1:** Use properties of a parallelogram.\n- Opposite angles are equal: $\\\\angle C = \\\\angle A = 73^\\\\circ$\n- Adjacent angles are supplementary (co-interior with parallel lines): $\\\\angle A + \\\\angle B = 180^\\\\circ$\n\n**Step 2:** Find $\\\\angle B$.\n$$73^\\\\circ + \\\\angle B = 180^\\\\circ$$\n$$\\\\angle B = 107^\\\\circ$$\n\n**Step 3:** Use opposite angles equal.\n$$\\\\angle D = \\\\angle B = 107^\\\\circ$$\n\n**Step 4:** Check: $73^\\\\circ + 107^\\\\circ + 73^\\\\circ + 107^\\\\circ = 360^\\\\circ$. \\\\checkmark\n\n**Step 5:** Find $OC$.\n- In a parallelogram, diagonals bisect each other.\n- $O$ is the midpoint of both diagonals.\n- $AO = OC = 4$ cm.\n\n**Answer:** $\\\\angle B = 107^\\\\circ$, $\\\\angle C = 73^\\\\circ$, $\\\\angle D = 107^\\\\circ$, $OC = 4$ cm.",
+    "common_mistakes": [
+      {
+        "mistake": "Thinking that all quadrilaterals with parallel sides are parallelograms — a trapezium has parallel sides but is NOT a parallelogram (it has only ONE pair of parallel sides, not two).",
+        "correction": "Parallelogram: BOTH pairs of opposite sides parallel. Trapezium: exactly ONE pair of parallel sides. Check both pairs of sides before classifying."
+      },
+      {
+        "mistake": "Assuming the diagonals of a rectangle are perpendicular (they are equal but not perpendicular, except in a square).",
+        "correction": "Rectangle diagonals are EQUAL in length and BISECT each other but are NOT perpendicular. Perpendicular diagonals are a property of rhombuses and kites."
+      },
+      {
+        "mistake": "Confusing the properties of a rhombus and a parallelogram — thinking a rhombus has unequal adjacent angles (it does not; opposite angles are equal just like a parallelogram).",
+        "correction": "A rhombus IS a special parallelogram. It has ALL parallelogram properties PLUS: all sides equal, diagonals perpendicular, diagonals bisect angles."
+      },
+      {
+        "mistake": "Forgetting that a square inherits ALL properties of rectangles AND rhombuses — it's easy to miss properties like diagonals bisecting angles or being perpendicular.",
+        "correction": "A square is at the bottom of the hierarchy. It has: equal sides (rhombus), right angles (rectangle), equal diagonals (rectangle), perpendicular diagonals (rhombus), and bisected angles (rhombus)."
+      }
+    ],
+    "summary": [
+      "All quadrilaterals have interior angles summing to $360^\\\\circ$.",
+      "A square has all properties of rectangles and rhombuses: equal sides, right angles, equal and perpendicular diagonals that bisect angles.",
+      "A rectangle has equal diagonals; a rhombus has perpendicular diagonals.",
+      "A parallelogram has opposite sides parallel and equal, opposite angles equal, adjacent angles supplementary, and diagonals that bisect each other.",
+      "A trapezium has exactly one pair of parallel sides; an isosceles trapezium has equal base angles and equal diagonals.",
+      "A kite has two pairs of adjacent equal sides, perpendicular diagonals, and one axis of symmetry."
+    ]
+  }
+}

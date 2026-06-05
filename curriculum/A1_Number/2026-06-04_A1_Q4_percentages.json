@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q4",
+  "title": "Percentages",
+  "syllabus_ref": "IGCSE 0580 C1.4",
+  "version": 1,
+  "created_at": "2026-06-04T23:00:00Z",
+  "sections": {
+    "hook": "If you put $\\$1000$ in a savings account earning $5\\%$ compound interest per year, after 40 years you'd have over $\\$7000$ — without lifting a finger! But during a sale, that '$50\\%$ off' tag is often followed by an extra '$10\\%$ off' — is that $60\\%$ off total? (Spoiler: it's not.) Understanding percentages is the single most useful maths skill for everyday life.",
+    "prerequisites": [
+      "Fractions and decimal operations",
+      "Basic multiplication and division",
+      "Converting between fractions, decimals, and percentages"
+    ],
+    "core_explanation": "A **percentage** means 'out of 100'. $45\\% = \\frac{45}{100} = 0.45$.\n\n### Percentage of a Quantity\nTo find $p\\%$ of a quantity, multiply by $\\frac{p}{100}$:\n$$15\\% \\text{ of } \\$80 = \\frac{15}{100} \\times 80 = 0.15 \\times 80 = \\$12$$\n\n### Percentage Change\n**Percentage increase or decrease** is calculated as:\n$$\\text{Percentage change} = \\frac{\\text{New value} - \\text{Original value}}{\\text{Original value}} \\times 100\\%$$\n\nIf a phone costing $\\$200$ is reduced to $\\$170$:\n$$\\frac{170 - 200}{200} \\times 100\\% = \\frac{-30}{200} \\times 100\\% = -15\\%$$\nSo it's a $15\\%$ decrease.\n\n### Reverse Percentages\nSometimes you know the final value after a percentage change and need to find the original. This is where **multipliers** help:\n\nA $15\\%$ increase means multiply by $1 + \\frac{15}{100} = 1.15$\nA $15\\%$ decrease means multiply by $1 - \\frac{15}{100} = 0.85$\n\nIf a laptop costs $\\$690$ after a $15\\%$ discount, the original price $x$ satisfies:\n$$0.85x = 690$$\n$$x = \\frac{690}{0.85} = 811.76$$\nSo the original price was $\\$811.76$.\n\n### Compound Interest\nCompound interest means earning interest on previously earned interest. The formula is:\n$$A = P\\left(1 + \\frac{r}{n}\\right)^{nt}$$\n\nWhere:\n- $A$ = final amount\n- $P$ = principal (initial amount)\n- $r$ = annual interest rate (as a decimal)\n- $n$ = number of times interest is compounded per year\n- $t$ = time in years\n\nFor IGCSE, a simplified version is often used:\n$$A = P\\left(1 + \\frac{r}{100}\\right)^t$$\nwhere $r$ is the annual percentage rate and compounding is yearly.\n\n**Example:** $\\$2000$ invested at $4\\%$ per year for 3 years:\n$$A = 2000\\left(1 + \\frac{4}{100}\\right)^3 = 2000 \\times (1.04)^3 = 2000 \\times 1.124864 = \\$2249.73$$",
+    "worked_example": "**Problem:** A house was bought for $\\$250000$. After 2 years, it was worth $\\$280900$. The owner claims the house appreciated at $6\\%$ per year. Is this correct?\n\n**Solution:**\n\nStep 1: Calculate what the value would be after 2 years at $6\\%$ per year.\n$$A = 250000 \\times (1.06)^2$$\n\nStep 2: Simplify.\n$$(1.06)^2 = 1.1236$$\n$$250000 \\times 1.1236 = 280900$$\n\nStep 3: Compare with given value.\nThe calculated value $\\$280900$ matches the given value.\n\n**Answer:** Yes, the owner is correct. The house appreciated at exactly $6\\%$ per year.\n\n**Alternative check:** Find the actual annual growth rate.\n$$\\frac{280900}{250000} = 1.1236$$\n$$\\sqrt{1.1236} = 1.06$$\n$$1.06 - 1 = 0.06 = 6\\%$$",
+    "common_mistakes": [
+      {
+        "mistake": "Adding percentage changes: thinking two $10\\%$ increases equal a $20\\%$ increase",
+        "correction": "A $10\\%$ increase followed by another $10\\%$ increase is $1.1 \\times 1.1 = 1.21$, which is a $21\\%$ increase, not $20\\%$. Percentage changes multiply, not add."
+      },
+      {
+        "mistake": "In reverse percentage problems, subtracting the percentage from the final value instead of dividing by the multiplier",
+        "correction": "If you know the price after a $20\\%$ increase is $\\$60$, don't do $60 - 12 = 48$. Instead: original $= \\frac{60}{1.20} = 50$."
+      },
+      {
+        "mistake": "Using simple interest formula when compound interest is called for, or vice versa",
+        "correction": "Simple interest: same amount each year ($I = Prt$). Compound interest: interest on interest ($A = P(1+r)^t$). Read the question carefully!"
+      }
+    ],
+    "summary": [
+      "A percentage is a fraction out of 100",
+      "Percentage change = $\\frac{\\text{change}}{\\text{original}} \\times 100\\%$",
+      "Use multipliers: $1 + \\frac{r}{100}$ for increase, $1 - \\frac{r}{100}$ for decrease",
+      "Reverse percentages: divide by the multiplier to find the original",
+      "Compound interest: $A = P(1 + \\frac{r}{100})^t$",
+      "Percentage changes multiply, not add"
+    ]
+  }
+}

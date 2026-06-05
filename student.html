@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>MathsLMS — Student Learning Platform</title>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#7c3aed">
+<meta name="description" content="IGCSE Mathematics learning platform with interactive concepts, problems, and animations">
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/sw.js')})}</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+/* ── Reset & Base ─────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0b0e1a;
+  --bg2:#111527;
+  --bg3:#1a1f35;
+  --bg4:#23284a;
+  --border:rgba(255,255,255,0.08);
+  --text:#e8edf5;
+  --text2:#94a3b8;
+  --text3:#64748b;
+  --accent:#7c3aed;
+  --accent2:#a78bfa;
+  --accent3:#6d28d9;
+  --cyan:#22d3ee;
+  --mint:#34d399;
+  --red:#f87171;
+  --orange:#fb923c;
+  --yellow:#fbbf24;
+  --pink:#f472b6;
+  --radius:12px;
+  --radius-sm:8px;
+  --font:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Inter',sans-serif;
+  --font-mono:'SF Mono','Fira Code','JetBrains Mono',monospace;
+  --nav-h:56px;
+  --sidebar-w:280px;
+}
+html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--text);overflow-x:hidden;scroll-behavior:smooth}
+a{color:var(--accent2);text-decoration:none}
+a:hover{color:var(--accent)}
+button{cursor:pointer;font-family:var(--font);border:none;outline:none}
+input{font-family:var(--font);outline:none}
+
+/* ── Navbar ───────────────────────────────── */
+.navbar{
+  position:fixed;top:0;left:0;right:0;height:var(--nav-h);
+  background:rgba(11,14,26,0.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);z-index:100;
+  display:flex;align-items:center;padding:0 16px;gap:12px;
+}
+.navbar .brand{
+  font-size:18px;font-weight:700;color:var(--accent2);
+  display:flex;align-items:center;gap:8px;white-space:nowrap;
+}
+.navbar .brand svg{width:24px;height:24px}
+.navbar .brand span{color:var(--text)}
+.navbar .nav-spacer{flex:1}
+.navbar select,.navbar input{
+  background:var(--bg3);color:var(--text);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:6px 12px;font-size:13px;
+}
+.navbar select{min-width:120px;cursor:pointer}
+.navbar input{width:200px;padding-left:32px}
+.navbar .search-wrap{position:relative}
+.navbar .search-wrap svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--text3)}
+.navbar .topics-link{font-size:13px;color:var(--text2);padding:6px 12px;border-radius:var(--radius-sm);background:var(--bg3);border:1px solid var(--border)}
+.navbar .topics-link:hover{background:var(--bg4);color:var(--text)}
+
+/* ── Layout ────────────────────────────────── */
+.app{display:flex;padding-top:var(--nav-h);min-height:100vh}
+.sidebar{
+  position:fixed;top:var(--nav-h);left:0;bottom:0;width:var(--sidebar-w);
+  background:var(--bg2);border-right:1px solid var(--border);
+  overflow-y:auto;padding:16px;z-index:50;
+  transform:translateX(0);transition:transform .25s;
+}
+.sidebar.closed{transform:translateX(-100%)}
+.main{
+  flex:1;margin-left:var(--sidebar-w);padding:24px;max-width:960px;min-height:calc(100vh - var(--nav-h));
+  transition:margin-left .25s;
+}
+.main.full{margin-left:0}
+
+/* ── Sidebar content ──────────────────────── */
+.sidebar h3{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--text3);margin:0 0 8px 4px}
+.sidebar .topic-list{list-style:none}
+.sidebar .topic-item{
+  padding:8px 12px;border-radius:var(--radius-sm);cursor:pointer;font-size:13px;
+  color:var(--text2);display:flex;align-items:center;gap:8px;transition:all .15s;
+  border-left:3px solid transparent;margin-bottom:2px;
+}
+.sidebar .topic-item:hover{background:var(--bg3);color:var(--text)}
+.sidebar .topic-item.active{background:var(--bg4);color:var(--accent2);border-left-color:var(--accent)}
+.sidebar .topic-item .done-mark{width:16px;height:16px;border-radius:50%;border:2px solid var(--text3);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--mint)}
+.sidebar .topic-item .done-mark.done{border-color:var(--mint);background:rgba(52,211,153,0.15)}
+
+/* ── Unit Cards (Landing) ──────────────────── */
+.landing{padding:20px 0}
+.landing h1{font-size:28px;margin-bottom:4px}
+.landing .subtitle{color:var(--text2);font-size:14px;margin-bottom:24px}
+.unit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.unit-card{
+  background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);
+  padding:20px;cursor:pointer;transition:all .2s;position:relative;overflow:hidden;
+}
+.unit-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 24px rgba(124,58,237,0.15)}
+.unit-card .unit-code{font-size:14px;font-weight:700;color:var(--accent2);margin-bottom:4px}
+.unit-card .unit-title{font-size:18px;font-weight:600;margin-bottom:8px}
+.unit-card .unit-meta{display:flex;gap:16px;font-size:12px;color:var(--text3)}
+.unit-card .unit-meta span{display:flex;align-items:center;gap:4px}
+.unit-card .accent-bar{position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);opacity:0.6}
+
+/* ── Content Area ─────────────────────────── */
+.content-header{
+  display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px;
+}
+.content-header h2{font-size:22px}
+.content-header .tabs{display:flex;gap:4px;background:var(--bg3);border-radius:var(--radius-sm);padding:3px}
+.content-header .tabs button{
+  padding:6px 16px;border-radius:6px;font-size:13px;font-weight:500;
+  background:transparent;color:var(--text2);transition:all .15s;
+}
+.content-header .tabs button.active{background:var(--accent);color:#fff}
+.content-header .tabs button:hover:not(.active){color:var(--text)}
+.content-header .breadcrumb{font-size:12px;color:var(--text3)}
+.content-header .breadcrumb span{cursor:pointer;color:var(--accent2)}
+.content-header .breadcrumb span:hover{text-decoration:underline}
+
+/* ── Concept Section ──────────────────────── */
+.concept{padding-top:8px}
+.concept .section{margin-bottom:24px}
+.concept .section h3{
+  font-size:16px;font-weight:600;margin-bottom:12px;
+  display:flex;align-items:center;gap:8px;
+}
+.concept .section h3 .badge{
+  font-size:10px;padding:2px 8px;border-radius:99px;background:var(--accent3);color:#fff;font-weight:500;
+}
+.concept .section.hook p{font-size:15px;line-height:1.7;color:var(--text2);font-style:italic;padding:16px;background:var(--bg2);border-radius:var(--radius);border-left:3px solid var(--accent2)}
+.concept .prereq-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.concept .prereq-list li{
+  padding:10px 14px;background:var(--bg2);border-radius:var(--radius-sm);
+  font-size:13px;color:var(--text2);display:flex;align-items:center;gap:8px;
+}
+.concept .prereq-list li::before{content:'✓';color:var(--mint);font-weight:700}
+.concept .core{line-height:1.8;font-size:14px;color:var(--text);padding:16px;background:var(--bg2);border-radius:var(--radius);border:1px solid var(--border)}
+.concept .core p{margin-bottom:12px}
+.concept .worked-example{
+  background:var(--bg2);border-radius:var(--radius);padding:16px;border:1px solid var(--border);
+  line-height:1.8;font-size:14px;
+}
+.concept .worked-example .step{display:flex;gap:8px;margin-bottom:8px;align-items:flex-start}
+.concept .worked-example .step-num{color:var(--accent2);font-weight:700;min-width:24px;font-size:12px}
+.mistake-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.mistake-card{
+  background:var(--bg2);border-radius:var(--radius);padding:14px;border:1px solid var(--border);
+}
+.mistake-card .mistake-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--red);margin-bottom:4px}
+.mistake-card .mistake-text{font-size:13px;color:var(--text);margin-bottom:8px;padding:6px 10px;background:rgba(248,113,113,0.08);border-radius:6px}
+.mistake-card .correction-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--mint);margin-bottom:4px}
+.mistake-card .correction-text{font-size:13px;color:var(--text2);padding:6px 10px;background:rgba(52,211,153,0.08);border-radius:6px}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:6px}
+.summary-list li{
+  padding:10px 14px;background:var(--bg2);border-radius:var(--radius-sm);
+  font-size:13px;color:var(--text2);display:flex;align-items:flex-start;gap:8px;
+}
+.summary-list li::before{content:'✦';color:var(--yellow);flex-shrink:0}
+
+/* ── GIF Embed ─────────────────────────────── */
+.gif-player{
+  margin:16px 0;background:var(--bg2);border-radius:var(--radius);border:1px solid var(--border);overflow:hidden;
+}
+.gif-player .gif-container{position:relative;display:flex;align-items:center;justify-content:center;background:#000;min-height:100px}
+.gif-player .gif-container img{max-width:100%;max-height:400px;display:block}
+.gif-player .gif-controls{
+  display:flex;align-items:center;justify-content:space-between;padding:8px 12px;
+  background:var(--bg3);font-size:12px;color:var(--text3);
+}
+.gif-player .gif-controls button{
+  background:var(--bg4);color:var(--text);border-radius:6px;padding:4px 12px;font-size:11px;
+  transition:all .15s;
+}
+.gif-player .gif-controls button:hover{background:var(--accent3);color:#fff}
+.gif-player .gif-caption{font-size:11px;color:var(--text3);padding:6px 12px;border-top:1px solid var(--border);background:var(--bg2)}
+
+/* ── Problems ──────────────────────────────── */
+.problems{padding-top:8px}
+.problem-card{
+  background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);
+  margin-bottom:12px;overflow:hidden;transition:all .2s;
+}
+.problem-card:hover{border-color:rgba(255,255,255,0.12)}
+.problem-card .problem-header{
+  display:flex;align-items:center;gap:10px;padding:14px 16px;cursor:pointer;user-select:none;
+  transition:background .15s;
+}
+.problem-card .problem-header:hover{background:var(--bg3)}
+.problem-card .problem-header .diff-badge{
+  font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;flex-shrink:0;
+}
+.diff-F{background:rgba(52,211,153,0.15);color:var(--mint)}
+.diff-C{background:rgba(34,211,238,0.15);color:var(--cyan)}
+.diff-H{background:rgba(251,191,36,0.15);color:var(--yellow)}
+.diff-X{background:rgba(248,113,113,0.15);color:var(--red)}
+.problem-card .problem-header .problem-text{flex:1;font-size:14px;line-height:1.5}
+.problem-card .problem-header .mark{font-size:11px;color:var(--text3);white-space:nowrap}
+.problem-card .problem-header .expand-icon{color:var(--text3);transition:transform .25s;font-size:14px}
+.problem-card.open .problem-header .expand-icon{transform:rotate(180deg)}
+.problem-card .problem-body{
+  max-height:0;overflow:hidden;transition:max-height .35s ease,opacity .25s;opacity:0;
+}
+.problem-card.open .problem-body{max-height:2000px;opacity:1}
+.problem-body-inner{padding:0 16px 16px;border-top:1px solid var(--border)}
+.solution-block{
+  padding:12px 14px;background:var(--bg3);border-radius:var(--radius-sm);margin:12px 0;
+  font-size:13px;line-height:1.7;color:var(--text);border-left:3px solid var(--accent2);
+}
+.hint-block{
+  margin:8px 0;font-size:13px;
+}
+.hint-block .hint-toggle{
+  background:var(--bg4);color:var(--text2);padding:6px 14px;border-radius:6px;font-size:12px;
+  transition:all .15s;
+}
+.hint-block .hint-toggle:hover{background:var(--accent3);color:#fff}
+.hint-block .hint-content{display:none;padding:10px 14px;margin-top:6px;background:var(--bg3);border-radius:6px;color:var(--text2);border-left:3px solid var(--yellow)}
+
+/* ── Mobile Toggle ─────────────────────────── */
+.sidebar-toggle{
+  display:none;position:fixed;bottom:24px;right:24px;z-index:200;
+  width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:20px;box-shadow:0 4px 16px rgba(124,58,237,0.4);transition:all .2s;
+}
+.sidebar-toggle:hover{transform:scale(1.1)}
+
+/* ── Responsive ────────────────────────────── */
+@media(max-width:768px){
+  .sidebar{transform:translateX(-100%)}
+  .sidebar.open{transform:translateX(0)}
+  .main{margin-left:0}
+  .sidebar-toggle{display:flex;align-items:center;justify-content:center}
+  .navbar input{width:120px}
+  .unit-grid{grid-template-columns:1fr}
+  .mistake-grid{grid-template-columns:1fr}
+}
+@media(max-width:480px){
+  .navbar{padding:0 8px;gap:6px}
+  .navbar .brand{font-size:15px}
+  .navbar select{min-width:80px;font-size:11px}
+  .navbar input{width:80px;font-size:11px;padding-left:24px}
+  .main{padding:16px 12px}
+}
+
+/* ── Scrollbar ─────────────────────────────── */
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-track{background:transparent}
+.sidebar::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:99px}
+
+/* ── Loading ───────────────────────────────── */
+.loading{display:flex;align-items:center;justify-content:center;padding:80px 20px;color:var(--text3);gap:8px}
+.loading .spinner{width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--accent2);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ── Backdrop ──────────────────────────────── */
+.backdrop{display:none;position:fixed;inset:0;z-index:49;background:rgba(0,0,0,0.4)}
+@media(max-width:768px){.backdrop.show{display:block}}
+
+/* ── State badge ───────────────────────────── */
+.state-badge{font-size:10px;padding:2px 6px;border-radius:4px;background:var(--bg3);color:var(--text3);margin-left:auto}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    Maths<span>LMS</span>
+  </div>
+  <select id="unitSelector" onchange="onUnitChange()">
+    <option value="">-- Select Unit --</option>
+  </select>
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="Search topics..." oninput="onSearch()">
+  </div>
+  <button class="topics-link" onclick="showLanding()">Home</button>
+</div>
+
+<div class="backdrop" id="backdrop" onclick="toggleSidebar()"></div>
+<button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()">☰</button>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <h3>Topics</h3>
+    <ul class="topic-list" id="topicList"></ul>
+  </aside>
+
+  <main class="main" id="mainContent">
+    <div id="pageContent"></div>
+  </main>
+</div>
+
+<script>
+// ── Data Store ───────────────────────────────────────────────────
+const API = {
+  directory: '/api/directory-listing',
+  contentFile: (path) => `/api/content-file?path=${encodeURIComponent(path)}`,
+  gif: (name) => `/gifs/${encodeURIComponent(name)}`,
+};
+
+let units = [];
+let currentUnit = null;
+let currentTopic = null;
+let currentTab = 'concept';
+let searchQuery = '';
+
+// Track studied topics in localStorage
+function getProgress(){try{return JSON.parse(localStorage.getItem('mathslms_progress')||'{}')}catch(e){return{}}}
+function saveProgress(p){localStorage.setItem('mathslms_progress',JSON.stringify(p))}
+function isDone(topicId){const p=getProgress();return !!p[topicId]}
+function toggleDone(topicId){const p=getProgress();p[topicId]=!p[topicId];saveProgress(p);renderSidebar()}
+
+// ── Fetch Utilities ──────────────────────────────────────────────
+async function fetchJSON(url){
+  const r=await fetch(url);
+  if(!r.ok)throw new Error(`HTTP ${r.status}: ${r.statusText}`);
+  return r.json();
+}
+
+// ── Init ─────────────────────────────────────────────────────────
+async function init(){
+  try{
+    const data=await fetchJSON(API.directory);
+    units=parseUnits(data.tree||[]);
+    renderUnitSelector();
+    showLanding();
+  }catch(e){
+    document.getElementById('pageContent').innerHTML=`
+      <div class="loading"><div class="spinner"></div> Loading...</div>
+    `;
+  }
+}
+
+function parseUnits(tree){
+  const result=[];
+  function walk(items,path=''){
+    for(const item of items){
+      if(item.type==='directory'){
+        const dirPath=path?`${path}/${item.name}`:item.name;
+        // Check if this is a curriculum directory
+        if(dirPath.startsWith('curriculum/')&&item.children){
+          // Expect structure: curriculum/igcse_o/UnitName/...
+          const parts=dirPath.split('/');
+          if(parts.length===3&&parts[0]==='curriculum'){
+            const track=parts[1];
+            const unitCode=parts[2];
+            const topics=(item.children||[]).filter(c=>c.type==='file'&&c.name.endsWith('.json'));
+            if(topics.length>0){
+              result.push({
+                track,
+                code: unitCode,
+                name: unitCode.replace(/_/g,' '),
+                topics: topics.map(t=>({
+                  name: t.name,
+                  path: `${dirPath}/${t.name}`,
+                  title: t.name.replace(/\.json$/,'').replace(/^\d{4}-\d{2}-\d{2}_/,'').replace(/_/g,' '),
+                })),
+                topicCount: topics.length,
+              });
+            }
+          }
+        }
+        walk(item.children||[],dirPath);
+      }
+    }
+  }
+  walk(tree);
+
+  // Also fetch gifs count from directory listing
+  // Count GIFs in content/gifs/igcse_o/
+  for(const item of tree){
+    if(item.type==='directory'&&item.name==='gifs'&&item.children){
+      for(const gifDir of item.children||[]){
+        if(gifDir.type==='directory'&&gifDir.children){
+          const gifFiles=(gifDir.children||[]).filter(c=>c.name.endsWith('.gif'));
+          for(const unit of result){
+            const prefix=unit.code;
+            unit.gifCount=(gifFiles||[]).filter(g=>g.name.includes(prefix)).length;
+          }
+        }
+      }
+    }
+  }
+
+  return result;
+}
+
+// ── Unit Selector ─────────────────────────────────────────────────
+function renderUnitSelector(){
+  const sel=document.getElementById('unitSelector');
+  sel.innerHTML='<option value="">-- Select Unit --</option>';
+  for(const u of units){
+    const opt=document.createElement('option');
+    opt.value=u.code;
+    opt.textContent=`${u.code} — ${u.name}`;
+    sel.appendChild(opt);
+  }
+}
+
+function onUnitChange(){
+  const sel=document.getElementById('unitSelector');
+  const code=sel.value;
+  if(!code){showLanding();return}
+  const unit=units.find(u=>u.code===code);
+  if(unit)showUnit(unit);
+}
+
+// ── Landing Page ─────────────────────────────────────────────────
+function showLanding(){
+  currentUnit=null;currentTopic=null;
+  document.getElementById('unitSelector').value='';
+  renderLanding();
+  renderSidebar();
+  document.querySelector('.main').classList.remove('full');
+}
+
+function renderLanding(){
+  const el=document.getElementById('pageContent');
+  let html=`
+    <div class="landing">
+      <h1>📐 MathsLMS</h1>
+      <p class="subtitle">IGCSE Mathematics — interactive concepts, animated explanations, and practice problems</p>
+      <div class="unit-grid">
+  `;
+  for(const u of units){
+    const gifCount=u.gifCount||'–';
+    html+=`
+      <div class="unit-card" onclick="showUnit(units.find(x=>x.code==='${u.code}'))">
+        <div class="accent-bar"></div>
+        <div class="unit-code">${u.code}</div>
+        <div class="unit-title">${escapeHtml(u.name)}</div>
+        <div class="unit-meta">
+          <span>📄 ${u.topics.length} topics</span>
+          <span>🎬 ${gifCount} GIFs</span>
+        </div>
+      </div>
+    `;
+  }
+  html+=`</div></div>`;
+  el.innerHTML=html;
+  if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise();
+}
+
+// ── Unit View ────────────────────────────────────────────────────
+function showUnit(unit){
+  if(!unit)return;
+  currentUnit=unit;
+  document.getElementById('unitSelector').value=unit.code;
+  // Show first topic
+  if(unit.topics.length>0){
+    loadTopic(unit,unit.topics[0]);
+  }
+  renderSidebar();
+  document.querySelector('.main').classList.remove('full');
+}
+
+// ── Load Topic ───────────────────────────────────────────────────
+async function loadTopic(unit,topic){
+  currentUnit=unit;
+  currentTopic=topic;
+  document.getElementById('unitSelector').value=unit.code;
+
+  const el=document.getElementById('pageContent');
+  el.innerHTML=`<div class="loading"><div class="spinner"></div><span>Loading ${escapeHtml(topic.title)}...</span></div>`;
+
+  renderSidebar();
+
+  try{
+    const concept=await fetchJSON(API.contentFile(topic.path));
+
+    // Also load problems
+    const topicBase=topic.path.replace(/\.json$/,'');
+    const problemPath=topicBase.replace('curriculum/','problems/')+'_problems.json';
+    let problems=null;
+    try{
+      problems=await fetchJSON(API.contentFile(problemPath));
+    }catch(e){/* no problems file */}
+
+    renderTopic(concept,problems);
+  }catch(e){
+    el.innerHTML=`
+      <div class="landing">
+        <p style="color:var(--red)">⚠ Error loading topic: ${escapeHtml(e.message)}</p>
+        <p style="color:var(--text2);margin-top:12px">Try selecting a different topic or check your connection.</p>
+      </div>
+    `;
+  }
+}
+
+// ── Render Topic ──────────────────────────────────────────────────
+function renderTopic(concept,problems){
+  const el=document.getElementById('pageContent');
+  currentTab='concept';
+
+  const s=concept.sections||{};
+  const topicId=concept.topic_id||'';
+  const done=isDone(topicId);
+
+  // Build section HTML
+  let sectionsHtml='';
+
+  // Hook
+  if(s.hook){
+    sectionsHtml+=`
+      <div class="section hook">
+        <h3>🎯 Hook</h3>
+        <p>${renderMath(s.hook)}</p>
+      </div>
+    `;
+  }
+
+  // Prerequisites
+  if(s.prerequisites&&s.prerequisites.length>0){
+    sectionsHtml+=`
+      <div class="section">
+        <h3>📋 Prerequisites</h3>
+        <ul class="prereq-list">
+          ${s.prerequisites.map(p=>`<li>${escapeHtml(p)}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }
+
+  // GIF
+  const gifName=getGifForTopic(topicId);
+  if(gifName){
+    sectionsHtml+=`
+      <div class="section">
+        <div class="gif-player">
+          <div class="gif-container">
+            <img src="${API.gif(gifName)}" alt="${escapeHtml(gifName)}" id="gifImg">
+          </div>
+          <div class="gif-controls">
+            <span>🎬 Animation</span>
+            <button onclick="replayGif()">↻ Replay</button>
+          </div>
+          <div class="gif-caption">${escapeHtml(gifName)}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  // Core Explanation
+  if(s.core_explanation){
+    sectionsHtml+=`
+      <div class="section">
+        <h3>📖 Core Explanation <span class="badge">Main</span></h3>
+        <div class="core">${renderMath(s.core_explanation)}</div>
+      </div>
+    `;
+  }
+
+  // Worked Example
+  if(s.worked_example){
+    const steps=parseSteps(s.worked_example);
+    sectionsHtml+=`
+      <div class="section">
+        <h3>✏️ Worked Example</h3>
+        <div class="worked-example">${renderMath(s.worked_example)}</div>
+      </div>
+    `;
+  }
+
+  // Common Mistakes
+  if(s.common_mistakes&&s.common_mistakes.length>0){
+    sectionsHtml+=`
+      <div class="section">
+        <h3>⚠️ Common Mistakes</h3>
+        <div class="mistake-grid">
+          ${s.common_mistakes.map(m=>`
+            <div class="mistake-card">
+              <div class="mistake-label">❌ Mistake</div>
+              <div class="mistake-text">${renderMath(m.mistake)}</div>
+              <div class="correction-label">✅ Correction</div>
+              <div class="correction-text">${renderMath(m.correction)}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // Summary
+  if(s.summary&&s.summary.length>0){
+    sectionsHtml+=`
+      <div class="section">
+        <h3>📌 Summary</h3>
+        <ul class="summary-list">
+          ${s.summary.map(p=>`<li>${escapeHtml(p)}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }
+
+  // Problem cards
+  let problemsHtml='';
+  if(problems&&problems.problems&&problems.problems.length>0){
+    const diffLabels={F:'Foundation',C:'Core',H:'Higher',X:'Extension'};
+    problemsHtml=problems.problems.map((p,i)=>{
+      const diff=p.difficulty||'F';
+      const hasHint=p.hint||p.hints;
+      const hintText=p.hint||(p.hints?p.hints[0]:'');
+      return `
+        <div class="problem-card" id="prob-${i}">
+          <div class="problem-header" onclick="toggleProblem(${i})">
+            <span class="diff-badge diff-${diff}">${diff}</span>
+            <span class="problem-text">${renderMath(p.problem_text||p.question||'')}</span>
+            <span class="mark">${p.mark||p.marks||''} ${p.mark||p.marks?'mark'+(parseInt(p.mark||p.marks||0)!==1?'s':''):''}</span>
+            <span class="expand-icon">▼</span>
+          </div>
+          <div class="problem-body">
+            <div class="problem-body-inner">
+              <div class="solution-block">
+                <strong>Solution:</strong><br>
+                ${renderMath(p.solution||p.answer||'')}
+              </div>
+              ${hasHint?`
+                <div class="hint-block">
+                  <button class="hint-toggle" onclick="toggleHint(this)">💡 Show Hint</button>
+                  <div class="hint-content">${renderMath(hintText||'')}</div>
+                </div>
+              `:''}
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }else{
+    problemsHtml=`<p style="color:var(--text3);padding:20px">No practice problems available for this topic yet.</p>`;
+  }
+
+  // Topic title & syllabus ref
+  const syllabusRef=concept.syllabus_ref?`<span style="color:var(--text3);font-size:12px">${escapeHtml(concept.syllabus_ref)}</span>`:'';
+  const title=concept.title||concept.topic||'';
+
+  el.innerHTML=`
+    <div class="content-header">
+      <div>
+        <h2>${escapeHtml(title)}</h2>
+        <div class="breadcrumb">
+          <span onclick="showLanding()">Home</span>
+          ${currentUnit?` / <span onclick="showUnit(units.find(u=>u.code==='${currentUnit.code}'))">${escapeHtml(currentUnit.code)}</span>`:''}
+          / ${escapeHtml(title)} ${syllabusRef}
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <button onclick="toggleDone('${topicId}')" style="background:${done?'var(--mint)':'var(--bg3)'};color:${done?'#000':'var(--text2)'};padding:6px 14px;border-radius:6px;font-size:12px;transition:all .15s">
+          ${done?'✓ Studied':'○ Mark Studied'}
+        </button>
+      </div>
+    </div>
+
+    <div class="content-header">
+      <div class="tabs">
+        <button class="${currentTab==='concept'?'active':''}" onclick="switchTab('concept')">📖 Concept</button>
+        <button class="${currentTab==='problems'?'active':''}" onclick="switchTab('problems')">✏️ Problems (${problems&&problems.problems?problems.problems.length:0})</button>
+      </div>
+    </div>
+
+    <div id="conceptTab" class="concept" style="display:${currentTab==='concept'?'block':'none'}">
+      ${sectionsHtml}
+    </div>
+    <div id="problemsTab" class="problems" style="display:${currentTab==='problems'?'block':'none'}">
+      ${problemsHtml}
+    </div>
+  `;
+
+  // Trigger MathJax
+  if(window.MathJax&&MathJax.typesetPromise){
+    MathJax.typesetPromise([el]).catch(()=>{});
+  }
+}
+
+// ── Tab Switching ─────────────────────────────────────────────────
+function switchTab(tab){
+  currentTab=tab;
+  document.getElementById('conceptTab').style.display=tab==='concept'?'block':'none';
+  document.getElementById('problemsTab').style.display=tab==='problems'?'block':'none';
+  // Update active tab button
+  const parent=document.querySelector('.content-header .tabs');
+  if(parent){
+    const btns=parent.querySelectorAll('button');
+    btns.forEach(b=>b.classList.toggle('active',b.textContent.includes(tab==='concept'?'Concept':'Problem')));
+  }
+  if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise();
+}
+
+// ── Problem Toggle ────────────────────────────────────────────────
+function toggleProblem(i){
+  const card=document.getElementById(`prob-${i}`);
+  if(card)card.classList.toggle('open');
+}
+
+function toggleHint(btn){
+  const content=btn.nextElementSibling;
+  if(content){
+    const isVisible=content.style.display==='block';
+    content.style.display=isVisible?'none':'block';
+    btn.textContent=isVisible?'💡 Show Hint':'💡 Hide Hint';
+  }
+}
+
+// ── GIF Replay ───────────────────────────────────────────────────
+function replayGif(){
+  const img=document.getElementById('gifImg');
+  if(img){
+    const src=img.src;
+    img.src='';
+    img.src=src;
+  }
+}
+
+// ── Sidebar ───────────────────────────────────────────────────────
+function renderSidebar(){
+  const el=document.getElementById('topicList');
+  const sidebar=document.getElementById('sidebar');
+
+  if(!currentUnit||!currentUnit.topics){
+    el.innerHTML='<li style="color:var(--text3);font-size:12px;padding:8px">Select a unit to see topics</li>';
+    return;
+  }
+
+  const query=(searchQuery||'').toLowerCase();
+  let filtered=currentUnit.topics;
+  if(query){
+    filtered=filtered.filter(t=>t.title.toLowerCase().includes(query));
+  }
+
+  if(filtered.length===0){
+    el.innerHTML=`<li style="color:var(--text3);font-size:12px;padding:8px">No topics match "${escapeHtml(searchQuery)}"</li>`;
+    return;
+  }
+
+  el.innerHTML=filtered.map(t=>{
+    const active=currentTopic&&t.path===currentTopic.path;
+    const done=isDone(currentUnit.track+'_'+t.name.replace(/\.json$/,''));
+    return `
+      <li class="topic-item ${active?'active':''} ${done?'done':''}"
+          onclick="loadTopic(currentUnit,currentUnit.topics.find(x=>x.path==='${t.path.replace(/'/g,"\\'")}'))">
+        <span class="done-mark ${done?'done':''}">${done?'✓':''}</span>
+        <span>${escapeHtml(t.title)}</span>
+        ${active?'<span class="state-badge">active</span>':''}
+      </li>
+    `;
+  }).join('');
+
+  // Close sidebar on mobile after selection
+  if(window.innerWidth<=768)sidebar.classList.remove('open');
+}
+
+function toggleSidebar(){
+  const sidebar=document.getElementById('sidebar');
+  const backdrop=document.getElementById('backdrop');
+  sidebar.classList.toggle('open');
+  backdrop.classList.toggle('show');
+}
+
+// ── Search ────────────────────────────────────────────────────────
+function onSearch(){
+  searchQuery=document.getElementById('searchInput').value;
+  renderSidebar();
+}
+
+// ── Keyboard Navigation ──────────────────────────────────────────
+document.addEventListener('keydown',function(e){
+  if(!currentUnit||!currentTopic||!currentUnit.topics)return;
+  const topics=currentUnit.topics;
+  const idx=topics.findIndex(t=>t.path===currentTopic.path);
+  if(idx===-1)return;
+
+  if(e.key==='ArrowDown'||e.key==='ArrowRight'){
+    e.preventDefault();
+    const next=(idx+1)%topics.length;
+    loadTopic(currentUnit,topics[next]);
+  }else if(e.key==='ArrowUp'||e.key==='ArrowLeft'){
+    e.preventDefault();
+    const prev=(idx-1+topics.length)%topics.length;
+    loadTopic(currentUnit,topics[prev]);
+  }else if(e.key==='Escape'){
+    showLanding();
+  }
+});
+
+// ── Helpers ───────────────────────────────────────────────────────
+function escapeHtml(s){
+  if(!s)return'';
+  const d=document.createElement('div');
+  d.textContent=s;
+  return d.innerHTML;
+}
+
+function renderMath(text){
+  if(!text)return'';
+  // MathJax delimiters: \(...\) for inline, $$...$$ or \[...\] for display
+  // Already in the content. Just return as-is wrapped with proper escaping.
+  // We need to preserve $$ and \(\) for MathJax but escape HTML
+  // Strategy: replace $$ with \( and \) to use consistent inline rendering... no, let's keep $$ as display math
+  // Actually, the content already has proper MathJax delimiters, just wrap in a div
+  return text;
+}
+
+function getGifForTopic(topicId){
+  // Map topic IDs to GIF filenames based on the existing GIFs
+  const gifMap={
+    'A1_Q1':'2026-06-04_A1_Q1_venn-diagram-classification.gif',
+    'A1_Q2':'',
+    'A1_Q3':'2026-06-04_A1_Q3_recurring-decimal-to-fraction.gif',
+    'A1_Q4':'2026-06-04_A1_Q4_compound-interest.gif',
+    'A1_Q5':'2026-06-04_A1_Q5_bounds-error-intervals.gif',
+    'A1_Q6':'2026-06-04_A1_Q6_direct-proportion-graph.gif',
+    'A1_Q7':'2026-06-04_A1_Q7_laws-of-indices.gif',
+    'B1_Q1':'2026-06-05_B1_Q1_collect-like-terms.gif',
+    'B1_Q2':'2026-06-05_B1_Q2_difference-of-squares.gif',
+    'B1_Q3':'2026-06-05_B1_Q3_balance-scale.gif',
+    'B1_Q4':'2026-06-05_B1_Q4_elimination.gif',
+    'B1_Q5':'2026-06-05_B1_Q5_fraction-bars-add.gif',
+    'B1_Q6':'2026-06-05_B1_Q6_linear-sequence-dots.gif',
+    'B1_Q7':'2026-06-05_B1_Q7_function-machine.gif',
+  };
+  return gifMap[topicId]||'';
+}
+
+function parseSteps(text){
+  // Simple step parser for worked examples
+  if(!text)return[];
+  const lines=text.split('\n');
+  const steps=[];
+  let current=null;
+  for(const line of lines){
+    const m=line.match(/^\*\*Step\s+(\d+):\*\*/);
+    if(m){
+      if(current)steps.push(current);
+      current={num:parseInt(m[1]),text:line.replace(m[0],'').trim()};
+    }else if(current){
+      current.text+='\n'+line;
+    }
+  }
+  if(current)steps.push(current);
+  return steps;
+}
+
+// ── Start ─────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>

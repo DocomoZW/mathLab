@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q6",
+  "title": "Range, Quartiles and Box-and-Whisker Plots",
+  "syllabus_ref": "IGCSE 0580 H9.6-H9.7",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Teacher A says her class had a mean score of 72%. Teacher B's class also had a mean of 72%. Are the classes equally prepared? Not necessarily — one class might have scores tightly clustered between 65% and 79%, while the other ranges from 20% to 100% with most students bunched at the extremes. Measures of spread — range, quartiles, and the interquartile range — reveal what the average hides.",
+    "prerequisites": [
+      "Understanding of median as a measure of central tendency (H1_Q5)",
+      "Ability to sort numerical data in ascending order",
+      "Basic fraction and decimal arithmetic"
+    ],
+    "core_explanation": "Measures of spread (dispersion) describe how varied or spread out a data set is.\n\n**Range** — the simplest measure: maximum value − minimum value. It is sensitive to outliers because only the two extreme values are used.\n\n**Quartiles** — divide the sorted data into four equal parts:\n- Q1 (lower quartile): median of the lower half of data (25th percentile)\n- Q2 (median): the middle value (50th percentile)\n- Q3 (upper quartile): median of the upper half of data (75th percentile)\n\nTo find quartiles:\n1. Sort data in ascending order.\n2. Find the median (Q2).\n3. Q1 is the median of the values below Q2 (excluding Q2 if n is odd).\n4. Q3 is the median of the values above Q2.\n\n**Interquartile Range (IQR)** = Q3 − Q1. This measures the spread of the middle 50% of the data. Unlike the range, the IQR is not affected by outliers.\n\n**Box-and-whisker plot** (box plot): A visual display showing five key statistics:\n- Minimum value (lower whisker end)\n- Q1 (left edge of box)\n- Median (line inside box)\n- Q3 (right edge of box)\n- Maximum value (upper whisker end)\n\nThe box represents the middle 50% of data; each whisker represents the bottom and top 25%.\n\n**Percentiles** — values below which a given percentage of data falls. Q1 = 25th percentile, Median = 50th percentile, Q3 = 75th percentile. The k-th percentile can be found by: position = (k/100) × (n + 1).",
+    "worked_example": "The ages (in years) of 11 people at a club meeting are: 18, 22, 25, 27, 29, 31, 34, 38, 42, 45, 60.\n\n**Step 1: Range**\nMaximum = 60, Minimum = 18\nRange = 60 − 18 = 42 years\n\n**Step 2: Quartiles**\nData is already sorted (n = 11).\nQ2 (median) = position (11+1)/2 = 6th value → 31\nLower half: 18, 22, 25, 27, 29 (5 values). Q1 = 3rd value = 25.\nUpper half: 34, 38, 42, 45, 60 (5 values). Q3 = 3rd value = 42.\nIQR = Q3 − Q1 = 42 − 25 = 17 years.\n\n**Step 3: Box-and-whisker plot**\nFive-number summary: Min = 18, Q1 = 25, Med = 31, Q3 = 42, Max = 60.\nDraw a number line from about 15 to 65. Draw a box from Q1 (25) to Q3 (42) with a vertical line at the median (31). Extend whiskers from the box edges to the minimum (18) and maximum (60).\n\n**Using percentiles:**\nFind the 60th percentile.\nPosition = (60/100) × (11 + 1) = 0.6 × 12 = 7.2\nThis is between the 7th value (34) and 8th value (38).\n60th percentile = 34 + 0.2 × (38 − 34) = 34 + 0.8 = 34.8 years.",
+    "common_mistakes": [
+      {
+        "mistake": "Including the median (Q2) in both halves when finding Q1 and Q3 for data sets with an odd number of values.",
+        "correction": "When n is odd, exclude the median itself from both the lower and upper halves before finding Q1 and Q3. For n = 11, the median is the 6th value; Q1 is the median of values 1-5, Q3 is the median of values 7-11."
+      },
+      {
+        "mistake": "Drawing a box-and-whisker plot with the whiskers going from min-to-Q1 and Q3-to-max inside the box rather than outside.",
+        "correction": "The whiskers extend outward from the box edges to the extreme values. The box itself spans Q1 to Q3, and the median line sits inside it. Never draw whiskers inside the box or boxes overlapping."
+      },
+      {
+        "mistake": "Confusing the range with the interquartile range — using range to describe the 'middle half' of data.",
+        "correction": "Range = Max − Min (covers all data). IQR = Q3 − Q1 (covers only the middle 50%). Use IQR when you want a measure of spread that is not distorted by outliers."
+      }
+    ],
+    "summary": [
+      "Range = largest value − smallest value; simple but outlier-sensitive.",
+      "Quartiles divide sorted data into four equal parts: Q1 (25th percentile), Q2/median (50th), Q3 (75th).",
+      "Interquartile Range (IQR) = Q3 − Q1; measures spread of the middle 50% of data; robust to outliers.",
+      "Box-and-whisker plots visualise the five-number summary: Min, Q1, Median, Q3, Max.",
+      "Percentiles generalise the idea: the k-th percentile is the value below which k% of data falls."
+    ]
+  }
+}

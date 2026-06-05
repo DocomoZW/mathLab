@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q1",
+  "title": "Pythagoras Theorem",
+  "syllabus_ref": "IGCSE 0580 E5.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Have you ever needed to find the shortest distance between two points when you can't walk in a straight line? Architects use Pythagoras' Theorem every day to calculate diagonal roof lengths, TV screen sizes are quoted as the diagonal measurement (which uses Pythagoras), and GPS systems use it to calculate distances between coordinates. This simple but powerful relationship between the sides of a right-angled triangle has been used for thousands of years.",
+    "prerequisites": [
+      "Identifying right-angled triangles (90-degree angle)",
+      "Squaring numbers and finding square roots",
+      "Understanding that the hypotenuse is the longest side opposite the right angle",
+      "Basic algebraic rearrangement of formulas"
+    ],
+    "core_explanation": "## What is Pythagoras' Theorem?\n\nPythagoras' Theorem describes the relationship between the three sides of a **right-angled triangle**. It states that:\n\n**In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.**\n\n\\[ a^2 + b^2 = c^2 \\]\n\nWhere:\n- **c** = the **hypotenuse** (the longest side, opposite the right angle)\n- **a** and **b** = the two shorter sides (legs)\n\n### Important Notes:\n- The theorem **only** works for right-angled triangles\n- The hypotenuse is always opposite the 90-degree angle and is the **longest** side\n- You can use the theorem to find any missing side if you know the other two\n\n### Finding the Hypotenuse (c):\n\\[ c = \\sqrt{a^2 + b^2} \\]\n\n### Finding a Shorter Side (a or b):\n\\[ a = \\sqrt{c^2 - b^2} \\]\n\\[ b = \\sqrt{c^2 - a^2} \\]\n\n### 3-4-5 Triangle Rule\nA well-known Pythagorean triple is 3-4-5: \\[ 3^2 + 4^2 = 9 + 16 = 25 = 5^2 \\]\nThis means any triangle with sides 3, 4, 5 (or multiples like 6, 8, 10) is right-angled. Other common triples: 5-12-13, 8-15-17, 7-24-25.",
+    "worked_example": "**Problem:** A right-angled triangle has a hypotenuse of 13 cm and one shorter side of 5 cm. Find the length of the other shorter side.\n\n**Step 1:** Identify what we know.\n- Hypotenuse (c) = 13 cm\n- One shorter side (a) = 5 cm\n- Unknown side (b) = ?\n\n**Step 2:** Write down Pythagoras' Theorem.\n\\[ a^2 + b^2 = c^2 \\]\n\n**Step 3:** Substitute the known values.\n\\[ 5^2 + b^2 = 13^2 \\]\n\n**Step 4:** Calculate the squares.\n\\[ 25 + b^2 = 169 \\]\n\n**Step 5:** Rearrange to isolate b^2.\n\\[ b^2 = 169 - 25 \\]\n\\[ b^2 = 144 \\]\n\n**Step 6:** Take the square root (positive value, as length is positive).\n\\[ b = \\sqrt{144} \\]\n\\[ b = 12 \\text{ cm} \\]\n\n**Answer:** The other shorter side is 12 cm.\n\n**Check:** 5^2 + 12^2 = 25 + 144 = 169 = 13^2. Correct!",
+    "common_mistakes": [
+      {
+        "mistake": "Applying Pythagoras' Theorem to non-right-angled triangles",
+        "correction": "Pythagoras only works for triangles with a 90-degree angle. For non-right triangles, you must use the Sine Rule or Cosine Rule."
+      },
+      {
+        "mistake": "Using the wrong side as the hypotenuse in the formula (e.g., a^2 + c^2 = b^2)",
+        "correction": "The hypotenuse must always be 'c' in the formula a^2 + b^2 = c^2. Identify the longest side first and set it equal to c."
+      },
+      {
+        "mistake": "Forgetting to take the square root at the end, leaving the answer as c^2 instead of c",
+        "correction": "Pythagoras gives c^2 = a^2 + b^2. You must take the square root to find c. Always check: is my answer in squared units or length units?"
+      }
+    ],
+    "summary": [
+      "Pythagoras' Theorem (a^2 + b^2 = c^2) relates the sides of a right-angled triangle, where c is the hypotenuse (longest side).",
+      "To find the hypotenuse: c = sqrt(a^2 + b^2). To find a shorter side: a = sqrt(c^2 - b^2).",
+      "The theorem only applies to right-angled triangles — check for the 90-degree angle before using it.",
+      "Common Pythagorean triples (e.g., 3-4-5, 5-12-13) can help you spot right-angled triangles quickly.",
+      "Always include units in your final answer and check by substituting back into the formula."
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q3",
+  "title": "Polygons: Interior and Exterior Angles",
+  "syllabus_ref": "IGCSE 0580 C3.3-C3.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Have you ever wondered why honeybees build their hives using hexagons? Or why soccer balls are made of pentagons and hexagons? The answer lies in the mathematics of polygons! Polygons are everywhere — from stop signs (octagons) to the Pyramids of Giza (triangles). Understanding their angle properties helps architects, engineers, and even nature decide the best shapes to use.",
+    "prerequisites": [
+      "C1_Q1: Types of angles and basic angle properties",
+      "C1_Q2: Parallel lines and transversals",
+      "Understanding of triangles and their angle sum",
+      "Basic algebra skills for solving equations"
+    ],
+    "core_explanation": "A **polygon** is a closed 2D shape made of straight line segments. Polygons are named by their number of sides.\n\n| Number of Sides | Name |\n|---|---|\n| 3 | Triangle |\n| 4 | Quadrilateral |\n| 5 | Pentagon |\n| 6 | Hexagon |\n| 7 | Heptagon |\n| 8 | Octagon |\n| 9 | Nonagon |\n| 10 | Decagon |\n\n### Regular vs Irregular Polygons\n\n- **Regular polygon**: All sides are equal in length AND all interior angles are equal.\n- **Irregular polygon**: Sides and/or angles are not all equal.\n\n### Interior Angle Sum\n\nThe interior angles of any polygon sum to a value that depends only on the number of sides.\n\n$$\\\\text{Sum of interior angles} = (n - 2) \\\\times 180^\\\\circ$$\n\nwhere $n$ is the number of sides.\n\n**Why?** A polygon can be divided into $(n-2)$ triangles by drawing diagonals from one vertex. Each triangle has an angle sum of $180^\\\\circ$, so the total sum is $(n-2) \\\\times 180^\\\\circ$.\n\n### Exterior Angle Sum\n\nFor ANY polygon, regardless of whether it is regular or irregular:\n\n$$\\\\text{Sum of exterior angles} = 360^\\\\circ$$\n\nAn exterior angle is formed by extending one side of the polygon. At each vertex, the interior angle + exterior angle = $180^\\\\circ$ (they lie on a straight line).\n\n### Regular Polygon Formulas\n\nFor a regular polygon with $n$ sides:\n\n$$\\\\text{Each interior angle} = \\\\frac{(n-2) \\\\times 180^\\\\circ}{n}$$\n\n$$\\\\text{Each exterior angle} = \\\\frac{360^\\\\circ}{n}$$\n\n$$\\\\text{Interior angle} + \\\\text{Exterior angle} = 180^\\\\circ$$\n\n### Finding the Number of Sides Given an Angle\n\nIf you know one interior or exterior angle of a regular polygon, you can find $n$.\n\n**Using exterior angle:** $n = \\\\frac{360^\\\\circ}{\\\\text{exterior angle}}$\n\n**Using interior angle:** First find exterior angle = $180^\\\\circ - \\\\text{interior angle}$, then $n = \\\\frac{360^\\\\circ}{\\\\text{exterior angle}}$",
+    "worked_example": "**Problem 1:** Find the sum of interior angles of a regular pentagon, and the size of each interior angle.\n\n**Step 1:** Identify $n = 5$ (pentagon has 5 sides).\n\n**Step 2:** Calculate the sum of interior angles.\n$$\\\\text{Sum} = (n - 2) \\\\times 180^\\\\circ = (5 - 2) \\\\times 180^\\\\circ = 3 \\\\times 180^\\\\circ = 540^\\\\circ$$\n\n**Step 3:** For a regular pentagon, divide by $n$ to find each interior angle.\n$$\\\\text{Each interior angle} = \\\\frac{540^\\\\circ}{5} = 108^\\\\circ$$\n\n**Answer:** Sum = $540^\\\\circ$, each interior angle = $108^\\\\circ$.\n\n**Check using exterior angle:** Exterior angle = $360^\\\\circ / 5 = 72^\\\\circ$. Interior = $180^\\\\circ - 72^\\\\circ = 108^\\\\circ$. \\\\checkmark\n\n---\n\n**Problem 2:** A regular polygon has interior angles of $150^\\\\circ$. How many sides does it have?\n\n**Step 1:** Find the exterior angle.\n$$\\\\text{Exterior angle} = 180^\\\\circ - 150^\\\\circ = 30^\\\\circ$$\n\n**Step 2:** Use the exterior angle formula to find $n$.\n$$n = \\\\frac{360^\\\\circ}{30^\\\\circ} = 12$$\n\n**Answer:** The polygon has 12 sides (a regular dodecagon).",
+    "common_mistakes": [
+      {
+        "mistake": "Using the formula $(n-2) \\\\times 180^\\\\circ$ to find each interior angle of a regular polygon, forgetting to divide by $n$.",
+        "correction": "The formula $(n-2) \\\\times 180^\\\\circ$ gives the TOTAL sum of interior angles. For a regular polygon, you must ALSO divide by $n$ to find each individual interior angle."
+      },
+      {
+        "mistake": "Thinking the sum of exterior angles is $(n-2) \\\\times 180^\\\\circ$ (like interior angles) or some other value that varies with $n$.",
+        "correction": "The sum of exterior angles is ALWAYS $360^\\\\circ$ for any convex polygon, no matter how many sides it has. This is a fixed rule, not a formula involving $n$."
+      },
+      {
+        "mistake": "Confusing interior and exterior angles — solving for the wrong one when given a problem about regular polygons.",
+        "correction": "Draw a small diagram showing the extended side. The exterior angle is OUTSIDE the shape. Remember: interior + exterior = 180° (straight line)."
+      },
+      {
+        "mistake": "Applying regular polygon formulas to irregular polygons — assuming all angles are equal when they are not.",
+        "correction": "You can only use $\\\\frac{(n-2) \\\\times 180}{n}$ for each interior angle if the polygon is REGULAR. For irregular polygons, the interior angles may all be different — you can only find the total sum."
+      }
+    ],
+    "summary": [
+      "A polygon is a closed shape with straight sides; regular polygons have equal sides and equal angles.",
+      "Sum of interior angles = $(n-2) \\\\times 180^\\\\circ$, where $n$ is the number of sides.",
+      "Sum of exterior angles = $360^\\\\circ$ for any convex polygon.",
+      "For a regular polygon: each interior angle = $\\\\frac{(n-2)\\\\times 180^\\\\circ}{n}$, each exterior angle = $\\\\frac{360^\\\\circ}{n}$.",
+      "Interior and exterior angles at the same vertex are supplementary (sum to $180^\\\\circ$).",
+      "Given one interior or exterior angle of a regular polygon, you can find the number of sides using $n = \\\\frac{360^\\\\circ}{\\\\text{exterior angle}}$."
+    ]
+  }
+}

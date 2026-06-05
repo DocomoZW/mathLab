@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q6",
+  "title": "Expected Value",
+  "syllabus_ref": "IGCSE 0580 G8.6",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "If you roll a dice 600 times, how many sixes would you 'expect' to get? About 100. You can't predict any single roll, but over many trials, the pattern becomes clear. Expected value is the bridge between probability and real-world prediction — it tells you the average outcome over many repetitions, and it's the key concept behind insurance, gambling, and business forecasting.",
+    "prerequisites": [
+      "Understand basic probability: P(event) = favourable / total",
+      "Be comfortable multiplying fractions or decimals by whole numbers",
+      "Understand the concept of 'average' or 'mean'"
+    ],
+    "core_explanation": "## What is Expected Value?\n\nExpected value is the average result you would expect if you repeated an experiment many, many times. It doesn't tell you what will happen on any single trial — it tells you the long-run average.\n\n### The Basic Formula\n\nFor a single event (e.g., number of successes in n trials):\n\nExpected number = Probability of success x Number of trials\n\nOr: E = P(event) x n\n\n### Example: Rolling a Dice 120 Times\n\nP(getting a 6) = 1/6\nExpected number of sixes in 120 rolls = (1/6) x 120 = 20\n\nThis doesn't mean you'll get exactly 20 sixes — you might get 18 or 23. But over many sets of 120 rolls, the average would be close to 20.\n\n### Expected Value with Different Outcomes and Values\n\nSometimes each outcome has a different 'value' (e.g., points in a game, money won/lost). The expected value is:\n\nE = (value1 x P1) + (value2 x P2) + ... + (valuen x Pn)\n\nWhere each value is multiplied by its probability, and you sum them all up.\n\n### Example: A Prize Game\n\nA game costs $1 to play. You spin a spinner:\n- 1/4 chance of winning $2\n- 1/4 chance of winning $1\n- 1/2 chance of winning nothing\n\nWhat is the expected winnings?\n\nE = ($2 x 1/4) + ($1 x 1/4) + ($0 x 1/2)\nE = $0.50 + $0.25 + $0 = $0.75\n\nThe expected winnings are $0.75 per game. Since it costs $1 to play, the expected profit is -$0.25. On average, you lose 25 cents per game.\n\n### Expected Value and Fairness\n\nA game is 'fair' if the expected value equals the cost to play. In the example above, the game is unfair because the expected return ($0.75) is less than the cost ($1).\n\nTo make it fair, the expected value should equal the cost.\n\n### Applications\n\nExpected value is used in:\n- Insurance: Calculating premiums based on expected claims\n- Gambling: Casinos design games so expected value is slightly in their favour\n- Business: Estimating expected profit or loss from different decisions\n- Quality control: Expected number of defective items in a batch",
+    "worked_example": "**Problem:** A bag contains 4 red marbles and 6 blue marbles. You draw a marble at random, record its colour, and put it back. If you do this 50 times, how many red marbles do you expect to draw?\n\n**Step 1:** Find the probability of drawing a red marble.\nP(red) = 4 / (4 + 6) = 4/10 = 2/5 = 0.4\n\n**Step 2:** Apply the expected value formula.\nExpected number = P(red) x number of trials\nE = 0.4 x 50 = 20\n\n**Step 3:** Interpret the result.\nOver 50 draws (with replacement), you'd expect to get approximately 20 red marbles.\n\n**Answer:** The expected number of red marbles is 20.",
+    "common_mistakes": [
+      {
+        "mistake": "Thinking expected value means you WILL get exactly that number every time.",
+        "correction": "Expected value is the long-run average, not a guaranteed outcome. Actual results will vary around the expected value, especially with small numbers of trials."
+      },
+      {
+        "mistake": "Forgetting to multiply the probability by the number of trials — just stating the probability as the expected value.",
+        "correction": "Expected number = probability x number of trials. If the probability is 0.2 and you have 50 trials, the expected number is 0.2 x 50 = 10, not 0.2."
+      },
+      {
+        "mistake": "Confusing expected value with the most likely outcome, especially in skewed distributions.",
+        "correction": "The expected value is a weighted average. The most likely single outcome might be different. For example, in a lottery, the expected value might be negative (average loss), but the most likely outcome is losing the ticket price."
+      }
+    ],
+    "summary": [
+      "Expected value is the long-run average result when an experiment is repeated many times.",
+      "For counting successes: E = P(event) x number of trials.",
+      "For outcomes with different values: E = sum of (value x probability) for each outcome.",
+      "A game is 'fair' when the expected return equals the cost to play.",
+      "Expected value predicts the average over many trials, not the result of any single trial."
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q3",
+  "title": "Fractions & Decimals — Problems",
+  "problems": [
+    {
+      "id": "A1_Q3_01",
+      "difficulty": "basic",
+      "question": "Calculate $\\frac{3}{5} + \\frac{1}{4}$. Express your answer in its simplest form.",
+      "answer": "Common denominator is $20$: $$\\frac{3}{5} + \\frac{1}{4} = \\frac{12}{20} + \\frac{5}{20} = \\frac{17}{20}$$",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q3_02",
+      "difficulty": "basic",
+      "question": "Work out $\\frac{2}{3} \\times \\frac{5}{7}$.",
+      "answer": "$$\\frac{2}{3} \\times \\frac{5}{7} = \\frac{2 \\times 5}{3 \\times 7} = \\frac{10}{21}$$",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q3_03",
+      "difficulty": "intermediate",
+      "question": "Calculate $\\frac{3}{4} \\div \\frac{9}{10}$.",
+      "answer": "$$\\frac{3}{4} \\div \\frac{9}{10} = \\frac{3}{4} \\times \\frac{10}{9} = \\frac{30}{36} = \\frac{5}{6}$$",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q3_04",
+      "difficulty": "intermediate",
+      "question": "Convert $0.\\dot{6}$ (recurring decimal $0.6666\\dots$) to a fraction.",
+      "answer": "Let $x = 0.6666\\dots$ $10x = 6.6666\\dots$ $10x - x = 6$ $9x = 6$ $x = \\frac{6}{9} = \\frac{2}{3}$",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q3_05",
+      "difficulty": "advanced",
+      "question": "Convert $0.1\\dot{2}\\dot{3}$ (meaning $0.123232323\\dots$) to a fraction.",
+      "answer": "Let $x = 0.1232323\\dots$ $10x = 1.232323\\dots$ $1000x = 123.232323\\dots$ $1000x - 10x = 123.2323\\dots - 1.2323\\dots = 122$ $990x = 122$ $x = \\frac{122}{990} = \\frac{61}{495}$",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q3_06",
+      "difficulty": "advanced",
+      "question": "Work out $1\\frac{2}{3} - \\frac{2}{5} \\times \\frac{3}{4}$.",
+      "answer": "$1\\frac{2}{3} = \\frac{5}{3}$. Multiplication first: $\\frac{2}{5} \\times \\frac{3}{4} = \\frac{6}{20} = \\frac{3}{10}$. Then: $\\frac{5}{3} - \\frac{3}{10} = \\frac{50}{30} - \\frac{9}{30} = \\frac{41}{30} = 1\\frac{11}{30}$.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q3_07",
+      "difficulty": "challenge",
+      "question": "Find the fraction $\\frac{a}{b}$ (in simplest form) such that $\\frac{1}{2} < \\frac{a}{b} < \\frac{2}{3}$ and $a + b = 20$.",
+      "answer": "We need $\\frac{a}{b}$ such that $\\frac{1}{2} < \\frac{a}{b} < \\frac{2}{3}$ and $a + b = 20$. So $a = 20 - b$. Inequalities: $\\frac{1}{2} < \\frac{20-b}{b} < \\frac{2}{3}$. Left: $\\frac{20-b}{b} > \\frac{1}{2} \\Rightarrow 2(20-b) > b \\Rightarrow 40 - 2b > b \\Rightarrow 40 > 3b \\Rightarrow b < 13.33$ Right: $\\frac{20-b}{b} < \\frac{2}{3} \\Rightarrow 3(20-b) < 2b \\Rightarrow 60 - 3b < 2b \\Rightarrow 60 < 5b \\Rightarrow b > 12$ So $b = 13$, $a = 7$. Fraction: $\\frac{7}{13}$. Check: $\\frac{1}{2} = 0.5$, $\\frac{7}{13} \\approx 0.538$, $\\frac{2}{3} \\approx 0.667$. ✓",
+      "marks": 4
+    },
+    {
+      "id": "A1_Q3_08",
+      "difficulty": "challenge",
+      "question": "Without using a calculator, find the value of $$\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\dots + \\frac{1}{99 \\times 100}$$",
+      "answer": "Note that $\\frac{1}{n(n+1)} = \\frac{1}{n} - \\frac{1}{n+1}$. So the sum telescopes: $$\\left(\\frac{1}{1} - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\dots + \\left(\\frac{1}{99} - \\frac{1}{100}\\right)$$ All intermediate terms cancel: $$= \\frac{1}{1} - \\frac{1}{100} = \\frac{99}{100}$$",
+      "marks": 4
+    }
+  ]
+}

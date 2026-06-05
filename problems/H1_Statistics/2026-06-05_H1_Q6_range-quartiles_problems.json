@@ -1,0 +1,177 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q6",
+  "title": "Range and Quartiles - Problem Set",
+  "problems": [
+    {
+      "id": "H1_Q6_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Calculate the range of the following data set:\n12, 15, 8, 21, 17, 9, 14",
+      "options": ["13", "12", "14", "11"],
+      "answer": 0,
+      "explanation": "Range = largest value − smallest value = 21 − 8 = 13"
+    },
+    {
+      "id": "H1_Q6_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the range of this data set?\n3, 8, 12, 5, 17, 9, 11, 6",
+      "options": ["14", "15", "13", "16"],
+      "answer": 0,
+      "explanation": "Range = 17 − 3 = 14"
+    },
+    {
+      "id": "H1_Q6_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "For the data set: 4, 8, 12, 16, 20, 24, 28, what is the median (Q2)?",
+      "options": ["12", "20", "16", "14"],
+      "answer": 2,
+      "explanation": "There are 7 values. The median is the 4th value in the sorted list: 4, 8, 12, 16, 20, 24, 28. The median is 16."
+    },
+    {
+      "id": "H1_Q6_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A box plot shows minimum = 5, Q1 = 12, median = 18, Q3 = 25, maximum = 35. What is the range?",
+      "options": ["35", "30", "23", "13"],
+      "answer": 1,
+      "explanation": "Range = maximum − minimum = 35 − 5 = 30"
+    },
+    {
+      "id": "H1_Q6_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Find the lower quartile (Q1) of this data set:\n6, 9, 12, 15, 18, 21, 24, 27, 30",
+      "options": ["9", "10.5", "12", "15"],
+      "answer": 1,
+      "explanation": "9 values sorted. The median (Q2) is the 5th value = 18. Lower half (values below 18): 6, 9, 12, 15. Q1 is the median of these 4 = (9 + 12) ÷ 2 = 10.5"
+    },
+    {
+      "id": "H1_Q6_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Calculate the interquartile range (IQR) for this data set:\n10, 14, 18, 22, 26, 30, 34, 38, 42",
+      "options": ["16", "20", "24", "28"],
+      "answer": 1,
+      "explanation": "Sorted: 10, 14, 18, 22, 26, 30, 34, 38, 42. Median (Q2) = 26 (5th value). Lower half: 10, 14, 18, 22. Q1 = (14+18)/2 = 16. Upper half: 30, 34, 38, 42. Q3 = (34+38)/2 = 36. IQR = Q3 − Q1 = 36 − 16 = 20."
+    },
+    {
+      "id": "H1_Q6_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "The temperatures (°C) recorded over 12 days are:\n15, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 33\n\nWhat is the interquartile range?",
+      "options": ["6", "9", "7", "8"],
+      "answer": 2,
+      "explanation": "12 values. Lower half (first 6): 15, 18, 20, 21, 22, 24. Q1 = (20+21)/2 = 20.5. Upper half (last 6): 25, 26, 27, 28, 30, 33. Q3 = (27+28)/2 = 27.5. IQR = 27.5 − 20.5 = 7."
+    },
+    {
+      "id": "H1_Q6_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A data set has Q1 = 18, Q2 = 25, and Q3 = 34. What is the interquartile range?",
+      "options": ["16", "18", "14", "9"],
+      "answer": 0,
+      "explanation": "IQR = Q3 − Q1 = 34 − 18 = 16"
+    },
+    {
+      "id": "H1_Q6_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A box plot shows minimum = 4, Q1 = 10, median = 16, Q3 = 25, maximum = 38. Which statement is true about the data?",
+      "options": [
+        "50% of the data lies between 10 and 25",
+        "25% of the data lies between 4 and 10",
+        "75% of the data lies below 25",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Q1=10 and Q3=25, so the middle 50% of data is between 10 and 25. 25% of data lies below Q1=10. 75% of data lies below Q3=25. All three statements are correct."
+    },
+    {
+      "id": "H1_Q6_10",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "The test scores of 15 students are:\n32, 45, 47, 51, 53, 56, 58, 62, 65, 68, 72, 75, 79, 84, 91\n\nWhat is the median score?",
+      "options": ["62", "58", "65", "68"],
+      "answer": 0,
+      "explanation": "15 values. The median is the (15+1)/2 = 8th value when sorted. The 8th value is 62."
+    },
+    {
+      "id": "H1_Q6_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A data set of 10 values is:\n2, 4, 6, 8, 10, 12, 14, 16, 18, 50\n\nUsing the 1.5 × IQR rule, is the value 50 an outlier?",
+      "options": [
+        "Yes, because 50 exceeds the upper fence of 31",
+        "No, because 50 is less than the upper fence of 37",
+        "No, because 50 equals Q3 + 1.5×IQR",
+        "Yes, because 50 is greater than Q3"
+      ],
+      "answer": 0,
+      "explanation": "10 values. Sorted: 2, 4, 6, 8, 10, 12, 14, 16, 18, 50. Lower half (first 5): 2, 4, 6, 8, 10. Q1 = 6. Upper half (last 5): 12, 14, 16, 18, 50. Q3 = 16. IQR = 16 − 6 = 10. Upper fence = Q3 + 1.5×IQR = 16 + 15 = 31. Since 50 > 31, the value 50 is an outlier."
+    },
+    {
+      "id": "H1_Q6_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "The masses (kg) of 11 people are:\n52, 55, 58, 60, 62, 64, 67, 70, 73, 78, 82\n\nUsing the 1.5 × IQR rule, are there any outliers?",
+      "options": [
+        "No outliers",
+        "52 is an outlier",
+        "82 is an outlier",
+        "Both 52 and 82 are outliers"
+      ],
+      "answer": 0,
+      "explanation": "11 values. Q1 is the 3rd value = 58. Q3 is the 9th value = 73. IQR = 73 − 58 = 15. Lower fence = Q1 − 1.5×IQR = 58 − 22.5 = 35.5. Upper fence = Q3 + 1.5×IQR = 73 + 22.5 = 95.5. All values lie between 35.5 and 95.5, so there are no outliers."
+    },
+    {
+      "id": "H1_Q6_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A group of 12 students recorded the number of text messages they sent in a day:\n18, 22, 25, 28, 30, 34, 36, 40, 45, 48, 52, 80\n\nUsing the 1.5 × IQR rule, which value(s) would be classified as outliers?",
+      "options": ["80 only", "18 and 80", "52 and 80", "No outliers"],
+      "answer": 0,
+      "explanation": "12 values. Lower half (first 6): 18, 22, 25, 28, 30, 34. Q1 = (25+28)/2 = 26.5. Upper half (last 6): 36, 40, 45, 48, 52, 80. Q3 = (45+48)/2 = 46.5. IQR = 46.5 − 26.5 = 20. Lower fence = 26.5 − 30 = −3.5. Upper fence = 46.5 + 30 = 76.5. 80 > 76.5, so 80 is an outlier."
+    },
+    {
+      "id": "H1_Q6_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A box plot has the following five-number summary: minimum = 10, Q1 = 20, median = 28, Q3 = 38, maximum = 55. What is the shape of the distribution?",
+      "options": [
+        "Symmetric",
+        "Positively skewed (skewed right)",
+        "Negatively skewed (skewed left)",
+        "Cannot be determined"
+      ],
+      "answer": 1,
+      "explanation": "The right whisker (max − Q3 = 55 − 38 = 17) is longer than the left whisker (Q1 − min = 20 − 10 = 10). The median (28) is closer to Q1 (20) than to Q3 (38). Both indicate the data is positively skewed (skewed right)."
+    },
+    {
+      "id": "H1_Q6_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "The ages of 9 people are:\n10, 12, 15, 18, 20, 22, 25, 28, 60\n\nThe value 60 is an outlier. What best describes its effect on the range compared to the IQR?",
+      "options": [
+        "The range more than doubles while the IQR increases slightly",
+        "The range stays the same while the IQR increases",
+        "Both range and IQR more than double",
+        "The range is unaffected but the IQR increases significantly"
+      ],
+      "answer": 0,
+      "explanation": "With 60 included: sorted = 10,12,15,18,20,22,25,28,60. Q1 = (12+15)/2 = 13.5. Q3 = (25+28)/2 = 26.5. IQR = 13. Range = 60−10 = 50. Without 60: sorted = 10,12,15,18,20,22,25,28. Q1 = (12+15)/2 = 13.5. Q3 = (22+25)/2 = 23.5. IQR = 10. Range = 28−10 = 18. The range more than doubles (18 → 50), while the IQR only increases slightly (10 → 13)."
+    },
+    {
+      "id": "H1_Q6_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A data set has 8 values. The sorted values are:\n5, 9, 13, 17, 21, 25, 29, 33\n\nWhat are the values of Q1 and Q3?",
+      "options": ["Q1=11, Q3=27", "Q1=9, Q3=29", "Q1=13, Q3=25", "Q1=11, Q3=25"],
+      "answer": 0,
+      "explanation": "8 values. Q1 is the median of the lower 4: 5, 9, 13, 17. Q1 = (9+13)/2 = 11. Q3 is the median of the upper 4: 21, 25, 29, 33. Q3 = (25+29)/2 = 27."
+    }
+  ]
+}

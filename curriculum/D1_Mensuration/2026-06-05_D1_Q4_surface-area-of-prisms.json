@@ -1,0 +1,44 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q4",
+  "title": "Surface Area of Prisms",
+  "syllabus_ref": "IGCSE 0580 D.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "How much cardboard is needed to make a box? How much wrapping paper for a gift? The answer is the surface area \u2014 the total area of all the faces of a 3D object. This is essential in manufacturing, packaging, and construction.",
+    "prerequisites": [
+      "Area of rectangles, triangles, circles",
+      "Understanding of 3D shapes",
+      "Net diagrams of prisms"
+    ],
+    "core_explanation": "A **prism** is a 3D shape with a uniform cross-section. It has two identical parallel faces (the ends) and rectangular side faces.\n\n### Surface Area of a Prism\n\n**Surface Area = 2 x Area of cross-section + Perimeter of cross-section x Length**\n\nWhere the cross-section is the shape of the two ends and the length is the distance between them.\n\n### Common Prisms\n\n| Prism | Cross-section | Faces |\n|-------|--------------|-------|\n| Cuboid (rectangular) | Rectangle | 6 rectangular faces |\n| Triangular prism | Triangle | 2 triangles + 3 rectangles |\n| Cylinder | Circle | 2 circles + 1 curved rectangle |\n| Cube | Square | 6 equal squares |\n\n### Surface Area of a Cylinder\n\nSA = 2 x pi x r^2 + 2 x pi x r x h\n\nWhere r is the radius, h is the height.\nThe curved surface area is 2 x pi x r x h (imagine unrolling the curved part into a rectangle).\n\n### Net Diagrams\nDrawing the net of a prism helps visualise all faces. The net is the 3D shape laid flat.\n\n### Units\nSurface area is measured in square units (cm^2, m^2).",
+    "worked_example": "Problem: A cuboid has length 5 cm, width 3 cm, and height 4 cm. Find its total surface area.\n\nStep 1: Identify the faces.\nTwo faces: 5 x 3 = 15 cm^2 each\nTwo faces: 5 x 4 = 20 cm^2 each\nTwo faces: 3 x 4 = 12 cm^2 each\n\nStep 2: Calculate total.\nSA = 2(15) + 2(20) + 2(12) = 30 + 40 + 24 = 94 cm^2\n\nAnswer: The total surface area is 94 cm^2.\n\nProblem: A cylinder has radius 3 cm and height 10 cm. Find its surface area (use pi = 3.142).\n\nStep 1: Area of two circular ends. 2 x pi x r^2 = 2 x 3.142 x 9 = 56.556 cm^2\n\nStep 2: Curved surface area. 2 x pi x r x h = 2 x 3.142 x 3 x 10 = 188.52 cm^2\n\nStep 3: Add. Total = 56.556 + 188.52 = 245.076 cm^2\n\nAnswer: The total surface area is approximately 245.08 cm^2.",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to multiply by 2 for the two identical end faces of a prism.",
+        "correction": "The formula SA = 2 x (area of cross-section) + (perimeter of cross-section x length) reminds you there are two ends."
+      },
+      {
+        "mistake": "Using the diameter instead of radius in cylinder calculations.",
+        "correction": "Always halve the diameter to get the radius. Both end circles and the curved surface need the radius."
+      },
+      {
+        "mistake": "Forgetting the curved surface area of a cylinder.",
+        "correction": "A cylinder has THREE parts: two circles and the curved rectangle. All three contribute to surface area."
+      },
+      {
+        "mistake": "Confusing surface area with volume.",
+        "correction": "Surface area is in square units (covering the outside). Volume is in cubic units (filling the inside)."
+      }
+    ],
+    "summary": [
+      "Surface area = total area of all faces of a 3D shape.",
+      "For a prism: SA = 2 x (area of cross-section) + (perimeter of cross-section x length).",
+      "For a cylinder: SA = 2 x pi x r^2 + 2 x pi x r x h.",
+      "Use net diagrams to visualise all faces.",
+      "Surface area is in square units; volume is in cubic units."
+    ]
+  }
+}

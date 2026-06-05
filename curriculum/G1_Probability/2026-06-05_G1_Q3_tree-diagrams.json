@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q3",
+  "title": "Tree Diagrams",
+  "syllabus_ref": "IGCSE 0580 G8.3",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "What if you flip a coin three times in a row? What's the chance of getting exactly two heads? As experiments get more stages, listing every outcome gets messy. Tree diagrams solve this problem beautifully — each branch shows a possible path, and by multiplying along branches you can find the probability of even the most complex multi-stage events.",
+    "prerequisites": [
+      "Understand basic probability and the multiplication principle",
+      "Be able to work with fractions and multiply them",
+      "Understand independent events (outcomes of one stage don't affect another)"
+    ],
+    "core_explanation": "## What is a Tree Diagram?\n\nA tree diagram shows all possible outcomes of a multi-stage experiment. Each 'branch' represents one possible result at each stage. By following branches from start to finish, you can trace every possible sequence of outcomes.\n\n### Structure of a Tree Diagram\n\n- Start at the left with a point (the 'root')\n- From the root, draw one branch for each possible outcome of the first stage\n- Label each branch with the outcome and its probability\n- From the end of each branch, draw branches for the second stage\n- Continue for as many stages as needed\n- The end of each final branch shows a complete outcome path\n\n### The Multiplication Rule\n\nTo find the probability of a specific sequence of events (a 'path'), multiply the probabilities along that path.\n\nP(path) = P(stage 1 outcome) x P(stage 2 outcome) x P(stage 3 outcome) x ...\n\n### Example: Flipping a Coin Twice\n\nFirst flip: two branches — H (0.5) and T (0.5)\nFrom each, second flip: two branches — H (0.5) and T (0.5)\n\nThe four paths and their probabilities:\n- HH: 0.5 x 0.5 = 0.25\n- HT: 0.5 x 0.5 = 0.25\n- TH: 0.5 x 0.5 = 0.25\n- TT: 0.5 x 0.5 = 0.25\n\nThe sum of all path probabilities equals 1: 0.25 + 0.25 + 0.25 + 0.25 = 1\n\n### The Addition Rule for Events with Multiple Paths\n\nIf you want the probability of an event that can happen through multiple different paths, ADD the probabilities of those paths.\n\nP(getting exactly one head in two flips) = P(HT) + P(TH) = 0.25 + 0.25 = 0.5\n\n### Probabilities on Branches\n\n- For independent events, each stage uses the same probabilities regardless of previous outcomes\n- For experiments without replacement (e.g., drawing cards from a deck without putting them back), the probabilities change after each stage\n- The probabilities on branches coming from the same point must always add up to 1",
+    "worked_example": "**Problem:** A bag contains 3 red sweets and 2 yellow sweets. A sweet is taken at random, eaten, and then another sweet is taken. Draw a tree diagram and find the probability of getting one red and one yellow sweet in any order.\n\n**Step 1:** Label the first stage.\nFirst sweet: P(red) = 3/5, P(yellow) = 2/5\n\n**Step 2:** Label the second stage. Since the sweet is not replaced, the probabilities change.\nIf first was red (3 red, 2 yellow): P(red) = 2/4, P(yellow) = 2/4\nIf first was yellow (3 red, 1 yellow): P(red) = 3/4, P(yellow) = 1/4\n\n**Step 3:** Draw and fill the tree diagram.\n\nFirst branch: Red (3/5)\n  - Second branch: Red (2/4), Yellow (2/4)\nFirst branch: Yellow (2/5)\n  - Second branch: Red (3/4), Yellow (1/4)\n\n**Step 4:** Calculate path probabilities.\nRed then Yellow: (3/5) x (2/4) = 6/20 = 3/10\nYellow then Red: (2/5) x (3/4) = 6/20 = 3/10\n\n**Step 5:** Add the probabilities of the favourable paths.\nP(one red, one yellow) = 3/10 + 3/10 = 6/10 = 3/5\n\n**Answer:** The probability is 3/5 (or 0.6, or 60%).",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to adjust probabilities for 'without replacement' scenarios — using the same probabilities for the second stage regardless of what was taken first.",
+        "correction": "When items are not replaced, always recalculate the probabilities for the next stage based on what remains. The denominator decreases by 1 each time something is taken."
+      },
+      {
+        "mistake": "Adding path probabilities when you should multiply, or multiplying when you should add.",
+        "correction": "Remember: multiply ALONG a path (for AND), add ACROSS paths (for OR). P(A then B) = multiply. P(A then B OR B then A) = add."
+      },
+      {
+        "mistake": "Not checking that all branch probabilities from a single point sum to 1.",
+        "correction": "Always verify that the probabilities on branches coming from the same node add up to 1. If they don't, you've made an error."
+      }
+    ],
+    "summary": [
+      "Tree diagrams show all possible outcomes of multi-stage experiments, with each path representing one sequence of events.",
+      "Multiply probabilities along a branch to find the probability of that specific sequence.",
+      "Add probabilities of different paths when an event can occur in multiple ways.",
+      "For 'without replacement' problems, update probabilities at each stage based on what remains.",
+      "The sum of all final path probabilities should always equal 1."
+    ]
+  }
+}

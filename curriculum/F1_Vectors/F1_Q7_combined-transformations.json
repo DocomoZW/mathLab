@@ -1,0 +1,34 @@
+{
+  "track": "igcse_o",
+  "unit": "F1_Vectors",
+  "topic_id": "F1_Q7",
+  "title": "Combined Transformations",
+  "syllabus_ref": "0580 F7.7",
+  "version": 1,
+  "created_at": "2026-06-05T11:00:00Z",
+  "sections": {
+    "hook": "Multiple transformations can be combined by applying them in sequence.",
+    "prerequisites": [
+      "Individual transformations",
+      "Order of operations",
+      "Matrix operations"
+    ],
+    "core_explanation": "When combining transformations, the order matters. A rotation followed by a translation is different from a translation followed by a rotation. The combined transformation can often be described as a single transformation.",
+    "worked_example": "**Question:** Reflect P(2,1) in y-axis, then translate by $\\begin{pmatrix}3\\\\0\\end{pmatrix}$.\n\n**Solution:** P after reflection: (-2,1). After translation: (1,1).",
+    "common_mistakes": [
+      {
+        "mistake": "Adding vectors incorrectly by adding only x or only y components",
+        "correction": "Always add x-components together AND y-components together separately"
+      },
+      {
+        "mistake": "Confusing direction in rotations (clockwise vs anticlockwise)",
+        "correction": "Draw a simple diagram to verify the direction before calculating coordinates"
+      }
+    ],
+    "summary": [
+      "Combined Transformations is a fundamental concept in IGCSE Mathematics",
+      "Always check your answer makes sense in the context",
+      "Practice with different values to build confidence"
+    ]
+  }
+}

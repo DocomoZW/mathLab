@@ -1,0 +1,25 @@
+{
+  "name": "MathsLMS Student Learning Platform",
+  "short_name": "MathsLMS",
+  "description": "IGCSE Mathematics learning platform with interactive concepts, problems, and animated GIFs",
+  "start_url": "/learn",
+  "display": "standalone",
+  "background_color": "#0b0e1a",
+  "theme_color": "#7c3aed",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/learn-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/learn-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "mathematics"],
+  "lang": "en-GB"
+}

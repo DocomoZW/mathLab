@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "E1_Trigonometry",
+  "topic_id": "E1_Q5",
+  "title": "Sine Rule",
+  "syllabus_ref": "IGCSE 0580 E5.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "What happens when you need to find a missing side or angle in a triangle that doesn't have a right angle? The Sine Rule is one of two powerful tools (along with the Cosine Rule) that extend trigonometry beyond right-angled triangles. Surveyors use it to map out irregular plots of land, and astronomers use it to calculate distances to stars by triangulation. Any triangle \u2014 no right angle required \u2014 can be solved using this rule.",
+    "prerequisites": [
+      "Understanding of labelling triangles with A, B, C for angles and a, b, c for opposite sides",
+      "Right-angled trigonometry (SOH CAH TOA) as a foundation",
+      "Solving algebraic equations involving fractions and cross-multiplication",
+      "Using a scientific calculator for sin values and inverse sine (sin^-1)"
+    ],
+    "core_explanation": "## The Sine Rule\n\nThe Sine Rule relates the sides of any triangle to the sines of their opposite angles. It works for **any** triangle (right-angled, acute, or obtuse).\n\n### Formula\n\nFor a triangle with sides a, b, c and opposite angles A, B, C:\n\n a/sin A = b/sin B = c/sin C \n\nOr equivalently:\n\n sin A/a = sin B/b = sin C/c \n\nWhere:\n- **Side a** is opposite **angle A**\n- **Side b** is opposite **angle B**\n- **Side c** is opposite **angle C**\n\n### When to Use the Sine Rule\n\nUse the Sine Rule when you know:\n\n**Case 1: Two angles and any side (ASA or AAS)**\n- Find the third angle (angles sum to 180 degrees)\n- Use the Sine Rule to find the missing sides\n\n**Case 2: Two sides and a non-included angle (SSA or 'the ambiguous case')**\n- Use the Sine Rule to find an angle opposite a known side\n- Be careful: there may be 0, 1, or 2 possible triangles (the ambiguous case)\n\n### The Ambiguous Case (SSA)\n\nWhen given two sides and an angle **not between** them, check:\n- If the angle is acute and the opposite side is shorter than the adjacent side, there may be **two possible triangles** (one acute, one obtuse)\n- Remember: sin(theta) = sin(180 degrees - theta), so two different angles can have the same sine value\n- If the calculated angle is acute, also check whether (180 - that angle) is a valid triangle",
+    "worked_example": "**Problem:** In triangle ABC, angle A = 40 degrees, angle B = 60 degrees, and side a = 8 cm. Find side b.\n\n**Step 1:** Identify what we know.\n- A = 40 degrees, B = 60 degrees\n- a = 8 cm (side opposite angle A)\n- b = ? (side opposite angle B)\n\n**Step 2:** Check we have enough information.\nWe have two angles and a side opposite one of them (AAS). Perfect for the Sine Rule.\nWe don't need angle C since we're using A and B.\n\n**Step 3:** Write the Sine Rule for the relevant parts.\n a/sin A = b/sin B \n\n**Step 4:** Substitute known values.\n 8/sin(40 degrees) = b/sin(60 degrees) \n\n**Step 5:** Calculate the sine values.\nsin(40 degrees) = 0.6428\nsin(60 degrees) = 0.8660\n\n**Step 6:** Solve for b.\n8 / 0.6428 = b / 0.8660\n12.445 = b / 0.8660\nb = 12.445 x 0.8660\nb = 10.78 cm\n\n**Answer:** Side b is approximately 10.8 cm (to 3 significant figures).\n\n**Step 7:** Verify.\nAngle C = 180 - 40 - 60 = 80 degrees\nCheck using the ratio: a/sin A = 8/0.6428 = 12.44\nb/sin B = 10.78/0.8660 = 12.44\nc/sin C = c/sin 80 = c/0.9848 \u2014 should also equal 12.44\nSo c = 12.44 x 0.9848 = 12.25 cm. Consistent.",
+    "common_mistakes": [
+      {
+        "mistake": "Using the Sine Rule in the wrong situation (e.g., when you have two sides and the included angle \u2014 use Cosine Rule instead)",
+        "correction": "The Sine Rule needs matching angle-side pairs. If you know two sides and the angle BETWEEN them, you cannot use the Sine Rule directly \u2014 use the Cosine Rule instead."
+      },
+      {
+        "mistake": "Forgetting the ambiguous case and only finding one solution when two exist",
+        "correction": "When using the Sine Rule to find an angle from two sides, check if both the acute angle and its supplement (180 - angle) are valid. The sum of all angles must be 180 degrees, and the other angle must be positive."
+      },
+      {
+        "mistake": "Mixing up which side pairs with which angle (e.g., using a/sin B instead of a/sin A)",
+        "correction": "Remember: side a is opposite angle A, side b is opposite angle B. Label your triangle clearly before starting. The ratio a/sin A pairs the side with its OPPOSITE angle."
+      }
+    ],
+    "summary": [
+      "The Sine Rule (a/sin A = b/sin B = c/sin C) works for ANY triangle, not just right-angled ones.",
+      "Use the Sine Rule when you know two angles and any side (ASA/AAS), or two sides and a non-included angle (SSA).",
+      "Label your triangle carefully \u2014 side a is opposite angle A, and this pairing is essential for the formula.",
+      "Beware of the ambiguous case (SSA): there may be 0, 1, or 2 possible triangles. Check both acute and obtuse possibilities.",
+      "Always verify your answer by checking that the three angles sum to 180 degrees and that all ratios are equal."
+    ]
+  }
+}

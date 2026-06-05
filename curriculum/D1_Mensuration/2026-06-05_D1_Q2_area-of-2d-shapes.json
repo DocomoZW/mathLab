@@ -1,0 +1,44 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q2",
+  "title": "Area of 2D Shapes",
+  "syllabus_ref": "IGCSE 0580 D.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "How many tiles do you need to cover a floor? How much paint for a wall? These questions are about area \u2014 the amount of space inside a 2D shape. Area calculations appear constantly in construction, landscaping, and manufacturing.",
+    "prerequisites": [
+      "Perimeter concepts",
+      "Basic multiplication and squaring",
+      "Understanding of base and height"
+    ],
+    "core_explanation": "**Area** measures the amount of space inside a 2D shape, measured in square units (cm^2, m^2, etc.).\n\n### Area Formulas\n\n| Shape | Formula |\n|-------|---------|\n| Square (side s) | A = s^2 |\n| Rectangle (length l, width w) | A = l x w |\n| Triangle (base b, height h) | A = (1/2) x b x h |\n| Parallelogram (base b, height h) | A = b x h |\n| Trapezium (parallel sides a, b, height h) | A = (1/2)(a + b)h |\n| Circle (radius r) | A = pi x r^2 |\n| Semicircle (radius r) | A = (1/2) x pi x r^2 |\n\n### Key Points\n\n- Height must be measured perpendicular to the base (at right angles).\n- For circles, square the radius first, then multiply by pi.\n- Always include the correct square units (cm^2, m^2, mm^2).\n\n### Unit Conversions\n\n1 cm^2 = 100 mm^2\n1 m^2 = 10,000 cm^2\n1 km^2 = 1,000,000 m^2\n\nWhen converting between square units, remember that each linear conversion is squared: 1 m = 100 cm, so 1 m^2 = 100 x 100 = 10,000 cm^2.",
+    "worked_example": "Problem: A triangle has base 10 cm and perpendicular height 6 cm. Find its area.\n\nStep 1: Write the formula. A = (1/2) x b x h\n\nStep 2: Substitute. A = (1/2) x 10 x 6 = 5 x 6\n\nStep 3: Calculate. A = 30 cm^2\n\nAnswer: The area is 30 cm^2.\n\nProblem: Find the area of a circle with radius 7 cm (use pi = 22/7).\n\nStep 1: Write the formula. A = pi x r^2\n\nStep 2: Substitute. A = (22/7) x 7 x 7 = 22 x 7\n\nStep 3: Calculate. A = 154 cm^2\n\nAnswer: The area is 154 cm^2.",
+    "common_mistakes": [
+      {
+        "mistake": "Using the slanted side as the height in a triangle or parallelogram.",
+        "correction": "Height must be the perpendicular distance from the base to the opposite vertex/side. Look for the right-angle marker."
+      },
+      {
+        "mistake": "Forgetting to square the radius in the circle area formula.",
+        "correction": "A = pi x r^2 means r x r first, then multiply by pi. Do NOT do (pi x r)^2."
+      },
+      {
+        "mistake": "Confusing area and circumference formulas for circles.",
+        "correction": "Remember: area involves r^2 (square units), circumference involves r or d (linear units). 'Area is square, circumference is round about the edge.'"
+      },
+      {
+        "mistake": "Incorrect unit conversions \u2014 converting 50 cm^2 to 0.5 m^2 instead of 0.005 m^2.",
+        "correction": "1 m^2 = 10,000 cm^2, so divide by 10,000 when converting from cm^2 to m^2."
+      }
+    ],
+    "summary": [
+      "Area measures the space inside a 2D shape, in square units.",
+      "Key formulas: rectangle (l x w), triangle (1/2 x b x h), circle (pi x r^2), trapezium (1/2(a+b)h).",
+      "Height must be perpendicular to the base.",
+      "Use pi = 3.142 unless stated. Square the radius before multiplying by pi.",
+      "Convert square units carefully: 1 m^2 = 10,000 cm^2, 1 cm^2 = 100 mm^2."
+    ]
+  }
+}

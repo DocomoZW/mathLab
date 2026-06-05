@@ -1,0 +1,153 @@
+{
+  "unit": "F1",
+  "topic": "Q7",
+  "title": "Combined Transformations - Problem Set",
+  "syllabus": "IGCSE O Level Mathematics (0580)",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "F1_Q7_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "A shape is reflected in the y-axis then reflected in the x-axis. What single transformation is equivalent?",
+      "options": ["180 deg rotation about origin", "Translation", "90 deg rotation", "Reflection in y=x"],
+      "answer": 0,
+      "explanation": "(x,y) -> (-x,y) -> (-x,-y). This is 180 deg rotation about origin."
+    },
+    {
+      "id": "F1_Q7_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "If shape is translated by [2,0] then reflected in the y-axis, does order matter?",
+      "options": ["Yes, order matters", "No, same result", "Only for rotations", "Never matters"],
+      "answer": 0,
+      "explanation": "In general, order of transformations matters."
+    },
+    {
+      "id": "F1_Q7_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Translation by [3,1] followed by translation by [-3,-1] gives:",
+      "options": ["Identity (no net change)", "Translation by [6,2]", "Reflection", "Rotation"],
+      "answer": 0,
+      "explanation": "[3+(-3), 1+(-1)] = [0,0], so no net transformation."
+    },
+    {
+      "id": "F1_Q7_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Two reflections in parallel lines spaced 5 units apart produce what transformation?",
+      "options": ["Translation by 10 units", "Translation by 5 units", "Reflection", "Rotation by 90 deg"],
+      "answer": 0,
+      "explanation": "Two reflections in parallel lines = translation by twice the distance."
+    },
+    {
+      "id": "F1_Q7_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A point (1,2) is reflected in x-axis, then translated by [3,4]. What is the final image?",
+      "options": ["(4, 2)", "(4, -2)", "(-2, 2)", "(4, 6)"],
+      "answer": 0,
+      "explanation": "Refl x-axis: (1,-2). Then translate: (1+3, -2+4) = (4,2)."
+    },
+    {
+      "id": "F1_Q7_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Which is NOT a valid single transformation equivalent to two reflections in intersecting lines?",
+      "options": ["Translation", "Rotation", "Could be rotation", "Depends on lines"],
+      "answer": 0,
+      "explanation": "Two reflections in intersecting lines give a rotation, not a translation."
+    },
+    {
+      "id": "F1_Q7_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point (2, 0) is rotated 90 deg anticlockwise then reflected in y-axis. What is the result?",
+      "options": ["(0, 2)", "(0, -2)", "(-2, 0)", "(2, 0)"],
+      "answer": 0,
+      "explanation": "Rotate 90: (0,2). Reflect y-axis: x changes sign -> (0,2) [x=0 unchanged]."
+    },
+    {
+      "id": "F1_Q7_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Reflection in y=x followed by reflection in y-axis is equivalent to:",
+      "options": ["90 deg clockwise rotation about origin", "90 deg anticlockwise", "180 deg rotation", "Translation"],
+      "answer": 1,
+      "explanation": "90 deg anticlockwise about origin maps (x,y) -> (-y,x). This matches the composite."
+    },
+    {
+      "id": "F1_Q7_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the result of enlargement k=2 about origin, then translation by [1,1], applied to point (0,0)?",
+      "options": ["(1, 1)", "(0, 0)", "(2, 2)", "(1, 0)"],
+      "answer": 0,
+      "explanation": "Enlarge: (0,0). Translate: (1,1)."
+    },
+    {
+      "id": "F1_Q7_10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Enlargement about origin by k=2, then reflection in y-axis. Point (1,2) maps to:",
+      "options": ["(-2, 4)", "(2, 4)", "(-1, 2)", "(2, -4)"],
+      "answer": 0,
+      "explanation": "Enlarge k=2: (2,4). Reflect y-axis: (-2,4)."
+    },
+    {
+      "id": "F1_Q7_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Two successive rotations of 45 deg anticlockwise about the same centre give:",
+      "options": ["90 deg anticlockwise rotation", "45 deg clockwise", "90 deg clockwise", "180 deg rotation"],
+      "answer": 0,
+      "explanation": "45 + 45 = 90 degrees anticlockwise about the same centre."
+    },
+    {
+      "id": "F1_Q7_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Transformation A: reflection in y=x. Transformation B: reflection in y=-x. A followed by B gives:",
+      "options": ["180 deg rotation about origin", "90 deg anticlockwise", "90 deg clockwise", "Identity"],
+      "answer": 0,
+      "explanation": "(x,y) -> (y,x) -> (-x,-y). This is 180 deg rotation about origin."
+    },
+    {
+      "id": "F1_Q7_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A shape is enlarged by k=3 about origin, then translated by [-6, 0]. Point (2,1) goes to:",
+      "options": ["(0, 3)", "(6, 3)", "(-6, 3)", "(0, -3)"],
+      "answer": 0,
+      "explanation": "Enlarge: (6,3). Translate: (6-6, 3+0) = (0,3)."
+    },
+    {
+      "id": "F1_Q7_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Glide reflection is a combination of:",
+      "options": ["Translation and reflection", "Rotation and reflection", "Two reflections", "Enlargement and translation"],
+      "answer": 0,
+      "explanation": "Glide reflection = translation followed by reflection in a line parallel to the translation."
+    },
+    {
+      "id": "F1_Q7_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point (3,0) is translated by [0,4] then rotated 90 deg anticlockwise about origin. Final image?",
+      "options": ["(-4, 3)", "(4, 3)", "(3, 4)", "(-3, -4)"],
+      "answer": 0,
+      "explanation": "Translate: (3,4). Rotate 90 anticlockwise: (-4, 3)."
+    },
+    {
+      "id": "F1_Q7_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the key property of an isometry?",
+      "options": ["Preserves distances and angles", "Preserves area only", "Preserves orientation only", "Changes shape"],
+      "answer": 0,
+      "explanation": "Isometries (translation, reflection, rotation) preserve distances and angles."
+    }
+  ]
+}

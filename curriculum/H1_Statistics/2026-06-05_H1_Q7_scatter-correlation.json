@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q7",
+  "title": "Scatter Diagrams and Correlation",
+  "syllabus_ref": "IGCSE 0580 H9.8",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Does studying more hours guarantee higher exam scores? A scatter diagram of 15 students' study hours vs. exam scores might show a clear upward trend — but one student who studied 40 hours and scored only 30% tells a different story. Scatter diagrams let us see relationships (or the lack of them) at a glance, before we jump to conclusions about cause and effect.",
+    "prerequisites": [
+      "Plotting points on a Cartesian coordinate grid",
+      "Drawing straight lines on a graph",
+      "Understanding of 'mean' and 'median' (H1_Q5)"
+    ],
+    "core_explanation": "A **scatter diagram** (scatter plot) displays paired numerical data as points on a coordinate grid, with one variable on the x-axis and the other on the y-axis.\n\n**Correlation** describes the strength and direction of a linear relationship:\n- **Positive correlation**: as x increases, y tends to increase. Points cluster around an upward-sloping line.\n- **Negative correlation**: as x increases, y tends to decrease. Points cluster around a downward-sloping line.\n- **No correlation**: no clear pattern; points are scattered randomly.\n\nCorrelation strength can be described as:\n- **Strong**: points lie close to a straight line\n- **Weak**: points are loosely scattered around a line\n- **Perfect**: all points lie exactly on a straight line (rare in real data)\n\n**Line of best fit**: A straight line drawn through a scatter plot that best represents the trend. It should pass through the mean point (x̄, ȳ) and have roughly equal numbers of points above and below it. The line is used to estimate values.\n\n**Interpolation**: Estimating a y-value for an x-value that lies within the range of the data. Generally reliable.\n**Extrapolation**: Estimating a y-value for an x-value beyond the range of the data. Less reliable because the trend may change outside the observed data.\n\n**Outliers**: Points that do not follow the general trend. They can be identified as points far from the line of best fit. Investigate outliers — they may indicate measurement error or a special case.\n\n⚠️ **Correlation does not imply causation.** Even a strong correlation does not prove that one variable causes the other. There may be a third (confounding) variable, or the relationship may be coincidental.",
+    "worked_example": "Ten students recorded their weekly revision hours and test scores (out of 100):\n| Hours (x) | 2 | 4 | 5 | 6 | 8 | 9 | 10 | 12 | 14 | 15 |\n|-----------|---|---|---|---|---|---|---|---|---|---|\n| Score (y)  | 30 | 42 | 45 | 55 | 60 | 65 | 68 | 78 | 85 | 90 |\n\n**Step 1: Draw the scatter diagram**\nPlot each (x, y) pair on a grid with x-axis labelled 'Revision Hours' (0-16) and y-axis 'Test Score' (0-100). The points show an upward trend from bottom-left to top-right.\n\n**Step 2: Describe the correlation**\nThe points cluster closely around an imaginary upward line — strong positive correlation.\n\n**Step 3: Draw the line of best fit**\nCalculate the mean point: x̄ = (2+4+5+6+8+9+10+12+14+15)/10 = 85/10 = 8.5 hours. ȳ = (30+42+45+55+60+65+68+78+85+90)/10 = 618/10 = 61.8. Mean point = (8.5, 61.8).\nDraw a straight line through (8.5, 61.8) that balances the points (about 5 above, 5 below).\n\n**Step 4: Interpolation**\nEstimate the score for a student who revises 7 hours. From the line: at x = 7, read y ≈ 50. A student with 7 hours would be expected to score about 50.\n\n**Step 5: Extrapolation (with caution)**\nEstimate the score for 18 hours. Extend the line: at x = 18, read y ≈ 100 (beyond data range). This suggests a perfect score, but the trend may not hold — students with 18 hours might experience burnout or diminishing returns.\n\n**Outlier example**: If a student with 10 hours scored only 30, that point would lie far below the trend line. Possible reasons: the student didn't actually study effectively, was unwell, or the score was recorded incorrectly.",
+    "common_mistakes": [
+      {
+        "mistake": "Claiming causation from correlation alone (e.g., 'ice cream sales cause drowning because both increase in summer').",
+        "correction": "Correlation only shows a relationship. A third factor (e.g., hot weather) may cause both variables to change. Always state 'there is a correlation between...' not 'x causes y.'"
+      },
+      {
+        "mistake": "Drawing a line of best fit that does not pass through the mean point (x̄, ȳ), or connecting the first and last data points instead of balancing points above and below.",
+        "correction": "The line of best fit must pass through (x̄, ȳ) and have roughly equal numbers of points on each side. It is not necessarily the line through the extremes."
+      },
+      {
+        "mistake": "Extrapolating far beyond the data range and treating the estimate as equally reliable as interpolation.",
+        "correction": "Extrapolation assumes the trend continues unchanged, which may be false. Always state 'this estimate is less reliable because it is outside the observed data range.'"
+      }
+    ],
+    "summary": [
+      "Scatter diagrams plot paired data to reveal relationships between two variables.",
+      "Correlation can be positive, negative, or none; strength is described as strong, weak, or perfect.",
+      "The line of best fit passes through the mean point and represents the overall trend.",
+      "Interpolation (estimating within the data range) is reliable; extrapolation (beyond the range) is less reliable.",
+      "Outliers are points that deviate from the trend — investigate rather than ignore them.",
+      "Correlation does not equal causation — always consider confounding variables."
+    ]
+  }
+}

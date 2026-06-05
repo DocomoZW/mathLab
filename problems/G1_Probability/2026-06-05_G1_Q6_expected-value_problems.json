@@ -1,0 +1,186 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q6",
+  "title": "Expected Value - Problems",
+  "problems": [
+    {
+      "id": "G1_Q6_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "expected_value",
+        "basic_expected"
+      ],
+      "problem_text": "A fair dice is rolled 60 times. How many times would you expect to roll a 4?",
+      "answer": "10",
+      "solution": "P(4) = 1/6. Expected number = 60 \u00d7 1/6 = 10."
+    },
+    {
+      "id": "G1_Q6_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "expected_value",
+        "basic_expected"
+      ],
+      "problem_text": "A bag contains 3 red and 5 blue marbles. A marble is drawn, its colour noted, and replaced. If this is done 80 times, how many times would you expect to draw a red marble?",
+      "answer": "30",
+      "solution": "P(red) = 3/8. Expected number = 80 \u00d7 3/8 = 30."
+    },
+    {
+      "id": "G1_Q6_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "expected_value",
+        "basic_expected"
+      ],
+      "problem_text": "A spinner has numbers 1 to 8, each equally likely. If the spinner is spun 200 times, how many times would you expect to get a 7?",
+      "answer": "25",
+      "solution": "P(7) = 1/8. Expected = 200 \u00d7 1/8 = 25."
+    },
+    {
+      "id": "G1_Q6_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "expected_value",
+        "basic_expected"
+      ],
+      "problem_text": "A coin is tossed 300 times. How many times would you expect to get heads?",
+      "answer": "150",
+      "solution": "P(heads) = 1/2. Expected = 300 \u00d7 1/2 = 150."
+    },
+    {
+      "id": "G1_Q6_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings"
+      ],
+      "problem_text": "In a game, you win $5 with probability 0.3 and lose $2 with probability 0.7. Find the expected value of the game.",
+      "answer": "$0.10",
+      "solution": "E = 5 \u00d7 0.3 + (-2) \u00d7 0.7 = 1.5 - 1.4 = 0.10. Expected value = $0.10."
+    },
+    {
+      "id": "G1_Q6_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "expected_value",
+        "expected_frequency"
+      ],
+      "problem_text": "A fair dice is rolled 180 times. How many times would you expect to roll a number greater than 4?",
+      "answer": "60",
+      "solution": "Numbers > 4: 5 and 6. P(>4) = 2/6 = 1/3. Expected = 180 \u00d7 1/3 = 60."
+    },
+    {
+      "id": "G1_Q6_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "expected_value",
+        "expected_frequency"
+      ],
+      "problem_text": "A card is drawn from a standard deck and then replaced. If this is done 260 times, how many times would you expect to draw a heart?",
+      "answer": "65",
+      "solution": "P(heart) = 13/52 = 1/4. Expected = 260 \u00d7 1/4 = 65."
+    },
+    {
+      "id": "G1_Q6_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings"
+      ],
+      "problem_text": "A raffle sells 100 tickets at $1 each. There is one prize of $50, two prizes of $10 each, and five prizes of $5 each. Find the expected winnings for a person who buys one ticket.",
+      "answer": "$0.95",
+      "solution": "Total prize money = 50 + 2\u00d710 + 5\u00d75 = 50+20+25 = $95. Expected winnings = 95/100 = $0.95."
+    },
+    {
+      "id": "G1_Q6_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "expected_value",
+        "expected_frequency"
+      ],
+      "problem_text": "A bag contains 2 red, 3 white and 5 black marbles. A marble is drawn, its colour noted, and replaced. If this is done 200 times, how many times would you expect to draw a white marble?",
+      "answer": "60",
+      "solution": "Total = 10. P(white) = 3/10. Expected = 200 \u00d7 3/10 = 60."
+    },
+    {
+      "id": "G1_Q6_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings"
+      ],
+      "problem_text": "A game costs $2 to play. You roll a fair dice. If you roll a 6, you win $6. If you roll a 1, you win $4. Otherwise you win nothing. Find the expected profit (or loss) per game.",
+      "answer": "-$1/3",
+      "solution": "P(6)=1/6, win $6. P(1)=1/6, win $4. P(2,3,4,5)=4/6=2/3, win $0. Expected winnings = (1/6)\u00d76 + (1/6)\u00d74 = 6/6+4/6 = 10/6 = 5/3 \u2248 $1.67. Cost = $2. Expected profit = 5/3 - 2 = 5/3 - 6/3 = -1/3."
+    },
+    {
+      "id": "G1_Q6_E1",
+      "difficulty": "E",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings"
+      ],
+      "problem_text": "A game involves spinning a fair spinner numbered 1 to 5. You win the square of the number in dollars. Find the expected winnings per spin.",
+      "answer": "$11",
+      "solution": "Expected winnings = (1/5)\u00d71^2 + (1/5)\u00d72^2 + (1/5)\u00d73^2 + (1/5)\u00d74^2 + (1/5)\u00d75^2 = (1+4+9+16+25)/5 = 55/5 = 11."
+    },
+    {
+      "id": "G1_Q6_E2",
+      "difficulty": "E",
+      "skill_tags": [
+        "expected_value",
+        "expected_frequency"
+      ],
+      "problem_text": "Two fair dice are rolled and the sum of the two numbers is recorded. If this is done 108 times, how many times would you expect the sum to be 5?",
+      "answer": "12",
+      "solution": "Total outcomes = 36. Sum = 5: (1,4),(2,3),(3,2),(4,1) \u2014 4 ways. P(sum=5) = 4/36 = 1/9. Expected = 108 \u00d7 1/9 = 12."
+    },
+    {
+      "id": "G1_Q6_E3",
+      "difficulty": "E",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings"
+      ],
+      "problem_text": "A lottery ticket costs $5. The probability of winning $100 is 0.02, the probability of winning $20 is 0.05, the probability of winning $10 is 0.1, and otherwise you win nothing. Find the expected profit or loss per ticket.",
+      "answer": "-$1.00",
+      "solution": "Expected winnings = 100\u00d70.02 + 20\u00d70.05 + 10\u00d70.1 = 2 + 1 + 1 = $4. Cost = $5. Expected profit = 4-5 = -$1. So expected loss of $1."
+    },
+    {
+      "id": "G1_Q6_E4",
+      "difficulty": "E",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings"
+      ],
+      "problem_text": "A bag contains 4 red balls and 6 blue balls. You draw a ball at random. If it is red you win $3, if it is blue you lose $2. Find the expected value of this game.",
+      "answer": "$0.00",
+      "solution": "P(red) = 4/10 = 2/5. P(blue) = 6/10 = 3/5. Expected value = 3\u00d7(2/5) + (-2)\u00d7(3/5) = 6/5 - 6/5 = 0."
+    },
+    {
+      "id": "G1_Q6_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings",
+        "fair_game"
+      ],
+      "problem_text": "A game costs $c to play. You roll two fair dice. If the sum is 7, you win $10. If the sum is 2 or 12, you win $20. Otherwise you win nothing. Find the value of c that makes the game fair (expected profit = 0).",
+      "answer": "25/9",
+      "solution": "P(sum=7)=6/36=1/6. P(sum=2)=1/36. P(sum=12)=1/36. Expected winnings = 10\u00d7(1/6)+20\u00d7(1/36)+20\u00d7(1/36)=10/6+40/36=60/36+40/36=100/36=25/9. For a fair game, c=expected winnings=25/9."
+    },
+    {
+      "id": "G1_Q6_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "expected_value",
+        "expected_winnings",
+        "optimal_strategy"
+      ],
+      "problem_text": "A game costs $4 to play. You draw two cards from a standard deck without replacement. If both are aces, you win $100. If exactly one is an ace, you win $10. Otherwise you lose. Find the expected profit of this game.",
+      "answer": "-$464/221",
+      "solution": "C(52,2)=1326. P(both aces)=C(4,2)/1326=6/1326=1/221. P(exactly one ace)=(4\u00d748)/1326=192/1326=32/221. Expected winnings=100\u00d7(1/221)+10\u00d7(32/221)=(100+320)/221=420/221. Cost=$4. Expected profit=420/221-4=420/221-884/221=-464/221."
+    }
+  ]
+}

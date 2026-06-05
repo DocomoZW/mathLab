@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q1",
+  "title": "Number Types — Problems",
+  "problems": [
+    {
+      "id": "A1_Q1_01",
+      "difficulty": "basic",
+      "question": "Is $\\sqrt{25}$ rational or irrational? Explain your reasoning.",
+      "answer": "$\\sqrt{25} = 5$, which can be written as $\\frac{5}{1}$. Therefore it is rational.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q1_02",
+      "difficulty": "basic",
+      "question": "Which of the following numbers are natural numbers? $$-2, \\, 0, \\, 1, \\, \\frac{3}{2}, \\, 7, \\, \\sqrt{9}$$",
+      "answer": "$1$, $7$, and $\\sqrt{9} = 3$ are natural numbers. $-2$ is negative, $0$ is not usually a natural number (check your syllabus), and $\\frac{3}{2}$ is not a whole number.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q1_03",
+      "difficulty": "intermediate",
+      "question": "Classify the number $\\frac{22}{7}$ as rational or irrational. Many people think it equals $\\pi$. Is that true?",
+      "answer": "$\\frac{22}{7}$ is rational because it is a fraction of two integers. It is approximately $3.142857\\dots$, while $\\pi \\approx 3.14159\\dots$. They are not equal — $\\frac{22}{7}$ is just a common approximation for $\\pi$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q1_04",
+      "difficulty": "intermediate",
+      "question": "Write down a rational number between $\\sqrt{2}$ and $\\sqrt{3}$.",
+      "answer": "$\\sqrt{2} \\approx 1.414$ and $\\sqrt{3} \\approx 1.732$. A rational number between them is $1.5 = \\frac{3}{2}$. (Other valid answers: $1.5$, $1.6$, $\\frac{17}{10}$, etc.)",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q1_05",
+      "difficulty": "advanced",
+      "question": "Prove that $\\sqrt{2}$ is irrational. (Hint: use proof by contradiction, assuming $\\sqrt{2} = \\frac{a}{b}$ in lowest terms.)",
+      "answer": "Assume $\\sqrt{2} = \\frac{a}{b}$ where $a, b$ are integers with no common factors and $b \\neq 0$. Squaring both sides: $2 = \\frac{a^2}{b^2}$, so $a^2 = 2b^2$. This means $a^2$ is even, so $a$ is even. Write $a = 2k$. Then $(2k)^2 = 2b^2$, so $4k^2 = 2b^2$, so $b^2 = 2k^2$. This means $b^2$ is even, so $b$ is even. But then $a$ and $b$ share a factor of $2$, contradicting that they are in lowest terms. Therefore $\\sqrt{2}$ cannot be rational.",
+      "marks": 4
+    },
+    {
+      "id": "A1_Q1_06",
+      "difficulty": "advanced",
+      "question": "Determine whether $\\sqrt{3 + \\sqrt{4}}$ is rational or irrational.",
+      "answer": "$\\sqrt{3 + \\sqrt{4}} = \\sqrt{3 + 2} = \\sqrt{5}$. Since $5$ is not a perfect square, $\\sqrt{5}$ is irrational.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q1_07",
+      "difficulty": "challenge",
+      "question": "Is the sum of two irrational numbers always irrational? If not, provide a counterexample.",
+      "answer": "No. Counterexample: $\\sqrt{2}$ and $-\\sqrt{2}$ are both irrational, but their sum is $0$, which is rational. Another example: $(2 + \\sqrt{3})$ and $(2 - \\sqrt{3})$ are both irrational, but their sum is $4$, which is rational.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q1_08",
+      "difficulty": "challenge",
+      "question": "Prove or disprove: If $x$ is rational and $y$ is irrational, then $x + y$ is irrational.",
+      "answer": "This is true. Proof by contradiction: Suppose $x + y$ is rational. Then $y = (x + y) - x$. The difference of two rationals is rational, so $y$ would be rational. But $y$ is given as irrational — contradiction. Therefore $x + y$ must be irrational.",
+      "marks": 3
+    }
+  ]
+}

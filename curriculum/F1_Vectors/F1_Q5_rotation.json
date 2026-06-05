@@ -1,0 +1,34 @@
+{
+  "track": "igcse_o",
+  "unit": "F1_Vectors",
+  "topic_id": "F1_Q5",
+  "title": "Rotation",
+  "syllabus_ref": "0580 F7.3",
+  "version": 1,
+  "created_at": "2026-06-05T11:00:00Z",
+  "sections": {
+    "hook": "A rotation turns a shape around a fixed point by a given angle.",
+    "prerequisites": [
+      "Angles and bearings",
+      "Coordinate geometry",
+      "Construction skills"
+    ],
+    "core_explanation": "Rotation is described by: centre, angle, direction (clockwise/anticlockwise). A 90° rotation about O: (x,y) → (-y,x). The shape is congruent.",
+    "worked_example": "**Question:** Rotate P(2,1) 90° anticlockwise about O(0,0).\n\n**Solution:** P'(-1,2)",
+    "common_mistakes": [
+      {
+        "mistake": "Adding vectors incorrectly by adding only x or only y components",
+        "correction": "Always add x-components together AND y-components together separately"
+      },
+      {
+        "mistake": "Confusing direction in rotations (clockwise vs anticlockwise)",
+        "correction": "Draw a simple diagram to verify the direction before calculating coordinates"
+      }
+    ],
+    "summary": [
+      "Rotation is a fundamental concept in IGCSE Mathematics",
+      "Always check your answer makes sense in the context",
+      "Practice with different values to build confidence"
+    ]
+  }
+}

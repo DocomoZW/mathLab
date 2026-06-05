@@ -1,0 +1,44 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q1",
+  "title": "Data Collection and Types",
+  "syllabus_ref": "IGCSE 0580 H9.1",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A school wants to find out which lunch option is most popular among students. Should they ask every single student (2000 of them), or just ask one class? How should they record the answers — as 'Chicken', 'Pasta', 'Veggie' or as numbers? The choices you make about collecting and classifying data determine whether you get useful results or misleading nonsense.",
+    "prerequisites": [
+      "Basic arithmetic (counting and simple percentages)",
+      "Understanding of sorting and grouping items into categories",
+      "Familiarity with tally marks"
+    ],
+    "core_explanation": "Data is information collected for analysis. How you collect and classify it matters.\n\n**Primary vs Secondary Data**\n- **Primary data** — collected directly by you (surveys, experiments, observations). Fresh and specific, but time-consuming and costly.\n- **Secondary data** — already collected by someone else (government stats, published reports, websites). Quick and cheap, but may not perfectly fit your needs.\n\n**Qualitative vs Quantitative Data**\n- **Qualitative (categorical)** — describes qualities or categories (e.g., eye colour, favourite subject, type of car). Cannot be measured numerically.\n- **Quantitative (numerical)** — involves numbers and measurements (e.g., height in cm, number of siblings, test score). Can be further split.\n\n**Discrete vs Continuous Data**\n- **Discrete data** — can only take specific, separate values (usually whole numbers). Counts of things: number of students in a class, shoe sizes, number of cars passing.\n- **Continuous data** — can take any value within a range. Measurements: height, weight, time, temperature.\n\n**Data Collection Methods**\n- **Surveys / Questionnaires** — ask people. Must avoid biased wording.\n- **Experiments** — controlled conditions to measure outcomes.\n- **Observations** — watch and record without interfering.\n- **Census** — survey every member of a population (accurate but expensive).\n- **Sample** — survey a subset (cheaper, faster, but can have sampling bias).\n\n**Tally Charts**\nA tally chart is a quick way to record data as it is collected. Groups of 5 are typically drawn as four vertical lines with a diagonal cross (\\cancel{||||}). This makes counting totals easy.",
+    "worked_example": "A student asks 20 classmates: 'How many siblings do you have?' The raw answers are: 2, 1, 0, 3, 1, 2, 1, 0, 2, 1, 4, 1, 2, 0, 1, 2, 1, 3, 2, 1\n\n**Step 1 — Organise with a tally chart**\n\n| Number of siblings | Tally | Frequency |\n|-------------------|-------|-----------|\n| 0                 | III   | 3         |\n| 1                 | ⁫⁫⁫⁫⁫ II | 7         |\n| 2                 | ⁫⁫⁫⁫⁫ I | 6         |\n| 3                 | II    | 2         |\n| 4                 | I     | 1         |\n| 5+                |       | 0         |\n\n**Step 2 — Classify the data**\n- Type of data: **Quantitative** (numbers about siblings)\n- Sub-type: **Discrete** (you can't have 2.5 siblings)\n- Collection method: **Primary data** (the student asked classmates themselves)\n\n**Step 3 — Interpret**\nTotal = 3 + 7 + 6 + 2 + 1 = 20 ✓. Most common number of siblings is 1.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing 'discrete' and 'continuous' — treating age in years as continuous (it's discrete if measured in whole years; continuous if measured precisely like 12.583 years).",
+        "correction": "Ask: can it be any value in a range? Height (1.63 m, 1.631 m, ...) is continuous. Shoe size (7, 7.5, 8) is discrete because it can only be specific values."
+      },
+      {
+        "mistake": "Calling any number-based data 'quantitative' but forgetting that numbers used as labels (e.g., jersey numbers 1–11) are qualitative.",
+        "correction": "If the numbers are just codes/labels with no meaningful arithmetic (jersey number × 2 is meaningless), the data is qualitative."
+      },
+      {
+        "mistake": "Thinking 'sample' and 'census' are interchangeable — a census covers everyone, a sample covers part of the population.",
+        "correction": "Census = whole population (expensive, time-consuming). Sample = subset (cheaper, faster, but can have bias if not representative)."
+      },
+      {
+        "mistake": "Tally marks recorded incorrectly — grouping inconsistently or missing the diagonal cross on the 5th mark.",
+        "correction": "Always group by 5: four vertical lines then a diagonal cross through them (\\cancel{||||}). This makes totalling quick at a glance."
+      }
+    ],
+    "summary": [
+      "Primary data is collected by you; secondary data is from existing sources.",
+      "Qualitative data describes categories; quantitative data involves numbers.",
+      "Discrete data takes only specific values (counts); continuous data can take any value in a range (measurements).",
+      "A tally chart organises raw data into groups of 5 for easy frequency counting.",
+      "Choose collection methods carefully — surveys, experiments, observations, census, or sample — based on cost, time, and accuracy needs."
+    ]
+  }
+}

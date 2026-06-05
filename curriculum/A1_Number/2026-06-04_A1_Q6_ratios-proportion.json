@@ -1,0 +1,41 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q6",
+  "title": "Ratios & Proportion",
+  "syllabus_ref": "IGCSE 0580 C1.6",
+  "version": 1,
+  "created_at": "2026-06-04T23:00:00Z",
+  "sections": {
+    "hook": "A recipe from your grandmother calls for flour and sugar in a $3:2$ ratio. You have $500$ g of flour — how much sugar do you need? Or you're mixing concrete at a $1:2:4$ ratio of cement to sand to gravel — if you need $3.5$ m³ of concrete, how much of each ingredient? Ratios are the hidden maths behind every recipe, construction project, and map you've ever used.",
+    "prerequisites": [
+      "Basic arithmetic (multiplication and division)",
+      "Simplifying fractions",
+      "Understanding of multiples"
+    ],
+    "core_explanation": "### Ratios\n\nA **ratio** compares quantities of the same kind. If there are $3$ boys and $2$ girls in a group, the ratio is $3:2$ (boys to girls).\n\n**Simplifying Ratios:** Divide all parts by their HCF.\n$$12:8 = 3:2 \\quad (\\text{divide both by } 4)$$\n$$20:15:10 = 4:3:2 \\quad (\\text{divide all by } 5)$$\n\n**Sharing in a Given Ratio:** To share $\\$60$ in the ratio $2:3$:\n- Total parts: $2 + 3 = 5$\n- One part: $\\$60 \\div 5 = \\$12$\n- First share: $2 \\times \\$12 = \\$24$\n- Second share: $3 \\times \\$12 = \\$36$\n\n**Increasing in a Ratio:** If a recipe for $4$ people needs $300$ g of flour, to serve $6$ people multiply by $\\frac{6}{4} = 1.5$. You need $300 \\times 1.5 = 450$ g.\n\n### Direct Proportion\n\nTwo quantities are **directly proportional** if one is a constant multiple of the other:\n$$y \\propto x \\quad \\text{means} \\quad y = kx$$\nwhere $k$ is the **constant of proportionality**.\n\nIf $y$ is directly proportional to $x$, and $y = 12$ when $x = 3$:\n$$12 = k \\times 3 \\Rightarrow k = 4$$\n$$y = 4x$$\nWhen $x = 7$, $y = 4 \\times 7 = 28$.\n\n### Inverse Proportion\n\nTwo quantities are **inversely proportional** if one is a constant divided by the other:\n$$y \\propto \\frac{1}{x} \\quad \\text{means} \\quad y = \\frac{k}{x}$$\n\nIf $y$ is inversely proportional to $x$, and $y = 6$ when $x = 2$:\n$$6 = \\frac{k}{2} \\Rightarrow k = 12$$\n$$y = \\frac{12}{x}$$\nWhen $x = 4$, $y = \\frac{12}{4} = 3$.\n\n### Unitary Method\n\nFind the value of **one unit** first, then multiply.\nIf $5$ apples cost $\\$2.50$, then $1$ apple costs $\\$0.50$, and $8$ apples cost $8 \\times \\$0.50 = \\$4.00$.",
+    "worked_example": "**Problem:** $3$ painters take $8$ days to paint a house. How long would $5$ painters take if they work at the same rate?\n\n**Solution:**\n\nThis is an **inverse proportion** problem — more painters means fewer days.\n\nStep 1: Find the constant. If $p$ is painters and $d$ is days:\n$$p \\times d = k$$\n$$3 \\times 8 = 24$$\nSo $k = 24$.\n\nStep 2: Use $k$ to find the new value.\n$$5 \\times d = 24$$\n$$d = \\frac{24}{5} = 4.8$$\n\n**Answer:** $5$ painters would take $4.8$ days (or $4$ days and $19.2$ hours).\n\n**Alternative (unitary method):**\nOne painter takes $3 \\times 8 = 24$ days.\nFive painters take $24 \\div 5 = 4.8$ days.",
+    "common_mistakes": [
+      {
+        "mistake": "Adding ratio parts when simplifying: simplifying $10:4$ to $5:4$ (subtracting 6 from the first part instead of dividing both by 2)",
+        "correction": "Always **divide** both parts of a ratio by the same number (their HCF). $10:4 = \\frac{10}{2} : \\frac{4}{2} = 5:2$."
+      },
+      {
+        "mistake": "Confusing direct and inverse proportion — assuming more means more in every scenario",
+        "correction": "Ask yourself: if one quantity increases, does the other increase (direct) or decrease (inverse)? More workers → less time (inverse). More hours → more pay (direct)."
+      },
+      {
+        "mistake": "Forgetting to find the total number of parts when sharing in a ratio",
+        "correction": "Always add the parts first: for ratio $a:b$, total = $a+b$, one part = total amount $\\div (a+b)$."
+      }
+    ],
+    "summary": [
+      "Ratios compare quantities; simplify by dividing all parts by the HCF",
+      "Share in a ratio by finding the value of one part first",
+      "Direct proportion: $y = kx$ — as one goes up, the other goes up",
+      "Inverse proportion: $y = \\frac{k}{x}$ — as one goes up, the other goes down",
+      "The unitary method: find one unit, then multiply",
+      "Use the constant of proportionality $k$ to solve proportion problems"
+    ]
+  }
+}

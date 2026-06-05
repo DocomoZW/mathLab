@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "version": "1.0",
+    "project": "MathsLMS",
+    "description": "Quick-command shortcuts for the MathsLMS multi-agent pipeline on Hermes AgentOS",
+    "created": "2026-06-04",
+    "schema": "quick-commands"
+  },
+  "commands": [
+    {
+      "command": "/generate-unit",
+      "syntax": "/generate-unit UNIT_ID",
+      "description": "Generates all content for a specified unit: concept scripts → formatted JSON → Manim animations → problem sets. Runs the full pipeline: Curriculum -> Content -> Animation -> Problems. Each stage validates before the next begins.",
+      "stages": [
+        {
+          "order": 1,
+          "agent": "Curriculum",
+          "action": "Write concept scripts covering every topic in the unit. Produces JSON files with hook, explanation, worked examples.",
+          "output_path": "/opt/data/.hermes/content/curriculum/{track}/{unit_id}/"
+        },
+        {
+          "order": 2,
+          "agent": "Content",
+          "action": "Format all concept scripts into structured JSON with validated LaTeX. Adds metadata, content hash, version tracking.",
+          "output_path": "/opt/data/.hermes/content/curriculum/{track}/{unit_id}/"
+        },
+        {
+          "order": 3,
+          "agent": "Animation",
+          "action": "Write Manim Python scripts for each concept. Produces 1-4 scenes per topic covering key visual moments.",
+          "output_path": "/opt/data/.hermes/content/animations/{track}/{unit_id}/"
+        },
+        {
+          "order": 4,
+          "agent": "Problems",
+          "action": "Generate 16 practice problems per topic (4 per difficulty level: Foundation, Core, Challenge, Extension) with full solutions.",
+          "output_path": "/opt/data/.hermes/content/problems/{track}/{unit_id}/"
+        }
+      ],
+      "activated_agents": ["Curriculum", "Content", "Animation", "Problems"],
+      "example": "/generate-unit A1_Number",
+      "notes": "Pipeline runs sequentially. Orchestrator validates each stage before dispatching the next. The track (igcse_o|a_level|imo) is inferred from the unit prefix or the current project phase."
+    },
+    {
+      "command": "/render-gifs",
+      "syntax": "/render-gifs UNIT_ID",
+      "description": "Queues GIF renders for all Manim scripts in a unit. The Deploy agent runs Manim CE render commands and uploads resulting GIFs. Updates gif_renders table with status.",
+      "stages": [
+        {
+          "order": 1,
+          "agent": "Animation",
+          "action": "Verify that all Manim .py scripts exist for the unit. Report any missing scripts.",
+          "output_path": null
+        },
+        {
+          "order": 2,
+          "agent": "Deploy",
+          "action": "Queue all Manim scripts for rendering. Run: manim -pql {script.py} for preview quality, or -pqh for high quality. Capture stdout/stderr for each render.",
+          "output_path": "/opt/data/.hermes/content/gifs/{track}/{unit_id}/"
+        },
+        {
+          "order": 3,
+          "agent": "Deploy",
+          "action": "Update gif_renders table entries: set render_status to 'done' or 'error', record file_size_kb, duration_sec, and final gif_path.",
+          "output_path": null
+        }
+      ],
+      "activated_agents": ["Animation", "Deploy"],
+      "example": "/render-gifs A1_Number",
+      "notes": "Renders run on the VPS GPU (if available) or CPU (software render). Preview quality (-pql) is recommended for initial renders. Full quality (-pqh) for final production. GIF render time varies from 30s to 5min per script depending on complexity."
+    },
+    {
+      "command": "/qa-unit",
+      "syntax": "/qa-unit UNIT_ID",
+      "description": "Runs full quality assurance on all content for a unit. The QA agent reviews curriculum JSONs, Manim scripts, problem sets, and walkthroughs. Produces a structured QA report with ERROR/WARNING/INFO findings.",
+      "stages": [
+        {
+          "order": 1,
+          "agent": "QA",
+          "action": "Collect all artifacts for the unit: curriculum content JSONs, animation scripts, problem sets, and walkthroughs (if any).",
+          "output_path": null
+        },
+        {
+          "order": 2,
+          "agent": "QA",
+          "action": "Review each artifact: verify mathematical accuracy (recalculate all working), LaTeX validity, pedagogical quality, and format compliance. Cross-reference problems with solutions and worked examples with answers.",
+          "output_path": null
+        },
+        {
+          "order": 3,
+          "agent": "QA",
+          "action": "Produce a QA report. Classify each finding as ERROR (must fix), WARNING (should fix), or INFO (optional). Include corrected versions for all errors.",
+          "output_path": "/opt/data/.hermes/content/qa-reports/{YYYY-MM-DD}_{unit_id}_qa-review.md"
+        },
+        {
+          "order": 4,
+          "agent": "Orchestrator",
+          "action": "Review QA verdict. If PASS: promote unit to 'Live' status. If FLAGGED: route errors back to originating agents with the QA report for fixes.",
+          "output_path": null
+        }
+      ],
+      "activated_agents": ["QA", "Orchestrator"],
+      "example": "/qa-unit A1_Number",
+      "notes": "QA is the gate before promotion to Live. Units with ERROR findings will not be promoted. The QA agent uses the same model as the content producers for accuracy checking. Run /qa-unit after all other pipeline stages are complete."
+    },
+    {
+      "command": "/pipeline-status",
+      "syntax": "/pipeline-status",
+      "description": "Returns the current state of the MathsLMS content pipeline. Queries the content_tasks, gif_renders, and past_paper_progress tables to build a summary of all work items: pending, in_progress, done, and flagged. Also reports pipeline_stats metrics.",
+      "stages": [
+        {
+          "order": 1,
+          "agent": "Orchestrator",
+          "action": "Query mathlms.db: SELECT track, unit, stage, status, COUNT(*) FROM content_tasks GROUP BY track, unit, stage, status. Build a structured summary grouped by track and unit.",
+          "output_path": null
+        },
+        {
+          "order": 2,
+          "agent": "Orchestrator",
+          "action": "Query mathlms.db: SELECT render_status, COUNT(*) FROM gif_renders GROUP BY render_status. Report GIF queue status (queued/rendering/done/error).",
+          "output_path": null
+        },
+        {
+          "order": 3,
+          "agent": "Orchestrator",
+          "action": "Query mathlms.db: SELECT collection, SUM(tagged)/SUM(total_questions) as pct FROM past_paper_progress GROUP BY collection. Report past paper tagging progress.",
+          "output_path": null
+        },
+        {
+          "order": 4,
+          "agent": "Orchestrator",
+          "action": "Query mathlms.db: SELECT metric, value FROM pipeline_stats ORDER BY updated_at DESC LIMIT 20. Report key metrics.",
+          "output_path": null
+        }
+      ],
+      "activated_agents": ["Orchestrator"],
+      "example": "/pipeline-status",
+      "notes": "This is a read-only query command. It does not modify any state. Returns a formatted multi-section summary suitable for display in Telegram or the dashboard."
+    },
+    {
+      "command": "/mathos-help",
+      "syntax": "/mathos-help",
+      "description": "Shows available MathsLMS pipeline commands, their syntax, and descriptions. Lists all quick-commands with brief usage notes.",
+      "stages": [
+        {
+          "order": 1,
+          "agent": "Orchestrator",
+          "action": "Return the list of registered quick-commands with their syntax and one-line descriptions. Include the overall pipeline flow diagram.",
+          "output_path": null
+        }
+      ],
+      "activated_agents": ["Orchestrator"],
+      "example": "/mathos-help",
+      "notes": "Displays: /generate-unit, /render-gifs, /qa-unit, /pipeline-status, and /mathos-help itself. Also shows the pipeline phase sequence: Backlog -> Scripting -> Animating -> QA Review -> Live."
+    }
+  ]
+}

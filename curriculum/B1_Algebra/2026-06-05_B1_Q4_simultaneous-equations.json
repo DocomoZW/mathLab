@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q4",
+  "title": "Simultaneous Equations",
+  "syllabus_ref": "IGCSE 0580 C2.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "Imagine you're at a market stall with two identical-looking bags of fruit. One bag has 3 apples and 2 bananas costing $2.80. Another has 1 apple and 4 bananas costing $2.60. Can you figure out the individual prices? This is exactly what simultaneous equations do — they use two pieces of information to find two unknown values.",
+    "prerequisites": [
+      "Solving linear equations",
+      "Manipulating algebraic expressions",
+      "Understanding of coordinates and graphs"
+    ],
+    "core_explanation": "Simultaneous equations are a system of two (or more) equations that share the same variables. The solution is the pair(s) of values that satisfy all equations at once.\n\n**Method 1: Elimination**\nMake the coefficients of one variable the same in both equations, then add or subtract to eliminate that variable.\n\nExample: Solve $3x + y = 11$ and $2x - y = 4$\n1. The $y$ coefficients are $+1$ and $-1$. Adding eliminates $y$.\n2. $(3x + y) + (2x - y) = 11 + 4$\n3. $5x = 15$, so $x = 3$\n4. Substitute back: $3(3) + y = 11$, so $9 + y = 11$, $y = 2$\n5. Solution: $x = 3$, $y = 2$\n\n**Method 2: Substitution**\nMake one variable the subject of one equation, then substitute into the other.\n\nExample: Solve $y = 2x + 1$ and $3x + 2y = 16$\n1. Substitute $y = 2x + 1$ into the second equation:\n2. $3x + 2(2x + 1) = 16$\n3. $3x + 4x + 2 = 16$\n4. $7x = 14$, so $x = 2$\n5. Substitute back: $y = 2(2) + 1 = 5$\n6. Solution: $x = 2$, $y = 5$\n\n**Choosing the Method:**\n- Elimination is best when coefficients are small and cancellation is easy\n- Substitution is best when one equation already has a variable isolated (e.g., $y = ...$ or $x = ...$)\n\n**Graphical Method:**\nEach equation represents a straight line. The solution is the point where the two lines intersect. Plot both lines; the intersection coordinates are the solution.\n\n**Solving Word Problems:**\n1. Define variables ($x$ and $y$) for the unknown quantities\n2. Write two equations based on the information given\n3. Solve using elimination or substitution\n4. Check the answer makes sense in the original context",
+    "worked_example": "**Problem:** Solve $2x + 3y = 7$ and $5x - 2y = 8$\n\n**Step 1:** Choose elimination. The LCM of 3 and 2 is 6. Multiply to match $y$ coefficients.\n- Equation 1 × 2: $4x + 6y = 14$\n- Equation 2 × 3: $15x - 6y = 24$\n\n**Step 2:** Add the equations to eliminate $y$.\n$(4x + 6y) + (15x - 6y) = 14 + 24$\n$19x = 38$\n$x = 2$\n\n**Step 3:** Substitute $x = 2$ into Equation 1.\n$2(2) + 3y = 7$\n$4 + 3y = 7$\n$3y = 3$\n$y = 1$\n\n**Step 4:** Check in Equation 2.\n$5(2) - 2(1) = 10 - 2 = 8$ ✓\n\n**Answer:** $x = 2$, $y = 1$",
+    "common_mistakes": [
+      {
+        "mistake": "Adding when you should subtract (or vice versa) when eliminating variables",
+        "correction": "If the coefficients have the SAME sign, subtract. If they have OPPOSITE signs, add. Write this out clearly: 'Equation 1 − Equation 2' or 'Equation 1 + Equation 2'."
+      },
+      {
+        "mistake": "Making sign errors when substituting a negative value back into an equation",
+        "correction": "Use brackets when substituting: if $x = -2$, write $3(-2) + 2y = 5$ not $3(-2) + 2y = 5$ — actually the former is exactly right. Always substitute into the ORIGINAL equation, not a transformed one."
+      },
+      {
+        "mistake": "Forgetting to check the solution in BOTH equations",
+        "correction": "A solution that works in one equation but not the other is NOT a valid solution to the system. Always verify in both original equations."
+      }
+    ],
+    "summary": [
+      "Elimination: match coefficients of one variable, then add or subtract to eliminate it",
+      "Substitution: isolate one variable and substitute into the other equation",
+      "Graphically: the solution is the intersection point of the two lines",
+      "Always check your answer in both original equations",
+      "Word problems: define variables, form equations, solve, then interpret results"
+    ]
+  }
+}

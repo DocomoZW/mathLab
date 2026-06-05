@@ -1,0 +1,46 @@
+{
+  "track": "igcse_o",
+  "unit": "C1_Geometry",
+  "topic_id": "C1_Q6",
+  "title": "Circle Theorems 1: Angles in Circles and Cyclic Quadrilaterals",
+  "syllabus_ref": "IGCSE 0580 C4.1-C4.4",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "The circle is one of the most elegant shapes in mathematics — perfectly symmetrical and deceptively simple. But hidden within its circumference are some of the most beautiful geometric relationships ever discovered. Ancient Greek mathematicians like Thales and Euclid uncovered these theorems over 2000 years ago, and they still appear on every IGCSE paper today. The most surprising? The angle at the centre of a circle is always exactly twice the angle at the circumference — no matter where you draw them!",
+    "prerequisites": [
+      "C1_Q1: Types of angles and basic angle properties",
+      "C1_Q2: Parallel lines (angles on a straight line)",
+      "C1_Q4: Triangle properties, isosceles triangles",
+      "Basic understanding of circles: centre, radius, chord, arc, sector, segment"
+    ],
+    "core_explanation": "A circle has several key parts: the **centre** ($O$), **radius** (distance from centre to edge), **diameter** (a chord through the centre, twice the radius), **chord** (a line segment joining two points on the circumference), **arc** (a curved part of the circumference), and **segment** (region bounded by a chord and an arc).\n\n### Theorem 1: Angle in a Semicircle\n\nAn angle inscribed in a semicircle is always a **right angle** ($90^\\\\circ$).\n\nIf $AB$ is a diameter of a circle and $C$ is any point on the circumference (other than $A$ and $B$), then:\n$$\\\\angle ACB = 90^\\\\circ$$\n\n### Theorem 2: Angle at the Centre is Twice the Angle at the Circumference\n\nThe angle subtended by an arc at the centre of the circle is **twice** the angle subtended by the same arc at any point on the circumference.\n\nIf $A$ and $B$ are points on the circumference and $O$ is the centre, and $C$ is any other point on the circumference on the same side of $AB$:\n$$\\\\angle AOB = 2 \\\\times \\\\angle ACB$$\n\nThis is the most powerful circle theorem — it connects any angle at the circumference to its corresponding angle at the centre.\n\n### Theorem 3: Angles in the Same Segment are Equal\n\nAll angles subtended by the same chord (or arc) in the same segment of a circle are equal.\n\nIf points $C$ and $D$ both lie on the same arc (the same side of chord $AB$):\n$$\\\\angle ACB = \\\\angle ADB$$\n\n### Theorem 4: Cyclic Quadrilateral\n\nA **cyclic quadrilateral** is a quadrilateral whose four vertices all lie on the circumference of a circle.\n\n**Opposite angles in a cyclic quadrilateral sum to $180^\\\\circ$.**\n\nIf $ABCD$ is a cyclic quadrilateral:\n$$\\\\angle A + \\\\angle C = 180^\\\\circ$$\n$$\\\\angle B + \\\\angle D = 180^\\\\circ$$\n\nThis follows from Theorem 2: the two opposite angles subtend arcs that together make the whole circle ($360^\\\\circ$ at the centre, so half that at the circumference).\n\n### Connection Between Theorems\n\nNotice that Theorem 1 is actually a special case of Theorem 2! When the chord $AB$ is a diameter, $\\\\angle AOB = 180^\\\\circ$ (straight line through the centre). Then:\n$$\\\\angle ACB = \\\\frac{1}{2} \\\\times \\\\angle AOB = \\\\frac{1}{2} \\\\times 180^\\\\circ = 90^\\\\circ$$",
+    "worked_example": "**Problem:** In the diagram, $O$ is the centre of the circle. $A$, $B$, and $C$ are points on the circumference. $\\\\angle AOB = 110^\\\\circ$ and $\\\\angle OBC = 25^\\\\circ$. Find $\\\\angle ACB$ and $\\\\angle OCB$.\n\n**Step 1:** Find $\\\\angle ACB$ using Theorem 2 (angle at centre is twice angle at circumference).\n- $\\\\angle AOB$ is the angle at the centre subtended by arc $AB$.\n- $\\\\angle ACB$ is the angle at the circumference subtended by the same arc $AB$.\n$$\\\\angle AOB = 2 \\\\times \\\\angle ACB$$\n$$110^\\\\circ = 2 \\\\times \\\\angle ACB$$\n$$\\\\angle ACB = 55^\\\\circ$$\n\n**Step 2:** Find $\\\\angle OCB$.\n- Triangle $OBC$ is isosceles because $OB = OC$ (both are radii).\n- In an isosceles triangle, base angles are equal.\n- $\\\\angle OBC = \\\\angle OCB$ (base angles)\n$$\\\\angle OCB = \\\\angle OBC = 25^\\\\circ$$\n\n**Answer:** $\\\\angle ACB = 55^\\\\circ$, $\\\\angle OCB = 25^\\\\circ$.\n\n---\n\n**Problem:** $ABCD$ is a cyclic quadrilateral. $\\\\angle A = 78^\\\\circ$ and $\\\\angle B = 115^\\\\circ$. Find $\\\\angle C$ and $\\\\angle D$.\n\n**Step 1:** Use the cyclic quadrilateral theorem.\n- Opposite angles sum to $180^\\\\circ$.\n$$\\\\angle A + \\\\angle C = 180^\\\\circ$$\n$$78^\\\\circ + \\\\angle C = 180^\\\\circ$$\n$$\\\\angle C = 102^\\\\circ$$\n\n**Step 2:** Find $\\\\angle D$.\n$$\\\\angle B + \\\\angle D = 180^\\\\circ$$\n$$115^\\\\circ + \\\\angle D = 180^\\\\circ$$\n$$\\\\angle D = 65^\\\\circ$$\n\n**Check:** $\\\\angle A + \\\\angle B + \\\\angle C + \\\\angle D = 78^\\\\circ + 115^\\\\circ + 102^\\\\circ + 65^\\\\circ = 360^\\\\circ$. \\\\checkmark\n\n**Answer:** $\\\\angle C = 102^\\\\circ$, $\\\\angle D = 65^\\\\circ$.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing which arc subtends which angle — applying Theorem 2 to the wrong pair of angles (e.g., pairing an angle at the centre with an angle at the circumference that subtend different arcs).",
+        "correction": "Both angles must subtend the SAME arc (the same chord). Draw the chord connecting the two endpoints and check that both angles 'look at' the same chord from their respective positions."
+      },
+      {
+        "mistake": "Applying the cyclic quadrilateral rule to ANY quadrilateral that happens to be inside a circle, not just those with ALL four vertices on the circumference.",
+        "correction": "A cyclic quadrilateral must have all four vertices ON the circle. If a quadrilateral is inscribed with one vertex inside the circle, the rule does not apply. Check: does every vertex touch the circumference?"
+      },
+      {
+        "mistake": "Forgetting that the 'angle in a semicircle' theorem requires the chord to be a DIAMETER (passing through the centre). A chord that doesn't pass through the centre does not guarantee 90°.",
+        "correction": "If the problem says a triangle is inscribed in a semicircle, look for the diameter. The right angle is always at the point on the circumference opposite the diameter."
+      },
+      {
+        "mistake": "Thinking angles in the same segment are equal to the angle at the centre.",
+        "correction": "Angles in the same segment are EQUAL to each other. They are HALF of the angle at the centre. Remember: centre = 2 × circumference, and same-segment angles are equal."
+      }
+    ],
+    "summary": [
+      "The angle in a semicircle is always $90^\\\\circ$ (Thales' theorem).",
+      "The angle at the centre of a circle is twice the angle at the circumference subtending the same arc.",
+      "Angles in the same segment are equal to each other.",
+      "A cyclic quadrilateral has all its vertices on the circle; opposite angles sum to $180^\\\\circ$.",
+      "The angle-in-a-semicircle theorem is a special case of the centre-twice-circumference theorem where the chord is a diameter.",
+      "Always identify which arc a given angle subtends — this is the key to applying the theorems correctly."
+    ]
+  }
+}

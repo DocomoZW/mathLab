@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q7",
+  "title": "Indices & Standard Form — Problems",
+  "problems": [
+    {
+      "id": "A1_Q7_01",
+      "difficulty": "basic",
+      "question": "Simplify $2^3 \\times 2^4$.",
+      "answer": "$2^3 \\times 2^4 = 2^{3+4} = 2^7 = 128$.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q7_02",
+      "difficulty": "basic",
+      "question": "Express $0.00035$ in standard form.",
+      "answer": "$0.00035 = 3.5 \\times 10^{-4}$ (move the decimal point $4$ places right).",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q7_03",
+      "difficulty": "intermediate",
+      "question": "Evaluate $5^{-2}$ and express your answer as a fraction.",
+      "answer": "$5^{-2} = \\frac{1}{5^2} = \\frac{1}{25}$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q7_04",
+      "difficulty": "intermediate",
+      "question": "Evaluate $27^{\\frac{2}{3}}$ without a calculator.",
+      "answer": "$27^{\\frac{2}{3}} = (\\sqrt[3]{27})^2 = 3^2 = 9$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q7_05",
+      "difficulty": "advanced",
+      "question": "Simplify $\\frac{6^4 \\times 6^{-2}}{6^3}$, leaving your answer in the form $6^n$.",
+      "answer": "$$\\frac{6^4 \\times 6^{-2}}{6^3} = \\frac{6^{4 + (-2)}}{6^3} = \\frac{6^2}{6^3} = 6^{2-3} = 6^{-1}$$",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q7_06",
+      "difficulty": "advanced",
+      "question": "Calculate $(3 \\times 10^4) \\times (4 \\times 10^{-2})$, giving your answer in standard form.",
+      "answer": "$(3 \\times 4) \\times (10^4 \\times 10^{-2}) = 12 \\times 10^{4+(-2)} = 12 \\times 10^2 = 1.2 \\times 10^3$",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q7_07",
+      "difficulty": "challenge",
+      "question": "Simplify $\\frac{8^{\\frac{2}{3}} \\times 4^{-1}}{16^{\\frac{1}{2}}}$, expressing your answer in the form $2^n$.",
+      "answer": "Write all as powers of $2$: $8 = 2^3$, $4 = 2^2$, $16 = 2^4$. $$\\frac{(2^3)^{\\frac{2}{3}} \\times (2^2)^{-1}}{(2^4)^{\\frac{1}{2}}} = \\frac{2^{3 \\times \\frac{2}{3}} \\times 2^{2 \\times (-1)}}{2^{4 \\times \\frac{1}{2}}} = \\frac{2^2 \\times 2^{-2}}{2^2} = \\frac{2^{0}}{2^2} = 2^{-2}$$",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q7_08",
+      "difficulty": "challenge",
+      "question": "The mass of the Earth is approximately $5.97 \\times 10^{24}$ kg and the mass of the Moon is approximately $7.35 \\times 10^{22}$ kg. How many times more massive is the Earth than the Moon? Give your answer in standard form to $2$ significant figures.",
+      "answer": "$$\\frac{5.97 \\times 10^{24}}{7.35 \\times 10^{22}} = \\frac{5.97}{7.35} \\times 10^{24-22} = 0.8122448 \\times 10^2 = 81.22448$$ To $2$ s.f.: $81$. In standard form: $8.1 \\times 10^1$. The Earth is about $81$ times more massive than the Moon.",
+      "marks": 3
+    }
+  ]
+}

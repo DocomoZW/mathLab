@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q5",
+  "title": "Rounding & Estimation — Problems",
+  "problems": [
+    {
+      "id": "A1_Q5_01",
+      "difficulty": "basic",
+      "question": "Round $47.385$ to (a) $1$ decimal place, (b) $2$ decimal places.",
+      "answer": "(a) $47.4$ (the second decimal is $8 \\geq 5$). (b) $47.39$ (the third decimal is $5 \\geq 5$, so round up the $8$ to $9$).",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q5_02",
+      "difficulty": "basic",
+      "question": "Round $0.00456$ to (a) $1$ significant figure, (b) $2$ significant figures.",
+      "answer": "(a) $0.005$ (first non-zero digit is $4$, next digit $5 \\geq 5$, so round up). (b) $0.0046$ (first two significant digits are $4$ and $5$, third digit $6 \\geq 5$ so round up).",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q5_03",
+      "difficulty": "intermediate",
+      "question": "A length is measured as $15.6$ cm to $1$ decimal place. Write down the error interval for the true length.",
+      "answer": "Lower bound = $15.55$ cm, upper bound = $15.65$ cm. So $15.55 \\leq \\text{true length} < 15.65$ cm.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q5_04",
+      "difficulty": "intermediate",
+      "question": "Estimate the value of $\\frac{48.7 \\times 3.12}{0.196}$ by rounding each number to $1$ significant figure.",
+      "answer": "$48.7 \\approx 50$, $3.12 \\approx 3$, $0.196 \\approx 0.2$. $$\\frac{50 \\times 3}{0.2} = \\frac{150}{0.2} = 750$$",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q5_05",
+      "difficulty": "advanced",
+      "question": "A rectangle has sides measured as $8.4$ cm and $5.3$ cm, each to $1$ decimal place. Find the lower bound and upper bound for the area.",
+      "answer": "For $8.4$: LB = $8.35$, UB = $8.45$. For $5.3$: LB = $5.25$, UB = $5.35$. Lower bound of area = $8.35 \\times 5.25 = 43.8375$ cm². Upper bound of area = $8.45 \\times 5.35 = 45.2075$ cm².",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q5_06",
+      "difficulty": "advanced",
+      "question": "A car travels $240$ km (to the nearest $10$ km) in $3$ hours (to the nearest hour). Find the greatest possible average speed and the least possible average speed.",
+      "answer": "Distance: $235 \\leq d < 245$ km. Time: $2.5 \\leq t < 3.5$ hours. Greatest speed = max distance / min time = $245 / 2.5 = 98$ km/h. Least speed = min distance / max time = $235 / 3.5 = 67.14$ km/h.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q5_07",
+      "difficulty": "challenge",
+      "question": "A rectangular field is measured as $120$ m by $80$ m, each to the nearest $10$ m. A fence is built around the field. What are the lower and upper bounds for the total length of fencing needed?",
+      "answer": "Length: $115 \\leq l < 125$ m. Width: $75 \\leq w < 85$ m. Perimeter = $2(l+w)$. Lower bound: $2(115 + 75) = 2 \\times 190 = 380$ m. Upper bound: $2(125 + 85) = 2 \\times 210 = 420$ m.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q5_08",
+      "difficulty": "challenge",
+      "question": "Without a calculator, estimate $\\sqrt{63.8}$ by first rounding to $1$ significant figure, then using the method of checking perfect squares.",
+      "answer": "$63.8 \\approx 60$ to $1$ s.f. (or we could use $64$). Actually, rounding $63.8$ to $1$ s.f. gives $60$. But $64$ is a perfect square ($8^2 = 64$). Since $63.8$ is very close to $64$, $\\sqrt{63.8} \\approx \\sqrt{64} = 8$ (slightly less). Better estimate: $\\sqrt{63.8} \\approx 7.99$.",
+      "marks": 3
+    }
+  ]
+}

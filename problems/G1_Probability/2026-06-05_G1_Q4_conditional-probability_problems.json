@@ -1,0 +1,187 @@
+{
+  "track": "igcse_o",
+  "unit": "G1_Probability",
+  "topic_id": "G1_Q4",
+  "title": "Conditional Probability - Problems",
+  "problems": [
+    {
+      "id": "G1_Q4_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A bag contains 3 red and 5 blue marbles. One marble is drawn and it is red. It is not replaced. What is the probability that the second marble drawn is also red?",
+      "answer": "2/7",
+      "solution": "After removing 1 red: 2 red, 5 blue remain. P(second red | first red) = 2/7."
+    },
+    {
+      "id": "G1_Q4_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A fair dice is rolled. Given that the outcome is an even number, what is the probability that it is a 6?",
+      "answer": "1/3",
+      "solution": "Even numbers: {2,4,6}. Of these, only 6 is favourable. P(6 | even) = 1/3."
+    },
+    {
+      "id": "G1_Q4_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A card is drawn from a standard deck of 52 cards. Given that it is a red card, what is the probability that it is a heart?",
+      "answer": "1/2",
+      "solution": "Red cards: 26 total (13 hearts + 13 diamonds). Hearts: 13. P(heart | red) = 13/26 = 1/2."
+    },
+    {
+      "id": "G1_Q4_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "In a class of 30 students, 18 are girls and 12 are boys. 10 of the girls wear glasses. Given that a student chosen at random is a girl, what is the probability she wears glasses?",
+      "answer": "5/9",
+      "solution": "Number of girls = 18. Girls who wear glasses = 10. P(glasses | girl) = 10/18 = 5/9."
+    },
+    {
+      "id": "G1_Q4_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "conditional_probability",
+        "two_way_table"
+      ],
+      "problem_text": "In a survey of 100 students: 60 study French, 40 study German, 25 study both. A student is chosen at random. Given that the student studies French, what is the probability they also study German?",
+      "answer": "5/12",
+      "solution": "P(French) = 60/100 = 3/5. P(both) = 25/100 = 1/4. P(German | French) = P(both)/P(French) = (1/4)/(3/5) = 1/4 \u00d7 5/3 = 5/12. Or directly: 25/60 = 5/12."
+    },
+    {
+      "id": "G1_Q4_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "conditional_probability",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 4 red and 6 blue marbles. Two marbles are drawn without replacement. What is the probability that the second marble is red, given that the first marble was blue?",
+      "answer": "4/9",
+      "solution": "After removing 1 blue: 4 red, 5 blue remain. P(second red | first blue) = 4/9."
+    },
+    {
+      "id": "G1_Q4_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A fair dice is rolled twice. Given that the sum of the two numbers is 7, what is the probability that the first dice shows a 3?",
+      "answer": "1/6",
+      "solution": "Ways to sum to 7: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) \u2014 6 equally likely outcomes. Of these, 1 has first dice = 3: (3,4). P = 1/6."
+    },
+    {
+      "id": "G1_Q4_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A card is drawn from a standard deck. Given that it is a face card (Jack, Queen or King), what is the probability that it is a King?",
+      "answer": "1/3",
+      "solution": "There are 12 face cards (3 per suit \u00d7 4 suits). Kings: 4. P(King | face card) = 4/12 = 1/3."
+    },
+    {
+      "id": "G1_Q4_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "conditional_probability",
+        "two_way_table"
+      ],
+      "problem_text": "A two-way table shows:\n        Pass   Fail   Total\nBoys     28     12     40\nGirls    35      5     40\nTotal    63     17     80\nA student is selected at random. Given that the student passed, find the probability that the student is a girl.",
+      "answer": "5/9",
+      "solution": "Number who passed = 63. Girls who passed = 35. P(girl | passed) = 35/63 = 5/9."
+    },
+    {
+      "id": "G1_Q4_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A bag contains 5 red, 3 blue and 2 green marbles. One marble is drawn and it is NOT green. What is the probability that it is red?",
+      "answer": "5/8",
+      "solution": "Non-green marbles = 5 + 3 = 8. Red marbles among those = 5. P(red | not green) = 5/8."
+    },
+    {
+      "id": "G1_Q4_E1",
+      "difficulty": "E",
+      "skill_tags": [
+        "conditional_probability",
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 3 red and 7 black balls. Two balls are drawn without replacement. Given that the balls are of different colours, find the probability that the first ball was red.",
+      "answer": "1/2",
+      "solution": "P(RB) = 3/10 \u00d7 7/9 = 21/90. P(BR) = 7/10 \u00d7 3/9 = 21/90. P(different) = 42/90. P(first red | different) = (21/90)/(42/90) = 21/42 = 1/2."
+    },
+    {
+      "id": "G1_Q4_E2",
+      "difficulty": "E",
+      "skill_tags": [
+        "conditional_probability",
+        "tree_diagrams"
+      ],
+      "problem_text": "The probability that a patient has a disease is 0.02. A test gives a positive result for 95% of people with the disease and for 3% of people without the disease. If a person tests positive, find the probability that they actually have the disease.",
+      "answer": "95/242",
+      "solution": "P(D)=0.02, P(no D)=0.98. P(T+|D)=0.95, P(T+|no D)=0.03. P(T+)=0.02\u00d70.95+0.98\u00d70.03=0.019+0.0294=0.0484. P(D|T+)=0.019/0.0484=190/484=95/242."
+    },
+    {
+      "id": "G1_Q4_E3",
+      "difficulty": "E",
+      "skill_tags": [
+        "conditional_probability",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 4 red and 6 white balls. Two balls are drawn without replacement. Given that at least one ball is red, find the probability that both balls are red.",
+      "answer": "1/5",
+      "solution": "P(both red)=4/10\u00d73/9=12/90=2/15. P(at least one red)=1-P(both white)=1-(6/10\u00d75/9)=1-30/90=2/3. P(both red|at least one red)=(2/15)/(2/3)=2/15\u00d73/2=3/15=1/5."
+    },
+    {
+      "id": "G1_Q4_E4",
+      "difficulty": "E",
+      "skill_tags": [
+        "conditional_probability",
+        "basic_conditional"
+      ],
+      "problem_text": "A fair dice is rolled. Given that the result is a prime number, find the probability that it is also odd.",
+      "answer": "2/3",
+      "solution": "Prime numbers on a dice: {2,3,5}. Of these, odd numbers are {3,5}. P(odd | prime) = 2/3."
+    },
+    {
+      "id": "G1_Q4_X1",
+      "difficulty": "X",
+      "skill_tags": [
+        "conditional_probability",
+        "tree_diagrams",
+        "without_replacement"
+      ],
+      "problem_text": "A bag contains 6 red and n white balls. Two balls are drawn without replacement. The probability that both balls are red is 1/3. Find n.",
+      "answer": "4",
+      "solution": "P(RR) = 6/(6+n) \u00d7 5/(5+n) = 1/3. So 30/((6+n)(5+n)) = 1/3. 90 = (6+n)(5+n) = n^2+11n+30. n^2+11n-60=0. (n+15)(n-4)=0. n=4."
+    },
+    {
+      "id": "G1_Q4_X2",
+      "difficulty": "X",
+      "skill_tags": [
+        "conditional_probability",
+        "tree_diagrams",
+        "test_accuracy"
+      ],
+      "problem_text": "A factory has two machines A and B. Machine A produces 60% of the items, machine B produces 40%. Machine A makes 2% defective items, machine B makes 5% defective items. An item is chosen at random and found to be defective. Find the probability that it came from machine A.",
+      "answer": "3/8",
+      "solution": "P(A)=0.6, P(B)=0.4. P(def|A)=0.02, P(def|B)=0.05. P(def)=0.6\u00d70.02+0.4\u00d70.05=0.012+0.02=0.032. P(A|def)=0.012/0.032=12/32=3/8."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q7",
+  "title": "Functions and Graphs — Problems",
+  "problems": [
+    {
+      "id": "B1_Q7_F1",
+      "difficulty": "F",
+      "skill_tags": ["function_evaluation"],
+      "problem_text": "If $f(x) = 2x + 5$, find $f(3)$.",
+      "answer": "$11$",
+      "solution": "$f(3) = 2(3) + 5 = 6 + 5 = 11$"
+    },
+    {
+      "id": "B1_Q7_F2",
+      "difficulty": "F",
+      "skill_tags": ["function_evaluation"],
+      "problem_text": "If $g(x) = x^2 - 4$, find $g(3)$ and $g(0)$.",
+      "answer": "$g(3) = 5$, $g(0) = -4$",
+      "solution": "$g(3) = 3^2 - 4 = 9 - 4 = 5$. $g(0) = 0 - 4 = -4$"
+    },
+    {
+      "id": "B1_Q7_F3",
+      "difficulty": "F",
+      "skill_tags": ["gradient"],
+      "problem_text": "Find the gradient of the line $y = 3x + 2$.",
+      "answer": "$3$",
+      "solution": "In $y = mx + c$, $m$ is the gradient. So $m = 3$"
+    },
+    {
+      "id": "B1_Q7_F4",
+      "difficulty": "F",
+      "skill_tags": ["y_intercept"],
+      "problem_text": "Find the $y$-intercept of the line $y = -2x + 7$.",
+      "answer": "$7$",
+      "solution": "In $y = mx + c$, $c$ is the $y$-intercept. So $c = 7$"
+    },
+    {
+      "id": "B1_Q7_C1",
+      "difficulty": "C",
+      "skill_tags": ["gradient_between_points"],
+      "problem_text": "Find the gradient of the line passing through $(1, 3)$ and $(4, 9)$.",
+      "answer": "$2$",
+      "solution": "$m = \\frac{9-3}{4-1} = \\frac{6}{3} = 2$"
+    },
+    {
+      "id": "B1_Q7_C2",
+      "difficulty": "C",
+      "skill_tags": ["equation_of_line"],
+      "problem_text": "Find the equation of a line with gradient 3 passing through $(2, 5)$.",
+      "answer": "$y = 3x - 1$",
+      "solution": "$y - 5 = 3(x - 2)$, $y - 5 = 3x - 6$, $y = 3x - 1$"
+    },
+    {
+      "id": "B1_Q7_C3",
+      "difficulty": "C",
+      "skill_tags": ["function_evaluation"],
+      "problem_text": "If $f(x) = 3x - 2$, find $x$ such that $f(x) = 13$.",
+      "answer": "$x = 5$",
+      "solution": "$3x - 2 = 13$, $3x = 15$, $x = 5$"
+    },
+    {
+      "id": "B1_Q7_C4",
+      "difficulty": "C",
+      "skill_tags": ["equation_of_line"],
+      "problem_text": "Find the equation of the line through $(0, -3)$ and $(4, 5)$.",
+      "answer": "$y = 2x - 3$",
+      "solution": "$m = \\frac{5-(-3)}{4-0} = \\frac{8}{4} = 2$. The $y$-intercept is $-3$ (since $(0,-3)$). So $y = 2x - 3$"
+    },
+    {
+      "id": "B1_Q7_H1",
+      "difficulty": "H",
+      "skill_tags": ["perpendicular_lines"],
+      "problem_text": "Find the gradient of a line perpendicular to $y = 2x + 3$.",
+      "answer": "$-\\frac{1}{2}$",
+      "solution": "Perpendicular gradients multiply to $-1$. $2 \\times m = -1$, so $m = -\\frac{1}{2}$"
+    },
+    {
+      "id": "B1_Q7_H2",
+      "difficulty": "H",
+      "skill_tags": ["equation_of_line", "perpendicular"],
+      "problem_text": "Find the equation of the line perpendicular to $y = -3x + 4$ passing through $(2, 1)$.",
+      "answer": "$y = \\frac{1}{3}x + \\frac{1}{3}$",
+      "solution": "Gradient of given line: $-3$. Perpendicular gradient: $\\frac{1}{3}$ (since $-3 \\times \\frac{1}{3} = -1$). Equation: $y-1 = \\frac{1}{3}(x-2)$, $y = \\frac{1}{3}x - \\frac{2}{3} + 1 = \\frac{1}{3}x + \\frac{1}{3}$"
+    },
+    {
+      "id": "B1_Q7_H3",
+      "difficulty": "H",
+      "skill_tags": ["parallel_lines"],
+      "problem_text": "Find the equation of the line parallel to $y = 4x - 1$ passing through $(0, 5)$.",
+      "answer": "$y = 4x + 5$",
+      "solution": "Parallel lines have same gradient: $m=4$. Line passes through $(0,5)$ so $y$-intercept $c=5$. Equation: $y=4x+5$"
+    },
+    {
+      "id": "B1_Q7_H4",
+      "difficulty": "H",
+      "skill_tags": ["function_evaluation", "composite_functions"],
+      "problem_text": "If $f(x) = 2x - 1$ and $g(x) = x^2$, find $f(g(3))$ and $g(f(3))$.",
+      "answer": "$f(g(3)) = 17$, $g(f(3)) = 25$",
+      "solution": "$g(3)=3^2=9$, so $f(g(3)) = f(9) = 2(9)-1=17$. $f(3)=2(3)-1=5$, so $g(f(3))=g(5)=5^2=25$"
+    },
+    {
+      "id": "B1_Q7_X1",
+      "difficulty": "X",
+      "skill_tags": ["functions", "domain_range"],
+      "problem_text": "If $f(x) = x^2 + 2$ and the domain is $\\{-2, -1, 0, 1, 2\\}$, find the range.",
+      "answer": "$\\{2, 3, 6\\}$",
+      "solution": "$f(-2)=4+2=6$, $f(-1)=1+2=3$, $f(0)=0+2=2$, $f(1)=1+2=3$, $f(2)=4+2=6$. Range: $\\{2,3,6\\}$"
+    },
+    {
+      "id": "B1_Q7_X2",
+      "difficulty": "X",
+      "skill_tags": ["functions", "inverse_functions"],
+      "problem_text": "Given $f(x) = \\frac{2x+3}{x-1}$, $x \\neq 1$, find $f^{-1}(x)$.",
+      "answer": "$f^{-1}(x) = \\frac{x+3}{x-2}$, $x \\neq 2$",
+      "solution": "Let $y = \\frac{2x+3}{x-1}$. Swap $x$ and $y$: $x = \\frac{2y+3}{y-1}$. Multiply: $x(y-1)=2y+3$, $xy-x=2y+3$, $xy-2y=x+3$, $y(x-2)=x+3$, $y = \\frac{x+3}{x-2}$. So $f^{-1}(x) = \\frac{x+3}{x-2}$, $x \\neq 2$"
+    },
+    {
+      "id": "B1_Q7_X3",
+      "difficulty": "X",
+      "skill_tags": ["graph_lines", "intersection"],
+      "problem_text": "Find the point of intersection of the lines $y = 3x - 2$ and $2x + y = 8$.",
+      "answer": "$(2, 4)$",
+      "solution": "Substitute $y=3x-2$ into $2x+y=8$: $2x+3x-2=8$, $5x=10$, $x=2$. Then $y=3(2)-2=4$. Intersection: $(2,4)$"
+    },
+    {
+      "id": "B1_Q7_X4",
+      "difficulty": "X",
+      "skill_tags": ["functions", "word_problem"],
+      "problem_text": "A taxi charges a flat fee of $3 plus $2 per kilometre. Write a function $f(x)$ for the cost in dollars for $x$ kilometres. Find the cost for a 12 km journey. How far can you go for $25?",
+      "answer": "$f(x)=2x+3$. 12 km costs $27. For $25, you can go 11 km.",
+      "solution": "$f(x)=2x+3$. For $x=12$: $f(12)=24+3=27$ dollars. For $25: $2x+3=25$, $2x=22$, $x=11$ km"
+    }
+  ]
+}

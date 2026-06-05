@@ -1,0 +1,64 @@
+{
+  "track": "igcse_o",
+  "unit": "A1_Number",
+  "topic_id": "A1_Q6",
+  "title": "Ratios & Proportion — Problems",
+  "problems": [
+    {
+      "id": "A1_Q6_01",
+      "difficulty": "basic",
+      "question": "Simplify the ratio $24:18$.",
+      "answer": "HCF of $24$ and $18$ is $6$. $24 \\div 6 = 4$, $18 \\div 6 = 3$. Simplified ratio: $4:3$.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q6_02",
+      "difficulty": "basic",
+      "question": "Share $\\$45$ in the ratio $2:3$.",
+      "answer": "Total parts: $2 + 3 = 5$. One part: $45 \\div 5 = 9$. First share: $2 \\times 9 = 18$. Second share: $3 \\times 9 = 27$.",
+      "marks": 1
+    },
+    {
+      "id": "A1_Q6_03",
+      "difficulty": "intermediate",
+      "question": "If $y$ is directly proportional to $x$, and $y = 20$ when $x = 5$, find $y$ when $x = 12$.",
+      "answer": "$y = kx$, so $20 = k \\times 5$, $k = 4$. $y = 4x$. When $x = 12$, $y = 4 \\times 12 = 48$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q6_04",
+      "difficulty": "intermediate",
+      "question": "If $y$ is inversely proportional to $x$, and $y = 8$ when $x = 3$, find $y$ when $x = 6$.",
+      "answer": "$y = \\frac{k}{x}$, so $8 = \\frac{k}{3}$, $k = 24$. $y = \\frac{24}{x}$. When $x = 6$, $y = \\frac{24}{6} = 4$.",
+      "marks": 2
+    },
+    {
+      "id": "A1_Q6_05",
+      "difficulty": "advanced",
+      "question": "A recipe for $8$ people requires $500$ g of flour, $200$ g of sugar, and $300$ ml of milk. How much of each ingredient is needed for $14$ people?",
+      "answer": "Scale factor = $\\frac{14}{8} = 1.75$. Flour: $500 \\times 1.75 = 875$ g. Sugar: $200 \\times 1.75 = 350$ g. Milk: $300 \\times 1.75 = 525$ ml.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q6_06",
+      "difficulty": "advanced",
+      "question": "On a map with scale $1:50000$, two towns are $8$ cm apart. What is the actual distance in kilometres?",
+      "answer": "Actual distance = $8 \\times 50000 = 400000$ cm. $400000 \\div 100 = 4000$ m. $4000 \\div 1000 = 4$ km.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q6_07",
+      "difficulty": "challenge",
+      "question": "$6$ taps can fill a tank in $45$ minutes. How long would it take $10$ taps to fill the same tank? Assume all taps run at the same rate.",
+      "answer": "Inverse proportion: more taps → less time. $6 \\times 45 = k$, so $k = 270$. $10 \\times t = 270$, so $t = 27$ minutes.",
+      "marks": 3
+    },
+    {
+      "id": "A1_Q6_08",
+      "difficulty": "challenge",
+      "question": "Three friends invest in a business in the ratio $3:5:7$. They make a profit of $\\$15000$. If the third friend receives $\\$7000$, is this correct? If not, how much should they each receive?",
+      "answer": "Total parts: $3 + 5 + 7 = 15$. One part: $15000 \\div 15 = 1000$. Friend 1: $3 \\times 1000 = 3000$. Friend 2: $5 \\times 1000 = 5000$. Friend 3: $7 \\times 1000 = 7000$. The third friend's $\\$7000$ is correct. So the split is correct: $\\$3000$, $\\$5000$, $\\$7000$.",
+      "marks": 3
+    }
+  ]
+}

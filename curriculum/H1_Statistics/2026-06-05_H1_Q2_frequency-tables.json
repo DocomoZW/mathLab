@@ -1,0 +1,44 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q2",
+  "title": "Frequency Tables",
+  "syllabus_ref": "IGCSE 0580 H9.2",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A factory records the weights of 200 cereal boxes coming off the production line. The weights are not all the same — some are 498 g, some 502 g, some 500.3 g, and so on. Listing all 200 numbers is useless. How do you make sense of this mess? The answer: group the data into intervals and build a frequency table.",
+    "prerequisites": [
+      "Understanding of tally charts and frequency (H1_Q1)",
+      "Basic arithmetic (addition, division)",
+      "Concept of inequalities for class boundaries (e.g., 10 ≤ x < 20)"
+    ],
+    "core_explanation": "A frequency table organises raw data by grouping values and counting how many fall into each group.\n\n**Simple Frequency Table**\nFor discrete data with few distinct values, list each value and count its frequency.\n\n| Shoe size | Frequency |\n|-----------|-----------|\n| 6         | 3         |\n| 7         | 8         |\n| 8         | 12        |\n| 9         | 7         |\n| 10        | 2         |\n\n**Grouped Frequency Table**\nWhen data has many different values (especially continuous data), group them into class intervals.\n\n| Weight (g)    | Frequency |\n|---------------|-----------|\n| 495 ≤ w < 498 | 5         |\n| 498 ≤ w < 501 | 23        |\n| 501 ≤ w < 504 | 16        |\n| 504 ≤ w < 507 | 6         |\n\n**Class Intervals and Boundaries**\n- **Class width** = upper boundary − lower boundary (e.g., 498 − 495 = 3 g)\n- **Upper class boundary** and **lower class boundary** define the exact limits\n- Intervals should be: (a) mutually exclusive (no overlap), (b) equal width where possible, (c) cover all data\n\n**Midpoints**\nThe midpoint (or class mark) of an interval is the average of its lower and upper boundaries:\n\n$$\\text{Midpoint} = \\frac{\\text{Lower boundary} + \\text{Upper boundary}}{2}$$\n\nMidpoints are used when estimating the mean from grouped data.\n\n**Cumulative Frequency Table**\nShows the running total: how many data points are ≤ each upper boundary.\n\n| Weight (g)    | Frequency | Cumulative Frequency |\n|---------------|-----------|---------------------|\n| 495 ≤ w < 498 | 5         | 5                   |\n| 498 ≤ w < 501 | 23        | 5 + 23 = 28         |\n| 501 ≤ w < 504 | 16        | 28 + 16 = 44        |\n| 504 ≤ w < 507 | 6         | 44 + 6 = 50         |\n\nThe last cumulative frequency equals the total number of data points.",
+    "worked_example": "The times (in minutes) for 30 students to complete a puzzle:\n\n12.3, 8.7, 15.1, 10.4, 9.2, 14.8, 11.5, 13.0, 7.9, 16.2,\n9.8, 12.7, 10.1, 14.2, 8.3, 11.9, 13.5, 15.8, 10.6, 12.0,\n14.5, 9.1, 11.2, 13.8, 8.9, 12.5, 10.8, 15.4, 11.1, 14.0\n\n**Step 1 — Choose class intervals**\nRange: 7.9 to 16.2. Use intervals of width 2 minutes.\n\n| Time (min)   | Tally            | Frequency |\n|--------------|------------------|-----------|\n| 7 ≤ t < 9    | IIII             | 4         |\n| 9 ≤ t < 11   | ⁫⁫⁫⁫⁫ II         | 7         |\n| 11 ≤ t < 13  | ⁫⁫⁫⁫⁫ III        | 8         |\n| 13 ≤ t < 15  | ⁫⁫⁫⁫⁫ I          | 6         |\n| 15 ≤ t < 17  | ⁫⁫⁫⁫⁫            | 5         |\n\nTotal = 4 + 7 + 8 + 6 + 5 = 30 ✓\n\n**Step 2 — Find midpoints**\n| Interval   | Midpoint formula | Midpoint |\n|------------|-----------------|----------|\n| 7 ≤ t < 9  | (7+9)/2         | 8        |\n| 9 ≤ t < 11 | (9+11)/2        | 10       |\n| 11 ≤ t < 13| (11+13)/2       | 12       |\n| 13 ≤ t < 15| (13+15)/2       | 14       |\n| 15 ≤ t < 17| (15+17)/2       | 16       |\n\n**Step 3 — Build cumulative frequency table**\n| Time (min)   | Frequency | Cumulative Frequency |\n|--------------|-----------|---------------------|\n| 7 ≤ t < 9    | 4         | 4                   |\n| 9 ≤ t < 11   | 7         | 11                  |\n| 11 ≤ t < 13  | 8         | 19                  |\n| 13 ≤ t < 15  | 6         | 25                  |\n| 15 ≤ t < 17  | 5         | 30                  |\n\nInterpretation: 19 students took less than 13 minutes. 11 students took at least 11 minutes but less than 13.",
+    "common_mistakes": [
+      {
+        "mistake": "Overlapping class intervals, e.g., 0–10 and 10–20 — where does a value of exactly 10 go?",
+        "correction": "Use inequalities to make boundaries exclusive: 0 ≤ x < 10 and 10 ≤ x < 20. Or explicitly state inclusive/exclusive: 0–9, 10–19."
+      },
+      {
+        "mistake": "Using class intervals of different widths when equal widths work better — makes comparison and plotting harder.",
+        "correction": "Use equal-width intervals unless the data distribution makes it impractical (very sparse at the extremes). If unequal intervals are necessary, use frequency density for histograms (see H1_Q4)."
+      },
+      {
+        "mistake": "Forgetting to include all data values — the lowest and highest values must fall within intervals.",
+        "correction": "Check the first interval's lower bound ≤ minimum value, and the last interval's upper bound > maximum value."
+      },
+      {
+        "mistake": "Calculating cumulative frequency as the frequency of each row individually instead of the running total.",
+        "correction": "Each cumulative frequency = previous cumulative frequency + current row frequency. Always increasing, last row = total n."
+      }
+    ],
+    "summary": [
+      "A frequency table organises data by listing values (or intervals) alongside their counts.",
+      "Grouped frequency tables use class intervals — ensure they are equal in width, non-overlapping, and cover all data.",
+      "The midpoint of a class interval = (lower bound + upper bound) / 2, used for estimating the mean.",
+      "Cumulative frequency tables show running totals (number of values ≤ a given upper bound).",
+      "Class intervals should use clear inequality notation to avoid boundary ambiguity."
+    ]
+  }
+}

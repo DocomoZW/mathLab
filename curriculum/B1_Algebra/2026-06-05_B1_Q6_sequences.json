@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "B1_Algebra",
+  "topic_id": "B1_Q6",
+  "title": "Sequences",
+  "syllabus_ref": "IGCSE 0580 C2.6",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "The ancient Greeks discovered that if you arrange pebbles in triangular patterns — 1, then 3, then 6, then 10 pebbles — each new triangle adds a row with one more pebble than the last. This pattern of triangular numbers was one of the first sequences ever studied. Today, sequences appear everywhere: in loan repayments, population growth, computer algorithms, and even in the spiral patterns of sunflowers.",
+    "prerequisites": [
+      "Basic arithmetic with negative numbers",
+      "Substituting values into algebraic expressions",
+      "Solving simple linear equations"
+    ],
+    "core_explanation": "A sequence is an ordered list of numbers following a rule. Each number in a sequence is called a term.\n\n**Linear Sequences (Arithmetic Progressions):**\nA sequence where the difference between consecutive terms is constant. The $n$th term is:\n$$u_n = a + (n - 1)d$$\nwhere $a$ is the first term and $d$ is the common difference.\n\nExample: $3, 7, 11, 15, 19, \\dots$\n- First term $a = 3$, common difference $d = 4$\n- $n$th term: $u_n = 3 + (n - 1)4 = 4n - 1$\n- To find the 10th term: $u_{10} = 4(10) - 1 = 39$\n\n**Finding the $n$th term of a linear sequence:**\nThe $n$th term has the form $an + b$ where $a$ is the common difference and $b$ adjusts for the first term.\n1. Find $d$ (the common difference) — this is the coefficient of $n$\n2. Substitute $n = 1$ to find the adjustment: $a + b = \\text{first term}$\n\n**Quadratic Sequences:**\nA sequence where the second difference (difference of differences) is constant. The $n$th term has the form:\n$$u_n = an^2 + bn + c$$\n\nTo find $a$, $b$, $c$:\n1. Find the first and second differences\n2. $a = \\frac{\\text{second difference}}{2}$\n3. Subtract $an^2$ from each term to get a linear sequence\n4. Find the $n$th term of the remaining linear sequence\n\nExample: $3, 6, 11, 18, 27, \\dots$\n- First differences: $3, 5, 7, 9$\n- Second difference: $2$ (constant) → $a = \\frac{2}{2} = 1$\n- Subtract $n^2$: $3 - 1 = 2$, $6 - 4 = 2$, $11 - 9 = 2$, $18 - 16 = 2$, $27 - 25 = 2$\n- Remaining sequence: $2, 2, 2, 2, 2$ → constant $2$\n- So $u_n = n^2 + 2$\n\n**Term-to-Term Rules:**\nA recursive definition tells you how to get the next term from the current one.\n- Linear: $u_{n+1} = u_n + d$\n- Example: $3, 7, 11, 15, \\dots$ has term-to-term rule $u_{n+1} = u_n + 4$, $u_1 = 3$\n\n**Special Sequences:**\n- Triangular numbers: $1, 3, 6, 10, 15, \\dots$ → $u_n = \\frac{n(n+1)}{2}$\n- Square numbers: $1, 4, 9, 16, 25, \\dots$ → $u_n = n^2$\n- Fibonacci: $1, 1, 2, 3, 5, 8, \\dots$ → $u_{n+1} = u_n + u_{n-1}$",
+    "worked_example": "**Problem:** Find the $n$th term of the sequence $5, 9, 15, 23, 33, \\dots$ and use it to find the 20th term.\n\n**Step 1:** Check if linear or quadratic.\nFirst differences: $9 - 5 = 4$, $15 - 9 = 6$, $23 - 15 = 8$, $33 - 23 = 10$\nSecond difference: $6 - 4 = 2$, $8 - 6 = 2$, $10 - 8 = 2$ → constant, so quadratic.\n\n**Step 2:** Find $a$.\n$a = \\frac{\\text{second difference}}{2} = \\frac{2}{2} = 1$\n\n**Step 3:** Subtract $an^2 = n^2$ from each term.\n$n = 1: 5 - 1^2 = 4$\n$n = 2: 9 - 2^2 = 5$\n$n = 3: 15 - 3^2 = 6$\n$n = 4: 23 - 4^2 = 7$\n$n = 5: 33 - 5^2 = 8$\nRemaining: $4, 5, 6, 7, 8, \\dots$\n\n**Step 4:** This is a linear sequence with $d = 1$, first term $4$.\nLinear $n$th term: $4 + (n - 1)(1) = n + 3$\n\n**Step 5:** Combine with $an^2$.\n$u_n = n^2 + n + 3$\n\n**Step 6:** Find the 20th term.\n$u_{20} = 20^2 + 20 + 3 = 400 + 20 + 3 = 423$\n\n**Answer:** $u_n = n^2 + n + 3$, and $u_{20} = 423$",
+    "common_mistakes": [
+      {
+        "mistake": "Using $a + nd$ instead of $a + (n - 1)d$ for linear sequences",
+        "correction": "When $n = 1$, we need $u_1 = a$. If you use $a + nd$, $u_1 = a + d$ which is wrong. The correct formula is $u_n = a + (n - 1)d$."
+      },
+      {
+        "mistake": "Confusing first difference with common difference — saying $d = 4$ when first differences are $4, 6, 8$",
+        "correction": "For a linear sequence, ALL first differences must be equal. If they're not equal, check for a quadratic sequence instead."
+      },
+      {
+        "mistake": "Writing the $n$th term of a quadratic without checking it works for $n = 1$",
+        "correction": "Always verify: substitute $n = 1, 2, 3$ into your $n$th term formula and check you get the original sequence."
+      }
+    ],
+    "summary": [
+      "Linear sequence $n$th term: $u_n = a + (n - 1)d$ where $a$ is first term, $d$ is common difference",
+      "For quadratic sequences, find the second difference; $a = \\frac{\\text{second difference}}{2}$",
+      "To find quadratic $n$th term: subtract $an^2$, find linear $n$th term of remainder, then add $an^2$",
+      "Term-to-term rules describe how to get the next term from the current one",
+      "Always verify your formula by checking the first few terms"
+    ]
+  }
+}

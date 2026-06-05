@@ -1,0 +1,153 @@
+{
+  "unit": "F1",
+  "topic": "Q4",
+  "title": "Reflection - Problem Set",
+  "syllabus": "IGCSE O Level Mathematics (0580)",
+  "total_problems": 16,
+  "problems": [
+    {
+      "id": "F1_Q4_01",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the image of (3, 2) reflected across the x-axis?",
+      "options": ["(3, -2)", "(-3, 2)", "(-3, -2)", "(2, 3)"],
+      "answer": 0,
+      "explanation": "Reflection across x-axis: (x,y) -> (x,-y)."
+    },
+    {
+      "id": "F1_Q4_02",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the image of (-5, 4) reflected across the y-axis?",
+      "options": ["(5, 4)", "(-5, -4)", "(5, -4)", "(-4, 5)"],
+      "answer": 0,
+      "explanation": "Reflection across y-axis: (x,y) -> (-x,y)."
+    },
+    {
+      "id": "F1_Q4_03",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "What is the image of (2, 3) reflected across line y = x?",
+      "options": ["(3, 2)", "(2, -3)", "(-2, 3)", "(-3, -2)"],
+      "answer": 0,
+      "explanation": "Reflection across y=x: (x,y) -> (y,x)."
+    },
+    {
+      "id": "F1_Q4_04",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Points A(1,4) and A'(1,-4) are reflections. What is the mirror line?",
+      "options": ["x-axis", "y-axis", "y = x", "y = -x"],
+      "answer": 0,
+      "explanation": "Only y-coordinate changes sign, so mirror is x-axis."
+    },
+    {
+      "id": "F1_Q4_05",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the image of (-3, -5) reflected across y = -x?",
+      "options": ["(5, 3)", "(-5, -3)", "(5, -3)", "(-5, 3)"],
+      "answer": 0,
+      "explanation": "Reflection across y=-x: (x,y) -> (-y,-x). (-3,-5) -> (5,3)."
+    },
+    {
+      "id": "F1_Q4_06",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A point (a, b) is reflected across the y-axis. What is its image?",
+      "options": "(-a, b)",
+      "answer": 0,
+      "explanation": "Reflection across y-axis: x becomes -x, y unchanged."
+    },
+    {
+      "id": "F1_Q4_07",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "What is the mirror line if (2, 5) reflects to (5, 2)?",
+      "options": ["y = x", "x-axis", "y-axis", "y = -x"],
+      "answer": 0,
+      "explanation": "Coordinates swap, so mirror is y=x."
+    },
+    {
+      "id": "F1_Q4_08",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "A triangle has vertices (1,1), (4,1), (2,4). Reflected across y-axis, what is (2,4) mapped to?",
+      "options": ["(-2, 4)", "(2, -4)", "(-2, -4)", "(4, 2)"],
+      "answer": 0,
+      "explanation": "Across y-axis: (x,y) -> (-x,y). (2,4) -> (-2,4)."
+    },
+    {
+      "id": "F1_Q4_09",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Point (0, 5) is reflected across x-axis, then the result is reflected across y-axis. What is the final point?",
+      "options": ["(0, -5)", "(0, 5)", "(-5, 0)", "(5, 0)"],
+      "answer": 0,
+      "explanation": "First: (0,-5). Second across y-axis: (0,-5) [x=0 unchanged]."
+    },
+    {
+      "id": "F1_Q4_10",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "The image of a point after reflection in y = x is (7, -2). What was the original point?",
+      "options": ["(-2, 7)", "(7, -2)", "(2, -7)", "(-7, 2)"],
+      "answer": 0,
+      "explanation": "Reflection in y=x swaps coordinates, so original was (-2, 7)."
+    },
+    {
+      "id": "F1_Q4_11",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "A point reflected in the x-axis gives (-3, -8). What was the original?",
+      "options": ["(-3, 8)", "(3, -8)", "(-3, -8)", "(3, 8)"],
+      "answer": 0,
+      "explanation": "Reflection in x-axis: (x,y) -> (x,-y). So original was (-3, 8)."
+    },
+    {
+      "id": "F1_Q4_12",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Two reflections in parallel lines produce which single transformation?",
+      "options": ["Translation", "Rotation", "Reflection", "Enlargement"],
+      "answer": 0,
+      "explanation": "Two reflections in parallel lines = translation (by twice the distance)."
+    },
+    {
+      "id": "F1_Q4_13",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Two reflections in intersecting lines produce which single transformation?",
+      "options": ["Rotation", "Translation", "Reflection", "Enlargement"],
+      "answer": 0,
+      "explanation": "Two reflections in intersecting lines = rotation about the intersection point by twice the angle."
+    },
+    {
+      "id": "F1_Q4_14",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Point (1, 0) is reflected in y = 1. What is the image?",
+      "options": ["(1, 2)", "(1, 0)", "(1, -1)", "(1, -2)"],
+      "answer": 0,
+      "explanation": "Point is 1 unit below y=1, so image is 1 unit above: (1, 2)."
+    },
+    {
+      "id": "F1_Q4_15",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "What is the image of (3, -2) reflected across y = x, then across x-axis?",
+      "options": ["(2, 3)", "(-2, -3)", "(3, -2)", "(2, -3)"],
+      "answer": 1,
+      "explanation": "First reflect across y=x: (3,-2) -> (-2,3). Then across x-axis: (-2,3) -> (-2,-3)."
+    },
+    {
+      "id": "F1_Q4_16",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Does reflection preserve orientation?",
+      "options": ["No, it reverses orientation", "Yes", "Only if mirror is horizontal", "Only if mirror is vertical"],
+      "answer": 0,
+      "explanation": "Reflection reverses orientation (mirror image)."
+    }
+  ]
+}

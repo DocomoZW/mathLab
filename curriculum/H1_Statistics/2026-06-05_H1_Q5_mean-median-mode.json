@@ -1,0 +1,40 @@
+{
+  "track": "igcse_o",
+  "unit": "H1_Statistics",
+  "topic_id": "H1_Q5",
+  "title": "Mean, Median and Mode",
+  "syllabus_ref": "IGCSE 0580 H9.5",
+  "version": 1,
+  "created_at": "2026-06-05T00:00:00Z",
+  "sections": {
+    "hook": "A survey of 30 students asked, 'How many books did you read last month?' The raw replies are: 2, 0, 3, 1, 5, 2, 4, 0, 1, 3, 2, 2, 6, 1, 3, 4, 2, 0, 1, 2, 3, 5, 1, 2, 4, 3, 0, 2, 1, 3. Which 'average' best represents this group? The mean might be pulled by the few heavy readers, the median hides the extremes, and the mode tells you the most common experience. Each measure tells a different story about the same data.",
+    "prerequisites": [
+      "Ability to add, subtract, multiply and divide whole numbers and decimals",
+      "Understanding of ordered lists and sorting numbers in ascending order",
+      "Familiarity with frequency tables (tally charts)"
+    ],
+    "core_explanation": "The three main measures of central tendency describe the 'centre' of a data set in different ways.\n\n**Mean** — the arithmetic average. Calculated by summing all values and dividing by the number of values. For raw data: mean = (Σx) / n. For a frequency table: mean = Σ(f·x) / Σf, where f is the frequency of each value x.\n\n**Median** — the middle value when data is arranged in order. For n values, the median is at position (n+1)/2. If n is odd, take that value directly. If n is even, take the mean of the two middle values. For grouped data (intervals), the median lies in the interval where the cumulative frequency first reaches or exceeds n/2.\n\n**Mode** — the most frequently occurring value. A data set may have one mode (unimodal), more than one (bimodal/multimodal), or no mode (if every value appears once). For grouped data, the modal class is the interval with the highest frequency.\n\nWhen comparing data sets, always consider which measure is most appropriate. The mean uses every data point but is sensitive to outliers. The median is resistant to outliers but ignores extreme values. The mode is useful for categorical or discrete data but may not exist or be meaningful.",
+    "worked_example": "A class of 8 students scored the following marks on a test: 12, 7, 15, 9, 12, 10, 14, 7.\n\n**Step 1: Mean**\nSum = 12 + 7 + 15 + 9 + 12 + 10 + 14 + 7 = 86\nn = 8\nMean = 86 ÷ 8 = 10.75\n\n**Step 2: Median**\nArrange in order: 7, 7, 9, 10, 12, 12, 14, 15\nn = 8 (even), so median = mean of 4th and 5th values = (10 + 12) ÷ 2 = 11\n\n**Step 3: Mode**\n7 appears twice, 12 appears twice, all other values appear once.\nThe data set has two modes: 7 and 12 (bimodal).\n\n**Now with a frequency table:**\nA survey asked 20 people how many cups of tea they drink per day.\n| Cups (x) | 0 | 1 | 2 | 3 | 4 |\n|----------|---|---|---|---|---|\n| Frequency (f) | 3 | 7 | 5 | 3 | 2 |\n\nMean = Σ(f·x) ÷ Σf = (0×3 + 1×7 + 2×5 + 3×3 + 4×2) ÷ 20 = (0 + 7 + 10 + 9 + 8) ÷ 20 = 34 ÷ 20 = 1.7 cups\nMedian position = (20+1)/2 = 10.5 — find the 10th and 11th values. Cumulative frequencies: 3, 10, 15, 18, 20. The 10th value is in the '1 cup' group (cumulative freq hits 10), and the 11th is also in '1 cup' (cumulative freq 15). So both middle values = 1 → median = 1.\nMode = 1 cup (highest frequency = 7).",
+    "common_mistakes": [
+      {
+        "mistake": "Forgetting to sum the frequencies (Σf) when calculating the mean from a frequency table — students often divide by the number of rows instead of the total frequency.",
+        "correction": "Always divide Σ(f·x) by Σf, not by the number of rows. Each row represents many data points, so the denominator must be the total count of observations."
+      },
+      {
+        "mistake": "Taking the median as the (n+1)/2-th value rounded up, even when n is even — this incorrectly picks one value instead of averaging two.",
+        "correction": "When n is even, the median is the mean of the two middle numbers at positions n/2 and (n/2 + 1). Always sort the data first."
+      },
+      {
+        "mistake": "Confusing 'no mode' with 'mode = 0'. If no value repeats, there is no mode — writing '0' implies the value zero is the most common.",
+        "correction": "State 'no mode' when each value occurs exactly once. If the value 0 appears most frequently, then the mode is 0 (a valid answer). These are different situations."
+      }
+    ],
+    "summary": [
+      "Mean = sum of all values ÷ number of values; it uses all data but is affected by outliers.",
+      "Median = middle value after sorting; resistant to outliers, best for skewed distributions.",
+      "Mode = most frequent value; can be used for non-numerical data; may be unimodal, bimodal, or non-existent.",
+      "For frequency tables: mean uses Σ(f·x)/Σf, median uses cumulative frequency, mode is the value with highest frequency.",
+      "Always consider context when choosing which measure of central tendency to report."
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "track": "igcse_o",
+  "unit": "D1_Mensuration",
+  "topic_id": "D1_Q3",
+  "title": "Composite Shapes \u2014 Problems",
+  "problems": [
+    {
+      "id": "D1_Q3_F1",
+      "difficulty": "F",
+      "skill_tags": [
+        "composite_area_Lshape"
+      ],
+      "problem_text": "An L-shaped figure consists of a 5 m by 4 m rectangle joined to a 3 m by 2 m rectangle. Find the total area.",
+      "answer": "26 m^2",
+      "solution": "A = 5 x 4 + 3 x 2 = 20 + 6 = 26 m^2"
+    },
+    {
+      "id": "D1_Q3_F2",
+      "difficulty": "F",
+      "skill_tags": [
+        "composite_area_rectangle_triangle"
+      ],
+      "problem_text": "A shape consists of a rectangle 6 m by 4 m with a triangle of base 6 m and height 3 m on top. Find the total area.",
+      "answer": "33 m^2",
+      "solution": "A_rect = 6 x 4 = 24 m^2. A_tri = (1/2) x 6 x 3 = 9 m^2. Total = 33 m^2"
+    },
+    {
+      "id": "D1_Q3_F3",
+      "difficulty": "F",
+      "skill_tags": [
+        "composite_perimeter_Lshape"
+      ],
+      "problem_text": "Find the perimeter of the L-shape with outer sides: 7 m, 4 m, 3 m, 2 m, 4 m, 2 m.",
+      "answer": "22 m",
+      "solution": "P = 7 + 4 + 3 + 2 + 4 + 2 = 22 m"
+    },
+    {
+      "id": "D1_Q3_F4",
+      "difficulty": "F",
+      "skill_tags": [
+        "composite_area_subtraction"
+      ],
+      "problem_text": "A rectangular lawn 10 m by 8 m has a rectangular flowerbed 3 m by 2 m cut out from it. Find the remaining area.",
+      "answer": "74 m^2",
+      "solution": "A_lawn = 10 x 8 = 80 m^2. A_bed = 3 x 2 = 6 m^2. Remaining = 80 - 6 = 74 m^2"
+    },
+    {
+      "id": "D1_Q3_C1",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_area_annulus"
+      ],
+      "problem_text": "Find the area of a ring with outer radius 8 cm and inner radius 5 cm (use pi = 3.142).",
+      "answer": "122.5 cm^2",
+      "solution": "A = pi(R^2 - r^2) = 3.142(64 - 25) = 3.142 x 39 = 122.538 cm^2"
+    },
+    {
+      "id": "D1_Q3_C2",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_area_rect_semicircle"
+      ],
+      "problem_text": "A rectangle 10 m by 6 m has a semicircle of radius 3 m attached to one short side. Find the total area (use pi = 3.142).",
+      "answer": "74.14 m^2",
+      "solution": "A_rect = 10 x 6 = 60 m^2. A_semi = (1/2) x 3.142 x 9 = 14.139 m^2. Total = 74.139 m^2"
+    },
+    {
+      "id": "D1_Q3_C3",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_missing_length"
+      ],
+      "problem_text": "An L-shape has total width 12 m, and two vertical segments of 7 m and 5 m. The horizontal segments are 5 m and the remaining part. Find the missing horizontal segment.",
+      "answer": "7 m",
+      "solution": "Total width = 12 m. Known horizontal = 5 m. Missing = 12 minus 5 = 7 m."
+    },
+    {
+      "id": "D1_Q3_C4",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_area_path"
+      ],
+      "problem_text": "A rectangular garden 15 m by 10 m has a path of width 1 m around the inside. Find the area of the path.",
+      "answer": "46 m^2",
+      "solution": "Outer = 15 x 10 = 150 m^2. Inner = (15-2) x (10-2) = 13 x 8 = 104 m^2. Path = 150 - 104 = 46 m^2"
+    },
+    {
+      "id": "D1_Q3_C5",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_area_compound_triangles"
+      ],
+      "problem_text": "A figure is made of a rectangle 8 cm by 6 cm with a right-angled triangle of base 8 cm and height 6 cm on top. Find the total area.",
+      "answer": "72 cm^2",
+      "solution": "A_rect = 48 cm^2. A_tri = (1/2) x 8 x 6 = 24 cm^2. Total = 72 cm^2"
+    },
+    {
+      "id": "D1_Q3_C6",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_perimeter_semicircle"
+      ],
+      "problem_text": "A shape has a rectangle 12 cm by 5 cm with a semicircle (radius 2.5 cm) on one of the 5 cm sides. Find the total perimeter (use pi = 3.142).",
+      "answer": "36.85 cm",
+      "solution": "Two long sides = 12 + 12 = 24 cm. One short side = 5 cm replaced by semicircle arc. Arc = pi x 2.5 = 7.855 cm. Other short side = 5 cm. Total = 24 + 5 + 7.855 = 36.855 cm"
+    },
+    {
+      "id": "D1_Q3_C7",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_area_trapezium_compound"
+      ],
+      "problem_text": "A shape consists of a rectangle 10 m by 4 m with a right-angled triangle of base 3 m and height 4 m attached to one short side. Find total area.",
+      "answer": "46 m^2",
+      "solution": "A_rect = 10 x 4 = 40 m^2. A_tri = (1/2) x 3 x 4 = 6 m^2. Total = 46 m^2"
+    },
+    {
+      "id": "D1_Q3_C8",
+      "difficulty": "C",
+      "skill_tags": [
+        "composite_perimeter_missing"
+      ],
+      "problem_text": "A composite L-shape has sides: 15 m, 8 m, 7 m, 3 m, 8 m, and one unknown side. Find the unknown side if the perimeter is 46 m.",
+      "answer": "5 m",
+      "solution": "Known sides sum = 15 + 8 + 7 + 3 + 8 = 41 m. Unknown = 46 - 41 = 5 m"
+    },
+    {
+      "id": "D1_Q3_H1",
+      "difficulty": "H",
+      "skill_tags": [
+        "composite_area_maximization"
+      ],
+      "problem_text": "A shape consists of a rectangle of width x m and height 4 m with a semicircle of radius x/2 m on one of the longer sides. Write an expression for the total area in terms of x.",
+      "answer": "4x + (pi x^2)/8",
+      "solution": "A_rect = 4x. r = x/2, A_semi = (1/2) x pi x (x/2)^2 = (1/2) x pi x x^2/4 = (pi x^2)/8. Total = 4x + (pi x^2)/8"
+    },
+    {
+      "id": "D1_Q3_H2",
+      "difficulty": "H",
+      "skill_tags": [
+        "composite_area_percentage"
+      ],
+      "problem_text": "A square of side 10 cm has four quarter-circles of radius 5 cm cut from its corners. Find the remaining area (use pi = 3.142).",
+      "answer": "21.45 cm^2",
+      "solution": "A_square = 100 cm^2. Four quarter-circles = one full circle of radius 5: A_circle = 3.142 x 25 = 78.55 cm^2. Remaining = 100 - 78.55 = 21.45 cm^2"
+    },
+    {
+      "id": "D1_Q3_H3",
+      "difficulty": "H",
+      "skill_tags": [
+        "composite_area_circular_path"
+      ],
+      "problem_text": "A circular pond of radius 5 m is surrounded by a path of width 1 m. Find the area of the path (use pi = 3.142).",
+      "answer": "34.56 m^2",
+      "solution": "Outer radius = 6 m. A_path = pi(36-25) = 3.142 x 11 = 34.562 m^2"
+    },
+    {
+      "id": "D1_Q3_H4",
+      "difficulty": "H",
+      "skill_tags": [
+        "composite_area_Lshape_algebraic"
+      ],
+      "problem_text": "An L-shape has two rectangles: one is a m by b m, the other is c m by d m. Write an expression for the total area.",
+      "answer": "ab + cd",
+      "solution": "Total area = area of first rectangle + area of second rectangle = ab + cd"
+    }
+  ]
+}
