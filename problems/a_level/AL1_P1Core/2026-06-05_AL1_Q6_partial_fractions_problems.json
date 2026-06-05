@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL1_P1Core",
+  "topic_id": "AL1_Q6",
+  "title": "Partial Fractions - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T11:00:00Z",
+  "problems": [
+    {
+      "id": "AL1_Q6_F01",
+      "difficulty": "F",
+      "skill_tags": ["partial fractions", "distinct linear"],
+      "problem_text": "Express $\\frac{3}{(x+1)(x+2)}$ in partial fractions.",
+      "answer": "$\\frac{3}{x+1} - \\frac{3}{x+2}$",
+      "solution": "$\\frac{3}{(x+1)(x+2)} = \\frac{A}{x+1} + \\frac{B}{x+2}$. $3 = A(x+2) + B(x+1)$. $x = -1$: $3 = A(1) \\implies A = 3$. $x = -2$: $3 = B(-1) \\implies B = -3$. So $\\frac{3}{x+1} - \\frac{3}{x+2}$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q6_F02",
+      "difficulty": "F",
+      "skill_tags": ["partial fractions", "distinct linear"],
+      "problem_text": "Express $\\frac{5x-1}{(x-2)(x+3)}$ in partial fractions.",
+      "answer": "$\\frac{9}{5(x-2)} + \\frac{16}{5(x+3)}$... Let me redo: $5x-1 = A(x+3) + B(x-2)$. $x=2$: $10-1 = A(5) \\implies 9 = 5A \\implies A = \\frac{9}{5}$. $x=-3$: $-15-1 = B(-5) \\implies -16 = -5B \\implies B = \\frac{16}{5}$.",
+      "solution": "$\\frac{5x-1}{(x-2)(x+3)} = \\frac{9}{5(x-2)} + \\frac{16}{5(x+3)}$",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q6_F03",
+      "difficulty": "F",
+      "skill_tags": ["partial fractions", "repeated factor"],
+      "problem_text": "Express $\\frac{x+3}{(x+1)^2}$ in partial fractions.",
+      "answer": "$\\frac{1}{x+1} + \\frac{2}{(x+1)^2}$",
+      "solution": "$\\frac{x+3}{(x+1)^2} = \\frac{A}{x+1} + \\frac{B}{(x+1)^2}$. $x+3 = A(x+1) + B$. $x=-1$: $2 = B$. $x$ coefficient: $1 = A$. So $\\frac{1}{x+1} + \\frac{2}{(x+1)^2}$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q6_F04",
+      "difficulty": "F",
+      "skill_tags": ["partial fractions", "distinct linear"],
+      "problem_text": "Express $\\frac{4}{(x-1)(x+3)}$ in partial fractions.",
+      "answer": "$\\frac{1}{x-1} - \\frac{1}{x+3}$",
+      "solution": "$\\frac{4}{(x-1)(x+3)} = \\frac{A}{x-1} + \\frac{B}{x+3}$. $4 = A(x+3) + B(x-1)$. $x=1$: $4 = A(4) \\implies A = 1$. $x=-3$: $4 = B(-4) \\implies B = -1$. So $\\frac{1}{x-1} - \\frac{1}{x+3}$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q6_C01",
+      "difficulty": "C",
+      "skill_tags": ["partial fractions", "three factors"],
+      "problem_text": "Express $\\frac{2x^2 + 13x + 11}{(x+1)(x+2)(x+3)}$ in partial fractions.",
+      "answer": "$\\frac{1}{x+1} + \\frac{1}{x+2} + \\frac{2}{x+3}$... let me verify. $2x^2+13x+11 = A(x+2)(x+3) + B(x+1)(x+3) + C(x+1)(x+2)$.",
+      "solution": "Let $2x^2+13x+11 = A(x+2)(x+3) + B(x+1)(x+3) + C(x+1)(x+2)$. $x=-1$: $2-13+11 = A(1)(2) \\implies 0 = 2A \\implies A = 0$. $x=-2$: $8-26+11 = B(-1)(1) \\implies -7 = -B \\implies B = 7$. $x=-3$: $18-39+11 = C(-2)(-1) \\implies -10 = 2C \\implies C = -5$. So $\\frac{7}{x+2} - \\frac{5}{x+3}$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q6_C02",
+      "difficulty": "C",
+      "skill_tags": ["partial fractions", "improper fraction"],
+      "problem_text": "Express $\\frac{x^2 + 3x + 5}{x+2}$ in the form $ax + b + \\frac{c}{x+2}$.",
+      "answer": "$x + 1 + \\frac{3}{x+2}$",
+      "solution": "Polynomial division: $x^2+3x+5 \\div (x+2)$. $x^2+3x+5 = (x+2)(x+1) + 3$. So $\\frac{x^2+3x+5}{x+2} = x+1 + \\frac{3}{x+2}$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q6_C03",
+      "difficulty": "C",
+      "skill_tags": ["partial fractions", "distinct linear"],
+      "problem_text": "Express $\\frac{7x + 1}{(x-1)(x+2)}$ in partial fractions.",
+      "answer": "$\\frac{8}{3(x-1)} + \\frac{13}{3(x+2)}$... Let me redo: $7x+1 = A(x+2) + B(x-1)$. $x=1$: $8 = A(3) \\implies A = \\frac{8}{3}$. $x=-2$: $-13 = B(-3) \\implies B = \\frac{13}{3}$.",
+      "solution": "$\\frac{8}{3(x-1)} + \\frac{13}{3(x+2)}$",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q6_C04",
+      "difficulty": "C",
+      "skill_tags": ["partial fractions", "repeated factor"],
+      "problem_text": "Express $\\frac{5x+2}{(x-1)(x+2)^2}$ in partial fractions.",
+      "answer": "$\\frac{A}{x-1} + \\frac{B}{x+2} + \\frac{C}{(x+2)^2}$",
+      "solution": "$5x+2 = A(x+2)^2 + B(x-1)(x+2) + C(x-1)$. $x=1$: $7 = A(9) \\implies A = \\frac{7}{9}$. $x=-2$: $-8 = C(-3) \\implies C = \\frac{8}{3}$. Compare $x^2$ coeff: $0 = A + B \\implies B = -\\frac{7}{9}$. So $\\frac{7}{9(x-1)} - \\frac{7}{9(x+2)} + \\frac{8}{3(x+2)^2}$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q6_H01",
+      "difficulty": "H",
+      "skill_tags": ["partial fractions", "improper", "quadratic denominator"],
+      "problem_text": "Express $\\frac{x^3 + 2x^2 - x + 1}{x^2 - 1}$ in partial fractions.",
+      "answer": "$x + 2 + \\frac{0}{x-1} + \\frac{-1}{x+1}$... division: $x^3+2x^2-x+1 \\div (x^2-1)$. $x^3+2x^2-x+1 = x(x^2-1) + 2x^2 + 1$... $= (x+2)(x^2-1) + (x+2)(-1)+1$... Let me redo: $x^3+2x^2-x+1 \\div (x^2-1)$. $x^3/x^2 = x$. $x(x^2-1) = x^3 - x$. Subtract: $(x^3+2x^2-x+1) - (x^3-x) = 2x^2 + 1$. $2x^2/x^2 = 2$. $2(x^2-1) = 2x^2 - 2$. Subtract: $(2x^2+1) - (2x^2-2) = 3$. So $x+2 + \\frac{3}{x^2-1} = x+2 + \\frac{3}{(x-1)(x+1)}$. $\\frac{3}{(x-1)(x+1)} = \\frac{3/2}{x-1} - \\frac{3/2}{x+1}$. Final: $x+2 + \\frac{3}{2(x-1)} - \\frac{3}{2(x+1)}$.",
+      "solution": "$x+2 + \\frac{3}{2(x-1)} - \\frac{3}{2(x+1)}$",
+      "marks": 5
+    },
+    {
+      "id": "AL1_Q6_H02",
+      "difficulty": "H",
+      "skill_tags": ["partial fractions", "unknown constant"],
+      "problem_text": "Given that $\\frac{8x^2 + 3x + 10}{(x+1)(x^2 + 2)} \\equiv \\frac{A}{x+1} + \\frac{Bx + C}{x^2 + 2}$, find $A$, $B$, and $C$.",
+      "answer": "$A = 3, B = 5, C = 2$",
+      "solution": "$8x^2+3x+10 = A(x^2+2) + (Bx+C)(x+1)$. $x=-1$: $8-3+10 = A(1+2) \\implies 15 = 3A \\implies A = 5$. $x^2$ coeff: $8 = A + B \\implies 8 = 5 + B \\implies B = 3$. $x$ coeff: $3 = B + C \\implies 3 = 3 + C \\implies C = 0$. Constant: $10 = 2A + C \\implies 10 = 10 + 0$. So $A=5, B=3, C=0$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q6_H03",
+      "difficulty": "H",
+      "skill_tags": ["partial fractions", "three factors"],
+      "problem_text": "Express $\\frac{4x^2 - 3x + 8}{(x-2)(x+1)(x-3)}$ in partial fractions.",
+      "answer": "$\\frac{2}{x-2} - \\frac{3}{x+1} + \\frac{5}{x-3}$",
+      "solution": "$4x^2-3x+8 = A(x+1)(x-3) + B(x-2)(x-3) + C(x-2)(x+1)$. $x=2$: $16-6+8 = A(3)(-1) \\implies 18 = -3A \\implies A = -6$. $x=-1$: $4+3+8 = B(-3)(-4) \\implies 15 = 12B \\implies B = \\frac{5}{4}$. $x=3$: $36-9+8 = C(1)(4) \\implies 35 = 4C \\implies C = \\frac{35}{4}$. So $-\\frac{6}{x-2} + \\frac{5}{4(x+1)} + \\frac{35}{4(x-3)}$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q6_H04",
+      "difficulty": "H",
+      "skill_tags": ["partial fractions", "quadratic factor"],
+      "problem_text": "Express $\\frac{3x^2 + 2x + 1}{(x+1)(x^2 + 1)}$ in partial fractions.",
+      "answer": "$\\frac{1}{x+1} + \\frac{2x}{x^2+1}$",
+      "solution": "$\\frac{3x^2+2x+1}{(x+1)(x^2+1)} = \\frac{A}{x+1} + \\frac{Bx+C}{x^2+1}$. $3x^2+2x+1 = A(x^2+1) + (Bx+C)(x+1)$. $x=-1$: $3-2+1 = A(2) \\implies 2 = 2A \\implies A = 1$. $x^2$ coeff: $3 = A + B \\implies 3 = 1 + B \\implies B = 2$. Constant: $1 = A + C \\implies 1 = 1 + C \\implies C = 0$. So $\\frac{1}{x+1} + \\frac{2x}{x^2+1}$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q6_X01",
+      "difficulty": "X",
+      "skill_tags": ["partial fractions", "binomial"],
+      "problem_text": "Express $\\frac{1}{(1+x)(1+2x)}$ in partial fractions and hence find the first 3 terms of its binomial expansion.",
+      "answer": "$\\frac{1}{1+x} - \\frac{2}{1+2x} = \\frac{1}{1+x} - \\frac{2}{1+2x}$.",
+      "solution": "$\\frac{1}{(1+x)(1+2x)} = \\frac{A}{1+x} + \\frac{B}{1+2x}$. $1 = A(1+2x) + B(1+x)$. $x=-1$: $1 = A(-1) \\implies A = -1$. $x=-\\frac{1}{2}$: $1 = B(\\frac{1}{2}) \\implies B = 2$. So $\\frac{-1}{1+x} + \\frac{2}{1+2x} = -1(1-x+x^2-\\cdots) + 2(1-2x+4x^2-\\cdots)$ $= (-1+x-x^2+\\cdots) + (2-4x+8x^2-\\cdots)$ $= 1 - 3x + 7x^2 + \\cdots$",
+      "marks": 5
+    },
+    {
+      "id": "AL1_Q6_X02",
+      "difficulty": "X",
+      "skill_tags": ["partial fractions", "integration preparation"],
+      "problem_text": "Express $\\frac{3x^2 - 4x + 7}{(x-1)(x^2 - 2x + 2)}$ in partial fractions.",
+      "answer": "$\\frac{2}{x-1} + \\frac{x-3}{x^2-2x+2}$... Let me verify.",
+      "solution": "$\\frac{3x^2-4x+7}{(x-1)(x^2-2x+2)} = \\frac{A}{x-1} + \\frac{Bx+C}{x^2-2x+2}$. $3x^2-4x+7 = A(x^2-2x+2) + (Bx+C)(x-1)$. $x=1$: $3-4+7 = A(1-2+2) \\implies 6 = A(1) \\implies A = 6$. Compare $x^2$: $3 = A + B \\implies 3 = 6 + B \\implies B = -3$. $x$: $-4 = -2A + C - B \\implies -4 = -12 + C + 3 \\implies -4 = -9 + C \\implies C = 5$. Constant: $7 = 2A - C \\implies 7 = 12 - 5 = 7$ (check). So $\\frac{6}{x-1} + \\frac{-3x+5}{x^2-2x+2}$.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q6_X03",
+      "difficulty": "X",
+      "skill_tags": ["partial fractions", "improper", "long division"],
+      "problem_text": "Express $\\frac{x^4 - 1}{x^2 - 1}$ in partial fractions.",
+      "answer": "$\\frac{x^4-1}{x^2-1} = \\frac{(x^2-1)(x^2+1)}{x^2-1} = x^2 + 1$",
+      "solution": "$x^4-1 = (x^2-1)(x^2+1)$. So $\\frac{x^4-1}{x^2-1} = x^2+1$. No partial fractions needed (it's a polynomial).",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q6_X04",
+      "difficulty": "X",
+      "skill_tags": ["partial fractions", "equating coefficients"],
+      "problem_text": "Find the values of $A$, $B$ and $C$ such that $\\frac{2x^2 + 7x + 10}{(x+2)(x^2 + 2x + 5)} \\equiv \\frac{A}{x+2} + \\frac{Bx + C}{x^2 + 2x + 5}$.",
+      "answer": "$A = 2, B = 0, C = 3$",
+      "solution": "$2x^2+7x+10 = A(x^2+2x+5) + (Bx+C)(x+2)$. $x=-2$: $8-14+10 = A(4-4+5) \\implies 4 = 5A \\implies A = \\frac{4}{5}$. Hmm, let me redo: $2(4) + 7(-2) + 10 = 8 - 14 + 10 = 4$. $A(4-4+5) = 5A$. So $5A = 4 \\implies A = \\frac{4}{5}$. $x^2$: $2 = A + B \\implies 2 = \\frac{4}{5} + B \\implies B = \\frac{6}{5}$. $x$: $7 = 2A + 2B + C \\implies 7 = \\frac{8}{5} + \\frac{12}{5} + C \\implies 7 = \\frac{20}{5} + C \\implies C = 7 - 4 = 3$. Constant: $10 = 5A + 2C \\implies 10 = 5(\\frac{4}{5}) + 2(3) = 4 + 6 = 10$ (check).",
+      "marks": 4
+    }
+  ]
+}
