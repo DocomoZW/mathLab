@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 """
-Batch generate .md spec files for ALL unprocessed topics programmatically.
-Replaces the per-tick cron approach. Processes all 148 topics in one run (~seconds).
-
-Generates LANDSCAPE.md, SOCIAL.md, and ANIMATION_BLUEPRINT.md
-for each topic using structured templates based on topic metadata.
+Batch generate .md spec files for ALL topics.
+Extracts REAL content from curriculum JSONs — worked examples, mistakes, prerequisites.
 """
 
 import json, os, sys, datetime, re
@@ -14,45 +11,78 @@ CONTENT_DIR = "/opt/data/.hermes/content"
 CREATIVE_DIR = os.path.join(CONTENT_DIR, "creative")
 MANIFEST_PATH = os.path.join(CREATIVE_DIR, "manifest.json")
 
-PALETTE = {
-    "bg_deep": "#1A1A2E", "bg_navy": "#0F3460",
-    "accent_red": "#E94560", "accent_teal": "#0D7377",
-    "accent_gold": "#F5A623", "text_primary": "#E8E8F0", "text_muted": "#8888AA",
-}
-
+PALETTE = {"bg_deep": "#1A1A2E", "bg_navy": "#0F3460", "accent_red": "#E94560",
+           "accent_teal": "#0D7377", "accent_gold": "#F5A623", "text_primary": "#E8E8F0", "text_muted": "#8888AA"}
 MASCOTS = {"igcse_o": "Zara", "add_maths": "Zara", "a_level": "Marcus"}
 
-def detect_track(topic_id):
-    if topic_id.startswith("AL"): return "a_level"
-    if topic_id.startswith("AM"): return "add_maths"
+def detect_track(tid):
+    if tid.startswith("AL"): return "a_level"
+    if tid.startswith("AM"): return "add_maths"
     return "igcse_o"
 
-def first_sentence(text, n=15):
-    words = re.split(r"[.!?]", text or "")[0].split()
+def strip_img(t):
+    return re.sub(r'\[img:[^\]]+\]\s*', '', t or "").strip()
+
+def first_real_sentence(t, n=18):
+    t = strip_img(t)
+    s = re.split(r'[.!?]', t)[0].strip()
+    words = s.split()
     return " ".join(words[:n])
 
-def ext(concept_id):
-    """Extract unit code from topic_id e.g. AL3_Q1 -> AL3"""
-    return concept_id.split("_")[0] if "_" in concept_id else concept_id[:3]
+def clean_latex(t):
+    """Replace LaTeX with plain text approximations."""
+    t = re.sub(r'\$([^$]+)\$', r'\1', t)
+    t = t.replace("\\\\", "\\").replace("\\mathbb{N}", "N").replace("\\mathbb{Z}", "Z")
+    t = t.replace("\\mathbb{Q}", "Q").replace("\\mathbb{R}", "R")
+    t = re.sub(r'\\[a-z]+', '', t)
+    return t.strip()
 
-# ─── LANDSCAPE.md generator ──────────────────────────────────────────
+def extract_steps_from_we(we):
+    """Extract step descriptions from worked_example (string or dict)."""
+    if isinstance(we, dict):
+        text = we.get("question", "") + "\n" + we.get("solution", "")
+    else:
+        text = we or ""
+    steps = []
+    lines = text.split("\n")
+    for line in lines:
+        line = line.strip()
+        if re.match(r'^\d+[.)]\s', line):
+            steps.append(clean_latex(re.sub(r'^\d+[.)]\s*', '', line))[:100])
+        elif line.startswith("**Step") or re.match(r'^Step\s+\d+', line):
+            steps.append(clean_latex(re.sub(r'^\*\*Step\s+\d+[:\s]*\*\*', '', line))[:100])
+    if not steps:
+        steps = ["Classify each number by type", "Apply the definition of each set", "State all sets that apply"]
+    return steps[:5]
+
+def fmt_we_steps(steps):
+    return "\n".join(f"  - Step {i+1}: {s}" for i, s in enumerate(steps))
+
+# ─── LANDSCAPE.md ───────────────────────────────────────────────────
 
 def gen_landscape(topic):
-    tid = topic["topic_id"]
-    title = topic["title"]
-    track = detect_track(tid)
-    hook = topic.get("hook", "")
-    steps = topic.get("worked_example", "")
+    tid, title, track, hook = topic["topic_id"], topic["title"], detect_track(topic["topic_id"]), topic.get("hook","")
+    we_steps = extract_steps_from_we(topic.get("worked_example",""))
+    mistakes = topic.get("common_mistakes", [])
+    prereqs = topic.get("prerequisites", [])
+    summary = topic.get("summary", [])
     mascot = MASCOTS.get(track, "Zara")
+    tl = track.replace("_"," ").title()
+    hook_line = first_real_sentence(hook, 10) or f"Explore {title}"
 
-    hook_line = first_sentence(hook, 8) or "Explore this mathematical concept"
-    step_list = []
-    if isinstance(steps, dict):
-        step_list = [steps.get("question", "")[:80]] if "question" in steps else []
-    elif isinstance(steps, str):
-        step_list = [s.strip() for s in steps.split("\n") if s.strip().startswith("**Step")][:4]
+    fact1 = clean_latex(summary[0]) if summary else f"{title} is fundamental mathematics"
+    fact2 = clean_latex(summary[1]) if len(summary) > 1 else "Key concept for exam success"
+    fact3 = clean_latex( summary[2]) if len(summary) > 2 else "Builds on prior knowledge"
 
-    tl = track.replace("_", " ").title()
+    cm_text = ""
+    if mistakes and isinstance(mistakes[0], dict):
+        cm_text = strip_img(mistakes[0].get("mistake", ""))[:120]
+    elif mistakes and isinstance(mistakes[0], str):
+        cm_text = strip_img(mistakes[0])[:120]
+    if not cm_text:
+        cm_text = "Watch for common errors in classification and computation."
+
+    prereq_text = ", ".join(clean_latex(p)[:40] for p in prereqs[:3]) if prereqs else "Foundational mathematics"
 
     return f"""# LANDSCAPE — {title}
 **Format:** 16:9 (1920×1080px)
@@ -67,7 +97,7 @@ def gen_landscape(topic):
 **Mascot:** {mascot} (180px), bottom-left corner
 **Headline:** "{hook_line}"
 **Sub-line:** `Used in: {topic.get("syllabus_ref", "mathematics")}`
-**Visual:** Concept icon representing "{ext(tid)}"
+**Visual:** Concept icon representing "{tid[:3]}"
 
 ---
 
@@ -75,27 +105,16 @@ def gen_landscape(topic):
 
 **Background:** `{PALETTE["bg_navy"]}`
 **Title:** {title} (Inter Tight Bold, 36px, {PALETTE["text_primary"]})
-**Definition:** {hook_line}
-**Prerequisite chips:** up to 3 pill tags in `{PALETTE["accent_red"]}`
+**Definition:** {first_real_sentence(hook, 15) or title}
+**Prerequisite chips:** {prereq_text}
 
 ---
 
 ## PANEL 3 — WORKED EXAMPLE (Centre 40%, bottom half, 768×540px)
 
 **Background:** `{PALETTE["bg_deep"]}` with subtle grid
-**Steps:"""
-    for i, s in enumerate(step_list[:4], 1):
-        clean = s.replace("**", "").strip()[:80]
-        if clean:
-            s += f"""
-  - Step {i}: `{clean}` (annotation in {PALETTE["text_muted"]})"""
-    if not step_list:
-        s += """
-  - Step 1: Setup — identify given information
-  - Step 2: Apply — use the relevant formula or theorem
-  - Step 3: Simplify — combine like terms and reduce
-  - Step 4: Conclude — state the final answer"""
-    s += f"""
+**Steps:**
+{fmt_we_steps(we_steps)}
 **Final answer box:** `{PALETTE["accent_teal"]}` border, bold
 
 ---
@@ -104,29 +123,27 @@ def gen_landscape(topic):
 
 **Background:** `{PALETTE["bg_deep"]}` with right-edge 8px `{PALETTE["accent_red"]}` stripe
 **Facts:**
-  - 🔍 {title} is fundamental to {tl} mathematics
-  - 📐 Appears in past papers across all exam boards
-  - ⚡ Links to {topic.get("prerequisites", "prior topics")}
-**Common mistake:** Watch for sign errors and misapplied formulas.
+  - 🔍 {fact1}
+  - 📐 {fact2}
+  - ⚡ {fact3}
+**Common mistake:** {cm_text}
 
 ---
 
 *Generated by CreativeTeacher · MathsLMS · {datetime.date.today().isoformat()}*
 """
 
-# ─── SOCIAL.md generator ────────────────────────────────────────────
+# ─── SOCIAL.md ──────────────────────────────────────────────────────
 
 def gen_social(topic):
-    tid = topic["topic_id"]
-    title = topic["title"]
-    track = detect_track(tid)
-    hook = topic.get("hook", "")
+    tid, title, track, hook = topic["topic_id"], topic["title"], detect_track(topic["topic_id"]), topic.get("hook","")
+    we_steps = extract_steps_from_we(topic.get("worked_example",""))
     mascot = MASCOTS.get(track, "Zara")
-    tl = track.replace("_", " ").title()
+    tl = track.replace("_"," ").title()
 
-    hook_q = first_sentence(hook, 6) + "?"
+    hook_q = first_real_sentence(hook, 8).rstrip("?") + "?"
     if not hook_q.strip("?"):
-        hook_q = f"Can you master {ext(tid)}?"
+        hook_q = f"Can you master {title}?"
 
     return f"""# SOCIAL — {title}
 **Format:** 9:16 (1080×1920px)
@@ -147,7 +164,7 @@ def gen_social(topic):
 
 **Background:** `{PALETTE["bg_navy"]}`
 **Title:** {title} (Inter Tight Bold, 44px)
-**Summary:** Core concept from {tl} mathematics
+**Summary:** {first_real_sentence(hook, 6) or "Core concept"}
 
 ---
 
@@ -155,9 +172,9 @@ def gen_social(topic):
 
 **Background:** `{PALETTE["bg_deep"]}`
 **Steps (3 most critical):**
-  - Step 1 — Identify what's given (left border: `{PALETTE["accent_red"]}`)
-  - Step 2 — Apply the method (left border: `{PALETTE["accent_teal"]}`)
-  - Step 3 — State the result (left border: `{PALETTE["accent_gold"]}`)
+  - Step 1 — {we_steps[0] if len(we_steps) > 0 else "Identify what's given"} (left border: `{PALETTE["accent_red"]}`)
+  - Step 2 — {we_steps[1] if len(we_steps) > 1 else "Apply the method"} (left border: `{PALETTE["accent_teal"]}`)
+  - Step 3 — {we_steps[2] if len(we_steps) > 2 else "State the result"} (left border: `{PALETTE["accent_gold"]}`)
 **Caption:** "Swipe for full solution →" in {PALETTE["text_muted"]}
 
 ---
@@ -174,44 +191,64 @@ def gen_social(topic):
 *Generated by CreativeTeacher · MathsLMS · {datetime.date.today().isoformat()}*
 """
 
-# ─── ANIMATION_BLUEPRINT.md generator ───────────────────────────────
+# ─── ANIMATION_BLUEPRINT.md ─────────────────────────────────────────
 
 def gen_animation(topic):
-    tid = topic["topic_id"]
-    title = topic["title"]
-    track = detect_track(tid)
+    tid, title, track, hook = topic["topic_id"], topic["title"], detect_track(topic["topic_id"]), topic.get("hook","")
+    we_steps = extract_steps_from_we(topic.get("worked_example",""))
+    mistakes = topic.get("common_mistakes", [])
     mascot = MASCOTS.get(track, "Marcus" if track == "a_level" else "Zara")
-    hook = topic.get("hook", "")
-    hook_visual = first_sentence(hook, 12) or f"Visual introduction to {title}"
+    tl = track.replace("_"," ").title()
 
-    frames = [
-        ("0–2s", f"Opening — {title} scene", "Hook the learner with real-world context"),
-        ("2–4s", f"Key definition or formula reveal", "Establish mathematical foundation"),
-        ("4–6s", f"Step-by-step worked example", "Build procedural understanding"),
-        ("6–8s", f"Critical transformation or insight", "Deepen conceptual grasp"),
-        ("8–10s", f"Result and summary", "Solidify and conclude"),
-    ]
+    hook_visual = first_real_sentence(hook, 12) or f"Visual introduction to {title}"
+    cm_hint = ""
+    if mistakes and isinstance(mistakes[0], dict):
+        cm_hint = strip_img(mistakes[0].get("mistake",""))[:80]
+    elif mistakes and isinstance(mistakes[0], str):
+        cm_hint = strip_img(mistakes[0])[:80]
 
-    frame_table = "\n".join(f"  | {i+1} | {t} | {v} | {p} |" for i, (t, v, p) in enumerate(frames))
+    step_count = len(we_steps)
+    hook_half = first_real_sentence(hook, 8) or f"Explore {title}"
+    frames = []
+    # Frame 1: hook visual
+    frames.append((1, "0–2s", hook_half, "Hook the learner with a real-world context"))
+    # Middle frames: contextualized steps (skip empty)
+    for i, s in enumerate(we_steps[:4]):
+        if not s.strip(): continue
+        purpose = ["Establish the mathematical foundation",
+                   "Build procedural understanding step by step",
+                   "Deepen conceptual grasp with practice",
+                   "Solidify understanding before moving on"][min(i, 3)]
+        time_start = (i+1)*2
+        desc = f"Work through: {clean_latex(s)[:70]}"
+        frames.append((i+2, f"{time_start}–{time_start+2}s", desc, purpose))
+    # If no real steps, use generic frames
+    if len(frames) <= 1:
+        frames = [(1, "0–2s", f"Introduce {title} visually", "Hook the learner with context"),
+                  (2, "2–4s", "Present the key definition", "Build foundation"),
+                  (3, "4–6s", "Work through a detailed example", "Develop understanding"),
+                  (4, "6–8s", "Highlight the critical insight", "Deepen grasp"),
+                  (5, "8–10s", f"Summarise {title}", "Conclude and connect")]
 
-    track_label = track.replace("_", " ").title()
+    frame_table = "\n".join(f"  | {n} | {t} | {v} | {p} |" for n, t, v, p in frames)
+    effect_hint = f"Highlight common pitfall: {cm_hint[:60]}" if cm_hint else "Smooth transitions between frames, highlight key terms"
 
     return f"""# Animation Blueprint — {title}
 
 **Topic ID:** {tid}
-**Track:** {track_label}
+**Track:** {tl}
 **Mascot:** {mascot}
 
 ---
 
 ## SECTION 1 — CREATIVE BRIEF
 
-**METAPHOR:** Step-by-step visual walkthrough of {title.lower()}, building from foundation to mastery.
-**CHARACTER:** {mascot} ({track_label}) — guides the learner through each stage.
+**METAPHOR:** Step-by-step visual exploration of {title.lower()}, grounded in real mathematical practice.
+**CHARACTER:** {mascot} ({tl}) — guides the learner through each stage.
 **PALETTE:** MathsLMS Dark ({PALETTE["bg_deep"]} bg, {PALETTE["accent_red"]} accent, {PALETTE["accent_teal"]} success, {PALETTE["accent_gold"]} highlight).
 **TONE:** {"Precise and analytical" if track == "a_level" else "Curious and encouraging"}.
 **HOOK_VISUAL:** {hook_visual}
-**KEY_TRANSITION:** Step 3 → Step 4 — the critical procedural leap.
+**KEY_TRANSITION:** The step from definition to application — the most critical conceptual leap.
 
 ---
 
@@ -221,8 +258,8 @@ def gen_animation(topic):
 |-------|-------|
 | concept_id | {tid} |
 | title | {title} |
-| duration_target | 10 seconds |
-| loop_behaviour | 4-sec loop, pause 1s at step 4 |
+| duration_target | {max(len(frames)*2, 8)} seconds |
+| loop_behaviour | 4-sec loop, pause 1s at key transition |
 | file_size_target_kb | ≤500 KB |
 | resolution | 800×450px, 15fps max |
 | palette | bg `{PALETTE["bg_deep"]}`, primary `{PALETTE["accent_red"]}`, secondary `{PALETTE["accent_teal"]}` |
@@ -233,8 +270,8 @@ def gen_animation(topic):
 |-------|------|--------|---------------------|
 {frame_table}
 
-**SPECIAL_EFFECTS:** Smooth transitions between frames, highlight key terms in {PALETTE["accent_gold"]}
-**MANIM_SCENE_HINTS:** Use Write for text reveals, Transform for equation morphing
+**SPECIAL_EFFECTS:** {effect_hint}
+**MANIM_SCENE_HINTS:** Use Write for text reveals, Transform for equation morphing, highlight key terms in {PALETTE["accent_gold"]}
 
 ---
 
@@ -246,13 +283,13 @@ def gen_animation(topic):
 - Use {PALETTE["accent_red"]} for important elements, {PALETTE["accent_teal"]} for correct answers
 
 **CANVAS JS NOTES:**
-- Step structure: 5 steps matching the frame sequence above
+- Step structure: {len(frames)} steps matching the frame sequence above
 - Colour coding: blue for setup, orange for manipulation, green for result
 - Controls: Prev/Next/Auto with step counter
 
 **CSS ANIMATION NOTES:**
 - @keyframes for each step reveal with staggered animation-delay
-- Dark background (#1A1A2E), accent highlights
+- Dark background ({PALETTE["bg_deep"]}), accent highlights
 - Print stylesheet included for accessibility
 
 **ASCII FRAME NOTES:**
@@ -266,18 +303,7 @@ def gen_animation(topic):
 """
 
 
-# ─── Main batch process ─────────────────────────────────────────────
-
-def load_manifest():
-    if os.path.isfile(MANIFEST_PATH):
-        with open(MANIFEST_PATH) as f:
-            return json.load(f)
-    return {"description": "Creative asset outputs", "skills": ["infographic-architect", "animation-blueprint"], "concepts": []}
-
-def save_manifest(m):
-    os.makedirs(os.path.dirname(MANIFEST_PATH), exist_ok=True)
-    with open(MANIFEST_PATH, "w") as f:
-        json.dump(m, f, indent=2)
+# ─── Main ───────────────────────────────────────────────────────────
 
 def scan_topics():
     topics = []
@@ -294,18 +320,30 @@ def scan_topics():
             tid = data.get("topic_id", "")
             if not tid:
                 continue
-            sections = data.get("sections", {})
+            s = data.get("sections", {})
             topics.append({
                 "topic_id": tid,
                 "title": data.get("title", ""),
-                "track": data.get("track", detect_track(tid)),
                 "path": fp,
-                "hook": sections.get("hook", ""),
-                "prerequisites": sections.get("prerequisites", ""),
-                "worked_example": sections.get("worked_example", ""),
+                "hook": s.get("hook", ""),
+                "prerequisites": s.get("prerequisites", []),
+                "worked_example": s.get("worked_example", ""),
+                "common_mistakes": s.get("common_mistakes", []),
+                "summary": s.get("summary", []),
                 "syllabus_ref": data.get("syllabus_ref", ""),
             })
     return topics
+
+def load_manifest():
+    if os.path.isfile(MANIFEST_PATH):
+        with open(MANIFEST_PATH) as f:
+            return json.load(f)
+    return {"description": "Creative asset outputs", "skills": ["infographic-architect", "animation-blueprint"], "concepts": []}
+
+def save_manifest(m):
+    os.makedirs(CREATIVE_DIR, exist_ok=True)
+    with open(MANIFEST_PATH, "w") as f:
+        json.dump(m, f, indent=2)
 
 def main():
     manifest = load_manifest()
@@ -315,42 +353,38 @@ def main():
     total = len(topics)
     done = len(done_ids)
 
-    print(f"📊 {done}/{total} already generated, {len(pending)} pending")
-    if not pending:
-        print("✅ All topics done!")
-        return
+    # If some exist but with old generic spec, re-process them all
+    force = "--force" in sys.argv
+    if force:
+        pending = topics
+        manifest["concepts"] = []
+        print("🔁 Force mode: regenerating all specs")
 
+    print(f"📊 {done}/{total} existing, {len(pending)} to generate")
     count = 0
     errors = []
+
     for topic in pending:
         tid = topic["topic_id"]
         out_dir = os.path.join(CREATIVE_DIR, tid)
         os.makedirs(out_dir, exist_ok=True)
 
         try:
-            # Generate all 3 specs
-            landscape = gen_landscape(topic)
             with open(os.path.join(out_dir, "LANDSCAPE.md"), "w") as f:
-                f.write(landscape)
-
-            social = gen_social(topic)
+                f.write(gen_landscape(topic))
             with open(os.path.join(out_dir, "SOCIAL.md"), "w") as f:
-                f.write(social)
-
-            anim = gen_animation(topic)
+                f.write(gen_social(topic))
             with open(os.path.join(out_dir, "ANIMATION_BLUEPRINT.md"), "w") as f:
-                f.write(anim)
+                f.write(gen_animation(topic))
 
-            # Update manifest
             manifest["concepts"].append({
                 "concept_id": tid,
                 "generated_at": datetime.datetime.now().isoformat(),
                 "files": ["LANDSCAPE.md", "SOCIAL.md", "ANIMATION_BLUEPRINT.md"],
             })
-            save_manifest(manifest)
-
             count += 1
-            if count % 10 == 0:
+            if count % 15 == 0:
+                save_manifest(manifest)
                 print(f"  {done+count}/{total} — {tid}")
                 sys.stdout.flush()
 
@@ -358,11 +392,11 @@ def main():
             errors.append(f"{tid}: {e}")
             print(f"  ❌ {tid}: {e}")
 
+    save_manifest(manifest)
     print(f"\n✅ Generated {count} topic spec sets")
     if errors:
-        print(f"⚠  {len(errors)} errors:\n" + "\n".join(errors[:5]))
-    if errors:
-        sys.exit(1)
+        print(f"⚠  {len(errors)} errors:" + "\n".join(errors[:5]))
+        sys.exit(1 if errors else 0)
 
 if __name__ == "__main__":
     main()
