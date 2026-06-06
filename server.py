@@ -144,6 +144,7 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
             "/api/recent-tasks": self.handle_recent_tasks,
             "/api/directory-listing": self.handle_directory_listing,
             "/api/content-file": self.handle_content_file,
+            "/api/creative-manifest": self.handle_creative_manifest,
             "/gifs": self.handle_gifs_index,
             "/learn": self.handle_learn,
             "/learn/": self.handle_learn,
@@ -158,6 +159,11 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
         # Check for /svg/* paths
         if path.startswith("/svg/"):
             self.serve_svg_file(path)
+            return
+
+        # Check for /creative/* paths
+        if path.startswith("/creative/"):
+            self.serve_creative_file(path)
             return
 
         # Check for /pdfs/* paths
@@ -538,6 +544,31 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def handle_creative_manifest(self):
+        """Return the creative assets manifest."""
+        import json
+        manifest_path = os.path.join(BASE_DIR, "content", "creative", "manifest.json")
+        if os.path.isfile(manifest_path):
+            with open(manifest_path) as f:
+                data = json.load(f)
+            # Scan for concept dirs with generated assets
+            creative_dir = os.path.join(BASE_DIR, "content", "creative")
+            concepts = []
+            for entry in sorted(os.listdir(creative_dir)):
+                concept_dir = os.path.join(creative_dir, entry)
+                if os.path.isdir(concept_dir) and entry != "__pycache__":
+                    files = os.listdir(concept_dir)
+                    if any(f.endswith((".md", ".html", ".py", ".js")) for f in files):
+                        concepts.append({
+                            "concept_id": entry,
+                            "files": [f for f in files if not f.startswith(".")]
+                        })
+            data["concepts"] = concepts
+            data["generated_at"] = __import__("datetime").datetime.now().isoformat()
+            self.send_json(data)
+        else:
+            self.send_json({"concepts": [], "skills": []})
+
     def handle_learn(self):
         """Serve the student learning platform."""
         try:
@@ -627,6 +658,40 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
         self.send_header("Cache-Control", "public, max-age=3600")
         self.end_headers()
         with open(svg_path, "rb") as f:
+            self.wfile.write(f.read())
+
+    CREATIVE_DIR = os.path.join(BASE_DIR, "content", "creative")
+
+    def serve_creative_file(self, path):
+        """Serve a creative asset file from the creative directory."""
+        creative_rel = path.replace("/creative/", "", 1)
+        if ".." in creative_rel or creative_rel.startswith("/"):
+            self.send_json({"error": "Invalid path"}, 400)
+            return
+        creative_path = os.path.join(self.CREATIVE_DIR, creative_rel)
+        if not os.path.isfile(creative_path):
+            self.send_json({"error": "Creative asset not found"}, 404)
+            return
+        ext = os.path.splitext(creative_path)[1].lower()
+        mime_map = {
+            ".json": "application/json",
+            ".html": "text/html; charset=utf-8",
+            ".md": "text/markdown; charset=utf-8",
+            ".txt": "text/plain; charset=utf-8",
+            ".png": "image/png",
+            ".svg": "image/svg+xml",
+            ".py": "text/x-python; charset=utf-8",
+            ".js": "application/javascript; charset=utf-8",
+            ".css": "text/css; charset=utf-8",
+        }
+        content_type = mime_map.get(ext, "application/octet-stream")
+        self.send_response(200)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(os.path.getsize(creative_path)))
+        self.send_header("Cache-Control", "public, max-age=3600")
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.end_headers()
+        with open(creative_path, "rb") as f:
             self.wfile.write(f.read())
 
     PDFS_DIR = os.path.join(BASE_DIR, "content", "pdfs")
