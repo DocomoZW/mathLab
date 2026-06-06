@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 340"
+     font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <filter id="paper-texture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="gray"/>
+      <feBlend in="SourceGraphic" in2="gray" mode="multiply"/>
+    </filter>
+    <filter id="sketch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <rect width="460" height="340" fill="#f4e8c1"/>
+  <rect width="460" height="340" fill="url(#paper-texture)" opacity="0.08"/>
+  <!-- deckle edge -->
+  <rect x="6" y="6" width="448" height="328" fill="none" stroke="#6b5a4a" stroke-width="0.8" opacity="0.4"/>
+  <line x1="40" y1="0" x2="40" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="80" y1="0" x2="80" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="120" y1="0" x2="120" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="160" y1="0" x2="160" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="0" x2="200" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="240" y1="0" x2="240" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="280" y1="0" x2="280" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="320" y1="0" x2="320" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="360" y1="0" x2="360" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="440" y1="0" x2="440" y2="340" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="40" x2="460" y2="40" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="80" x2="460" y2="80" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="120" x2="460" y2="120" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="160" x2="460" y2="160" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="200" x2="460" y2="200" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="240" x2="460" y2="240" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="280" x2="460" y2="280" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="0" y1="320" x2="460" y2="320" stroke="#d4c8a0" stroke-width="0.3" opacity="0.3"/>
+  <line x1="60" y1="230" x2="340" y2="230" stroke="#3d2b1f" stroke-width="1.5" filter="url(#sketch)"/>
+  <line x1="200" y1="60" x2="200" y2="250" stroke="#3d2b1f" stroke-width="1.5" filter="url(#sketch)"/>
+  <path d="M 100.0,-145.0 L 105.0,-108.4 L 110.0,-73.8 L 115.0,-40.9 L 120.0,-10.0 L 125.0,19.1 L 130.0,46.2 L 135.0,71.6 L 140.0,95.0 L 145.0,116.6 L 150.0,136.2 L 155.0,154.1 L 160.0,170.0 L 165.0,184.1 L 170.0,196.2 L 175.0,206.6 L 180.0,215.0 L 185.0,221.6 L 190.0,226.2 L 195.0,229.1 L 200.0,230.0 L 205.0,229.1 L 210.0,226.2 L 215.0,221.6 L 220.0,215.0 L 225.0,206.6 L 230.0,196.2 L 235.0,184.1 L 240.0,170.0 L 245.0,154.1 L 250.0,136.2 L 255.0,116.6 L 260.0,95.0 L 265.0,71.6 L 270.0,46.2 L 275.0,19.1 L 280.0,-10.0 L 285.0,-40.9 L 290.0,-73.8 L 295.0,-108.4 L 300.0,-145.0" fill="none" stroke="#3d2b1f" stroke-width="1.5" filter="url(#sketch)"/>
+  <line x1="360" y1="100" x2="460" y2="100" stroke="#3d2b1f" stroke-width="1.5" filter="url(#sketch)"/>
+  <line x1="410" y1="100" x2="410" y2="180" stroke="#3d2b1f" stroke-width="1.2"/>
+  <line x1="360" y1="100" x2="355" y2="150" stroke="#3d2b1f" stroke-width="1" filter="url(#sketch)"/>
+  <line x1="460" y1="100" x2="465" y2="130" stroke="#3d2b1f" stroke-width="1" filter="url(#sketch)"/>
+  <text x="355" y="165" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3d2b1f" font-style="italic">x + 3</text>
+  <text x="460" y="145" text-anchor="middle" font-family="Georgia" font-size="11" fill="#3d2b1f" font-style="italic">5</text>
+  <text x="60" y="270" font-family="Georgia, serif" font-size="8" fill="#6b5a4a" font-style="italic" opacity="0.85">Aequatio — a balance of quantities</text>
+  <path d="M 40.0,40.0 L 40.0,40.0 L 40.1,40.0 L 40.2,40.1 L 40.3,40.1 L 40.3,40.2 L 40.3,40.3 L 40.3,40.5 L 40.3,40.6 L 40.2,40.7 L 40.1,40.8 L 40.0,40.9 L 39.8,41.0 L 39.7,41.1 L 39.4,41.1 L 39.2,41.1 L 39.0,41.0 L 38.8,40.9 L 38.6,40.7 L 38.4,40.5 L 38.2,40.3 L 38.1,40.0 L 38.0,39.7 L 38.0,39.4 L 38.1,39.0 L 38.2,38.7 L 38.3,38.3 L 38.6,38.0 L 38.8,37.7 L 39.2,37.5 L 39.6,37.3 L 40.0,37.2 L 40.5,37.1 L 40.9,37.1 L 41.4,37.2 L 41.9,37.4 L 42.3,37.7 L 42.7,38.0 L 43.1,38.4 L 43.4,38.9 L 43.6,39.4" fill="none" stroke="#6b5a4a" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="230" y="322" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6b5a4a" font-style="italic" opacity="0.7">Factor Theorem</text>
+
+</svg>
