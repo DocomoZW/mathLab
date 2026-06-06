@@ -40,8 +40,8 @@ def strip_meta(value):
     return value.strip().strip('"').strip('"').strip('?')
 
 def extract_section(text, section_name):
-    """Extract content of a ## section."""
-    pattern = r'##\s+' + re.escape(section_name) + r'.*?\n(.*?)(?=\n##\s|\Z)'
+    """Extract content of a ## section. section_name is a regex pattern."""
+    pattern = r'##\s+' + section_name + r'.*?\n(.*?)(?=\n##\s|\Z)'
     m = re.search(pattern, text or "", re.DOTALL)
     return m.group(1).strip() if m else ""
 
