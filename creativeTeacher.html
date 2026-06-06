@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CreativeTeacher Portal — MathsLMS</title>
+<style>
+:root{
+  --bg:#0f0f1a;--bg2:#1a1a2e;--bg3:#16213e;--border:#2a2a4e;
+  --text:#e0e0f0;--text2:#94a3b8;--text3:#64748b;
+  --accent:#e94560;--accent2:#0d7377;--accent3:#f5a623;
+  --mint:#22d3ee;--gold:#f5a623;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh}
+.navbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(15,15,26,.95);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;padding:0 24px;height:56px;gap:16px;
+}
+.navbar .brand{font-weight:700;font-size:18px;color:var(--mint);display:flex;align-items:center;gap:8px}
+.navbar .brand small{font-weight:400;font-size:12px;color:var(--text3);margin-left:8px}
+.navbar .nav-right{margin-left:auto;display:flex;gap:12px;align-items:center}
+.navbar a{color:var(--text2);text-decoration:none;font-size:13px;padding:6px 12px;border-radius:6px;transition:all .15s}
+.navbar a:hover{color:var(--text);background:var(--bg2)}
+.navbar .stats{font-size:12px;color:var(--text3)}
+.container{max-width:1280px;margin:0 auto;padding:24px}
+.stats-bar{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:24px;
+}
+.stat-card{
+  background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center;
+}
+.stat-card .num{font-size:28px;font-weight:700}
+.stat-card .label{font-size:12px;color:var(--text3);margin-top:4px}
+.stat-card.specs .num{color:var(--mint)}
+.stat-card.rendered .num{color:var(--accent2)}
+.stat-card.pending .num{color:var(--gold)}
+
+.filters{
+  display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;
+}
+.filter-btn{
+  padding:6px 16px;border-radius:20px;border:1px solid var(--border);
+  background:transparent;color:var(--text2);font-size:12px;cursor:pointer;transition:all .15s;
+}
+.filter-btn:hover,.filter-btn.active{border-color:var(--accent);color:var(--text);background:var(--bg2)}
+.filter-btn .count{color:var(--text3);margin-left:4px;font-size:11px}
+
+.topic-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;
+}
+.topic-card{
+  background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px;
+  transition:border-color .15s;position:relative;overflow:hidden;
+}
+.topic-card:hover{border-color:var(--accent)}
+.topic-card .accent-bar{position:absolute;top:0;left:0;right:0;height:3px}
+.topic-card .accent-bar.igcse{background:var(--accent2)}
+.topic-card .accent-bar.a_level{background:var(--accent)}
+.topic-card .accent-bar.add_maths{background:var(--gold)}
+
+.topic-card .title{font-size:15px;font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.topic-card .title .id{font-size:11px;color:var(--text3);font-weight:400}
+.topic-card .track-badge{
+  font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500;
+}
+.track-badge.igcse{background:rgba(13,115,119,.2);color:var(--accent2)}
+.track-badge.a_level{background:rgba(233,69,96,.2);color:var(--accent)}
+.track-badge.add_maths{background:rgba(245,166,35,.2);color:var(--gold)}
+
+.topic-card .meta{font-size:12px;color:var(--text3);margin:6px 0 10px;display:flex;gap:12px;flex-wrap:wrap}
+.topic-card .files{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.file-tag{
+  font-size:11px;padding:3px 10px;border-radius:12px;background:var(--bg3);
+  color:var(--text2);text-decoration:none;display:inline-flex;align-items:center;gap:4px;
+  border:1px solid var(--border);transition:all .15s;
+}
+.file-tag:hover{border-color:var(--mint);color:var(--mint)}
+.file-tag.rendered{background:rgba(13,115,119,.15);border-color:var(--accent2);color:var(--accent2)}
+.file-tag .icon{font-size:14px}
+
+.topic-card .actions{display:flex;gap:8px;margin-top:8px}
+.action-btn{
+  padding:5px 14px;border-radius:6px;font-size:11px;font-weight:500;cursor:pointer;
+  border:1px solid var(--border);background:transparent;color:var(--text2);
+  transition:all .15s;display:flex;align-items:center;gap:4px;
+}
+.action-btn:hover{background:var(--bg3);color:var(--text)}
+.action-btn.render{
+  background:var(--accent);color:#fff;border-color:var(--accent);
+}
+.action-btn.render:hover{opacity:.85}
+.action-btn.render:disabled{opacity:.4;cursor:not-allowed}
+.action-btn.view-all{
+  background:var(--bg3);border-color:var(--border);
+}
+
+/* Spec Preview Modal */
+.modal-overlay{
+  display:none;position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,.7);z-index:200;backdrop-filter:blur(4px);
+  align-items:center;justify-content:center;padding:20px;
+}
+.modal-overlay.open{display:flex}
+.modal{
+  background:var(--bg2);border:1px solid var(--border);border-radius:12px;
+  max-width:900px;width:100%;max-height:85vh;overflow:hidden;
+  display:flex;flex-direction:column;
+}
+.modal-header{
+  padding:16px 20px;border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.modal-header h2{font-size:16px;display:flex;align-items:center;gap:8px}
+.modal-header .close{
+  width:32px;height:32px;border-radius:8px;border:1px solid var(--border);
+  background:transparent;color:var(--text2);cursor:pointer;font-size:18px;
+  display:flex;align-items:center;justify-content:center;transition:all .15s;
+}
+.modal-header .close:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.modal-body{overflow-y:auto;padding:20px;flex:1}
+.modal-body pre{
+  background:var(--bg);padding:16px;border-radius:8px;font-size:13px;
+  font-family:'JetBrains Mono','Fira Code',monospace;line-height:1.5;
+  overflow-x:auto;white-space:pre-wrap;word-break:break-word;color:var(--text2);
+}
+.modal-body .file-tabs{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+.file-tab{
+  padding:6px 14px;border-radius:6px;font-size:12px;cursor:pointer;
+  border:1px solid var(--border);background:transparent;color:var(--text2);
+  transition:all .15s;
+}
+.file-tab.active{background:var(--bg3);border-color:var(--mint);color:var(--mint)}
+
+.loading{text-align:center;padding:60px 20px;color:var(--text3)}
+.spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--mint);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty{text-align:center;padding:60px 20px;color:var(--text3);font-size:14px}
+.toast{
+  position:fixed;bottom:24px;right:24px;padding:12px 20px;border-radius:8px;
+  background:var(--accent2);color:#fff;font-size:13px;z-index:300;
+  opacity:0;transform:translateY(20px);transition:all .3s;
+}
+.toast.show{opacity:1;transform:translateY(0)}
+.toast.error{background:var(--accent)}
+@media(max-width:640px){
+  .topic-grid{grid-template-columns:1fr}
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand">🎨 CreativeTeacher <small>MathsLMS</small></div>
+  <div class="nav-right">
+    <a href="/learn" target="_blank">📖 Student</a>
+    <a href="/" target="_blank">📊 Dashboard</a>
+    <span class="stats" id="navStats">—</span>
+  </div>
+</div>
+
+<div class="container">
+  <div class="stats-bar" id="statsBar">
+    <div class="stat-card specs"><div class="num" id="totalSpecs">—</div><div class="label">Specs Generated</div></div>
+    <div class="stat-card rendered"><div class="num" id="totalRendered">—</div><div class="label">Assets Rendered</div></div>
+    <div class="stat-card pending"><div class="num" id="totalPending">—</div><div class="label">Awaiting Render</div></div>
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">All <span class="count" id="countAll">—</span></button>
+    <button class="filter-btn" data-filter="igcse_o">IGCSE <span class="count" id="countIgcse">—</span></button>
+    <button class="filter-btn" data-filter="add_maths">Add Maths <span class="count" id="countAdd">—</span></button>
+    <button class="filter-btn" data-filter="a_level">A Level <span class="count" id="countALevel">—</span></button>
+    <button class="filter-btn" data-filter="pending">⏳ Unrendered</button>
+  </div>
+
+  <div id="topicGrid" class="topic-grid"><div class="loading"><div class="spinner"></div><span>Loading creative assets...</span></div></div>
+</div>
+
+<!-- Spec Preview Modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">—</h2>
+      <button class="close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="file-tabs" id="fileTabs"></div>
+      <pre id="modalContent">Select a file to preview</pre>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let manifest=null,currentFilter='all';
+
+async function load(){
+  try{
+    const r=await fetch('/api/creative-manifest');
+    manifest=await r.json();
+    render();
+  }catch(e){
+    document.getElementById('topicGrid').innerHTML=
+      `<div class="empty">⚠ Failed to load creative assets. Is the server running?</div>`;
+  }
+}
+
+function render(){
+  const concepts=manifest.concepts||[];
+  const tracks={};
+  concepts.forEach(c=>{
+    const track=detectTrack(c.concept_id);
+    if(!tracks[track])tracks[track]=0;
+    tracks[track]++;
+  });
+
+  // Stats
+  document.getElementById('totalSpecs').textContent=concepts.length;
+  document.getElementById('countAll').textContent=concepts.length;
+  document.getElementById('countIgse').textContent=tracks.igcse_o||0;
+  document.getElementById('countAdd').textContent=tracks.add_maths||0;
+  document.getElementById('countALevel').textContent=tracks.a_level||0;
+  document.getElementById('navStats').textContent=`${concepts.length} spec sets`;
+
+  const rendered=concepts.filter(c=>c.rendered_assets&&c.rendered_assets.length>0);
+  document.getElementById('totalRendered').textContent=rendered.length;
+  document.getElementById('totalPending').textContent=concepts.length-rendered.length;
+
+  // Filter
+  let filtered=concepts;
+  if(currentFilter==='igcse_o')filtered=concepts.filter(c=>detectTrack(c.concept_id)==='igcse_o');
+  else if(currentFilter==='add_maths')filtered=concepts.filter(c=>detectTrack(c.concept_id)==='add_maths');
+  else if(currentFilter==='a_level')filtered=concepts.filter(c=>detectTrack(c.concept_id)==='a_level');
+  else if(currentFilter==='pending')filtered=concepts.filter(c=>!c.rendered_assets||c.rendered_assets.length===0);
+
+  if(filtered.length===0){
+    document.getElementById('topicGrid').innerHTML=
+      `<div class="empty">✨ All topics have rendered assets!</div>`;
+    return;
+  }
+
+  let html='';
+  filtered.forEach(c=>{
+    const track=detectTrack(c.concept_id);
+    const files=c.files||[];
+    const renderedFiles=c.rendered_assets||[];
+    const hasRendered=renderedFiles.length>0;
+    html+=`
+      <div class="topic-card">
+        <div class="accent-bar ${track}"></div>
+        <div class="title">
+          <span>${escapeHtml(c.concept_id||'—')}</span>
+          <span class="track-badge ${track}">${track.replace('_',' ')}</span>
+        </div>
+        <div class="files">
+          ${files.map(f=>{
+            const ext=f.split('.').pop();
+            const icons={md:'📄',html:'🖼️',py:'🐍',js:'⚡',css:'🎨'};
+            return `<a href="/creative/${c.concept_id}/${f}" target="_blank" class="file-tag ${renderedFiles.includes(f)?'rendered':''}">
+              <span class="icon">${icons[ext]||'📁'}</span> ${escapeHtml(f)}
+            </a>`;
+          }).join('')}
+        </div>
+        <div class="actions">
+          <button class="action-btn" onclick="previewSpecs('${c.concept_id}')">📂 View Specs</button>
+          ${hasRendered
+            ? `<button class="action-btn view-all" onclick="viewRendered('${c.concept_id}')">👁 View Rendered</button>`
+            : `<button class="action-btn render" onclick="triggerRender('${c.concept_id}')">🎨 Render Assets</button>`
+          }
+        </div>
+      </div>`;
+  });
+  document.getElementById('topicGrid').innerHTML=html;
+}
+
+function detectTrack(conceptId){
+  if(conceptId.startsWith('AM'))return 'add_maths';
+  if(conceptId.startsWith('AL'))return 'a_level';
+  return 'igcse_o';
+}
+
+async function previewSpecs(conceptId){
+  const modal=document.getElementById('modal');
+  document.getElementById('modalTitle').textContent=`📂 ${conceptId} — Specs`;
+  document.getElementById('modalContent').textContent='Loading...';
+  modal.classList.add('open');
+
+  const concept=manifest.concepts.find(c=>c.concept_id===conceptId);
+  const mdFiles=(concept?.files||[]).filter(f=>f.endsWith('.md'));
+
+  // Build file tabs
+  const tabsEl=document.getElementById('fileTabs');
+  tabsEl.innerHTML=mdFiles.map((f,i)=>`
+    <button class="file-tab ${i===0?'active':''}" onclick="loadSpecFile('${conceptId}','${f}',this)">${escapeHtml(f)}</button>
+  `).join('');
+
+  // Load first file
+  if(mdFiles.length>0)loadSpecFile(conceptId,mdFiles[0],tabsEl.querySelector('.file-tab'));
+  else document.getElementById('modalContent').textContent='No spec files found.';
+}
+
+async function loadSpecFile(conceptId,filename,btn){
+  if(btn){
+    document.querySelectorAll('#fileTabs .file-tab').forEach(t=>t.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  const el=document.getElementById('modalContent');
+  el.textContent='Loading...';
+  try{
+    const r=await fetch(`/creative/${conceptId}/${filename}`);
+    const text=await r.text();
+    el.textContent=text;
+  }catch(e){
+    el.textContent='Error loading file.';
+  }
+}
+
+function closeModal(){
+  document.getElementById('modal').classList.remove('open');
+}
+
+async function triggerRender(conceptId){
+  const toast=document.getElementById('toast');
+  toast.textContent=`🎨 Rendering ${conceptId}...`;
+  toast.className='toast show';
+  try{
+    const r=await fetch(`/api/creative-render?concept_id=${encodeURIComponent(conceptId)}`);
+    const data=await r.json();
+    if(data.success){
+      toast.textContent=`✅ ${conceptId} — ${data.message||'Render complete!'}`;
+      toast.className='toast show';
+      load(); // Refresh
+    }else{
+      toast.textContent=`❌ ${conceptId} — ${data.error||'Render failed'}`;
+      toast.className='toast show error';
+    }
+  }catch(e){
+    toast.textContent=`❌ ${conceptId} — ${e.message}`;
+    toast.className='toast show error';
+  }
+  setTimeout(()=>toast.classList.remove('show'),5000);
+}
+
+async function viewRendered(conceptId){
+  // Show rendered assets in modal
+  const modal=document.getElementById('modal');
+  document.getElementById('modalTitle').textContent=`👁 ${conceptId} — Rendered Assets`;
+  document.getElementById('fileTabs').innerHTML='';
+  const concept=manifest.concepts.find(c=>c.concept_id===conceptId);
+  const assets=concept?.rendered_assets||[];
+  let html=assets.map(a=>`<a href="/creative/${conceptId}/${a}" target="_blank" style="
+    display:block;background:var(--bg);padding:12px 16px;border-radius:8px;
+    margin-bottom:8px;text-decoration:none;color:var(--mint);border:1px solid var(--border)
+  ">👁 ${escapeHtml(a)}</a>`).join('');
+  document.getElementById('modalContent').innerHTML=html||'<div class="empty">No rendered assets yet.</div>';
+  modal.classList.add('open');
+}
+
+function escapeHtml(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML;}
+
+// Filter buttons
+document.getElementById('filters').addEventListener('click',e=>{
+  const btn=e.target.closest('.filter-btn');
+  if(!btn)return;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  currentFilter=btn.dataset.filter;
+  render();
+});
+
+// Close modal on overlay click
+document.getElementById('modal').addEventListener('click',e=>{
+  if(e.target===e.currentTarget)closeModal();
+});
+// Close modal with Escape
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+load();
+// Auto-refresh every 30s
+setInterval(load,30000);
+</script>
+</body>
+</html>

@@ -18,6 +18,7 @@ MATHLMS_DB = os.path.join(BASE_DIR, "mathlms.db")
 GATEWAY_STATE = os.path.join(BASE_DIR, "gateway_state.json")
 DASHBOARD_HTML = os.path.join(BASE_DIR, "dashboard.html")
 STUDENT_HTML = os.path.join(BASE_DIR, "student.html")
+TEACHER_HTML = os.path.join(BASE_DIR, "creativeTeacher.html")
 CONTENT_DIR = os.path.join(BASE_DIR, "content")
 
 
@@ -134,6 +135,7 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
             "/api/gateway-status": self.handle_gateway_status,
             "/api/agents": self.handle_agents,
             "/api/kanban": self.handle_kanban,
+            "/api/creative-render": self.handle_creative_render,
             "/api/content-progress": self.handle_content_progress,
             "/api/gif-queue": self.handle_gif_queue,
             "/api/past-paper-progress": self.handle_past_paper_progress,
@@ -148,6 +150,8 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
             "/gifs": self.handle_gifs_index,
             "/learn": self.handle_learn,
             "/learn/": self.handle_learn,
+            "/teacher": self.handle_creative_teacher,
+            "/teacher/": self.handle_creative_teacher,
             "/": self.handle_dashboard,
         }
 
@@ -550,24 +554,95 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
         manifest_path = os.path.join(BASE_DIR, "content", "creative", "manifest.json")
         if os.path.isfile(manifest_path):
             with open(manifest_path) as f:
-                data = json.load(f)
-            # Scan for concept dirs with generated assets
+                stored = json.load(f)
+            # Build lookup of stored data keyed by concept_id
+            stored_map = {c["concept_id"]: c for c in stored.get("concepts", []) if "concept_id" in c}
+            # Scan dirs for current file listing
             creative_dir = os.path.join(BASE_DIR, "content", "creative")
             concepts = []
             for entry in sorted(os.listdir(creative_dir)):
                 concept_dir = os.path.join(creative_dir, entry)
                 if os.path.isdir(concept_dir) and entry != "__pycache__":
-                    files = os.listdir(concept_dir)
+                    files = [f for f in os.listdir(concept_dir) if not f.startswith(".")]
                     if any(f.endswith((".md", ".html", ".py", ".js")) for f in files):
-                        concepts.append({
-                            "concept_id": entry,
-                            "files": [f for f in files if not f.startswith(".")]
-                        })
-            data["concepts"] = concepts
-            data["generated_at"] = __import__("datetime").datetime.now().isoformat()
+                        c = {"concept_id": entry, "files": files}
+                        # Merge stored data (rendered_assets, etc.) — don't override scanned files
+                        if entry in stored_map:
+                            for k, v in stored_map[entry].items():
+                                if k not in ("concept_id", "files") and v:
+                                    c[k] = v
+                        concepts.append(c)
+            data = {
+                "description": stored.get("description", "Creative asset outputs"),
+                "skills": stored.get("skills", []),
+                "generated_at": __import__("datetime").datetime.now().isoformat(),
+                "concepts": concepts,
+            }
             self.send_json(data)
         else:
             self.send_json({"concepts": [], "skills": []})
+
+    def handle_creative_teacher(self):
+        """Serve the CreativeTeacher portal."""
+        try:
+            with open(TEACHER_HTML, "r") as f:
+                html = f.read()
+            self.send_html(html)
+        except Exception as e:
+            self.send_html(f"<h1>CreativeTeacher Portal</h1><p>Error loading page: {e}</p>")
+
+    def handle_creative_render(self):
+        """Trigger rendering of creative assets from .md specs for a topic."""
+        import subprocess, json
+        parsed = urllib.parse.urlparse(self.path)
+        query = urllib.parse.parse_qs(parsed.query)
+        concept_id = query.get("concept_id", [None])[0]
+        if not concept_id:
+            self.send_json({"success": False, "error": "Missing concept_id"}, 400)
+            return
+
+        render_script = os.path.join(BASE_DIR, "scripts", "render-creative-asset.py")
+        if not os.path.isfile(render_script):
+            self.send_json({"success": False, "error": "Render script not found"}, 500)
+            return
+
+        try:
+            result = subprocess.run(
+                ["python3", render_script, concept_id],
+                capture_output=True, text=True, timeout=120,
+                cwd=BASE_DIR
+            )
+            if result.returncode == 0:
+                # Update manifest with rendered assets info
+                self.update_rendered_assets(concept_id)
+                self.send_json({"success": True, "message": result.stdout.strip()})
+            else:
+                self.send_json({"success": False, "error": result.stderr.strip() or "Render failed"}, 500)
+        except subprocess.TimeoutExpired:
+            self.send_json({"success": False, "error": "Render timed out after 120s"}, 500)
+        except Exception as e:
+            self.send_json({"success": False, "error": str(e)}, 500)
+
+    def update_rendered_assets(self, concept_id):
+        """Update the creative manifest with rendered asset info."""
+        import json
+        manifest_path = os.path.join(BASE_DIR, "content", "creative", "manifest.json")
+        creative_dir = os.path.join(BASE_DIR, "content", "creative", concept_id)
+        if os.path.isfile(manifest_path) and os.path.isdir(creative_dir):
+            with open(manifest_path) as f:
+                m = json.load(f)
+            # List rendered assets (non-.md files, or files in a rendered/ subdir)
+            rendered = [fn for fn in os.listdir(creative_dir)
+                       if not fn.endswith(".md") and not fn.startswith(".")]
+            for c in m.get("concepts", []):
+                if c.get("concept_id") == concept_id:
+                    if rendered:
+                        c["rendered_assets"] = rendered
+                    else:
+                        c.pop("rendered_assets", None)
+                    break
+            with open(manifest_path, "w") as f:
+                json.dump(m, f, indent=2)
 
     def handle_learn(self):
         """Serve the student learning platform."""
