@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" font-family="Arial, sans-serif" font-size="14">
+  <rect width="500" height="400" fill="#fff"/>
+  
+  <title>Intersecting lines</title>
+  
+  <!-- Line AB (horizontal) -->
+  <line x1="50" y1="200" x2="450" y2="200" stroke="#111" stroke-width="2.5"/>
+  <text x="455" y="195" font-style="italic" font-weight="bold">B</text>
+  <text x="35" y="195" font-style="italic" font-weight="bold">A</text>
+  
+  <!-- Line CD (diagonal through O) -->
+  <line x1="100" y1="350" x2="400" y2="50" stroke="#111" stroke-width="2.5"/>
+  <text x="85" y="360" font-style="italic" font-weight="bold">C</text>
+  <text x="405" y="45" font-style="italic" font-weight="bold">D</text>
+  
+  <!-- Point O at intersection -->
+  <circle cx="250" cy="200" r="4" fill="#dc2626"/>
+  <text x="260" y="195" font-style="italic" font-weight="bold" fill="#dc2626">O</text>
+  
+  <!-- Angle 1 (AOC) -->
+  <path d="M 250 200 L 300 140 L 310 155 L 260 215 Z" fill="#2563eb" opacity="0.15"/>
+  <path d="M 250 200 Q 270 180 280 170" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="260" y="178" fill="#2563eb" font-weight="bold" font-size="13">∠AOC</text>
+  
+  <!-- Angle 2 (COB) -->
+  <path d="M 250 200 L 200 260 L 215 270 L 265 210 Z" fill="#16a34a" opacity="0.15"/>
+  <path d="M 250 200 Q 235 220 225 230" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="210" y="235" fill="#16a34a" font-weight="bold" font-size="13">∠COB</text>
+  
+  <!-- Angle 3 (BOD) -->
+  <path d="M 250 200 L 200 140 L 190 155 L 240 215 Z" fill="#d946ef" opacity="0.15"/>
+  <path d="M 250 200 Q 220 175 210 160" fill="none" stroke="#d946ef" stroke-width="1.5"/>
+  <text x="195" y="165" fill="#d946ef" font-weight="bold" font-size="13">∠BOD</text>
+  
+  <!-- Angle 4 (AOD) - reflex -->
+  <path d="M 250 200 A 80 80 0 0 1 350 170" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="330" y="175" fill="#ea580c" font-weight="bold" font-size="13">∠AOD</text>
+  
+  <!-- Key -->
+  <rect x="50" y="310" width="400" height="80" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="60" y="330" font-weight="bold">Key:</text>
+  <rect x="60" y="340" width="12" height="12" fill="#2563eb" opacity="0.5"/>
+  <text x="78" y="351">Vertically opposite angles are equal: ∠AOC = ∠BOD</text>
+  <rect x="60" y="358" width="12" height="12" fill="#16a34a" opacity="0.5"/>
+  <text x="78" y="369">Angles on a straight line sum to 180°</text>
+</svg>

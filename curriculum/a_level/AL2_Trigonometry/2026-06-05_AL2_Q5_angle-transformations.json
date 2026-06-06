@@ -1,0 +1,35 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q5",
+  "title": "Angle Transformations",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T10:40:00Z",
+  "sections": {
+    "hook": "How can we find the exact height of a building using two different viewing angles? Compound angle formulas let us add and subtract angles in trigonometry, turning a single measurement into powerful geometric insight.",
+    "prerequisites": [
+      "Basic trig ratios and exact values",
+      "Trig identities ($\\sin^2\\theta + \\cos^2\\theta = 1$, $\\tan \\theta = \\sin\\theta/\\cos\\theta$)",
+      "Solving trig equations"
+    ],
+    "core_explanation": "## Compound Angle Formulas\n\n$$\\sin(A \\pm B) = \\sin A \\cos B \\pm \\cos A \\sin B$$\n$$\\cos(A \\pm B) = \\cos A \\cos B \\mp \\sin A \\sin B$$\n$$\\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B}$$\n\n## Double Angle Formulas\n\n$$\\sin 2A = 2\\sin A \\cos A$$\n$$\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A$$\n$$\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}$$\n\n## The $R\\cos(\\theta \\pm \\alpha)$ Form\n\nAn expression of the form $a\\cos\\theta + b\\sin\\theta$ can be written as:\n$$R\\cos(\\theta - \\alpha)$$\nwhere $R = \\sqrt{a^2 + b^2}$ and $\\alpha = \\tan^{-1}\\left(\\frac{b}{a}\\right)$ (with $a > 0$, $\\alpha$ in Quadrant I).\n\nMore generally:\n- $a\\cos\\theta + b\\sin\\theta = R\\cos(\\theta - \\alpha)$\n- $a\\cos\\theta - b\\sin\\theta = R\\cos(\\theta + \\alpha)$\n- $a\\sin\\theta + b\\cos\\theta = R\\sin(\\theta + \\alpha)$\n\n## Applications\n\n- Finding maximum/minimum values: $R\\cos(\\theta - \\alpha)$ has maximum $R$ and minimum $-R$.\n- Solving equations: $a\\cos\\theta + b\\sin\\theta = c$ becomes $\\cos(\\theta - \\alpha) = \\frac{c}{R}$.\n- Proving identities involving double or compound angles.",
+    "worked_example": {
+      "question": "Write $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$, where $R > 0$ and $0 < \\alpha < \\frac{\\pi}{2}$. Hence solve $3\\sin\\theta + 4\\cos\\theta = 2$ for $0 \\leq \\theta \\leq 2\\pi$.",
+      "solution": "$R\\sin(\\theta + \\alpha) = R\\sin\\theta\\cos\\alpha + R\\cos\\theta\\sin\\alpha$\nComparing: $R\\cos\\alpha = 3$, $R\\sin\\alpha = 4$\n$R = \\sqrt{3^2 + 4^2} = 5$\n$\\tan\\alpha = \\frac{4}{3} \\implies \\alpha = \\tan^{-1}\\left(\\frac{4}{3}\\right) \\approx 0.9273$ rad\n\nSo $3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 0.9273)$\n\nSolving $5\\sin(\\theta + 0.9273) = 2$:\n$\\sin(\\theta + 0.9273) = 0.4$\n$\\theta + 0.9273 = \\sin^{-1}(0.4) = 0.4115$ or $\\pi - 0.4115 = 2.7301$\n$\\theta = 0.4115 - 0.9273 = -0.5158$ (reject) or $\\theta = 2.7301 - 0.9273 = 1.8028$\nFor range $0 \\leq \\theta \\leq 2\\pi$, also add $2\\pi$ to first: $\\theta = -0.5158 + 2\\pi = 5.7674$\nSolutions: $\\theta = 1.80$ rad, $5.77$ rad (3 s.f.)"
+    },
+    "common_mistakes": [
+      {"mistake": "Getting $R\\cos(\\theta - \\alpha)$ vs $R\\sin(\\theta + \\alpha)$ confused.", "correction": "Use the expansion: $R\\cos(\\theta - \\alpha) = R\\cos\\theta\\cos\\alpha + R\\sin\\theta\\sin\\alpha$ — match coefficients to $a\\cos\\theta + b\\sin\\theta$."},
+      {"mistake": "Forgetting the $\\mp$ sign in $\\cos(A \\pm B)$ formula.", "correction": "Remember: $\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B$ and $\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B$. The sign flips!"},
+      {"mistake": "Using wrong quadrant for $\\alpha$ when finding $R\\cos(\\theta \\pm \\alpha)$ form.", "correction": "If $a > 0$, $\\alpha = \\tan^{-1}(|b/a|)$ is in QI. If $a < 0$, adjust by adding $\\pi$."},
+      {"mistake": "Confusing double angle $\\cos 2A$ forms.", "correction": "There are three forms. Choose the one that matches your problem: $2\\cos^2A - 1$ (to get $\\cos^2A$), $1 - 2\\sin^2A$ (to get $\\sin^2A$), or $\\cos^2A - \\sin^2A$."}
+    ],
+    "summary": [
+      "$\\sin(A \\pm B) = \\sin A\\cos B \\pm \\cos A\\sin B$",
+      "$\\cos(A \\pm B) = \\cos A\\cos B \\mp \\sin A\\sin B$",
+      "$\\sin 2A = 2\\sin A\\cos A$, $\\cos 2A = \\cos^2A - \\sin^2A = 2\\cos^2A - 1 = 1 - 2\\sin^2A$",
+      "$a\\cos\\theta + b\\sin\\theta = R\\cos(\\theta - \\alpha)$ where $R = \\sqrt{a^2+b^2}$, $\\alpha = \\tan^{-1}(b/a)$ (if $a>0$)",
+      "The $R$ form reveals maximum $=R$, minimum $=-R$ and simplifies solving."
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "track": "a_level",
+  "unit": "AL4_Integration",
+  "topic_id": "AL4_Q6",
+  "title": "Integration by Parts",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "parts"
+      ],
+      "problem_text": "Find integral of x e^x dx.",
+      "answer": "e^x(x-1)+C",
+      "solution": "u=x,dv=e^xdx. =x e^x-int e^x dx=x e^x-e^x+C.",
+      "marks": 2
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "parts"
+      ],
+      "problem_text": "Find integral of x cos x dx.",
+      "answer": "x sin x+cos x+C",
+      "solution": "u=x,dv=cos xdx. =x sin x-int sin x dx=x sin x+cos x+C.",
+      "marks": 2
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "parts"
+      ],
+      "problem_text": "Find integral of ln x dx.",
+      "answer": "x ln x-x+C",
+      "solution": "u=ln x,dv=dx. =x ln x-int dx=x ln x-x+C.",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "parts"
+      ],
+      "problem_text": "Find integral of x sin x dx.",
+      "answer": "-x cos x+sin x+C",
+      "solution": "u=x,dv=sin xdx. =-x cos x+int cos x dx=-x cos x+sin x+C.",
+      "marks": 2
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "parts",
+        "definite"
+      ],
+      "problem_text": "Evaluate int_0^1 x e^x dx.",
+      "answer": "1",
+      "solution": "[x e^x-e^x]_0^1=(e-e)-(0-1)=1.",
+      "marks": 2
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "parts",
+        "polynomial"
+      ],
+      "problem_text": "Find integral of x^2 e^x dx.",
+      "answer": "e^x(x^2-2x+2)+C",
+      "solution": "Parts twice: =x^2 e^x-2(x e^x-e^x)+C.",
+      "marks": 4
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "parts",
+        "trig"
+      ],
+      "problem_text": "Find integral of e^x sin x dx.",
+      "answer": "e^x(sin x-cos x)/2+C",
+      "solution": "I=e^x sin x-(e^x cos x+I)->2I=e^x(sin x-cos x).",
+      "marks": 5
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "parts",
+        "log"
+      ],
+      "problem_text": "Find integral of x ln x dx.",
+      "answer": "x^2 ln x/2-x^2/4+C",
+      "solution": "u=ln x,dv=xdx. =x^2 ln x/2-int x/2 dx=x^2 ln x/2-x^2/4+C.",
+      "marks": 3
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "parts",
+        "reduction"
+      ],
+      "problem_text": "Find integral of x^3 e^x dx.",
+      "answer": "e^x(x^3-3x^2+6x-6)+C",
+      "solution": "Parts repeated: =x^3 e^x-3x^2 e^x+6x e^x-6e^x+C.",
+      "marks": 4
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "parts",
+        "definite"
+      ],
+      "problem_text": "Evaluate int_0^pi x sin x dx.",
+      "answer": "pi",
+      "solution": "[-x cos x+sin x]_0^pi=pi.",
+      "marks": 2
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "parts",
+        "inverse-trig"
+      ],
+      "problem_text": "Find integral of arcsin x dx.",
+      "answer": "x arcsin x+sqrt(1-x^2)+C",
+      "solution": "Parts + sub: =x arcsin x+sqrt(1-x^2)+C.",
+      "marks": 4
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "parts",
+        "definite"
+      ],
+      "problem_text": "Evaluate int_1^e ln x dx.",
+      "answer": "1",
+      "solution": "[x ln x-x]_1^e=e-e-0+1=1.",
+      "marks": 2
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "parts",
+        "reduction"
+      ],
+      "problem_text": "Find integral of x^2 sin x dx.",
+      "answer": "-x^2 cos x+2x sin x+2 cos x+C",
+      "solution": "Parts twice.",
+      "marks": 4
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "parts",
+        "cycle"
+      ],
+      "problem_text": "Find integral of e^x cos x dx.",
+      "answer": "e^x(sin x+cos x)/2+C",
+      "solution": "I=e^x cos x+(e^x sin x-I)->2I=e^x(cos x+sin x).",
+      "marks": 5
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "parts",
+        "log-power"
+      ],
+      "problem_text": "Find integral of (ln x)^2 dx.",
+      "answer": "x(ln x)^2-2x ln x+2x+C",
+      "solution": "Parts: u=(ln x)^2,dv=dx. =x(ln x)^2-2int ln x dx.",
+      "marks": 3
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "parts",
+        "application"
+      ],
+      "problem_text": "Volume: y=x e^{-x} from 0 to 1 rotated about x-axis.",
+      "answer": "pi(1-5e^{-2})/4",
+      "solution": "V=pi int_0^1 x^2 e^{-2x}dx. Integrate by parts.",
+      "marks": 6
+    }
+  ]
+}

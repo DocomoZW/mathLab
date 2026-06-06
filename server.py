@@ -155,6 +155,11 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
             self.serve_gif_file(path)
             return
 
+        # Check for /svg/* paths
+        if path.startswith("/svg/"):
+            self.serve_svg_file(path)
+            return
+
         # Check for /pdfs/* paths
         if path.startswith("/pdfs/"):
             self.serve_pdf_file(path)
@@ -601,6 +606,27 @@ class MathsLMSHandler(BaseHTTPRequestHandler):
         self.send_header("Cache-Control", "public, max-age=3600")
         self.end_headers()
         with open(gif_path, "rb") as f:
+            self.wfile.write(f.read())
+
+    SVG_DIR = os.path.join(BASE_DIR, "content", "svg")
+
+    def serve_svg_file(self, path):
+        """Serve an SVG file from the svg directory."""
+        svg_rel = path.replace("/svg/", "", 1)
+        # Prevent path traversal
+        if ".." in svg_rel or svg_rel.startswith("/"):
+            self.send_json({"error": "Invalid path"}, 400)
+            return
+        svg_path = os.path.join(self.SVG_DIR, svg_rel)
+        if not os.path.isfile(svg_path):
+            self.send_json({"error": "SVG not found"}, 404)
+            return
+        self.send_response(200)
+        self.send_header("Content-Type", "image/svg+xml")
+        self.send_header("Content-Length", str(os.path.getsize(svg_path)))
+        self.send_header("Cache-Control", "public, max-age=3600")
+        self.end_headers()
+        with open(svg_path, "rb") as f:
             self.wfile.write(f.read())
 
     PDFS_DIR = os.path.join(BASE_DIR, "content", "pdfs")

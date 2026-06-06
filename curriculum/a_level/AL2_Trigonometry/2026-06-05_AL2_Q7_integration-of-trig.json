@@ -1,0 +1,36 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q7",
+  "title": "Integration of Trig",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T11:00:00Z",
+  "sections": {
+    "hook": "If the velocity of a piston is $v = \\sin t$, how far has it travelled after $\\pi$ seconds? Integration of trig functions recovers position from velocity, area from rate — the fundamental link between oscillation and accumulated motion.",
+    "prerequisites": [
+      "Basic integration rules (power rule, reverse chain rule)",
+      "Differentiation of trig functions (the reverse perspective)",
+      "Definite integrals and area under curves",
+      "Trigonometric identities"
+    ],
+    "core_explanation": "## Integrals of Sine and Cosine\n\n$$\\int \\sin x\\,dx = -\\cos x + c$$\n$$\\int \\cos x\\,dx = \\sin x + c$$\n\n**Note:** These are the reverse of differentiation: $\\frac{d}{dx}(-\\cos x) = \\sin x$.\n\n## Reverse Chain Rule\n\n$$\\int \\sin(ax + b)\\,dx = -\\frac{1}{a}\\cos(ax + b) + c$$\n$$\\int \\cos(ax + b)\\,dx = \\frac{1}{a}\\sin(ax + b) + c$$\n\n## Integrating Powers using Identities\n\nFor $\\sin^2 x$ or $\\cos^2 x$, use double angle formulas:\n\n$$\\sin^2 x = \\frac{1 - \\cos 2x}{2} \\quad\\Rightarrow\\quad \\int \\sin^2 x\\,dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + c$$\n$$\\cos^2 x = \\frac{1 + \\cos 2x}{2} \\quad\\Rightarrow\\quad \\int \\cos^2 x\\,dx = \\frac{x}{2} + \\frac{\\sin 2x}{4} + c$$\n\n## Definite Integrals and Area\n\nArea between curve $y = f(x)$ and $x$-axis from $x = a$ to $x = b$:\n$$\\text{Area} = \\int_a^b |f(x)|\\,dx$$\n\nFor $f(x) = \\sin x$ from $0$ to $\\pi$:\n$$\\int_0^\\pi \\sin x\\,dx = [-\\cos x]_0^\\pi = (-\\cos\\pi) - (-\\cos 0) = 1 + 1 = 2$$\n\n## Area Between Two Curves\n\n$$\\text{Area} = \\int_a^b (f(x) - g(x))\\,dx$$\nwhere $f(x) \\geq g(x)$ on $[a, b]$.",
+    "worked_example": {
+      "question": "Find the exact area of the region enclosed by $y = 2\\cos x$, the x-axis, and the lines $x = 0$ and $x = \\frac{\\pi}{2}$.",
+      "solution": "Area $= \\int_0^{\\pi/2} 2\\cos x\\,dx$\n$= \\left[2\\sin x\\right]_0^{\\pi/2}$\n$= 2\\sin\\frac{\\pi}{2} - 2\\sin 0$\n$= 2(1) - 2(0)$\n$= 2$ square units.\n\nNote: $\\cos x \\geq 0$ on $[0, \\frac{\\pi}{2}]$, so $2\\cos x \\geq 0$ and no absolute value is needed."
+    },
+    "common_mistakes": [
+      {"mistake": "Forgetting the sign when integrating $\\sin x$ (writing $+\\cos x$ instead of $-\\cos x$).", "correction": "Check by differentiating: $\\frac{d}{dx}(-\\cos x) = \\sin x$, but $\\frac{d}{dx}(\\cos x) = -\\sin x$. The negative is essential."},
+      {"mistake": "Missing the $\\frac{1}{a}$ factor when integrating $\\sin(ax+b)$.", "correction": "$\\int \\sin(ax+b)\\,dx = -\\frac{1}{a}\\cos(ax+b) + c$. The $a$ divides, not multiplies."},
+      {"mistake": "Using $\\sin^2 x = \\frac{1 + \\cos 2x}{2}$ (swapped with $\\cos^2 x$).", "correction": "Remember: $\\cos^2 x = \\frac{1 + \\cos 2x}{2}$ (cosine is +), $\\sin^2 x = \\frac{1 - \\cos 2x}{2}$ (sine is -)." },
+      {"mistake": "Finding area without checking sign — getting zero when the curve crosses the axis.", "correction": "If the curve goes below the x-axis, split the integral at the root(s) and take absolute values of each part."}
+    ],
+    "summary": [
+      "$\\int \\sin x\\,dx = -\\cos x + c$, $\\int \\cos x\\,dx = \\sin x + c$.",
+      "Reverse chain: $\\int \\sin(ax+b)\\,dx = -\\frac{1}{a}\\cos(ax+b) + c$.",
+      "Use $\\sin^2 x = \\frac{1-\\cos 2x}{2}$ and $\\cos^2 x = \\frac{1+\\cos 2x}{2}$ to integrate squares.",
+      "For area between curves, compute $\\int_a^b |f(x) - g(x)|\\,dx$.",
+      "Check integration by differentiating the result."
+    ]
+  }
+}

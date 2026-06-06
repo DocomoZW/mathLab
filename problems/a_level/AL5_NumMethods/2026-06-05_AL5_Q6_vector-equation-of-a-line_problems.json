@@ -1,0 +1,201 @@
+{
+  "track": "a_level",
+  "unit": "AL5_NumMethods",
+  "topic_id": "AL5_Q6",
+  "title": "Vector Equation of a Line",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "line",
+        "vector-equation"
+      ],
+      "problem_text": "Line through (1,2,3) direction (4,5,6).",
+      "answer": "r=(1,2,3)+t(4,5,6)",
+      "solution": "r=a+tb.",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "line",
+        "parametric"
+      ],
+      "problem_text": "Parametric for r=(1,0,2)+t(2,1,3).",
+      "answer": "x=1+2t, y=t, z=2+3t",
+      "solution": "From vector eqn.",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "line",
+        "two-points"
+      ],
+      "problem_text": "Line through A(1,2,3), B(4,5,6).",
+      "answer": "r=(1,2,3)+t(1,1,1)",
+      "solution": "AB=3(1,1,1).",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "line",
+        "parallel"
+      ],
+      "problem_text": "Parallel? r=(1,2,3)+t(2,4,6) to (1,2,3).",
+      "answer": "Yes, dirs are multiples",
+      "solution": "(2,4,6)=2(1,2,3).",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "line",
+        "point-on-line"
+      ],
+      "problem_text": "Is (4,1,6) on r=(1,2,3)+t(1,-1,1)?",
+      "answer": "No",
+      "solution": "t=3 gives (4,-1,6). y is -1 not 1.",
+      "marks": 2
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "line",
+        "intersection"
+      ],
+      "problem_text": "Do L1: r=(1,2,3)+s(1,1,1) and L2: r=(4,5,6)+t(2,2,2) intersect?",
+      "answer": "No, distinct parallel lines",
+      "solution": "Directions parallel. Points don't align.",
+      "marks": 2
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "line",
+        "cartesian"
+      ],
+      "problem_text": "Cartesian eqns: r=(1,0,2)+t(2,3,4).",
+      "answer": "(x-1)/2=y/3=(z-2)/4",
+      "solution": "From parametric.",
+      "marks": 2
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "line",
+        "perpendicular"
+      ],
+      "problem_text": "Perpendicular? directions (1,2,3) and (2,-1,0).",
+      "answer": "Yes, dot=0",
+      "solution": "2-2+0=0.",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "line",
+        "intersection"
+      ],
+      "problem_text": "Intersection: r=(1,2,3)+s(1,0,1) and r=(0,1,2)+t(2,1,3).",
+      "answer": "No intersection",
+      "solution": "Z: 3+s=2+3t, s=1. 1+1=2, 2t=2->t=1. y:2=2 okay. z:4 vs 5 no.",
+      "marks": 3
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "line",
+        "angle"
+      ],
+      "problem_text": "Acute angle between directions (1,1,2) and (2,1,1).",
+      "answer": "arccos(5/6)=33.56 deg",
+      "solution": "dot=5. |a|=|b|=sqrt6.",
+      "marks": 2
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "line",
+        "two-points",
+        "cartesian"
+      ],
+      "problem_text": "Cartesian eqns through (1,2,3) and (3,5,7).",
+      "answer": "(x-1)/2=(y-2)/3=(z-3)/4",
+      "solution": "Direction (2,3,4).",
+      "marks": 2
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "line",
+        "foot"
+      ],
+      "problem_text": "Foot from (1,2,3) to r=(4,5,6)+t(1,1,1).",
+      "answer": "Foot=(1,2,3) (point lies on line)",
+      "solution": "Check: (4+t,5+t,6+t)=(1,2,3)->t=-3. Yes.",
+      "marks": 4
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "line",
+        "skew"
+      ],
+      "problem_text": "Show r=(1,2,3)+s(1,1,2) and r=(2,1,4)+t(2,1,1) are skew.",
+      "answer": "Skew",
+      "solution": "Not parallel. No intersection.",
+      "marks": 4
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "line",
+        "contains-point"
+      ],
+      "problem_text": "k so (2,3,k) on line through (1,2,3) and (3,4,5).",
+      "answer": "k=4",
+      "solution": "Direction (2,2,2). 1+2t=2->t=0.5. z:3+2(0.5)=4.",
+      "marks": 2
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "line",
+        "application"
+      ],
+      "problem_text": "Line A(1,2,3) to B(3,5,7). Point with x=7.",
+      "answer": "(7,11,15)",
+      "solution": "1+2t=7->t=3. (7,11,15).",
+      "marks": 2
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "line",
+        "shortest-distance"
+      ],
+      "problem_text": "Dist from (1,2,3) to r=(4,5,6)+t(1,1,1).",
+      "answer": "0 (point on line)",
+      "solution": "(1,2,3) = (4-3,5-3,6-3) with t=-3.",
+      "marks": 2
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q6",
+  "title": "Differentiation of Trig - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T11:25:00Z",
+  "problems": [
+    {
+      "id": "AL2_Q6_F01",
+      "difficulty": "F",
+      "skill_tags": ["derivative of sin"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = \\sin x$.",
+      "answer": "$\\cos x$",
+      "solution": "$\\frac{d}{dx}(\\sin x) = \\cos x$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q6_F02",
+      "difficulty": "F",
+      "skill_tags": ["derivative of cos"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = \\cos x$.",
+      "answer": "$-\\sin x$",
+      "solution": "$\\frac{d}{dx}(\\cos x) = -\\sin x$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q6_F03",
+      "difficulty": "F",
+      "skill_tags": ["chain rule with trig"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = \\sin 3x$.",
+      "answer": "$3\\cos 3x$",
+      "solution": "$\\frac{dy}{dx} = 3\\cos 3x$ (chain rule)",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q6_F04",
+      "difficulty": "F",
+      "skill_tags": ["chain rule with trig"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = \\cos\\left(2x - \\frac{\\pi}{3}\\right)$.",
+      "answer": "$-2\\sin\\left(2x - \\frac{\\pi}{3}\\right)$",
+      "solution": "$\\frac{dy}{dx} = -2\\sin\\left(2x - \\frac{\\pi}{3}\\right)$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q6_C01",
+      "difficulty": "C",
+      "skill_tags": ["product rule with trig"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = x\\sin x$.",
+      "answer": "$\\sin x + x\\cos x$",
+      "solution": "$\\frac{dy}{dx} = 1\\cdot\\sin x + x\\cdot\\cos x = \\sin x + x\\cos x$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q6_C02",
+      "difficulty": "C",
+      "skill_tags": ["quotient rule with trig"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = \\frac{\\sin x}{x}$.",
+      "answer": "$\\frac{x\\cos x - \\sin x}{x^2}$",
+      "solution": "$\\frac{dy}{dx} = \\frac{x\\cos x - \\sin x\\cdot 1}{x^2} = \\frac{x\\cos x - \\sin x}{x^2}$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q6_C03",
+      "difficulty": "C",
+      "skill_tags": ["tangent line", "trig"],
+      "problem_text": "Find the gradient of the tangent to $y = 2\\cos x$ at $x = \\frac{\\pi}{3}$.",
+      "answer": "$-\\sqrt{3}$",
+      "solution": "$\\frac{dy}{dx} = -2\\sin x$. At $x = \\pi/3$: $-2\\sin(\\pi/3) = -2 \\times \\frac{\\sqrt{3}}{2} = -\\sqrt{3}$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q6_C04",
+      "difficulty": "C",
+      "skill_tags": ["stationary points", "trig"],
+      "problem_text": "Find the x-coordinates of the stationary points of $y = \\sin x - \\cos x$ for $0 \\leq x \\leq 2\\pi$.",
+      "answer": "$x = \\frac{3\\pi}{4}, \\frac{7\\pi}{4}$",
+      "solution": "$\\frac{dy}{dx} = \\cos x + \\sin x = 0 \\implies \\tan x = -1$. $x = 3\\pi/4, 7\\pi/4$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q6_H01",
+      "difficulty": "H",
+      "skill_tags": ["chain rule", "composite"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = \\sin^2 x$, giving your answer in terms of $\\sin x$ and $\\cos x$.",
+      "answer": "$2\\sin x\\cos x = \\sin 2x$",
+      "solution": "$\\frac{dy}{dx} = 2\\sin x \\cdot \\cos x = 2\\sin x\\cos x = \\sin 2x$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q6_H02",
+      "difficulty": "H",
+      "skill_tags": ["product and chain", "trig"],
+      "problem_text": "Find $\\frac{dy}{dx}$ when $y = x^2\\cos 2x$.",
+      "answer": "$2x\\cos 2x - 2x^2\\sin 2x$",
+      "solution": "Product rule: $\\frac{dy}{dx} = 2x\\cos 2x + x^2(-2\\sin 2x) = 2x\\cos 2x - 2x^2\\sin 2x$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q6_H03",
+      "difficulty": "H",
+      "skill_tags": ["tangent line", "equation"],
+      "problem_text": "Find the equation of the tangent to $y = 3\\sin x$ at $x = \\frac{\\pi}{2}$.",
+      "answer": "$y = 3$",
+      "solution": "At $x = \\pi/2$: $y = 3\\sin(\\pi/2) = 3$. $\\frac{dy}{dx} = 3\\cos x$. At $x = \\pi/2$: gradient $= 3\\cos(\\pi/2) = 0$. Tangent: $y - 3 = 0(x - \\pi/2)$, so $y = 3$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q6_H04",
+      "difficulty": "H",
+      "skill_tags": ["second derivative", "trig"],
+      "problem_text": "Given $y = \\sin 2x$, find $\\frac{d^2y}{dx^2}$.",
+      "answer": "$-4\\sin 2x$",
+      "solution": "$\\frac{dy}{dx} = 2\\cos 2x$, $\\frac{d^2y}{dx^2} = -4\\sin 2x$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q6_X01",
+      "difficulty": "X",
+      "skill_tags": ["implicit diff", "trig"],
+      "problem_text": "Given that $y = \\sin(xy)$, find $\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+      "answer": "$\\frac{dy}{dx} = \\frac{y\\cos(xy)}{1 - x\\cos(xy)}$",
+      "solution": "$\\frac{dy}{dx} = \\cos(xy)\\left(y + x\\frac{dy}{dx}\\right) = y\\cos(xy) + x\\cos(xy)\\frac{dy}{dx}$. $\\frac{dy}{dx} - x\\cos(xy)\\frac{dy}{dx} = y\\cos(xy)$. $\\frac{dy}{dx}(1 - x\\cos(xy)) = y\\cos(xy)$. $\\frac{dy}{dx} = \\frac{y\\cos(xy)}{1 - x\\cos(xy)}$",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q6_X02",
+      "difficulty": "X",
+      "skill_tags": ["stationary points", "trig", "nature"],
+      "problem_text": "Find the stationary points of $y = 2\\sin x + \\cos 2x$ for $0 \\leq x \\leq 2\\pi$ and determine their nature.",
+      "answer": "Max at $(\\pi/2, 1)$, min at $(3\\pi/2, -3)$",
+      "solution": "$\\frac{dy}{dx} = 2\\cos x - 2\\sin 2x = 2\\cos x - 4\\sin x\\cos x = 2\\cos x(1 - 2\\sin x) = 0$. $\\cos x = 0$: $x = \\pi/2, 3\\pi/2$. $\\sin x = 1/2$: $x = \\pi/6, 5\\pi/6$. $\\frac{d^2y}{dx^2} = -2\\sin x - 4\\cos 2x$. At $\\pi/2$: $d^2y/dx^2 < 0$, max. At $3\\pi/2$: $>0$, min. At $\\pi/6$: check sign diagram.",
+      "marks": 6
+    },
+    {
+      "id": "AL2_Q6_X03",
+      "difficulty": "X",
+      "skill_tags": ["normal line", "trig"],
+      "problem_text": "Find the equation of the normal to $y = \\tan x$ at $x = \\frac{\\pi}{4}$.",
+      "answer": "$y - 1 = -\\frac{1}{2}\\left(x - \\frac{\\pi}{4}\\right)$",
+      "solution": "At $x = \\pi/4$: $y = \\tan(\\pi/4) = 1$. $\\frac{dy}{dx} = \\sec^2 x$. At $x = \\pi/4$: $\\sec^2(\\pi/4) = (\\sqrt{2})^2 = 2$. Gradient of normal $= -1/2$. Equation: $y - 1 = -\\frac{1}{2}(x - \\pi/4)$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q6_X04",
+      "difficulty": "X",
+      "skill_tags": ["rate of change", "trig"],
+      "problem_text": "The height of a Ferris wheel passenger above ground is given by $h(t) = 20 + 18\\sin\\left(\\frac{\\pi t}{30}\\right)$ metres, where $t$ is time in seconds. Find the velocity of the passenger when $t = 10$ seconds.",
+      "answer": "$\\frac{3\\pi}{5} \\approx 1.885$ m/s",
+      "solution": "$v = \\frac{dh}{dt} = 18 \\cdot \\frac{\\pi}{30} \\cdot \\cos\\left(\\frac{\\pi t}{30}\\right) = \\frac{3\\pi}{5}\\cos\\left(\\frac{\\pi t}{30}\\right)$. At $t = 10$: $v = \\frac{3\\pi}{5}\\cos(\\pi/3) = \\frac{3\\pi}{5} \\times \\frac{1}{2} = \\frac{3\\pi}{10} \\approx 0.942$ m/s",
+      "marks": 5
+    }
+  ]
+}

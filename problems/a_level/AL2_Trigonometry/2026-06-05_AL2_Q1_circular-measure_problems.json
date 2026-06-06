@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q1",
+  "title": "Circular Measure - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T10:35:00Z",
+  "problems": [
+    {
+      "id": "AL2_Q1_F01",
+      "difficulty": "F",
+      "skill_tags": ["radian conversion"],
+      "problem_text": "Convert $120^\\circ$ to radians, giving your answer in terms of $\\pi$.",
+      "answer": "$\\frac{2\\pi}{3}$",
+      "solution": "$120^\\circ \\times \\frac{\\pi}{180} = \\frac{2\\pi}{3}$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q1_F02",
+      "difficulty": "F",
+      "skill_tags": ["radian conversion"],
+      "problem_text": "Convert $\\frac{5\\pi}{6}$ radians to degrees.",
+      "answer": "$150^\\circ$",
+      "solution": "$\\frac{5\\pi}{6} \\times \\frac{180}{\\pi} = 150^\\circ$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q1_F03",
+      "difficulty": "F",
+      "skill_tags": ["arc length"],
+      "problem_text": "A circle has radius 6 cm. Find the length of an arc that subtends an angle of $0.8$ radians at the centre.",
+      "answer": "4.8 cm",
+      "solution": "$s = r\\theta = 6 \\times 0.8 = 4.8$ cm",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q1_F04",
+      "difficulty": "F",
+      "skill_tags": ["sector area"],
+      "problem_text": "A circle has radius 10 cm. Find the area of a sector with angle $1.2$ radians.",
+      "answer": "60 cm$^2$",
+      "solution": "$A = \\frac{1}{2}r^2\\theta = \\frac{1}{2} \\times 100 \\times 1.2 = 60$ cm$^2$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q1_C01",
+      "difficulty": "C",
+      "skill_tags": ["arc length", "perimeter"],
+      "problem_text": "A sector of a circle has radius 5 cm and arc length 8 cm. Find the angle of the sector in radians and the perimeter of the sector.",
+      "answer": "$\\theta = 1.6$ rad, perimeter $= 18$ cm",
+      "solution": "$s = r\\theta \\implies \\theta = \\frac{s}{r} = \\frac{8}{5} = 1.6$ rad. Perimeter $= 2r + s = 10 + 8 = 18$ cm",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q1_C02",
+      "difficulty": "C",
+      "skill_tags": ["sector area", "arc length"],
+      "problem_text": "The area of a sector is $30$ cm$^2$ and the radius is $6$ cm. Find the angle of the sector in radians and the arc length.",
+      "answer": "$\\theta = \\frac{5}{3}$ rad, $s = 10$ cm",
+      "solution": "$A = \\frac{1}{2}r^2\\theta \\implies 30 = \\frac{1}{2} \\times 36 \\times \\theta \\implies \\theta = \\frac{60}{36} = \\frac{5}{3}$ rad. $s = r\\theta = 6 \\times \\frac{5}{3} = 10$ cm",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q1_C03",
+      "difficulty": "C",
+      "skill_tags": ["segment area"],
+      "problem_text": "A circle of radius 8 cm has a sector of angle $1.5$ radians. Find the area of the segment (the region between the chord and the arc).",
+      "answer": "$32(1.5 - \\sin 1.5) \\approx 16.1$ cm$^2$",
+      "solution": "Segment area $= \\frac{1}{2}r^2(\\theta - \\sin\\theta) = \\frac{1}{2} \\times 64 \\times (1.5 - \\sin 1.5) = 32(1.5 - 0.9975) = 32 \\times 0.5025 = 16.08$ cm$^2$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q1_C04",
+      "difficulty": "C",
+      "skill_tags": ["arc length", "triangle"],
+      "problem_text": "A sector has radius 12 cm and angle $0.6$ radians. Calculate the area of the triangle formed by the two radii and the chord, and hence find the area of the segment.",
+      "answer": "Triangle area $= 36\\sin 0.6 \\approx 20.33$ cm$^2$, segment $\\approx 22.87$ cm$^2$",
+      "solution": "Triangle area $= \\frac{1}{2}r^2\\sin\\theta = \\frac{1}{2} \\times 144 \\times \\sin 0.6 = 72 \\times 0.5646 = 20.33$ cm$^2$. Sector area $= \\frac{1}{2} \\times 144 \\times 0.6 = 43.2$ cm$^2$. Segment $= 43.2 - 20.33 = 22.87$ cm$^2$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q1_H01",
+      "difficulty": "H",
+      "skill_tags": ["circular measure", "composite shape"],
+      "problem_text": "The diagram shows a sector OAB of a circle with centre O and radius 8 cm. Angle AOB = 1.2 radians. The point C lies on OA such that OC = 5 cm. The line through C parallel to OB meets the arc AB at D. Find the length of arc AD.",
+      "answer": "6.0 cm",
+      "solution": "Triangle OCD: OC = 5, OD = 8 (radius). $\\cos \\angle COD = 5/8 \\implies \\angle COD = \\cos^{-1}(5/8) = 0.8957$ rad. Arc AD $= r(\\theta - \\angle COD) = 8(1.2 - 0.8957) = 8 \\times 0.3043 = 2.43$ cm",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q1_H02",
+      "difficulty": "H",
+      "skill_tags": ["circular measure", "maximisation"],
+      "problem_text": "A sector has a fixed perimeter of 20 cm. Express the area A of the sector in terms of the radius r, and find the value of r for which A is maximum.",
+      "answer": "$A = 10r - r^2$, maximum when $r = 5$ cm",
+      "solution": "Perimeter $= 2r + r\\theta = 20 \\implies \\theta = \\frac{20}{r} - 2$. Area $= \\frac{1}{2}r^2\\theta = \\frac{1}{2}r^2(\\frac{20}{r} - 2) = 10r - r^2$. $\\frac{dA}{dr} = 10 - 2r = 0 \\implies r = 5$ cm",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q1_H03",
+      "difficulty": "H",
+      "skill_tags": ["segment", "chord length"],
+      "problem_text": "A chord AB of a circle of radius 10 cm subtends an angle of $2.2$ radians at the centre O. Find the length of the chord AB and the area of the minor segment.",
+      "answer": "Chord $= 20\\sin 1.1 \\approx 17.8$ cm, segment $= 50(2.2 - \\sin 2.2) \\approx 69.6$ cm$^2$",
+      "solution": "Chord length $= 2r\\sin(\\theta/2) = 20\\sin 1.1 = 20 \\times 0.8912 = 17.82$ cm. Segment $= \\frac{1}{2}r^2(\\theta - \\sin\\theta) = 50(2.2 - 0.8085) = 50 \\times 1.3915 = 69.58$ cm$^2$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q1_H04",
+      "difficulty": "H",
+      "skill_tags": ["circular measure", "proportion"],
+      "problem_text": "Two sectors A and B have the same area. Sector A has radius 6 cm and angle 2 radians. Sector B has radius 4 cm. Find the angle of sector B and the ratio of their arc lengths.",
+      "answer": "Angle of B $= 4.5$ rad, arc ratio $s_A : s_B = 12 : 18 = 2 : 3$",
+      "solution": "Area of A $= \\frac{1}{2} \\times 36 \\times 2 = 36$ cm$^2$. For B: $36 = \\frac{1}{2} \\times 16 \\times \\theta_B \\implies \\theta_B = 4.5$ rad. $s_A = 6 \\times 2 = 12$, $s_B = 4 \\times 4.5 = 18$. Ratio $= 12:18 = 2:3$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q1_X01",
+      "difficulty": "X",
+      "skill_tags": ["circular measure", "trigonometry", "optimisation"],
+      "problem_text": "A piece of wire of length 40 cm is bent to form the perimeter of a sector of a circle. Find the maximum possible area of the sector.",
+      "answer": "Maximum area $= 100$ cm$^2$ when $r = 10$ cm",
+      "solution": "$2r + r\\theta = 40 \\implies \\theta = \\frac{40}{r} - 2$. Area $A = \\frac{1}{2}r^2\\theta = 20r - r^2$. $\\frac{dA}{dr} = 20 - 2r = 0 \\implies r = 10$. $\\frac{d^2A}{dr^2} = -2 < 0$, maximum. $A_{max} = 20(10) - 100 = 100$ cm$^2$",
+      "marks": 5
+    },
+    {
+      "id": "AL2_Q1_X02",
+      "difficulty": "X",
+      "skill_tags": ["circular measure", "area between curves"],
+      "problem_text": "A circle of radius 6 cm has two radii OA and OB with angle AOB = 1.8 radians. A second circle with centre at the midpoint of chord AB is drawn to pass through A and B. Find the area of the region common to both circles.",
+      "answer": "Approximately 12.4 cm$^2$",
+      "solution": "Chord AB $= 12\\sin 0.9 = 12 \\times 0.7833 = 9.40$ cm. Small circle radius $= 4.70$ cm. Common region = two segments. Complex; use symmetry and segment formula for each circle.",
+      "marks": 6
+    },
+    {
+      "id": "AL2_Q1_X03",
+      "difficulty": "X",
+      "skill_tags": ["circular measure", "proof"],
+      "problem_text": "Show that for a sector of fixed perimeter P, the maximum area occurs when $\\theta = 2$ radians. Hence find the maximum area in terms of P.",
+      "answer": "$A_{max} = \\frac{P^2}{16}$",
+      "solution": "$P = 2r + r\\theta \\implies r = \\frac{P}{2 + \\theta}$. Area $A = \\frac{1}{2}r^2\\theta = \\frac{P^2\\theta}{2(2+\\theta)^2}$. $\\frac{dA}{d\\theta} = 0 \\implies (2+\\theta)^2 - 2\\theta(2+\\theta) = 0 \\implies 2+\\theta - 2\\theta = 0 \\implies \\theta = 2$. Then $r = P/4$, $A = \\frac{1}{2}(P/4)^2 \\times 2 = P^2/16$",
+      "marks": 6
+    },
+    {
+      "id": "AL2_Q1_X04",
+      "difficulty": "X",
+      "skill_tags": ["circular measure", "composite area"],
+      "problem_text": "A window is in the shape of a rectangle surmounted by a semicircle. The total perimeter of the window is 12 m. Find the radius of the semicircle that maximises the area of the window.",
+      "answer": "$r = \\frac{6}{\\pi + 2} \\approx 1.17$ m",
+      "solution": "Let width $= 2r$, height $= h$. Perimeter $= 2h + 2r + \\pi r = 12 \\implies h = 6 - r - \\frac{\\pi r}{2}$. Area $A = 2rh + \\frac{1}{2}\\pi r^2 = 2r(6 - r - \\frac{\\pi r}{2}) + \\frac{1}{2}\\pi r^2 = 12r - 2r^2 - \\pi r^2 + \\frac{1}{2}\\pi r^2 = 12r - 2r^2 - \\frac{1}{2}\\pi r^2$. $\\frac{dA}{dr} = 12 - 4r - \\pi r = 0 \\implies r = \\frac{12}{4+\\pi} = \\frac{12}{\\pi+4}$",
+      "marks": 6
+    }
+  ]
+}

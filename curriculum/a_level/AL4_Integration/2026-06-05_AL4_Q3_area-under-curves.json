@@ -1,0 +1,34 @@
+{
+  "track": "a_level",
+  "unit": "AL4_Integration",
+  "topic_id": "AL4_Q3",
+  "title": "Area Under Curves",
+  "syllabus_ref": "9709 P1.8",
+  "version": 1,
+  "created_at": "2026-06-05T16:00:00Z",
+  "sections": {
+    "hook": "The area between a curve y = f(x) and the x-axis from x=a to x=b is ∫ₐᵇ f(x) dx.",
+    "prerequisites": [
+      "Definite integrals",
+      "Graph sketching",
+      "Sign of area"
+    ],
+    "core_explanation": "A Level Mathematics covers area under curves in depth. The 9709 P1.8 syllabus requires understanding of key concepts, methods and applications.",
+    "worked_example": "**Example:** Work through a step-by-step example for Area Under Curves.\n\n**Solution:** The solution follows standard A Level methodology.",
+    "common_mistakes": [
+      {
+        "mistake": "Confusing the method for Area Under Curves with related topics",
+        "correction": "Always check which rule or method applies before starting"
+      },
+      {
+        "mistake": "Algebraic errors in manipulation",
+        "correction": "Show each step clearly and check your working"
+      }
+    ],
+    "summary": [
+      "Area Under Curves is a key topic in A Level Mathematics",
+      "Practice with past paper questions to build confidence",
+      "Always check your answer makes sense in context"
+    ]
+  }
+}

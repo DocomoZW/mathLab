@@ -8,6 +8,19 @@
 <meta name="theme-color" content="#7c3aed">
 <meta name="description" content="IGCSE Mathematics learning platform with interactive concepts, problems, and animations">
 <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/sw.js')})}</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 <style>
 /* ── Reset & Base ─────────────────────────── */
@@ -184,6 +197,8 @@ input{font-family:var(--font);outline:none}
 }
 .gif-player .gif-controls button:hover{background:var(--accent3);color:#fff}
 .gif-player .gif-caption{font-size:11px;color:var(--text3);padding:6px 12px;border-top:1px solid var(--border);background:var(--bg2)}
+.problem-diagram{max-width:100%;height:auto;border:1px solid var(--border);border-radius:8px;margin:12px 0;display:block;background:var(--bg2);padding:8px;box-sizing:border-box}
+.hook-illustration{max-width:100%;height:auto;border-radius:8px;margin:8px auto 16px;display:block;box-shadow:0 2px 12px rgba(0,0,0,0.1),inset 0 0 0 1px rgba(61,43,31,0.15)}
 
 /* ── Problems ──────────────────────────────── */
 .problems{padding-top:8px}
@@ -336,6 +351,7 @@ async function init(){
     units=parseUnits(data.tree||[]);
     renderUnitSelector();
     showLanding();
+    await loadGifCache();
   }catch(e){
     document.getElementById('pageContent').innerHTML=`
       <div class="loading"><div class="spinner"></div> Loading...</div>
@@ -534,7 +550,7 @@ function renderTopic(concept,problems){
   }
 
   // GIF
-  const gifName=getGifForTopic(topicId);
+  const gifName=getGifForTopic(topicId, currentUnit?.code);
   if(gifName){
     sectionsHtml+=`
       <div class="section">
@@ -562,13 +578,18 @@ function renderTopic(concept,problems){
     `;
   }
 
-  // Worked Example
+  // Worked Example — supports both string and {question, solution} dict
   if(s.worked_example){
-    const steps=parseSteps(s.worked_example);
+    let weText = s.worked_example;
+    // Handle dict format: {question, solution}
+    if(typeof weText === 'object' && !Array.isArray(weText)){
+      weText = (weText.question||'') + '\n\n' + (weText.solution||'');
+    }
+    const steps=parseSteps(weText);
     sectionsHtml+=`
       <div class="section">
         <h3>✏️ Worked Example</h3>
-        <div class="worked-example">${renderMath(s.worked_example)}</div>
+        <div class="worked-example">${renderMath(weText)}</div>
       </div>
     `;
   }
@@ -803,33 +824,60 @@ function escapeHtml(s){
 
 function renderMath(text){
   if(!text)return'';
-  // MathJax delimiters: \(...\) for inline, $$...$$ or \[...\] for display
-  // Already in the content. Just return as-is wrapped with proper escaping.
-  // We need to preserve $$ and \(\) for MathJax but escape HTML
-  // Strategy: replace $$ with \( and \) to use consistent inline rendering... no, let's keep $$ as display math
-  // Actually, the content already has proper MathJax delimiters, just wrap in a div
-  return text;
+  // Support embedded diagrams via [img:path/to.svg] syntax
+  const imgs=[];
+  text=text.replace(/\[img:([^\]]+)\]/g,function(m,src){
+    const id='__IMG'+imgs.length+'__';
+    imgs.push({id:id,src:src});
+    return id;
+  });
+  // Escape HTML, then LaTeX is processed by MathJax
+  const d=document.createElement('div');
+  d.textContent=text;
+  let html=d.innerHTML;
+  // Restore image tags
+  for(const i of imgs){
+    const cls = i.src.includes('/hooks/') ? 'hook-illustration' : 'problem-diagram';
+    html=html.replace(i.id,'<img src="'+i.src+'" class="'+cls+'" alt="Diagram" loading="lazy">');
+  }
+  return html;
 }
 
-function getGifForTopic(topicId){
-  // Map topic IDs to GIF filenames based on the existing GIFs
-  const gifMap={
-    'A1_Q1':'2026-06-04_A1_Q1_venn-diagram-classification.gif',
-    'A1_Q2':'',
-    'A1_Q3':'2026-06-04_A1_Q3_recurring-decimal-to-fraction.gif',
-    'A1_Q4':'2026-06-04_A1_Q4_compound-interest.gif',
-    'A1_Q5':'2026-06-04_A1_Q5_bounds-error-intervals.gif',
-    'A1_Q6':'2026-06-04_A1_Q6_direct-proportion-graph.gif',
-    'A1_Q7':'2026-06-04_A1_Q7_laws-of-indices.gif',
-    'B1_Q1':'2026-06-05_B1_Q1_collect-like-terms.gif',
-    'B1_Q2':'2026-06-05_B1_Q2_difference-of-squares.gif',
-    'B1_Q3':'2026-06-05_B1_Q3_balance-scale.gif',
-    'B1_Q4':'2026-06-05_B1_Q4_elimination.gif',
-    'B1_Q5':'2026-06-05_B1_Q5_fraction-bars-add.gif',
-    'B1_Q6':'2026-06-05_B1_Q6_linear-sequence-dots.gif',
-    'B1_Q7':'2026-06-05_B1_Q7_function-machine.gif',
-  };
-  return gifMap[topicId]||'';
+function getGifForTopic(topicId, unitCode){
+  if(!topicId)return'';
+  const unitPrefix = (unitCode||'').replace(/_.*$/,'');
+  // Find a GIF that matches this topic
+  // GIFs are named by scene name (e.g., "indiceslaws.gif", "quadraticfunction.gif")
+  // Try matching by topic ID, unit prefix, or keywords
+  const matches = [];
+  const tid = topicId.toLowerCase().replace(/^[a-z]+/,''); // "Q1" from "A1_Q1"
+  for(const key in gifCache||{}){
+    const name = key.toLowerCase();
+    // Match: topic ID chars in GIF name (e.g., "q1" in "functionmapping.gif")
+    if(tid && name.includes(tid)) matches.push({name:key,score:10});
+    // Match: unit code prefix
+    if(unitPrefix && name.includes(unitPrefix.toLowerCase())) matches.push({name:key,score:5});
+  }
+  if(matches.length===0)return'';
+  matches.sort((a,b)=>b.score-a.score);
+  return matches[0].name;
+}
+let gifCache = null;
+async function loadGifCache(){
+  try{
+    const r=await fetch('/api/directory-listing');
+    const data=await r.json();
+    const gifNames=[];
+    function walk(items){
+      for(const item of items||[]){
+        if(item.type==='file'&&item.name.endsWith('.gif'))gifNames.push(item.name);
+        if(item.children)walk(item.children);
+      }
+    }
+    walk(data.tree||[]);
+    gifCache={};
+    for(const name of gifNames)gifCache[name]=true;
+  }catch(e){gifCache={};}
 }
 
 function parseSteps(text){

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" font-family="Arial, sans-serif" font-size="14">
+  <rect width="500" height="500" fill="#fff"/>
+  
+  <title>Cyclic Quadrilateral</title>
+  
+  <!-- Circle -->
+  <circle cx="250" cy="250" r="180" fill="none" stroke="#111" stroke-width="2.5"/>
+  
+  <!-- Points on circumference (forming a cyclic quadrilateral) -->
+  <!-- A: top-left -->
+  <circle cx="120" cy="120" r="4" fill="#2563eb"/>
+  <text x="105" y="112" font-style="italic" font-weight="bold" fill="#2563eb">A</text>
+  
+  <!-- B: top-right -->
+  <circle cx="380" cy="130" r="4" fill="#2563eb"/>
+  <text x="387" y="122" font-style="italic" font-weight="bold" fill="#2563eb">B</text>
+  
+  <!-- C: bottom-right -->
+  <circle cx="380" cy="370" r="4" fill="#2563eb"/>
+  <text x="387" y="388" font-style="italic" font-weight="bold" fill="#2563eb">C</text>
+  
+  <!-- D: bottom-left -->
+  <circle cx="120" cy="360" r="4" fill="#2563eb"/>
+  <text x="105" y="378" font-style="italic" font-weight="bold" fill="#2563eb">D</text>
+  
+  <!-- Quadrilateral edges -->
+  <polygon points="120,120 380,130 380,370 120,360" fill="#2563eb" opacity="0.08" stroke="#2563eb" stroke-width="2"/>
+  
+  <!-- Diagonal AC -->
+  <line x1="120" y1="120" x2="380" y2="370" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6,3"/>
+  
+  <!-- Diagonal BD -->
+  <line x1="380" y1="130" x2="120" y2="360" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="6,3"/>
+  
+  <!-- Centre O -->
+  <circle cx="250" cy="250" r="3" fill="#64748b"/>
+  <text x="255" y="245" fill="#64748b" font-style="italic">O</text>
+  
+  <!-- Angle labels -->
+  <text x="230" y="135" fill="#dc2626" font-weight="bold" font-size="16">∠A</text>
+  <text x="395" y="250" fill="#dc2626" font-weight="bold" font-size="16">∠B</text>
+  <text x="240" y="395" fill="#dc2626" font-weight="bold" font-size="16">∠C</text>
+  <text x="80" y="245" fill="#dc2626" font-weight="bold" font-size="16">∠D</text>
+  
+  <!-- Key theorem -->
+  <rect x="60" y="420" width="380" height="60" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="70" y="440" font-weight="bold" font-size="15">Cyclic Quadrilateral Theorem:</text>
+  <text x="70" y="460" fill="#dc2626" font-weight="bold" font-size="15">∠A + ∠C = 180°  |  ∠B + ∠D = 180°</text>
+  <text x="70" y="475">(Opposite angles sum to 180°)</text>
+</svg>

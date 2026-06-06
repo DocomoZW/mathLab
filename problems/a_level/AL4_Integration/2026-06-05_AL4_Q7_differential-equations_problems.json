@@ -1,0 +1,196 @@
+{
+  "track": "a_level",
+  "unit": "AL4_Integration",
+  "topic_id": "AL4_Q7",
+  "title": "Differential Equations",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "separable"
+      ],
+      "problem_text": "Solve dy/dx=x/y.",
+      "answer": "y^2=x^2+C",
+      "solution": "y dy=x dx. y^2/2=x^2/2+C.",
+      "marks": 2
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "separable"
+      ],
+      "problem_text": "Solve dy/dx=2xy.",
+      "answer": "y=A e^{x^2}",
+      "solution": "dy/y=2x dx. ln|y|=x^2+C.",
+      "marks": 2
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "separable"
+      ],
+      "problem_text": "Solve dy/dx=y, y(0)=3.",
+      "answer": "y=3e^x",
+      "solution": "dy/y=dx. y=Ae^x. y(0)=3->A=3.",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "separable"
+      ],
+      "problem_text": "Solve dy/dx=3x^2, y(0)=1.",
+      "answer": "y=x^3+1",
+      "solution": "y=x^3+C. y(0)=1->C=1.",
+      "marks": 2
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "separable",
+        "initial"
+      ],
+      "problem_text": "Solve dy/dx=x/y^2, y(0)=2.",
+      "answer": "y^3=3x^2/2+8",
+      "solution": "y^2 dy=x dx. y^3/3=x^2/2+C. y(0)=2:8/3=C.",
+      "marks": 3
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "separable",
+        "trig"
+      ],
+      "problem_text": "Solve dy/dx=sin x/cos y, y(0)=0.",
+      "answer": "sin y=1-cos x",
+      "solution": "cos y dy=sin x dx. sin y=-cos x+C. y(0)=0:0=-1+C->C=1.",
+      "marks": 3
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "separable",
+        "exponential"
+      ],
+      "problem_text": "Solve dP/dt=kP, P(0)=P0.",
+      "answer": "P=P0 e^{kt}",
+      "solution": "dP/P=k dt. ln P=kt+C. P=P0 e^{kt}.",
+      "marks": 2
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "separable",
+        "fraction"
+      ],
+      "problem_text": "Solve dy/dx=x/(y+1), y(0)=0.",
+      "answer": "(y+1)^2=x^2+1",
+      "solution": "(y+1)dy=x dx. (y+1)^2/2=x^2/2+C. y(0)=0:1/2=C.",
+      "marks": 3
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "separable",
+        "partial-frac"
+      ],
+      "problem_text": "Solve dy/dx=y^2-1, y(0)=2.",
+      "answer": "y=(3+e^{2x})/(3-e^{2x})",
+      "solution": "PF: 1/(y^2-1)=0.5/(y-1)-0.5/(y+1). Integrate.",
+      "marks": 5
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "separable",
+        "Newton-cooling"
+      ],
+      "problem_text": "dT/dt=-k(T-20), T(0)=100.",
+      "answer": "T=20+80e^{-kt}",
+      "solution": "dT/(T-20)=-k dt. ln|T-20|=-kt+C. T=20+80e^{-kt}.",
+      "marks": 3
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "separable",
+        "logistic"
+      ],
+      "problem_text": "dP/dt=P(100-P)/1000, P(0)=10.",
+      "answer": "P=100/(1+9e^{-t/10})",
+      "solution": "PF: 1/(P(100-P))=0.01(1/P+1/(100-P)).",
+      "marks": 5
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "separable",
+        "application"
+      ],
+      "problem_text": "Half-life=10yrs. Time to reduce to 10%?",
+      "answer": "10 ln10/ln2 yrs",
+      "solution": "M=M0 e^{-kt}. k=ln2/10. t=10 ln10/ln2.",
+      "marks": 4
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "separable",
+        "complex"
+      ],
+      "problem_text": "Solve dy/dx=xy/(1+x^2), y(0)=1.",
+      "answer": "y=sqrt(1+x^2)",
+      "solution": "dy/y=x/(1+x^2) dx. ln|y|=0.5ln(1+x^2)+C.",
+      "marks": 3
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "separable",
+        "tank"
+      ],
+      "problem_text": "Tank 100L brine with 10kg salt. Water in/out 5L/min. Find S(t).",
+      "answer": "S=10 e^{-t/20}",
+      "solution": "dS/dt=-5S/100=-S/20. dS/S=-dt/20. ln S=-t/20+C.",
+      "marks": 4
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "separable",
+        "growth"
+      ],
+      "problem_text": "dP/dt=k(P-1000). P(0)=2000, P(10)=3000.",
+      "answer": "P=1000+1000e^{t ln2/10}",
+      "solution": "dP/(P-1000)=k dt. P-1000=Ae^{kt}.",
+      "marks": 4
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "separable",
+        "modelling"
+      ],
+      "problem_text": "m dv/dt=mg-kv, v(0)=0. Find v(t).",
+      "answer": "v=mg/k (1-e^{-kt/m})",
+      "solution": "dv/(g-kv/m)=dt. Integrate: -(m/k)ln|g-kv/m|=t+C.",
+      "marks": 5
+    }
+  ]
+}

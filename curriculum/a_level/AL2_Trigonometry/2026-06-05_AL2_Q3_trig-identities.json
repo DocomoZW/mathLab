@@ -1,0 +1,35 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q3",
+  "title": "Trig Identities",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T10:20:00Z",
+  "sections": {
+    "hook": "Why does $\\sin^2\\theta + \\cos^2\\theta = 1$ hold for any angle? This simple identity — a disguised version of Pythagoras' Theorem — is the master key that unlocks countless trigonometric proofs and simplifications.",
+    "prerequisites": [
+      "SOH CAH TOA trig ratios",
+      "Pythagoras' Theorem",
+      "Basic algebraic manipulation"
+    ],
+    "core_explanation": "## Fundamental Identities\n\n**Pythagorean Identity:**\n$$\\sin^2\\theta + \\cos^2\\theta \\equiv 1$$\n\n**Tangent Identity:**\n$$\\tan\\theta \\equiv \\frac{\\sin\\theta}{\\cos\\theta}$$\n\nThese are true for all values of $\\theta$ (hence $\\equiv$, not $=$).\n\n## Deriving the Pythagorean Identity\n\nOn the unit circle, a point $P(\\cos\\theta, \\sin\\theta)$ lies on $x^2 + y^2 = 1$. Therefore $\\cos^2\\theta + \\sin^2\\theta = 1$.\n\n## Using Identities to Simplify Expressions\n\n**Strategy:**\n1. Look for $\\sin^2\\theta + \\cos^2\\theta$ to replace with $1$.\n2. Replace $\\tan\\theta$ with $\\frac{\\sin\\theta}{\\cos\\theta}$.\n3. Factor or combine fractions.\n4. Aim to reduce to a single trig function or a constant.\n\n## Proving Identities\n\n**Method:**\n1. Start with the more complicated side.\n2. Transform it step-by-step into the other side.\n3. State each step clearly.\n4. Never cross-multiply or move terms between sides (that assumes the identity is true).\n\n## Related Forms\n\nFrom $\\sin^2\\theta + \\cos^2\\theta = 1$, we can also write:\n$$\\sin^2\\theta = 1 - \\cos^2\\theta$$\n$$\\cos^2\\theta = 1 - \\sin^2\\theta$$\n$$\\sec^2\\theta = 1 + \\tan^2\\theta$$\n$$\\csc^2\\theta = 1 + \\cot^2\\theta$$",
+    "worked_example": {
+      "question": "Prove the identity $\\frac{\\cos\\theta}{1 - \\sin\\theta} - \\frac{\\cos\\theta}{1 + \\sin\\theta} \\equiv 2\\tan\\theta$.",
+      "solution": "Start with LHS:\n$$\\frac{\\cos\\theta}{1 - \\sin\\theta} - \\frac{\\cos\\theta}{1 + \\sin\\theta}$$\n$$= \\frac{\\cos\\theta(1 + \\sin\\theta) - \\cos\\theta(1 - \\sin\\theta)}{(1 - \\sin\\theta)(1 + \\sin\\theta)}$$\n$$= \\frac{\\cos\\theta + \\cos\\theta\\sin\\theta - \\cos\\theta + \\cos\\theta\\sin\\theta}{1 - \\sin^2\\theta}$$\n$$= \\frac{2\\cos\\theta\\sin\\theta}{\\cos^2\\theta}$$\n$$= \\frac{2\\sin\\theta}{\\cos\\theta}$$\n$$= 2\\tan\\theta = \\text{RHS}$$"
+    },
+    "common_mistakes": [
+      {"mistake": "Treating an identity like an equation and cross-multiplying between sides.", "correction": "Start from one side and transform it into the other. Do NOT move terms across the $\\equiv$ sign."},
+      {"mistake": "Writing $\\sin^2\\theta + \\cos^2\\theta = 0$ or other wrong forms.", "correction": "Memorise: $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$. It comes from Pythagoras on the unit circle."},
+      {"mistake": "Confusing $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$ with $\\tan\\theta = \\frac{\\cos\\theta}{\\sin\\theta}$.", "correction": "Remember: $\\tan\\theta = \\frac{\\text{opp}}{\\text{adj}} = \\frac{\\sin\\theta}{\\cos\\theta}$. The mnemonic SOH CAH TOA helps: Tan = Sin/Cos."},
+      {"mistake": "Forgetting that $1 - \\sin^2\\theta = \\cos^2\\theta$ but $1 + \\sin^2\\theta$ does not simplify.", "correction": "Only $1 - \\sin^2\\theta$ simplifies to $\\cos^2\\theta$. $1 + \\sin^2\\theta$ has no simple form."}
+    ],
+    "summary": [
+      "$\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ (Pythagorean identity).",
+      "$\\tan\\theta \\equiv \\frac{\\sin\\theta}{\\cos\\theta}$ (tangent identity).",
+      "To prove an identity, start from one side and transform it into the other.",
+      "Look for opportunities to replace $\\sin^2\\theta$ with $1 - \\cos^2\\theta$ or vice versa.",
+      "These identities hold for all values of $\\theta$."
+    ]
+  }
+}

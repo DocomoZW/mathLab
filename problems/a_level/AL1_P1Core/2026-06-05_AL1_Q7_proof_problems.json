@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL1_P1Core",
+  "topic_id": "AL1_Q7",
+  "title": "Proof and Mathematical Reasoning - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T11:05:00Z",
+  "problems": [
+    {
+      "id": "AL1_Q7_F01",
+      "difficulty": "F",
+      "skill_tags": ["direct proof"],
+      "problem_text": "Prove that the sum of two even numbers is even.",
+      "answer": "Proof",
+      "solution": "Let the even numbers be $2m$ and $2n$ where $m, n \\in \\mathbb{Z}$. Sum: $2m + 2n = 2(m+n)$. Since $m+n$ is an integer, the sum is divisible by 2, hence even.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q7_F02",
+      "difficulty": "F",
+      "skill_tags": ["counterexample"],
+      "problem_text": "Find a counterexample to disprove the statement: \"For all integers $n$, $n^2 + n + 41$ is prime.\"",
+      "answer": "$n = 41$ gives $41^2+41+41 = 41(41+1+1) = 41(43) = 1763$ which is composite (or $n=40$ gives $40^2+40+41 = 1600+40+41 = 1681 = 41^2$).",
+      "solution": "Try $n = 40$: $40^2 + 40 + 41 = 1600 + 40 + 41 = 1681 = 41^2$, which is not prime.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q7_F03",
+      "difficulty": "F",
+      "skill_tags": ["direct proof", "algebra"],
+      "problem_text": "Prove that $(n+1)^2 - n^2 = 2n + 1$ for all integers $n$.",
+      "answer": "Proof",
+      "solution": "$(n+1)^2 - n^2 = n^2 + 2n + 1 - n^2 = 2n + 1$.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q7_F04",
+      "difficulty": "F",
+      "skill_tags": ["counterexample"],
+      "problem_text": "Disprove the statement: \"For all real numbers $x$, $x^2 > x$.\"",
+      "answer": "$x = 0.5$ is a counterexample since $0.5^2 = 0.25 < 0.5$.",
+      "solution": "Let $x = 0.5$. Then $x^2 = 0.25 < 0.5 = x$. So the statement is false.",
+      "marks": 1
+    },
+    {
+      "id": "AL1_Q7_C01",
+      "difficulty": "C",
+      "skill_tags": ["direct proof", "consecutive numbers"],
+      "problem_text": "Prove that the product of three consecutive integers is divisible by 6.",
+      "answer": "Proof",
+      "solution": "Let the integers be $n, n+1, n+2$. Among any three consecutive integers, at least one is divisible by 2 (even) and exactly one is divisible by 3. Therefore the product is divisible by $2 \\times 3 = 6$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q7_C02",
+      "difficulty": "C",
+      "skill_tags": ["proof by contradiction"],
+      "problem_text": "Prove by contradiction that if $n^2$ is odd, then $n$ is odd.",
+      "answer": "Proof",
+      "solution": "Assume $n^2$ is odd but $n$ is even. Then $n = 2k$ for some integer $k$, so $n^2 = 4k^2 = 2(2k^2)$, which is even. This contradicts $n^2$ being odd. Therefore $n$ must be odd.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q7_C03",
+      "difficulty": "C",
+      "skill_tags": ["direct proof", "inequality"],
+      "problem_text": "Prove that for all real numbers $x$ and $y$, $x^2 + y^2 \\geq 2xy$.",
+      "answer": "Proof",
+      "solution": "$x^2 + y^2 - 2xy = (x-y)^2 \\geq 0$. Therefore $x^2 + y^2 \\geq 2xy$, with equality when $x = y$.",
+      "marks": 2
+    },
+    {
+      "id": "AL1_Q7_C04",
+      "difficulty": "C",
+      "skill_tags": ["direct proof", "divisibility"],
+      "problem_text": "Prove that $n^3 - n$ is divisible by 3 for all integers $n$.",
+      "answer": "Proof",
+      "solution": "$n^3 - n = n(n^2 - 1) = n(n-1)(n+1)$, which is the product of three consecutive integers. Among any three consecutive integers, exactly one is divisible by 3, so the product is divisible by 3.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q7_H01",
+      "difficulty": "H",
+      "skill_tags": ["proof by contradiction"],
+      "problem_text": "Prove by contradiction that $\\sqrt{3}$ is irrational.",
+      "answer": "Proof",
+      "solution": "Assume $\\sqrt{3} = \\frac{p}{q}$ where $p, q$ are integers in lowest terms. Then $3 = \\frac{p^2}{q^2} \\implies p^2 = 3q^2$. So $p^2$ is divisible by 3, hence $p$ is divisible by 3. Write $p = 3k$. Then $9k^2 = 3q^2 \\implies 3k^2 = q^2$. So $q^2$ is divisible by 3, hence $q$ is divisible by 3. But then $p$ and $q$ share a factor of 3, contradicting that $\\frac{p}{q}$ is in lowest terms. Therefore $\\sqrt{3}$ is irrational.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q7_H02",
+      "difficulty": "H",
+      "skill_tags": ["direct proof", "number theory"],
+      "problem_text": "Prove that the sum of the squares of any two odd integers is even but not divisible by 4.",
+      "answer": "Proof",
+      "solution": "Let the odd integers be $2m+1$ and $2n+1$. Their squares: $(2m+1)^2 = 4m^2 + 4m + 1 = 4m(m+1) + 1$ and $(2n+1)^2 = 4n(n+1) + 1$. Sum: $4m(m+1) + 4n(n+1) + 2 = 2[2m(m+1) + 2n(n+1) + 1]$. This is even (factor 2). The term in brackets is odd because $2m(m+1) + 2n(n+1)$ is even, plus 1 makes it odd. So sum is $2 \\times$ odd, not divisible by 4.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q7_H03",
+      "difficulty": "H",
+      "skill_tags": ["proof by exhaustion"],
+      "problem_text": "Prove by exhaustion that for $n \\in \\{1, 2, 3, 4, 5\\}$, $n^2 - n + 11$ is prime.",
+      "answer": "Proof",
+      "solution": "$n=1$: $1-1+11 = 11$ (prime). $n=2$: $4-2+11 = 13$ (prime). $n=3$: $9-3+11 = 17$ (prime). $n=4$: $16-4+11 = 23$ (prime). $n=5$: $25-5+11 = 31$ (prime). All 5 cases give primes, so the statement is true for the given domain.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q7_H04",
+      "difficulty": "H",
+      "skill_tags": ["proof", "inequality"],
+      "problem_text": "Prove that for all positive real numbers $a$ and $b$, $\\frac{a+b}{2} \\geq \\sqrt{ab}$ (AM-GM inequality).",
+      "answer": "Proof",
+      "solution": "$(\\sqrt{a} - \\sqrt{b})^2 \\geq 0$ for all real $a,b \\geq 0$. Expanding: $a + b - 2\\sqrt{ab} \\geq 0 \\implies a+b \\geq 2\\sqrt{ab} \\implies \\frac{a+b}{2} \\geq \\sqrt{ab}$.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q7_X01",
+      "difficulty": "X",
+      "skill_tags": ["proof by contradiction", "prime numbers"],
+      "problem_text": "Prove by contradiction that there are infinitely many prime numbers.",
+      "answer": "Proof",
+      "solution": "Assume there are finitely many primes: $p_1, p_2, \\dots, p_k$. Consider $N = p_1p_2\\cdots p_k + 1$. $N$ is not divisible by any of $p_1, \\dots, p_k$ (it leaves remainder 1). So either $N$ is prime (contradiction to $p_k$ being the largest) or $N$ has a prime factor not in the list. Either way, there is a prime not in the list, contradicting the finite list assumption.",
+      "marks": 5
+    },
+    {
+      "id": "AL1_Q7_X02",
+      "difficulty": "X",
+      "skill_tags": ["direct proof", "surd"],
+      "problem_text": "Prove that $\\sqrt{2} + \\sqrt{3}$ is irrational.",
+      "answer": "Proof",
+      "solution": "Assume $\\sqrt{2} + \\sqrt{3} = r$ is rational. Then $r^2 = 2 + 3 + 2\\sqrt{6} = 5 + 2\\sqrt{6} \\implies \\sqrt{6} = \\frac{r^2 - 5}{2}$. The RHS is rational, but $\\sqrt{6}$ is irrational (can be proved similarly to $\\sqrt{2}$). Contradiction. Hence $\\sqrt{2} + \\sqrt{3}$ is irrational.",
+      "marks": 4
+    },
+    {
+      "id": "AL1_Q7_X03",
+      "difficulty": "X",
+      "skill_tags": ["proof by contradiction", "logic"],
+      "problem_text": "Prove that if $a$ and $b$ are integers and $ab$ is odd, then both $a$ and $b$ are odd.",
+      "answer": "Proof",
+      "solution": "Assume $ab$ is odd but at least one of $a, b$ is even. Case 1: $a$ is even, so $a = 2k$. Then $ab = 2kb$, which is even. Case 2: $b$ is even, symmetric. In both cases $ab$ is even, contradicting that $ab$ is odd. Therefore both $a$ and $b$ must be odd.",
+      "marks": 3
+    },
+    {
+      "id": "AL1_Q7_X04",
+      "difficulty": "X",
+      "skill_tags": ["direct proof", "summation"],
+      "problem_text": "Prove by direct algebraic manipulation that $\\sum_{r=1}^{n} r = \\frac{n(n+1)}{2}$.",
+      "answer": "Proof",
+      "solution": "Let $S = 1 + 2 + \\cdots + (n-1) + n$. Write in reverse: $S = n + (n-1) + \\cdots + 2 + 1$. Add: $2S = (1+n) + (2+n-1) + \\cdots + (n-1+2) + (n+1) = n(n+1)$. Therefore $S = \\frac{n(n+1)}{2}$.",
+      "marks": 3
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "track": "a_level",
+  "unit": "AL1_P1Core",
+  "topic_id": "AL1_Q6",
+  "title": "Partial Fractions",
+  "syllabus_ref": "9709 P1.6",
+  "version": 1,
+  "created_at": "2026-06-05T10:25:00Z",
+  "sections": {
+    "hook": "When adding fractions like $\\frac{2}{x+1} + \\frac{3}{x-2}$, you get a single fraction $\\frac{5x-1}{(x+1)(x-2)}$. But what if you need to go backwards — split a complicated fraction into simpler parts? That's partial fractions, and it's essential for integration and binomial expansions.",
+    "prerequisites": [
+      "IGCSE algebraic fractions",
+      "Solving simultaneous equations",
+      "Factorising quadratics",
+      "Polynomial division"
+    ],
+    "core_explanation": "## Why Partial Fractions?\n\nSplitting a single algebraic fraction into a sum of simpler fractions makes it easier to:\n- Integrate term by term\n- Expand using the binomial theorem\n- Solve differential equations\n\n## Proper Fractions (degree of numerator < degree of denominator)\n\n### Case 1: Distinct Linear Factors\n\n$\\frac{f(x)}{(ax+b)(cx+d)} = \\frac{A}{ax+b} + \\frac{B}{cx+d}$\n\n**Method:** Multiply through by the denominator, then substitute convenient values of $x$ or equate coefficients.\n\n**Example:** $\\frac{5x+1}{(x+2)(x-1)} = \\frac{A}{x+2} + \\frac{B}{x-1}$\n\n$5x+1 = A(x-1) + B(x+2)$\n\nLet $x = 1$: $5+1 = B(3)$ \\rightarrow $6 = 3B$ \\rightarrow $B = 2$\nLet $x = -2$: $-10+1 = A(-3)$ \\rightarrow $-9 = -3A$ \\rightarrow $A = 3$\n\n$\\frac{5x+1}{(x+2)(x-1)} = \\frac{3}{x+2} + \\frac{2}{x-1}$\n\n### Case 2: Repeated Linear Factor\n\n$\\frac{f(x)}{(ax+b)^2} = \\frac{A}{ax+b} + \\frac{B}{(ax+b)^2}$\n\n**Example:** $\\frac{3x+4}{(x+1)^2} = \\frac{A}{x+1} + \\frac{B}{(x+1)^2}$\n\n$3x+4 = A(x+1) + B$\n\nLet $x = -1$: $-3+4 = B$ \\rightarrow $B = 1$\n\nEquate coefficients of $x$: $3 = A$\n\n$\\frac{3x+4}{(x+1)^2} = \\frac{3}{x+1} + \\frac{1}{(x+1)^2}$\n\n### Case 3: Quadratic Factor (not factorisable)\n\n$\\frac{f(x)}{(ax+b)(x^2+c^2)} = \\frac{A}{ax+b} + \\frac{Bx+C}{x^2+c^2}$\n\n## Improper Fractions (degree of numerator >= degree of denominator)\n\nFirst perform polynomial long division to get:\n$$\\frac{f(x)}{g(x)} = Q(x) + \\frac{R(x)}{g(x)}$$\nwhere $Q(x)$ is the quotient and $\\frac{R(x)}{g(x)}$ is a proper fraction (degree of $R$ < degree of $g$).\nThen decompose $\\frac{R(x)}{g(x)}$ into partial fractions.\n\n## Binomial Expansion with Partial Fractions\n\nDecompose the expression into partial fractions, then expand each term using the binomial theorem (for $(ax+b)^{-1}$ or $(ax+b)^{-2}$ etc.).",
+    "worked_example": {
+      "question": "Express $\\frac{11x + 4}{(x+1)(x+2)(x-1)}$ in partial fractions.",
+      "solution": "Let $\\frac{11x + 4}{(x+1)(x+2)(x-1)} = \\frac{A}{x+1} + \\frac{B}{x+2} + \\frac{C}{x-1}$\n\nMultiply through by $(x+1)(x+2)(x-1)$:\n$11x + 4 = A(x+2)(x-1) + B(x+1)(x-1) + C(x+1)(x+2)$\n\nLet $x = -1$: $-11 + 4 = A(1)(-2)$ \\rightarrow $-7 = -2A$ \\rightarrow $A = \\frac{7}{2}$\n\nLet $x = -2$: $-22 + 4 = B(-1)(-3)$ \\rightarrow $-18 = 3B$ \\rightarrow $B = -6$\n\nLet $x = 1$: $11 + 4 = C(2)(3)$ \\rightarrow $15 = 6C$ \\rightarrow $C = \\frac{5}{2}$\n\nTherefore:\n$\\frac{11x + 4}{(x+1)(x+2)(x-1)} = \\frac{7}{2(x+1)} - \\frac{6}{x+2} + \\frac{5}{2(x-1)}$"
+    },
+    "common_mistakes": [
+      {"mistake": "Forgetting to check if the fraction is proper before starting decomposition.", "correction": "Always check degrees: if degree of numerator >= degree of denominator, perform polynomial division first."},
+      {"mistake": "Using incorrect form for repeated factors — writing $\\frac{A}{ax+b} + \\frac{B}{ax+b}$ instead of $\\frac{A}{ax+b} + \\frac{B}{(ax+b)^2}$.", "correction": "For $(ax+b)^2$ in the denominator, use two terms: $\\frac{A}{ax+b} + \\frac{B}{(ax+b)^2}$."},
+      {"mistake": "Forgetting to include $Bx+C$ for a quadratic factor in the denominator.", "correction": "When the denominator has an irreducible quadratic $x^2 + c^2$, the numerator must be $Bx + C$, not just $B$."},
+      {"mistake": "Sign errors when substituting negative values of $x$ to find constants.", "correction": "Always substitute carefully, especially with negative numbers. Use brackets to avoid sign errors."}
+    ],
+    "summary": [
+      "Partial fractions decompose a single algebraic fraction into a sum of simpler fractions.",
+      "For distinct linear factors: $\\frac{f(x)}{(ax+b)(cx+d)} = \\frac{A}{ax+b} + \\frac{B}{cx+d}$.",
+      "For repeated linear factors: $\\frac{f(x)}{(ax+b)^2} = \\frac{A}{ax+b} + \\frac{B}{(ax+b)^2}$.",
+      "For irreducible quadratic factors: $\\frac{f(x)}{(ax+b)(x^2+c^2)} = \\frac{A}{ax+b} + \\frac{Bx+C}{x^2+c^2}$.",
+      "Improper fractions require polynomial division before decomposition."
+    ]
+  }
+}

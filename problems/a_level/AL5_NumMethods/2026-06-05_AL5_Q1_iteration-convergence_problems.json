@@ -1,0 +1,197 @@
+{
+  "track": "a_level",
+  "unit": "AL5_NumMethods",
+  "topic_id": "AL5_Q1",
+  "title": "Iteration & Convergence",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "iteration"
+      ],
+      "problem_text": "x_{n+1}=sqrt(x_n+2), x_0=1. Find x_1, x_2.",
+      "answer": "x_1=1.732, x_2=1.932",
+      "solution": "x_1=sqrt(3)=1.732. x_2=sqrt(3.732)=1.932.",
+      "marks": 2
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "iteration"
+      ],
+      "problem_text": "Rearrange x^3-x-1=0 as x=(x+1)^{1/3}.",
+      "answer": "x=(x+1)^{1/3}",
+      "solution": "x^3=x+1->x=(x+1)^{1/3}.",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "convergence"
+      ],
+      "problem_text": "x_{n+1}=1+1/x_n, x_0=1. Find x_1,x_2,x_3.",
+      "answer": "2, 1.5, 1.667",
+      "solution": "x_1=2. x_2=1.5. x_3=1.667.",
+      "marks": 2
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "iteration"
+      ],
+      "problem_text": "x_{n+1}=cos(x_n), x_0=0.5. Find x_1.",
+      "answer": "x_1=0.8776",
+      "solution": "cos(0.5)=0.8776.",
+      "marks": 1
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "iteration",
+        "root"
+      ],
+      "problem_text": "x_{n+1}=sqrt((x_n+5)/2), x_0=2. 3 iterations.",
+      "answer": "Approx 1.851",
+      "solution": "x_1=1.871, x_2=1.853, x_3=1.851.",
+      "marks": 3
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "convergence"
+      ],
+      "problem_text": "x_{n+1}=x_n^2-2, x_0=0.5. Show divergence.",
+      "answer": "x_1=-1.75, x_2=1.0625 diverges",
+      "solution": "x_1=0.25-2=-1.75. x_2=3.0625-2=1.0625. Grows.",
+      "marks": 3
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "iteration",
+        "convergence"
+      ],
+      "problem_text": "x^3=6x+3. x_{n+1}=(6x_n+3)^{1/3}, x_0=2.6. 2 iterations.",
+      "answer": "x_2=2.618",
+      "solution": "x_1=18.6^(1/3)=2.617. x_2=18.702^(1/3)=2.618.",
+      "marks": 3
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "iteration",
+        "sqrt"
+      ],
+      "problem_text": "x_{n+1}=0.5(x_n+5/x_n) for sqrt(5), x_0=2.",
+      "answer": "x_1=2.25, x_2=2.2361",
+      "solution": "x_1=0.5(2+2.5)=2.25. x_2=0.5(2.25+2.222)=2.2361.",
+      "marks": 2
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "iteration",
+        "convergence",
+        "condition"
+      ],
+      "problem_text": "x_{n+1}=3-1/x_n. Find fixed point and convergence condition.",
+      "answer": "Fixed point 2.618. |F'|=1/x^2=0.146<1 converges.",
+      "solution": "x=3-1/x->x^2-3x+1=0->x=(3+sqrt5)/2. F'(x)=1/x^2.",
+      "marks": 4
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "iteration",
+        "sign-change"
+      ],
+      "problem_text": "Show f(x)=x^3-4x-9 has root in (2,3). 2 iterations x_{n+1}=(4x_n+9)^{1/3}.",
+      "answer": "f(2)= -9<0, f(3)=6>0. x_2=2.699",
+      "solution": "x_1=19^(1/3)=2.668. x_2=19.673^(1/3)=2.699.",
+      "marks": 4
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "iteration",
+        "divergence"
+      ],
+      "problem_text": "x_{n+1}=2x_n^2-1, x_0=0.8. Show divergence.",
+      "answer": "x_1=0.28, x_2=-0.843. Diverges.",
+      "solution": "|g'(x)|>1 at fixed points x=1, -0.5.",
+      "marks": 4
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "iteration",
+        "application"
+      ],
+      "problem_text": "x_{n+1}=cos x_n, x_0=0.5. Fixed point to 2dp.",
+      "answer": "~0.74",
+      "solution": "x_1=0.8776,x_2=0.6390,x_3=0.8027,x_4=0.6948. Converges to 0.739.",
+      "marks": 3
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "iteration",
+        "rate"
+      ],
+      "problem_text": "Show x_{n+1}=x_n(2-ax_n) converges quadratically to 1/a.",
+      "answer": "Quadratic: error_{n+1} approx -a error_n^2",
+      "solution": "Let x_n=1/a+epsilon_n. x_{n+1}=1/a-a epsilon_n^2.",
+      "marks": 5
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "iteration",
+        "chaos"
+      ],
+      "problem_text": "Logistic map x_{n+1}=4x_n(1-x_n). Find period-2 points.",
+      "answer": "~0.345, ~0.905",
+      "solution": "F(F(x))=x where F(x)=4x(1-x). Solve quartic.",
+      "marks": 5
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "iteration",
+        "convergence",
+        "proof"
+      ],
+      "problem_text": "Prove if |F'(a)|<1, iteration converges near a.",
+      "answer": "Contraction mapping",
+      "solution": "|x_{n+1}-a|=|F(x_n)-F(a)|<=K|x_n-a|, K<1.",
+      "marks": 5
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "iteration",
+        "application"
+      ],
+      "problem_text": "P_{n+1}=3.2 P_n(1-P_n/1000), P_0=500. 3 generations.",
+      "answer": "500->800->512->800",
+      "solution": "P_1=800,P_2=512,P_3=799.8. Period-2.",
+      "marks": 4
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q2",
+  "title": "Trigonometry Basics",
+  "syllabus_ref": "9709 P1.5",
+  "version": 1,
+  "created_at": "2026-06-05T10:10:00Z",
+  "sections": {
+    "hook": "How does a lighthouse beam sweep across the sea, or a sound wave vibrate through the air? The regular rise and fall of sine and cosine waves model everything from tides to alternating current.",
+    "prerequisites": [
+      "IGCSE right-angled trigonometry (SOH CAH TOA)",
+      "Angles in degrees and radians",
+      "Basic graph plotting"
+    ],
+    "core_explanation": "## Trigonometric Ratios\n\nFor a right-angled triangle:\n$$\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}},\\quad \\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}},\\quad \\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}$$\n\n## Exact Values\n\n| $\\theta$ | $0$ | $\\frac{\\pi}{6}$ | $\\frac{\\pi}{4}$ | $\\frac{\\pi}{3}$ | $\\frac{\\pi}{2}$ |\n|:---:|:---:|:---:|:---:|:---:|:---:|\n| $\\sin\\theta$ | $0$ | $\\frac{1}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{\\sqrt{3}}{2}$ | $1$ |\n| $\\cos\\theta$ | $1$ | $\\frac{\\sqrt{3}}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{1}{2}$ | $0$ |\n| $\\tan\\theta$ | $0$ | $\\frac{1}{\\sqrt{3}}$ | $1$ | $\\sqrt{3}$ | undefined |\n\n## Graphs of Trigonometric Functions\n\n**$y = \\sin x$:**\n- Period: $2\\pi$\n- Range: $[-1, 1]$\n- Passes through $(0,0)$, $(\\frac{\\pi}{2}, 1)$, $(\\pi, 0)$, $(\\frac{3\\pi}{2}, -1)$, $(2\\pi, 0)$\n\n**$y = \\cos x$:**\n- Period: $2\\pi$\n- Range: $[-1, 1]$\n- Passes through $(0,1)$, $(\\frac{\\pi}{2}, 0)$, $(\\pi, -1)$, $(\\frac{3\\pi}{2}, 0)$, $(2\\pi, 1)$\n\n**$y = \\tan x$:**\n- Period: $\\pi$\n- Range: all real numbers\n- Asymptotes at $x = \\frac{\\pi}{2} + n\\pi$\n- Passes through $(0,0)$, $(\\frac{\\pi}{4}, 1)$\n\n## Transformations of Trig Graphs\n\n- $y = a\\sin(bx + c) + d$: amplitude $|a|$, period $\\frac{2\\pi}{|b|}$, phase shift $-\\frac{c}{b}$, vertical shift $d$",
+    "worked_example": {
+      "question": "(a) Sketch the graph of $y = 3\\cos\\left(2x - \\frac{\\pi}{3}\\right)$ for $0 \\leq x \\leq 2\\pi$, stating the amplitude, period, and phase shift.\n(b) Find the exact value of $\\sin\\frac{5\\pi}{6}$.",
+      "solution": "(a) Amplitude $= 3$, period $= \\frac{2\\pi}{2} = \\pi$, phase shift $= \\frac{\\pi}{6}$ to the right.\nKey points shift accordingly: e.g. $(\\frac{\\pi}{6}, 3)$, $(\\frac{\\pi}{3}, 0)$, $(\\frac{5\\pi}{12}, -3)$.\n\nThe graph completes two full cycles in $[0, 2\\pi]$.\n\n(b) $\\sin\\frac{5\\pi}{6} = \\sin\\left(\\pi - \\frac{\\pi}{6}\\right) = \\sin\\frac{\\pi}{6} = \\frac{1}{2}$"
+    },
+    "common_mistakes": [
+      {"mistake": "Confusing sin and cos graphs — thinking sin starts at 0 and cos at 1.", "correction": "Remember: $\\sin 0 = 0$ (graph through origin), $\\cos 0 = 1$ (graph starts at maximum)."},
+      {"mistake": "Using degrees instead of radians when drawing trig graphs.", "correction": "Always label the x-axis in radians: $0, \\frac{\\pi}{2}, \\pi, \\frac{3\\pi}{2}, 2\\pi$."},
+      {"mistake": "Forgetting the period formula for transformed graphs.", "correction": "For $y = \\sin(bx)$ or $y = \\cos(bx)$, period $= \\frac{2\\pi}{|b|}$. For $y = \\tan(bx)$, period $= \\frac{\\pi}{|b|}$."},
+      {"mistake": "Mixing up exact values for $\\frac{\\pi}{6}$ and $\\frac{\\pi}{3}$.", "correction": "Remember: $\\sin\\frac{\\pi}{6} = \\frac{1}{2}$ and $\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}$ — small angle, small sine."}
+    ],
+    "summary": [
+      "SOH CAH TOA: $\\sin = \\frac{\\text{opp}}{\\text{hyp}}$, $\\cos = \\frac{\\text{adj}}{\\text{hyp}}$, $\\tan = \\frac{\\text{opp}}{\\text{adj}}$.",
+      "Memorise exact values for $0, \\frac{\\pi}{6}, \\frac{\\pi}{4}, \\frac{\\pi}{3}, \\frac{\\pi}{2}$.",
+      "Sine and cosine have period $2\\pi$, range $[-1,1]$; tangent has period $\\pi$, range $\\mathbb{R}$.",
+      "Transformations: amplitude $=|a|$, period $=\\frac{2\\pi}{|b|}$, phase shift $=-\\frac{c}{b}$, vertical shift $=d$."
+    ]
+  }
+}

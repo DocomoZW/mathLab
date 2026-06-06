@@ -1,0 +1,36 @@
+{
+  "track": "a_level",
+  "unit": "AL1_P1Core",
+  "topic_id": "AL1_Q1",
+  "title": "Quadratics",
+  "syllabus_ref": "9709 P1.1",
+  "version": 1,
+  "created_at": "2026-06-05T10:00:00Z",
+  "sections": {
+    "hook": "A rocket's height (in metres) t seconds after launch is given by h(t) = -5t^2 + 40t + 10. How high does it go? When does it hit the ground? Modelling real-world projectile motion requires completing the square and solving quadratic equations.",
+    "prerequisites": [
+      "IGCSE quadratic skills: factorising, expanding brackets",
+      "Basic algebraic manipulation",
+      "Solving linear equations",
+      "Plotting simple quadratic graphs"
+    ],
+    "core_explanation": "A quadratic expression is of the form $ax^2 + bx + c$ where $a \\neq 0$. The graph of $y = ax^2 + bx + c$ is a parabola.\n\n## Completing the Square\n\nWe rewrite $ax^2 + bx + c$ in the form $a(x + p)^2 + q$. This reveals the vertex (turning point) $(-p, q)$.\n\n**Method:**\n1. Factor out $a$ from the $x^2$ and $x$ terms.\n2. Take half of the coefficient of $x$, square it, add and subtract inside the bracket.\n3. Simplify.\n\n**Example:** $2x^2 + 8x + 5$\n\\begin{align*}\n2x^2 + 8x + 5 &= 2[x^2 + 4x] + 5 \\\\\n&= 2[(x + 2)^2 - 4] + 5 \\\\\n&= 2(x + 2)^2 - 8 + 5 \\\\\n&= 2(x + 2)^2 - 3\n\\end{align*}\nThus the turning point is $(-2, -3)$.\n\n## Quadratic Formula\n\nFor $ax^2 + bx + c = 0$, the solutions are:\n$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\n## The Discriminant\n\nThe discriminant $\\Delta = b^2 - 4ac$ determines the nature of roots:\n- $\\Delta > 0$: two distinct real roots\n- $\\Delta = 0$: one repeated real root (tangent)\n- $\\Delta < 0$: no real roots (two complex roots)\n\n## Quadratic Inequalities\n\nTo solve $ax^2 + bx + c > 0$ (or $< 0$, $\\geq 0$, $\\leq 0$):\n1. Solve the corresponding quadratic equation $ax^2 + bx + c = 0$.\n2. Sketch the graph of $y = ax^2 + bx + c$.\n3. Read off the regions where the graph satisfies the inequality.\n\n**Example:** Solve $x^2 - 5x + 6 > 0$\n\\begin{align*}\nx^2 - 5x + 6 &= 0 \\\\\n(x - 2)(x - 3) &= 0 \\\\\nx &= 2 \\text{ or } x = 3\n\\end{align*}\nSince $a > 0$, the parabola opens upward. $x^2 - 5x + 6 > 0$ when $x < 2$ or $x > 3$.\n\n## Intersection of a Line and a Quadratic\n\nSubstitute the line equation $y = mx + c$ into the quadratic $y = ax^2 + bx + d$. Solve the resulting quadratic equation. The discriminant tells you:\n- $\\Delta > 0$: two intersection points (line cuts curve)\n- $\\Delta = 0$: one intersection point (line is tangent)\n- $\\Delta < 0$: no intersection points (line misses curve)",
+    "worked_example": {
+      "question": "A quadratic function is given by $f(x) = 2x^2 - 12x + 7$.\n(a) Express $f(x)$ in the form $a(x + p)^2 + q$.\n(b) State the coordinates of the vertex of the graph of $y = f(x)$.\n(c) Find the value of the discriminant of $f(x) = 0$ and state the nature of the roots.\n(d) The line $y = 2x + k$ intersects the curve $y = f(x)$ at two distinct points. Find the range of values of $k$.",
+      "solution": "(a) \\begin{align*}\n2x^2 - 12x + 7 &= 2[x^2 - 6x] + 7 \\\\\n&= 2[(x - 3)^2 - 9] + 7 \\\\\n&= 2(x - 3)^2 - 18 + 7 \\\\\n&= 2(x - 3)^2 - 11\n\\end{align*}\n\n(b) Vertex is $(3, -11)$.\n\n(c) $\\Delta = b^2 - 4ac = (-12)^2 - 4(2)(7) = 144 - 56 = 88 > 0$. Two distinct real roots.\n\n(d) Set $2x^2 - 12x + 7 = 2x + k$.\n$2x^2 - 14x + (7 - k) = 0$\nFor two distinct intersections, $\\Delta > 0$:\n$(-14)^2 - 4(2)(7 - k) > 0$\n$196 - 56 + 8k > 0$\n$140 + 8k > 0$\n$k > -17.5$"
+    },
+    "common_mistakes": [
+      {"mistake": "Forgetting to factor out the coefficient of $x^2$ before completing the square.", "correction": "Always factor out $a$ from the $x^2$ and $x$ terms first: $ax^2 + bx + c = a[x^2 + \\frac{b}{a}x] + c$."},
+      {"mistake": "Reversing the inequality sign when multiplying by a negative number.", "correction": "When solving $ax^2 + bx + c < 0$, sketch the graph. The inequality sign changes depending on whether $a > 0$ or $a < 0$."},
+      {"mistake": "Using $b^2 - 4ac$ without checking $a$, $b$, $c$ are in standard form $ax^2 + bx + c = 0$.", "correction": "Always rearrange to standard form first before reading off $a$, $b$, $c$."},
+      {"mistake": "Stating the turning point as $(p, q)$ from completed square form $a(x - p)^2 + q$.", "correction": "The vertex is $(p, q)$ when the form is $a(x - p)^2 + q$. If you have $a(x + p)^2 + q$, the vertex is $(-p, q)$."}
+    ],
+    "summary": [
+      "A quadratic is of the form $ax^2 + bx + c$ with $a \\neq 0$; its graph is a parabola.",
+      "Completing the square: $ax^2 + bx + c = a(x + p)^2 + q$ reveals the turning point $(-p, q)$.",
+      "The discriminant $\\Delta = b^2 - 4ac$ determines the nature of the roots of $ax^2 + bx + c = 0$.",
+      "Quadratic inequalities are solved by sketching the graph and identifying the required region.",
+      "Intersection of a line and a quadratic leads to a quadratic equation whose discriminant indicates the number of intersection points."
+    ]
+  }
+}

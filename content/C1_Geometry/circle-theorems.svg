@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" font-family="Arial, sans-serif" font-size="14">
+  <rect width="500" height="500" fill="#fff"/>
+  
+  <title>Circle Theorem - Angle at Centre</title>
+  
+  <!-- Circle -->
+  <circle cx="250" cy="250" r="180" fill="none" stroke="#111" stroke-width="2.5"/>
+  
+  <!-- Centre O -->
+  <circle cx="250" cy="250" r="4" fill="#dc2626"/>
+  <text x="240" y="240" font-style="italic" font-weight="bold" fill="#dc2626">O</text>
+  
+  <!-- Diameter AB (horizontal) -->
+  <line x1="70" y1="250" x2="430" y2="250" stroke="#64748b" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <text x="60" y="245" font-style="italic" font-weight="bold">A</text>
+  <text x="435" y="245" font-style="italic" font-weight="bold">B</text>
+  
+  <!-- Point C at top of circle -->
+  <circle cx="250" cy="70" r="4" fill="#2563eb"/>
+  <text x="255" y="62" font-style="italic" font-weight="bold" fill="#2563eb">C</text>
+  
+  <!-- Point D on circumference -->
+  <circle cx="400" cy="160" r="4" fill="#16a34a"/>
+  <text x="405" y="152" font-style="italic" font-weight="bold" fill="#16a34a">D</text>
+  
+  <!-- Point P on circumference (left side) for "angle in same segment" -->
+  
+  <!-- Angle at centre: AOB -->
+  <line x1="250" y1="250" x2="70" y2="250" stroke="#dc2626" stroke-width="2"/>
+  <line x1="250" y1="250" x2="430" y2="250" stroke="#dc2626" stroke-width="2"/>
+  <!-- Arc for AOB (180° - straight line, diameter) -->
+  <path d="M 70 250 A 180 180 0 0 1 430 250" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="330" y="240" fill="#dc2626" font-weight="bold" font-size="15">∠AOB = 180°</text>
+  
+  <!-- Angle at circumference: ACB (Thales - right angle) -->
+  <line x1="250" y1="70" x2="70" y2="250" stroke="#2563eb" stroke-width="2"/>
+  <line x1="250" y1="70" x2="430" y2="250" stroke="#2563eb" stroke-width="2"/>
+  <!-- Right angle marker at C -->
+  <polyline points="250,105 285,105 285,140" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="140" y="175" fill="#2563eb" font-weight="bold" font-size="15">∠ACB = 90°</text>
+  
+  <!-- Theorem 2: Angle at centre = 2 × angle at circumference -->
+  <!-- Draw lines for A, C, D and O, C, D -->
+  <line x1="250" y1="250" x2="400" y2="160" stroke="#16a34a" stroke-width="2"/>
+  <line x1="250" y1="250" x2="70" y2="250" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="250" y1="70" x2="400" y2="160" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="4,2"/>
+  
+  <!-- Notes -->
+  <text x="30" y="30" font-weight="bold" font-size="16">Circle Theorems</text>
+  
+  <!-- Key box -->
+  <rect x="30" y="430" width="440" height="60" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="40" y="448" font-weight="bold">Theorem 1:</text>
+  <text x="40" y="465" fill="#2563eb">Angle in a semicircle = 90° (ACB with AB as diameter)</text>
+  <text x="40" y="482" fill="#dc2626">Theorem 2: Angle at centre = 2 × angle at circumference</text>
+</svg>

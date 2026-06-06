@@ -1,0 +1,36 @@
+{
+  "track": "a_level",
+  "unit": "AL1_P1Core",
+  "topic_id": "AL1_Q7",
+  "title": "Proof and Mathematical Reasoning",
+  "syllabus_ref": "9709 P1.7",
+  "version": 1,
+  "created_at": "2026-06-05T10:30:00Z",
+  "sections": {
+    "hook": "Is it true that every even number greater than 2 can be written as the sum of two primes? Nobody knows — this is Goldbach's Conjecture, unproven for 300 years. Proof separates mathematical certainty from mere conjecture. How do we know something is always true, not just true in the cases we've tested?",
+    "prerequisites": [
+      "IGCSE basic number facts (odd, even, prime, square numbers)",
+      "Basic algebraic manipulation",
+      "Understanding of rational and irrational numbers",
+      "Familiarity with counterexamples"
+    ],
+    "core_explanation": "## What is a Proof?\n\nA proof is a logical argument that establishes a mathematical statement as true for all cases. It uses axioms, definitions, and previously proven theorems.\n\n## Direct Proof\n\nStart with known facts and use logical steps to reach the conclusion.\n\n**Example:** Prove that the sum of two odd numbers is even.\n\nLet the odd numbers be $2m+1$ and $2n+1$ where $m, n \\in \\mathbb{Z}$.\nSum: $(2m+1) + (2n+1) = 2m + 2n + 2 = 2(m+n+1)$\nSince $m+n+1$ is an integer, the sum is divisible by 2, hence even. $\\square$\n\n**Example:** Prove that $n^2 + n$ is always even for integer $n$.\n\n$n^2 + n = n(n+1)$. Among any two consecutive integers, one is even. So their product is even. $\\square$\n\n## Proof by Contradiction\n\nAssume the opposite of what you want to prove, then derive a contradiction.\n\n**Example:** Prove that $\\sqrt{2}$ is irrational.\n\nAssume $\\sqrt{2}$ is rational, so $\\sqrt{2} = \\frac{p}{q}$ where $p, q$ are integers with no common factors (fraction in lowest terms).\n\nSquaring: $2 = \\frac{p^2}{q^2}$ \\rightarrow $p^2 = 2q^2$.\n\nSo $p^2$ is even, which means $p$ is even. Write $p = 2k$.\n\nThen $(2k)^2 = 2q^2$ \\rightarrow $4k^2 = 2q^2$ \\rightarrow $2k^2 = q^2$.\n\nSo $q^2$ is even, which means $q$ is even.\n\nBut then both $p$ and $q$ are even, contradicting that $\\frac{p}{q}$ is in lowest terms.\n\nTherefore our assumption was false and $\\sqrt{2}$ is irrational. $\\square$\n\n## Counter-Examples\n\nTo disprove a statement, you only need to find one counterexample.\n\n**Statement:** All prime numbers are odd.\n\n**Counterexample:** $2$ is prime and $2$ is even. The statement is false.\n\n**Statement:** For all real $x$, $x^2 > x$.\n\n**Counterexample:** $x = 0.5$. Then $0.5^2 = 0.25 < 0.5$. The statement is false.\n\n### How to Find Counter-Examples\n- Try extreme values: 0, 1, negative numbers, fractions\n- Look for boundary cases\n- Think about the \"smallest\" or \"simplest\" case\n\n## Proof by Exhaustion\n\nCheck all possible cases individually. Useful when the number of cases is finite and manageable.\n\n**Example:** Prove that the only positive integers $n$ for which $n^2 + 1$ is prime and $n < 5$ are $n = 1, 2, 4$.\n\n$n=1$: $1^2+1 = 2$ (prime)\n$n=2$: $2^2+1 = 5$ (prime)\n$n=3$: $3^2+1 = 10$ (not prime)\n$n=4$: $4^2+1 = 17$ (prime)\n\nVerified for $n = 1, 2, 3, 4$. $\\square$",
+    "worked_example": {
+      "question": "(a) Prove that the product of two consecutive integers is even.\n(b) Disprove the statement: \"For all integers $n$, $n^2 - n + 41$ is prime.\"\n(c) Prove by contradiction that if $n^2$ is even, then $n$ is even.",
+      "solution": "(a) Let the two consecutive integers be $n$ and $n+1$.\nTheir product is $n(n+1)$.\nAmong any two consecutive integers, one is even. Therefore the product is divisible by 2, hence even. $\\square$\n\n(b) Try $n = 41$:\n$41^2 - 41 + 41 = 41^2 = 1681$, which is $41 \\times 41$, not prime.\nSo the statement is false. $\\square$\n\n(c) Assume $n^2$ is even but $n$ is odd.\nIf $n$ is odd, write $n = 2k+1$ for some integer $k$.\nThen $n^2 = (2k+1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1$, which is odd.\nThis contradicts the given that $n^2$ is even.\nTherefore, if $n^2$ is even, $n$ must be even. $\\square$"
+    },
+    "common_mistakes": [
+      {"mistake": "Thinking a few examples constitute a proof (inductive reasoning instead of deductive).", "correction": "A proof must work for ALL cases. Testing a few values only suggests a pattern but doesn't prove it."},
+      {"mistake": "Confusing 'proof by contradiction' with 'proof by counterexample'.", "correction": "Contradiction assumes the opposite and derives a logical impossibility. Counter-example just finds one case where the statement fails."},
+      {"mistake": "Incorrectly negating a statement for contradiction proofs.", "correction": "To prove 'if P then Q' by contradiction, assume 'P and not Q'. To prove a universal statement, assume the negation (there exists a counter-example)."},
+      {"mistake": "Using circular reasoning (assuming what you want to prove).", "correction": "Make sure each step follows logically from earlier steps or known facts without assuming the conclusion."}
+    ],
+    "summary": [
+      "Direct proof: start from known facts and reason logically to the conclusion.",
+      "Proof by contradiction: assume the negation and derive a contradiction.",
+      "Counter-example: one counter-example is enough to disprove a universal statement.",
+      "Proof by exhaustion: check a finite number of cases individually.",
+      "A proof must work for all cases — examples alone are not sufficient."
+    ]
+  }
+}

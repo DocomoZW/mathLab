@@ -1,0 +1,200 @@
+{
+  "track": "a_level",
+  "unit": "AL5_NumMethods",
+  "topic_id": "AL5_Q4",
+  "title": "Vectors in 3D",
+  "problems": [
+    {
+      "id": 1,
+      "difficulty": "F",
+      "skill_tags": [
+        "vector",
+        "3d"
+      ],
+      "problem_text": "Magnitude of a=(3,4,12).",
+      "answer": "13",
+      "solution": "sqrt(9+16+144)=sqrt(169)=13.",
+      "marks": 1
+    },
+    {
+      "id": 2,
+      "difficulty": "F",
+      "skill_tags": [
+        "vector",
+        "addition"
+      ],
+      "problem_text": "a=(1,2,3)+b=(4,5,6)=",
+      "answer": "(5,7,9)",
+      "solution": "(5,7,9).",
+      "marks": 1
+    },
+    {
+      "id": 3,
+      "difficulty": "F",
+      "skill_tags": [
+        "vector",
+        "scalar"
+      ],
+      "problem_text": "3*(-2,4,-1)=",
+      "answer": "(-6,12,-3)",
+      "solution": "(-6,12,-3).",
+      "marks": 1
+    },
+    {
+      "id": 4,
+      "difficulty": "F",
+      "skill_tags": [
+        "vector",
+        "unit"
+      ],
+      "problem_text": "Unit vector in direction of (3,0,4).",
+      "answer": "(3/5,0,4/5)",
+      "solution": "|v|=5. Unit=(3/5,0,4/5).",
+      "marks": 2
+    },
+    {
+      "id": 5,
+      "difficulty": "C",
+      "skill_tags": [
+        "vector",
+        "position"
+      ],
+      "problem_text": "Midpoint of A(1,2,3), B(5,6,7).",
+      "answer": "(3,4,5)",
+      "solution": "((1+5)/2,(2+6)/2,(3+7)/2)=(3,4,5).",
+      "marks": 1
+    },
+    {
+      "id": 6,
+      "difficulty": "C",
+      "skill_tags": [
+        "vector",
+        "distance"
+      ],
+      "problem_text": "Distance between P(1,2,2) and Q(4,6,3).",
+      "answer": "sqrt(26)",
+      "solution": "PQ=(3,4,1). |PQ|=sqrt(9+16+1)=sqrt(26).",
+      "marks": 2
+    },
+    {
+      "id": 7,
+      "difficulty": "C",
+      "skill_tags": [
+        "vector",
+        "ratio"
+      ],
+      "problem_text": "P divides AB 2:1. A=(1,0,2), B=(4,3,5). Find P.",
+      "answer": "(3,2,4)",
+      "solution": "P=(2B+A)/3=(9,6,12)/3=(3,2,4).",
+      "marks": 2
+    },
+    {
+      "id": 8,
+      "difficulty": "C",
+      "skill_tags": [
+        "vector",
+        "parallel"
+      ],
+      "problem_text": "Are a=(2,4,6) and b=(1,2,3) parallel?",
+      "answer": "Yes, a=2b",
+      "solution": "a=2*(1,2,3)=2b.",
+      "marks": 1
+    },
+    {
+      "id": 9,
+      "difficulty": "H",
+      "skill_tags": [
+        "vector",
+        "collinear"
+      ],
+      "problem_text": "Show A(1,1,2), B(3,2,5), C(5,3,8) collinear.",
+      "answer": "AB=(2,1,3), BC=(2,1,3)",
+      "solution": "AB=BC, so collinear.",
+      "marks": 2
+    },
+    {
+      "id": 10,
+      "difficulty": "H",
+      "skill_tags": [
+        "vector",
+        "ratio"
+      ],
+      "problem_text": "P on AB, AP:PB=3:2. A(1,2,3), B(6,7,8).",
+      "answer": "(4,5,6)",
+      "solution": "P=(3B+2A)/5=(20,25,30)/5=(4,5,6).",
+      "marks": 2
+    },
+    {
+      "id": 11,
+      "difficulty": "H",
+      "skill_tags": [
+        "vector",
+        "magnitude"
+      ],
+      "problem_text": "Find k: |(k,2,3)|=7.",
+      "answer": "k=6 or -6",
+      "solution": "k^2+4+9=49->k^2=36->k=+-6.",
+      "marks": 2
+    },
+    {
+      "id": 12,
+      "difficulty": "H",
+      "skill_tags": [
+        "vector",
+        "geometry"
+      ],
+      "problem_text": "Vector from A(2,3,4) to B(5,7,9) and its magnitude.",
+      "answer": "AB=(3,4,5), |AB|=sqrt(50)=5sqrt2",
+      "solution": "(3,4,5). |AB|=sqrt(50)=5sqrt2.",
+      "marks": 2
+    },
+    {
+      "id": 13,
+      "difficulty": "X",
+      "skill_tags": [
+        "vector",
+        "external"
+      ],
+      "problem_text": "A divides PQ externally 3:1. P(1,2,3), Q(4,5,6). Find A.",
+      "answer": "(5.5,6.5,7.5)",
+      "solution": "A=(3Q-P)/2=(11,13,15)/2=(5.5,6.5,7.5).",
+      "marks": 3
+    },
+    {
+      "id": 14,
+      "difficulty": "X",
+      "skill_tags": [
+        "vector",
+        "direction"
+      ],
+      "problem_text": "Vector magnitude 10 in direction of (1,2,2).",
+      "answer": "(10/3,20/3,20/3)",
+      "solution": "Unit=(1,2,2)/3. Times 10.",
+      "marks": 2
+    },
+    {
+      "id": 15,
+      "difficulty": "X",
+      "skill_tags": [
+        "vector",
+        "application"
+      ],
+      "problem_text": "Forces:(1,2,3),(4,5,6),(7,8,9)N. Find resultant.",
+      "answer": "(12,15,18)N, |F|=3sqrt(77)",
+      "solution": "(12,15,18). |F|=sqrt(144+225+324)=sqrt(693).",
+      "marks": 2
+    },
+    {
+      "id": 16,
+      "difficulty": "X",
+      "skill_tags": [
+        "vector",
+        "proof"
+      ],
+      "problem_text": "Prove midpoint of AB has position (a+b)/2.",
+      "answer": "Proof",
+      "solution": "M=a+(1/2)(b-a)=(a+b)/2.",
+      "marks": 2
+    }
+  ]
+}

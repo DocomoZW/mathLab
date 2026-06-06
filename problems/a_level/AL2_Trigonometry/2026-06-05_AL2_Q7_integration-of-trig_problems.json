@@ -1,0 +1,154 @@
+{
+  "track": "a_level",
+  "unit": "AL2_Trigonometry",
+  "topic_id": "AL2_Q7",
+  "title": "Integration of Trig - Problems",
+  "version": 1,
+  "created_at": "2026-06-05T11:35:00Z",
+  "problems": [
+    {
+      "id": "AL2_Q7_F01",
+      "difficulty": "F",
+      "skill_tags": ["integral of sin"],
+      "problem_text": "Find $\\int \\sin x\\,dx$.",
+      "answer": "$-\\cos x + c$",
+      "solution": "$\\int \\sin x\\,dx = -\\cos x + c$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q7_F02",
+      "difficulty": "F",
+      "skill_tags": ["integral of cos"],
+      "problem_text": "Find $\\int \\cos x\\,dx$.",
+      "answer": "$\\sin x + c$",
+      "solution": "$\\int \\cos x\\,dx = \\sin x + c$",
+      "marks": 1
+    },
+    {
+      "id": "AL2_Q7_F03",
+      "difficulty": "F",
+      "skill_tags": ["reverse chain"],
+      "problem_text": "Find $\\int \\cos 2x\\,dx$.",
+      "answer": "$\\frac{1}{2}\\sin 2x + c$",
+      "solution": "$\\int \\cos 2x\\,dx = \\frac{1}{2}\\sin 2x + c$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q7_F04",
+      "difficulty": "F",
+      "skill_tags": ["reverse chain"],
+      "problem_text": "Find $\\int \\sin\\left(3x + \\frac{\\pi}{4}\\right)\\,dx$.",
+      "answer": "$-\\frac{1}{3}\\cos\\left(3x + \\frac{\\pi}{4}\\right) + c$",
+      "solution": "$\\int \\sin(3x+\\pi/4)\\,dx = -\\frac{1}{3}\\cos(3x+\\pi/4) + c$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q7_C01",
+      "difficulty": "C",
+      "skill_tags": ["definite integral", "trig"],
+      "problem_text": "Evaluate $\\int_0^{\\pi/2} \\cos x\\,dx$.",
+      "answer": "1",
+      "solution": "$[\\sin x]_0^{\\pi/2} = \\sin(\\pi/2) - \\sin 0 = 1 - 0 = 1$",
+      "marks": 2
+    },
+    {
+      "id": "AL2_Q7_C02",
+      "difficulty": "C",
+      "skill_tags": ["definite integral", "trig", "chain"],
+      "problem_text": "Evaluate $\\int_0^{\\pi/4} \\sin 2x\\,dx$.",
+      "answer": "$\\frac{1}{2}$",
+      "solution": "$\\left[-\\frac{1}{2}\\cos 2x\\right]_0^{\\pi/4} = -\\frac{1}{2}\\cos(\\pi/2) + \\frac{1}{2}\\cos 0 = 0 + \\frac{1}{2} = \\frac{1}{2}$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q7_C03",
+      "difficulty": "C",
+      "skill_tags": ["integration with identity"],
+      "problem_text": "Find $\\int \\sin^2 x\\,dx$.",
+      "answer": "$\\frac{x}{2} - \\frac{\\sin 2x}{4} + c$",
+      "solution": "$\\int \\sin^2 x\\,dx = \\int \\frac{1-\\cos 2x}{2}\\,dx = \\frac{x}{2} - \\frac{\\sin 2x}{4} + c$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q7_C04",
+      "difficulty": "C",
+      "skill_tags": ["integration with identity"],
+      "problem_text": "Find $\\int \\cos^2 x\\,dx$.",
+      "answer": "$\\frac{x}{2} + \\frac{\\sin 2x}{4} + c$",
+      "solution": "$\\int \\cos^2 x\\,dx = \\int \\frac{1+\\cos 2x}{2}\\,dx = \\frac{x}{2} + \\frac{\\sin 2x}{4} + c$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q7_H01",
+      "difficulty": "H",
+      "skill_tags": ["area under curve", "trig"],
+      "problem_text": "Find the area bounded by $y = \\sin x$, the x-axis, and the lines $x = 0$ and $x = \\pi$.",
+      "answer": "2 square units",
+      "solution": "Area $= \\int_0^\\pi \\sin x\\,dx = [-\\cos x]_0^\\pi = (-\\cos\\pi) - (-\\cos 0) = 1 + 1 = 2$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q7_H02",
+      "difficulty": "H",
+      "skill_tags": ["definite integral", "trig with chain"],
+      "problem_text": "Evaluate $\\int_0^{\\pi/3} \\cos\\left(3x - \\frac{\\pi}{6}\\right)\\,dx$.",
+      "answer": "$\\frac{1}{3}$",
+      "solution": "$\\left[\\frac{1}{3}\\sin\\left(3x - \\frac{\\pi}{6}\\right)\\right]_0^{\\pi/3} = \\frac{1}{3}[\\sin(\\pi - \\pi/6) - \\sin(-\\pi/6)] = \\frac{1}{3}[\\sin(5\\pi/6) + \\sin(\\pi/6)] = \\frac{1}{3}[1/2 + 1/2] = \\frac{1}{3}$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q7_H03",
+      "difficulty": "H",
+      "skill_tags": ["area between curves", "trig"],
+      "problem_text": "Find the area between the curves $y = \\sin x$ and $y = \\cos x$ from $x = \\frac{\\pi}{4}$ to $x = \\frac{5\\pi}{4}$.",
+      "answer": "$2\\sqrt{2}$ square units",
+      "solution": "$\\int_{\\pi/4}^{5\\pi/4} (\\sin x - \\cos x)\\,dx = [-\\cos x - \\sin x]_{\\pi/4}^{5\\pi/4} = [(-\\cos(5\\pi/4)-\\sin(5\\pi/4)) - (-\\cos(\\pi/4)-\\sin(\\pi/4))] = [(-(-\\sqrt{2}/2)-(-\\sqrt{2}/2)) - (-\\sqrt{2}/2-\\sqrt{2}/2)] = [\\sqrt{2}/2+\\sqrt{2}/2 + \\sqrt{2}/2+\\sqrt{2}/2] = 2\\sqrt{2}$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q7_H04",
+      "difficulty": "H",
+      "skill_tags": ["integration", "substitution", "trig"],
+      "problem_text": "Find $\\int_0^{\\pi} \\sin x\\cos x\\,dx$.",
+      "answer": "0",
+      "solution": "$\\sin x\\cos x = \\frac{1}{2}\\sin 2x$. $\\int_0^\\pi \\frac{1}{2}\\sin 2x\\,dx = \\left[-\\frac{1}{4}\\cos 2x\\right]_0^\\pi = -\\frac{1}{4}(\\cos 2\\pi - \\cos 0) = -\\frac{1}{4}(1-1) = 0$",
+      "marks": 3
+    },
+    {
+      "id": "AL2_Q7_X01",
+      "difficulty": "X",
+      "skill_tags": ["integration", "area", "careful sign"],
+      "problem_text": "Find the total area enclosed by $y = \\sin x$ and the x-axis between $x = 0$ and $x = 2\\pi$.",
+      "answer": "4 square units",
+      "solution": "Area $= \\int_0^\\pi \\sin x\\,dx + \\int_\\pi^{2\\pi} (-\\sin x)\\,dx = [-\\cos x]_0^\\pi + [\\cos x]_\\pi^{2\\pi} = (1+1) + (1+1) = 4$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q7_X02",
+      "difficulty": "X",
+      "skill_tags": ["integration by parts", "trig"],
+      "problem_text": "Find $\\int x\\sin x\\,dx$ using integration by parts.",
+      "answer": "$-x\\cos x + \\sin x + c$",
+      "solution": "Let $u = x$, $dv = \\sin x\\,dx$. $du = dx$, $v = -\\cos x$. $\\int x\\sin x\\,dx = -x\\cos x + \\int \\cos x\\,dx = -x\\cos x + \\sin x + c$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q7_X03",
+      "difficulty": "X",
+      "skill_tags": ["definite integral", "trig", "exact area"],
+      "problem_text": "Find the exact area of the region bounded by $y = \\cos^2 x$, the x-axis, and the lines $x = 0$ and $x = \\pi$.",
+      "answer": "$\\frac{\\pi}{2}$ square units",
+      "solution": "$\\int_0^\\pi \\cos^2 x\\,dx = \\int_0^\\pi \\frac{1+\\cos 2x}{2}\\,dx = \\left[\\frac{x}{2} + \\frac{\\sin 2x}{4}\\right]_0^\\pi = \\frac{\\pi}{2} + \\frac{\\sin 2\\pi}{4} - 0 - 0 = \\frac{\\pi}{2}$",
+      "marks": 4
+    },
+    {
+      "id": "AL2_Q7_X04",
+      "difficulty": "X",
+      "skill_tags": ["integration", "trig identity", "challenge"],
+      "problem_text": "Find $\\int_0^{\\pi/2} (\\sin x + \\cos x)^2\\,dx$.",
+      "answer": "$\\frac{\\pi}{2} + 1$",
+      "solution": "$(\\sin x+\\cos x)^2 = \\sin^2 x + 2\\sin x\\cos x + \\cos^2 x = 1 + \\sin 2x$. $\\int_0^{\\pi/2} (1+\\sin 2x)\\,dx = \\left[x - \\frac{1}{2}\\cos 2x\\right]_0^{\\pi/2} = (\\pi/2 - \\frac{1}{2}\\cos\\pi) - (0 - \\frac{1}{2}) = \\pi/2 + 1/2 + 1/2 = \\pi/2 + 1$",
+      "marks": 5
+    }
+  ]
+}
